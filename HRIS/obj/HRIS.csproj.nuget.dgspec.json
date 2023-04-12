@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "W:\\HRIS\\HRIS+Payroll\\HRIS\\HRIS\\HRIS.csproj": {}
+    "C:\\Users\\ITSSupport\\Source\\Repos\\palin01\\HRIS-Payroll\\HRIS\\HRIS.csproj": {}
   },
   "projects": {
-    "W:\\HRIS\\HRIS+Payroll\\HRIS\\HRIS\\HRIS.csproj": {
+    "C:\\Users\\ITSSupport\\Source\\Repos\\palin01\\HRIS-Payroll\\HRIS\\HRIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "W:\\HRIS\\HRIS+Payroll\\HRIS\\HRIS\\HRIS.csproj",
+        "projectUniqueName": "C:\\Users\\ITSSupport\\Source\\Repos\\palin01\\HRIS-Payroll\\HRIS\\HRIS.csproj",
         "projectName": "HRIS",
-        "projectPath": "W:\\HRIS\\HRIS+Payroll\\HRIS\\HRIS\\HRIS.csproj",
+        "projectPath": "C:\\Users\\ITSSupport\\Source\\Repos\\palin01\\HRIS-Payroll\\HRIS\\HRIS.csproj",
         "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
-        "outputPath": "W:\\HRIS\\HRIS+Payroll\\HRIS\\HRIS\\obj\\",
+        "outputPath": "C:\\Users\\ITSSupport\\Source\\Repos\\palin01\\HRIS-Payroll\\HRIS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

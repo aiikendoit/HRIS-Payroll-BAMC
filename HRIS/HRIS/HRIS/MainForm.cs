@@ -1,5 +1,6 @@
 using FontAwesome.Sharp;
 using HRIS.Class;
+<<<<<<< HEAD
 using HRIS.Forms.Doctors;
 using HRIS.Forms.Employee;
 using HRIS.Forms.Hiring;
@@ -7,6 +8,11 @@ using HRIS.Forms.Maintenance;
 using HRIS.Forms.Userlogin;
 using System.Net.Security;
 using System.Runtime.InteropServices;
+=======
+using HRIS.Forms.Employee;
+using HRIS.Forms.Userlogin;
+using System.Net.Security;
+>>>>>>> backup files
 
 namespace HRIS
 {
@@ -15,7 +21,11 @@ namespace HRIS
 
         private IconButton currentbtn;
         private Form currentchildform;
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> backup files
         public MainForm()
         {
             InitializeComponent();
@@ -46,7 +56,11 @@ namespace HRIS
         }
         private void openchildform(Form childform)
         {
+<<<<<<< HEAD
             if (currentchildform != null)
+=======
+        if (currentchildform != null)
+>>>>>>> backup files
             {
                 currentchildform.Close();
             }
@@ -61,7 +75,11 @@ namespace HRIS
             childform.Show();
 
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> backup files
 
         private void Image_Logo_Click(object sender, EventArgs e)
         {
@@ -101,7 +119,10 @@ namespace HRIS
         private void btn_doctors_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
+<<<<<<< HEAD
             openchildform(new DoctorForm());
+=======
+>>>>>>> backup files
         }
 
         private void btn_dutyschedule_Click(object sender, EventArgs e)
@@ -117,8 +138,11 @@ namespace HRIS
         private void btn_maintenance_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
+<<<<<<< HEAD
             MaintenanceForm maintenanceForm = new MaintenanceForm();
             maintenanceForm.ShowDialog();
+=======
+>>>>>>> backup files
         }
 
         private void btn_reportmanager_Click(object sender, EventArgs e)
@@ -135,6 +159,7 @@ namespace HRIS
         {
 
         }
+<<<<<<< HEAD
 
         private void btn_seminar_Click(object sender, EventArgs e)
         {
@@ -156,5 +181,7 @@ namespace HRIS
             activatebutton(sender, ColorPalette.color5);
             openchildform(new HiringForm());
         }
+=======
+>>>>>>> backup files
     }
 }

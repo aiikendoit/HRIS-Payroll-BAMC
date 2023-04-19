@@ -61,7 +61,11 @@
   <data name="jpCircularPictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+<<<<<<< HEAD
         vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAH8OSURBVHhe7Z0H
+=======
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAH8OSURBVHhe7Z0H
+>>>>>>> backup files
         eBRV18dXQLF3irQQCL0lIKFD6L0kIfRiRREbSi8SinQhpEHohHRS6CBIFRBQiopU6aC+VlBRIdk9372b
         CV9YTpLdZGb23pnzf57fw6uv7M7O3HP+Z2buPddCIpHMo9atBz3X0TeoVdcGPd/q0iAwhJHcuX7grs71
         /Y91etH/+471/X/sUK/H7x3qdv+7vU+3/9ift9vX7ZbezqebtbNvwO2eLfrf6NVykJUBCrcYvyv81rvl
@@ -1347,6 +1351,7 @@
   <metadata name="panel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+<<<<<<< HEAD
   <metadata name="panel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1401,6 +1406,8 @@
   <metadata name="label5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+=======
+>>>>>>> backup files
   <metadata name="label13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

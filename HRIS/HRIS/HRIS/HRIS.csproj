@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
+<<<<<<< HEAD
     <PackageReference Include="MaterialSkin.2.RTL" Version="2.3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
@@ -22,6 +23,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+=======
+>>>>>>> backup files
   </ItemGroup>
 
   <ItemGroup>
@@ -30,11 +33,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="Properties\Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+=======
+>>>>>>> backup files
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +50,7 @@
     </EmbeddedResource>
   </ItemGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -51,4 +58,6 @@
     </None>
   </ItemGroup>
 
+=======
+>>>>>>> backup files
 </Project>

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<<<<<<< HEAD
   <PropertyGroup>
     <_LastSelectedProfileId>D:\James System\2023\HRIS with GIT\09 - HRIS-Payroll - July 6,2023\HRIS\HRIS\HRIS\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
@@ -122,11 +123,16 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Forms\Maintenance\License\LicenseType.cs">
+=======
+  <ItemGroup>
+    <Compile Update="Forms\Employee\EmployeeForm.cs">
+>>>>>>> backup files
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UserCustomControl\JPCircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="Views\Forms\Maintenance\MaintenanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Forms\Userlogin\Userlogin.cs">
+=======
+    <Compile Update="Forms\Maintenance\MaintenanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Userlogin\Userlogin.cs">
+>>>>>>> backup files
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainForm.cs">

@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
+<<<<<<< Updated upstream
     "",
     "\\HRIS"
   ],
   "SelectedNode": "\\HRIS.sln",
+=======
+    ""
+  ],
+>>>>>>> Stashed changes
   "PreviewInSolutionExplorer": false
 }

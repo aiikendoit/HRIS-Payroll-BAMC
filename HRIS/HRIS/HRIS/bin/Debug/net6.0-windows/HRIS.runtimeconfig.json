@@ -10,9 +10,13 @@
         "name": "Microsoft.WindowsDesktop.App",
         "version": "6.0.0"
       }
+<<<<<<< HEAD
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true
     }
+=======
+    ]
+>>>>>>> backup files
   }
 }

@@ -8,6 +8,7 @@ namespace HRIS.Class
 {
     public struct UniversalStatic
     {
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
 =======
@@ -21,6 +22,8 @@ namespace HRIS.Class
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> backup files
         public static void customDatagrid(DataGridView dgv)
         {
             dgv.BackgroundColor = Color.White; 
@@ -42,6 +45,7 @@ namespace HRIS.Class
             dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
            
@@ -50,6 +54,8 @@ namespace HRIS.Class
 =======
            
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> backup files
             //column header font
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             dgv.ColumnHeadersDefaultCellStyle.Font = new Font(dgv.Font, FontStyle.Bold);
@@ -70,6 +76,7 @@ namespace HRIS.Class
             dgv.RowTemplate.DividerHeight = 0;
             dgv.RowTemplate.Height = 35;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
 =======
@@ -95,5 +102,7 @@ namespace HRIS.Class
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> backup files
     }
 }

@@ -43,6 +43,7 @@ namespace HRIS
             btn_reportmanager = new FontAwesome.Sharp.IconButton();
             btn_maintenance = new FontAwesome.Sharp.IconButton();
             label2 = new Label();
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
 =======
@@ -56,6 +57,8 @@ namespace HRIS
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+>>>>>>> backup files
             btn_leaves = new FontAwesome.Sharp.IconButton();
             btn_dutyschedule = new FontAwesome.Sharp.IconButton();
             btn_doctors = new FontAwesome.Sharp.IconButton();
@@ -86,6 +89,7 @@ namespace HRIS
             label5 = new Label();
             iconSplitButton1 = new FontAwesome.Sharp.IconSplitButton();
             MainPanel = new Panel();
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             btn_hiring = new FontAwesome.Sharp.IconButton();
@@ -94,6 +98,8 @@ namespace HRIS
 =======
             btn_hiring = new FontAwesome.Sharp.IconButton();
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+>>>>>>> backup files
             panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)jpCircularPictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)icon_home).BeginInit();
@@ -200,6 +206,7 @@ namespace HRIS
             panelLeft.Dock = DockStyle.Left;
             panelLeft.Location = new Point(0, 0);
             panelLeft.Name = "panelLeft";
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             panelLeft.Size = new Size(199, 613);
@@ -209,6 +216,9 @@ namespace HRIS
 =======
             panelLeft.Size = new Size(199, 613);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            panelLeft.Size = new Size(199, 570);
+>>>>>>> backup files
             panelLeft.TabIndex = 1;
             // 
             // panel1
@@ -217,6 +227,7 @@ namespace HRIS
             panel1.Controls.Add(btn_reportmanager);
             panel1.Controls.Add(btn_maintenance);
             panel1.Controls.Add(label2);
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
 =======
@@ -230,10 +241,13 @@ namespace HRIS
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+>>>>>>> backup files
             panel1.Controls.Add(btn_leaves);
             panel1.Controls.Add(btn_dutyschedule);
             panel1.Controls.Add(btn_doctors);
             panel1.Controls.Add(btn_employee);
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             panel1.Controls.Add(btn_hiring);
@@ -242,11 +256,14 @@ namespace HRIS
 =======
             panel1.Controls.Add(btn_hiring);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+>>>>>>> backup files
             panel1.Controls.Add(label1);
             panel1.Controls.Add(btn_dashboard);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 100);
             panel1.Name = "panel1";
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             panel1.Size = new Size(199, 513);
@@ -256,6 +273,9 @@ namespace HRIS
 =======
             panel1.Size = new Size(199, 513);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            panel1.Size = new Size(199, 470);
+>>>>>>> backup files
             panel1.TabIndex = 18;
             // 
             // btn_audittrail
@@ -271,6 +291,7 @@ namespace HRIS
             btn_audittrail.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_audittrail.IconSize = 25;
             btn_audittrail.ImageAlign = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             btn_audittrail.Location = new Point(0, 466);
@@ -280,6 +301,9 @@ namespace HRIS
 =======
             btn_audittrail.Location = new Point(0, 466);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            btn_audittrail.Location = new Point(0, 299);
+>>>>>>> backup files
             btn_audittrail.Name = "btn_audittrail";
             btn_audittrail.Padding = new Padding(10, 0, 0, 0);
             btn_audittrail.Size = new Size(199, 35);
@@ -304,6 +328,7 @@ namespace HRIS
             btn_reportmanager.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_reportmanager.IconSize = 25;
             btn_reportmanager.ImageAlign = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             btn_reportmanager.Location = new Point(0, 431);
@@ -313,6 +338,9 @@ namespace HRIS
 =======
             btn_reportmanager.Location = new Point(0, 431);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            btn_reportmanager.Location = new Point(0, 264);
+>>>>>>> backup files
             btn_reportmanager.Name = "btn_reportmanager";
             btn_reportmanager.Padding = new Padding(10, 0, 0, 0);
             btn_reportmanager.Size = new Size(199, 35);
@@ -337,6 +365,7 @@ namespace HRIS
             btn_maintenance.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_maintenance.IconSize = 25;
             btn_maintenance.ImageAlign = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             btn_maintenance.Location = new Point(0, 396);
@@ -346,6 +375,9 @@ namespace HRIS
 =======
             btn_maintenance.Location = new Point(0, 396);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            btn_maintenance.Location = new Point(0, 229);
+>>>>>>> backup files
             btn_maintenance.Name = "btn_maintenance";
             btn_maintenance.Padding = new Padding(10, 0, 0, 0);
             btn_maintenance.Size = new Size(199, 35);
@@ -361,6 +393,7 @@ namespace HRIS
             // 
             label2.BackColor = Color.FromArgb(86, 180, 206);
             label2.Dock = DockStyle.Top;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             label2.Location = new Point(0, 369);
@@ -370,6 +403,9 @@ namespace HRIS
 =======
             label2.Location = new Point(0, 369);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            label2.Location = new Point(0, 202);
+>>>>>>> backup files
             label2.Name = "label2";
             label2.Padding = new Padding(5, 0, 0, 0);
             label2.Size = new Size(199, 27);
@@ -377,6 +413,7 @@ namespace HRIS
             label2.Text = "OTHERS";
             label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
 =======
@@ -473,6 +510,8 @@ namespace HRIS
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+>>>>>>> backup files
             // btn_leaves
             // 
             btn_leaves.BackColor = Color.FromArgb(0, 127, 152);
@@ -486,6 +525,7 @@ namespace HRIS
             btn_leaves.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_leaves.IconSize = 25;
             btn_leaves.ImageAlign = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             btn_leaves.Location = new Point(0, 202);
@@ -495,6 +535,9 @@ namespace HRIS
 =======
             btn_leaves.Location = new Point(0, 202);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            btn_leaves.Location = new Point(0, 167);
+>>>>>>> backup files
             btn_leaves.Name = "btn_leaves";
             btn_leaves.Padding = new Padding(10, 0, 0, 0);
             btn_leaves.Size = new Size(199, 35);
@@ -519,6 +562,7 @@ namespace HRIS
             btn_dutyschedule.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_dutyschedule.IconSize = 25;
             btn_dutyschedule.ImageAlign = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             btn_dutyschedule.Location = new Point(0, 167);
@@ -528,6 +572,9 @@ namespace HRIS
 =======
             btn_dutyschedule.Location = new Point(0, 167);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            btn_dutyschedule.Location = new Point(0, 132);
+>>>>>>> backup files
             btn_dutyschedule.Name = "btn_dutyschedule";
             btn_dutyschedule.Padding = new Padding(10, 0, 0, 0);
             btn_dutyschedule.Size = new Size(199, 35);
@@ -552,6 +599,7 @@ namespace HRIS
             btn_doctors.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_doctors.IconSize = 25;
             btn_doctors.ImageAlign = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             btn_doctors.Location = new Point(0, 132);
@@ -561,6 +609,9 @@ namespace HRIS
 =======
             btn_doctors.Location = new Point(0, 132);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            btn_doctors.Location = new Point(0, 97);
+>>>>>>> backup files
             btn_doctors.Name = "btn_doctors";
             btn_doctors.Padding = new Padding(10, 0, 0, 0);
             btn_doctors.Size = new Size(199, 35);
@@ -584,6 +635,7 @@ namespace HRIS
             btn_employee.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_employee.IconSize = 25;
             btn_employee.ImageAlign = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             btn_employee.Location = new Point(0, 97);
@@ -593,6 +645,9 @@ namespace HRIS
 =======
             btn_employee.Location = new Point(0, 97);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            btn_employee.Location = new Point(0, 62);
+>>>>>>> backup files
             btn_employee.Name = "btn_employee";
             btn_employee.Padding = new Padding(10, 0, 0, 0);
             btn_employee.Size = new Size(199, 35);
@@ -673,6 +728,7 @@ namespace HRIS
             HomePanel.Dock = DockStyle.Fill;
             HomePanel.Location = new Point(199, 100);
             HomePanel.Name = "HomePanel";
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             HomePanel.Size = new Size(847, 513);
@@ -682,6 +738,9 @@ namespace HRIS
 =======
             HomePanel.Size = new Size(847, 513);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            HomePanel.Size = new Size(847, 470);
+>>>>>>> backup files
             HomePanel.TabIndex = 2;
             // 
             // panel2
@@ -705,6 +764,7 @@ namespace HRIS
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label5);
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             panel2.Location = new Point(173, 56);
@@ -714,6 +774,9 @@ namespace HRIS
 =======
             panel2.Location = new Point(173, 56);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            panel2.Location = new Point(173, 35);
+>>>>>>> backup files
             panel2.Name = "panel2";
             panel2.Size = new Size(511, 409);
             panel2.TabIndex = 4;
@@ -924,6 +987,7 @@ namespace HRIS
             MainPanel.Dock = DockStyle.Fill;
             MainPanel.Location = new Point(199, 100);
             MainPanel.Name = "MainPanel";
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             MainPanel.Size = new Size(847, 513);
@@ -989,11 +1053,17 @@ namespace HRIS
             btn_hiring.Click += btn_hiring_Click;
             // 
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            MainPanel.Size = new Size(847, 470);
+            MainPanel.TabIndex = 3;
+            // 
+>>>>>>> backup files
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
             ClientSize = new Size(1046, 613);
@@ -1003,6 +1073,9 @@ namespace HRIS
 =======
             ClientSize = new Size(1046, 613);
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+            ClientSize = new Size(1046, 570);
+>>>>>>> backup files
             Controls.Add(HomePanel);
             Controls.Add(MainPanel);
             Controls.Add(panelTop);
@@ -1074,6 +1147,7 @@ namespace HRIS
         private Panel panel4;
         private Panel panel3;
         private Label label14;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.Designer.cs
 <<<<<<< HEAD
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
@@ -1085,10 +1159,13 @@ namespace HRIS
         private Label label15;
         private FontAwesome.Sharp.IconButton btn_hiring;
 =======
+=======
+>>>>>>> backup files
         private JPCircularPictureBox jpCircularPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Panel MainPanel;
         private JPCircularPictureBox jpCircularPictureBox2;
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
@@ -1100,5 +1177,7 @@ namespace HRIS
         private Label label15;
         private FontAwesome.Sharp.IconButton btn_hiring;
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.Designer.cs
+=======
+>>>>>>> backup files
     }
 }

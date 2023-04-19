@@ -12,6 +12,7 @@
     <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
     <PackageReference Include="MaterialSkin.2.RTL" Version="2.3.1.1" />
@@ -31,6 +32,8 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> backup files
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +42,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -53,6 +57,8 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> backup files
   </ItemGroup>
 
   <ItemGroup>
@@ -62,6 +68,7 @@
     </EmbeddedResource>
   </ItemGroup>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -78,4 +85,6 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> backup files
 </Project>

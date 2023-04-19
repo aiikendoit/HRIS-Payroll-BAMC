@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "C:\\Users\\KIsrael\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\KIsrael\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +51,13 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/Debug/net6.0-windows/HRIS.designer.runtimeconfig.json
+=======
+      "C:\\Users\\ITSSupport\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ITSSupport\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+    ],
+    "configProperties": {
+>>>>>>> backup files
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }

@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
@@ -3696,6 +3697,8 @@
 =======
 =======
 >>>>>>> backup files
+=======
+>>>>>>> backup files
       "FontAwesome.Sharp/6.3.0": {
         "type": "package",
         "compile": {
@@ -3725,6 +3728,7 @@
         "lib/net6.0-windows7.0/FontAwesome.Sharp.dll",
         "lib/netcoreapp3.1/FontAwesome.Sharp.dll"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -3732,11 +3736,14 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> backup files
       ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3761,6 +3768,8 @@
 =======
 =======
 >>>>>>> backup files
+=======
+>>>>>>> backup files
       "FontAwesome.Sharp >= 6.3.0"
     ]
   },
@@ -3768,6 +3777,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\ITSSupport\\.nuget\\packages\\": {},
 >>>>>>> backup files
 =======
@@ -3783,6 +3793,9 @@
 >>>>>>> update
 =======
 >>>>>>> update files
+=======
+    "C:\\Users\\ITSSupport\\.nuget\\packages\\": {},
+>>>>>>> backup files
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -3798,6 +3811,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "projectName": "HRIS",
       "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
@@ -3818,6 +3832,8 @@
       "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
 >>>>>>> update file
 =======
+=======
+>>>>>>> backup files
 =======
 >>>>>>> backup files
       "projectUniqueName": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj",
@@ -3826,6 +3842,7 @@
       "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
       "outputPath": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\obj\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
       "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
@@ -3871,6 +3888,8 @@
 =======
       "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
 >>>>>>> update file
+=======
+>>>>>>> backup files
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3882,6 +3901,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
         "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3901,6 +3921,9 @@
 =======
         "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> update files
+=======
+        "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> backup files
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3915,6 +3938,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "C:\\Program Files\\dotnet\\library-packs": {},
 >>>>>>> backup files
@@ -3929,6 +3953,9 @@
 >>>>>>> update
 =======
 >>>>>>> update files
+=======
+        "C:\\Program Files\\dotnet\\library-packs": {},
+>>>>>>> backup files
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3950,6 +3977,7 @@
           "FontAwesome.Sharp": {
             "target": "Package",
             "version": "[6.3.0, )"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3996,6 +4024,8 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> backup files
           }
         },
         "imports": [
@@ -4023,6 +4053,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
@@ -4042,6 +4073,9 @@
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
 >>>>>>> update files
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> backup files
       }
     }
   }

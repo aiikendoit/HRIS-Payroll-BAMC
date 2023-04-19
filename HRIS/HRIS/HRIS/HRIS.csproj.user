@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
@@ -144,11 +145,16 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+  <ItemGroup>
+    <Compile Update="Forms\Employee\EmployeeForm.cs">
+>>>>>>> backup files
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UserCustomControl\JPCircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -190,10 +196,13 @@
 =======
 =======
 >>>>>>> backup files
+=======
+>>>>>>> backup files
     <Compile Update="Forms\Maintenance\MaintenanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Userlogin\Userlogin.cs">
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> backup files
 =======
@@ -202,6 +211,8 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> backup files
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainForm.cs">

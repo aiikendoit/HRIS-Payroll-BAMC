@@ -1,5 +1,6 @@
 using FontAwesome.Sharp;
 using HRIS.Class;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
@@ -31,6 +32,11 @@ using System.Net.Security;
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+using HRIS.Forms.Employee;
+using HRIS.Forms.Userlogin;
+using System.Net.Security;
+>>>>>>> backup files
 
 namespace HRIS
 {
@@ -39,6 +45,7 @@ namespace HRIS
 
         private IconButton currentbtn;
         private Form currentchildform;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
@@ -56,6 +63,9 @@ namespace HRIS
 =======
         
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+
+>>>>>>> backup files
         public MainForm()
         {
             InitializeComponent();
@@ -86,6 +96,7 @@ namespace HRIS
         }
         private void openchildform(Form childform)
         {
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
@@ -103,6 +114,9 @@ namespace HRIS
 =======
             if (currentchildform != null)
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+        if (currentchildform != null)
+>>>>>>> backup files
             {
                 currentchildform.Close();
             }
@@ -117,6 +131,7 @@ namespace HRIS
             childform.Show();
 
         }
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
@@ -134,6 +149,9 @@ namespace HRIS
 =======
 
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+        
+>>>>>>> backup files
 
         private void Image_Logo_Click(object sender, EventArgs e)
         {
@@ -173,6 +191,7 @@ namespace HRIS
         private void btn_doctors_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
@@ -188,6 +207,8 @@ namespace HRIS
 =======
             openchildform(new DoctorForm());
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+>>>>>>> backup files
         }
 
         private void btn_dutyschedule_Click(object sender, EventArgs e)
@@ -203,6 +224,7 @@ namespace HRIS
         private void btn_maintenance_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
@@ -221,6 +243,8 @@ namespace HRIS
             MaintenanceForm maintenanceForm = new MaintenanceForm();
             maintenanceForm.ShowDialog();
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+>>>>>>> backup files
         }
 
         private void btn_reportmanager_Click(object sender, EventArgs e)
@@ -237,6 +261,7 @@ namespace HRIS
         {
 
         }
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
@@ -276,5 +301,7 @@ namespace HRIS
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+>>>>>>> backup files
     }
 }

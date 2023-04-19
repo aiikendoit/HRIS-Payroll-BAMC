@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
@@ -40,6 +41,8 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> backup files
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +51,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -71,6 +75,8 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> backup files
   </ItemGroup>
 
   <ItemGroup>
@@ -80,6 +86,7 @@
     </EmbeddedResource>
   </ItemGroup>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -105,4 +112,6 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> backup files
 </Project>

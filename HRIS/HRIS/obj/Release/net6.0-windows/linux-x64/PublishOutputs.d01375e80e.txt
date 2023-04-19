@@ -1,6 +1,0 @@
-C:\Users\KIsrael\Desktop\01 HRIS - April 19,2023\HRIS\HRIS\bin\Release\net6.0-windows\publish\linux-x64\HRIS
-C:\Users\KIsrael\Desktop\01 HRIS - April 19,2023\HRIS\HRIS\bin\Release\net6.0-windows\publish\linux-x64\HRIS.dll
-C:\Users\KIsrael\Desktop\01 HRIS - April 19,2023\HRIS\HRIS\bin\Release\net6.0-windows\publish\linux-x64\HRIS.deps.json
-C:\Users\KIsrael\Desktop\01 HRIS - April 19,2023\HRIS\HRIS\bin\Release\net6.0-windows\publish\linux-x64\HRIS.runtimeconfig.json
-C:\Users\KIsrael\Desktop\01 HRIS - April 19,2023\HRIS\HRIS\bin\Release\net6.0-windows\publish\linux-x64\HRIS.pdb
-C:\Users\KIsrael\Desktop\01 HRIS - April 19,2023\HRIS\HRIS\bin\Release\net6.0-windows\publish\linux-x64\FontAwesome.Sharp.dll

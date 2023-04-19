@@ -1,3 +1,5 @@
+using HRIS.Classes;
+
 namespace HRIS
 {
     public partial class MainForm : Form
@@ -9,7 +11,10 @@ namespace HRIS
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello World!");
+            //MessageBox.Show("Hello World!");
+            Testmessage ts = new Testmessage();
+            ts.testaccess();
+           
         }
     }
 }

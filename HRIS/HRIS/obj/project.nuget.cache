@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ia3t9WQyE+s3EIfmlvqy7+UaAjbSHf3LksuSCxWkrTCnKKDzXWWCCASCOfuXlaGMfckr4CGUifBB5Y5A6ZUw2w==",
+  "dgSpecHash": "kbpfPkFmvGjNEMj4CTXnIW53CvNyd8fV/E7O9kudRWlGoNmIT4CxLHDmxWS8nQvN1h9Y1OTUICZMhK8+QWfFaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj",
+  "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KIsrael\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
   ],

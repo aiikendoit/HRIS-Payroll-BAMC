@@ -213,3 +213,39 @@ D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6
 D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
 D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
 D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\MaterialSkin.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Education.emp_AddEducationalAttainment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_EducationalAttainment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeRegistration.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_AddEmployment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_employmentForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_shifting.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_addLeaveSetting.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveRecordsForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveSetting.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_AddLicense.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_licenseInfoForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Properties.Resources.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.GenerateResource.cache
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfoInputs.cache
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfo.cs
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CoreCompileInputs.cache
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CopyComplete
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\refint\HRIS.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll

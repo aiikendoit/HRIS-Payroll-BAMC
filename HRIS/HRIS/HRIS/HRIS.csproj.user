@@ -28,6 +28,12 @@
     <Compile Update="Forms\Employee\emp_workassignment.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Employee\Leaves\emp_addLeaveSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Employee\Leaves\emp_leaveRecordsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Employee\Leaves\emp_leaveSetting.cs">
       <SubType>Form</SubType>
     </Compile>

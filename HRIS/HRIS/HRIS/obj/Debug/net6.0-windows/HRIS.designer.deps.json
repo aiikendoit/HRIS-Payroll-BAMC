@@ -13,6 +13,14 @@
             "fileVersion": "6.3.0.0"
           }
         }
+      },
+      "MaterialSkin.2.RTL/2.3.1.1": {
+        "runtime": {
+          "lib/net5.0-windows7.0/MaterialSkin.dll": {
+            "assemblyVersion": "2.3.1.1",
+            "fileVersion": "2.3.1.1"
+          }
+        }
       }
     }
   },
@@ -23,6 +31,13 @@
       "sha512": "sha512-3/Fb0N04yYK8An07oox5ISlUyNgsnWildHfoP69uqTEOsemQemRyciphMkXZOcdBupjUD+lVsRE3FqG41/dzPA==",
       "path": "fontawesome.sharp/6.3.0",
       "hashPath": "fontawesome.sharp.6.3.0.nupkg.sha512"
+    },
+    "MaterialSkin.2.RTL/2.3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+mAOOWqXsAxvRX4z3kFQhnl3vWiZ1e58UISjkJ31zZIX7Ujkq0BuWmsfgB0jC5ztKnJ7xyN76abmopaEHzvwkA==",
+      "path": "materialskin.2.rtl/2.3.1.1",
+      "hashPath": "materialskin.2.rtl.2.3.1.1.nupkg.sha512"
     }
   }
 }

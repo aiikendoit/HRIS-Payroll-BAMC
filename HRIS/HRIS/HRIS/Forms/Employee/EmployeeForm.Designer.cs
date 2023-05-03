@@ -40,10 +40,12 @@
             dgrid_employee = new DataGridView();
             panel1 = new Panel();
             label1 = new Label();
+            panel2 = new Panel();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgrid_employee).BeginInit();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -134,12 +136,13 @@
             iconButton4.Location = new Point(3, 3);
             iconButton4.Margin = new Padding(3, 3, 1, 3);
             iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(81, 30);
+            iconButton4.Size = new Size(73, 30);
             iconButton4.TabIndex = 4;
             iconButton4.Text = "New";
             iconButton4.TextAlign = ContentAlignment.MiddleLeft;
             iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton4.UseVisualStyleBackColor = false;
+            iconButton4.Click += iconButton4_Click;
             // 
             // iconButton3
             // 
@@ -151,10 +154,10 @@
             iconButton3.IconColor = Color.White;
             iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton3.IconSize = 20;
-            iconButton3.Location = new Point(86, 3);
+            iconButton3.Location = new Point(78, 3);
             iconButton3.Margin = new Padding(1, 3, 1, 3);
             iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(81, 30);
+            iconButton3.Size = new Size(73, 30);
             iconButton3.TabIndex = 5;
             iconButton3.Text = "Edit";
             iconButton3.TextAlign = ContentAlignment.MiddleLeft;
@@ -171,10 +174,10 @@
             iconButton5.IconColor = Color.White;
             iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton5.IconSize = 20;
-            iconButton5.Location = new Point(169, 3);
+            iconButton5.Location = new Point(153, 3);
             iconButton5.Margin = new Padding(1, 3, 1, 3);
             iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(81, 30);
+            iconButton5.Size = new Size(73, 30);
             iconButton5.TabIndex = 6;
             iconButton5.Text = "View";
             iconButton5.TextAlign = ContentAlignment.MiddleLeft;
@@ -193,10 +196,10 @@
             dgrid_employee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_employee.ColumnHeadersHeight = 50;
             dgrid_employee.Dock = DockStyle.Fill;
-            dgrid_employee.Location = new Point(5, 76);
+            dgrid_employee.Location = new Point(2, 0);
             dgrid_employee.Name = "dgrid_employee";
             dgrid_employee.RowTemplate.Height = 25;
-            dgrid_employee.Size = new Size(1086, 542);
+            dgrid_employee.Size = new Size(1084, 542);
             dgrid_employee.TabIndex = 4;
             // 
             // panel1
@@ -218,13 +221,23 @@
             label1.TabIndex = 0;
             label1.Text = "Total record(s): 0";
             // 
+            // panel2
+            // 
+            panel2.Controls.Add(dgrid_employee);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(5, 76);
+            panel2.Name = "panel2";
+            panel2.Padding = new Padding(2, 0, 0, 0);
+            panel2.Size = new Size(1086, 542);
+            panel2.TabIndex = 6;
+            // 
             // EmployeeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(139, 215, 231);
             ClientSize = new Size(1096, 650);
-            Controls.Add(dgrid_employee);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(flowLayoutPanel2);
             Controls.Add(flowLayoutPanel1);
@@ -239,6 +252,7 @@
             ((System.ComponentModel.ISupportInitialize)dgrid_employee).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -255,5 +269,6 @@
         private DataGridView dgrid_employee;
         private Panel panel1;
         private Label label1;
+        private Panel panel2;
     }
 }

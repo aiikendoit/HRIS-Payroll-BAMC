@@ -52,5 +52,10 @@ namespace HRIS.Forms.Employee
 
         }
 
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            EmployeeRegistration employeeRegistration = new EmployeeRegistration();
+            employeeRegistration.ShowDialog();
+        }
     }
 }

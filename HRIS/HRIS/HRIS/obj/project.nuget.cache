@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "LWe06evvMzDxQTxj/859o4dzKVz36defZisAj24RXn0MBKR7tIpQqxTVlq4boYn/utVQN5A9TkUD4Hm42vRTtw==",
+  "dgSpecHash": "agbiRA5JEEwqc623elteZYX8tjmb6XOgthygD5T9MErPJAv7fJC3YkZ3nSmRVpyN4xcg6MtWrrjYS3OjyXNbSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+  "projectFilePath": "D:\\James System\\2023\\HRIS+Payroll\\07 HRIS - May 03,2023\\HRIS\\HRIS\\HRIS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\KIsrael\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+    "C:\\Users\\ITSSupport\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
+    "C:\\Users\\ITSSupport\\.nuget\\packages\\materialskin.2.rtl\\2.3.1.1\\materialskin.2.rtl.2.3.1.1.nupkg.sha512"
   ],
   "logs": []
 }

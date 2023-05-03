@@ -424,7 +424,7 @@
             iconButton3.TextAlign = ContentAlignment.MiddleLeft;
             iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton3.UseVisualStyleBackColor = false;
-            iconButton3.Click += _Activatebutton;
+            iconButton3.Click += iconButton3_Click;
             iconButton3.MouseHover += _MouseHover_;
             // 
             // btn_shifting

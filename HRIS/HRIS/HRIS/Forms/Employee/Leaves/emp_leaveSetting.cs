@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HRIS.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,18 @@ namespace HRIS.Forms.Employee.Leaves
         public emp_leaveSetting()
         {
             InitializeComponent();
+            UniversalStatic.customDatagrid(dgrid_leavesetting);
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            emp_addLeaveSetting emp_AddLeaveSetting = new emp_addLeaveSetting();
+            emp_AddLeaveSetting.ShowDialog();
         }
     }
 }

@@ -29,5 +29,10 @@ namespace HRIS.Forms.Employee.Leaves
             emp_addLeaveSetting emp_AddLeaveSetting = new emp_addLeaveSetting();
             emp_AddLeaveSetting.ShowDialog();
         }
+
+        private void dgrid_leavesetting_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

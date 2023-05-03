@@ -34,12 +34,7 @@
             label2 = new Label();
             label1 = new Label();
             panel1 = new Panel();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
             ID = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
             textBox1 = new TextBox();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             iconButton2 = new FontAwesome.Sharp.IconButton();
@@ -48,8 +43,13 @@
             iconButton3 = new FontAwesome.Sharp.IconButton();
             iconButton5 = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel2 = new FlowLayoutPanel();
-            Column1 = new DataGridViewTextBoxColumn();
             dgrid_leavesetting = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -111,35 +111,10 @@
             panel1.Size = new Size(800, 27);
             panel1.TabIndex = 24;
             // 
-            // Column6
-            // 
-            Column6.HeaderText = "Remarks";
-            Column6.Name = "Column6";
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "End date";
-            Column5.Name = "Column5";
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Start date";
-            Column4.Name = "Column4";
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Status";
-            Column3.Name = "Column3";
-            // 
             // ID
             // 
             ID.HeaderText = "ID";
             ID.Name = "ID";
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Employment type";
-            Column2.Name = "Column2";
             // 
             // textBox1
             // 
@@ -277,11 +252,6 @@
             flowLayoutPanel2.Size = new Size(800, 36);
             flowLayoutPanel2.TabIndex = 22;
             // 
-            // Column1
-            // 
-            Column1.HeaderText = "ID";
-            Column1.Name = "Column1";
-            // 
             // dgrid_leavesetting
             // 
             dgrid_leavesetting.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -296,11 +266,42 @@
             dgrid_leavesetting.ColumnHeadersHeight = 50;
             dgrid_leavesetting.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
             dgrid_leavesetting.Dock = DockStyle.Fill;
-            dgrid_leavesetting.Location = new Point(0, 0);
+            dgrid_leavesetting.Location = new Point(0, 111);
             dgrid_leavesetting.Name = "dgrid_leavesetting";
             dgrid_leavesetting.RowTemplate.Height = 25;
-            dgrid_leavesetting.Size = new Size(800, 450);
+            dgrid_leavesetting.Size = new Size(800, 339);
             dgrid_leavesetting.TabIndex = 23;
+            dgrid_leavesetting.CellContentClick += dgrid_leavesetting_CellContentClick;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "ID";
+            Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Leave Type";
+            Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Days per Year";
+            Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Remarsk";
+            Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Remaining Days";
+            Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            Column6.HeaderText = "Effective Date";
+            Column6.Name = "Column6";
             // 
             // emp_leaveSetting
             // 
@@ -309,10 +310,10 @@
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
+            Controls.Add(dgrid_leavesetting);
             Controls.Add(flowLayoutPanel2);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel2);
-            Controls.Add(dgrid_leavesetting);
             Name = "emp_leaveSetting";
             Text = "emp_leaveSetting";
             panel2.ResumeLayout(false);
@@ -335,12 +336,7 @@
         private Label label2;
         private Label label1;
         private Panel panel1;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn ID;
-        private DataGridViewTextBoxColumn Column2;
         private TextBox textBox1;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
@@ -349,7 +345,12 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton5;
         private FlowLayoutPanel flowLayoutPanel2;
-        private DataGridViewTextBoxColumn Column1;
         private DataGridView dgrid_leavesetting;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column6;
     }
 }

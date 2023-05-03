@@ -398,7 +398,7 @@
             iconButton4.TextAlign = ContentAlignment.MiddleLeft;
             iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton4.UseVisualStyleBackColor = false;
-            iconButton4.Click += _Activatebutton;
+            iconButton4.Click += iconButton4_Click;
             iconButton4.MouseHover += _MouseHover_;
             // 
             // iconButton3

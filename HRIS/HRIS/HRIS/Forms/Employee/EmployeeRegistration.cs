@@ -212,5 +212,11 @@ namespace HRIS.Forms.Employee
             activatebutton(sender, ColorPalette.color5);
             openchildform(new emp_leaveSetting());
         }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new emp_leaveRecordsForm());
+        }
     }
 }

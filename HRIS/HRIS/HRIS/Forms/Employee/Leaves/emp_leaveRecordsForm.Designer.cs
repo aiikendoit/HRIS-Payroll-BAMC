@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            dgrid_employment = new DataGridView();
+            dgrid_leaverecords = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -50,7 +50,7 @@
             label2 = new Label();
             panel2 = new Panel();
             flowLayoutPanel2 = new FlowLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)dgrid_employment).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgrid_leaverecords).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
@@ -58,9 +58,9 @@
             flowLayoutPanel2.SuspendLayout();
             SuspendLayout();
             // 
-            // dgrid_employment
+            // dgrid_leaverecords
             // 
-            dgrid_employment.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgrid_leaverecords.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.IndianRed;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -68,15 +68,15 @@
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgrid_employment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgrid_employment.ColumnHeadersHeight = 50;
-            dgrid_employment.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
-            dgrid_employment.Dock = DockStyle.Fill;
-            dgrid_employment.Location = new Point(0, 111);
-            dgrid_employment.Name = "dgrid_employment";
-            dgrid_employment.RowTemplate.Height = 25;
-            dgrid_employment.Size = new Size(800, 312);
-            dgrid_employment.TabIndex = 28;
+            dgrid_leaverecords.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgrid_leaverecords.ColumnHeadersHeight = 50;
+            dgrid_leaverecords.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
+            dgrid_leaverecords.Dock = DockStyle.Fill;
+            dgrid_leaverecords.Location = new Point(0, 111);
+            dgrid_leaverecords.Name = "dgrid_leaverecords";
+            dgrid_leaverecords.RowTemplate.Height = 25;
+            dgrid_leaverecords.Size = new Size(800, 312);
+            dgrid_leaverecords.TabIndex = 28;
             // 
             // Column1
             // 
@@ -305,14 +305,15 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dgrid_employment);
+            Controls.Add(dgrid_leaverecords);
             Controls.Add(flowLayoutPanel2);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Name = "emp_leaveRecordsForm";
             Text = "emp_leaveRecordsForm";
-            ((System.ComponentModel.ISupportInitialize)dgrid_employment).EndInit();
+            Load += emp_leaveRecordsForm_Load;
+            ((System.ComponentModel.ISupportInitialize)dgrid_leaverecords).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
             panel1.ResumeLayout(false);
@@ -327,7 +328,7 @@
 
         #endregion
 
-        private DataGridView dgrid_employment;
+        private DataGridView dgrid_leaverecords;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;

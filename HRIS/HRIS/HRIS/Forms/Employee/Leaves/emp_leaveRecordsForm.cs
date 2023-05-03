@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HRIS.Class;
 
 namespace HRIS.Forms.Employee.Leaves
 {
@@ -15,6 +16,12 @@ namespace HRIS.Forms.Employee.Leaves
         public emp_leaveRecordsForm()
         {
             InitializeComponent();
+            UniversalStatic.customDatagrid(dgrid_leaverecords);
+        }
+
+        private void emp_leaveRecordsForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

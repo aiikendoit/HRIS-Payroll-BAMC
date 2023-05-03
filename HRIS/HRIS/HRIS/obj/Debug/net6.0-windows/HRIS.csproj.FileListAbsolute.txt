@@ -43,14 +43,233 @@ D:\James System\2023\HRIS+Payroll\01 HRIS - April 19,2023\HRIS\HRIS\obj\Debug\ne
 D:\James System\2023\HRIS+Payroll\01 HRIS - April 19,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
 D:\James System\2023\HRIS+Payroll\01 HRIS - April 19,2023\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
 D:\James System\2023\HRIS+Payroll\01 HRIS - April 19,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Properties.Resources.resources
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.GenerateResource.cache
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfoInputs.cache
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfo.cs
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CoreCompileInputs.cache
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CopyComplete
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\refint\HRIS.dll
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
+D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Properties.Resources.resources
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.GenerateResource.cache
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfoInputs.cache
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfo.cs
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CoreCompileInputs.cache
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CopyComplete
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\refint\HRIS.dll
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\bin\Debug\net6.0-windows\MaterialSkin.dll
+D:\James System\2023\HRIS+Payroll\03 HRIS - April 26,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeRegistration.resources
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Debug\net6.0-windows\MaterialSkin.dll
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeRegistration.resources
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Properties.Resources.resources
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.GenerateResource.cache
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfoInputs.cache
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfo.cs
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CoreCompileInputs.cache
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CopyComplete
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\refint\HRIS.dll
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_EducationalAttainment.resources
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_shifting.resources
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\bin\Debug\net6.0-windows\MaterialSkin.dll
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeRegistration.resources
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_EducationalAttainment.resources
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_shifting.resources
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Properties.Resources.resources
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.GenerateResource.cache
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfoInputs.cache
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfo.cs
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CoreCompileInputs.cache
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CopyComplete
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\refint\HRIS.dll
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
+D:\James System\2023\HRIS+Payroll\05 HRIS - April 30,2023\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\bin\Debug\net6.0-windows\MaterialSkin.dll
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeRegistration.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_EducationalAttainment.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_shifting.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Properties.Resources.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.GenerateResource.cache
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfoInputs.cache
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfo.cs
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CoreCompileInputs.cache
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CopyComplete
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\refint\HRIS.dll
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Education.emp_AddEducationalAttainment.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_licenseInfoForm.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_employmentForm.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_AddLicense.resources
+D:\James System\2023\HRIS+Payroll\06 HRIS - May 02,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_AddEmployment.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\bin\Debug\net6.0-windows\MaterialSkin.dll
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Education.emp_AddEducationalAttainment.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_EducationalAttainment.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeRegistration.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_AddEmployment.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_employmentForm.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_shifting.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_AddLicense.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_licenseInfoForm.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Properties.Resources.resources
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.GenerateResource.cache
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfoInputs.cache
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfo.cs
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CoreCompileInputs.cache
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CopyComplete
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\refint\HRIS.dll
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
+D:\James System\2023\HRIS+Payroll\07 HRIS - May 03,2023\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\MaterialSkin.dll
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Education.emp_AddEducationalAttainment.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_EducationalAttainment.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeRegistration.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_AddEmployment.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_employmentForm.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_shifting.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_addLeaveSetting.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveRecordsForm.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveSetting.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_AddLicense.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_licenseInfoForm.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Properties.Resources.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.GenerateResource.cache
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfoInputs.cache
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfo.cs
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CoreCompileInputs.cache
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CopyComplete
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.dll
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\refint\HRIS.dll
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\MaterialSkin.dll
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Education.emp_AddEducationalAttainment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_EducationalAttainment.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeRegistration.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_AddEmployment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_employmentForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_shifting.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_addLeaveSetting.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveRecordsForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveSetting.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_AddLicense.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_licenseInfoForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources

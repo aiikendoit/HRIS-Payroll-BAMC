@@ -48,6 +48,10 @@
             "FontAwesome.Sharp": {
               "target": "Package",
               "version": "[6.3.0, )"
+            },
+            "MaterialSkin.2.RTL": {
+              "target": "Package",
+              "version": "[2.3.1.1, )"
             }
           },
           "imports": [

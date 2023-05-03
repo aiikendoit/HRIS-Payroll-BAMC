@@ -1,10 +1,19 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "hpRVhhNIwYjjUUzUmacDiHhy2B7dwjvlAwrrahtICYkJfpoz/o6k6KtSgkiIOdkHi/CFbSlJPVpZ/jUl72aAvA==",
+=======
+  "dgSpecHash": "rmPsaHgJMObwF/QL60vnigy0X9b0dIMlYlZpQANl+9guf+utnt8gyUjfkYLKOYsvlU2ln4lH095o+x2pqoGp2w==",
+>>>>>>> 4ef63423dbe84d28e2513aaa44f155ecd64dc1e6
   "success": true,
   "projectFilePath": "C:\\Users\\ITSSupport\\Music\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
   "expectedPackageFiles": [
+<<<<<<< HEAD
     "C:\\Users\\ITSSupport\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+=======
+    "C:\\Users\\KIsrael\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
+    "C:\\Users\\KIsrael\\.nuget\\packages\\materialskin.2.rtl\\2.3.1.1\\materialskin.2.rtl.2.3.1.1.nupkg.sha512"
+>>>>>>> 4ef63423dbe84d28e2513aaa44f155ecd64dc1e6
   ],
   "logs": []
 }

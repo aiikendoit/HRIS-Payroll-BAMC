@@ -182,6 +182,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(421, 265);
             Controls.Add(textBox2);
             Controls.Add(panel2);
@@ -197,6 +198,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "emp_addLeaveSetting";
+            StartPosition = FormStartPosition.CenterParent;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();

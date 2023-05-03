@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
@@ -49,13 +49,13 @@
             iconButton5 = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel2 = new FlowLayoutPanel();
             Column1 = new DataGridViewTextBoxColumn();
-            dgrid_employment = new DataGridView();
+            dgrid_leavesetting = new DataGridView();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgrid_employment).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgrid_leavesetting).BeginInit();
             SuspendLayout();
             // 
             // panel2
@@ -223,6 +223,7 @@
             iconButton4.TextAlign = ContentAlignment.MiddleLeft;
             iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton4.UseVisualStyleBackColor = false;
+            iconButton4.Click += iconButton4_Click;
             // 
             // iconButton3
             // 
@@ -281,36 +282,37 @@
             Column1.HeaderText = "ID";
             Column1.Name = "Column1";
             // 
-            // dgrid_employment
+            // dgrid_leavesetting
             // 
-            dgrid_employment.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.IndianRed;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            dgrid_employment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            dgrid_employment.ColumnHeadersHeight = 50;
-            dgrid_employment.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
-            dgrid_employment.Dock = DockStyle.Fill;
-            dgrid_employment.Location = new Point(0, 0);
-            dgrid_employment.Name = "dgrid_employment";
-            dgrid_employment.RowTemplate.Height = 25;
-            dgrid_employment.Size = new Size(800, 450);
-            dgrid_employment.TabIndex = 23;
+            dgrid_leavesetting.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.IndianRed;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgrid_leavesetting.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgrid_leavesetting.ColumnHeadersHeight = 50;
+            dgrid_leavesetting.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
+            dgrid_leavesetting.Dock = DockStyle.Fill;
+            dgrid_leavesetting.Location = new Point(0, 0);
+            dgrid_leavesetting.Name = "dgrid_leavesetting";
+            dgrid_leavesetting.RowTemplate.Height = 25;
+            dgrid_leavesetting.Size = new Size(800, 450);
+            dgrid_leavesetting.TabIndex = 23;
             // 
             // emp_leaveSetting
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(flowLayoutPanel2);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel2);
-            Controls.Add(dgrid_employment);
+            Controls.Add(dgrid_leavesetting);
             Name = "emp_leaveSetting";
             Text = "emp_leaveSetting";
             panel2.ResumeLayout(false);
@@ -321,7 +323,7 @@
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
             flowLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgrid_employment).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgrid_leavesetting).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -348,6 +350,6 @@
         private FontAwesome.Sharp.IconButton iconButton5;
         private FlowLayoutPanel flowLayoutPanel2;
         private DataGridViewTextBoxColumn Column1;
-        private DataGridView dgrid_employment;
+        private DataGridView dgrid_leavesetting;
     }
 }

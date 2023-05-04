@@ -346,7 +346,7 @@
             iconButton6.TextAlign = ContentAlignment.MiddleLeft;
             iconButton6.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton6.UseVisualStyleBackColor = false;
-            iconButton6.Click += _Activatebutton;
+            iconButton6.Click += iconButton6_Click;
             iconButton6.MouseHover += _MouseHover_;
             // 
             // iconButton2
@@ -372,7 +372,7 @@
             iconButton2.TextAlign = ContentAlignment.MiddleLeft;
             iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton2.UseVisualStyleBackColor = false;
-            iconButton2.Click += _Activatebutton;
+            iconButton2.Click += iconButton2_Click;
             iconButton2.MouseHover += _MouseHover_;
             // 
             // iconButton4

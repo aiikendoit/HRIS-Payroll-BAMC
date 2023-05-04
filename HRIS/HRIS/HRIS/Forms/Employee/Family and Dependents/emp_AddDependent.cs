@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HRIS.Forms.Employee
+namespace HRIS.Forms.Employee.Family_and_Dependents
 {
-    public partial class emp_workassignment : Form
+    public partial class emp_AddDependent : Form
     {
-        public emp_workassignment()
+        public emp_AddDependent()
         {
             InitializeComponent();
         }

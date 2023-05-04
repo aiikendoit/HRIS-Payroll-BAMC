@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             flowLayoutPanel2 = new FlowLayoutPanel();
             iconButton4 = new FontAwesome.Sharp.IconButton();
             iconButton3 = new FontAwesome.Sharp.IconButton();
@@ -40,14 +40,22 @@
             textBox1 = new TextBox();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             iconButton2 = new FontAwesome.Sharp.IconButton();
-            dgrid_employee = new DataGridView();
+            dgrid_workassignment = new DataGridView();
             panel1 = new Panel();
             label1 = new Label();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            Column7 = new DataGridViewTextBoxColumn();
+            Column8 = new DataGridViewTextBoxColumn();
             flowLayoutPanel2.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgrid_employee).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgrid_workassignment).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -82,6 +90,7 @@
             iconButton4.TextAlign = ContentAlignment.MiddleLeft;
             iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton4.UseVisualStyleBackColor = false;
+            iconButton4.Click += iconButton4_Click;
             // 
             // iconButton3
             // 
@@ -219,23 +228,24 @@
             iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton2.UseVisualStyleBackColor = false;
             // 
-            // dgrid_employee
+            // dgrid_workassignment
             // 
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.IndianRed;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgrid_employee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgrid_employee.ColumnHeadersHeight = 50;
-            dgrid_employee.Dock = DockStyle.Fill;
-            dgrid_employee.Location = new Point(0, 0);
-            dgrid_employee.Name = "dgrid_employee";
-            dgrid_employee.RowTemplate.Height = 25;
-            dgrid_employee.Size = new Size(800, 423);
-            dgrid_employee.TabIndex = 18;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.IndianRed;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgrid_workassignment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgrid_workassignment.ColumnHeadersHeight = 50;
+            dgrid_workassignment.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8 });
+            dgrid_workassignment.Dock = DockStyle.Fill;
+            dgrid_workassignment.Location = new Point(0, 114);
+            dgrid_workassignment.Name = "dgrid_workassignment";
+            dgrid_workassignment.RowTemplate.Height = 25;
+            dgrid_workassignment.Size = new Size(800, 309);
+            dgrid_workassignment.TabIndex = 18;
             // 
             // panel1
             // 
@@ -256,26 +266,67 @@
             label1.TabIndex = 0;
             label1.Text = "Total record(s): 0";
             // 
+            // Column1
+            // 
+            Column1.HeaderText = "ID";
+            Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Sub-Department";
+            Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Position";
+            Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Job Description";
+            Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Responsibilities";
+            Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            Column6.HeaderText = "Scope";
+            Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            Column7.HeaderText = "Start date";
+            Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            Column8.HeaderText = "End date";
+            Column8.Name = "Column8";
+            // 
             // emp_workassignment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
+            Controls.Add(dgrid_workassignment);
             Controls.Add(flowLayoutPanel2);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel2);
-            Controls.Add(dgrid_employee);
             Controls.Add(panel1);
             Name = "emp_workassignment";
             Text = "emp_workassignment";
+            Load += emp_workassignment_Load;
             flowLayoutPanel2.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgrid_employee).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgrid_workassignment).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -295,8 +346,16 @@
         private TextBox textBox1;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
-        private DataGridView dgrid_employee;
+        private DataGridView dgrid_workassignment;
         private Panel panel1;
         private Label label1;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column6;
+        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn Column8;
     }
 }

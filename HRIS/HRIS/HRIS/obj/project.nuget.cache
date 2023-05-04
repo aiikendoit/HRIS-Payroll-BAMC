@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "rmPsaHgJMObwF/QL60vnigy0X9b0dIMlYlZpQANl+9guf+utnt8gyUjfkYLKOYsvlU2ln4lH095o+x2pqoGp2w==",
+=======
+  "dgSpecHash": "gO5Iyto+5bKDOoXl2GwzxcxwhGCslddJP0P6QEmL0FeH+3Rw8psd+9UlwlPbzzwJW1poY2wGK8bV/xiF6HcH0w==",
+>>>>>>> be17babff11e12c0a34b87cd4140659631f1c590
   "success": true,
   "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
   "expectedPackageFiles": [

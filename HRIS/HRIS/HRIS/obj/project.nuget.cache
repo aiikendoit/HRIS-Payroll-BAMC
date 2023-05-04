@@ -1,15 +1,18 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "rmPsaHgJMObwF/QL60vnigy0X9b0dIMlYlZpQANl+9guf+utnt8gyUjfkYLKOYsvlU2ln4lH095o+x2pqoGp2w==",
-=======
-  "dgSpecHash": "gO5Iyto+5bKDOoXl2GwzxcxwhGCslddJP0P6QEmL0FeH+3Rw8psd+9UlwlPbzzwJW1poY2wGK8bV/xiF6HcH0w==",
->>>>>>> be17babff11e12c0a34b87cd4140659631f1c590
   "success": true,
   "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KIsrael\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
     "C:\\Users\\KIsrael\\.nuget\\packages\\materialskin.2.rtl\\2.3.1.1\\materialskin.2.rtl.2.3.1.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

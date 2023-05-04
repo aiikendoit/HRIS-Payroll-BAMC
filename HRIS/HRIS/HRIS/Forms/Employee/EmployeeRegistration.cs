@@ -1,8 +1,10 @@
 ﻿using FontAwesome.Sharp;
 using HRIS.Class;
 using HRIS.Forms.Employee.Employment;
+using HRIS.Forms.Employee.Family_and_Dependents;
 using HRIS.Forms.Employee.Leaves;
 using HRIS.Forms.Employee.License_information;
+using HRIS.Forms.Employee.Seminars;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -217,6 +219,18 @@ namespace HRIS.Forms.Employee
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new emp_leaveRecordsForm());
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new emp_FamilyDependentsForm());
+        }
+
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new emp_SeminarForm());
         }
     }
 }

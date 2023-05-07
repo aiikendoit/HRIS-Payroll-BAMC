@@ -445,8 +445,8 @@
             btn_shifting.Padding = new Padding(10, 0, 0, 0);
             btn_shifting.Size = new Size(156, 35);
             btn_shifting.TabIndex = 24;
-            btn_shifting.Tag = "Shifting";
-            btn_shifting.Text = "Shifting";
+            btn_shifting.Tag = "Schedule";
+            btn_shifting.Text = "Schedule";
             btn_shifting.TextAlign = ContentAlignment.MiddleLeft;
             btn_shifting.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_shifting.UseVisualStyleBackColor = false;

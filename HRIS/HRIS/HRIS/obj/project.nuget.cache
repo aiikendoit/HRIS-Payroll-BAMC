@@ -7,16 +7,5 @@
     "C:\\Users\\KIsrael\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
     "C:\\Users\\KIsrael\\.nuget\\packages\\materialskin.2.rtl\\2.3.1.1\\materialskin.2.rtl.2.3.1.1.nupkg.sha512"
   ],
-<<<<<<< HEAD
   "logs": []
-=======
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
->>>>>>> 1dfaa480d53e6035f69da370812477dc3c6084e4
 }

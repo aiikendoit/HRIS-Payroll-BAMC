@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="Forms\Employee\Disciplinary Action\emp_DisciplinaryActionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Employee\Education\emp_AddEducationalAttainment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -22,7 +25,7 @@
     <Compile Update="Forms\Employee\Employment\emp_employmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\emp_shifting.cs">
+    <Compile Update="Forms\Employee\Duty Schedule\emp_shifting.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Employee\Family and Dependents\emp_AddDependent.cs">
@@ -31,7 +34,13 @@
     <Compile Update="Forms\Employee\Family and Dependents\emp_FamilyDependentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Employee\Salary Setting\emp_SalarySetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Employee\Seminars\emp_SeminarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Employee\Training\emp_TrainingForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Employee\Work Assignment\emp_AddworkAssignment.cs">

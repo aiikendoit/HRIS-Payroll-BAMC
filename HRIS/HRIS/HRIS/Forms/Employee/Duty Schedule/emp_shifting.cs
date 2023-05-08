@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HRIS.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace HRIS.Forms.Employee
         public emp_shifting()
         {
             InitializeComponent();
+            UniversalStatic.customDatagrid(dgrid_employee);
+        }
+
+        private void emp_shifting_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

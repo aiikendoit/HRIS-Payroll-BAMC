@@ -1,10 +1,13 @@
 ﻿using FontAwesome.Sharp;
 using HRIS.Class;
+using HRIS.Forms.Employee.Disciplinary_Action;
 using HRIS.Forms.Employee.Employment;
 using HRIS.Forms.Employee.Family_and_Dependents;
 using HRIS.Forms.Employee.Leaves;
 using HRIS.Forms.Employee.License_information;
+using HRIS.Forms.Employee.Salary_Setting;
 using HRIS.Forms.Employee.Seminars;
+using HRIS.Forms.Employee.Training;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -194,7 +197,6 @@ namespace HRIS.Forms.Employee
         private void _Activatebutton(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-
         }
 
         private void iconButton5_Click(object sender, EventArgs e)
@@ -231,6 +233,24 @@ namespace HRIS.Forms.Employee
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new emp_SeminarForm());
+        }
+
+        private void _training_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new emp_TrainingForm());
+        }
+
+        private void _salarysetting_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new emp_SalarySetting());
+        }
+
+        private void _DisciplinaryAction_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new emp_DisciplinaryActionForm());
         }
     }
 }

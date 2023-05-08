@@ -253,7 +253,7 @@
             iconButton9.FlatAppearance.BorderSize = 0;
             iconButton9.FlatStyle = FlatStyle.Flat;
             iconButton9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton9.IconChar = FontAwesome.Sharp.IconChar.ScaleUnbalancedFlip;
+            iconButton9.IconChar = FontAwesome.Sharp.IconChar.BalanceScale;
             iconButton9.IconColor = Color.White;
             iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton9.IconSize = 25;
@@ -268,7 +268,7 @@
             iconButton9.TextAlign = ContentAlignment.MiddleLeft;
             iconButton9.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton9.UseVisualStyleBackColor = false;
-            iconButton9.Click += _Activatebutton;
+            iconButton9.Click += _DisciplinaryAction_Click;
             iconButton9.MouseHover += _MouseHover_;
             // 
             // iconButton8
@@ -294,7 +294,7 @@
             iconButton8.TextAlign = ContentAlignment.MiddleLeft;
             iconButton8.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton8.UseVisualStyleBackColor = false;
-            iconButton8.Click += _Activatebutton;
+            iconButton8.Click += _salarysetting_Click;
             iconButton8.MouseHover += _MouseHover_;
             // 
             // iconButton7
@@ -305,7 +305,7 @@
             iconButton7.FlatAppearance.BorderSize = 0;
             iconButton7.FlatStyle = FlatStyle.Flat;
             iconButton7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton7.IconChar = FontAwesome.Sharp.IconChar.PersonChalkboard;
+            iconButton7.IconChar = FontAwesome.Sharp.IconChar.HandHoldingMedical;
             iconButton7.IconColor = Color.White;
             iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton7.IconSize = 25;
@@ -320,7 +320,7 @@
             iconButton7.TextAlign = ContentAlignment.MiddleLeft;
             iconButton7.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton7.UseVisualStyleBackColor = false;
-            iconButton7.Click += _Activatebutton;
+            iconButton7.Click += _training_Click;
             iconButton7.MouseHover += _MouseHover_;
             // 
             // iconButton6
@@ -331,7 +331,7 @@
             iconButton6.FlatAppearance.BorderSize = 0;
             iconButton6.FlatStyle = FlatStyle.Flat;
             iconButton6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton6.IconChar = FontAwesome.Sharp.IconChar.HandshakeAlt;
+            iconButton6.IconChar = FontAwesome.Sharp.IconChar.PersonChalkboard;
             iconButton6.IconColor = Color.White;
             iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton6.IconSize = 25;
@@ -445,8 +445,8 @@
             btn_shifting.Padding = new Padding(10, 0, 0, 0);
             btn_shifting.Size = new Size(156, 35);
             btn_shifting.TabIndex = 24;
-            btn_shifting.Tag = "Shifting";
-            btn_shifting.Text = "Shifting";
+            btn_shifting.Tag = "Duty Schedule";
+            btn_shifting.Text = "Duty Schedule";
             btn_shifting.TextAlign = ContentAlignment.MiddleLeft;
             btn_shifting.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_shifting.UseVisualStyleBackColor = false;

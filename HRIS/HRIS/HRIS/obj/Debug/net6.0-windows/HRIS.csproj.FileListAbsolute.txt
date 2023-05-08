@@ -289,7 +289,13 @@ C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\H
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Family_and_Dependents.emp_FamilyDependentsForm.resources
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Family_and_Dependents.emp_AddDependent.resources
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Seminars.emp_SeminarForm.resources
+<<<<<<< HEAD
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Family_and_Dependents.emp_AddDependent.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Family_and_Dependents.emp_FamilyDependentsForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Seminars.emp_SeminarForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Work_Assignment.emp_AddworkAssignment.resources
+=======
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Training.emp_TrainingForm.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
+>>>>>>> d42d4d46b94061e492ca5477ad206584d5987b25

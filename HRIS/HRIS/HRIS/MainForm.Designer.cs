@@ -43,6 +43,10 @@ namespace HRIS
             btn_reportmanager = new FontAwesome.Sharp.IconButton();
             btn_maintenance = new FontAwesome.Sharp.IconButton();
             label2 = new Label();
+            btn_attendance = new FontAwesome.Sharp.IconButton();
+            btn_training = new FontAwesome.Sharp.IconButton();
+            btn_seminar = new FontAwesome.Sharp.IconButton();
+            label15 = new Label();
             btn_leaves = new FontAwesome.Sharp.IconButton();
             btn_dutyschedule = new FontAwesome.Sharp.IconButton();
             btn_doctors = new FontAwesome.Sharp.IconButton();
@@ -188,6 +192,10 @@ namespace HRIS
             panel1.Controls.Add(btn_reportmanager);
             panel1.Controls.Add(btn_maintenance);
             panel1.Controls.Add(label2);
+            panel1.Controls.Add(btn_attendance);
+            panel1.Controls.Add(btn_training);
+            panel1.Controls.Add(btn_seminar);
+            panel1.Controls.Add(label15);
             panel1.Controls.Add(btn_leaves);
             panel1.Controls.Add(btn_dutyschedule);
             panel1.Controls.Add(btn_doctors);
@@ -213,7 +221,7 @@ namespace HRIS
             btn_audittrail.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_audittrail.IconSize = 25;
             btn_audittrail.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_audittrail.Location = new Point(0, 299);
+            btn_audittrail.Location = new Point(0, 431);
             btn_audittrail.Name = "btn_audittrail";
             btn_audittrail.Padding = new Padding(10, 0, 0, 0);
             btn_audittrail.Size = new Size(199, 35);
@@ -238,7 +246,7 @@ namespace HRIS
             btn_reportmanager.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_reportmanager.IconSize = 25;
             btn_reportmanager.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_reportmanager.Location = new Point(0, 264);
+            btn_reportmanager.Location = new Point(0, 396);
             btn_reportmanager.Name = "btn_reportmanager";
             btn_reportmanager.Padding = new Padding(10, 0, 0, 0);
             btn_reportmanager.Size = new Size(199, 35);
@@ -263,7 +271,7 @@ namespace HRIS
             btn_maintenance.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_maintenance.IconSize = 25;
             btn_maintenance.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_maintenance.Location = new Point(0, 229);
+            btn_maintenance.Location = new Point(0, 361);
             btn_maintenance.Name = "btn_maintenance";
             btn_maintenance.Padding = new Padding(10, 0, 0, 0);
             btn_maintenance.Size = new Size(199, 35);
@@ -279,13 +287,100 @@ namespace HRIS
             // 
             label2.BackColor = Color.FromArgb(86, 180, 206);
             label2.Dock = DockStyle.Top;
-            label2.Location = new Point(0, 202);
+            label2.Location = new Point(0, 334);
             label2.Name = "label2";
             label2.Padding = new Padding(5, 0, 0, 0);
             label2.Size = new Size(199, 27);
             label2.TabIndex = 20;
             label2.Text = "OTHERS";
             label2.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // btn_attendance
+            // 
+            btn_attendance.BackColor = Color.FromArgb(0, 127, 152);
+            btn_attendance.Cursor = Cursors.Hand;
+            btn_attendance.Dock = DockStyle.Top;
+            btn_attendance.FlatAppearance.BorderSize = 0;
+            btn_attendance.FlatStyle = FlatStyle.Flat;
+            btn_attendance.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_attendance.IconChar = FontAwesome.Sharp.IconChar.UserCheck;
+            btn_attendance.IconColor = Color.White;
+            btn_attendance.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_attendance.IconSize = 25;
+            btn_attendance.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_attendance.Location = new Point(0, 299);
+            btn_attendance.Name = "btn_attendance";
+            btn_attendance.Padding = new Padding(10, 0, 0, 0);
+            btn_attendance.Size = new Size(199, 35);
+            btn_attendance.TabIndex = 31;
+            btn_attendance.Tag = "Attendance";
+            btn_attendance.Text = "Attendance";
+            btn_attendance.TextAlign = ContentAlignment.MiddleLeft;
+            btn_attendance.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_attendance.UseVisualStyleBackColor = false;
+            btn_attendance.Click += btn_attendance_Click;
+            // 
+            // btn_training
+            // 
+            btn_training.BackColor = Color.FromArgb(0, 127, 152);
+            btn_training.Cursor = Cursors.Hand;
+            btn_training.Dock = DockStyle.Top;
+            btn_training.FlatAppearance.BorderSize = 0;
+            btn_training.FlatStyle = FlatStyle.Flat;
+            btn_training.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_training.IconChar = FontAwesome.Sharp.IconChar.HandHoldingMedical;
+            btn_training.IconColor = Color.White;
+            btn_training.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_training.IconSize = 25;
+            btn_training.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_training.Location = new Point(0, 264);
+            btn_training.Name = "btn_training";
+            btn_training.Padding = new Padding(10, 0, 0, 0);
+            btn_training.Size = new Size(199, 35);
+            btn_training.TabIndex = 30;
+            btn_training.Tag = "Training";
+            btn_training.Text = "Training";
+            btn_training.TextAlign = ContentAlignment.MiddleLeft;
+            btn_training.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_training.UseVisualStyleBackColor = false;
+            btn_training.Click += btn_training_Click;
+            // 
+            // btn_seminar
+            // 
+            btn_seminar.BackColor = Color.FromArgb(0, 127, 152);
+            btn_seminar.Cursor = Cursors.Hand;
+            btn_seminar.Dock = DockStyle.Top;
+            btn_seminar.FlatAppearance.BorderSize = 0;
+            btn_seminar.FlatStyle = FlatStyle.Flat;
+            btn_seminar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_seminar.IconChar = FontAwesome.Sharp.IconChar.PersonChalkboard;
+            btn_seminar.IconColor = Color.White;
+            btn_seminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_seminar.IconSize = 25;
+            btn_seminar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_seminar.Location = new Point(0, 229);
+            btn_seminar.Name = "btn_seminar";
+            btn_seminar.Padding = new Padding(10, 0, 0, 0);
+            btn_seminar.Size = new Size(199, 35);
+            btn_seminar.TabIndex = 29;
+            btn_seminar.Tag = "Seminar";
+            btn_seminar.Text = "Seminar";
+            btn_seminar.TextAlign = ContentAlignment.MiddleLeft;
+            btn_seminar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_seminar.UseVisualStyleBackColor = false;
+            btn_seminar.Click += btn_seminar_Click;
+            // 
+            // label15
+            // 
+            label15.BackColor = Color.FromArgb(86, 180, 206);
+            label15.Dock = DockStyle.Top;
+            label15.Location = new Point(0, 202);
+            label15.Name = "label15";
+            label15.Padding = new Padding(5, 0, 0, 0);
+            label15.Size = new Size(199, 27);
+            label15.TabIndex = 28;
+            label15.Text = "EVENTS";
+            label15.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // btn_leaves
             // 
@@ -774,5 +869,9 @@ namespace HRIS
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Panel MainPanel;
         private JPCircularPictureBox jpCircularPictureBox2;
+        private FontAwesome.Sharp.IconButton btn_attendance;
+        private FontAwesome.Sharp.IconButton btn_training;
+        private FontAwesome.Sharp.IconButton btn_seminar;
+        private Label label15;
     }
 }

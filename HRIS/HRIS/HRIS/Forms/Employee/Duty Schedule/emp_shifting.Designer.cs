@@ -30,8 +30,6 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             flowLayoutPanel2 = new FlowLayoutPanel();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
             iconButton5 = new FontAwesome.Sharp.IconButton();
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -43,6 +41,11 @@
             dgrid_employee = new DataGridView();
             panel1 = new Panel();
             label1 = new Label();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
             flowLayoutPanel2.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
@@ -53,8 +56,6 @@
             // 
             // flowLayoutPanel2
             // 
-            flowLayoutPanel2.Controls.Add(iconButton4);
-            flowLayoutPanel2.Controls.Add(iconButton3);
             flowLayoutPanel2.Controls.Add(iconButton5);
             flowLayoutPanel2.Dock = DockStyle.Top;
             flowLayoutPanel2.Location = new Point(0, 75);
@@ -62,46 +63,6 @@
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(800, 36);
             flowLayoutPanel2.TabIndex = 12;
-            // 
-            // iconButton4
-            // 
-            iconButton4.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton4.FlatAppearance.BorderSize = 0;
-            iconButton4.FlatStyle = FlatStyle.Flat;
-            iconButton4.ForeColor = Color.White;
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
-            iconButton4.IconColor = Color.White;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.IconSize = 20;
-            iconButton4.Location = new Point(3, 3);
-            iconButton4.Margin = new Padding(3, 3, 1, 3);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(73, 30);
-            iconButton4.TabIndex = 4;
-            iconButton4.Text = "New";
-            iconButton4.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton4.UseVisualStyleBackColor = false;
-            // 
-            // iconButton3
-            // 
-            iconButton3.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton3.FlatAppearance.BorderSize = 0;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.IconSize = 20;
-            iconButton3.Location = new Point(78, 3);
-            iconButton3.Margin = new Padding(1, 3, 1, 3);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(73, 30);
-            iconButton3.TabIndex = 5;
-            iconButton3.Text = "Edit";
-            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton3.UseVisualStyleBackColor = false;
             // 
             // iconButton5
             // 
@@ -113,7 +74,7 @@
             iconButton5.IconColor = Color.White;
             iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton5.IconSize = 20;
-            iconButton5.Location = new Point(153, 3);
+            iconButton5.Location = new Point(1, 3);
             iconButton5.Margin = new Padding(1, 3, 1, 3);
             iconButton5.Name = "iconButton5";
             iconButton5.Size = new Size(73, 30);
@@ -152,9 +113,9 @@
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(50, 4);
             label2.Name = "label2";
-            label2.Size = new Size(103, 32);
+            label2.Size = new Size(178, 32);
             label2.TabIndex = 2;
-            label2.Text = "Shifting";
+            label2.Text = "Duty Schedule";
             // 
             // flowLayoutPanel1
             // 
@@ -230,11 +191,12 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_employee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_employee.ColumnHeadersHeight = 50;
+            dgrid_employee.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
             dgrid_employee.Dock = DockStyle.Fill;
-            dgrid_employee.Location = new Point(0, 75);
+            dgrid_employee.Location = new Point(0, 111);
             dgrid_employee.Name = "dgrid_employee";
             dgrid_employee.RowTemplate.Height = 25;
-            dgrid_employee.Size = new Size(800, 348);
+            dgrid_employee.Size = new Size(800, 312);
             dgrid_employee.TabIndex = 13;
             // 
             // panel1
@@ -256,19 +218,45 @@
             label1.TabIndex = 0;
             label1.Text = "Total record(s): 0";
             // 
+            // Column1
+            // 
+            Column1.HeaderText = "ID";
+            Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Shift Schedule";
+            Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Date Start";
+            Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Date End";
+            Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Remarks";
+            Column5.Name = "Column5";
+            // 
             // emp_shifting
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
-            Controls.Add(flowLayoutPanel2);
             Controls.Add(dgrid_employee);
+            Controls.Add(flowLayoutPanel2);
             Controls.Add(panel1);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel2);
             Name = "emp_shifting";
             Text = "emp_shifting";
+            Load += emp_shifting_Load;
             flowLayoutPanel2.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -285,8 +273,6 @@
         #endregion
 
         private FlowLayoutPanel flowLayoutPanel2;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton5;
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
@@ -298,5 +284,10 @@
         private DataGridView dgrid_employee;
         private Panel panel1;
         private Label label1;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
     }
 }

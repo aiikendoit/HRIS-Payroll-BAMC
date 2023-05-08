@@ -42,7 +42,7 @@ namespace HRIS
         }
         private void openchildform(Form childform)
         {
-        if (currentchildform != null)
+            if (currentchildform != null)
             {
                 currentchildform.Close();
             }
@@ -57,7 +57,7 @@ namespace HRIS
             childform.Show();
 
         }
-        
+
 
         private void Image_Logo_Click(object sender, EventArgs e)
         {
@@ -127,6 +127,21 @@ namespace HRIS
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_seminar_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+        }
+
+        private void btn_training_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+        }
+
+        private void btn_attendance_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
         }
     }
 }

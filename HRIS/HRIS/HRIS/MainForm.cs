@@ -1,5 +1,6 @@
 using FontAwesome.Sharp;
 using HRIS.Class;
+using HRIS.Forms.Doctors;
 using HRIS.Forms.Employee;
 using HRIS.Forms.Userlogin;
 using System.Net.Security;
@@ -97,6 +98,7 @@ namespace HRIS
         private void btn_doctors_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
+            openchildform(new DoctorForm());
         }
 
         private void btn_dutyschedule_Click(object sender, EventArgs e)

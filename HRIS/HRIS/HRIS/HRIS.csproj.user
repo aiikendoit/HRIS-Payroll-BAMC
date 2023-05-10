@@ -4,7 +4,16 @@
     <_LastSelectedProfileId>D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="Forms\Doctors\DoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Employee\Benefits\emp_Benefits.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Employee\Disciplinary Action\emp_DisciplinaryActionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Employee\Documents\emp_DocumentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Employee\Education\emp_AddEducationalAttainment.cs">

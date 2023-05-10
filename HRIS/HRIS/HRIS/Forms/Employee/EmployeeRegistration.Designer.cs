@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeRegistration));
             panel1 = new Panel();
-            label1 = new Label();
+            label_Headername = new Label();
             btn_sidebardrawer = new PictureBox();
             panelmenu = new Panel();
-            iconButton11 = new FontAwesome.Sharp.IconButton();
-            iconButton10 = new FontAwesome.Sharp.IconButton();
-            iconButton9 = new FontAwesome.Sharp.IconButton();
-            iconButton8 = new FontAwesome.Sharp.IconButton();
-            iconButton7 = new FontAwesome.Sharp.IconButton();
-            iconButton6 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            btn_shifting = new FontAwesome.Sharp.IconButton();
+            btn_documents = new FontAwesome.Sharp.IconButton();
+            btn_benefits = new FontAwesome.Sharp.IconButton();
+            btn_disciplinaryaction = new FontAwesome.Sharp.IconButton();
+            btn_salarysettings = new FontAwesome.Sharp.IconButton();
+            btn_tranings = new FontAwesome.Sharp.IconButton();
+            btn_seminar = new FontAwesome.Sharp.IconButton();
+            btn_dependents = new FontAwesome.Sharp.IconButton();
+            btn_leaverecords = new FontAwesome.Sharp.IconButton();
+            btn_leavesetting = new FontAwesome.Sharp.IconButton();
+            btn_dutyschedule = new FontAwesome.Sharp.IconButton();
             btn_workassignment = new FontAwesome.Sharp.IconButton();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            iconButton5 = new FontAwesome.Sharp.IconButton();
+            btn_employment = new FontAwesome.Sharp.IconButton();
+            btn_licenseinformation = new FontAwesome.Sharp.IconButton();
             btn_education = new FontAwesome.Sharp.IconButton();
             btn_basicinformation = new FontAwesome.Sharp.IconButton();
             panel_basicinfo = new Panel();
@@ -136,7 +136,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 127, 152);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(label_Headername);
             panel1.Controls.Add(btn_sidebardrawer);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -144,16 +144,16 @@
             panel1.Size = new Size(1222, 56);
             panel1.TabIndex = 0;
             // 
-            // label1
+            // label_Headername
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(56, 13);
-            label1.Name = "label1";
-            label1.Size = new Size(108, 30);
-            label1.TabIndex = 1;
-            label1.Text = "Employee";
+            label_Headername.AutoSize = true;
+            label_Headername.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label_Headername.ForeColor = Color.White;
+            label_Headername.Location = new Point(56, 13);
+            label_Headername.Name = "label_Headername";
+            label_Headername.Size = new Size(108, 30);
+            label_Headername.TabIndex = 1;
+            label_Headername.Text = "Employee";
             // 
             // btn_sidebardrawer
             // 
@@ -170,19 +170,19 @@
             // panelmenu
             // 
             panelmenu.BackColor = Color.FromArgb(0, 127, 152);
-            panelmenu.Controls.Add(iconButton11);
-            panelmenu.Controls.Add(iconButton10);
-            panelmenu.Controls.Add(iconButton9);
-            panelmenu.Controls.Add(iconButton8);
-            panelmenu.Controls.Add(iconButton7);
-            panelmenu.Controls.Add(iconButton6);
-            panelmenu.Controls.Add(iconButton2);
-            panelmenu.Controls.Add(iconButton4);
-            panelmenu.Controls.Add(iconButton3);
-            panelmenu.Controls.Add(btn_shifting);
+            panelmenu.Controls.Add(btn_documents);
+            panelmenu.Controls.Add(btn_benefits);
+            panelmenu.Controls.Add(btn_disciplinaryaction);
+            panelmenu.Controls.Add(btn_salarysettings);
+            panelmenu.Controls.Add(btn_tranings);
+            panelmenu.Controls.Add(btn_seminar);
+            panelmenu.Controls.Add(btn_dependents);
+            panelmenu.Controls.Add(btn_leaverecords);
+            panelmenu.Controls.Add(btn_leavesetting);
+            panelmenu.Controls.Add(btn_dutyschedule);
             panelmenu.Controls.Add(btn_workassignment);
-            panelmenu.Controls.Add(iconButton1);
-            panelmenu.Controls.Add(iconButton5);
+            panelmenu.Controls.Add(btn_employment);
+            panelmenu.Controls.Add(btn_licenseinformation);
             panelmenu.Controls.Add(btn_education);
             panelmenu.Controls.Add(btn_basicinformation);
             panelmenu.Dock = DockStyle.Left;
@@ -193,265 +193,265 @@
             panelmenu.Size = new Size(160, 664);
             panelmenu.TabIndex = 1;
             // 
-            // iconButton11
+            // btn_documents
             // 
-            iconButton11.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton11.Cursor = Cursors.Hand;
-            iconButton11.Dock = DockStyle.Top;
-            iconButton11.FlatAppearance.BorderSize = 0;
-            iconButton11.FlatStyle = FlatStyle.Flat;
-            iconButton11.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton11.IconChar = FontAwesome.Sharp.IconChar.FileContract;
-            iconButton11.IconColor = Color.White;
-            iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton11.IconSize = 25;
-            iconButton11.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton11.Location = new Point(2, 492);
-            iconButton11.Name = "iconButton11";
-            iconButton11.Padding = new Padding(10, 0, 0, 0);
-            iconButton11.Size = new Size(156, 35);
-            iconButton11.TabIndex = 36;
-            iconButton11.Tag = "Documents";
-            iconButton11.Text = "Documents";
-            iconButton11.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton11.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton11.UseVisualStyleBackColor = false;
-            iconButton11.Click += _Activatebutton;
-            iconButton11.MouseHover += _MouseHover_;
+            btn_documents.BackColor = Color.FromArgb(0, 127, 152);
+            btn_documents.Cursor = Cursors.Hand;
+            btn_documents.Dock = DockStyle.Top;
+            btn_documents.FlatAppearance.BorderSize = 0;
+            btn_documents.FlatStyle = FlatStyle.Flat;
+            btn_documents.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_documents.IconChar = FontAwesome.Sharp.IconChar.FileContract;
+            btn_documents.IconColor = Color.White;
+            btn_documents.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_documents.IconSize = 25;
+            btn_documents.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_documents.Location = new Point(2, 492);
+            btn_documents.Name = "btn_documents";
+            btn_documents.Padding = new Padding(10, 0, 0, 0);
+            btn_documents.Size = new Size(156, 35);
+            btn_documents.TabIndex = 36;
+            btn_documents.Tag = "Documents";
+            btn_documents.Text = "Documents";
+            btn_documents.TextAlign = ContentAlignment.MiddleLeft;
+            btn_documents.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_documents.UseVisualStyleBackColor = false;
+            btn_documents.Click += _documents_Click;
+            btn_documents.MouseHover += _MouseHover_;
             // 
-            // iconButton10
+            // btn_benefits
             // 
-            iconButton10.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton10.Cursor = Cursors.Hand;
-            iconButton10.Dock = DockStyle.Top;
-            iconButton10.FlatAppearance.BorderSize = 0;
-            iconButton10.FlatStyle = FlatStyle.Flat;
-            iconButton10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton10.IconChar = FontAwesome.Sharp.IconChar.Gift;
-            iconButton10.IconColor = Color.White;
-            iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton10.IconSize = 25;
-            iconButton10.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton10.Location = new Point(2, 457);
-            iconButton10.Name = "iconButton10";
-            iconButton10.Padding = new Padding(10, 0, 0, 0);
-            iconButton10.Size = new Size(156, 35);
-            iconButton10.TabIndex = 35;
-            iconButton10.Tag = "Benefits";
-            iconButton10.Text = "Benefits";
-            iconButton10.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton10.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton10.UseVisualStyleBackColor = false;
-            iconButton10.Click += _Activatebutton;
-            iconButton10.MouseHover += _MouseHover_;
+            btn_benefits.BackColor = Color.FromArgb(0, 127, 152);
+            btn_benefits.Cursor = Cursors.Hand;
+            btn_benefits.Dock = DockStyle.Top;
+            btn_benefits.FlatAppearance.BorderSize = 0;
+            btn_benefits.FlatStyle = FlatStyle.Flat;
+            btn_benefits.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_benefits.IconChar = FontAwesome.Sharp.IconChar.Gift;
+            btn_benefits.IconColor = Color.White;
+            btn_benefits.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_benefits.IconSize = 25;
+            btn_benefits.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_benefits.Location = new Point(2, 457);
+            btn_benefits.Name = "btn_benefits";
+            btn_benefits.Padding = new Padding(10, 0, 0, 0);
+            btn_benefits.Size = new Size(156, 35);
+            btn_benefits.TabIndex = 35;
+            btn_benefits.Tag = "Benefits";
+            btn_benefits.Text = "Benefits";
+            btn_benefits.TextAlign = ContentAlignment.MiddleLeft;
+            btn_benefits.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_benefits.UseVisualStyleBackColor = false;
+            btn_benefits.Click += _benefits_Click;
+            btn_benefits.MouseHover += _MouseHover_;
             // 
-            // iconButton9
+            // btn_disciplinaryaction
             // 
-            iconButton9.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton9.Cursor = Cursors.Hand;
-            iconButton9.Dock = DockStyle.Top;
-            iconButton9.FlatAppearance.BorderSize = 0;
-            iconButton9.FlatStyle = FlatStyle.Flat;
-            iconButton9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton9.IconChar = FontAwesome.Sharp.IconChar.BalanceScale;
-            iconButton9.IconColor = Color.White;
-            iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton9.IconSize = 25;
-            iconButton9.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton9.Location = new Point(2, 422);
-            iconButton9.Name = "iconButton9";
-            iconButton9.Padding = new Padding(10, 0, 0, 0);
-            iconButton9.Size = new Size(156, 35);
-            iconButton9.TabIndex = 34;
-            iconButton9.Tag = "Disciplinary Action";
-            iconButton9.Text = "Disciplinary Action";
-            iconButton9.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton9.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton9.UseVisualStyleBackColor = false;
-            iconButton9.Click += _DisciplinaryAction_Click;
-            iconButton9.MouseHover += _MouseHover_;
+            btn_disciplinaryaction.BackColor = Color.FromArgb(0, 127, 152);
+            btn_disciplinaryaction.Cursor = Cursors.Hand;
+            btn_disciplinaryaction.Dock = DockStyle.Top;
+            btn_disciplinaryaction.FlatAppearance.BorderSize = 0;
+            btn_disciplinaryaction.FlatStyle = FlatStyle.Flat;
+            btn_disciplinaryaction.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_disciplinaryaction.IconChar = FontAwesome.Sharp.IconChar.BalanceScale;
+            btn_disciplinaryaction.IconColor = Color.White;
+            btn_disciplinaryaction.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_disciplinaryaction.IconSize = 25;
+            btn_disciplinaryaction.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_disciplinaryaction.Location = new Point(2, 422);
+            btn_disciplinaryaction.Name = "btn_disciplinaryaction";
+            btn_disciplinaryaction.Padding = new Padding(10, 0, 0, 0);
+            btn_disciplinaryaction.Size = new Size(156, 35);
+            btn_disciplinaryaction.TabIndex = 34;
+            btn_disciplinaryaction.Tag = "Disciplinary Action";
+            btn_disciplinaryaction.Text = "Disciplinary Action";
+            btn_disciplinaryaction.TextAlign = ContentAlignment.MiddleLeft;
+            btn_disciplinaryaction.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_disciplinaryaction.UseVisualStyleBackColor = false;
+            btn_disciplinaryaction.Click += _DisciplinaryAction_Click;
+            btn_disciplinaryaction.MouseHover += _MouseHover_;
             // 
-            // iconButton8
+            // btn_salarysettings
             // 
-            iconButton8.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton8.Cursor = Cursors.Hand;
-            iconButton8.Dock = DockStyle.Top;
-            iconButton8.FlatAppearance.BorderSize = 0;
-            iconButton8.FlatStyle = FlatStyle.Flat;
-            iconButton8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton8.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
-            iconButton8.IconColor = Color.White;
-            iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton8.IconSize = 25;
-            iconButton8.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton8.Location = new Point(2, 387);
-            iconButton8.Name = "iconButton8";
-            iconButton8.Padding = new Padding(10, 0, 0, 0);
-            iconButton8.Size = new Size(156, 35);
-            iconButton8.TabIndex = 33;
-            iconButton8.Tag = "Salary Settings";
-            iconButton8.Text = "Salary Settings";
-            iconButton8.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton8.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton8.UseVisualStyleBackColor = false;
-            iconButton8.Click += _salarysetting_Click;
-            iconButton8.MouseHover += _MouseHover_;
+            btn_salarysettings.BackColor = Color.FromArgb(0, 127, 152);
+            btn_salarysettings.Cursor = Cursors.Hand;
+            btn_salarysettings.Dock = DockStyle.Top;
+            btn_salarysettings.FlatAppearance.BorderSize = 0;
+            btn_salarysettings.FlatStyle = FlatStyle.Flat;
+            btn_salarysettings.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_salarysettings.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
+            btn_salarysettings.IconColor = Color.White;
+            btn_salarysettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_salarysettings.IconSize = 25;
+            btn_salarysettings.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_salarysettings.Location = new Point(2, 387);
+            btn_salarysettings.Name = "btn_salarysettings";
+            btn_salarysettings.Padding = new Padding(10, 0, 0, 0);
+            btn_salarysettings.Size = new Size(156, 35);
+            btn_salarysettings.TabIndex = 33;
+            btn_salarysettings.Tag = "Salary Settings";
+            btn_salarysettings.Text = "Salary Settings";
+            btn_salarysettings.TextAlign = ContentAlignment.MiddleLeft;
+            btn_salarysettings.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_salarysettings.UseVisualStyleBackColor = false;
+            btn_salarysettings.Click += _salarysetting_Click;
+            btn_salarysettings.MouseHover += _MouseHover_;
             // 
-            // iconButton7
+            // btn_tranings
             // 
-            iconButton7.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton7.Cursor = Cursors.Hand;
-            iconButton7.Dock = DockStyle.Top;
-            iconButton7.FlatAppearance.BorderSize = 0;
-            iconButton7.FlatStyle = FlatStyle.Flat;
-            iconButton7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton7.IconChar = FontAwesome.Sharp.IconChar.HandHoldingMedical;
-            iconButton7.IconColor = Color.White;
-            iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton7.IconSize = 25;
-            iconButton7.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton7.Location = new Point(2, 352);
-            iconButton7.Name = "iconButton7";
-            iconButton7.Padding = new Padding(10, 0, 0, 0);
-            iconButton7.Size = new Size(156, 35);
-            iconButton7.TabIndex = 32;
-            iconButton7.Tag = "Trainings";
-            iconButton7.Text = "Trainings";
-            iconButton7.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton7.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton7.UseVisualStyleBackColor = false;
-            iconButton7.Click += _training_Click;
-            iconButton7.MouseHover += _MouseHover_;
+            btn_tranings.BackColor = Color.FromArgb(0, 127, 152);
+            btn_tranings.Cursor = Cursors.Hand;
+            btn_tranings.Dock = DockStyle.Top;
+            btn_tranings.FlatAppearance.BorderSize = 0;
+            btn_tranings.FlatStyle = FlatStyle.Flat;
+            btn_tranings.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_tranings.IconChar = FontAwesome.Sharp.IconChar.HandHoldingMedical;
+            btn_tranings.IconColor = Color.White;
+            btn_tranings.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_tranings.IconSize = 25;
+            btn_tranings.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_tranings.Location = new Point(2, 352);
+            btn_tranings.Name = "btn_tranings";
+            btn_tranings.Padding = new Padding(10, 0, 0, 0);
+            btn_tranings.Size = new Size(156, 35);
+            btn_tranings.TabIndex = 32;
+            btn_tranings.Tag = "Trainings";
+            btn_tranings.Text = "Trainings";
+            btn_tranings.TextAlign = ContentAlignment.MiddleLeft;
+            btn_tranings.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_tranings.UseVisualStyleBackColor = false;
+            btn_tranings.Click += _training_Click;
+            btn_tranings.MouseHover += _MouseHover_;
             // 
-            // iconButton6
+            // btn_seminar
             // 
-            iconButton6.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton6.Cursor = Cursors.Hand;
-            iconButton6.Dock = DockStyle.Top;
-            iconButton6.FlatAppearance.BorderSize = 0;
-            iconButton6.FlatStyle = FlatStyle.Flat;
-            iconButton6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton6.IconChar = FontAwesome.Sharp.IconChar.PersonChalkboard;
-            iconButton6.IconColor = Color.White;
-            iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton6.IconSize = 25;
-            iconButton6.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton6.Location = new Point(2, 317);
-            iconButton6.Name = "iconButton6";
-            iconButton6.Padding = new Padding(10, 0, 0, 0);
-            iconButton6.Size = new Size(156, 35);
-            iconButton6.TabIndex = 31;
-            iconButton6.Tag = "Seminars";
-            iconButton6.Text = "Seminars";
-            iconButton6.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton6.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton6.UseVisualStyleBackColor = false;
-            iconButton6.Click += iconButton6_Click;
-            iconButton6.MouseHover += _MouseHover_;
+            btn_seminar.BackColor = Color.FromArgb(0, 127, 152);
+            btn_seminar.Cursor = Cursors.Hand;
+            btn_seminar.Dock = DockStyle.Top;
+            btn_seminar.FlatAppearance.BorderSize = 0;
+            btn_seminar.FlatStyle = FlatStyle.Flat;
+            btn_seminar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_seminar.IconChar = FontAwesome.Sharp.IconChar.PersonChalkboard;
+            btn_seminar.IconColor = Color.White;
+            btn_seminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_seminar.IconSize = 25;
+            btn_seminar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_seminar.Location = new Point(2, 317);
+            btn_seminar.Name = "btn_seminar";
+            btn_seminar.Padding = new Padding(10, 0, 0, 0);
+            btn_seminar.Size = new Size(156, 35);
+            btn_seminar.TabIndex = 31;
+            btn_seminar.Tag = "Seminars";
+            btn_seminar.Text = "Seminars";
+            btn_seminar.TextAlign = ContentAlignment.MiddleLeft;
+            btn_seminar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_seminar.UseVisualStyleBackColor = false;
+            btn_seminar.Click += iconButton6_Click;
+            btn_seminar.MouseHover += _MouseHover_;
             // 
-            // iconButton2
+            // btn_dependents
             // 
-            iconButton2.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton2.Cursor = Cursors.Hand;
-            iconButton2.Dock = DockStyle.Top;
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.IconSize = 25;
-            iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton2.Location = new Point(2, 282);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Padding = new Padding(10, 0, 0, 0);
-            iconButton2.Size = new Size(156, 35);
-            iconButton2.TabIndex = 27;
-            iconButton2.Tag = "Dependents";
-            iconButton2.Text = "Dependents";
-            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton2.UseVisualStyleBackColor = false;
-            iconButton2.Click += iconButton2_Click;
-            iconButton2.MouseHover += _MouseHover_;
+            btn_dependents.BackColor = Color.FromArgb(0, 127, 152);
+            btn_dependents.Cursor = Cursors.Hand;
+            btn_dependents.Dock = DockStyle.Top;
+            btn_dependents.FlatAppearance.BorderSize = 0;
+            btn_dependents.FlatStyle = FlatStyle.Flat;
+            btn_dependents.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_dependents.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
+            btn_dependents.IconColor = Color.White;
+            btn_dependents.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_dependents.IconSize = 25;
+            btn_dependents.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_dependents.Location = new Point(2, 282);
+            btn_dependents.Name = "btn_dependents";
+            btn_dependents.Padding = new Padding(10, 0, 0, 0);
+            btn_dependents.Size = new Size(156, 35);
+            btn_dependents.TabIndex = 27;
+            btn_dependents.Tag = "Dependents";
+            btn_dependents.Text = "Dependents";
+            btn_dependents.TextAlign = ContentAlignment.MiddleLeft;
+            btn_dependents.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_dependents.UseVisualStyleBackColor = false;
+            btn_dependents.Click += iconButton2_Click;
+            btn_dependents.MouseHover += _MouseHover_;
             // 
-            // iconButton4
+            // btn_leaverecords
             // 
-            iconButton4.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton4.Cursor = Cursors.Hand;
-            iconButton4.Dock = DockStyle.Top;
-            iconButton4.FlatAppearance.BorderSize = 0;
-            iconButton4.FlatStyle = FlatStyle.Flat;
-            iconButton4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
-            iconButton4.IconColor = Color.White;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.IconSize = 25;
-            iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton4.Location = new Point(2, 247);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Padding = new Padding(10, 0, 0, 0);
-            iconButton4.Size = new Size(156, 35);
-            iconButton4.TabIndex = 29;
-            iconButton4.Tag = "Leave Records";
-            iconButton4.Text = "Leave Records";
-            iconButton4.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton4.UseVisualStyleBackColor = false;
-            iconButton4.Click += iconButton4_Click;
-            iconButton4.MouseHover += _MouseHover_;
+            btn_leaverecords.BackColor = Color.FromArgb(0, 127, 152);
+            btn_leaverecords.Cursor = Cursors.Hand;
+            btn_leaverecords.Dock = DockStyle.Top;
+            btn_leaverecords.FlatAppearance.BorderSize = 0;
+            btn_leaverecords.FlatStyle = FlatStyle.Flat;
+            btn_leaverecords.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_leaverecords.IconChar = FontAwesome.Sharp.IconChar.FolderOpen;
+            btn_leaverecords.IconColor = Color.White;
+            btn_leaverecords.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_leaverecords.IconSize = 25;
+            btn_leaverecords.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_leaverecords.Location = new Point(2, 247);
+            btn_leaverecords.Name = "btn_leaverecords";
+            btn_leaverecords.Padding = new Padding(10, 0, 0, 0);
+            btn_leaverecords.Size = new Size(156, 35);
+            btn_leaverecords.TabIndex = 29;
+            btn_leaverecords.Tag = "Leave Records";
+            btn_leaverecords.Text = "Leave Records";
+            btn_leaverecords.TextAlign = ContentAlignment.MiddleLeft;
+            btn_leaverecords.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_leaverecords.UseVisualStyleBackColor = false;
+            btn_leaverecords.Click += iconButton4_Click;
+            btn_leaverecords.MouseHover += _MouseHover_;
             // 
-            // iconButton3
+            // btn_leavesetting
             // 
-            iconButton3.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton3.Cursor = Cursors.Hand;
-            iconButton3.Dock = DockStyle.Top;
-            iconButton3.FlatAppearance.BorderSize = 0;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Bed;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.IconSize = 25;
-            iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton3.Location = new Point(2, 212);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Padding = new Padding(10, 0, 0, 0);
-            iconButton3.Size = new Size(156, 35);
-            iconButton3.TabIndex = 28;
-            iconButton3.Tag = "Leave Setting";
-            iconButton3.Text = "Leave Setting";
-            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton3.UseVisualStyleBackColor = false;
-            iconButton3.Click += iconButton3_Click;
-            iconButton3.MouseHover += _MouseHover_;
+            btn_leavesetting.BackColor = Color.FromArgb(0, 127, 152);
+            btn_leavesetting.Cursor = Cursors.Hand;
+            btn_leavesetting.Dock = DockStyle.Top;
+            btn_leavesetting.FlatAppearance.BorderSize = 0;
+            btn_leavesetting.FlatStyle = FlatStyle.Flat;
+            btn_leavesetting.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_leavesetting.IconChar = FontAwesome.Sharp.IconChar.Bed;
+            btn_leavesetting.IconColor = Color.White;
+            btn_leavesetting.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_leavesetting.IconSize = 25;
+            btn_leavesetting.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_leavesetting.Location = new Point(2, 212);
+            btn_leavesetting.Name = "btn_leavesetting";
+            btn_leavesetting.Padding = new Padding(10, 0, 0, 0);
+            btn_leavesetting.Size = new Size(156, 35);
+            btn_leavesetting.TabIndex = 28;
+            btn_leavesetting.Tag = "Leave Setting";
+            btn_leavesetting.Text = "Leave Setting";
+            btn_leavesetting.TextAlign = ContentAlignment.MiddleLeft;
+            btn_leavesetting.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_leavesetting.UseVisualStyleBackColor = false;
+            btn_leavesetting.Click += iconButton3_Click;
+            btn_leavesetting.MouseHover += _MouseHover_;
             // 
-            // btn_shifting
+            // btn_dutyschedule
             // 
-            btn_shifting.BackColor = Color.FromArgb(0, 127, 152);
-            btn_shifting.Cursor = Cursors.Hand;
-            btn_shifting.Dock = DockStyle.Top;
-            btn_shifting.FlatAppearance.BorderSize = 0;
-            btn_shifting.FlatStyle = FlatStyle.Flat;
-            btn_shifting.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_shifting.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
-            btn_shifting.IconColor = Color.White;
-            btn_shifting.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_shifting.IconSize = 25;
-            btn_shifting.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_shifting.Location = new Point(2, 177);
-            btn_shifting.Name = "btn_shifting";
-            btn_shifting.Padding = new Padding(10, 0, 0, 0);
-            btn_shifting.Size = new Size(156, 35);
-            btn_shifting.TabIndex = 24;
-            btn_shifting.Tag = "Duty Schedule";
-            btn_shifting.Text = "Duty Schedule";
-            btn_shifting.TextAlign = ContentAlignment.MiddleLeft;
-            btn_shifting.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_shifting.UseVisualStyleBackColor = false;
-            btn_shifting.Click += btn_shifting_Click;
-            btn_shifting.MouseHover += _MouseHover_;
+            btn_dutyschedule.BackColor = Color.FromArgb(0, 127, 152);
+            btn_dutyschedule.Cursor = Cursors.Hand;
+            btn_dutyschedule.Dock = DockStyle.Top;
+            btn_dutyschedule.FlatAppearance.BorderSize = 0;
+            btn_dutyschedule.FlatStyle = FlatStyle.Flat;
+            btn_dutyschedule.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_dutyschedule.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
+            btn_dutyschedule.IconColor = Color.White;
+            btn_dutyschedule.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_dutyschedule.IconSize = 25;
+            btn_dutyschedule.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_dutyschedule.Location = new Point(2, 177);
+            btn_dutyschedule.Name = "btn_dutyschedule";
+            btn_dutyschedule.Padding = new Padding(10, 0, 0, 0);
+            btn_dutyschedule.Size = new Size(156, 35);
+            btn_dutyschedule.TabIndex = 24;
+            btn_dutyschedule.Tag = "Duty Schedule";
+            btn_dutyschedule.Text = "Duty Schedule";
+            btn_dutyschedule.TextAlign = ContentAlignment.MiddleLeft;
+            btn_dutyschedule.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_dutyschedule.UseVisualStyleBackColor = false;
+            btn_dutyschedule.Click += btn_shifting_Click;
+            btn_dutyschedule.MouseHover += _MouseHover_;
             // 
             // btn_workassignment
             // 
@@ -479,57 +479,57 @@
             btn_workassignment.Click += btn_workassignment_Click;
             btn_workassignment.MouseHover += _MouseHover_;
             // 
-            // iconButton1
+            // btn_employment
             // 
-            iconButton1.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton1.Cursor = Cursors.Hand;
-            iconButton1.Dock = DockStyle.Top;
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Briefcase;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 25;
-            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton1.Location = new Point(2, 107);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Padding = new Padding(10, 0, 0, 0);
-            iconButton1.Size = new Size(156, 35);
-            iconButton1.TabIndex = 26;
-            iconButton1.Tag = "Employment";
-            iconButton1.Text = "Employment";
-            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton1.UseVisualStyleBackColor = false;
-            iconButton1.Click += iconButton1_Click;
-            iconButton1.MouseHover += _MouseHover_;
+            btn_employment.BackColor = Color.FromArgb(0, 127, 152);
+            btn_employment.Cursor = Cursors.Hand;
+            btn_employment.Dock = DockStyle.Top;
+            btn_employment.FlatAppearance.BorderSize = 0;
+            btn_employment.FlatStyle = FlatStyle.Flat;
+            btn_employment.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_employment.IconChar = FontAwesome.Sharp.IconChar.Briefcase;
+            btn_employment.IconColor = Color.White;
+            btn_employment.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_employment.IconSize = 25;
+            btn_employment.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_employment.Location = new Point(2, 107);
+            btn_employment.Name = "btn_employment";
+            btn_employment.Padding = new Padding(10, 0, 0, 0);
+            btn_employment.Size = new Size(156, 35);
+            btn_employment.TabIndex = 26;
+            btn_employment.Tag = "Employment";
+            btn_employment.Text = "Employment";
+            btn_employment.TextAlign = ContentAlignment.MiddleLeft;
+            btn_employment.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_employment.UseVisualStyleBackColor = false;
+            btn_employment.Click += iconButton1_Click;
+            btn_employment.MouseHover += _MouseHover_;
             // 
-            // iconButton5
+            // btn_licenseinformation
             // 
-            iconButton5.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton5.Cursor = Cursors.Hand;
-            iconButton5.Dock = DockStyle.Top;
-            iconButton5.FlatAppearance.BorderSize = 0;
-            iconButton5.FlatStyle = FlatStyle.Flat;
-            iconButton5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton5.IconChar = FontAwesome.Sharp.IconChar.IdCard;
-            iconButton5.IconColor = Color.White;
-            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton5.IconSize = 25;
-            iconButton5.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton5.Location = new Point(2, 72);
-            iconButton5.Name = "iconButton5";
-            iconButton5.Padding = new Padding(10, 0, 0, 0);
-            iconButton5.Size = new Size(156, 35);
-            iconButton5.TabIndex = 30;
-            iconButton5.Tag = "License Information";
-            iconButton5.Text = "License Information";
-            iconButton5.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton5.UseVisualStyleBackColor = false;
-            iconButton5.Click += iconButton5_Click;
-            iconButton5.MouseHover += _MouseHover_;
+            btn_licenseinformation.BackColor = Color.FromArgb(0, 127, 152);
+            btn_licenseinformation.Cursor = Cursors.Hand;
+            btn_licenseinformation.Dock = DockStyle.Top;
+            btn_licenseinformation.FlatAppearance.BorderSize = 0;
+            btn_licenseinformation.FlatStyle = FlatStyle.Flat;
+            btn_licenseinformation.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_licenseinformation.IconChar = FontAwesome.Sharp.IconChar.IdCard;
+            btn_licenseinformation.IconColor = Color.White;
+            btn_licenseinformation.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_licenseinformation.IconSize = 25;
+            btn_licenseinformation.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_licenseinformation.Location = new Point(2, 72);
+            btn_licenseinformation.Name = "btn_licenseinformation";
+            btn_licenseinformation.Padding = new Padding(10, 0, 0, 0);
+            btn_licenseinformation.Size = new Size(156, 35);
+            btn_licenseinformation.TabIndex = 30;
+            btn_licenseinformation.Tag = "License Information";
+            btn_licenseinformation.Text = "License Information";
+            btn_licenseinformation.TextAlign = ContentAlignment.MiddleLeft;
+            btn_licenseinformation.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_licenseinformation.UseVisualStyleBackColor = false;
+            btn_licenseinformation.Click += iconButton5_Click;
+            btn_licenseinformation.MouseHover += _MouseHover_;
             // 
             // btn_education
             // 
@@ -782,10 +782,10 @@
             radioButton1.AutoSize = true;
             radioButton1.Location = new Point(167, 288);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(54, 19);
+            radioButton1.Size = new Size(51, 19);
             radioButton1.TabIndex = 6;
             radioButton1.TabStop = true;
-            radioButton1.Text = "Make";
+            radioButton1.Text = "Male";
             radioButton1.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1
@@ -1393,13 +1393,13 @@
         #endregion
         private Panel panel1;
         private PictureBox btn_sidebardrawer;
-        private Label label1;
+        private Label label_Headername;
         private Panel panelmenu;
         private Panel panel_basicinfo;
         private FontAwesome.Sharp.IconButton btn_basicinformation;
         private FontAwesome.Sharp.IconButton btn_education;
         private FontAwesome.Sharp.IconButton btn_workassignment;
-        private FontAwesome.Sharp.IconButton btn_shifting;
+        private FontAwesome.Sharp.IconButton btn_dutyschedule;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
         private Panel panel2;
@@ -1474,16 +1474,16 @@
         private Button button4;
         private Panel MainPanel;
         private Panel panel4;
-        private FontAwesome.Sharp.IconButton iconButton11;
-        private FontAwesome.Sharp.IconButton iconButton10;
-        private FontAwesome.Sharp.IconButton iconButton9;
-        private FontAwesome.Sharp.IconButton iconButton8;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btn_documents;
+        private FontAwesome.Sharp.IconButton btn_benefits;
+        private FontAwesome.Sharp.IconButton btn_disciplinaryaction;
+        private FontAwesome.Sharp.IconButton btn_salarysettings;
+        private FontAwesome.Sharp.IconButton btn_tranings;
+        private FontAwesome.Sharp.IconButton btn_seminar;
+        private FontAwesome.Sharp.IconButton btn_licenseinformation;
+        private FontAwesome.Sharp.IconButton btn_leaverecords;
+        private FontAwesome.Sharp.IconButton btn_leavesetting;
+        private FontAwesome.Sharp.IconButton btn_dependents;
+        private FontAwesome.Sharp.IconButton btn_employment;
     }
 }

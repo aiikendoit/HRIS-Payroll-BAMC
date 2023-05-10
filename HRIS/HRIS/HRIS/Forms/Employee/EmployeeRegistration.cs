@@ -1,6 +1,8 @@
 ﻿using FontAwesome.Sharp;
 using HRIS.Class;
+using HRIS.Forms.Employee.Benefits;
 using HRIS.Forms.Employee.Disciplinary_Action;
+using HRIS.Forms.Employee.Documents;
 using HRIS.Forms.Employee.Employment;
 using HRIS.Forms.Employee.Family_and_Dependents;
 using HRIS.Forms.Employee.Leaves;
@@ -28,13 +30,16 @@ namespace HRIS.Forms.Employee
         Boolean sidebarclick = false;
         private Form currentchildform;
         private IconButton currentbtn;
-        public EmployeeRegistration()
+        String headername; 
+        public EmployeeRegistration(string headername)
         {
             InitializeComponent();
             currentbtn = new IconButton();
             currentchildform = new Form();
             btn_basicinformation.ForeColor = ColorPalette.color5;
             btn_basicinformation.IconColor = ColorPalette.color5;
+            this.headername = headername;
+            label_Headername.Text = headername;
         }
 
         private void EmployeeRegistration_Load(object sender, EventArgs e)
@@ -251,6 +256,18 @@ namespace HRIS.Forms.Employee
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new emp_DisciplinaryActionForm());
+        }
+
+        private void _benefits_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new emp_Benefits());
+        }
+
+        private void _documents_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new emp_DocumentsForm());
         }
     }
 }

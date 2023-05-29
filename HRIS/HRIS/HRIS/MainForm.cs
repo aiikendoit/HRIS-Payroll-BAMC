@@ -2,6 +2,8 @@ using FontAwesome.Sharp;
 using HRIS.Class;
 using HRIS.Forms.Doctors;
 using HRIS.Forms.Employee;
+using HRIS.Forms.Hiring;
+using HRIS.Forms.Maintenance;
 using HRIS.Forms.Userlogin;
 using System.Net.Security;
 
@@ -114,6 +116,8 @@ namespace HRIS
         private void btn_maintenance_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
+            MaintenanceForm maintenanceForm = new MaintenanceForm();
+            maintenanceForm.ShowDialog();
         }
 
         private void btn_reportmanager_Click(object sender, EventArgs e)
@@ -144,6 +148,12 @@ namespace HRIS
         private void btn_attendance_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
+        }
+
+        private void btn_hiring_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new HiringForm());
         }
     }
 }

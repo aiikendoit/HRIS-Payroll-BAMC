@@ -279,11 +279,6 @@ C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\H
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Seminars.emp_SeminarForm.resources
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Training.emp_TrainingForm.resources
 <<<<<<< HEAD
-C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
-C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
-C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Benefits.emp_Benefits.resources
-C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Documents.emp_DocumentsForm.resources
-C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Doctors.DoctorForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Doctors.DoctorForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Benefits.emp_Benefits.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
@@ -453,4 +448,53 @@ D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.g
 D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
 =======
 >>>>>>> 4a015e65993fe49950f25b80c6772c3e7ec027f2
+<<<<<<< HEAD
 >>>>>>> 48b68b08a66db0af13e86f16a7d8587b15133552
+=======
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Humanizer.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.frm_HiringAdd.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.HiringForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.frm_AddressMaintenance.resources
+>>>>>>> 10291d978cc9a5172b245399af3db1def4b95f72

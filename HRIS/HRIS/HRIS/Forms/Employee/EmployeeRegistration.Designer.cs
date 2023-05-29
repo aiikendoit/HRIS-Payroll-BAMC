@@ -189,7 +189,7 @@
             panelmenu.Location = new Point(0, 57);
             panelmenu.Name = "panelmenu";
             panelmenu.Padding = new Padding(2);
-            panelmenu.Size = new Size(160, 664);
+            panelmenu.Size = new Size(160, 614);
             panelmenu.TabIndex = 1;
             // 
             // btn_documents
@@ -654,7 +654,7 @@
             panel_basicinfo.Dock = DockStyle.Fill;
             panel_basicinfo.Location = new Point(160, 147);
             panel_basicinfo.Name = "panel_basicinfo";
-            panel_basicinfo.Size = new Size(954, 574);
+            panel_basicinfo.Size = new Size(954, 524);
             panel_basicinfo.TabIndex = 2;
             // 
             // button4
@@ -1350,7 +1350,7 @@
             MainPanel.Location = new Point(160, 147);
             MainPanel.Name = "MainPanel";
             MainPanel.Padding = new Padding(5);
-            MainPanel.Size = new Size(954, 574);
+            MainPanel.Size = new Size(954, 524);
             MainPanel.TabIndex = 4;
             // 
             // panel4
@@ -1366,7 +1366,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1114, 721);
+            ClientSize = new Size(1114, 671);
             Controls.Add(panel_basicinfo);
             Controls.Add(MainPanel);
             Controls.Add(panel2);

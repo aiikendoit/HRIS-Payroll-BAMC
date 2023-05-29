@@ -30,7 +30,7 @@ namespace HRIS.Forms.Employee
         Boolean sidebarclick = false;
         private Form currentchildform;
         private IconButton currentbtn;
-        String headername; 
+        String headername;
         public EmployeeRegistration(string headername)
         {
             InitializeComponent();
@@ -268,6 +268,39 @@ namespace HRIS.Forms.Employee
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new emp_DocumentsForm());
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

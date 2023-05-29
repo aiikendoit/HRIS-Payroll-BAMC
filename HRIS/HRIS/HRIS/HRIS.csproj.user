@@ -73,6 +73,15 @@
     <Compile Update="Forms\Employee\License information\emp_licenseInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Hiring\frm_HiringAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Hiring\HiringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Maintenance\frm_AddressMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UserCustomControl\JPCircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>

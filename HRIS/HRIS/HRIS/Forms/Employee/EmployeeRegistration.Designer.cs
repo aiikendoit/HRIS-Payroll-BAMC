@@ -754,6 +754,7 @@
             button1.TabIndex = 8;
             button1.Text = "Address Information";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // radioButton2
             // 

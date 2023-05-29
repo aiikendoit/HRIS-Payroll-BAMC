@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ITSSupport\\Music\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+    "D:\\HRIS Project 2023\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ITSSupport\\Music\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
+    "D:\\HRIS Project 2023\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ITSSupport\\Music\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectUniqueName": "D:\\HRIS Project 2023\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
         "projectName": "HRIS",
-        "projectPath": "C:\\Users\\ITSSupport\\Music\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
-        "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ITSSupport\\Music\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\",
+        "projectPath": "D:\\HRIS Project 2023\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "packagesPath": "C:\\Users\\JDiplomo\\.nuget\\packages\\",
+        "outputPath": "D:\\HRIS Project 2023\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JDiplomo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

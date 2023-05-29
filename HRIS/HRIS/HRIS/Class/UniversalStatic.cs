@@ -49,5 +49,9 @@ namespace HRIS.Class
             dgv.RowTemplate.DividerHeight = 0;
             dgv.RowTemplate.Height = 35;
         }
+        public static void formsize(Form form)
+        {
+            form.Size = new Size();
+        }
     }
 }

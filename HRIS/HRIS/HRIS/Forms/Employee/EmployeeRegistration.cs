@@ -34,6 +34,9 @@ namespace HRIS.Forms.Employee
         public EmployeeRegistration(string headername)
         {
             InitializeComponent();
+
+
+
             currentbtn = new IconButton();
             currentchildform = new Form();
             btn_basicinformation.ForeColor = ColorPalette.color5;
@@ -301,6 +304,11 @@ namespace HRIS.Forms.Employee
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace HRIS.Forms.Employee
+﻿namespace HRIS.Views.Employee
 {
     partial class emp_EducationalAttainment
     {

@@ -1,4 +1,4 @@
-﻿namespace HRIS.Forms.Employee.Disciplinary_Action
+﻿namespace HRIS.Views.Employee.Disciplinary_Action
 {
     partial class emp_DisciplinaryActionForm
     {

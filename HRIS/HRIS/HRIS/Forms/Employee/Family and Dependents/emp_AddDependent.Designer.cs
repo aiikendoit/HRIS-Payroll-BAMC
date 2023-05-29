@@ -1,4 +1,4 @@
-﻿namespace HRIS.Forms.Employee.Family_and_Dependents
+﻿namespace HRIS.Views.Employee.Family_and_Dependents
 {
     partial class emp_AddDependent
     {

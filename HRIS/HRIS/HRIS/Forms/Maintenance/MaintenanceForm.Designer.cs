@@ -1,4 +1,4 @@
-﻿namespace HRIS.Forms.Maintenance
+﻿namespace HRIS.Views.Maintenance
 {
     partial class MaintenanceForm
     {

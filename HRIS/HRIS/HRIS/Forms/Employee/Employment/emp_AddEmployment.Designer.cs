@@ -1,4 +1,4 @@
-﻿namespace HRIS.Forms.Employee.Employment
+﻿namespace HRIS.Views.Employee.Employment
 {
     partial class emp_AddEmployment
     {

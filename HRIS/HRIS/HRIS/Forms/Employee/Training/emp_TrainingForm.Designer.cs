@@ -1,4 +1,4 @@
-﻿namespace HRIS.Forms.Employee.Training
+﻿namespace HRIS.Views.Employee.Training
 {
     partial class emp_TrainingForm
     {

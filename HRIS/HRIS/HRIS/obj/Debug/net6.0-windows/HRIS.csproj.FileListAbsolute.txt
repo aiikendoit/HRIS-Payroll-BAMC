@@ -302,3 +302,10 @@ C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\H
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Training.emp_TrainingForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.Education.emp_AddEducationalAttainment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.emp_EducationalAttainment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.Family_and_Dependents.emp_AddDependent.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.Leaves.emp_leaveSetting.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.License_information.emp_AddLicense.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.License_information.emp_licenseInfoForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.emp_workassignment.resources

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HRIS.Forms.Employee.Education
+namespace HRIS.Views.Employee.Education
 {
     public partial class emp_AddEducationalAttainment : Form
     {

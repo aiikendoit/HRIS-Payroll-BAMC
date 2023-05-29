@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HRIS.Forms.Employee.Leaves
+namespace HRIS.Views.Employee.Leaves
 {
     public partial class emp_leaveSetting : Form
     {

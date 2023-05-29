@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HRIS.Forms.Employee.Family_and_Dependents
+namespace HRIS.Views.Employee.Family_and_Dependents
 {
     public partial class emp_AddDependent : Form
     {

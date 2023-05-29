@@ -1,5 +1,5 @@
 ﻿using HRIS.Class;
-using HRIS.Forms.Employee.Education;
+using HRIS.Views.Employee.Education;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HRIS.Forms.Employee
+namespace HRIS.Views.Employee
 {
     public partial class emp_EducationalAttainment : Form
     {

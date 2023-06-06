@@ -11,7 +11,7 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
+        protected  void Dispose(bool disposing)
         {
             if (disposing && (components != null))
             {
@@ -43,7 +43,7 @@
             dateTimePicker2 = new DateTimePicker();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
-            SuspendLayout();
+            //SuspendLayout();
             // 
             // panel2
             // 

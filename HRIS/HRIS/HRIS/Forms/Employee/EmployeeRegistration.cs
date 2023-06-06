@@ -39,6 +39,16 @@ namespace HRIS.Forms.Employee
 
         private void EmployeeRegistration_Load(object sender, EventArgs e)
         {
+            //Init data
+            List<Province> list = new List<Province>();
+            list.Add(new City() { ID = 1, Name = "New York" });
+            list.Add(new City() { ID = 2, Name = "Los Angeles" });
+            list.Add(new City() { ID = 3, Name = "Chicago" });
+            list.Add(new City() { ID = 4, Name = "Houston" });
+            list.Add(new City() { ID = 5, Name = "Philadelphia" });
+            cboCity.DataSource = list;
+            cboCity.ValueMember = "ID";
+            cboCity.DisplayMember = "Name";
         }
 
         #region "Procedure"

@@ -70,7 +70,6 @@
             textBox15 = new TextBox();
             textBox7 = new TextBox();
             textBox4 = new TextBox();
-            textBox9 = new TextBox();
             textBox18 = new TextBox();
             textBox11 = new TextBox();
             textBox13 = new TextBox();
@@ -123,6 +122,7 @@
             panel3 = new Panel();
             MainPanel = new Panel();
             panel4 = new Panel();
+            comboBox7 = new ComboBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btn_sidebardrawer).BeginInit();
             panelmenu.SuspendLayout();
@@ -587,6 +587,7 @@
             // 
             panel_basicinfo.AutoScroll = true;
             panel_basicinfo.BackColor = Color.White;
+            panel_basicinfo.Controls.Add(comboBox7);
             panel_basicinfo.Controls.Add(button4);
             panel_basicinfo.Controls.Add(button3);
             panel_basicinfo.Controls.Add(pictureBox2);
@@ -608,7 +609,6 @@
             panel_basicinfo.Controls.Add(textBox15);
             panel_basicinfo.Controls.Add(textBox7);
             panel_basicinfo.Controls.Add(textBox4);
-            panel_basicinfo.Controls.Add(textBox9);
             panel_basicinfo.Controls.Add(textBox18);
             panel_basicinfo.Controls.Add(textBox11);
             panel_basicinfo.Controls.Add(textBox13);
@@ -852,16 +852,6 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(237, 25);
             textBox4.TabIndex = 4;
-            // 
-            // textBox9
-            // 
-            textBox9.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox9.Location = new Point(167, 313);
-            textBox9.Multiline = true;
-            textBox9.Name = "textBox9";
-            textBox9.ReadOnly = true;
-            textBox9.Size = new Size(237, 53);
-            textBox9.TabIndex = 4;
             // 
             // textBox18
             // 
@@ -1362,6 +1352,14 @@
             panel4.Size = new Size(1159, 1);
             panel4.TabIndex = 5;
             // 
+            // comboBox7
+            // 
+            comboBox7.FormattingEnabled = true;
+            comboBox7.Location = new Point(167, 316);
+            comboBox7.Name = "comboBox7";
+            comboBox7.Size = new Size(237, 23);
+            comboBox7.TabIndex = 13;
+            // 
             // EmployeeRegistration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1426,7 +1424,6 @@
         private RadioButton radioButton2;
         private RadioButton radioButton1;
         private DateTimePicker dateTimePicker1;
-        private TextBox textBox9;
         private Label label15;
         private Label label14;
         private Button button1;
@@ -1485,5 +1482,6 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private ComboBox comboBox7;
     }
 }

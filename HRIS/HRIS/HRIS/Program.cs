@@ -1,5 +1,8 @@
 using HRIS.Forms.Userlogin;
 
+using System.Configuration;
+using Microsoft.Data.SqlClient;
+
 namespace HRIS
 {
     internal static class Program
@@ -13,6 +16,7 @@ namespace HRIS
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+            
             Application.Run(new Userlogin());
         }
     }

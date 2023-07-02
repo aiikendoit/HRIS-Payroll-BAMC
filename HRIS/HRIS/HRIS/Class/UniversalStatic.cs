@@ -8,6 +8,10 @@ namespace HRIS.Class
 {
     public struct UniversalStatic
     {
+        public static void formresize(Form form)
+        {
+            form.Height = form.Height - 100;
+        }
         public static void customDatagrid(DataGridView dgv)
         {
             dgv.BackgroundColor = Color.White; 
@@ -48,6 +52,22 @@ namespace HRIS.Class
             //'row template
             dgv.RowTemplate.DividerHeight = 0;
             dgv.RowTemplate.Height = 35;
+        }
+        public static bool IsEmpty(TextBox textBox)
+        {
+            bool isEmpty = false;
+
+            if (textBox != null)
+            {
+                if (string.IsNullOrEmpty(textBox.Text))
+                {
+                    textBox.BackColor = Color.PeachPuff;
+                    MessageBox.Show("Field cannot be empty!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    isEmpty = true;
+                }
+            }
+
+            return isEmpty;
         }
     }
 }

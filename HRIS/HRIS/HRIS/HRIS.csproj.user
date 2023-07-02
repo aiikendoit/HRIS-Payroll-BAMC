@@ -4,91 +4,139 @@
     <_LastSelectedProfileId>D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="Forms\Doctors\DoctorForm.cs">
+    <Compile Update="Views\Forms\Doctors\DoctorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Benefits\emp_Benefits.cs">
+    <Compile Update="Views\Forms\Employee\Benefits\emp_Benefits.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Disciplinary Action\emp_DisciplinaryActionForm.cs">
+    <Compile Update="Views\Forms\Employee\Disciplinary Action\emp_DisciplinaryActionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Documents\emp_DocumentsForm.cs">
+    <Compile Update="Views\Forms\Employee\Documents\emp_DocumentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Education\emp_AddEducationalAttainment.cs">
+    <Compile Update="Views\Forms\Employee\Education\emp_AddEducationalAttainment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Education\emp_EducationalAttainment.cs">
+    <Compile Update="Views\Forms\Employee\Education\emp_EducationalAttainment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\EmployeeForm.cs">
+    <Compile Update="Views\Forms\Employee\EmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\EmployeeRegistration.cs">
+    <Compile Update="Views\Forms\Employee\EmployeeRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Employment\emp_AddEmployment.cs">
+    <Compile Update="Views\Forms\Employee\Employment\emp_AddEmployment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Employment\emp_employmentForm.cs">
+    <Compile Update="Views\Forms\Employee\Employment\emp_employmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Duty Schedule\emp_shifting.cs">
+    <Compile Update="Views\Forms\Employee\Duty Schedule\emp_shifting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Family and Dependents\emp_AddDependent.cs">
+    <Compile Update="Views\Forms\Employee\Family and Dependents\emp_AddDependent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Family and Dependents\emp_FamilyDependentsForm.cs">
+    <Compile Update="Views\Forms\Employee\Family and Dependents\emp_FamilyDependentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Salary Setting\emp_SalarySetting.cs">
+    <Compile Update="Views\Forms\Employee\Salary Setting\emp_SalarySetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Seminars\emp_SeminarForm.cs">
+    <Compile Update="Views\Forms\Employee\Seminars\emp_SeminarForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Training\emp_TrainingForm.cs">
+    <Compile Update="Views\Forms\Employee\Training\emp_TrainingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Work Assignment\emp_AddworkAssignment.cs">
+    <Compile Update="Views\Forms\Employee\Work Assignment\emp_AddworkAssignment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Work Assignment\emp_workassignment.cs">
+    <Compile Update="Views\Forms\Employee\Work Assignment\emp_workassignment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Leaves\emp_addLeaveSetting.cs">
+    <Compile Update="Views\Forms\Employee\Leaves\emp_addLeaveSetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Leaves\emp_leaveRecordsForm.cs">
+    <Compile Update="Views\Forms\Employee\Leaves\emp_leaveRecordsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\Leaves\emp_leaveSetting.cs">
+    <Compile Update="Views\Forms\Employee\Leaves\emp_leaveSetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\License information\emp_AddLicense.cs">
+    <Compile Update="Views\Forms\Employee\License information\emp_AddLicense.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Employee\License information\emp_licenseInfoForm.cs">
+    <Compile Update="Views\Forms\Employee\License information\emp_licenseInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Hiring\frm_HiringAdd.cs">
+    <Compile Update="Views\Forms\Hiring\frm_HiringAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Hiring\HiringForm.cs">
+    <Compile Update="Views\Forms\Hiring\HiringForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Maintenance\frm_AddressMaintenance.cs">
+    <Compile Update="Views\Forms\Maintenance\Bank\BankForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\AddressFolder\Barangay\BarangayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\CivilStatus\CivilStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\CivilStatus\frm_civilstatus_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\Degreetype\DegreetypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\Department\DepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\Disciplinary\DiscplinaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\Document\DocumentTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\EducationaLevel\EducationalLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\Employment\EmploymentTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\frm_AddressMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\Leaves\LeaveNoticeTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\License\LicenseType.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UserCustomControl\JPCircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Forms\Maintenance\MaintenanceForm.cs">
+    <Compile Update="Views\Forms\Maintenance\MaintenanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Userlogin\Userlogin.cs">
+    <Compile Update="Views\Forms\Maintenance\NationalityFolder\NationalityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\NationalityFolder\frm_nationality_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\ReligionFolder\frm_religion_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\ReligionFolder\ReligionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Userlogin\Userlogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainForm.cs">

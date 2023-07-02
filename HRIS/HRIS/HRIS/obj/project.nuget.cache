@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LrOwY1/mv/jkbZQoq44Zof5t3S7quZV0/pVb2/B6Ca2qNkbfAFOUFjg92xC1KHkoVt+aoqIqBg2Grh8fGO3G6w==",
+  "dgSpecHash": "Up8kK8rZvZ2C+fiYh5ePLG5QuzYDHXRgQO8pVnr+xPhG6QqH89QRhYOntxMBEaiKmN5h84bvbagKteuhVaZ07g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ITSSupport\\Music\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+  "projectFilePath": "C:\\Users\\ITSSupport\\Music\\02 - HRIS-Payroll - July 1,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ITSSupport\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ITSSupport\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -13,9 +13,9 @@
     "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
-    "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
-    "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
-    "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
+    "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.8\\microsoft.entityframeworkcore.7.0.8.nupkg.sha512",
+    "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.8\\microsoft.entityframeworkcore.abstractions.7.0.8.nupkg.sha512",
+    "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.8\\microsoft.entityframeworkcore.analyzers.7.0.8.nupkg.sha512",
     "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.5\\microsoft.entityframeworkcore.design.7.0.5.nupkg.sha512",
     "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.5\\microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
     "C:\\Users\\ITSSupport\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.5\\microsoft.entityframeworkcore.sqlserver.7.0.5.nupkg.sha512",

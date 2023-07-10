@@ -353,8 +353,6 @@ C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\r
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
-<<<<<<< HEAD
-<<<<<<< HEAD
 D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
 D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
 D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
@@ -447,11 +445,8 @@ D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\refint
 D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
 D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
 D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
-=======
 >>>>>>> 4a015e65993fe49950f25b80c6772c3e7ec027f2
-<<<<<<< HEAD
 >>>>>>> 48b68b08a66db0af13e86f16a7d8587b15133552
-=======
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Core.dll
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Identity.dll
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Humanizer.dll
@@ -499,7 +494,6 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HR
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.HiringForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.frm_AddressMaintenance.resources
 >>>>>>> 10291d978cc9a5172b245399af3db1def4b95f72
-=======
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Barangay.BarangayForm.resources
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Bank.BankForm.resources
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.CivilStatus.CivilStatusForm.resources

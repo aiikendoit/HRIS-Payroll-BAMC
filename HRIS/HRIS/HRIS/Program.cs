@@ -1,4 +1,4 @@
-using HRIS.Forms.Userlogin;
+using HRIS.Views.Userlogin;
 
 using System.Configuration;
 using Microsoft.Data.SqlClient;

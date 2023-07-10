@@ -6,6 +6,7 @@ using HRIS.Forms.Hiring;
 using HRIS.Forms.Maintenance;
 using HRIS.Forms.Userlogin;
 using System.Net.Security;
+using System.Runtime.InteropServices;
 
 namespace HRIS
 {
@@ -14,7 +15,7 @@ namespace HRIS
 
         private IconButton currentbtn;
         private Form currentchildform;
-
+        
         public MainForm()
         {
             InitializeComponent();

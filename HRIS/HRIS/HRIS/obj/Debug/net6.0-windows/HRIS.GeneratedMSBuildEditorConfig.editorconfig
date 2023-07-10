@@ -14,4 +14,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HRIS
+<<<<<<< HEAD
 build_property.ProjectDir = D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\
+=======
+build_property.ProjectDir = D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\
+>>>>>>> ed33f07327beea7a4578e142a43c4e2b9bb45300

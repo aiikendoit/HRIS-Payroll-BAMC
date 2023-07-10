@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\HRIS Project 2023\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "D:\\HRIS Project 2023\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
         "packagesPath": "C:\\Users\\JDiplomo\\.nuget\\packages\\",
         "outputPath": "D:\\HRIS Project 2023\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\",
+=======
+    "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+  },
+  "projects": {
+    "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectName": "HRIS",
+        "projectPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
+        "outputPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> ed33f07327beea7a4578e142a43c4e2b9bb45300
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,11 +67,19 @@
               "target": "Package",
               "version": "[2.3.1.1, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[7.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -89,7 +111,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

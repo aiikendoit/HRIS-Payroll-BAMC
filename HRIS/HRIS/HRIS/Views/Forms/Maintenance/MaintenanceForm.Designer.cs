@@ -31,7 +31,7 @@
             button4 = new Button();
             button3 = new Button();
             textBox4 = new TextBox();
-            textBox6 = new TextBox();
+            txt_completeaddress = new TextBox();
             MainPanel = new Panel();
             panel4 = new Panel();
             textBox3 = new TextBox();
@@ -43,9 +43,11 @@
             iconButton20 = new FontAwesome.Sharp.IconButton();
             iconButton19 = new FontAwesome.Sharp.IconButton();
             btn_religion = new FontAwesome.Sharp.IconButton();
+            btn_relationship = new FontAwesome.Sharp.IconButton();
             iconButton17 = new FontAwesome.Sharp.IconButton();
-            iconButton16 = new FontAwesome.Sharp.IconButton();
+            btn_position = new FontAwesome.Sharp.IconButton();
             iconButton15 = new FontAwesome.Sharp.IconButton();
+            btn_nationality = new FontAwesome.Sharp.IconButton();
             btn_licenseType = new FontAwesome.Sharp.IconButton();
             btn_leaveType = new FontAwesome.Sharp.IconButton();
             btn_leavenoticeType = new FontAwesome.Sharp.IconButton();
@@ -66,7 +68,7 @@
             panel_basicinfo = new Panel();
             pictureBox2 = new PictureBox();
             label12 = new Label();
-            button2 = new Button();
+            btn_address = new Button();
             textBox8 = new TextBox();
             label1 = new Label();
             textBox1 = new TextBox();
@@ -78,7 +80,6 @@
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
             openFileDialog1 = new OpenFileDialog();
-            btn_nationality = new FontAwesome.Sharp.IconButton();
             panelmenu.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
@@ -123,16 +124,16 @@
             textBox4.Size = new Size(507, 23);
             textBox4.TabIndex = 3;
             // 
-            // textBox6
+            // txt_completeaddress
             // 
-            textBox6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox6.Location = new Point(195, 183);
-            textBox6.Margin = new Padding(4, 3, 4, 3);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.ReadOnly = true;
-            textBox6.Size = new Size(507, 59);
-            textBox6.TabIndex = 4;
+            txt_completeaddress.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_completeaddress.Location = new Point(195, 183);
+            txt_completeaddress.Margin = new Padding(4, 3, 4, 3);
+            txt_completeaddress.Multiline = true;
+            txt_completeaddress.Name = "txt_completeaddress";
+            txt_completeaddress.ReadOnly = true;
+            txt_completeaddress.Size = new Size(507, 59);
+            txt_completeaddress.TabIndex = 4;
             // 
             // MainPanel
             // 
@@ -215,8 +216,9 @@
             panelmenu.Controls.Add(iconButton20);
             panelmenu.Controls.Add(iconButton19);
             panelmenu.Controls.Add(btn_religion);
+            panelmenu.Controls.Add(btn_relationship);
             panelmenu.Controls.Add(iconButton17);
-            panelmenu.Controls.Add(iconButton16);
+            panelmenu.Controls.Add(btn_position);
             panelmenu.Controls.Add(iconButton15);
             panelmenu.Controls.Add(btn_nationality);
             panelmenu.Controls.Add(btn_licenseType);
@@ -254,7 +256,7 @@
             iconButton21.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton21.IconSize = 20;
             iconButton21.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton21.Location = new Point(2, 562);
+            iconButton21.Location = new Point(2, 590);
             iconButton21.Margin = new Padding(4, 3, 4, 3);
             iconButton21.Name = "iconButton21";
             iconButton21.Padding = new Padding(10, 0, 0, 0);
@@ -279,7 +281,7 @@
             iconButton20.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton20.IconSize = 20;
             iconButton20.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton20.Location = new Point(2, 534);
+            iconButton20.Location = new Point(2, 562);
             iconButton20.Margin = new Padding(4, 3, 4, 3);
             iconButton20.Name = "iconButton20";
             iconButton20.Padding = new Padding(10, 0, 0, 0);
@@ -304,7 +306,7 @@
             iconButton19.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton19.IconSize = 20;
             iconButton19.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton19.Location = new Point(2, 506);
+            iconButton19.Location = new Point(2, 534);
             iconButton19.Margin = new Padding(4, 3, 4, 3);
             iconButton19.Name = "iconButton19";
             iconButton19.Padding = new Padding(10, 0, 0, 0);
@@ -329,7 +331,7 @@
             btn_religion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_religion.IconSize = 20;
             btn_religion.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_religion.Location = new Point(2, 478);
+            btn_religion.Location = new Point(2, 506);
             btn_religion.Margin = new Padding(4, 3, 4, 3);
             btn_religion.Name = "btn_religion";
             btn_religion.Padding = new Padding(10, 0, 0, 0);
@@ -341,6 +343,32 @@
             btn_religion.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_religion.UseVisualStyleBackColor = false;
             btn_religion.Click += iconButton18_Click;
+            // 
+            // btn_relationship
+            // 
+            btn_relationship.BackColor = Color.FromArgb(0, 127, 152);
+            btn_relationship.Cursor = Cursors.Hand;
+            btn_relationship.Dock = DockStyle.Top;
+            btn_relationship.FlatAppearance.BorderSize = 0;
+            btn_relationship.FlatStyle = FlatStyle.Flat;
+            btn_relationship.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_relationship.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_relationship.IconColor = Color.White;
+            btn_relationship.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_relationship.IconSize = 20;
+            btn_relationship.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_relationship.Location = new Point(2, 478);
+            btn_relationship.Margin = new Padding(4, 3, 4, 3);
+            btn_relationship.Name = "btn_relationship";
+            btn_relationship.Padding = new Padding(10, 0, 0, 0);
+            btn_relationship.Size = new Size(173, 28);
+            btn_relationship.TabIndex = 45;
+            btn_relationship.Tag = "Relationship";
+            btn_relationship.Text = "Relationship";
+            btn_relationship.TextAlign = ContentAlignment.MiddleLeft;
+            btn_relationship.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_relationship.UseVisualStyleBackColor = false;
+            btn_relationship.Click += btn_relationship_Click;
             // 
             // iconButton17
             // 
@@ -367,30 +395,31 @@
             iconButton17.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton17.UseVisualStyleBackColor = false;
             // 
-            // iconButton16
+            // btn_position
             // 
-            iconButton16.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton16.Cursor = Cursors.Hand;
-            iconButton16.Dock = DockStyle.Top;
-            iconButton16.FlatAppearance.BorderSize = 0;
-            iconButton16.FlatStyle = FlatStyle.Flat;
-            iconButton16.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton16.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            iconButton16.IconColor = Color.White;
-            iconButton16.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton16.IconSize = 20;
-            iconButton16.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton16.Location = new Point(2, 422);
-            iconButton16.Margin = new Padding(4, 3, 4, 3);
-            iconButton16.Name = "iconButton16";
-            iconButton16.Padding = new Padding(10, 0, 0, 0);
-            iconButton16.Size = new Size(173, 28);
-            iconButton16.TabIndex = 38;
-            iconButton16.Tag = "Position";
-            iconButton16.Text = "Position";
-            iconButton16.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton16.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton16.UseVisualStyleBackColor = false;
+            btn_position.BackColor = Color.FromArgb(0, 127, 152);
+            btn_position.Cursor = Cursors.Hand;
+            btn_position.Dock = DockStyle.Top;
+            btn_position.FlatAppearance.BorderSize = 0;
+            btn_position.FlatStyle = FlatStyle.Flat;
+            btn_position.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_position.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_position.IconColor = Color.White;
+            btn_position.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_position.IconSize = 20;
+            btn_position.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_position.Location = new Point(2, 422);
+            btn_position.Margin = new Padding(4, 3, 4, 3);
+            btn_position.Name = "btn_position";
+            btn_position.Padding = new Padding(10, 0, 0, 0);
+            btn_position.Size = new Size(173, 28);
+            btn_position.TabIndex = 38;
+            btn_position.Tag = "Position";
+            btn_position.Text = "Position";
+            btn_position.TextAlign = ContentAlignment.MiddleLeft;
+            btn_position.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_position.UseVisualStyleBackColor = false;
+            btn_position.Click += iconButton16_Click;
             // 
             // iconButton15
             // 
@@ -416,6 +445,32 @@
             iconButton15.TextAlign = ContentAlignment.MiddleLeft;
             iconButton15.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton15.UseVisualStyleBackColor = false;
+            // 
+            // btn_nationality
+            // 
+            btn_nationality.BackColor = Color.FromArgb(0, 127, 152);
+            btn_nationality.Cursor = Cursors.Hand;
+            btn_nationality.Dock = DockStyle.Top;
+            btn_nationality.FlatAppearance.BorderSize = 0;
+            btn_nationality.FlatStyle = FlatStyle.Flat;
+            btn_nationality.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_nationality.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_nationality.IconColor = Color.White;
+            btn_nationality.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_nationality.IconSize = 20;
+            btn_nationality.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_nationality.Location = new Point(2, 366);
+            btn_nationality.Margin = new Padding(4, 3, 4, 3);
+            btn_nationality.Name = "btn_nationality";
+            btn_nationality.Padding = new Padding(10, 0, 0, 0);
+            btn_nationality.Size = new Size(173, 28);
+            btn_nationality.TabIndex = 44;
+            btn_nationality.Tag = "Nationality";
+            btn_nationality.Text = "Nationality";
+            btn_nationality.TextAlign = ContentAlignment.MiddleLeft;
+            btn_nationality.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_nationality.UseVisualStyleBackColor = false;
+            btn_nationality.Click += btn_nationality_Click;
             // 
             // btn_licenseType
             // 
@@ -794,13 +849,13 @@
             panel_basicinfo.BackColor = Color.White;
             panel_basicinfo.Controls.Add(pictureBox2);
             panel_basicinfo.Controls.Add(label12);
-            panel_basicinfo.Controls.Add(button2);
+            panel_basicinfo.Controls.Add(btn_address);
             panel_basicinfo.Controls.Add(textBox8);
             panel_basicinfo.Controls.Add(label1);
             panel_basicinfo.Controls.Add(button4);
             panel_basicinfo.Controls.Add(button3);
             panel_basicinfo.Controls.Add(textBox4);
-            panel_basicinfo.Controls.Add(textBox6);
+            panel_basicinfo.Controls.Add(txt_completeaddress);
             panel_basicinfo.Controls.Add(textBox3);
             panel_basicinfo.Controls.Add(textBox2);
             panel_basicinfo.Controls.Add(textBox5);
@@ -843,16 +898,16 @@
             label12.TabIndex = 16;
             label12.Text = "Official Logo";
             // 
-            // button2
+            // btn_address
             // 
-            button2.Location = new Point(166, 185);
-            button2.Margin = new Padding(4, 3, 4, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(26, 23);
-            button2.TabIndex = 6;
-            button2.Text = "...";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btn_address.Location = new Point(166, 185);
+            btn_address.Margin = new Padding(4, 3, 4, 3);
+            btn_address.Name = "btn_address";
+            btn_address.Size = new Size(26, 23);
+            btn_address.TabIndex = 6;
+            btn_address.Text = "...";
+            btn_address.UseVisualStyleBackColor = true;
+            btn_address.Click += button2_Click;
             // 
             // textBox8
             // 
@@ -968,32 +1023,6 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
-            // btn_nationality
-            // 
-            btn_nationality.BackColor = Color.FromArgb(0, 127, 152);
-            btn_nationality.Cursor = Cursors.Hand;
-            btn_nationality.Dock = DockStyle.Top;
-            btn_nationality.FlatAppearance.BorderSize = 0;
-            btn_nationality.FlatStyle = FlatStyle.Flat;
-            btn_nationality.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_nationality.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            btn_nationality.IconColor = Color.White;
-            btn_nationality.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_nationality.IconSize = 20;
-            btn_nationality.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_nationality.Location = new Point(2, 366);
-            btn_nationality.Margin = new Padding(4, 3, 4, 3);
-            btn_nationality.Name = "btn_nationality";
-            btn_nationality.Padding = new Padding(10, 0, 0, 0);
-            btn_nationality.Size = new Size(173, 28);
-            btn_nationality.TabIndex = 44;
-            btn_nationality.Tag = "Nationality";
-            btn_nationality.Text = "Nationality";
-            btn_nationality.TextAlign = ContentAlignment.MiddleLeft;
-            btn_nationality.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_nationality.UseVisualStyleBackColor = false;
-            btn_nationality.Click += btn_nationality_Click;
-            // 
             // MaintenanceForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1028,7 +1057,7 @@
         private Button button4;
         private Button button3;
         private TextBox textBox4;
-        private TextBox textBox6;
+        private TextBox txt_completeaddress;
         private Panel MainPanel;
         private Panel panel4;
         private TextBox textBox3;
@@ -1050,11 +1079,11 @@
         private Label label6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
-        private Button button2;
+        private Button btn_address;
         private PictureBox pictureBox2;
         private Label label12;
         private OpenFileDialog openFileDialog1;
-        private FontAwesome.Sharp.IconButton iconButton16;
+        private FontAwesome.Sharp.IconButton btn_position;
         private FontAwesome.Sharp.IconButton iconButton15;
         private FontAwesome.Sharp.IconButton btn_licenseType;
         private FontAwesome.Sharp.IconButton btn_leaveType;
@@ -1076,5 +1105,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private Panel panel2;
         private FontAwesome.Sharp.IconButton btn_nationality;
+        private FontAwesome.Sharp.IconButton btn_relationship;
     }
 }

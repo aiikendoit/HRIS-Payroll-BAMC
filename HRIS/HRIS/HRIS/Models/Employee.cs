@@ -39,13 +39,13 @@ public partial class Employee
 
     public string? Address3 { get; set; }
 
-    public int? Zipcode { get; set; }
+    public int? FkZipcode { get; set; }
 
     public int? FkCivilstatus { get; set; }
 
     public int? FkReligion { get; set; }
 
-    public string? Nationality { get; set; }
+    public int? FkNationality { get; set; }
 
     public string? Bloodtype { get; set; }
 
@@ -55,23 +55,23 @@ public partial class Employee
 
     public string? Email { get; set; }
 
-    public int? FkBankid { get; set; }
+    public int? FkBankName { get; set; }
 
-    public int? Accountno { get; set; }
+    public string? Accountno { get; set; }
 
     public string? Contactperson { get; set; }
 
-    public string? Contactrelationship { get; set; }
+    public int? FkRelationship { get; set; }
 
     public string? Contactno { get; set; }
 
-    public int? Sssno { get; set; }
+    public string? Sssno { get; set; }
 
-    public int? Pagibigno { get; set; }
+    public string? Pagibigno { get; set; }
 
-    public int? Phicno { get; set; }
+    public string? Phicno { get; set; }
 
-    public int? Tinno { get; set; }
+    public string? Tinno { get; set; }
 
     public byte[]? ProfilePicture { get; set; }
 
@@ -82,6 +82,10 @@ public partial class Employee
     public string? Createdby { get; set; }
 
     public int? FkSystemUser { get; set; }
+
+    public int? FkEducationallevel { get; set; }
+
+    public string? Employeetype { get; set; }
 
     public virtual Educationalattainment? Educationalattainment { get; set; }
 
@@ -97,11 +101,19 @@ public partial class Employee
 
     public virtual ICollection<Employmentstatus> Employmentstatuses { get; set; } = new List<Employmentstatus>();
 
-    public virtual Bank? FkBank { get; set; }
+    public virtual BankName? FkBankNameNavigation { get; set; }
 
     public virtual Barangay? FkBarangayNavigation { get; set; }
 
     public virtual Civilstatus? FkCivilstatusNavigation { get; set; }
+
+    public virtual Educationallevel? FkEducationallevelNavigation { get; set; }
+
+    public virtual Nationality? FkNationalityNavigation { get; set; }
+
+    public virtual Province? FkProvinceNavigation { get; set; }
+
+    public virtual Relationship? FkRelationshipNavigation { get; set; }
 
     public virtual Religion? FkReligionNavigation { get; set; }
 
@@ -109,7 +121,7 @@ public partial class Employee
 
     public virtual Towncity? FkTowncityNavigation { get; set; }
 
-    public virtual Province PkEmployeeNavigation { get; set; } = null!;
+    public virtual Zipcode? FkZipcodeNavigation { get; set; }
 
-    public virtual Workassignment? Workassignment { get; set; }
+    public virtual ICollection<Workassignment> Workassignments { get; set; } = new List<Workassignment>();
 }

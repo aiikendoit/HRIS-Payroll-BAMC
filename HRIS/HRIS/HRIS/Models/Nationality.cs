@@ -17,5 +17,7 @@ public partial class Nationality
 
     public int? FkSystemUser { get; set; }
 
+    public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
+
     public virtual SystemUser? FkSystemUserNavigation { get; set; }
 }

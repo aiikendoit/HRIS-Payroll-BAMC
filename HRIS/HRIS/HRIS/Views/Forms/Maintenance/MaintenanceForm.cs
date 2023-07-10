@@ -11,6 +11,8 @@ using HRIS.Forms.Maintenance.EducationaLevel;
 using HRIS.Forms.Maintenance.Leaves;
 using HRIS.Forms.Maintenance.License;
 using HRIS.Views.Forms.Maintenance.NationalityFolder;
+using HRIS.Views.Forms.Maintenance.Positions;
+using HRIS.Views.Forms.Maintenance.RelationShip;
 using HRIS.Views.Forms.Maintenance.Religion;
 using Microsoft.Win32;
 using System;
@@ -29,7 +31,7 @@ namespace HRIS.Forms.Maintenance
     public partial class MaintenanceForm : Form
     {
         private Form currentchildform;
-
+        string? address1, address2, address3, regionSelectedValue, provinceSelectedValue, towncitySelectedValue, barangaySelectedValue, zipcode;
         private IconButton currentbtn;
         public MaintenanceForm()
         {
@@ -98,8 +100,23 @@ namespace HRIS.Forms.Maintenance
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frm_AddressMaintenance frm_AddressMaintenance = new frm_AddressMaintenance();
-            frm_AddressMaintenance.ShowDialog();
+            frm_AddressMaintenance addrs = new frm_AddressMaintenance();
+            addrs.ShowDialog();
+
+            //if (addrs.issave == true)
+            //{
+            //    //set value
+            //    address1 = addrs.address1.ToString();
+            //    address2 = addrs.address2.ToString();
+            //    address3 = addrs.address3.ToString();
+            //    regionSelectedValue = addrs.regionSelectedvalue.ToString();
+            //    provinceSelectedValue = addrs.provinceSelectedvalue.ToString();
+            //    towncitySelectedValue = addrs.towncitySelectedvalue.ToString();
+            //    barangaySelectedValue = addrs.barangaySelectedvalue.ToString();
+            //    zipcode = addrs.zipcodeSelectedvalue.ToString();
+            //    txt_completeaddress.Text = addrs.completeaddress.ToString();
+            //}
+
         }
 
         private void iconButton18_Click(object sender, EventArgs e)
@@ -184,6 +201,18 @@ namespace HRIS.Forms.Maintenance
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new NationalityForm());
+        }
+
+        private void btn_relationship_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new RelationshipForm());
+        }
+
+        private void iconButton16_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new PositionForm());
         }
     }
 }

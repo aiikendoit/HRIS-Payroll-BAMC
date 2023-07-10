@@ -18,14 +18,21 @@ namespace HRIS.Presenter
             _view = view;
             _context = new HrisContext();
         }
-        public void loadProvince(int? regionid)
+        public void loadProvince()
         {
             var p = _context.Provinces
-                 .Where(e => e.FkRegion == regionid)
                  .OrderBy(e => e.Description)
                  .ToList();
             _view.DisplayProvinces(p);
         }
-        
+        public void loadProvincewhere(int provinceid)
+        {
+            var p = _context.Provinces
+                .Where(e => e.PkProvince == provinceid)
+                 .OrderBy(e => e.Description)
+                 .ToList();
+            _view.DisplayProvinces(p);
+        }
+
     }
 }

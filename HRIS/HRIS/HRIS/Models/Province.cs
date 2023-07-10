@@ -9,7 +9,7 @@ public partial class Province
 
     public string? Description { get; set; }
 
-    public bool IsActive { get; set; }
+    public bool? IsActive { get; set; }
 
     public DateTime? Createddate { get; set; }
 
@@ -17,5 +17,5 @@ public partial class Province
 
     public int? FkRegion { get; set; }
 
-    public virtual Employee? Employee { get; set; }
+    public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 }

@@ -43,14 +43,6 @@
             dgrid_workassignment = new DataGridView();
             panel1 = new Panel();
             label1 = new Label();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
-            Column8 = new DataGridViewTextBoxColumn();
             flowLayoutPanel2.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
@@ -159,7 +151,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(51, 5);
+            label2.Location = new Point(43, 5);
             label2.Name = "label2";
             label2.Size = new Size(217, 32);
             label2.TabIndex = 2;
@@ -239,7 +231,6 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_workassignment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_workassignment.ColumnHeadersHeight = 50;
-            dgrid_workassignment.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8 });
             dgrid_workassignment.Dock = DockStyle.Fill;
             dgrid_workassignment.Location = new Point(0, 114);
             dgrid_workassignment.Name = "dgrid_workassignment";
@@ -265,46 +256,6 @@
             label1.Size = new Size(94, 15);
             label1.TabIndex = 0;
             label1.Text = "Total record(s): 0";
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "ID";
-            Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Sub-Department";
-            Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Position";
-            Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Job Description";
-            Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Responsibilities";
-            Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Scope";
-            Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            Column7.HeaderText = "Start date";
-            Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            Column8.HeaderText = "End date";
-            Column8.Name = "Column8";
             // 
             // emp_workassignment
             // 
@@ -349,13 +300,5 @@
         private DataGridView dgrid_workassignment;
         private Panel panel1;
         private Label label1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
-        private DataGridViewTextBoxColumn Column8;
     }
 }

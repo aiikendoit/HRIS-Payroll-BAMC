@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ITSSupport\\Music\\02 - HRIS-Payroll - July 1,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+    "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ITSSupport\\Music\\02 - HRIS-Payroll - July 1,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
+    "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ITSSupport\\Music\\02 - HRIS-Payroll - July 1,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
         "projectName": "HRIS",
-        "projectPath": "C:\\Users\\ITSSupport\\Music\\02 - HRIS-Payroll - July 1,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
         "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ITSSupport\\Music\\02 - HRIS-Payroll - July 1,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+        "outputPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,6 +62,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[7.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

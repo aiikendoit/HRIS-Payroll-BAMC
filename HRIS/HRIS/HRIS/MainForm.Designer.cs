@@ -892,7 +892,6 @@ namespace HRIS
         private Panel panel4;
         private Panel panel3;
         private Label label14;
-        private JPCircularPictureBox jpCircularPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Panel MainPanel;
         private JPCircularPictureBox jpCircularPictureBox2;

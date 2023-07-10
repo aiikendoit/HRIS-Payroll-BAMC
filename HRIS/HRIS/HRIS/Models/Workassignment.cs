@@ -11,8 +11,6 @@ public partial class Workassignment
 
     public int? FkDepartment { get; set; }
 
-    public int? FkDepartmentsection { get; set; }
-
     public int? FkPosition { get; set; }
 
     public string? Jobdescription { get; set; }
@@ -27,17 +25,17 @@ public partial class Workassignment
 
     public DateTime? Enddate { get; set; }
 
-    public string? Remarks { get; set; }
-
     public DateTime? Createddate { get; set; }
 
-    public int? Createby { get; set; }
+    public string? Createdby { get; set; }
 
-    public virtual Departmentsection PkWorkassignment1 { get; set; } = null!;
+    public int? FkSystemUser { get; set; }
 
-    public virtual Employee PkWorkassignment2 { get; set; } = null!;
+    public virtual Department? FkDepartmentNavigation { get; set; }
 
-    public virtual Position PkWorkassignment3 { get; set; } = null!;
+    public virtual Employee? FkEmployeeNavigation { get; set; }
 
-    public virtual Department PkWorkassignmentNavigation { get; set; } = null!;
+    public virtual Position? FkPositionNavigation { get; set; }
+
+    public virtual SystemUser? FkSystemUserNavigation { get; set; }
 }

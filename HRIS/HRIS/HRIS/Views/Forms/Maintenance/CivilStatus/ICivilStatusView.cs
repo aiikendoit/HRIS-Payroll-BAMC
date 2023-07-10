@@ -11,7 +11,7 @@ namespace HRIS.Views.Forms.Maintenance.CivilStatus
 {
     public interface ICivilStatusView
     {
-        void DisplayEmployees(List<Civilstatus> Civilstatuses);
+        void DisplayCivilStatus(List<Civilstatus> Civilstatuses);
         void ClearFields();
     }
 }

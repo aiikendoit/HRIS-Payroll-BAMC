@@ -15,7 +15,7 @@ public partial class HrisContext : DbContext
     {
     }
 
-    public virtual DbSet<Bank> Banks { get; set; }
+    public virtual DbSet<BankName> BankNames { get; set; }
 
     public virtual DbSet<Barangay> Barangays { get; set; }
 
@@ -71,6 +71,8 @@ public partial class HrisContext : DbContext
 
     public virtual DbSet<Region> Regions { get; set; }
 
+    public virtual DbSet<Relationship> Relationships { get; set; }
+
     public virtual DbSet<Religion> Religions { get; set; }
 
     public virtual DbSet<Salarytype> Salarytypes { get; set; }
@@ -86,34 +88,44 @@ public partial class HrisContext : DbContext
     public virtual DbSet<Zipcode> Zipcodes { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=webserver; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            optionsBuilder.UseSqlServer("Data Source=webserver; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
+                          .UseLazyLoadingProxies();
+        }
+
+    }
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+    //=> optionsBuilder.UseSqlServer("Data Source=webserver; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Bank>(entity =>
+        modelBuilder.Entity<BankName>(entity =>
         {
-            entity.HasKey(e => e.PkBank).HasName("PK__bank__753BC28F25FDB77E");
+            entity.HasKey(e => e.PkBankName).HasName("PK__bank__753BC28F25FDB77E");
 
-            entity.ToTable("bank", "Template");
+            entity.ToTable("bankName", "Template");
 
-            entity.Property(e => e.PkBank)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_bank");
-            entity.Property(e => e.Bankname)
+            entity.Property(e => e.PkBankName).HasColumnName("PK_bankName");
+            entity.Property(e => e.Bankname1)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("bankname");
-            entity.Property(e => e.Bankno).HasColumnName("bankno");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
-            entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
-            entity.Property(e => e.Remarks)
-                .HasMaxLength(100)
-                .IsUnicode(false)
-                .HasColumnName("remarks");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.Isactive).HasColumnName("isactive");
+
+            entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.BankNames)
+                .HasForeignKey(d => d.FkSystemUser)
+                .HasConstraintName("FK_bank_systemuser");
         });
 
         modelBuilder.Entity<Barangay>(entity =>
@@ -339,18 +351,25 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("educationallevel", "Template");
 
-            entity.Property(e => e.PkEducationallevel)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_educationallevel");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkEducationallevel).HasColumnName("PK_educationallevel");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.Isactive).HasColumnName("isactive");
+
+            entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.InverseFkSystemUserNavigation)
+                .HasForeignKey(d => d.FkSystemUser)
+                .HasConstraintName("FK_educationallevel_systemUser");
         });
 
         modelBuilder.Entity<Employee>(entity =>
@@ -359,10 +378,11 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("employee", "HR");
 
-            entity.Property(e => e.PkEmployee)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_employee");
-            entity.Property(e => e.Accountno).HasColumnName("accountno");
+            entity.Property(e => e.PkEmployee).HasColumnName("PK_employee");
+            entity.Property(e => e.Accountno)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("accountno");
             entity.Property(e => e.Address1)
                 .HasMaxLength(500)
                 .IsUnicode(false)
@@ -376,7 +396,7 @@ public partial class HrisContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("address3");
             entity.Property(e => e.Biometricno)
-                .HasMaxLength(1)
+                .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("biometricno");
             entity.Property(e => e.Birthdate)
@@ -398,38 +418,43 @@ public partial class HrisContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("contactperson");
-            entity.Property(e => e.Contactrelationship)
-                .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("contactrelationship");
             entity.Property(e => e.Createdby)
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Email)
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("email");
+            entity.Property(e => e.Employeetype)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("employeetype");
             entity.Property(e => e.Extensionname)
-                .HasMaxLength(1)
+                .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("extensionname");
             entity.Property(e => e.Firstname)
-                .HasMaxLength(1)
+                .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("firstname");
-            entity.Property(e => e.FkBankid).HasColumnName("FK_bankid");
+            entity.Property(e => e.FkBankName).HasColumnName("FK_bankName");
             entity.Property(e => e.FkBarangay).HasColumnName("FK_barangay");
             entity.Property(e => e.FkCivilstatus).HasColumnName("FK_civilstatus");
+            entity.Property(e => e.FkEducationallevel).HasColumnName("FK_educationallevel");
+            entity.Property(e => e.FkNationality).HasColumnName("FK_nationality");
             entity.Property(e => e.FkProvince).HasColumnName("FK_province");
+            entity.Property(e => e.FkRelationship).HasColumnName("FK_relationship");
             entity.Property(e => e.FkReligion).HasColumnName("FK_religion");
             entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.FkTowncity).HasColumnName("FK_towncity");
+            entity.Property(e => e.FkZipcode).HasColumnName("FK_zipcode");
             entity.Property(e => e.Gender)
-                .HasMaxLength(1)
+                .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("gender");
             entity.Property(e => e.Idno)
@@ -438,35 +463,42 @@ public partial class HrisContext : DbContext
                 .HasColumnName("idno");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
             entity.Property(e => e.Lastname)
-                .HasMaxLength(1)
+                .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("lastname");
             entity.Property(e => e.Middlename)
-                .HasMaxLength(1)
-                .IsUnicode(false)
-                .HasColumnName("middlename");
-            entity.Property(e => e.Nationality)
                 .HasMaxLength(100)
                 .IsUnicode(false)
-                .HasColumnName("nationality");
-            entity.Property(e => e.Pagibigno).HasColumnName("pagibigno");
-            entity.Property(e => e.Phicno).HasColumnName("phicno");
+                .HasColumnName("middlename");
+            entity.Property(e => e.Pagibigno)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("pagibigno");
+            entity.Property(e => e.Phicno)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("phicno");
             entity.Property(e => e.ProfilePicture).HasColumnType("image");
             entity.Property(e => e.Rfid).HasColumnName("rfid");
-            entity.Property(e => e.Sssno).HasColumnName("sssno");
+            entity.Property(e => e.Sssno)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("sssno");
             entity.Property(e => e.Suffix)
-                .HasMaxLength(1)
+                .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("suffix");
             entity.Property(e => e.Telephoneno)
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("telephoneno");
-            entity.Property(e => e.Tinno).HasColumnName("tinno");
-            entity.Property(e => e.Zipcode).HasColumnName("zipcode");
+            entity.Property(e => e.Tinno)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("tinno");
 
-            entity.HasOne(d => d.FkBank).WithMany(p => p.Employees)
-                .HasForeignKey(d => d.FkBankid)
+            entity.HasOne(d => d.FkBankNameNavigation).WithMany(p => p.Employees)
+                .HasForeignKey(d => d.FkBankName)
                 .HasConstraintName("FK_bank");
 
             entity.HasOne(d => d.FkBarangayNavigation).WithMany(p => p.Employees)
@@ -476,6 +508,22 @@ public partial class HrisContext : DbContext
             entity.HasOne(d => d.FkCivilstatusNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkCivilstatus)
                 .HasConstraintName("FK_civilstatus");
+
+            entity.HasOne(d => d.FkEducationallevelNavigation).WithMany(p => p.Employees)
+                .HasForeignKey(d => d.FkEducationallevel)
+                .HasConstraintName("FK_employee_educationallevel");
+
+            entity.HasOne(d => d.FkNationalityNavigation).WithMany(p => p.Employees)
+                .HasForeignKey(d => d.FkNationality)
+                .HasConstraintName("FK_employee_nationality");
+
+            entity.HasOne(d => d.FkProvinceNavigation).WithMany(p => p.Employees)
+                .HasForeignKey(d => d.FkProvince)
+                .HasConstraintName("FK_province");
+
+            entity.HasOne(d => d.FkRelationshipNavigation).WithMany(p => p.Employees)
+                .HasForeignKey(d => d.FkRelationship)
+                .HasConstraintName("FK_employee_relationship");
 
             entity.HasOne(d => d.FkReligionNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkReligion)
@@ -489,10 +537,9 @@ public partial class HrisContext : DbContext
                 .HasForeignKey(d => d.FkTowncity)
                 .HasConstraintName("FK_towncity");
 
-            entity.HasOne(d => d.PkEmployeeNavigation).WithOne(p => p.Employee)
-                .HasForeignKey<Employee>(d => d.PkEmployee)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_province");
+            entity.HasOne(d => d.FkZipcodeNavigation).WithMany(p => p.Employees)
+                .HasForeignKey(d => d.FkZipcode)
+                .HasConstraintName("FK_employee_zipcode");
         });
 
         modelBuilder.Entity<Employeedependent>(entity =>
@@ -939,12 +986,13 @@ public partial class HrisContext : DbContext
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("description");
-            entity.Property(e => e.FkDepartment)
-                .HasMaxLength(100)
-                .IsUnicode(false)
-                .HasColumnName("FK_department");
+            entity.Property(e => e.FkDepartment).HasColumnName("FK_department");
             entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
+
+            entity.HasOne(d => d.FkDepartmentNavigation).WithMany(p => p.Positions)
+                .HasForeignKey(d => d.FkDepartment)
+                .HasConstraintName("FK_position_department");
         });
 
         modelBuilder.Entity<Province>(entity =>
@@ -992,6 +1040,29 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.PkRegion)
                 .ValueGeneratedOnAdd()
                 .HasColumnName("PK_region");
+        });
+
+        modelBuilder.Entity<Relationship>(entity =>
+        {
+            entity.HasKey(e => e.PkRelationship);
+
+            entity.ToTable("relationship", "Template");
+
+            entity.Property(e => e.PkRelationship).HasColumnName("PK_relationship");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
+            entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("createddate");
+            entity.Property(e => e.Description)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.Isactive).HasColumnName("isactive");
         });
 
         modelBuilder.Entity<Religion>(entity =>
@@ -1133,7 +1204,10 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.PkWorkassignment)
                 .ValueGeneratedNever()
                 .HasColumnName("PK_workassignment");
-            entity.Property(e => e.Createby).HasColumnName("createby");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
@@ -1141,9 +1215,9 @@ public partial class HrisContext : DbContext
                 .HasColumnType("date")
                 .HasColumnName("enddate");
             entity.Property(e => e.FkDepartment).HasColumnName("FK_department");
-            entity.Property(e => e.FkDepartmentsection).HasColumnName("FK_departmentsection");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkPosition).HasColumnName("FK_position");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsManager).HasColumnName("isManager");
             entity.Property(e => e.Jobdescription)
                 .HasMaxLength(500)
@@ -1152,10 +1226,6 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.Jobscope)
                 .IsUnicode(false)
                 .HasColumnName("jobscope");
-            entity.Property(e => e.Remarks)
-                .HasMaxLength(500)
-                .IsUnicode(false)
-                .HasColumnName("remarks");
             entity.Property(e => e.Responsibilities)
                 .IsUnicode(false)
                 .HasColumnName("responsibilities");
@@ -1163,33 +1233,30 @@ public partial class HrisContext : DbContext
                 .HasColumnType("date")
                 .HasColumnName("startdate");
 
-            entity.HasOne(d => d.PkWorkassignmentNavigation).WithOne(p => p.Workassignment)
-                .HasForeignKey<Workassignment>(d => d.PkWorkassignment)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+            entity.HasOne(d => d.FkDepartmentNavigation).WithMany(p => p.Workassignments)
+                .HasForeignKey(d => d.FkDepartment)
                 .HasConstraintName("FK_workassignment_department");
 
-            entity.HasOne(d => d.PkWorkassignment1).WithOne(p => p.Workassignment)
-                .HasForeignKey<Workassignment>(d => d.PkWorkassignment)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_workassignment_deparmentsection");
-
-            entity.HasOne(d => d.PkWorkassignment2).WithOne(p => p.Workassignment)
-                .HasForeignKey<Workassignment>(d => d.PkWorkassignment)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+            entity.HasOne(d => d.FkEmployeeNavigation).WithMany(p => p.Workassignments)
+                .HasForeignKey(d => d.FkEmployee)
                 .HasConstraintName("FK_workassignment_employee");
 
-            entity.HasOne(d => d.PkWorkassignment3).WithOne(p => p.Workassignment)
-                .HasForeignKey<Workassignment>(d => d.PkWorkassignment)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+            entity.HasOne(d => d.FkPositionNavigation).WithMany(p => p.Workassignments)
+                .HasForeignKey(d => d.FkPosition)
                 .HasConstraintName("FK_workassignment_position");
+
+            entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.Workassignments)
+                .HasForeignKey(d => d.FkSystemUser)
+                .HasConstraintName("FK_workassignment_systemuser");
         });
 
         modelBuilder.Entity<Zipcode>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("zipcode", "Template");
+            entity.HasKey(e => e.PkZipcode);
 
+            entity.ToTable("zipcode", "Template");
+
+            entity.Property(e => e.PkZipcode).HasColumnName("PK_zipcode");
             entity.Property(e => e.Areaname)
                 .HasMaxLength(500)
                 .IsUnicode(false)
@@ -1207,9 +1274,6 @@ public partial class HrisContext : DbContext
                 .HasColumnName("description");
             entity.Property(e => e.FkTowncity).HasColumnName("FK_towncity");
             entity.Property(e => e.Isactive).HasColumnName("isactive");
-            entity.Property(e => e.PkZipcode)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("PK_zipcode");
             entity.Property(e => e.Zipcode1).HasColumnName("zipcode");
         });
 

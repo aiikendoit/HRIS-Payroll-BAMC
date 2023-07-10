@@ -23,5 +23,17 @@ namespace HRIS.Presenter
             var p = _context.Regions.ToList().OrderBy(e => e.Description).ToList();
             _view.DisplayRegion(p);
         }
+        public void loadRegionWhere(int regionid)
+        {
+            var query = from region in _context.Regions
+                        where region.PkRegion ==  regionid
+                        orderby region.Description ascending
+                        select new Models.Region
+                        {
+                            PkRegion = regionid,
+                            Description = region.Description,
+                        };
+            _view.DisplayRegion(query.ToList());
+        }
     }
 }

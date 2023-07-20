@@ -14,6 +14,4 @@ public partial class Departmentsection
     public DateTime? Createddate { get; set; }
 
     public int? Createdby { get; set; }
-
-    public virtual Workassignment? Workassignment { get; set; }
 }

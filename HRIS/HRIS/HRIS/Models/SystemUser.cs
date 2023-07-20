@@ -21,6 +21,8 @@ public partial class SystemUser
 
     public DateTime? Logdate { get; set; }
 
+    public virtual ICollection<BankName> BankNames { get; set; } = new List<BankName>();
+
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 
     public virtual Department? FkDepartmentNavigation { get; set; }
@@ -30,4 +32,6 @@ public partial class SystemUser
     public virtual ICollection<Nationality> Nationalities { get; set; } = new List<Nationality>();
 
     public virtual ICollection<Religion> Religions { get; set; } = new List<Religion>();
+
+    public virtual ICollection<Workassignment> Workassignments { get; set; } = new List<Workassignment>();
 }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_LastSelectedProfileId>D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
+    <_LastSelectedProfileId>D:\James System\2023\HRIS with GIT\09 - HRIS-Payroll - July 6,2023\HRIS\HRIS\HRIS\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="Views\Forms\Doctors\DoctorForm.cs">
@@ -85,6 +85,9 @@
     <Compile Update="Views\Forms\Maintenance\AddressFolder\Barangay\BarangayForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\Forms\Maintenance\Bank\frm_bank_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Forms\Maintenance\CivilStatus\CivilStatusForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +107,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Forms\Maintenance\EducationaLevel\EducationalLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\EducationaLevel\frm_educationllevel_add.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Forms\Maintenance\Employment\EmploymentTypeForm.cs">
@@ -128,6 +134,18 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Forms\Maintenance\NationalityFolder\frm_nationality_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\Positions\frm_position.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\Positions\PositionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\RelationShip\frm_relationship_ad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Forms\Maintenance\RelationShip\RelationshipForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Forms\Maintenance\ReligionFolder\frm_religion_Add.cs">

@@ -92,5 +92,10 @@ namespace HRIS.Views.Forms.Maintenance.CivilStatus
         {
 
         }
+
+        public void DisplayCivilStatus(List<Civilstatus> Civilstatuses)
+        {
+            
+        }
     }
 }

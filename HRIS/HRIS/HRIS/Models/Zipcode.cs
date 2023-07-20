@@ -20,4 +20,6 @@ public partial class Zipcode
     public string? Createdby { get; set; }
 
     public DateTime? Createdate { get; set; }
+
+    public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 }

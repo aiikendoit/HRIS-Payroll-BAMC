@@ -191,6 +191,7 @@
             // 
             // dgrid_employee
             // 
+            dgrid_employee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.IndianRed;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -251,6 +252,7 @@
             Padding = new Padding(5);
             Text = "EmployeeForm";
             Load += EmployeeForm_Load;
+            Shown += EmployeeForm_Shown;
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
             flowLayoutPanel2.ResumeLayout(false);

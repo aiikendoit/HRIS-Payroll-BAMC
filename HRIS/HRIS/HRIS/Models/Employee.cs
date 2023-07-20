@@ -9,7 +9,7 @@ public partial class Employee
 
     public string? Idno { get; set; }
 
-    public int? Rfid { get; set; }
+    public string? Rfid { get; set; }
 
     public string? Biometricno { get; set; }
 

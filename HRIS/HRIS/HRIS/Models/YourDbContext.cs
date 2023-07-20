@@ -973,7 +973,11 @@ public partial class YourDbContext : DbContext
                 .HasComment("getdate()")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
+<<<<<<< HEAD
             entity.Property(e => e.Description)
+=======
+            entity.Property(e => e.PositionName)
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("description");

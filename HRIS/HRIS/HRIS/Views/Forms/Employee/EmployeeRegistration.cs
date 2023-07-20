@@ -63,6 +63,10 @@ namespace HRIS.Forms.Employee
         private Form currentchildform;
         private IconButton currentbtn;
         String headername;
+<<<<<<< HEAD
+=======
+        private string? employeeid;
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
         string? address1, address2, address3;
         int regionSelectedValue, provinceSelectedValue, towncitySelectedValue, barangaySelectedValue, zipcodeSelectedValue;
 
@@ -262,7 +266,11 @@ namespace HRIS.Forms.Employee
         private void btn_workassignment_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
+<<<<<<< HEAD
             openchildform(new emp_workassignment(txt_employeeid.Text));
+=======
+            openchildform(new emp_workassignment(employeeid));
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
         }
         private void btn_basicinfo_Click(object sender, EventArgs e)
         {
@@ -475,6 +483,7 @@ namespace HRIS.Forms.Employee
             }
 
         }
+<<<<<<< HEAD
         public void putdata(EmployeeForm employeeForm, Models.Employee employee)
         {
             this.employeeForm = employeeForm;
@@ -488,6 +497,19 @@ namespace HRIS.Forms.Employee
             this.selectedEmployee = employee;
             employee_Presenter.LoadEmployeewithWhere(employee.PkEmployee);
             txt_idno.Enabled = false;
+=======
+        public void putdata(int employeeid,string position,string department)
+        {
+            employee_Presenter.LoadEmployeewithWhere(employeeid);
+            txt_idno.Enabled = false;
+            txt_headerPositionDepartment.Text = position + " | " + department;
+        }
+        public void putdataDoctor(int employeeid, string position, string department)
+        {
+            employee_Presenter.LoadEmployeewithWhere(employeeid);
+            txt_idno.Enabled = false;
+            txt_headerPositionDepartment.Text = position + " | " + department;
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
         }
 
         public void DisplayEmployee(List<Models.Employee> employees)
@@ -539,6 +561,10 @@ namespace HRIS.Forms.Employee
                 {
                     Idno = txt_idno.Text,
                     Biometricno = txt_biometric.Text,
+<<<<<<< HEAD
+=======
+                    Rfid = txt_rfid.Text,
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
                     Lastname = txt_lastname.Text,
                     Firstname = txt_firstname.Text,
                     Middlename = txt_middlename.Text,
@@ -626,6 +652,10 @@ namespace HRIS.Forms.Employee
                     selectedPerson.Middlename = txt_middlename.Text;
                     selectedPerson.Idno = txt_idno.Text;
                     selectedPerson.Biometricno = txt_biometric.Text;
+<<<<<<< HEAD
+=======
+                    selectedPerson.Rfid = txt_rfid.Text;
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
                     selectedPerson.Lastname = txt_lastname.Text;
                     selectedPerson.Firstname = txt_firstname.Text;
                     selectedPerson.Middlename = txt_middlename.Text;
@@ -682,11 +712,19 @@ namespace HRIS.Forms.Employee
                     Models.Employee employee = employees[0];
                     //Navigation
                     Barangay? barangay = employee.FkBarangayNavigation;
+<<<<<<< HEAD
                     txt_employeeid.Text = employee.PkEmployee.ToString();
+=======
+                    txt_employeeid.Text = employee.Idno;
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
                     txt_firstname.Text = employee.Firstname;
                     txt_lastname.Text = employee.Lastname;
                     txt_idno.Text = employee.Idno;
                     txt_biometric.Text = employee.Biometricno;
+<<<<<<< HEAD
+=======
+                    txt_rfid.Text = employee.Rfid;
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
                     txt_lastname.Text = employee.Lastname;
                     txt_firstname.Text = employee.Firstname;
                     txt_middlename.Text = employee.Middlename;
@@ -742,7 +780,11 @@ namespace HRIS.Forms.Employee
                         mdname = md.ToString() + ". ";
                     }
                     txt_Headercompletename.Text = employee?.Firstname + " " + mdname + employee?.Lastname;
+<<<<<<< HEAD
                     txt_headerIdno.Text = employee?.Idno;
+=======
+                    employeeid = employee?.PkEmployee.ToString();
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
                     btn_save.Text = "Update";
                     btn_cancel.Select();
                 }

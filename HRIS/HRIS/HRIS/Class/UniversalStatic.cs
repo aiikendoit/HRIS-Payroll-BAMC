@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HRIS.Class
 {
@@ -18,7 +19,12 @@ namespace HRIS.Class
             dgv.BorderStyle = BorderStyle.None;
             dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgv.GridColor = Color.Gainsboro;
-            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
+            // Apply custom column settings
+            for (int i = 0; i < dgv.Columns.Count; i++)
+            {
+                dgv.Columns[i].FillWeight = 1;
+            }
             //row 
             dgv.RowHeadersVisible = false;
             dgv.AllowUserToResizeRows = false;

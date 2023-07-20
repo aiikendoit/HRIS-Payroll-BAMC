@@ -7,6 +7,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
+=======
+using System.Windows.Forms;
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
 
 namespace HRIS.Presenter
 {
@@ -24,6 +28,7 @@ namespace HRIS.Presenter
             var p = _context.Employees.Where(c => c.PkEmployee == employeeid).ToList();
             _view.DisplayEmployeeAllDetails(p);
         }
+<<<<<<< HEAD
         public void loadEmployeeJoin()
         {
             var query = from employee in _context.Employees
@@ -52,10 +57,50 @@ namespace HRIS.Presenter
         {
             var query = from employee in _context.Employees
 
+=======
+        public void loadEmployeeJoin(DataGridView dataGridView)
+        {
+            var query = from employee in _context.Employees
+                        join province in _context.Provinces on employee.FkProvince equals province.PkProvince
+                        join region in _context.Regions on province.FkRegion equals region.PkRegion
+                        join townCity in _context.Towncities on employee.FkTowncity equals townCity.PkTowncity
+                        join zipcode in _context.Zipcodes on townCity.PkTowncity equals zipcode.FkTowncity
+                        join barangay in _context.Barangays on employee.FkBarangay equals barangay.PkBarangay
+                        join workass in _context.Workassignments.Where(wa => wa.Enddate == null) on employee.PkEmployee equals workass.FkEmployee into workassGroup
+                        from workass in workassGroup.DefaultIfEmpty()
+                        join department in _context.Departments on workass.FkDepartment equals department.PkDepartment into departmentGroup
+                        from department in departmentGroup.DefaultIfEmpty()
+                        join position in _context.Positions on workass.FkPosition equals position.PkPosition into positionGroup
+                        from position in positionGroup.DefaultIfEmpty()
+                        where employee.Employeetype == "Employee"
+                        orderby employee.Lastname ascending
+                        select new
+                        {
+                            ID = employee.PkEmployee,
+                            employee.ProfilePicture,
+                            EmployeeID = employee.Idno,
+                            Name = employee.Lastname + ", " + employee.Firstname + " " + employee.Middlename,
+                            Gender = employee.Gender,
+                            IsActive = employee.IsActive,
+                            Department = department.Description,
+                            Position = position.PositionName,
+                            Address = employee.Address1 + " " + employee.Address2 + " " + employee.Address3 + " " + barangay.Description
+                                        + " " + townCity.Description + " " + province.Description + " " + zipcode.Zipcode1 ,
+                        };
+
+            dataGridView.DataSource = query.ToList();
+
+
+        }
+        public void loadDoctorJoin(DataGridView dataGridView)
+        {
+            var query = from employee in _context.Employees
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
                         join province in _context.Provinces on employee.FkProvince equals province.PkProvince
                         join region in _context.Regions on province.FkRegion equals region.PkRegion
                         join townCity in _context.Towncities on employee.FkTowncity equals townCity.PkTowncity
                         join barangay in _context.Barangays on employee.FkBarangay equals barangay.PkBarangay
+<<<<<<< HEAD
                         where employee.Employeetype == "Doctor"
                         orderby employee.Lastname ascending
                         select new Employee
@@ -71,13 +116,42 @@ namespace HRIS.Presenter
                             ProfilePicture = employee.ProfilePicture,
                         };
             _view.DisplayEmployee(query.ToList());
+=======
+                        join workass in _context.Workassignments.Where(wa => wa.Enddate == null) on employee.PkEmployee equals workass.FkEmployee into workassGroup
+                        from workass in workassGroup.DefaultIfEmpty()
+                        join department in _context.Departments on workass.FkDepartment equals department.PkDepartment into departmentGroup
+                        from department in departmentGroup.DefaultIfEmpty()
+                        join position in _context.Positions on workass.FkPosition equals position.PkPosition into positionGroup
+                        from position in positionGroup.DefaultIfEmpty()
+                        where employee.Employeetype == "Doctor"
+                        orderby employee.Lastname ascending
+                        select new
+                        {
+                            ID = employee.PkEmployee,
+                            employee.ProfilePicture,
+                            EmployeeID = employee.Idno,
+                            Name = employee.Lastname + ", " + employee.Firstname + " " + employee.Middlename,
+                            Gender = employee.Gender,
+                            IsActive = employee.IsActive,
+                            Department = department.Description,
+                            Position = position.PositionName,
+                            Address = employee.Address1 + " " + employee.Address2 + " " + employee.Address3 + " " + barangay.Description
+                                        + " " + townCity.Description + " " + province.Description + " " + region.Description,
+                        };
+
+            dataGridView.DataSource = query.ToList();
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
         }
 
         public void updateEmployee(Employee employee)
         {
             _context.Employees.Update(employee);
             _context.SaveChanges();
+<<<<<<< HEAD
             loadEmployeeJoin();
+=======
+            //loadEmployeeJoin();
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
             MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }

@@ -1,6 +1,7 @@
 ﻿using HRIS.Models;
 using HRIS.Views.Forms.Maintenance.Bank;
 using HRIS.Views.Forms.Maintenance.CivilStatus;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,10 +34,22 @@ namespace HRIS.Presenter
 
         public void UpdateBank(BankName bank)
         {
+            var existingBankname = _context.BankNames.Find(bank.PkBankName);
+            if (existingBankname != null)
+            {
+                _context.Entry(existingBankname).State = EntityState.Detached;
+                _context.Entry(bank).State = EntityState.Modified;
+                _context.SaveChanges();
+               //MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Workassignment not found");
+            }
 
-            _context.BankNames.Update(bank);
-            _context.SaveChanges();
-            LoadBank();
+            //_context.BankNames.Update(bank);
+            //_context.SaveChanges();
+            //LoadBank();
         }
     }
 }

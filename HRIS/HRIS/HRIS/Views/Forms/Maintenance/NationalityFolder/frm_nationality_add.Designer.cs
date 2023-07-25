@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Forms/Maintenance/MaintenanceForm.Designer.cs
 ﻿namespace HRIS.Views.Maintenance
 =======
 ﻿namespace HRIS.Views.Forms.Maintenance.ReligionFolder
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f:HRIS/HRIS/HRIS/Views/Forms/Maintenance/NationalityFolder/frm_nationality_add.Designer.cs
+=======
+﻿namespace HRIS.Views.Forms.Maintenance.ReligionFolder
+>>>>>>> main
 {
     partial class frm_nationality_add
     {

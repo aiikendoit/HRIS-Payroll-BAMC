@@ -284,6 +284,7 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HR
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Work_Assignment.emp_AddworkAssignment.resources
 =======
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Training.emp_TrainingForm.resources
+<<<<<<< HEAD
 >>>>>>> d42d4d46b94061e492ca5477ad206584d5987b25
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
@@ -299,6 +300,9 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HR
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Benefits.emp_Benefits.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Documents.emp_DocumentsForm.resources
 >>>>>>> may7-james
+=======
+<<<<<<< .merge_file_cUyMe9
+>>>>>>> main
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Work_Assignment.emp_AddworkAssignment.resources
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.HiringForm.resources
@@ -1647,6 +1651,7 @@ D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRI
 D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
 D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
 D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
 >>>>>>> ed33f07327beea7a4578e142a43c4e2b9bb45300
 D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
@@ -1913,3 +1918,20 @@ D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.V
 D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Religion.frm_religion_Add.resources
 D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Religion.ReligionForm.resources
 >>>>>>> origin/junic2
+=======
+=======
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
+>>>>>>> d42d4d46b94061e492ca5477ad206584d5987b25
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Training.emp_TrainingForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.Education.emp_AddEducationalAttainment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.emp_EducationalAttainment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.Family_and_Dependents.emp_AddDependent.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.Leaves.emp_leaveSetting.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.License_information.emp_AddLicense.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.License_information.emp_licenseInfoForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.emp_workassignment.resources
+>>>>>>> .merge_file_PRYNLi
+>>>>>>> main

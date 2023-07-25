@@ -1,4 +1,4 @@
-﻿namespace HRIS.Views.Employee
+﻿namespace HRIS.Forms.Employee
 {
     partial class emp_shifting
     {

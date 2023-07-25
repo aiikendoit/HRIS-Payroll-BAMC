@@ -41,7 +41,11 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_0YqKUl
+>>>>>>> main
       "Castle.Core/5.1.0": {
         "dependencies": {
           "System.Diagnostics.EventLog": "6.0.0"
@@ -53,7 +57,12 @@
           }
         }
       },
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+=======
+>>>>>>> .merge_file_uTLRbX
+>>>>>>> main
       "FontAwesome.Sharp/6.3.0": {
         "runtime": {
           "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {
@@ -153,22 +162,36 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore/7.0.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.5",
           "Microsoft.EntityFrameworkCore.Analyzers": "7.0.5",
 =======
+=======
+<<<<<<< .merge_file_0YqKUl
+>>>>>>> main
       "Microsoft.EntityFrameworkCore/7.0.8": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.8",
           "Microsoft.EntityFrameworkCore.Analyzers": "7.0.8",
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+=======
+      "Microsoft.EntityFrameworkCore/7.0.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.5",
+>>>>>>> .merge_file_uTLRbX
+>>>>>>> main
           "Microsoft.Extensions.Caching.Memory": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {
+<<<<<<< HEAD
 <<<<<<< HEAD
             "assemblyVersion": "7.0.5.0",
             "fileVersion": "7.0.523.16503"
@@ -185,6 +208,9 @@
       },
       "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {},
 =======
+=======
+<<<<<<< .merge_file_0YqKUl
+>>>>>>> main
             "assemblyVersion": "7.0.8.0",
             "fileVersion": "7.0.823.31802"
           }
@@ -199,7 +225,26 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/7.0.8": {},
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+=======
+            "assemblyVersion": "7.0.5.0",
+            "fileVersion": "7.0.523.16503"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.5": {
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "7.0.5.0",
+            "fileVersion": "7.0.523.16503"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {},
+>>>>>>> .merge_file_uTLRbX
+>>>>>>> main
       "Microsoft.EntityFrameworkCore.Design/7.0.5": {
         "dependencies": {
           "Humanizer.Core": "2.14.1",
@@ -215,10 +260,14 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.5",
 =======
+=======
+<<<<<<< .merge_file_0YqKUl
+>>>>>>> main
       "Microsoft.EntityFrameworkCore.Proxies/7.0.8": {
         "dependencies": {
           "Castle.Core": "5.1.0",
@@ -234,7 +283,15 @@
       "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.8",
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+=======
+      "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+>>>>>>> .merge_file_uTLRbX
+>>>>>>> main
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
         },
         "runtime": {
@@ -554,7 +611,11 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_0YqKUl
+>>>>>>> main
       "System.Diagnostics.EventLog/6.0.0": {
         "runtime": {
           "lib/net6.0/System.Diagnostics.EventLog.dll": {
@@ -577,7 +638,12 @@
           }
         }
       },
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+=======
+>>>>>>> .merge_file_uTLRbX
+>>>>>>> main
       "System.Drawing.Common/5.0.0": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "5.0.0"
@@ -902,7 +968,11 @@
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_0YqKUl
+>>>>>>> main
     "Castle.Core/5.1.0": {
       "type": "package",
       "serviceable": true,
@@ -910,7 +980,12 @@
       "path": "castle.core/5.1.0",
       "hashPath": "castle.core.5.1.0.nupkg.sha512"
     },
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+=======
+>>>>>>> .merge_file_uTLRbX
+>>>>>>> main
     "FontAwesome.Sharp/6.3.0": {
       "type": "package",
       "serviceable": true,
@@ -961,6 +1036,7 @@
       "hashPath": "microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.EntityFrameworkCore/7.0.5": {
       "type": "package",
       "serviceable": true,
@@ -982,6 +1058,9 @@
       "path": "microsoft.entityframeworkcore.analyzers/7.0.5",
       "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512"
 =======
+=======
+<<<<<<< .merge_file_0YqKUl
+>>>>>>> main
     "Microsoft.EntityFrameworkCore/7.0.8": {
       "type": "package",
       "serviceable": true,
@@ -1002,7 +1081,32 @@
       "sha512": "sha512-FSEFD1j4HerUaPyOZ0/NQjZZBkxqDSx2ZKEZXOz1aOQz7PY2f1D6ZuIBTLF8zAq11f058O2cl72GXVRMfwQ5iw==",
       "path": "microsoft.entityframeworkcore.analyzers/7.0.8",
       "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.8.nupkg.sha512"
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+=======
+    "Microsoft.EntityFrameworkCore/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RXbRLHHWP2Z3pq8qcL5nQ6LPeoOyp8hasM5bd0Te8PiQi3RjWQR4tcbdY5XMqQ+oTO9wA8/RLhZRn/hnxlTDnQ==",
+      "path": "microsoft.entityframeworkcore/7.0.5",
+      "hashPath": "microsoft.entityframeworkcore.7.0.5.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iwQso+hFRsEWjhH2WsEQj1D2QE5BlEXiXEt6A3SlYTPRPdZsyTNDeDDEdtxL+H/UJPQgQYY+9SMMRcEiXBmCAA==",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.5",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yMLM/aK1MikVqpjxd7PJ1Pjgztd3VAd26ZHxyjxG3RPeM9cHjvS5tCg9kAAayR6eHmBg0ffZsHdT28WfA5tTlA==",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.5",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512"
+>>>>>>> .merge_file_uTLRbX
+>>>>>>> main
     },
     "Microsoft.EntityFrameworkCore.Design/7.0.5": {
       "type": "package",
@@ -1012,7 +1116,11 @@
       "hashPath": "microsoft.entityframeworkcore.design.7.0.5.nupkg.sha512"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_0YqKUl
+>>>>>>> main
     "Microsoft.EntityFrameworkCore.Proxies/7.0.8": {
       "type": "package",
       "serviceable": true,
@@ -1020,7 +1128,12 @@
       "path": "microsoft.entityframeworkcore.proxies/7.0.8",
       "hashPath": "microsoft.entityframeworkcore.proxies.7.0.8.nupkg.sha512"
     },
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+=======
+>>>>>>> .merge_file_uTLRbX
+>>>>>>> main
     "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
       "type": "package",
       "serviceable": true,
@@ -1239,7 +1352,11 @@
       "hashPath": "system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_0YqKUl
+>>>>>>> main
     "System.Diagnostics.EventLog/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1247,7 +1364,12 @@
       "path": "system.diagnostics.eventlog/6.0.0",
       "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
     },
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+=======
+>>>>>>> .merge_file_uTLRbX
+>>>>>>> main
     "System.Drawing.Common/5.0.0": {
       "type": "package",
       "serviceable": true,

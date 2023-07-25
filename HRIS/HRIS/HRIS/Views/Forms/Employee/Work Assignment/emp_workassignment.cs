@@ -1,11 +1,15 @@
 ﻿using HRIS.Class;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Forms/Employee/Work Assignment/emp_workassignment.cs
 using HRIS.Views.Employee.Work_Assignment;
 =======
+=======
+>>>>>>> main
 using HRIS.Forms.Employee.Work_Assignment;
 using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Employee.Work_Assignment;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f:HRIS/HRIS/HRIS/Views/Forms/Employee/Work Assignment/emp_workassignment.cs
 =======
@@ -14,6 +18,8 @@ using HRIS.Views.Forms.Employee.Work_Assignment;
 using Microsoft.EntityFrameworkCore;
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
 >>>>>>> may7-james
+=======
+>>>>>>> main
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,7 +30,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HRIS.Views.Employee
+namespace HRIS.Forms.Employee
 {
 <<<<<<< HEAD
     public partial class emp_workassignment : Form,IWorkAssigmentView

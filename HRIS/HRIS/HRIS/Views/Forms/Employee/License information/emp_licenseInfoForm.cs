@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HRIS.Views.Employee.License_information
+namespace HRIS.Forms.Employee.License_information
 {
     public partial class emp_licenseInfoForm : Form
     {

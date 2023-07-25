@@ -11,16 +11,26 @@
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
     <PackageReference Include="MaterialSkin.2.RTL" Version="2.3.1.1" />
+<<<<<<< HEAD
 
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
 
+=======
+<<<<<<< .merge_file_gxPkf2
+>>>>>>> main
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.8" />
+<<<<<<< HEAD
 
+=======
+=======
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+>>>>>>> .merge_file_DOVLeA
+>>>>>>> main
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
@@ -49,14 +59,24 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
 
     <Folder Include="Models\" />
 
+=======
+<<<<<<< .merge_file_gxPkf2
+>>>>>>> main
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+<<<<<<< HEAD
 
+=======
+=======
+    <Folder Include="Models\" />
+>>>>>>> .merge_file_DOVLeA
+>>>>>>> main
   </ItemGroup>
 
 </Project>

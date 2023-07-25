@@ -11,16 +11,16 @@
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
     <PackageReference Include="MaterialSkin.2.RTL" Version="2.3.1.1" />
-<<<<<<< .merge_file_gxPkf2
+
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.8" />
-=======
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
->>>>>>> .merge_file_DOVLeA
+
+    
+
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
@@ -49,14 +49,14 @@
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< .merge_file_gxPkf2
+
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-=======
+
     <Folder Include="Models\" />
->>>>>>> .merge_file_DOVLeA
+
   </ItemGroup>
 
 </Project>

@@ -184,11 +184,11 @@ namespace HRIS
             panelLeft.Dock = DockStyle.Left;
             panelLeft.Location = new Point(0, 0);
             panelLeft.Name = "panelLeft";
-<<<<<<< .merge_file_oDBnkL
+
             panelLeft.Size = new Size(199, 613);
-=======
+
             panelLeft.Size = new Size(199, 561);
->>>>>>> .merge_file_masupj
+
             panelLeft.TabIndex = 1;
             // 
             // panel1
@@ -211,11 +211,11 @@ namespace HRIS
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 84);
             panel1.Name = "panel1";
-<<<<<<< .merge_file_oDBnkL
+
             panel1.Size = new Size(199, 513);
-=======
+
             panel1.Size = new Size(199, 477);
->>>>>>> .merge_file_masupj
+
             panel1.TabIndex = 18;
             // 
             // btn_audittrail
@@ -560,11 +560,11 @@ namespace HRIS
             HomePanel.Dock = DockStyle.Fill;
             HomePanel.Location = new Point(199, 84);
             HomePanel.Name = "HomePanel";
-<<<<<<< .merge_file_oDBnkL
+
             HomePanel.Size = new Size(847, 513);
-=======
+
             HomePanel.Size = new Size(585, 477);
->>>>>>> .merge_file_masupj
+
             HomePanel.TabIndex = 2;
             // 
             // panel2
@@ -588,11 +588,11 @@ namespace HRIS
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label5);
-<<<<<<< .merge_file_oDBnkL
+
             panel2.Location = new Point(173, 56);
-=======
+
             panel2.Location = new Point(42, 38);
->>>>>>> .merge_file_masupj
+
             panel2.Name = "panel2";
             panel2.Size = new Size(511, 409);
             panel2.TabIndex = 4;
@@ -803,11 +803,11 @@ namespace HRIS
             MainPanel.Dock = DockStyle.Fill;
             MainPanel.Location = new Point(199, 84);
             MainPanel.Name = "MainPanel";
-<<<<<<< .merge_file_oDBnkL
+
             MainPanel.Size = new Size(847, 513);
-=======
+
             MainPanel.Size = new Size(585, 477);
->>>>>>> .merge_file_masupj
+
             MainPanel.TabIndex = 3;
             // 
             // btn_hiring
@@ -840,11 +840,11 @@ namespace HRIS
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-<<<<<<< .merge_file_oDBnkL
+
             ClientSize = new Size(1046, 613);
-=======
+
             ClientSize = new Size(784, 561);
->>>>>>> .merge_file_masupj
+
             Controls.Add(HomePanel);
             Controls.Add(MainPanel);
             Controls.Add(panelTop);

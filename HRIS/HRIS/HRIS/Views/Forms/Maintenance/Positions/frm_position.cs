@@ -36,13 +36,21 @@ namespace HRIS.Views.Forms.Maintenance.Positions
             var cv = new Position
             {
                 FkDepartment = Convert.ToInt32(txt_department.SelectedValue),
+<<<<<<< HEAD
                 Description = txt_position.Text,
+=======
+                PositionName = txt_position.Text,
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
                 IsActive = checkBox_isactive.Checked,
                 Createdby = createdby,
                 FkSystemUser = id
             };
             int departmentid = Convert.ToInt32(txt_department.SelectedValue);
             position_Presenter.AddPosition(cv, departmentid);
+<<<<<<< HEAD
+=======
+            loadposition();
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
         }
 
         private void frm_position_Load(object sender, EventArgs e)
@@ -74,7 +82,11 @@ namespace HRIS.Views.Forms.Maintenance.Positions
                 }
             }
             dgrid_position.Columns["FkDepartment"].HeaderText = "Department ID";
+<<<<<<< HEAD
             dgrid_position.Columns["Description"].HeaderText = "Position";
+=======
+            dgrid_position.Columns["positionName"].HeaderText = "Position";
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
             dgrid_position.AutoGenerateColumns = false;
         }
 
@@ -103,7 +115,11 @@ namespace HRIS.Views.Forms.Maintenance.Positions
                 var selectposition = dgrid_position.SelectedRows[0].DataBoundItem as Models.Position;
                 if (selectposition != null)
                 {
+<<<<<<< HEAD
                     selectposition.Description = txt_position.Text;
+=======
+                    selectposition.PositionName = txt_position.Text;
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
                     selectposition.IsActive = checkBox_isactive.Checked;
                     position_Presenter.UpdatePosition(selectposition);
                     MessageBox.Show("Update Successfully!");
@@ -118,7 +134,11 @@ namespace HRIS.Views.Forms.Maintenance.Positions
             {
                 var selectedRow = dgrid_position.Rows[e.RowIndex];
                 var selectedPerson = selectedRow.DataBoundItem as Models.Position;
+<<<<<<< HEAD
                 txt_position.Text = selectedPerson?.Description;
+=======
+                txt_position.Text = selectedPerson?.PositionName;
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
                 checkBox_isactive.Checked = selectedPerson?.IsActive ?? false;
             }
         }

@@ -87,12 +87,23 @@
             // 
             // txt_enddate
             // 
+<<<<<<< HEAD
             txt_enddate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             txt_enddate.Format = DateTimePickerFormat.Short;
+=======
+            txt_enddate.CustomFormat = " ";
+            txt_enddate.Enabled = false;
+            txt_enddate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_enddate.Format = DateTimePickerFormat.Custom;
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
             txt_enddate.Location = new Point(117, 337);
             txt_enddate.Name = "txt_enddate";
             txt_enddate.Size = new Size(270, 25);
             txt_enddate.TabIndex = 44;
+<<<<<<< HEAD
+=======
+            txt_enddate.ValueChanged += txt_enddate_ValueChanged;
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
             // 
             // btn_cancel
             // 

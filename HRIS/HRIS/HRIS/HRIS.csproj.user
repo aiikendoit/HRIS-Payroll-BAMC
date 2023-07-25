@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>D:\James System\2023\HRIS with GIT\09 - HRIS-Payroll - July 6,2023\HRIS\HRIS\HRIS\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="Forms\Employee\EmployeeRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Forms\Doctors\DoctorForm.cs">
       <SubType>Form</SubType>
     </Compile>

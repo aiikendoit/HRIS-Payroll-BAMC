@@ -3777,17 +3777,31 @@
     "restore": {
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+<<<<<<< HEAD
       "projectName": "HRIS",
       "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\",
 =======
       "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+=======
+>>>>>>> may7-james
       "projectName": "HRIS",
-      "projectPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\",
+=======
+      "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\14 - HRIS-Payroll - July 11,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "projectName": "HRIS",
+      "projectPath": "D:\\James System\\2023\\HRIS with GIT\\14 - HRIS-Payroll - July 11,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
+<<<<<<< HEAD
       "outputPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\obj\\",
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+      "outputPath": "D:\\James System\\2023\\HRIS with GIT\\14 - HRIS-Payroll - July 11,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+>>>>>>> may7-james
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3877,8 +3891,16 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

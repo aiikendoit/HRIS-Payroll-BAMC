@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             flowLayoutPanel2 = new FlowLayoutPanel();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            iconButton5 = new FontAwesome.Sharp.IconButton();
+            btn_new = new FontAwesome.Sharp.IconButton();
+            btn_edit = new FontAwesome.Sharp.IconButton();
+            btn_view = new FontAwesome.Sharp.IconButton();
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
@@ -53,9 +53,9 @@
             // 
             // flowLayoutPanel2
             // 
-            flowLayoutPanel2.Controls.Add(iconButton4);
-            flowLayoutPanel2.Controls.Add(iconButton3);
-            flowLayoutPanel2.Controls.Add(iconButton5);
+            flowLayoutPanel2.Controls.Add(btn_new);
+            flowLayoutPanel2.Controls.Add(btn_edit);
+            flowLayoutPanel2.Controls.Add(btn_view);
             flowLayoutPanel2.Dock = DockStyle.Top;
             flowLayoutPanel2.Location = new Point(0, 78);
             flowLayoutPanel2.Margin = new Padding(0);
@@ -63,66 +63,67 @@
             flowLayoutPanel2.Size = new Size(800, 36);
             flowLayoutPanel2.TabIndex = 17;
             // 
-            // iconButton4
+            // btn_new
             // 
-            iconButton4.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton4.FlatAppearance.BorderSize = 0;
-            iconButton4.FlatStyle = FlatStyle.Flat;
-            iconButton4.ForeColor = Color.White;
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
-            iconButton4.IconColor = Color.White;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.IconSize = 20;
-            iconButton4.Location = new Point(3, 3);
-            iconButton4.Margin = new Padding(3, 3, 1, 3);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(73, 30);
-            iconButton4.TabIndex = 4;
-            iconButton4.Text = "New";
-            iconButton4.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton4.UseVisualStyleBackColor = false;
-            iconButton4.Click += iconButton4_Click;
+            btn_new.BackColor = Color.FromArgb(0, 127, 152);
+            btn_new.FlatAppearance.BorderSize = 0;
+            btn_new.FlatStyle = FlatStyle.Flat;
+            btn_new.ForeColor = Color.White;
+            btn_new.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
+            btn_new.IconColor = Color.White;
+            btn_new.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_new.IconSize = 20;
+            btn_new.Location = new Point(3, 3);
+            btn_new.Margin = new Padding(3, 3, 1, 3);
+            btn_new.Name = "btn_new";
+            btn_new.Size = new Size(73, 30);
+            btn_new.TabIndex = 4;
+            btn_new.Text = "New";
+            btn_new.TextAlign = ContentAlignment.MiddleLeft;
+            btn_new.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_new.UseVisualStyleBackColor = false;
+            btn_new.Click += iconButton4_Click;
             // 
-            // iconButton3
+            // btn_edit
             // 
-            iconButton3.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton3.FlatAppearance.BorderSize = 0;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.IconSize = 20;
-            iconButton3.Location = new Point(78, 3);
-            iconButton3.Margin = new Padding(1, 3, 1, 3);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(73, 30);
-            iconButton3.TabIndex = 5;
-            iconButton3.Text = "Edit";
-            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton3.UseVisualStyleBackColor = false;
+            btn_edit.BackColor = Color.FromArgb(0, 127, 152);
+            btn_edit.FlatAppearance.BorderSize = 0;
+            btn_edit.FlatStyle = FlatStyle.Flat;
+            btn_edit.ForeColor = Color.White;
+            btn_edit.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
+            btn_edit.IconColor = Color.White;
+            btn_edit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_edit.IconSize = 20;
+            btn_edit.Location = new Point(78, 3);
+            btn_edit.Margin = new Padding(1, 3, 1, 3);
+            btn_edit.Name = "btn_edit";
+            btn_edit.Size = new Size(73, 30);
+            btn_edit.TabIndex = 5;
+            btn_edit.Text = "Edit";
+            btn_edit.TextAlign = ContentAlignment.MiddleLeft;
+            btn_edit.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_edit.UseVisualStyleBackColor = false;
+            btn_edit.Click += btn_edit_Click;
             // 
-            // iconButton5
+            // btn_view
             // 
-            iconButton5.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton5.FlatAppearance.BorderSize = 0;
-            iconButton5.FlatStyle = FlatStyle.Flat;
-            iconButton5.ForeColor = Color.White;
-            iconButton5.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            iconButton5.IconColor = Color.White;
-            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton5.IconSize = 20;
-            iconButton5.Location = new Point(153, 3);
-            iconButton5.Margin = new Padding(1, 3, 1, 3);
-            iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(73, 30);
-            iconButton5.TabIndex = 6;
-            iconButton5.Text = "View";
-            iconButton5.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton5.UseVisualStyleBackColor = false;
+            btn_view.BackColor = Color.FromArgb(0, 127, 152);
+            btn_view.FlatAppearance.BorderSize = 0;
+            btn_view.FlatStyle = FlatStyle.Flat;
+            btn_view.ForeColor = Color.White;
+            btn_view.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            btn_view.IconColor = Color.White;
+            btn_view.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_view.IconSize = 20;
+            btn_view.Location = new Point(153, 3);
+            btn_view.Margin = new Padding(1, 3, 1, 3);
+            btn_view.Name = "btn_view";
+            btn_view.Size = new Size(73, 30);
+            btn_view.TabIndex = 6;
+            btn_view.Text = "View";
+            btn_view.TextAlign = ContentAlignment.MiddleLeft;
+            btn_view.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_view.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -222,14 +223,14 @@
             // 
             // dgrid_workassignment
             // 
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.IndianRed;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgrid_workassignment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.IndianRed;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgrid_workassignment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgrid_workassignment.ColumnHeadersHeight = 50;
             dgrid_workassignment.Dock = DockStyle.Fill;
             dgrid_workassignment.Location = new Point(0, 114);
@@ -287,9 +288,9 @@
         #endregion
 
         private FlowLayoutPanel flowLayoutPanel2;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton btn_new;
+        private FontAwesome.Sharp.IconButton btn_edit;
+        private FontAwesome.Sharp.IconButton btn_view;
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;

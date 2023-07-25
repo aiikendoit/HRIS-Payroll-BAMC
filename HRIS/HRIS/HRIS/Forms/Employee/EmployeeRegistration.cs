@@ -1,6 +1,12 @@
 ﻿using FontAwesome.Sharp;
 using HRIS.Class;
+<<<<<<< HEAD
 using HRIS.Forms.Employee.Disciplinary_Action;
+=======
+using HRIS.Forms.Employee.Benefits;
+using HRIS.Forms.Employee.Disciplinary_Action;
+using HRIS.Forms.Employee.Documents;
+>>>>>>> may7-james
 using HRIS.Forms.Employee.Employment;
 using HRIS.Forms.Employee.Family_and_Dependents;
 using HRIS.Forms.Employee.Leaves;
@@ -28,17 +34,33 @@ namespace HRIS.Forms.Employee
         Boolean sidebarclick = false;
         private Form currentchildform;
         private IconButton currentbtn;
+<<<<<<< HEAD
         public EmployeeRegistration()
         {
             InitializeComponent();
+=======
+        String headername;
+        public EmployeeRegistration(string headername)
+        {
+            InitializeComponent();
+
+
+
+>>>>>>> may7-james
             currentbtn = new IconButton();
             currentchildform = new Form();
             btn_basicinformation.ForeColor = ColorPalette.color5;
             btn_basicinformation.IconColor = ColorPalette.color5;
+<<<<<<< HEAD
+=======
+            this.headername = headername;
+            label_Headername.Text = headername;
+>>>>>>> may7-james
         }
 
         private void EmployeeRegistration_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //Init data
             List<Province> list = new List<Province>();
             list.Add(new City() { ID = 1, Name = "New York" });
@@ -49,6 +71,8 @@ namespace HRIS.Forms.Employee
             cboCity.DataSource = list;
             cboCity.ValueMember = "ID";
             cboCity.DisplayMember = "Name";
+=======
+>>>>>>> may7-james
         }
 
         #region "Procedure"
@@ -262,5 +286,58 @@ namespace HRIS.Forms.Employee
             activatebutton(sender, ColorPalette.color5);
             openchildform(new emp_DisciplinaryActionForm());
         }
+<<<<<<< HEAD
+=======
+
+        private void _benefits_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new emp_Benefits());
+        }
+
+        private void _documents_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new emp_DocumentsForm());
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> may7-james
     }
 }

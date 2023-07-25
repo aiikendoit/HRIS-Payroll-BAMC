@@ -46,6 +46,13 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JL2M5W
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "Castle.Core/5.1.0": {
         "type": "package",
         "dependencies": {
@@ -62,6 +69,14 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "FontAwesome.Sharp/6.3.0": {
         "type": "package",
         "compile": {
@@ -182,11 +197,31 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JL2M5W
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "Microsoft.EntityFrameworkCore/7.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.8",
           "Microsoft.EntityFrameworkCore.Analyzers": "7.0.8",
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+      "Microsoft.EntityFrameworkCore/7.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.5",
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
           "Microsoft.Extensions.Caching.Memory": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0"
@@ -205,7 +240,19 @@
           "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Abstractions/7.0.8": {
+=======
+<<<<<<< HEAD
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.5": {
+=======
+<<<<<<< .merge_file_JL2M5W
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.8": {
+=======
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.5": {
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -218,7 +265,19 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Analyzers/7.0.8": {
+=======
+<<<<<<< HEAD
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {
+=======
+<<<<<<< .merge_file_JL2M5W
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.8": {
+=======
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -249,6 +308,13 @@
           "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JL2M5W
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "Microsoft.EntityFrameworkCore.Proxies/7.0.8": {
         "type": "package",
         "dependencies": {
@@ -266,6 +332,14 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
         "type": "package",
         "dependencies": {
@@ -773,6 +847,13 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JL2M5W
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "System.Diagnostics.EventLog/6.0.0": {
         "type": "package",
         "compile": {
@@ -799,6 +880,14 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "System.Drawing.Common/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -1280,6 +1369,13 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JL2M5W
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
     "Castle.Core/5.1.0": {
       "sha512": "31UJpTHOiWq95CDOHazE3Ub/hE/PydNWsJMwnEVTqFFP4WhAugwpaVGxzOxKgNeSUUeqS2W6lxV+q7u1pAOfXg==",
       "type": "package",
@@ -1304,6 +1400,14 @@
         "readme.txt"
       ]
     },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
     "FontAwesome.Sharp/6.3.0": {
       "sha512": "3/Fb0N04yYK8An07oox5ISlUyNgsnWildHfoP69uqTEOsemQemRyciphMkXZOcdBupjUD+lVsRE3FqG41/dzPA==",
       "type": "package",
@@ -1524,10 +1628,29 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JL2M5W
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
     "Microsoft.EntityFrameworkCore/7.0.8": {
       "sha512": "J4eNwnGsaEeudWGvgEO+n9u5XYfKb/QmMjLPH/T2xUBKzuZsJ7nyNoEtNDo3DhQqyDHPxf2fDSuUwSJQFEj6JQ==",
       "type": "package",
       "path": "microsoft.entityframeworkcore/7.0.8",
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+    "Microsoft.EntityFrameworkCore/7.0.5": {
+      "sha512": "RXbRLHHWP2Z3pq8qcL5nQ6LPeoOyp8hasM5bd0Te8PiQi3RjWQR4tcbdY5XMqQ+oTO9wA8/RLhZRn/hnxlTDnQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore/7.0.5",
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1535,6 +1658,12 @@
         "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.xml",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JL2M5W
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
         "microsoft.entityframeworkcore.7.0.8.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
@@ -1543,12 +1672,35 @@
       "sha512": "4+Kj43oGUHPneA/uZurt9Nj9NZt8PBV0vMI+iKOUhmHXQKCkRUzpJaRKIZ1QLy8LiEL5D3/AIRfclgokdJnINQ==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.abstractions/7.0.8",
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+        "microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.5": {
+      "sha512": "iwQso+hFRsEWjhH2WsEQj1D2QE5BlEXiXEt6A3SlYTPRPdZsyTNDeDDEdtxL+H/UJPQgQYY+9SMMRcEiXBmCAA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.5",
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JL2M5W
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
         "microsoft.entityframeworkcore.abstractions.7.0.8.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
@@ -1557,13 +1709,42 @@
       "sha512": "FSEFD1j4HerUaPyOZ0/NQjZZBkxqDSx2ZKEZXOz1aOQz7PY2f1D6ZuIBTLF8zAq11f058O2cl72GXVRMfwQ5iw==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.analyzers/7.0.8",
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+        "microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {
+      "sha512": "yMLM/aK1MikVqpjxd7PJ1Pjgztd3VAd26ZHxyjxG3RPeM9cHjvS5tCg9kAAayR6eHmBg0ffZsHdT28WfA5tTlA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.5",
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
+<<<<<<< HEAD
         "microsoft.entityframeworkcore.analyzers.7.0.8.nupkg.sha512",
+=======
+<<<<<<< HEAD
+        "microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
+=======
+<<<<<<< .merge_file_JL2M5W
+        "microsoft.entityframeworkcore.analyzers.7.0.8.nupkg.sha512",
+=======
+        "microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -1582,6 +1763,13 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JL2M5W
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
     "Microsoft.EntityFrameworkCore.Proxies/7.0.8": {
       "sha512": "BcqNjnLZysC55AxSj7TRzl547HILBuqRAZRMJ/oCT0mUa+gTfjk35p9neZH+mrOH93CYCkRhKr3FRAX3Xu8tEQ==",
       "type": "package",
@@ -1596,6 +1784,14 @@
         "microsoft.entityframeworkcore.proxies.nuspec"
       ]
     },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
     "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
       "sha512": "u/33DC4S6g2hpMPgBc5Kdnlz//nqHR5c/ovgjtiP/wQ7sOd0EOdygVzUJAAOxCwbtAHDsJXS9Vc3jLFYq0yu8Q==",
       "type": "package",
@@ -3690,9 +3886,25 @@
     "net6.0-windows7.0": [
       "FontAwesome.Sharp >= 6.3.0",
       "MaterialSkin.2.RTL >= 2.3.1.1",
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore >= 7.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Proxies >= 7.0.8",
+=======
+<<<<<<< HEAD
+      "Microsoft.EntityFrameworkCore >= 7.0.5",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
+      "Microsoft.EntityFrameworkCore.Proxies >= 7.0.8",
+=======
+<<<<<<< .merge_file_JL2M5W
+      "Microsoft.EntityFrameworkCore >= 7.0.8",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
+      "Microsoft.EntityFrameworkCore.Proxies >= 7.0.8",
+=======
+      "Microsoft.EntityFrameworkCore >= 7.0.5",
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5"
     ]
@@ -3704,11 +3916,31 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JL2M5W
+      "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "projectName": "HRIS",
+      "projectPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
+      "outputPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+=======
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "projectName": "HRIS",
       "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3751,7 +3983,15 @@
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "version": "[7.0.5, )"
+=======
+<<<<<<< .merge_file_JL2M5W
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             "version": "[7.0.8, )"
+>>>>>>> main
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -3763,6 +4003,16 @@
             "target": "Package",
             "version": "[7.0.8, )"
           },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+            "version": "[7.0.5, )"
+          },
+>>>>>>> .merge_file_4WuGh4
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.5, )"
@@ -3796,5 +4046,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 7.0.8 to 7.0.5. Reference the package directly from the project to select a different version. \r\n HRIS -> Microsoft.EntityFrameworkCore.Proxies 7.0.8 -> Microsoft.EntityFrameworkCore (>= 7.0.8) \r\n HRIS -> Microsoft.EntityFrameworkCore (>= 7.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

@@ -1,6 +1,25 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_MWNmMB
+    "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+  },
+  "projects": {
+    "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectName": "HRIS",
+        "projectPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
+        "outputPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+=======
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
     "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
   },
   "projects": {
@@ -12,6 +31,13 @@
         "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
         "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_eXhMrf
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -54,7 +80,15 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              "version": "[7.0.5, )"
+=======
+<<<<<<< .merge_file_MWNmMB
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
               "version": "[7.0.8, )"
+>>>>>>> main
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -66,6 +100,16 @@
               "target": "Package",
               "version": "[7.0.8, )"
             },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+              "version": "[7.0.5, )"
+            },
+>>>>>>> .merge_file_eXhMrf
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.5, )"

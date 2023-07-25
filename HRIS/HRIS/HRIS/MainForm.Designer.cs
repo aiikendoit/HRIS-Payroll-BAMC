@@ -184,11 +184,27 @@ namespace HRIS
             panelLeft.Dock = DockStyle.Left;
             panelLeft.Location = new Point(0, 0);
             panelLeft.Name = "panelLeft";
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            panelLeft.Size = new Size(199, 561);
+=======
+            panelLeft.Size = new Size(199, 613);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             panelLeft.Size = new Size(199, 613);
 
             panelLeft.Size = new Size(199, 561);
+<<<<<<< HEAD
 
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             panelLeft.TabIndex = 1;
             // 
             // panel1
@@ -211,11 +227,27 @@ namespace HRIS
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 84);
             panel1.Name = "panel1";
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            panel1.Size = new Size(199, 477);
+=======
+            panel1.Size = new Size(199, 513);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             panel1.Size = new Size(199, 513);
 
             panel1.Size = new Size(199, 477);
+<<<<<<< HEAD
 
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             panel1.TabIndex = 18;
             // 
             // btn_audittrail
@@ -560,11 +592,27 @@ namespace HRIS
             HomePanel.Dock = DockStyle.Fill;
             HomePanel.Location = new Point(199, 84);
             HomePanel.Name = "HomePanel";
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            HomePanel.Size = new Size(585, 477);
+=======
+            HomePanel.Size = new Size(847, 513);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             HomePanel.Size = new Size(847, 513);
 
             HomePanel.Size = new Size(585, 477);
+<<<<<<< HEAD
 
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             HomePanel.TabIndex = 2;
             // 
             // panel2
@@ -588,11 +636,27 @@ namespace HRIS
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label5);
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            panel2.Location = new Point(42, 38);
+=======
+            panel2.Location = new Point(173, 56);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             panel2.Location = new Point(173, 56);
 
             panel2.Location = new Point(42, 38);
+<<<<<<< HEAD
 
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             panel2.Name = "panel2";
             panel2.Size = new Size(511, 409);
             panel2.TabIndex = 4;
@@ -803,11 +867,27 @@ namespace HRIS
             MainPanel.Dock = DockStyle.Fill;
             MainPanel.Location = new Point(199, 84);
             MainPanel.Name = "MainPanel";
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            MainPanel.Size = new Size(585, 477);
+=======
+            MainPanel.Size = new Size(847, 513);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             MainPanel.Size = new Size(847, 513);
 
             MainPanel.Size = new Size(585, 477);
+<<<<<<< HEAD
 
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             MainPanel.TabIndex = 3;
             // 
             // btn_hiring
@@ -840,11 +920,27 @@ namespace HRIS
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            ClientSize = new Size(784, 561);
+=======
+            ClientSize = new Size(1046, 613);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             ClientSize = new Size(1046, 613);
 
             ClientSize = new Size(784, 561);
+<<<<<<< HEAD
 
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             Controls.Add(HomePanel);
             Controls.Add(MainPanel);
             Controls.Add(panelTop);

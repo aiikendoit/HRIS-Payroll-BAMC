@@ -247,6 +247,7 @@
             Tag = "Doctors";
             Text = "Doctors";
             Load += DoctorForm_Load;
+            Shown += DoctorForm_Shown;
             ((System.ComponentModel.ISupportInitialize)dgrid_doctors).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();

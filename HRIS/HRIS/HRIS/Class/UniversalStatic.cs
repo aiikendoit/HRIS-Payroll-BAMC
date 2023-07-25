@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HRIS.Class
 {
@@ -18,7 +19,12 @@ namespace HRIS.Class
             dgv.BorderStyle = BorderStyle.None;
             dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgv.GridColor = Color.Gainsboro;
-            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
+            // Apply custom column settings
+            for (int i = 0; i < dgv.Columns.Count; i++)
+            {
+                dgv.Columns[i].FillWeight = 1;
+            }
             //row 
             dgv.RowHeadersVisible = false;
             dgv.AllowUserToResizeRows = false;
@@ -54,6 +60,11 @@ namespace HRIS.Class
             dgv.RowTemplate.DividerHeight = 0;
             dgv.RowTemplate.Height = 35;
         }
+<<<<<<< HEAD
+        public static void formsize(Form form)
+        {
+            form.Size = new Size();
+=======
         public static bool IsEmpty(TextBox textBox)
         {
             bool isEmpty = false;
@@ -69,6 +80,7 @@ namespace HRIS.Class
             }
 
             return isEmpty;
+>>>>>>> ed33f07327beea7a4578e142a43c4e2b9bb45300
         }
     }
 }

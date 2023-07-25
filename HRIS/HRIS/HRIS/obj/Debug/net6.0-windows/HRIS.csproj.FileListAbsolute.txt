@@ -284,7 +284,25 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HR
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Work_Assignment.emp_AddworkAssignment.resources
 =======
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Training.emp_TrainingForm.resources
+<<<<<<< HEAD
+>>>>>>> d42d4d46b94061e492ca5477ad206584d5987b25
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Training.emp_TrainingForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.Education.emp_AddEducationalAttainment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.emp_EducationalAttainment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.Family_and_Dependents.emp_AddDependent.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.Leaves.emp_leaveSetting.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.License_information.emp_AddLicense.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.License_information.emp_licenseInfoForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.emp_workassignment.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Doctors.DoctorForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Benefits.emp_Benefits.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Documents.emp_DocumentsForm.resources
+>>>>>>> may7-james
+=======
 <<<<<<< .merge_file_cUyMe9
+>>>>>>> main
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Work_Assignment.emp_AddworkAssignment.resources
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.HiringForm.resources
@@ -348,6 +366,147 @@ C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\r
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Core.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Identity.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Humanizer.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\MaterialSkin.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Memory.Data.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Doctors.DoctorForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Benefits.emp_Benefits.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Documents.emp_DocumentsForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_shifting.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Education.emp_AddEducationalAttainment.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_EducationalAttainment.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeRegistration.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_AddEmployment.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_employmentForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Family_and_Dependents.emp_AddDependent.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Family_and_Dependents.emp_FamilyDependentsForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_addLeaveSetting.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveRecordsForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveSetting.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_AddLicense.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_licenseInfoForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Seminars.emp_SeminarForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Training.emp_TrainingForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Work_Assignment.emp_AddworkAssignment.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.frm_HiringAdd.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.HiringForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.frm_AddressMaintenance.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Properties.Resources.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.GenerateResource.cache
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfoInputs.cache
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfo.cs
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CoreCompileInputs.cache
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CopyComplete
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\refint\HRIS.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+>>>>>>> 4a015e65993fe49950f25b80c6772c3e7ec027f2
+>>>>>>> 48b68b08a66db0af13e86f16a7d8587b15133552
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Humanizer.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.frm_HiringAdd.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.HiringForm.resources
+C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.frm_AddressMaintenance.resources
+>>>>>>> 10291d978cc9a5172b245399af3db1def4b95f72
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Barangay.BarangayForm.resources
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Bank.BankForm.resources
 C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.CivilStatus.CivilStatusForm.resources
@@ -1492,6 +1651,280 @@ D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRI
 D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
 D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
 D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+>>>>>>> ed33f07327beea7a4578e142a43c4e2b9bb45300
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Properties.Resources.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Doctors.DoctorForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Benefits.emp_Benefits.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Documents.emp_DocumentsForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_shifting.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Education.emp_AddEducationalAttainment.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_EducationalAttainment.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeRegistration.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_AddEmployment.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_employmentForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Family_and_Dependents.emp_AddDependent.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Family_and_Dependents.emp_FamilyDependentsForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_addLeaveSetting.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveRecordsForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveSetting.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_AddLicense.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_licenseInfoForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Seminars.emp_SeminarForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Training.emp_TrainingForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Work_Assignment.emp_AddworkAssignment.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.frm_HiringAdd.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.HiringForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Barangay.BarangayForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Bank.BankForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Bank.frm_bank_add.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.CivilStatus.CivilStatusForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.CivilStatus.frm_civilstatus_add.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Degreetype.DegreetypeForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Department.DepartmentForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Disciplinary.DiscplinaryForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Document.DocumentTypeForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.EducationaLevel.EducationalLevelForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.EducationaLevel.frm_educationllevel_add.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Employment.EmploymentTypeForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.frm_AddressMaintenance.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Leaves.LeaveNoticeTypeForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.License.LicenseType.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.ReligionFolder.frm_nationality_add.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.NationalityFolder.NationalityForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Positions.frm_position.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Positions.PositionForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.RelationShip.frm_relationship_ad.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.RelationShip.RelationshipForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Religion.frm_religion_Add.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Religion.ReligionForm.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.GenerateResource.cache
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfoInputs.cache
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfo.cs
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CoreCompileInputs.cache
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll.config
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Core.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Identity.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Castle.Core.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Humanizer.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\MaterialSkin.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Memory.Data.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CopyComplete
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\refint\HRIS.dll
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
+D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll.config
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Core.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Azure.Identity.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Castle.Core.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Humanizer.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\MaterialSkin.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Memory.Data.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.AssemblyReference.cache
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.MainForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Properties.Resources.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Doctors.DoctorForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Benefits.emp_Benefits.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Documents.emp_DocumentsForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_shifting.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Education.emp_AddEducationalAttainment.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_EducationalAttainment.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeRegistration.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_AddEmployment.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Employment.emp_employmentForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Family_and_Dependents.emp_AddDependent.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Family_and_Dependents.emp_FamilyDependentsForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_addLeaveSetting.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveRecordsForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Leaves.emp_leaveSetting.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_AddLicense.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.License_information.emp_licenseInfoForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Seminars.emp_SeminarForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Training.emp_TrainingForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Work_Assignment.emp_AddworkAssignment.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.emp_workassignment.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.frm_HiringAdd.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.HiringForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Barangay.BarangayForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Bank.BankForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Bank.frm_bank_add.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.CivilStatus.CivilStatusForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.CivilStatus.frm_civilstatus_add.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Degreetype.DegreetypeForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Department.DepartmentForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Disciplinary.DiscplinaryForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Document.DocumentTypeForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.EducationaLevel.EducationalLevelForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.EducationaLevel.frm_educationllevel_add.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Employment.EmploymentTypeForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.frm_AddressMaintenance.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Leaves.LeaveNoticeTypeForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.License.LicenseType.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.MaintenanceForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.ReligionFolder.frm_nationality_add.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.NationalityFolder.NationalityForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Positions.frm_position.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Positions.PositionForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.RelationShip.frm_relationship_ad.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.RelationShip.RelationshipForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Religion.frm_religion_Add.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Religion.ReligionForm.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Userlogin.Userlogin.resources
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.GenerateResource.cache
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfoInputs.cache
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.AssemblyInfo.cs
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CoreCompileInputs.cache
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.csproj.CopyComplete
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\refint\HRIS.dll
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
+D:\James System\2023\HRIS with GIT\14 - HRIS-Payroll - July 11,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll.config
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Castle.Core.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Barangay.BarangayForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Bank.BankForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Bank.frm_bank_add.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.CivilStatus.CivilStatusForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.CivilStatus.frm_civilstatus_add.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Degreetype.DegreetypeForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Department.DepartmentForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Disciplinary.DiscplinaryForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Document.DocumentTypeForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.EducationaLevel.EducationalLevelForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.EducationaLevel.frm_educationllevel_add.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Employment.EmploymentTypeForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Leaves.LeaveNoticeTypeForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.License.LicenseType.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.ReligionFolder.frm_nationality_add.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.NationalityFolder.NationalityForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Positions.frm_position.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Positions.PositionForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.RelationShip.frm_relationship_ad.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.RelationShip.RelationshipForm.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Religion.frm_religion_Add.resources
+D:\HRIS Project 2023\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Religion.ReligionForm.resources
+>>>>>>> origin/junic2
+=======
+=======
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
+C:\Users\ITSSupport\Music\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
 >>>>>>> d42d4d46b94061e492ca5477ad206584d5987b25
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Disciplinary_Action.emp_DisciplinaryActionForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Salary_Setting.emp_SalarySetting.resources
@@ -1504,6 +1937,7 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HR
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.License_information.emp_licenseInfoForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Employee.emp_workassignment.resources
 >>>>>>> .merge_file_PRYNLi
+<<<<<<< HEAD
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Doctors.DoctorForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Benefits.emp_Benefits.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.Documents.emp_DocumentsForm.resources
@@ -1532,3 +1966,6 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HR
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.RelationShip.RelationshipForm.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Religion.frm_religion_Add.resources
 C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Religion.ReligionForm.resources
+=======
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd

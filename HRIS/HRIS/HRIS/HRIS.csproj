@@ -13,6 +13,7 @@
     <PackageReference Include="MaterialSkin.2.RTL" Version="2.3.1.1" />
 
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
+<<<<<<< HEAD
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -20,12 +21,16 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.8" />
 
     
+=======
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5" />
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
 
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+		<PrivateAssets>all</PrivateAssets>
+		<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.8" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,6 +55,7 @@
 
   <ItemGroup>
 
+<<<<<<< HEAD
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -57,6 +63,17 @@
 
     <Folder Include="Models\" />
 
+=======
+
+    <Folder Include="Models\" />
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
   </ItemGroup>
+
+  <None Update="Properties\Settings.settings">
+	  <Generator>SettingsSingleFileGenerator</Generator>
+	  <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+  </None>
+
+
 
 </Project>

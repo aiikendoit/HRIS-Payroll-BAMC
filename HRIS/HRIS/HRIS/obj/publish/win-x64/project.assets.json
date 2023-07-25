@@ -5157,11 +5157,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "projectName": "HRIS",
       "projectPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
       "outputPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\obj\\publish\\win-x64\\",
+=======
+      "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\13 - HRIS-Payroll - July 10,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "projectName": "HRIS",
+      "projectPath": "D:\\James System\\2023\\HRIS with GIT\\13 - HRIS-Payroll - July 10,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
+      "outputPath": "D:\\James System\\2023\\HRIS with GIT\\13 - HRIS-Payroll - July 10,2023\\HRIS\\HRIS\\HRIS\\obj\\publish\\win-x64\\",
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

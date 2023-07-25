@@ -2,6 +2,7 @@
 using HRIS.Forms.Maintenance.CivilStatus;
 using HRIS.Models;
 using HRIS.Presenter;
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,7 +47,7 @@ namespace HRIS.Views.Forms.Maintenance.Bank
             };
             bank_Presenter.AddBank(cv);
             MessageBox.Show("Added Successfully!");
-            this.Close();
+
         }
         private void update()
         {
@@ -63,13 +64,26 @@ namespace HRIS.Views.Forms.Maintenance.Bank
             MessageBox.Show("Updated Successfully!");
             this.Close();
         }
-        public void putdata(BankForm bankForm, Models.BankName bank)
+        public void putdata(BankForm bankForm, Models.BankName bank, String buttonClick)
         {
             this.bankForm = bankForm;
             this.selectedbank = bank;
             txt_bank.Text = selectedbank.Bankname1;
             checkBox_isactive.Checked = selectedbank.Isactive;
-            btn_save.Text = "Update";
+            if (buttonClick == "Edit")
+            {
+                btn_save.Text = "Update";
+                txt_bank.Enabled = true;
+                checkBox_isactive.Enabled = true;
+                btn_save.Select();
+            }
+            else
+            {
+                btn_save.Text = "Close";
+                txt_bank.Enabled = false;
+                checkBox_isactive.Enabled = false;
+            }
+
         }
 
         private void btn_save_Click(object sender, EventArgs e)
@@ -78,9 +92,13 @@ namespace HRIS.Views.Forms.Maintenance.Bank
             {
                 save();
             }
-            if (btn_save.Text == "Update")
+            else if (btn_save.Text == "Update")
             {
                 update();
+            }
+            else if (btn_save.Text == "Close")
+            {
+                this.Close();
             }
         }
     }

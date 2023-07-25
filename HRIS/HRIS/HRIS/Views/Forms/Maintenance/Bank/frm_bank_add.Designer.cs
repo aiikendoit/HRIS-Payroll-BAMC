@@ -36,7 +36,7 @@
             // 
             // btn_save
             // 
-            btn_save.Location = new Point(252, 106);
+            btn_save.Location = new Point(311, 108);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(73, 36);
             btn_save.TabIndex = 7;
@@ -67,7 +67,7 @@
             // 
             txt_bank.Location = new Point(107, 39);
             txt_bank.Name = "txt_bank";
-            txt_bank.Size = new Size(218, 23);
+            txt_bank.Size = new Size(277, 23);
             txt_bank.TabIndex = 4;
             // 
             // frm_bank_add
@@ -75,7 +75,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(347, 167);
+            ClientSize = new Size(419, 177);
             Controls.Add(btn_save);
             Controls.Add(checkBox_isactive);
             Controls.Add(label1);

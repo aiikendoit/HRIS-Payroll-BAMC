@@ -3778,6 +3778,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\ITSSupport\\.nuget\\packages\\": {},
 >>>>>>> backup files
 =======
@@ -3796,11 +3797,15 @@
 =======
     "C:\\Users\\ITSSupport\\.nuget\\packages\\": {},
 >>>>>>> backup files
+=======
+    "C:\\Users\\KIsrael\\.nuget\\packages\\": {},
+>>>>>>> update
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3890,6 +3895,13 @@
 >>>>>>> update file
 =======
 >>>>>>> backup files
+=======
+      "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "projectName": "HRIS",
+      "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> update
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3902,6 +3914,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
         "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3924,6 +3937,9 @@
 =======
         "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> backup files
+=======
+        "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> update
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3939,6 +3955,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "C:\\Program Files\\dotnet\\library-packs": {},
 >>>>>>> backup files
@@ -3956,6 +3973,8 @@
 =======
         "C:\\Program Files\\dotnet\\library-packs": {},
 >>>>>>> backup files
+=======
+>>>>>>> update
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4054,6 +4073,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
@@ -4076,6 +4096,9 @@
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
 >>>>>>> backup files
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+>>>>>>> update
       }
     }
   }

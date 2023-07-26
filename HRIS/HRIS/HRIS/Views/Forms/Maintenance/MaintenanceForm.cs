@@ -391,6 +391,16 @@ namespace HRIS.Forms.Maintenance
                     txt_emailaddress.Text = com.Emailaddress;
                     txt_telephone.Text = com.Telephone;
                     txt_fax.Text = com.Fax;
+                    txt_completeaddress.Text = com.Address1 + " " + com.Address2 + " " + com.Address3
+                        + " " + com.FkBarangayNavigation?.Description + " " + com.FkTowncityNavigation?.Description
+                        + " " + com.FkProvinceNavigation?.Description + " " + com.FkZipcodeNavigation?.Zipcode1;
+                    address1 = com?.Address1;
+                    address2 = com?.Address2;
+                    address3 = com?.Address3;
+                    provinceSelectedValue = com?.FkProvince != null ? (int)com.FkProvince : 0;
+                    towncitySelectedValue = com?.FkTowncity != null ? (int)com.FkTowncity : 0;
+                    barangaySelectedValue = com?.FkBarangay != null ? (int)com.FkBarangay : 0;
+                    zipcodeSelectedValue = com?.FkZipcode != null ? (int)com.FkZipcode : 0;
                     if (com?.Logo != null)
                     {
                         Byte[] img;

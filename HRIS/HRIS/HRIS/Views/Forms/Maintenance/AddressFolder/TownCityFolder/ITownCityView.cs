@@ -9,6 +9,7 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
     public interface ITownCityView
     {
         void DisplayTownCity(List<Models.Towncity> Towncities);
+        void DisplayProvince(int provinces);
         void ClearFields();
     }
 }

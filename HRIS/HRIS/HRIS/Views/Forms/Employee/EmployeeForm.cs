@@ -121,7 +121,6 @@ namespace HRIS.Forms.Employee
                 var searchResults = employees?.Where(emp =>
                  emp.Idno.Contains(searchQuery, StringComparison.OrdinalIgnoreCase) ||
                  emp.Lastname.Contains(searchQuery, StringComparison.OrdinalIgnoreCase)).ToList();
-
                 dgrid_employee.DataSource = searchResults;
             }
 

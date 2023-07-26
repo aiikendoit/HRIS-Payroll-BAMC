@@ -53,6 +53,7 @@ namespace HRIS.Forms.Employee
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
+            
             int workassid = (int)dgrid_workassignment.SelectedRows[0].Cells[0].Value;
             emp_AddworkAssignment emp_AddworkAssignment = new emp_AddworkAssignment(emp_id);
             emp_AddworkAssignment.putdata(workassid);

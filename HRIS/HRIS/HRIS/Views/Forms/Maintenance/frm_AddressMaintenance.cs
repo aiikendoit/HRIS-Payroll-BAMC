@@ -106,7 +106,7 @@ namespace HRIS.Forms.Maintenance
             txt_address2.Text = address2;
             txt_address3.Text = address3;
             updatecompleteaddress();
-
+            btn_cancel.Select();
         }
         public void DisplayProvinces(List<Province> Provinces)
         {
@@ -220,6 +220,16 @@ namespace HRIS.Forms.Maintenance
         private void frm_AddressMaintenance_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        public void DisplayProvince(List<Province> provinces)
+        {
+           // throw new NotImplementedException();
+        }
+
+        public void DisplayProvince(int provinces)
+        {
+            //throw new NotImplementedException();
         }
     }
 }

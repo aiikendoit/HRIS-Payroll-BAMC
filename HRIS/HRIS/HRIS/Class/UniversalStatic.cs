@@ -20,12 +20,8 @@ namespace HRIS.Class
             dgv.BorderStyle = BorderStyle.None;
             dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgv.GridColor = Color.Gainsboro;
-            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
-            // Apply custom column settings
-            for (int i = 0; i < dgv.Columns.Count; i++)
-            {
-                dgv.Columns[i].FillWeight = 1;
-            }
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            
             //row 
             dgv.RowHeadersVisible = false;
             dgv.AllowUserToResizeRows = false;

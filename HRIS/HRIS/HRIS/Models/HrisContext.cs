@@ -96,10 +96,9 @@ public partial class HrisContext : DbContext
             optionsBuilder.UseSqlServer("Data Source=webserver; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
                           .UseLazyLoadingProxies();
         }
-
     }
     //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-    // => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
+    //=> optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -253,6 +252,22 @@ public partial class HrisContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("website");
+
+            entity.HasOne(d => d.FkBarangayNavigation).WithMany(p => p.CompanyInfos)
+                .HasForeignKey(d => d.FkBarangay)
+                .HasConstraintName("FK_companyInfo_barangay");
+
+            entity.HasOne(d => d.FkProvinceNavigation).WithMany(p => p.CompanyInfos)
+                .HasForeignKey(d => d.FkProvince)
+                .HasConstraintName("FK_companyInfo_province");
+
+            entity.HasOne(d => d.FkTowncityNavigation).WithMany(p => p.CompanyInfos)
+                .HasForeignKey(d => d.FkTowncity)
+                .HasConstraintName("FK_companyInfo_towncity");
+
+            entity.HasOne(d => d.FkZipcodeNavigation).WithMany(p => p.CompanyInfos)
+                .HasForeignKey(d => d.FkZipcode)
+                .HasConstraintName("FK_companyInfo_zipcode");
         });
 
         modelBuilder.Entity<Degreetype>(entity =>

@@ -1,4 +1,5 @@
 ﻿using HRIS.Models;
+using HRIS.Views.Forms.Maintenance.AddressFolder.ProvincesFolder;
 using HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -27,5 +28,33 @@ namespace HRIS.Presenter
                 .ToList();
             _view.DisplayTownCity(p);
         }
+        public void loadtowncityWhere(int? towncityid)
+        {
+            //get the foreign key of province
+            int fkprovince = _context.Towncities
+                .Where(e => e.PkTowncity == towncityid)
+                .Select(e => e.FkProvince)
+                .FirstOrDefault();
+            //get all the towncity with province id
+            var p = _context.Towncities
+                .Where(e => e.FkProvince == fkprovince)
+                .OrderBy(e => e.Description)
+                .ToList();
+            _view.DisplayTownCity(p);
+            //get province id
+            int provinceid = _context.Provinces
+                .Where(e => e.PkProvince == fkprovince)
+                .Select(e => e.PkProvince)
+                .FirstOrDefault();
+            _view.DisplayProvince(provinceid);
+        }
+        public void loadTownCity_All()
+        {
+            var p = _context.Towncities
+                .OrderBy(e => e.Description)
+                .ToList();
+            _view.DisplayTownCity(p);
+        }
+
     }
 }

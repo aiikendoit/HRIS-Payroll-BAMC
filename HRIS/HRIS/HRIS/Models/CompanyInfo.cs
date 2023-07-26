@@ -40,4 +40,12 @@ public partial class CompanyInfo
     public string? Craetedby { get; set; }
 
     public int? FkSystemuser { get; set; }
+
+    public virtual Barangay? FkBarangayNavigation { get; set; }
+
+    public virtual Province? FkProvinceNavigation { get; set; }
+
+    public virtual Towncity? FkTowncityNavigation { get; set; }
+
+    public virtual Zipcode? FkZipcodeNavigation { get; set; }
 }

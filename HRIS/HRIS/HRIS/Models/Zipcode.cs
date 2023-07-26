@@ -21,5 +21,7 @@ public partial class Zipcode
 
     public DateTime? Createdate { get; set; }
 
+    public virtual ICollection<CompanyInfo> CompanyInfos { get; set; } = new List<CompanyInfo>();
+
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 }

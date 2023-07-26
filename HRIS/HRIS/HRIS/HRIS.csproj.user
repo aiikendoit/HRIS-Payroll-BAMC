@@ -5,6 +5,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
 =======
@@ -133,6 +136,7 @@
     <Compile Update="Views\Forms\Maintenance\License\LicenseType.cs">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   <ItemGroup>
     <Compile Update="Forms\Employee\EmployeeForm.cs">
@@ -149,6 +153,8 @@
   <ItemGroup>
     <Compile Update="Forms\Employee\EmployeeForm.cs">
 >>>>>>> backup files
+=======
+>>>>>>> update files
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UserCustomControl\JPCircularPictureBox.cs">
@@ -159,6 +165,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
 =======
@@ -193,6 +202,7 @@
     <Compile Update="Views\Forms\Userlogin\Userlogin.cs">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> backup files
@@ -213,6 +223,8 @@
 >>>>>>> update files
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainForm.cs">

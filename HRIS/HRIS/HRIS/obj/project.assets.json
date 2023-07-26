@@ -7,6 +7,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
 =======
@@ -3694,6 +3697,7 @@
         "version.txt"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> backup files
@@ -3738,6 +3742,8 @@
 >>>>>>> update files
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
       ]
     }
   },
@@ -3748,6 +3754,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
 =======
@@ -3763,6 +3772,7 @@
   },
   "packageFolders": {
     "C:\\Users\\KIsrael\\.nuget\\packages\\": {},
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -3800,11 +3810,14 @@
 =======
     "C:\\Users\\KIsrael\\.nuget\\packages\\": {},
 >>>>>>> update
+=======
+>>>>>>> update files
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3902,6 +3915,13 @@
       "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
 >>>>>>> update
+=======
+      "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "projectName": "HRIS",
+      "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> update files
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3915,6 +3935,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
         "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3940,6 +3961,9 @@
 =======
         "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> update
+=======
+        "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> update files
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3956,6 +3980,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "C:\\Program Files\\dotnet\\library-packs": {},
 >>>>>>> backup files
@@ -3975,6 +4000,8 @@
 >>>>>>> backup files
 =======
 >>>>>>> update
+=======
+>>>>>>> update files
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4001,6 +4028,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
 =======
@@ -4035,6 +4065,7 @@
             "version": "[7.0.5, )"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
@@ -4045,6 +4076,8 @@
 >>>>>>> update files
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
           }
         },
         "imports": [
@@ -4074,6 +4107,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
@@ -4099,6 +4133,9 @@
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
 >>>>>>> update
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+>>>>>>> update files
       }
     }
   }

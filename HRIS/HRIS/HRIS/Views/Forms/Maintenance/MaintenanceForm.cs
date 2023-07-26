@@ -10,32 +10,49 @@ using HRIS.Forms.Maintenance.Document;
 using HRIS.Forms.Maintenance.EducationaLevel;
 using HRIS.Forms.Maintenance.Leaves;
 using HRIS.Forms.Maintenance.License;
+using HRIS.Models;
+using HRIS.Presenter;
+using HRIS.Views.Forms.Maintenance;
 using HRIS.Views.Forms.Maintenance.NationalityFolder;
+using HRIS.Views.Forms.Maintenance.Positions;
+using HRIS.Views.Forms.Maintenance.RelationShip;
 using HRIS.Views.Forms.Maintenance.Religion;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic.Logging;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Security.Cryptography.Xml;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HRIS.Forms.Maintenance
 {
-    public partial class MaintenanceForm : Form
+    public partial class MaintenanceForm : Form, ICompanyInformationView
     {
         private Form currentchildform;
-
+        string? address1, address2, address3;
+        int regionSelectedValue, provinceSelectedValue, towncitySelectedValue, barangaySelectedValue, zipcodeSelectedValue;
         private IconButton currentbtn;
+        private int companyid;
+        private readonly HrisContext _context;
+        private readonly companyInformation_Presenter companyInformation_Presenter;
         public MaintenanceForm()
         {
             InitializeComponent();
             currentbtn = new IconButton();
             currentchildform = new Form();
+            companyInformation_Presenter = new companyInformation_Presenter(this);
+            _context = new HrisContext();
+            loadInfo();
         }
 
         private void MaintenanceForm_Load(object sender, EventArgs e)
@@ -88,18 +105,48 @@ namespace HRIS.Forms.Maintenance
         #endregion
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            openFileDialog1.Filter = "Image Files (*.bmp;*.jpg;*.jpeg;*.png;*.gif)|*.bmp;*.jpg;*.jpeg;*.png;*.gif|All Files (*.*)|*.*";
+            openFileDialog1.Multiselect = false;
+
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string filePath = openFileDialog1.FileName;
-                Image image = Image.FromFile(filePath); pictureBox2.Image = image;
-                pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+                Image image = Image.FromFile(filePath); picture_logo.Image = image;
+                picture_logo.SizeMode = PictureBoxSizeMode.Zoom;
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frm_AddressMaintenance frm_AddressMaintenance = new frm_AddressMaintenance();
-            frm_AddressMaintenance.ShowDialog();
+            frm_AddressMaintenance addrs = new frm_AddressMaintenance();
+            string? add1, add2, add3;
+            int provinceid, townid, barangayid, zipcodeid;
+            provinceid = provinceSelectedValue;
+            townid = towncitySelectedValue;
+            barangayid = barangaySelectedValue;
+            zipcodeid = zipcodeSelectedValue;
+            add1 = address1;
+            add2 = address2;
+            add3 = address3;
+            addrs.putdata(add1 ?? string.Empty, add2 ?? string.Empty, add3 ?? string.Empty, provinceid, townid, barangayid, zipcodeid);
+            addrs.ShowDialog();
+            //set value
+            if (addrs.issave == true)
+            {
+                address1 = addrs.address1.ToString();
+                address2 = addrs.address2.ToString();
+                address3 = addrs.address3.ToString();
+                regionSelectedValue = addrs.regionSelectedvalue;
+                provinceSelectedValue = addrs.provinceSelectedvalue;
+                towncitySelectedValue = addrs.towncitySelectedvalue;
+                barangaySelectedValue = addrs.barangaySelectedvalue;
+                zipcodeSelectedValue = addrs.zipcodeSelectedvalue;
+                if (addrs.completeaddress != "")
+                {
+                    txt_completeaddress.Text = addrs.completeaddress.ToString();
+                }
+            }
+
         }
 
         private void iconButton18_Click(object sender, EventArgs e)
@@ -184,6 +231,196 @@ namespace HRIS.Forms.Maintenance
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new NationalityForm());
+        }
+
+        private void btn_relationship_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new RelationshipForm());
+        }
+
+        private void iconButton16_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new PositionForm());
+        }
+
+        private void txt_emailaddress_Leave(object sender, EventArgs e)
+        {
+            string email = txt_emailaddress.Text;
+            bool isValid = UniversalStatic.IsValidEmail(email);
+            if (isValid == false)
+            {
+                MessageBox.Show("Email is not valid", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_emailaddress.Select();
+            }
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            if (UniversalStatic.IsEmpty(txt_organizationname)) return;
+            if (UniversalStatic.IsEmpty(txt_owner)) return;
+            if (UniversalStatic.IsEmpty(txt_website)) return;
+            if (UniversalStatic.IsEmpty(txt_emailaddress)) return;
+            if (UniversalStatic.IsEmpty(txt_telephone)) return;
+
+            if (btn_save.Text == "Save")
+            {
+                save();
+            }
+            if (btn_save.Text == "Update")
+            {
+                update();
+            }
+
+        }
+        private void save()
+        {
+            try
+            {
+                //Stored image data
+                Image profileImage = picture_logo.Image;
+                byte[] imageData;
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    profileImage.Save(ms, profileImage.RawFormat);
+                    imageData = ms.ToArray();
+                }
+                //******************
+                var comInfo = new Models.CompanyInfo()
+                {
+                    Organizationname = txt_organizationname.Text,
+                    Owner = txt_owner.Text,
+                    Website = txt_website.Text,
+                    Emailaddress = txt_emailaddress.Text,
+                    Telephone = txt_telephone.Text,
+                    Fax = txt_fax.Text,
+                    Address1 = address1,
+                    Address2 = address2,
+                    Address3 = address3,
+                    FkBarangay = barangaySelectedValue,
+                    FkTowncity = towncitySelectedValue,
+                    FkProvince = provinceSelectedValue,
+                    FkZipcode = zipcodeSelectedValue,
+                    Logo = imageData
+                };
+                companyInformation_Presenter.AddCompanyInformation(comInfo);
+                loadInfo();
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException != null)
+                {
+                    MessageBox.Show($"An error occurred while saving the entity changes. Inner exception: {ex.InnerException.Message}");
+                }
+                else
+                {
+                    MessageBox.Show($"An error occurred while saving the entity changes. Exception: {ex.Message}");
+                }
+            }
+        }
+        private void update()
+        {
+            try
+            {
+                var existingCompanyInfo = _context.CompanyInfos.Find(companyid);
+                //Stored image data
+                Image profileImage = picture_logo.Image;
+                byte[] imageData;
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    profileImage.Save(ms, profileImage.RawFormat);
+                    imageData = ms.ToArray();
+                }
+                //******************
+                if (existingCompanyInfo != null)
+                {
+                    existingCompanyInfo.Organizationname = txt_organizationname.Text;
+                    existingCompanyInfo.Owner = txt_owner.Text;
+                    existingCompanyInfo.Website = txt_website.Text;
+                    existingCompanyInfo.Emailaddress = txt_emailaddress.Text;
+                    existingCompanyInfo.Telephone = txt_telephone.Text;
+                    existingCompanyInfo.Fax = txt_fax.Text;
+                    existingCompanyInfo.Address1 = address1;
+                    existingCompanyInfo.Address2 = address2;
+                    existingCompanyInfo.Address3 = address3;
+                    existingCompanyInfo.FkBarangay = barangaySelectedValue;
+                    existingCompanyInfo.FkTowncity = towncitySelectedValue;
+                    existingCompanyInfo.FkProvince = provinceSelectedValue;
+                    existingCompanyInfo.FkZipcode = zipcodeSelectedValue;
+                    existingCompanyInfo.Logo = imageData;
+                    companyInformation_Presenter.UpdateWorkAssignment(existingCompanyInfo);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException != null)
+                {
+                    // Display the inner exception details
+                    MessageBox.Show($"An error occurred while saving the entity changes. Inner exception: {ex.InnerException.Message}");
+                }
+                else
+                {
+                    // Display the exception message if there is no inner exception
+                    MessageBox.Show($"An error occurred while saving the entity changes. Exception: {ex.Message}");
+                }
+            }
+        }
+        private void loadInfo()
+        {
+            if (companyInformation_Presenter.LoadCompanyInfo())
+            {
+                btn_save.Text = "Update";
+                btn_cancel.Select();
+            }
+
+        }
+
+        public void DisplayCompanyInfo(CompanyInfo? p)
+        {
+            try
+            {
+                if (p != null)
+                {
+                    Models.CompanyInfo com = p;
+                    companyid = com.PkCompanyInfo;
+                    txt_organizationname.Text = com.Organizationname;
+                    txt_owner.Text = com.Owner;
+                    txt_website.Text = com.Website;
+                    txt_emailaddress.Text = com.Emailaddress;
+                    txt_telephone.Text = com.Telephone;
+                    txt_fax.Text = com.Fax;
+                    if (com?.Logo != null)
+                    {
+                        Byte[] img;
+                        img = com.Logo;
+                        MemoryStream memoryStream = new MemoryStream(img);
+                        picture_logo.Image = Image.FromStream(memoryStream);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException != null)
+                {
+                    MessageBox.Show($"An error occurred while saving the entity changes. Inner exception: {ex.InnerException.Message}");
+                }
+                else
+                {
+                    MessageBox.Show($"An error occurred while saving the entity changes. Exception: {ex.Message}");
+                }
+            }
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

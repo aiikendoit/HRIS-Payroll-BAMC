@@ -28,24 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button4 = new Button();
-            button3 = new Button();
-            textBox4 = new TextBox();
-            textBox6 = new TextBox();
+            btn_cancel = new Button();
+            btn_save = new Button();
+            txt_emailaddress = new TextBox();
+            txt_completeaddress = new TextBox();
             MainPanel = new Panel();
             panel4 = new Panel();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox5 = new TextBox();
+            txt_website = new TextBox();
+            txt_owner = new TextBox();
+            txt_telephone = new TextBox();
             btn_basicinformation = new FontAwesome.Sharp.IconButton();
             panelmenu = new Panel();
             iconButton21 = new FontAwesome.Sharp.IconButton();
             iconButton20 = new FontAwesome.Sharp.IconButton();
             iconButton19 = new FontAwesome.Sharp.IconButton();
             btn_religion = new FontAwesome.Sharp.IconButton();
+            btn_relationship = new FontAwesome.Sharp.IconButton();
             iconButton17 = new FontAwesome.Sharp.IconButton();
-            iconButton16 = new FontAwesome.Sharp.IconButton();
+            btn_position = new FontAwesome.Sharp.IconButton();
             iconButton15 = new FontAwesome.Sharp.IconButton();
+            btn_nationality = new FontAwesome.Sharp.IconButton();
             btn_licenseType = new FontAwesome.Sharp.IconButton();
             btn_leaveType = new FontAwesome.Sharp.IconButton();
             btn_leavenoticeType = new FontAwesome.Sharp.IconButton();
@@ -64,12 +66,12 @@
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             label9 = new Label();
             panel_basicinfo = new Panel();
-            pictureBox2 = new PictureBox();
+            picture_logo = new PictureBox();
             label12 = new Label();
-            button2 = new Button();
-            textBox8 = new TextBox();
+            btn_address = new Button();
+            txt_fax = new TextBox();
             label1 = new Label();
-            textBox1 = new TextBox();
+            txt_organizationname = new TextBox();
             label11 = new Label();
             label8 = new Label();
             label10 = new Label();
@@ -78,61 +80,63 @@
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
             openFileDialog1 = new OpenFileDialog();
-            btn_nationality = new FontAwesome.Sharp.IconButton();
             panelmenu.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
             panel_basicinfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picture_logo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // button4
+            // btn_cancel
             // 
-            button4.BackColor = Color.Transparent;
-            button4.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(293, 373);
-            button4.Margin = new Padding(4, 3, 4, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(91, 36);
-            button4.TabIndex = 8;
-            button4.Text = "Cancel";
-            button4.UseVisualStyleBackColor = false;
+            btn_cancel.BackColor = Color.Transparent;
+            btn_cancel.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
+            btn_cancel.FlatStyle = FlatStyle.Flat;
+            btn_cancel.Location = new Point(293, 373);
+            btn_cancel.Margin = new Padding(4, 3, 4, 3);
+            btn_cancel.Name = "btn_cancel";
+            btn_cancel.Size = new Size(91, 36);
+            btn_cancel.TabIndex = 8;
+            btn_cancel.Text = "Cancel";
+            btn_cancel.UseVisualStyleBackColor = false;
+            btn_cancel.Click += btn_cancel_Click;
             // 
-            // button3
+            // btn_save
             // 
-            button3.BackColor = Color.FromArgb(0, 127, 152);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(196, 373);
-            button3.Margin = new Padding(4, 3, 4, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(91, 36);
-            button3.TabIndex = 7;
-            button3.Text = "Save";
-            button3.UseVisualStyleBackColor = false;
+            btn_save.BackColor = Color.FromArgb(0, 127, 152);
+            btn_save.FlatAppearance.BorderSize = 0;
+            btn_save.FlatStyle = FlatStyle.Flat;
+            btn_save.ForeColor = Color.White;
+            btn_save.Location = new Point(196, 373);
+            btn_save.Margin = new Padding(4, 3, 4, 3);
+            btn_save.Name = "btn_save";
+            btn_save.Size = new Size(91, 36);
+            btn_save.TabIndex = 7;
+            btn_save.Text = "Save";
+            btn_save.UseVisualStyleBackColor = false;
+            btn_save.Click += btn_save_Click;
             // 
-            // textBox4
+            // txt_emailaddress
             // 
-            textBox4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.Location = new Point(195, 133);
-            textBox4.Margin = new Padding(4, 3, 4, 3);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(507, 23);
-            textBox4.TabIndex = 3;
+            txt_emailaddress.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_emailaddress.Location = new Point(195, 133);
+            txt_emailaddress.Margin = new Padding(4, 3, 4, 3);
+            txt_emailaddress.Name = "txt_emailaddress";
+            txt_emailaddress.Size = new Size(507, 23);
+            txt_emailaddress.TabIndex = 3;
+            txt_emailaddress.Leave += txt_emailaddress_Leave;
             // 
-            // textBox6
+            // txt_completeaddress
             // 
-            textBox6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox6.Location = new Point(195, 183);
-            textBox6.Margin = new Padding(4, 3, 4, 3);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.ReadOnly = true;
-            textBox6.Size = new Size(507, 59);
-            textBox6.TabIndex = 4;
+            txt_completeaddress.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_completeaddress.Location = new Point(195, 183);
+            txt_completeaddress.Margin = new Padding(4, 3, 4, 3);
+            txt_completeaddress.Multiline = true;
+            txt_completeaddress.Name = "txt_completeaddress";
+            txt_completeaddress.ReadOnly = true;
+            txt_completeaddress.Size = new Size(507, 59);
+            txt_completeaddress.TabIndex = 4;
             // 
             // MainPanel
             // 
@@ -154,32 +158,32 @@
             panel4.Size = new Size(716, 1);
             panel4.TabIndex = 11;
             // 
-            // textBox3
+            // txt_website
             // 
-            textBox3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(195, 108);
-            textBox3.Margin = new Padding(4, 3, 4, 3);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(507, 23);
-            textBox3.TabIndex = 2;
+            txt_website.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_website.Location = new Point(195, 108);
+            txt_website.Margin = new Padding(4, 3, 4, 3);
+            txt_website.Name = "txt_website";
+            txt_website.Size = new Size(507, 23);
+            txt_website.TabIndex = 2;
             // 
-            // textBox2
+            // txt_owner
             // 
-            textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(195, 83);
-            textBox2.Margin = new Padding(4, 3, 4, 3);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(507, 23);
-            textBox2.TabIndex = 1;
+            txt_owner.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_owner.Location = new Point(195, 83);
+            txt_owner.Margin = new Padding(4, 3, 4, 3);
+            txt_owner.Name = "txt_owner";
+            txt_owner.Size = new Size(507, 23);
+            txt_owner.TabIndex = 1;
             // 
-            // textBox5
+            // txt_telephone
             // 
-            textBox5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(195, 158);
-            textBox5.Margin = new Padding(4, 3, 4, 3);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(233, 23);
-            textBox5.TabIndex = 4;
+            txt_telephone.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_telephone.Location = new Point(195, 158);
+            txt_telephone.Margin = new Padding(4, 3, 4, 3);
+            txt_telephone.Name = "txt_telephone";
+            txt_telephone.Size = new Size(233, 23);
+            txt_telephone.TabIndex = 4;
             // 
             // btn_basicinformation
             // 
@@ -215,8 +219,9 @@
             panelmenu.Controls.Add(iconButton20);
             panelmenu.Controls.Add(iconButton19);
             panelmenu.Controls.Add(btn_religion);
+            panelmenu.Controls.Add(btn_relationship);
             panelmenu.Controls.Add(iconButton17);
-            panelmenu.Controls.Add(iconButton16);
+            panelmenu.Controls.Add(btn_position);
             panelmenu.Controls.Add(iconButton15);
             panelmenu.Controls.Add(btn_nationality);
             panelmenu.Controls.Add(btn_licenseType);
@@ -254,7 +259,7 @@
             iconButton21.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton21.IconSize = 20;
             iconButton21.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton21.Location = new Point(2, 562);
+            iconButton21.Location = new Point(2, 590);
             iconButton21.Margin = new Padding(4, 3, 4, 3);
             iconButton21.Name = "iconButton21";
             iconButton21.Padding = new Padding(10, 0, 0, 0);
@@ -279,7 +284,7 @@
             iconButton20.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton20.IconSize = 20;
             iconButton20.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton20.Location = new Point(2, 534);
+            iconButton20.Location = new Point(2, 562);
             iconButton20.Margin = new Padding(4, 3, 4, 3);
             iconButton20.Name = "iconButton20";
             iconButton20.Padding = new Padding(10, 0, 0, 0);
@@ -304,7 +309,7 @@
             iconButton19.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton19.IconSize = 20;
             iconButton19.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton19.Location = new Point(2, 506);
+            iconButton19.Location = new Point(2, 534);
             iconButton19.Margin = new Padding(4, 3, 4, 3);
             iconButton19.Name = "iconButton19";
             iconButton19.Padding = new Padding(10, 0, 0, 0);
@@ -329,7 +334,7 @@
             btn_religion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_religion.IconSize = 20;
             btn_religion.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_religion.Location = new Point(2, 478);
+            btn_religion.Location = new Point(2, 506);
             btn_religion.Margin = new Padding(4, 3, 4, 3);
             btn_religion.Name = "btn_religion";
             btn_religion.Padding = new Padding(10, 0, 0, 0);
@@ -341,6 +346,32 @@
             btn_religion.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_religion.UseVisualStyleBackColor = false;
             btn_religion.Click += iconButton18_Click;
+            // 
+            // btn_relationship
+            // 
+            btn_relationship.BackColor = Color.FromArgb(0, 127, 152);
+            btn_relationship.Cursor = Cursors.Hand;
+            btn_relationship.Dock = DockStyle.Top;
+            btn_relationship.FlatAppearance.BorderSize = 0;
+            btn_relationship.FlatStyle = FlatStyle.Flat;
+            btn_relationship.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_relationship.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_relationship.IconColor = Color.White;
+            btn_relationship.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_relationship.IconSize = 20;
+            btn_relationship.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_relationship.Location = new Point(2, 478);
+            btn_relationship.Margin = new Padding(4, 3, 4, 3);
+            btn_relationship.Name = "btn_relationship";
+            btn_relationship.Padding = new Padding(10, 0, 0, 0);
+            btn_relationship.Size = new Size(173, 28);
+            btn_relationship.TabIndex = 45;
+            btn_relationship.Tag = "Relationship";
+            btn_relationship.Text = "Relationship";
+            btn_relationship.TextAlign = ContentAlignment.MiddleLeft;
+            btn_relationship.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_relationship.UseVisualStyleBackColor = false;
+            btn_relationship.Click += btn_relationship_Click;
             // 
             // iconButton17
             // 
@@ -367,30 +398,31 @@
             iconButton17.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton17.UseVisualStyleBackColor = false;
             // 
-            // iconButton16
+            // btn_position
             // 
-            iconButton16.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton16.Cursor = Cursors.Hand;
-            iconButton16.Dock = DockStyle.Top;
-            iconButton16.FlatAppearance.BorderSize = 0;
-            iconButton16.FlatStyle = FlatStyle.Flat;
-            iconButton16.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton16.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            iconButton16.IconColor = Color.White;
-            iconButton16.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton16.IconSize = 20;
-            iconButton16.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton16.Location = new Point(2, 422);
-            iconButton16.Margin = new Padding(4, 3, 4, 3);
-            iconButton16.Name = "iconButton16";
-            iconButton16.Padding = new Padding(10, 0, 0, 0);
-            iconButton16.Size = new Size(173, 28);
-            iconButton16.TabIndex = 38;
-            iconButton16.Tag = "Position";
-            iconButton16.Text = "Position";
-            iconButton16.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton16.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton16.UseVisualStyleBackColor = false;
+            btn_position.BackColor = Color.FromArgb(0, 127, 152);
+            btn_position.Cursor = Cursors.Hand;
+            btn_position.Dock = DockStyle.Top;
+            btn_position.FlatAppearance.BorderSize = 0;
+            btn_position.FlatStyle = FlatStyle.Flat;
+            btn_position.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_position.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_position.IconColor = Color.White;
+            btn_position.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_position.IconSize = 20;
+            btn_position.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_position.Location = new Point(2, 422);
+            btn_position.Margin = new Padding(4, 3, 4, 3);
+            btn_position.Name = "btn_position";
+            btn_position.Padding = new Padding(10, 0, 0, 0);
+            btn_position.Size = new Size(173, 28);
+            btn_position.TabIndex = 38;
+            btn_position.Tag = "Position";
+            btn_position.Text = "Position";
+            btn_position.TextAlign = ContentAlignment.MiddleLeft;
+            btn_position.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_position.UseVisualStyleBackColor = false;
+            btn_position.Click += iconButton16_Click;
             // 
             // iconButton15
             // 
@@ -416,6 +448,32 @@
             iconButton15.TextAlign = ContentAlignment.MiddleLeft;
             iconButton15.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton15.UseVisualStyleBackColor = false;
+            // 
+            // btn_nationality
+            // 
+            btn_nationality.BackColor = Color.FromArgb(0, 127, 152);
+            btn_nationality.Cursor = Cursors.Hand;
+            btn_nationality.Dock = DockStyle.Top;
+            btn_nationality.FlatAppearance.BorderSize = 0;
+            btn_nationality.FlatStyle = FlatStyle.Flat;
+            btn_nationality.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_nationality.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_nationality.IconColor = Color.White;
+            btn_nationality.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_nationality.IconSize = 20;
+            btn_nationality.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_nationality.Location = new Point(2, 366);
+            btn_nationality.Margin = new Padding(4, 3, 4, 3);
+            btn_nationality.Name = "btn_nationality";
+            btn_nationality.Padding = new Padding(10, 0, 0, 0);
+            btn_nationality.Size = new Size(173, 28);
+            btn_nationality.TabIndex = 44;
+            btn_nationality.Tag = "Nationality";
+            btn_nationality.Text = "Nationality";
+            btn_nationality.TextAlign = ContentAlignment.MiddleLeft;
+            btn_nationality.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_nationality.UseVisualStyleBackColor = false;
+            btn_nationality.Click += btn_nationality_Click;
             // 
             // btn_licenseType
             // 
@@ -792,20 +850,20 @@
             // 
             panel_basicinfo.AutoScroll = true;
             panel_basicinfo.BackColor = Color.White;
-            panel_basicinfo.Controls.Add(pictureBox2);
+            panel_basicinfo.Controls.Add(picture_logo);
             panel_basicinfo.Controls.Add(label12);
-            panel_basicinfo.Controls.Add(button2);
-            panel_basicinfo.Controls.Add(textBox8);
+            panel_basicinfo.Controls.Add(btn_address);
+            panel_basicinfo.Controls.Add(txt_fax);
             panel_basicinfo.Controls.Add(label1);
-            panel_basicinfo.Controls.Add(button4);
-            panel_basicinfo.Controls.Add(button3);
-            panel_basicinfo.Controls.Add(textBox4);
-            panel_basicinfo.Controls.Add(textBox6);
-            panel_basicinfo.Controls.Add(textBox3);
-            panel_basicinfo.Controls.Add(textBox2);
-            panel_basicinfo.Controls.Add(textBox5);
+            panel_basicinfo.Controls.Add(btn_cancel);
+            panel_basicinfo.Controls.Add(btn_save);
+            panel_basicinfo.Controls.Add(txt_emailaddress);
+            panel_basicinfo.Controls.Add(txt_completeaddress);
+            panel_basicinfo.Controls.Add(txt_website);
+            panel_basicinfo.Controls.Add(txt_owner);
+            panel_basicinfo.Controls.Add(txt_telephone);
             panel_basicinfo.Controls.Add(label9);
-            panel_basicinfo.Controls.Add(textBox1);
+            panel_basicinfo.Controls.Add(txt_organizationname);
             panel_basicinfo.Controls.Add(label11);
             panel_basicinfo.Controls.Add(label8);
             panel_basicinfo.Controls.Add(label10);
@@ -820,17 +878,18 @@
             panel_basicinfo.Size = new Size(716, 419);
             panel_basicinfo.TabIndex = 0;
             // 
-            // pictureBox2
+            // picture_logo
             // 
-            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox2.Cursor = Cursors.Hand;
-            pictureBox2.Location = new Point(195, 243);
-            pictureBox2.Margin = new Padding(4, 3, 4, 3);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(507, 124);
-            pictureBox2.TabIndex = 17;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
+            picture_logo.BorderStyle = BorderStyle.FixedSingle;
+            picture_logo.Cursor = Cursors.Hand;
+            picture_logo.Location = new Point(195, 243);
+            picture_logo.Margin = new Padding(4, 3, 4, 3);
+            picture_logo.Name = "picture_logo";
+            picture_logo.Size = new Size(507, 124);
+            picture_logo.SizeMode = PictureBoxSizeMode.Zoom;
+            picture_logo.TabIndex = 17;
+            picture_logo.TabStop = false;
+            picture_logo.Click += pictureBox2_Click;
             // 
             // label12
             // 
@@ -843,25 +902,25 @@
             label12.TabIndex = 16;
             label12.Text = "Official Logo";
             // 
-            // button2
+            // btn_address
             // 
-            button2.Location = new Point(166, 185);
-            button2.Margin = new Padding(4, 3, 4, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(26, 23);
-            button2.TabIndex = 6;
-            button2.Text = "...";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btn_address.Location = new Point(166, 185);
+            btn_address.Margin = new Padding(4, 3, 4, 3);
+            btn_address.Name = "btn_address";
+            btn_address.Size = new Size(26, 23);
+            btn_address.TabIndex = 6;
+            btn_address.Text = "...";
+            btn_address.UseVisualStyleBackColor = true;
+            btn_address.Click += button2_Click;
             // 
-            // textBox8
+            // txt_fax
             // 
-            textBox8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox8.Location = new Point(485, 158);
-            textBox8.Margin = new Padding(4, 3, 4, 3);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(218, 23);
-            textBox8.TabIndex = 5;
+            txt_fax.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_fax.Location = new Point(485, 158);
+            txt_fax.Margin = new Padding(4, 3, 4, 3);
+            txt_fax.Name = "txt_fax";
+            txt_fax.Size = new Size(218, 23);
+            txt_fax.TabIndex = 5;
             // 
             // label1
             // 
@@ -874,14 +933,14 @@
             label1.TabIndex = 13;
             label1.Text = "Fax";
             // 
-            // textBox1
+            // txt_organizationname
             // 
-            textBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(195, 58);
-            textBox1.Margin = new Padding(4, 3, 4, 3);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(507, 23);
-            textBox1.TabIndex = 0;
+            txt_organizationname.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_organizationname.Location = new Point(195, 58);
+            txt_organizationname.Margin = new Padding(4, 3, 4, 3);
+            txt_organizationname.Name = "txt_organizationname";
+            txt_organizationname.Size = new Size(507, 23);
+            txt_organizationname.TabIndex = 0;
             // 
             // label11
             // 
@@ -966,33 +1025,8 @@
             // 
             // openFileDialog1
             // 
-            openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // btn_nationality
-            // 
-            btn_nationality.BackColor = Color.FromArgb(0, 127, 152);
-            btn_nationality.Cursor = Cursors.Hand;
-            btn_nationality.Dock = DockStyle.Top;
-            btn_nationality.FlatAppearance.BorderSize = 0;
-            btn_nationality.FlatStyle = FlatStyle.Flat;
-            btn_nationality.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_nationality.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            btn_nationality.IconColor = Color.White;
-            btn_nationality.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_nationality.IconSize = 20;
-            btn_nationality.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_nationality.Location = new Point(2, 366);
-            btn_nationality.Margin = new Padding(4, 3, 4, 3);
-            btn_nationality.Name = "btn_nationality";
-            btn_nationality.Padding = new Padding(10, 0, 0, 0);
-            btn_nationality.Size = new Size(173, 28);
-            btn_nationality.TabIndex = 44;
-            btn_nationality.Tag = "Nationality";
-            btn_nationality.Text = "Nationality";
-            btn_nationality.TextAlign = ContentAlignment.MiddleLeft;
-            btn_nationality.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_nationality.UseVisualStyleBackColor = false;
-            btn_nationality.Click += btn_nationality_Click;
+            openFileDialog1.FileName = "Choose Image";
+            openFileDialog1.FileOk += openFileDialog1_FileOk;
             // 
             // MaintenanceForm
             // 
@@ -1018,31 +1052,31 @@
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
             panel_basicinfo.ResumeLayout(false);
             panel_basicinfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picture_logo).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button4;
-        private Button button3;
-        private TextBox textBox4;
-        private TextBox textBox6;
+        private Button btn_cancel;
+        private Button btn_save;
+        private TextBox txt_emailaddress;
+        private TextBox txt_completeaddress;
         private Panel MainPanel;
         private Panel panel4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox5;
+        private TextBox txt_website;
+        private TextBox txt_owner;
+        private TextBox txt_telephone;
         private FontAwesome.Sharp.IconButton btn_basicinformation;
         private Panel panelmenu;
         private Label label_Headername;
         private Panel panel1;
         private Label label9;
         private Panel panel_basicinfo;
-        private TextBox textBox8;
+        private TextBox txt_fax;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txt_organizationname;
         private Label label11;
         private Label label8;
         private Label label10;
@@ -1050,11 +1084,11 @@
         private Label label6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
-        private Button button2;
-        private PictureBox pictureBox2;
+        private Button btn_address;
+        private PictureBox picture_logo;
         private Label label12;
         private OpenFileDialog openFileDialog1;
-        private FontAwesome.Sharp.IconButton iconButton16;
+        private FontAwesome.Sharp.IconButton btn_position;
         private FontAwesome.Sharp.IconButton iconButton15;
         private FontAwesome.Sharp.IconButton btn_licenseType;
         private FontAwesome.Sharp.IconButton btn_leaveType;
@@ -1076,5 +1110,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private Panel panel2;
         private FontAwesome.Sharp.IconButton btn_nationality;
+        private FontAwesome.Sharp.IconButton btn_relationship;
     }
 }

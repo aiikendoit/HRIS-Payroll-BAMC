@@ -30,21 +30,7 @@ namespace HRIS.Forms.Maintenance.CivilStatus
         {
         }
 
-        public void DisplayEmployees(List<Civilstatus> Civilstatuses)
-        {
-
-            dgrid_civilstatus.DataSource = Civilstatuses;
-            dgrid_civilstatus.Columns[0].HeaderText = "ID";
-            if (dgrid_civilstatus.ColumnCount == 8)
-            {
-                //Remove unnecessary column
-                dgrid_civilstatus.Columns.RemoveAt(7);
-                dgrid_civilstatus.Columns.RemoveAt(6);
-                dgrid_civilstatus.Columns.RemoveAt(5);
-            }
-            dgrid_civilstatus.AutoGenerateColumns = false;
-        }
-
+       
         private void CivilStatusForm_Load(object sender, EventArgs e)
         {
 
@@ -68,6 +54,19 @@ namespace HRIS.Forms.Maintenance.CivilStatus
                 civilStatus_Presenter.LoadCivilStatus();
             }
         }
-       
+
+        public void DisplayCivilStatus(List<Civilstatus> Civilstatuses)
+        {
+            dgrid_civilstatus.DataSource = Civilstatuses;
+            dgrid_civilstatus.Columns[0].HeaderText = "ID";
+            if (dgrid_civilstatus.ColumnCount == 8)
+            {
+                //Remove unnecessary column
+                dgrid_civilstatus.Columns.RemoveAt(7);
+                dgrid_civilstatus.Columns.RemoveAt(6);
+                dgrid_civilstatus.Columns.RemoveAt(5);
+            }
+            dgrid_civilstatus.AutoGenerateColumns = false;
+        }
     }
 }

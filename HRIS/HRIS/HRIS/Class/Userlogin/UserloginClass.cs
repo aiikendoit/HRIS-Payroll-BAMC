@@ -16,7 +16,7 @@ namespace HRIS.Class.Userlogin
         {
             Cursor.Current = Cursors.WaitCursor;
            bool hasdata = false;
-            string password = EncryptHashing.GeneratePassword(userpassword);
+            string password = EncryptHashing.ComputeHash(userpassword); //EncryptHashing.GeneratePassword(userpassword);
             try
             {
                 using (var dbContext = new HrisContext())

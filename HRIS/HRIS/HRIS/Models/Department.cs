@@ -17,7 +17,9 @@ public partial class Department
 
     public string? Createdby { get; set; }
 
+    public virtual ICollection<Position> Positions { get; set; } = new List<Position>();
+
     public virtual ICollection<SystemUser> SystemUsers { get; set; } = new List<SystemUser>();
 
-    public virtual Workassignment? Workassignment { get; set; }
+    public virtual ICollection<Workassignment> Workassignments { get; set; } = new List<Workassignment>();
 }

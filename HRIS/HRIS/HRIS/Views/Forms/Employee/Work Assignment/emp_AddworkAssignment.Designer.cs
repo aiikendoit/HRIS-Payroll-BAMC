@@ -31,23 +31,23 @@
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            button4 = new Button();
-            button3 = new Button();
-            comboBox3 = new ComboBox();
-            textBox10 = new TextBox();
+            txt_enddate = new DateTimePicker();
+            btn_cancel = new Button();
+            btn_save = new Button();
+            txt_department = new ComboBox();
+            txt_jobscope = new TextBox();
             label22 = new Label();
             label19 = new Label();
             label18 = new Label();
             label3 = new Label();
-            comboBox1 = new ComboBox();
+            txt_position = new ComboBox();
             label4 = new Label();
-            textBox2 = new TextBox();
+            txt_jobdescription = new TextBox();
             label5 = new Label();
-            textBox3 = new TextBox();
+            txt_reponsibilities = new TextBox();
             label1 = new Label();
-            dateTimePicker2 = new DateTimePicker();
-            checkBox1 = new CheckBox();
+            txt_startdate = new DateTimePicker();
+            checkBox_ishead = new CheckBox();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             SuspendLayout();
@@ -59,7 +59,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(396, 40);
+            panel2.Size = new Size(402, 40);
             panel2.TabIndex = 34;
             // 
             // iconPictureBox1
@@ -85,63 +85,69 @@
             label2.TabIndex = 2;
             label2.Text = "New Work Assignment";
             // 
-            // dateTimePicker1
+            // txt_enddate
             // 
-            dateTimePicker1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(155, 341);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(229, 25);
-            dateTimePicker1.TabIndex = 44;
+            txt_enddate.CustomFormat = " ";
+            txt_enddate.Enabled = false;
+            txt_enddate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_enddate.Format = DateTimePickerFormat.Custom;
+            txt_enddate.Location = new Point(117, 337);
+            txt_enddate.Name = "txt_enddate";
+            txt_enddate.Size = new Size(270, 25);
+            txt_enddate.TabIndex = 44;
+            txt_enddate.ValueChanged += txt_enddate_ValueChanged;
             // 
-            // button4
+            // btn_cancel
             // 
-            button4.BackColor = Color.Transparent;
-            button4.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(293, 372);
-            button4.Name = "button4";
-            button4.Size = new Size(91, 36);
-            button4.TabIndex = 43;
-            button4.Text = "Cancel";
-            button4.UseVisualStyleBackColor = false;
+            btn_cancel.BackColor = Color.Transparent;
+            btn_cancel.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
+            btn_cancel.FlatStyle = FlatStyle.Flat;
+            btn_cancel.Location = new Point(296, 372);
+            btn_cancel.Name = "btn_cancel";
+            btn_cancel.Size = new Size(91, 36);
+            btn_cancel.TabIndex = 43;
+            btn_cancel.Text = "Cancel";
+            btn_cancel.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_save
             // 
-            button3.BackColor = Color.FromArgb(0, 127, 152);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(196, 372);
-            button3.Name = "button3";
-            button3.Size = new Size(91, 36);
-            button3.TabIndex = 42;
-            button3.Text = "Save";
-            button3.UseVisualStyleBackColor = false;
+            btn_save.BackColor = Color.FromArgb(0, 127, 152);
+            btn_save.FlatAppearance.BorderSize = 0;
+            btn_save.FlatStyle = FlatStyle.Flat;
+            btn_save.ForeColor = Color.White;
+            btn_save.Location = new Point(199, 372);
+            btn_save.Name = "btn_save";
+            btn_save.Size = new Size(91, 36);
+            btn_save.TabIndex = 42;
+            btn_save.Text = "Save";
+            btn_save.UseVisualStyleBackColor = false;
+            btn_save.Click += btn_save_Click;
             // 
-            // comboBox3
+            // txt_department
             // 
-            comboBox3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(155, 50);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(229, 25);
-            comboBox3.TabIndex = 41;
+            txt_department.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_department.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_department.FormattingEnabled = true;
+            txt_department.Location = new Point(117, 46);
+            txt_department.Name = "txt_department";
+            txt_department.Size = new Size(270, 25);
+            txt_department.TabIndex = 41;
+            txt_department.SelectedIndexChanged += txt_department_SelectedIndexChanged;
             // 
-            // textBox10
+            // txt_jobscope
             // 
-            textBox10.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox10.Location = new Point(155, 224);
-            textBox10.Multiline = true;
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(229, 50);
-            textBox10.TabIndex = 40;
+            txt_jobscope.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_jobscope.Location = new Point(117, 220);
+            txt_jobscope.Multiline = true;
+            txt_jobscope.Name = "txt_jobscope";
+            txt_jobscope.Size = new Size(270, 50);
+            txt_jobscope.TabIndex = 40;
             // 
             // label22
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label22.Location = new Point(52, 344);
+            label22.Location = new Point(14, 340);
             label22.Name = "label22";
             label22.Size = new Size(60, 17);
             label22.TabIndex = 38;
@@ -151,17 +157,17 @@
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label19.Location = new Point(52, 53);
+            label19.Location = new Point(14, 49);
             label19.Name = "label19";
-            label19.Size = new Size(104, 17);
+            label19.Size = new Size(77, 17);
             label19.TabIndex = 35;
-            label19.Text = "Sub-Department";
+            label19.Text = "Department";
             // 
             // label18
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label18.Location = new Point(52, 227);
+            label18.Location = new Point(14, 223);
             label18.Name = "label18";
             label18.Size = new Size(69, 17);
             label18.TabIndex = 37;
@@ -171,106 +177,107 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(52, 84);
+            label3.Location = new Point(14, 80);
             label3.Name = "label3";
             label3.Size = new Size(54, 17);
             label3.TabIndex = 35;
             label3.Text = "Position";
             // 
-            // comboBox1
+            // txt_position
             // 
-            comboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(155, 81);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(229, 25);
-            comboBox1.TabIndex = 41;
+            txt_position.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_position.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_position.FormattingEnabled = true;
+            txt_position.Location = new Point(117, 77);
+            txt_position.Name = "txt_position";
+            txt_position.Size = new Size(270, 25);
+            txt_position.TabIndex = 41;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(52, 115);
+            label4.Location = new Point(14, 111);
             label4.Name = "label4";
             label4.Size = new Size(99, 17);
             label4.TabIndex = 37;
             label4.Text = "Job Description";
             // 
-            // textBox2
+            // txt_jobdescription
             // 
-            textBox2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(155, 112);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(229, 50);
-            textBox2.TabIndex = 40;
+            txt_jobdescription.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_jobdescription.Location = new Point(117, 108);
+            txt_jobdescription.Multiline = true;
+            txt_jobdescription.Name = "txt_jobdescription";
+            txt_jobdescription.Size = new Size(270, 50);
+            txt_jobdescription.TabIndex = 40;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(52, 171);
+            label5.Location = new Point(14, 167);
             label5.Name = "label5";
             label5.Size = new Size(98, 17);
             label5.TabIndex = 37;
             label5.Text = "Responsibilities";
             // 
-            // textBox3
+            // txt_reponsibilities
             // 
-            textBox3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(155, 168);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(229, 50);
-            textBox3.TabIndex = 40;
+            txt_reponsibilities.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_reponsibilities.Location = new Point(117, 164);
+            txt_reponsibilities.Multiline = true;
+            txt_reponsibilities.Name = "txt_reponsibilities";
+            txt_reponsibilities.Size = new Size(270, 50);
+            txt_reponsibilities.TabIndex = 40;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(52, 313);
+            label1.Location = new Point(14, 309);
             label1.Name = "label1";
             label1.Size = new Size(65, 17);
             label1.TabIndex = 38;
             label1.Text = "Start date";
             // 
-            // dateTimePicker2
+            // txt_startdate
             // 
-            dateTimePicker2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            dateTimePicker2.Format = DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new Point(155, 310);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(229, 25);
-            dateTimePicker2.TabIndex = 44;
+            txt_startdate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_startdate.Format = DateTimePickerFormat.Short;
+            txt_startdate.Location = new Point(117, 306);
+            txt_startdate.Name = "txt_startdate";
+            txt_startdate.Size = new Size(270, 25);
+            txt_startdate.TabIndex = 44;
             // 
-            // checkBox1
+            // checkBox_ishead
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(155, 282);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(54, 19);
-            checkBox1.TabIndex = 45;
-            checkBox1.Text = "Head";
-            checkBox1.UseVisualStyleBackColor = true;
+            checkBox_ishead.AutoSize = true;
+            checkBox_ishead.Location = new Point(117, 278);
+            checkBox_ishead.Name = "checkBox_ishead";
+            checkBox_ishead.Size = new Size(54, 19);
+            checkBox_ishead.TabIndex = 45;
+            checkBox_ishead.Text = "Head";
+            checkBox_ishead.UseVisualStyleBackColor = true;
             // 
             // emp_AddworkAssignment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(396, 424);
-            Controls.Add(checkBox1);
+            ClientSize = new Size(402, 424);
+            Controls.Add(checkBox_ishead);
             Controls.Add(panel2);
-            Controls.Add(dateTimePicker2);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(comboBox1);
-            Controls.Add(comboBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox3);
+            Controls.Add(txt_startdate);
+            Controls.Add(txt_enddate);
+            Controls.Add(btn_cancel);
+            Controls.Add(btn_save);
+            Controls.Add(txt_position);
+            Controls.Add(txt_department);
+            Controls.Add(txt_jobdescription);
+            Controls.Add(txt_reponsibilities);
             Controls.Add(label1);
-            Controls.Add(textBox10);
+            Controls.Add(txt_jobscope);
             Controls.Add(label22);
             Controls.Add(label3);
             Controls.Add(label4);
@@ -282,6 +289,7 @@
             MinimizeBox = false;
             Name = "emp_AddworkAssignment";
             StartPosition = FormStartPosition.CenterParent;
+            Load += emp_AddworkAssignment_Load;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
@@ -294,22 +302,22 @@
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
-        private DateTimePicker dateTimePicker1;
-        private Button button4;
-        private Button button3;
-        private ComboBox comboBox3;
-        private TextBox textBox10;
+        private DateTimePicker txt_enddate;
+        private Button btn_cancel;
+        private Button btn_save;
+        private ComboBox txt_department;
+        private TextBox txt_jobscope;
         private Label label22;
         private Label label19;
         private Label label18;
         private Label label3;
-        private ComboBox comboBox1;
+        private ComboBox txt_position;
         private Label label4;
-        private TextBox textBox2;
+        private TextBox txt_jobdescription;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox txt_reponsibilities;
         private Label label1;
-        private DateTimePicker dateTimePicker2;
-        private CheckBox checkBox1;
+        private DateTimePicker txt_startdate;
+        private CheckBox checkBox_ishead;
     }
 }

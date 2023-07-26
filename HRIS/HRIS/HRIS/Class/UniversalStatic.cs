@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HRIS.Class
 {
@@ -18,7 +20,12 @@ namespace HRIS.Class
             dgv.BorderStyle = BorderStyle.None;
             dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgv.GridColor = Color.Gainsboro;
-            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
+            // Apply custom column settings
+            for (int i = 0; i < dgv.Columns.Count; i++)
+            {
+                dgv.Columns[i].FillWeight = 1;
+            }
             //row 
             dgv.RowHeadersVisible = false;
             dgv.AllowUserToResizeRows = false;
@@ -33,6 +40,7 @@ namespace HRIS.Class
             dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+           
             //column header font
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             dgv.ColumnHeadersDefaultCellStyle.Font = new Font(dgv.Font, FontStyle.Bold);
@@ -68,6 +76,17 @@ namespace HRIS.Class
             }
 
             return isEmpty;
+        }
+        public static bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrEmpty(email))
+                return false;
+
+            // Regular expression pattern for email validation
+            string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+
+            // Use Regex.IsMatch to check if the email matches the pattern
+            return Regex.IsMatch(email, pattern);
         }
     }
 }

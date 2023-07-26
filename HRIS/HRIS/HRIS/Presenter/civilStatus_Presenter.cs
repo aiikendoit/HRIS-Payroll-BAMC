@@ -22,7 +22,7 @@ namespace HRIS.Presenter
         public void LoadCivilStatus()
         {
             var p = _context.Civilstatuses.ToList();
-            _view.DisplayEmployees(p);
+            _view.DisplayCivilStatus(p);
         }
 
         public void AddCivilStatus(Civilstatus civilstatus)

@@ -1728,6 +1728,9 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\HRIS\HRIS\obj\Debug\ne
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update file
 =======
 >>>>>>> update file
 C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
@@ -1849,6 +1852,7 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\obj\Debug\net6.0-windo
 C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
 C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
@@ -1857,3 +1861,5 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\obj\Debug\net6.0-windo
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> update file

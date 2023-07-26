@@ -7,6 +7,9 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
       "Azure.Core/1.24.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
@@ -52,8 +55,11 @@
           }
         }
       },
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
       "FontAwesome.Sharp/6.3.0": {
         "runtime": {
           "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {
@@ -62,6 +68,9 @@
           }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
       },
       "Humanizer.Core/2.14.1": {
         "runtime": {
@@ -851,13 +860,19 @@
             "fileVersion": "5.0.20.51904"
           }
         }
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
       }
     }
   },
   "libraries": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
     "Azure.Core/1.24.0": {
       "type": "package",
       "serviceable": true,
@@ -879,8 +894,11 @@
       "path": "castle.core/5.1.0",
       "hashPath": "castle.core.5.1.0.nupkg.sha512"
     },
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
     "FontAwesome.Sharp/6.3.0": {
       "type": "package",
       "serviceable": true,
@@ -888,6 +906,9 @@
       "path": "fontawesome.sharp/6.3.0",
       "hashPath": "fontawesome.sharp.6.3.0.nupkg.sha512"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1371,8 +1392,11 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
     }
   }
 }

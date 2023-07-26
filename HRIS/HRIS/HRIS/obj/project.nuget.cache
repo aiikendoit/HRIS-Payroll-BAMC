@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "tr1ydxXJfA7lat49WJBZWupZf6S2ZVtVFLYsLPl8DRCr/SDsqnYUk4vBwSuniubzBmLwhknKKYbhWGjyz3ZTRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
@@ -17,6 +18,11 @@
   "success": true,
   "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
 >>>>>>> update file
+=======
+  "dgSpecHash": "PXM4+d5IlbOFBOqv2z0O98T/WWiQjEO2mTQ83J1R5Q3BNqTAoSEAvKiiHCTBeBXMzDqbx2QIa/OKFnvVCTEITg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+>>>>>>> update files
   "expectedPackageFiles": [
     "C:\\Users\\KIsrael\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\KIsrael\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -91,6 +97,7 @@
     "C:\\Users\\KIsrael\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\KIsrael\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\KIsrael\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+<<<<<<< HEAD
 =======
   "dgSpecHash": "mCN637e68aluQYJ2dDEUWhFrnzgK8y3iUkVgAByukTC3bP+xNhUJXdu+aXW6yayk3yXc7khXKinLTeRZjgnUXw==",
 =======
@@ -105,6 +112,8 @@
 =======
     "C:\\Users\\KIsrael\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
 >>>>>>> update
+=======
+>>>>>>> update files
   ],
   "logs": []
 }

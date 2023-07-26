@@ -36,7 +36,7 @@ namespace HRIS.Views.Forms.Maintenance.Positions
             var cv = new Position
             {
                 FkDepartment = Convert.ToInt32(txt_department.SelectedValue),
-                Description = txt_position.Text,
+                PositionName = txt_position.Text,
                 IsActive = checkBox_isactive.Checked,
                 Createdby = createdby,
                 FkSystemUser = id
@@ -103,7 +103,7 @@ namespace HRIS.Views.Forms.Maintenance.Positions
                 var selectposition = dgrid_position.SelectedRows[0].DataBoundItem as Models.Position;
                 if (selectposition != null)
                 {
-                    selectposition.Description = txt_position.Text;
+                    selectposition.PositionName = txt_position.Text;
                     selectposition.IsActive = checkBox_isactive.Checked;
                     position_Presenter.UpdatePosition(selectposition);
                     MessageBox.Show("Update Successfully!");
@@ -118,7 +118,7 @@ namespace HRIS.Views.Forms.Maintenance.Positions
             {
                 var selectedRow = dgrid_position.Rows[e.RowIndex];
                 var selectedPerson = selectedRow.DataBoundItem as Models.Position;
-                txt_position.Text = selectedPerson?.Description;
+                txt_position.Text = selectedPerson?.PositionName;
                 checkBox_isactive.Checked = selectedPerson?.IsActive ?? false;
             }
         }

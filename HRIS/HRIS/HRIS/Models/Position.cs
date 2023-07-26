@@ -9,7 +9,7 @@ public partial class Position
 
     public int? FkDepartment { get; set; }
 
-    public string? Description { get; set; }
+    public string? PositionName { get; set; }
 
     public bool? IsActive { get; set; }
 

@@ -213,6 +213,7 @@ namespace HRIS.Forms.Maintenance
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new PositionForm());
+            
         }
     }
 }

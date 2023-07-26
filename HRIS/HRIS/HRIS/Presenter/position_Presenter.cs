@@ -20,8 +20,27 @@ namespace HRIS.Presenter
         }
         public void LoadPosition()
         {
-            var p = _context.Positions.ToList();
-            _view.DisplayPosition(p);
+
+            
+            try
+            {
+                var p = _context.Positions.ToList();
+                _view.DisplayPosition(p);
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException != null)
+                {
+                    // Display the inner exception details
+                    MessageBox.Show($"An error occurred while saving the entity changes. Inner exception: {ex.InnerException.Message}");
+                }
+                else
+                {
+                    // Display the exception message if there is no inner exception
+                    MessageBox.Show($"An error occurred while saving the entity changes. Exception: {ex.Message}");
+                }
+            }
+            
         }
         public void LoadPositionwithWhere(int departmentid)
         {
@@ -31,7 +50,7 @@ namespace HRIS.Presenter
         public void AddPosition(Position position,int departmentid)
         {
 
-         bool isPositionExists = _context.Positions.Any(p => p.Description == position.Description && p.FkDepartment == departmentid);
+         bool isPositionExists = _context.Positions.Any(p => p.PositionName == position.PositionName && p.FkDepartment == departmentid);
          if (isPositionExists)
          {
              MessageBox.Show("Position with Department ID " + departmentid +" already exists!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

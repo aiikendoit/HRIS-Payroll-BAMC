@@ -973,10 +973,10 @@ public partial class YourDbContext : DbContext
                 .HasComment("getdate()")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
-            entity.Property(e => e.Description)
-                .HasMaxLength(500)
-                .IsUnicode(false)
-                .HasColumnName("description");
+            //entity.Property(e => e.Description)
+            //    .HasMaxLength(500)
+            //    .IsUnicode(false)
+            //    .HasColumnName("description");
             entity.Property(e => e.FkDepartment)
                 .HasMaxLength(100)
                 .IsUnicode(false)

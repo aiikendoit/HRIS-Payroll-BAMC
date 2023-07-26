@@ -1,0 +1,7 @@
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Release\net6.0-windows\app.publish\HRIS.exe
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Release\net6.0-windows\app.publish\HRIS.dll
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Release\net6.0-windows\app.publish\HRIS.deps.json
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Release\net6.0-windows\app.publish\HRIS.runtimeconfig.json
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Release\net6.0-windows\app.publish\HRIS.pdb
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Release\net6.0-windows\app.publish\FontAwesome.Sharp.dll
+D:\James System\2023\HRIS+Payroll\04 HRIS - April 27,2023\HRIS\HRIS\bin\Release\net6.0-windows\app.publish\MaterialSkin.dll

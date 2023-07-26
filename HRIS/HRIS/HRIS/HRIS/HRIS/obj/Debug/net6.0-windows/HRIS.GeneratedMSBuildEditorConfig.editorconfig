@@ -14,6 +14,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HRIS
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/Debug/net6.0-windows/HRIS.GeneratedMSBuildEditorConfig.editorconfig
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -47,3 +48,6 @@ build_property.ProjectDir = C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS
 =======
 build_property.ProjectDir = C:\Users\KIsrael\Documents\HRIS-Payroll\HRIS\HRIS\HRIS\
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/Debug/net6.0-windows/HRIS.GeneratedMSBuildEditorConfig.editorconfig
+=======
+build_property.ProjectDir = C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\HRIS\HRIS\
+>>>>>>> merge

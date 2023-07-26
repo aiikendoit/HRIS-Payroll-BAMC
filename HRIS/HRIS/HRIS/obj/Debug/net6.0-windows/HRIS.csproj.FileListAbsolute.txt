@@ -1740,6 +1740,9 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\HRIS\HRIS\obj\Debug\ne
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update file
 =======
 >>>>>>> update file
 =======
@@ -1867,6 +1870,7 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\obj\Debug\net6.0-windo
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
@@ -1887,3 +1891,5 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\obj\Debug\net6.0-windo
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> update file

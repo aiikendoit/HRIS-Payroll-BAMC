@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "tr1ydxXJfA7lat49WJBZWupZf6S2ZVtVFLYsLPl8DRCr/SDsqnYUk4vBwSuniubzBmLwhknKKYbhWGjyz3ZTRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
@@ -51,6 +52,11 @@
   "success": true,
   "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
 >>>>>>> update files
+=======
+  "dgSpecHash": "tr1ydxXJfA7lat49WJBZWupZf6S2ZVtVFLYsLPl8DRCr/SDsqnYUk4vBwSuniubzBmLwhknKKYbhWGjyz3ZTRQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+>>>>>>> update file
   "expectedPackageFiles": [
     "C:\\Users\\KIsrael\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\KIsrael\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

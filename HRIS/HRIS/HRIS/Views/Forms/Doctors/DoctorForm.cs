@@ -23,6 +23,7 @@ namespace HRIS.Forms.Doctors
             UniversalStatic.customDatagrid(dgrid_doctors);
             employee_Presenter = new employee_Presenter(this);
 <<<<<<< HEAD
+<<<<<<< HEAD
             employee_Presenter.loadDoctorJoin();
             changeDgridSize();
         }
@@ -55,6 +56,8 @@ namespace HRIS.Forms.Doctors
             dgrid_doctors.Columns[5].HeaderText = "";
             //change profile image layout to zoom
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             employee_Presenter.loadDoctorJoin(dgrid_doctors);
 
         }
@@ -71,11 +74,15 @@ namespace HRIS.Forms.Doctors
             dgrid_doctors.Columns["Position"].Width = 100;
             dgrid_doctors.Columns["Address"].Width = dgrid_doctors.Width - 30 - 80 - 250 - 400 - 100;
             dgrid_doctors.Columns[1].HeaderText = "";
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             foreach (DataGridViewColumn column in dgrid_doctors.Columns)
             {
                 if (column is DataGridViewImageColumn)
                 {
+<<<<<<< HEAD
 <<<<<<< HEAD
                     ((DataGridViewImageColumn)column).ImageLayout = DataGridViewImageCellLayout.Zoom;
                 }
@@ -98,13 +105,18 @@ namespace HRIS.Forms.Doctors
             column.Width = newWidth;
         }
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
                     ((DataGridViewImageColumn)column).ImageLayout = DataGridViewImageCellLayout.Stretch;
                 }
             }
 
         }
 
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         public void DisplayEmployee(List<Models.Employee> employees)
         {
             dgrid_doctors.DataSource = employees;
@@ -127,15 +139,20 @@ namespace HRIS.Forms.Doctors
 
             employeeForm.ShowDialog();
 <<<<<<< HEAD
+<<<<<<< HEAD
             employee_Presenter.loadDoctorJoin();
 =======
             employee_Presenter.loadDoctorJoin(dgrid_doctors);
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            employee_Presenter.loadDoctorJoin(dgrid_doctors);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         }
 
         private void s_Click(object sender, EventArgs e)
         {
             string docname = "Doctor";
+<<<<<<< HEAD
 <<<<<<< HEAD
             //var selectedEmployee = dgrid_employee.SelectedRows[0].Cells["PKEmployee"].Value;
             var selectedEmployee = dgrid_doctors.SelectedRows[0].DataBoundItem as Models.Employee;
@@ -148,6 +165,8 @@ namespace HRIS.Forms.Doctors
                 employee_Presenter.loadDoctorJoin();
             }
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             string? position = dgrid_doctors.SelectedRows[0].Cells["Position"].Value?.ToString() ?? string.Empty;
             string? department = dgrid_doctors.SelectedRows[0].Cells["Department"].Value?.ToString() ?? string.Empty;
             int selectedEmployee = (int)dgrid_doctors.SelectedRows[0].Cells["ID"].Value;
@@ -162,7 +181,10 @@ namespace HRIS.Forms.Doctors
         private void DoctorForm_Shown(object sender, EventArgs e)
         {
             changeDgridSize();
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         }
     }
 }

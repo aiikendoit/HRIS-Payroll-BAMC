@@ -4,9 +4,13 @@ using HRIS.Views.Forms.Employee.Work_Assignment;
 using HRIS.Views.Forms.Maintenance.Department;
 using HRIS.Views.Forms.Maintenance.Positions;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 using Microsoft.EntityFrameworkCore;
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+using Microsoft.EntityFrameworkCore;
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,12 +29,18 @@ namespace HRIS.Forms.Employee.Work_Assignment
         private readonly position_Presenter position_presenter;
         private readonly workassignment_Presenter workassignment_presenter;
 <<<<<<< HEAD
+<<<<<<< HEAD
         private string emp_ID;
 =======
         private readonly HrisContext _context;
         private string emp_ID;
         private int workassignmentid;
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+        private readonly HrisContext _context;
+        private string emp_ID;
+        private int workassignmentid;
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         public emp_AddworkAssignment(string employeeid)
         {
             InitializeComponent();
@@ -38,14 +48,20 @@ namespace HRIS.Forms.Employee.Work_Assignment
             position_presenter = new position_Presenter(this);
             workassignment_presenter = new workassignment_Presenter(this);
 <<<<<<< HEAD
+<<<<<<< HEAD
             department_presenter.LoadDepartment();
             emp_ID = employeeid;
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             _context = new HrisContext();
             department_presenter.LoadDepartment();
             emp_ID = employeeid;
             label1.Text = employeeid;
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         }
 
         public void DisplayDepartment(List<Department> departments)
@@ -61,10 +77,14 @@ namespace HRIS.Forms.Employee.Work_Assignment
         {
             txt_position.DataSource = positions;
 <<<<<<< HEAD
+<<<<<<< HEAD
             txt_position.DisplayMember = "Description";
 =======
             txt_position.DisplayMember = "positionName";
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            txt_position.DisplayMember = "positionName";
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_position.ValueMember = "PkPosition";
         }
 
@@ -82,8 +102,11 @@ namespace HRIS.Forms.Employee.Work_Assignment
         private void btn_save_Click(object sender, EventArgs e)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             add();
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             if (btn_save.Text == "Save")
             {
                 add();
@@ -94,12 +117,16 @@ namespace HRIS.Forms.Employee.Work_Assignment
             }
             
            
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         }
         private void add()
         {
             try
             {
+<<<<<<< HEAD
 <<<<<<< HEAD
             string? createdby = Properties.Settings.Default.completename;
             int id = Properties.Settings.Default.usercode;
@@ -121,6 +148,8 @@ namespace HRIS.Forms.Employee.Work_Assignment
             MessageBox.Show("Added Successfully!");
             this.Close();
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
                 DateTime? dateTime = null;
                 if (txt_enddate.Format != DateTimePickerFormat.Custom)
                 {
@@ -145,7 +174,10 @@ namespace HRIS.Forms.Employee.Work_Assignment
                 workassignment_presenter.AddWorkAssignment(cv);
                 MessageBox.Show("Added Successfully!");
                 this.Close();
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             }
             catch (Exception ex)
             {
@@ -162,11 +194,14 @@ namespace HRIS.Forms.Employee.Work_Assignment
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         public void DisplayWorkAssignment(List<Workassignment> workassignments)
         {
 
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         private void update()
         {
             try
@@ -263,7 +298,10 @@ namespace HRIS.Forms.Employee.Work_Assignment
         private void txt_enddate_ValueChanged(object sender, EventArgs e)
         {
             txt_enddate.Format = DateTimePickerFormat.Short;
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         }
     }
 }

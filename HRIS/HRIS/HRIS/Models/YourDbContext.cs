@@ -974,10 +974,14 @@ public partial class YourDbContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
 <<<<<<< HEAD
+<<<<<<< HEAD
             entity.Property(e => e.Description)
 =======
             entity.Property(e => e.PositionName)
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            entity.Property(e => e.PositionName)
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("description");

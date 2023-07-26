@@ -20,13 +20,21 @@ namespace HRIS.Forms.Maintenance.Bank
     public partial class BankForm : Form, IBankView
     {
         private readonly bank_Presenter bank_Presenter;
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         public BankForm()
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_bank);
             bank_Presenter = new bank_Presenter(this);
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             bank_Presenter.LoadBank();
         }
 
@@ -34,10 +42,13 @@ namespace HRIS.Forms.Maintenance.Bank
         {
             dgrid_bank.DataSource = banks;
             dgrid_bank.Columns[0].HeaderText = "ID";
+<<<<<<< HEAD
             dgrid_bank.Columns[1].HeaderText = "Bank Name";
             dgrid_bank.Columns[2].HeaderText = "Is Active";
             dgrid_bank.Columns[3].HeaderText = "Created Date";
             dgrid_bank.Columns[4].HeaderText = "Created By";
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             if (dgrid_bank.ColumnCount == 8)
             {
                 //Remove unnecessary column
@@ -64,6 +75,7 @@ namespace HRIS.Forms.Maintenance.Bank
         {
             var selectedbank = dgrid_bank.SelectedRows[0].DataBoundItem as Models.BankName;
             if (selectedbank != null)
+<<<<<<< HEAD
             {                
 
                 var b = new frm_bank_add();
@@ -104,6 +116,11 @@ namespace HRIS.Forms.Maintenance.Bank
             {
                 var b = new frm_bank_add();
                 b.putdata(this, selectedbank,"View");
+=======
+            {
+              var b  = new frm_bank_add();
+                b.putdata(this, selectedbank);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
                 b.ShowDialog(this);
                 bank_Presenter.LoadBank();
             }

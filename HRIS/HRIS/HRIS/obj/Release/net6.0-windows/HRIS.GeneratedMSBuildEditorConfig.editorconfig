@@ -15,7 +15,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HRIS
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\
 =======
 build_property.ProjectDir = D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+build_property.ProjectDir = D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba

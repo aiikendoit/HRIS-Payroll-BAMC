@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -38,6 +39,19 @@
 >>>>>>> .merge_file_eXhMrf
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+    "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+  },
+  "projects": {
+    "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectName": "HRIS",
+        "projectPath": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
+        "outputPath": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -101,6 +115,7 @@
               "version": "[7.0.8, )"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -110,6 +125,8 @@
 >>>>>>> .merge_file_eXhMrf
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.5, )"

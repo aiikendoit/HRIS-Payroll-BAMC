@@ -294,6 +294,10 @@
             Name = "frm_AddressMaintenance";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Address Information";
+<<<<<<< HEAD
+=======
+            Load += frm_AddressMaintenance_Load_1;
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             ResumeLayout(false);
             PerformLayout();
         }

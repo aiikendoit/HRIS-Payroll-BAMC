@@ -82,6 +82,9 @@
     <Compile Update="Views\Forms\Hiring\HiringForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\Forms\Maintenance\AddressFolder\Barangay\frm_barangay.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Forms\Maintenance\Bank\BankForm.cs">
       <SubType>Form</SubType>
     </Compile>

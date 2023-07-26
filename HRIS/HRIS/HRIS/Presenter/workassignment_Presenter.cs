@@ -1,14 +1,20 @@
 ﻿using HRIS.Models;
 using HRIS.Views.Forms.Employee.Work_Assignment;
 <<<<<<< HEAD
+<<<<<<< HEAD
 using System;
 using System.Collections.Generic;
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Data;
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,20 +26,27 @@ namespace HRIS.Presenter
         private readonly HrisContext _context;
         private readonly IWorkAssigmentView _view;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+        
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         public  workassignment_Presenter(IWorkAssigmentView view)
         {
             _view = view;
             _context = new HrisContext();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         public void loadWorkAssignment()
         {
             var p = _context.Workassignments.ToList();
             _view.DisplayWorkAssignment(p);
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         public void loadWorkAssignment(int employeeid,DataGridView dataGridView)
         {
             var query = from workass in _context.Workassignments
@@ -64,15 +77,21 @@ namespace HRIS.Presenter
             var p = query.ToList();
             _view.DisplayWorkAssignment(p);
 
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         }
         public void AddWorkAssignment(Workassignment workassignment)
         {
             _context.Workassignments.Add(workassignment);
             _context.SaveChanges();
 <<<<<<< HEAD
+<<<<<<< HEAD
             loadWorkAssignment();
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         }
         public void UpdateWorkAssignment(Workassignment workassignment)
         {
@@ -90,7 +109,10 @@ namespace HRIS.Presenter
                 MessageBox.Show("Workassignment not found");
             }
 
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         }
     }
 }

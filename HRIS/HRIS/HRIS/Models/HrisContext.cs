@@ -23,6 +23,8 @@ public partial class HrisContext : DbContext
 
     public virtual DbSet<Civilstatus> Civilstatuses { get; set; }
 
+    public virtual DbSet<CompanyInfo> CompanyInfos { get; set; }
+
     public virtual DbSet<Degreetype> Degreetypes { get; set; }
 
     public virtual DbSet<Department> Departments { get; set; }
@@ -94,6 +96,7 @@ public partial class HrisContext : DbContext
             optionsBuilder.UseSqlServer("Data Source=webserver; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
                           .UseLazyLoadingProxies();
         }
+<<<<<<< HEAD
 
     }
     //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
@@ -102,6 +105,11 @@ public partial class HrisContext : DbContext
 =======
     // => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+    }
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+    //=> optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -196,6 +204,81 @@ public partial class HrisContext : DbContext
                 .HasColumnName("description");
             entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
+        });
+
+        modelBuilder.Entity<CompanyInfo>(entity =>
+        {
+            entity.HasKey(e => e.PkCompanyInfo);
+
+            entity.ToTable("companyInfo", "HR");
+
+            entity.Property(e => e.PkCompanyInfo).HasColumnName("PK_companyInfo");
+            entity.Property(e => e.Address1)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("address1");
+            entity.Property(e => e.Address2)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("address2");
+            entity.Property(e => e.Address3)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("address3");
+            entity.Property(e => e.Craetedby)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.CreatedDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.Emailaddress)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("emailaddress");
+            entity.Property(e => e.Fax)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("fax");
+            entity.Property(e => e.FkBarangay).HasColumnName("FK_barangay");
+            entity.Property(e => e.FkProvince).HasColumnName("FK_province");
+            entity.Property(e => e.FkSystemuser).HasColumnName("FK_systemuser");
+            entity.Property(e => e.FkTowncity).HasColumnName("FK_towncity");
+            entity.Property(e => e.FkZipcode).HasColumnName("FK_zipcode");
+            entity.Property(e => e.Logo)
+                .HasColumnType("image")
+                .HasColumnName("logo");
+            entity.Property(e => e.Organizationname)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("organizationname");
+            entity.Property(e => e.Owner)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("owner");
+            entity.Property(e => e.Telephone)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("telephone");
+            entity.Property(e => e.Website)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("website");
+
+            entity.HasOne(d => d.FkBarangayNavigation).WithMany(p => p.CompanyInfos)
+                .HasForeignKey(d => d.FkBarangay)
+                .HasConstraintName("FK_companyInfo_barangay");
+
+            entity.HasOne(d => d.FkProvinceNavigation).WithMany(p => p.CompanyInfos)
+                .HasForeignKey(d => d.FkProvince)
+                .HasConstraintName("FK_companyInfo_province");
+
+            entity.HasOne(d => d.FkTowncityNavigation).WithMany(p => p.CompanyInfos)
+                .HasForeignKey(d => d.FkTowncity)
+                .HasConstraintName("FK_companyInfo_towncity");
+
+            entity.HasOne(d => d.FkZipcodeNavigation).WithMany(p => p.CompanyInfos)
+                .HasForeignKey(d => d.FkZipcode)
+                .HasConstraintName("FK_companyInfo_zipcode");
         });
 
         modelBuilder.Entity<Degreetype>(entity =>
@@ -484,13 +567,19 @@ public partial class HrisContext : DbContext
                 .HasColumnName("phicno");
             entity.Property(e => e.ProfilePicture).HasColumnType("image");
 <<<<<<< HEAD
+<<<<<<< HEAD
             entity.Property(e => e.Rfid).HasColumnName("rfid");
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             entity.Property(e => e.Rfid)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("rfid");
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             entity.Property(e => e.Sssno)
                 .HasMaxLength(50)
                 .IsUnicode(false)
@@ -994,6 +1083,7 @@ public partial class HrisContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
 <<<<<<< HEAD
+<<<<<<< HEAD
             entity.Property(e => e.Description)
                 .HasMaxLength(500)
                 .IsUnicode(false)
@@ -1005,11 +1095,19 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.FkDepartment).HasColumnName("FK_department");
             entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
+=======
+            entity.Property(e => e.FkDepartment).HasColumnName("FK_department");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.IsActive).HasColumnName("isActive");
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             entity.Property(e => e.PositionName)
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("positionName");
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
 
             entity.HasOne(d => d.FkDepartmentNavigation).WithMany(p => p.Positions)
                 .HasForeignKey(d => d.FkDepartment)
@@ -1223,12 +1321,16 @@ public partial class HrisContext : DbContext
             entity.ToTable("workassignment", "HR");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             entity.Property(e => e.PkWorkassignment)
                 .ValueGeneratedNever()
                 .HasColumnName("PK_workassignment");
 =======
             entity.Property(e => e.PkWorkassignment).HasColumnName("PK_workassignment");
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            entity.Property(e => e.PkWorkassignment).HasColumnName("PK_workassignment");
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             entity.Property(e => e.Createdby)
                 .HasMaxLength(50)
                 .IsUnicode(false)

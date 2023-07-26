@@ -34,6 +34,7 @@ namespace HRIS.Presenter
 
         public void UpdateBank(BankName bank)
         {
+<<<<<<< HEAD
             var existingBankname = _context.BankNames.Find(bank.PkBankName);
             if (existingBankname != null)
             {
@@ -41,15 +42,29 @@ namespace HRIS.Presenter
                 _context.Entry(bank).State = EntityState.Modified;
                 _context.SaveChanges();
                //MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+=======
+            var existingbank = _context.BankNames.Find(bank.PkBankName);
+
+            if (existingbank != null)
+            {
+                _context.Entry(existingbank).State = EntityState.Detached;
+                _context.Entry(bank).State = EntityState.Modified;
+                _context.BankNames.Update(bank);
+                _context.SaveChanges();
+                MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             }
             else
             {
                 MessageBox.Show("Workassignment not found");
             }
+<<<<<<< HEAD
 
             //_context.BankNames.Update(bank);
             //_context.SaveChanges();
             //LoadBank();
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         }
     }
 }

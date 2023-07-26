@@ -88,22 +88,32 @@
             // txt_enddate
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             txt_enddate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             txt_enddate.Format = DateTimePickerFormat.Short;
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_enddate.CustomFormat = " ";
             txt_enddate.Enabled = false;
             txt_enddate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             txt_enddate.Format = DateTimePickerFormat.Custom;
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_enddate.Location = new Point(117, 337);
             txt_enddate.Name = "txt_enddate";
             txt_enddate.Size = new Size(270, 25);
             txt_enddate.TabIndex = 44;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             txt_enddate.ValueChanged += txt_enddate_ValueChanged;
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            txt_enddate.ValueChanged += txt_enddate_ValueChanged;
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             // 
             // btn_cancel
             // 

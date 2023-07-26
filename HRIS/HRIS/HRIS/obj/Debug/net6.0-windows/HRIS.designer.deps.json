@@ -42,10 +42,13 @@
       },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_0YqKUl
 >>>>>>> main
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "Castle.Core/5.1.0": {
         "dependencies": {
           "System.Diagnostics.EventLog": "6.0.0"
@@ -58,11 +61,14 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
 =======
 =======
 >>>>>>> .merge_file_uTLRbX
 >>>>>>> main
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "FontAwesome.Sharp/6.3.0": {
         "runtime": {
           "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {
@@ -261,6 +267,7 @@
       },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.5",
@@ -268,6 +275,8 @@
 =======
 <<<<<<< .merge_file_0YqKUl
 >>>>>>> main
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "Microsoft.EntityFrameworkCore.Proxies/7.0.8": {
         "dependencies": {
           "Castle.Core": "5.1.0",
@@ -612,10 +621,13 @@
       },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_0YqKUl
 >>>>>>> main
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "System.Diagnostics.EventLog/6.0.0": {
         "runtime": {
           "lib/net6.0/System.Diagnostics.EventLog.dll": {
@@ -639,11 +651,14 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
 =======
 =======
 >>>>>>> .merge_file_uTLRbX
 >>>>>>> main
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "System.Drawing.Common/5.0.0": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "5.0.0"
@@ -969,10 +984,13 @@
     },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_0YqKUl
 >>>>>>> main
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     "Castle.Core/5.1.0": {
       "type": "package",
       "serviceable": true,
@@ -981,11 +999,14 @@
       "hashPath": "castle.core.5.1.0.nupkg.sha512"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
 =======
 =======
 >>>>>>> .merge_file_uTLRbX
 >>>>>>> main
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     "FontAwesome.Sharp/6.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1117,10 +1138,13 @@
     },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_0YqKUl
 >>>>>>> main
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     "Microsoft.EntityFrameworkCore.Proxies/7.0.8": {
       "type": "package",
       "serviceable": true,
@@ -1129,11 +1153,14 @@
       "hashPath": "microsoft.entityframeworkcore.proxies.7.0.8.nupkg.sha512"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
 =======
 =======
 >>>>>>> .merge_file_uTLRbX
 >>>>>>> main
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
       "type": "package",
       "serviceable": true,
@@ -1353,10 +1380,13 @@
     },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< .merge_file_0YqKUl
 >>>>>>> main
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     "System.Diagnostics.EventLog/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1365,11 +1395,14 @@
       "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
 =======
 =======
 >>>>>>> .merge_file_uTLRbX
 >>>>>>> main
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     "System.Drawing.Common/5.0.0": {
       "type": "package",
       "serviceable": true,

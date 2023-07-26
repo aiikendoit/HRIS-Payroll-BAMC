@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "tr1ydxXJfA7lat49WJBZWupZf6S2ZVtVFLYsLPl8DRCr/SDsqnYUk4vBwSuniubzBmLwhknKKYbhWGjyz3ZTRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
@@ -92,11 +93,18 @@
     "C:\\Users\\KIsrael\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
 =======
   "dgSpecHash": "mCN637e68aluQYJ2dDEUWhFrnzgK8y3iUkVgAByukTC3bP+xNhUJXdu+aXW6yayk3yXc7khXKinLTeRZjgnUXw==",
+=======
+  "dgSpecHash": "laQ7ktX0SmONJqjqoGl1JLxxjBZj3A5aK6JSP/EhHSAMOCaRnAcXwvU2xH3WMHQZnvh9sK/WXVvkBhyhnZaJ/g==",
+>>>>>>> update
   "success": true,
-  "projectFilePath": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj",
+  "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
   "expectedPackageFiles": [
+<<<<<<< HEAD
     "C:\\Users\\ITSSupport\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
 >>>>>>> backup files
+=======
+    "C:\\Users\\KIsrael\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+>>>>>>> update
   ],
   "logs": []
 }

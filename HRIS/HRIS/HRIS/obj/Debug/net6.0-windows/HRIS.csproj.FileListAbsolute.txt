@@ -44,6 +44,9 @@ D:\James System\2023\HRIS+Payroll\01 HRIS - April 19,2023\HRIS\HRIS\obj\Debug\ne
 D:\James System\2023\HRIS+Payroll\01 HRIS - April 19,2023\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
 D:\James System\2023\HRIS+Payroll\01 HRIS - April 19,2023\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Employee.EmployeeForm.resources
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
 D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
 D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
@@ -1724,6 +1727,7 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\HRIS\HRIS\obj\Debug\ne
 C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update file
 C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
@@ -1851,3 +1855,5 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\obj\Debug\net6.0-windo
 >>>>>>> update file
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files

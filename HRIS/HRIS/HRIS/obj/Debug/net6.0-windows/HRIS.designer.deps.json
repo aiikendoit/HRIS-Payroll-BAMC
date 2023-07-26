@@ -9,6 +9,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
       "Azure.Core/1.24.0": {
@@ -57,12 +60,15 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
       "FontAwesome.Sharp/6.3.0": {
         "runtime": {
           "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {
@@ -73,6 +79,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
       },
@@ -865,12 +874,15 @@
           }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
       }
     }
   },
@@ -878,6 +890,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
     "Azure.Core/1.24.0": {
@@ -902,12 +917,15 @@
       "hashPath": "castle.core.5.1.0.nupkg.sha512"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
     "FontAwesome.Sharp/6.3.0": {
       "type": "package",
       "serviceable": true,
@@ -917,6 +935,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
     },
@@ -1403,12 +1424,15 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
     }
   }
 }

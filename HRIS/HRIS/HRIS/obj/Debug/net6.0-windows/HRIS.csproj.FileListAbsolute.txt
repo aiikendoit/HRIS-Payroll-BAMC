@@ -46,6 +46,9 @@ D:\James System\2023\HRIS+Payroll\01 HRIS - April 19,2023\HRIS\HRIS\obj\Debug\ne
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
 D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
@@ -1730,6 +1733,7 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\HRIS\HRIS\obj\Debug\ne
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update file
 =======
@@ -1866,3 +1870,5 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\obj\Debug\net6.0-windo
 >>>>>>> update file
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files

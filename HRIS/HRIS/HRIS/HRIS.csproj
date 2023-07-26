@@ -13,6 +13,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
     <PackageReference Include="MaterialSkin.2.RTL" Version="2.3.1.1" />
@@ -28,12 +31,15 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
   </ItemGroup>
 
   <ItemGroup>
@@ -45,6 +51,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
     <Compile Update="Properties\Settings.Designer.cs">
@@ -53,12 +62,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
   </ItemGroup>
 
   <ItemGroup>
@@ -71,6 +83,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
   <ItemGroup>
@@ -81,10 +96,13 @@
   </ItemGroup>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
 =======
 >>>>>>> backup files
+=======
+>>>>>>> update files
 </Project>

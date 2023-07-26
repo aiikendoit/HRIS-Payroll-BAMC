@@ -2,6 +2,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> update files
 =======
 >>>>>>> update files
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9,6 +12,7 @@
     <Import Project="$(NuGetPackageRoot)system.text.json\7.0.0\buildTransitive\net6.0\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\7.0.0\buildTransitive\net6.0\System.Text.Json.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\7.0.0\buildTransitive\net6.0\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\7.0.0\buildTransitive\net6.0\Microsoft.Extensions.Logging.Abstractions.targets')" />
   </ImportGroup>
+<<<<<<< HEAD
 <<<<<<< HEAD
 </Project>
 =======
@@ -20,3 +24,6 @@
 =======
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
 >>>>>>> backup files
+=======
+</Project>
+>>>>>>> update files

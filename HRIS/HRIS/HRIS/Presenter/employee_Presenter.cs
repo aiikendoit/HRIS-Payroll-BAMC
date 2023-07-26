@@ -8,9 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 using System.Windows.Forms;
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+using System.Windows.Forms;
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
 
 namespace HRIS.Presenter
 {
@@ -28,6 +32,7 @@ namespace HRIS.Presenter
             var p = _context.Employees.Where(c => c.PkEmployee == employeeid).ToList();
             _view.DisplayEmployeeAllDetails(p);
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
         public void loadEmployeeJoin()
         {
@@ -58,6 +63,8 @@ namespace HRIS.Presenter
             var query = from employee in _context.Employees
 
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         public void loadEmployeeJoin(DataGridView dataGridView)
         {
             var query = from employee in _context.Employees
@@ -95,11 +102,15 @@ namespace HRIS.Presenter
         public void loadDoctorJoin(DataGridView dataGridView)
         {
             var query = from employee in _context.Employees
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
                         join province in _context.Provinces on employee.FkProvince equals province.PkProvince
                         join region in _context.Regions on province.FkRegion equals region.PkRegion
                         join townCity in _context.Towncities on employee.FkTowncity equals townCity.PkTowncity
                         join barangay in _context.Barangays on employee.FkBarangay equals barangay.PkBarangay
+<<<<<<< HEAD
 <<<<<<< HEAD
                         where employee.Employeetype == "Doctor"
                         orderby employee.Lastname ascending
@@ -117,6 +128,8 @@ namespace HRIS.Presenter
                         };
             _view.DisplayEmployee(query.ToList());
 =======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
                         join workass in _context.Workassignments.Where(wa => wa.Enddate == null) on employee.PkEmployee equals workass.FkEmployee into workassGroup
                         from workass in workassGroup.DefaultIfEmpty()
                         join department in _context.Departments on workass.FkDepartment equals department.PkDepartment into departmentGroup
@@ -140,13 +153,18 @@ namespace HRIS.Presenter
                         };
 
             dataGridView.DataSource = query.ToList();
+<<<<<<< HEAD
 >>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
         }
 
+=======
+        }
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         public void updateEmployee(Employee employee)
         {
             _context.Employees.Update(employee);
             _context.SaveChanges();
+<<<<<<< HEAD
 <<<<<<< HEAD
             loadEmployeeJoin();
 =======
@@ -156,6 +174,12 @@ namespace HRIS.Presenter
 
         }
 
+=======
+            //loadEmployeeJoin();
+            MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         public bool AddEmployee(Employee employee)
         {
             bool isexist = false;

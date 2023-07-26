@@ -47,12 +47,15 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JL2M5W
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "Castle.Core/5.1.0": {
         "type": "package",
         "dependencies": {
@@ -70,6 +73,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -77,6 +81,8 @@
 >>>>>>> .merge_file_4WuGh4
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "FontAwesome.Sharp/6.3.0": {
         "type": "package",
         "compile": {
@@ -309,12 +315,15 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JL2M5W
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "Microsoft.EntityFrameworkCore.Proxies/7.0.8": {
         "type": "package",
         "dependencies": {
@@ -333,6 +342,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -340,6 +350,8 @@
 >>>>>>> .merge_file_4WuGh4
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
         "type": "package",
         "dependencies": {
@@ -848,12 +860,15 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JL2M5W
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "System.Diagnostics.EventLog/6.0.0": {
         "type": "package",
         "compile": {
@@ -881,6 +896,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -888,6 +904,8 @@
 >>>>>>> .merge_file_4WuGh4
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "System.Drawing.Common/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -1370,12 +1388,15 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JL2M5W
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     "Castle.Core/5.1.0": {
       "sha512": "31UJpTHOiWq95CDOHazE3Ub/hE/PydNWsJMwnEVTqFFP4WhAugwpaVGxzOxKgNeSUUeqS2W6lxV+q7u1pAOfXg==",
       "type": "package",
@@ -1401,6 +1422,7 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -1408,6 +1430,8 @@
 >>>>>>> .merge_file_4WuGh4
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     "FontAwesome.Sharp/6.3.0": {
       "sha512": "3/Fb0N04yYK8An07oox5ISlUyNgsnWildHfoP69uqTEOsemQemRyciphMkXZOcdBupjUD+lVsRE3FqG41/dzPA==",
       "type": "package",
@@ -1764,12 +1788,15 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_JL2M5W
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     "Microsoft.EntityFrameworkCore.Proxies/7.0.8": {
       "sha512": "BcqNjnLZysC55AxSj7TRzl547HILBuqRAZRMJ/oCT0mUa+gTfjk35p9neZH+mrOH93CYCkRhKr3FRAX3Xu8tEQ==",
       "type": "package",
@@ -1785,6 +1812,7 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -1792,6 +1820,8 @@
 >>>>>>> .merge_file_4WuGh4
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
       "sha512": "u/33DC4S6g2hpMPgBc5Kdnlz//nqHR5c/ovgjtiP/wQ7sOd0EOdygVzUJAAOxCwbtAHDsJXS9Vc3jLFYq0yu8Q==",
       "type": "package",
@@ -3890,6 +3920,7 @@
       "Microsoft.EntityFrameworkCore >= 7.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Proxies >= 7.0.8",
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
       "Microsoft.EntityFrameworkCore >= 7.0.5",
@@ -3905,6 +3936,8 @@
 >>>>>>> .merge_file_4WuGh4
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5"
     ]
@@ -3916,6 +3949,7 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -3941,6 +3975,13 @@
 >>>>>>> .merge_file_4WuGh4
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+      "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "projectName": "HRIS",
+      "projectPath": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
+      "outputPath": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4004,6 +4045,7 @@
             "version": "[7.0.8, )"
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -4013,6 +4055,8 @@
 >>>>>>> .merge_file_4WuGh4
 >>>>>>> main
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.5, )"

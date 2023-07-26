@@ -35,7 +35,11 @@
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel1 = new FlowLayoutPanel();
+<<<<<<< HEAD
             txt_search = new TextBox();
+=======
+            textBox1 = new TextBox();
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             btn_search = new FontAwesome.Sharp.IconButton();
             btn_refresh = new FontAwesome.Sharp.IconButton();
             dgrid_bank = new DataGridView();
@@ -126,12 +130,19 @@
             btn_view.TextAlign = ContentAlignment.MiddleLeft;
             btn_view.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_view.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             btn_view.Click += btn_view_Click;
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoSize = true;
+<<<<<<< HEAD
             flowLayoutPanel1.Controls.Add(txt_search);
+=======
+            flowLayoutPanel1.Controls.Add(textBox1);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             flowLayoutPanel1.Controls.Add(btn_search);
             flowLayoutPanel1.Controls.Add(btn_refresh);
             flowLayoutPanel1.Dock = DockStyle.Top;
@@ -191,7 +202,10 @@
             btn_refresh.TextAlign = ContentAlignment.MiddleLeft;
             btn_refresh.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_refresh.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             btn_refresh.Click += btn_refresh_Click;
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             // 
             // dgrid_bank
             // 

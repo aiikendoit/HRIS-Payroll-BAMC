@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "e9js3iXi7GRSqwbAW8zypVNr7l3JuRll5uIxplEfYgISRXl0Kdflmkf4+4UzEa1IzmNmoQHABFUDctIGUGDbmA==",
 =======
 <<<<<<< HEAD
@@ -11,6 +12,11 @@
   "dgSpecHash": "eNJ8ueAoXoKsEVIxLnixn7RCDErl1R1X2hbvFJLIuQL8laEJxIkhWkpCSYGM63Vdo4rHB/RC1Ru/9Bf4sUHXyw==",
   "success": true,
   "projectFilePath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+=======
+  "dgSpecHash": "fQ7NivWqdl8b7MeF7vOkQAOHrWl13BLLwyCKEuA3gaFKu+PSBVLmaoU/CDmwRCUlvO1y13lTkrL/efthg0fXKg==",
+  "success": true,
+  "projectFilePath": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
   "expectedPackageFiles": [
     "C:\\Users\\ITSSupport\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ITSSupport\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

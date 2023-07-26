@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,15 +13,19 @@
 =======
     "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
 >>>>>>> merge
+=======
+    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+>>>>>>> update file
   },
   "projects": {
-    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
+    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
         "projectName": "HRIS",
-        "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
         "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
         "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
@@ -52,6 +57,9 @@
 =======
         "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\obj\\",
 >>>>>>> merge
+=======
+        "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> update file
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

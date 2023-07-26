@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -63,22 +64,32 @@
 >>>>>>> update file
 =======
     "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj": {}
+=======
+    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+>>>>>>> update
   },
   "projects": {
-    "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj": {
+    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj",
+        "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
         "projectName": "HRIS",
+<<<<<<< HEAD
         "projectPath": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj",
         "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
         "outputPath": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\obj\\",
 >>>>>>> backup files
+=======
+        "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> update
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -92,6 +103,9 @@
 =======
           "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> backup files
+=======
+          "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> update
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -103,6 +117,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
           "C:\\Program Files\\dotnet\\library-packs": {},
 >>>>>>> backup files
@@ -111,6 +126,8 @@
 =======
           "C:\\Program Files\\dotnet\\library-packs": {},
 >>>>>>> backup files
+=======
+>>>>>>> update
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -195,6 +212,7 @@
           },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -214,6 +232,9 @@
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
 >>>>>>> backup files
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+>>>>>>> update
         }
       }
     }

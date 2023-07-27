@@ -31,7 +31,7 @@ namespace HRIS.Forms.Maintenance.EducationaLevel
         {
             dgrid_educationalLevel.DataSource = Educationallevels;
             dgrid_educationalLevel.Columns[0].HeaderText = "ID";
-            if (dgrid_educationalLevel.ColumnCount == 9)
+            if (dgrid_educationalLevel.ColumnCount == 10)
             {
                 //Remove unnecessary column
                 dgrid_educationalLevel.Columns.RemoveAt(7);

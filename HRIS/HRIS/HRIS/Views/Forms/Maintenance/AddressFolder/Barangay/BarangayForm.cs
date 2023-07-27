@@ -21,7 +21,7 @@ namespace HRIS.Forms.Maintenance.Barangay
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_barangay);
             barangay_Presenter = new barangay_Presenter(this);
-            barangay_Presenter.LoadAllBarangay();
+            loadBarangay();
         }
 
         public void clearfields()
@@ -32,21 +32,22 @@ namespace HRIS.Forms.Maintenance.Barangay
         public void DisplayBarangay(List<Models.Barangay> Barangays)
         {
             dgrid_barangay.DataSource = Barangays;
-            dgrid_barangay.Columns[0].HeaderText = "ID";
-            dgrid_barangay.Columns[4].HeaderText = "Created by";
-            dgrid_barangay.Columns[3].HeaderText = "Created date";
-            dgrid_barangay.Columns[1].HeaderText = "Barangay Name";
-            if (dgrid_barangay.ColumnCount == 8)
-            {
-                //Remove unnecessary column
-                dgrid_barangay.Columns[7].Visible = false;
-                dgrid_barangay.Columns[6].Visible = false;
-                dgrid_barangay.Columns[5].Visible = false;
-            }
-            dgrid_barangay.AutoGenerateColumns = false;
+            //dgrid_barangay.Columns[0].HeaderText = "ID";
+            //dgrid_barangay.Columns[4].HeaderText = "Created by";
+            //dgrid_barangay.Columns[3].HeaderText = "Created date";
+            //dgrid_barangay.Columns[1].HeaderText = "Barangay Name";
+            //if (dgrid_barangay.ColumnCount == 8)
+            //{
+            //    //Remove unnecessary column
+            //    dgrid_barangay.Columns[7].Visible = false;
+            //    dgrid_barangay.Columns[6].Visible = false;
+            //    dgrid_barangay.Columns[5].Visible = false;
+            //}
+            //dgrid_barangay.AutoGenerateColumns = false;
             int totalrow = dgrid_barangay.RowCount;
             txt_totalcount.Text = "Total record(s): " + totalrow.ToString();
         }
+        
 
         private void BarangayForm_Load(object sender, EventArgs e)
         {
@@ -57,7 +58,7 @@ namespace HRIS.Forms.Maintenance.Barangay
             var brgy = new frm_barangay();
             brgy.province_Presenter.loadProvince();
             brgy.ShowDialog();
-            barangay_Presenter.LoadAllBarangay();
+            loadBarangay();
         }
 
         private void btn_search_Click(object sender, EventArgs e)
@@ -68,9 +69,10 @@ namespace HRIS.Forms.Maintenance.Barangay
         {
             string searchQuery = txt_search.Text.Trim();
             var employees = (List<Models.Barangay>)dgrid_barangay.DataSource;
+           
             if (string.IsNullOrEmpty(searchQuery))
             {
-                barangay_Presenter.LoadAllBarangay();
+                loadBarangay();
             }
             else
             {
@@ -85,6 +87,10 @@ namespace HRIS.Forms.Maintenance.Barangay
         {
             search();
         }
+        private void loadBarangay()
+        {
+            barangay_Presenter.LoadAllBarangay(dgrid_barangay);
+        }
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
@@ -94,7 +100,10 @@ namespace HRIS.Forms.Maintenance.Barangay
             brgy.isupdate = true;
             brgy.putdata(brgyid, towncityid);
             brgy.ShowDialog();
-            barangay_Presenter.LoadAllBarangay();
+        }
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            loadBarangay();
         }
     }
 }

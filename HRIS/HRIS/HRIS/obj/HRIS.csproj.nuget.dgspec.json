@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+    "D:\\James System\\2023\\HRIS with GIT\\20 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
   },
   "projects": {
-    "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
+    "D:\\James System\\2023\\HRIS with GIT\\20 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\20 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
         "projectName": "HRIS",
-        "projectPath": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectPath": "D:\\James System\\2023\\HRIS with GIT\\20 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
         "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
-        "outputPath": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+        "outputPath": "D:\\James System\\2023\\HRIS with GIT\\20 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -17,7 +17,10 @@ public partial class Province
 
     public int? FkRegion { get; set; }
 
+<<<<<<< HEAD
+=======
     public virtual ICollection<CompanyInfo> CompanyInfos { get; set; } = new List<CompanyInfo>();
 
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 }

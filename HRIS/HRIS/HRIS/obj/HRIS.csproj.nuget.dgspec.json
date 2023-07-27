@@ -1,7 +1,50 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\James System\\2023\\HRIS with GIT\\19 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_MWNmMB
+    "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+  },
+  "projects": {
+    "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectName": "HRIS",
+        "projectPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
+        "outputPath": "D:\\James System\\2023\\HRIS with GIT\\12 - HRIS-Payroll - July 9,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+=======
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectName": "HRIS",
+        "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_eXhMrf
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+    "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+>>>>>>> e07265a856610009f6fe3fb054d0883899f9db14
   },
   "projects": {
     "D:\\James System\\2023\\HRIS with GIT\\19 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
@@ -11,13 +54,18 @@
         "projectName": "HRIS",
         "projectPath": "D:\\James System\\2023\\HRIS with GIT\\19 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
         "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
+<<<<<<< HEAD
         "outputPath": "D:\\James System\\2023\\HRIS with GIT\\19 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+=======
+        "outputPath": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
+>>>>>>> e07265a856610009f6fe3fb054d0883899f9db14
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +74,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +102,15 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              "version": "[7.0.5, )"
+=======
+<<<<<<< .merge_file_MWNmMB
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
               "version": "[7.0.8, )"
+>>>>>>> main
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -67,6 +122,19 @@
               "target": "Package",
               "version": "[7.0.8, )"
             },
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+              "version": "[7.0.5, )"
+            },
+>>>>>>> .merge_file_eXhMrf
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -97,7 +165,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

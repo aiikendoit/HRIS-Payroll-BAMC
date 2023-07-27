@@ -49,8 +49,16 @@
             btn_education = new FontAwesome.Sharp.IconButton();
             btn_basicinformation = new FontAwesome.Sharp.IconButton();
             panel_basicinfo = new Panel();
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
             txt_rfid = new TextBox();
             label1 = new Label();
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            txt_rfid = new TextBox();
+            label1 = new Label();
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             checkBox_isactive = new CheckBox();
             txt_bank = new ComboBox();
             btn_cancel = new Button();
@@ -119,6 +127,13 @@
             txt_employeeid = new Label();
             picture_avatar = new UserControl.JPCircularPictureBox();
             txt_headerPositionDepartment = new Label();
+<<<<<<< HEAD
+<<<<<<< HEAD
+            txt_headerIdno = new Label();
+=======
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_Headercompletename = new Label();
             panel3 = new Panel();
             MainPanel = new Panel();
@@ -191,7 +206,11 @@
             panelmenu.Location = new Point(0, 57);
             panelmenu.Name = "panelmenu";
             panelmenu.Padding = new Padding(2);
+<<<<<<< HEAD:HRIS/HRIS/HRIS/Forms/Employee/EmployeeRegistration.Designer.cs
+            panelmenu.Size = new Size(160, 614);
+=======
             panelmenu.Size = new Size(160, 588);
+>>>>>>> ed33f07327beea7a4578e142a43c4e2b9bb45300:HRIS/HRIS/HRIS/Views/Forms/Employee/EmployeeRegistration.Designer.cs
             panelmenu.TabIndex = 1;
             // 
             // btn_documents
@@ -588,8 +607,16 @@
             // 
             panel_basicinfo.AutoScroll = true;
             panel_basicinfo.BackColor = Color.White;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
             panel_basicinfo.Controls.Add(txt_rfid);
             panel_basicinfo.Controls.Add(label1);
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            panel_basicinfo.Controls.Add(txt_rfid);
+            panel_basicinfo.Controls.Add(label1);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             panel_basicinfo.Controls.Add(checkBox_isactive);
             panel_basicinfo.Controls.Add(txt_bank);
             panel_basicinfo.Controls.Add(btn_cancel);
@@ -657,26 +684,15 @@
             panel_basicinfo.Dock = DockStyle.Fill;
             panel_basicinfo.Location = new Point(160, 147);
             panel_basicinfo.Name = "panel_basicinfo";
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD:HRIS/HRIS/HRIS/Forms/Employee/EmployeeRegistration.Designer.cs
+            panel_basicinfo.Size = new Size(954, 524);
+            panel_basicinfo.TabIndex = 2;
+=======
             panel_basicinfo.Size = new Size(954, 498);
             panel_basicinfo.TabIndex = 0;
-            // 
-            // txt_rfid
-            // 
-            txt_rfid.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_rfid.Location = new Point(137, 104);
-            txt_rfid.Name = "txt_rfid";
-            txt_rfid.Size = new Size(219, 23);
-            txt_rfid.TabIndex = 32;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(44, 108);
-            label1.Name = "label1";
-            label1.Size = new Size(41, 15);
-            label1.TabIndex = 33;
-            label1.Text = "RFID #";
+>>>>>>> ed33f07327beea7a4578e142a43c4e2b9bb45300:HRIS/HRIS/HRIS/Views/Forms/Employee/EmployeeRegistration.Designer.cs
             // 
             // checkBox_isactive
             // 
@@ -770,6 +786,219 @@
             // 
             // txt_relationship_combobox
             // 
+=======
+            panel_basicinfo.Size = new Size(954, 498);
+            panel_basicinfo.TabIndex = 0;
+            // 
+            // txt_rfid
+            // 
+            txt_rfid.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_rfid.Location = new Point(137, 104);
+            txt_rfid.Name = "txt_rfid";
+            txt_rfid.Size = new Size(219, 23);
+            txt_rfid.TabIndex = 32;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(44, 108);
+            label1.Name = "label1";
+            label1.Size = new Size(41, 15);
+            label1.TabIndex = 33;
+            label1.Text = "RFID #";
+            // 
+            // checkBox_isactive
+            // 
+            checkBox_isactive.AutoSize = true;
+            checkBox_isactive.Location = new Point(444, 413);
+            checkBox_isactive.Name = "checkBox_isactive";
+            checkBox_isactive.Size = new Size(67, 19);
+            checkBox_isactive.TabIndex = 25;
+            checkBox_isactive.Text = "isActive";
+            checkBox_isactive.UseVisualStyleBackColor = true;
+            // 
+            // txt_bank
+            // 
+            txt_bank.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_bank.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_bank.FormattingEnabled = true;
+            txt_bank.Location = new Point(444, 254);
+            txt_bank.Name = "txt_bank";
+            txt_bank.Size = new Size(202, 23);
+            txt_bank.TabIndex = 20;
+            // 
+            // btn_cancel
+            // 
+            btn_cancel.BackColor = Color.Transparent;
+            btn_cancel.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
+            btn_cancel.FlatStyle = FlatStyle.Flat;
+            btn_cancel.Location = new Point(233, 439);
+            btn_cancel.Name = "btn_cancel";
+            btn_cancel.Size = new Size(91, 36);
+            btn_cancel.TabIndex = 31;
+            btn_cancel.Text = "Cancel";
+            btn_cancel.UseVisualStyleBackColor = false;
+            btn_cancel.Click += btn_cancel_Click;
+            // 
+            // btn_save
+            // 
+            btn_save.BackColor = Color.FromArgb(0, 127, 152);
+            btn_save.FlatAppearance.BorderSize = 0;
+            btn_save.FlatStyle = FlatStyle.Flat;
+            btn_save.ForeColor = Color.White;
+            btn_save.Location = new Point(136, 439);
+            btn_save.Name = "btn_save";
+            btn_save.Size = new Size(91, 36);
+            btn_save.TabIndex = 30;
+            btn_save.Text = "Save";
+            btn_save.UseVisualStyleBackColor = false;
+            btn_save.Click += btn_save_Click;
+            // 
+            // profilepic
+            // 
+            profilepic.Cursor = Cursors.Hand;
+            profilepic.Image = (Image)resources.GetObject("profilepic.Image");
+            profilepic.Location = new Point(742, 54);
+            profilepic.Name = "profilepic";
+            profilepic.Size = new Size(204, 195);
+            profilepic.SizeMode = PictureBoxSizeMode.Zoom;
+            profilepic.TabIndex = 10;
+            profilepic.TabStop = false;
+            profilepic.Click += pictureBox2_Click;
+            // 
+            // txt_bloodtype
+            // 
+            txt_bloodtype.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_bloodtype.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_bloodtype.FormattingEnabled = true;
+            txt_bloodtype.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
+            txt_bloodtype.Location = new Point(444, 129);
+            txt_bloodtype.Name = "txt_bloodtype";
+            txt_bloodtype.Size = new Size(202, 23);
+            txt_bloodtype.TabIndex = 15;
+            // 
+            // txt_natinality
+            // 
+=======
+            panel_basicinfo.Size = new Size(954, 498);
+            panel_basicinfo.TabIndex = 0;
+            // 
+            // txt_rfid
+            // 
+            txt_rfid.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_rfid.Location = new Point(137, 104);
+            txt_rfid.Name = "txt_rfid";
+            txt_rfid.Size = new Size(219, 23);
+            txt_rfid.TabIndex = 32;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(44, 108);
+            label1.Name = "label1";
+            label1.Size = new Size(41, 15);
+            label1.TabIndex = 33;
+            label1.Text = "RFID #";
+            // 
+            // checkBox_isactive
+            // 
+            checkBox_isactive.AutoSize = true;
+            checkBox_isactive.Location = new Point(444, 413);
+            checkBox_isactive.Name = "checkBox_isactive";
+            checkBox_isactive.Size = new Size(67, 19);
+            checkBox_isactive.TabIndex = 25;
+            checkBox_isactive.Text = "isActive";
+            checkBox_isactive.UseVisualStyleBackColor = true;
+            // 
+            // txt_bank
+            // 
+            txt_bank.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_bank.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_bank.FormattingEnabled = true;
+            txt_bank.Location = new Point(444, 254);
+            txt_bank.Name = "txt_bank";
+            txt_bank.Size = new Size(202, 23);
+            txt_bank.TabIndex = 20;
+            // 
+            // btn_cancel
+            // 
+            btn_cancel.BackColor = Color.Transparent;
+            btn_cancel.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
+            btn_cancel.FlatStyle = FlatStyle.Flat;
+            btn_cancel.Location = new Point(233, 439);
+            btn_cancel.Name = "btn_cancel";
+            btn_cancel.Size = new Size(91, 36);
+            btn_cancel.TabIndex = 31;
+            btn_cancel.Text = "Cancel";
+            btn_cancel.UseVisualStyleBackColor = false;
+            btn_cancel.Click += btn_cancel_Click;
+            // 
+            // btn_save
+            // 
+            btn_save.BackColor = Color.FromArgb(0, 127, 152);
+            btn_save.FlatAppearance.BorderSize = 0;
+            btn_save.FlatStyle = FlatStyle.Flat;
+            btn_save.ForeColor = Color.White;
+            btn_save.Location = new Point(136, 439);
+            btn_save.Name = "btn_save";
+            btn_save.Size = new Size(91, 36);
+            btn_save.TabIndex = 30;
+            btn_save.Text = "Save";
+            btn_save.UseVisualStyleBackColor = false;
+            btn_save.Click += btn_save_Click;
+            // 
+            // profilepic
+            // 
+            profilepic.Cursor = Cursors.Hand;
+            profilepic.Image = (Image)resources.GetObject("profilepic.Image");
+            profilepic.Location = new Point(742, 54);
+            profilepic.Name = "profilepic";
+            profilepic.Size = new Size(204, 195);
+            profilepic.SizeMode = PictureBoxSizeMode.Zoom;
+            profilepic.TabIndex = 10;
+            profilepic.TabStop = false;
+            profilepic.Click += pictureBox2_Click;
+            // 
+            // txt_bloodtype
+            // 
+            txt_bloodtype.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_bloodtype.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_bloodtype.FormattingEnabled = true;
+            txt_bloodtype.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
+            txt_bloodtype.Location = new Point(444, 129);
+            txt_bloodtype.Name = "txt_bloodtype";
+            txt_bloodtype.Size = new Size(202, 23);
+            txt_bloodtype.TabIndex = 15;
+            // 
+            // txt_natinality
+            // 
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
+            txt_natinality.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_natinality.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_natinality.FormattingEnabled = true;
+            txt_natinality.Location = new Point(444, 104);
+            txt_natinality.Name = "txt_natinality";
+            txt_natinality.Size = new Size(202, 23);
+            txt_natinality.TabIndex = 14;
+            // 
+            // txt_religion
+            // 
+            txt_religion.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_religion.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_religion.FormattingEnabled = true;
+            txt_religion.Location = new Point(444, 79);
+            txt_religion.Name = "txt_religion";
+            txt_religion.Size = new Size(202, 23);
+            txt_religion.TabIndex = 13;
+            // 
+            // txt_relationship_combobox
+            // 
+<<<<<<< HEAD
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_relationship_combobox.DropDownStyle = ComboBoxStyle.DropDownList;
             txt_relationship_combobox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_relationship_combobox.FormattingEnabled = true;
@@ -780,6 +1009,21 @@
             // 
             // txt_educatinlevel
             // 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD:HRIS/HRIS/HRIS/Forms/Employee/EmployeeRegistration.Designer.cs
+            button1.Location = new Point(136, 410);
+            button1.Name = "button1";
+            button1.Size = new Size(129, 23);
+            button1.TabIndex = 8;
+            button1.Text = "Address Information";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+=======
+=======
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_educatinlevel.DropDownStyle = ComboBoxStyle.DropDownList;
             txt_educatinlevel.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_educatinlevel.FormattingEnabled = true;
@@ -787,6 +1031,13 @@
             txt_educatinlevel.Name = "txt_educatinlevel";
             txt_educatinlevel.Size = new Size(202, 23);
             txt_educatinlevel.TabIndex = 19;
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> ed33f07327beea7a4578e142a43c4e2b9bb45300:HRIS/HRIS/HRIS/Views/Forms/Employee/EmployeeRegistration.Designer.cs
+=======
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             // 
             // txt_civilstatus
             // 
@@ -812,7 +1063,15 @@
             // 
             radioButton_female.AutoSize = true;
             radioButton_female.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            radioButton_female.Location = new Point(198, 255);
+=======
             radioButton_female.Location = new Point(198, 282);
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            radioButton_female.Location = new Point(198, 282);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             radioButton_female.Name = "radioButton_female";
             radioButton_female.Size = new Size(63, 19);
             radioButton_female.TabIndex = 9;
@@ -824,7 +1083,15 @@
             // 
             radioButton_male.AutoSize = true;
             radioButton_male.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            radioButton_male.Location = new Point(138, 255);
+=======
             radioButton_male.Location = new Point(138, 282);
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            radioButton_male.Location = new Point(138, 282);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             radioButton_male.Name = "radioButton_male";
             radioButton_male.Size = new Size(51, 19);
             radioButton_male.TabIndex = 8;
@@ -836,7 +1103,15 @@
             // 
             txt_birthdate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_birthdate.Format = DateTimePickerFormat.Short;
+<<<<<<< HEAD
+<<<<<<< HEAD
+            txt_birthdate.Location = new Point(137, 228);
+=======
             txt_birthdate.Location = new Point(137, 255);
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            txt_birthdate.Location = new Point(137, 255);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_birthdate.Name = "txt_birthdate";
             txt_birthdate.Size = new Size(219, 23);
             txt_birthdate.TabIndex = 7;
@@ -877,7 +1152,15 @@
             // txt_extensionname
             // 
             txt_extensionname.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            txt_extensionname.Location = new Point(137, 203);
+=======
             txt_extensionname.Location = new Point(137, 230);
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            txt_extensionname.Location = new Point(137, 230);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_extensionname.Name = "txt_extensionname";
             txt_extensionname.Size = new Size(219, 23);
             txt_extensionname.TabIndex = 6;
@@ -886,7 +1169,15 @@
             // txt_firstname
             // 
             txt_firstname.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            txt_firstname.Location = new Point(137, 128);
+=======
             txt_firstname.Location = new Point(137, 155);
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            txt_firstname.Location = new Point(137, 155);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_firstname.Name = "txt_firstname";
             txt_firstname.Size = new Size(219, 23);
             txt_firstname.TabIndex = 3;
@@ -895,11 +1186,25 @@
             // txt_completeaddress
             // 
             txt_completeaddress.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            txt_completeaddress.Location = new Point(136, 278);
+            txt_completeaddress.Multiline = true;
+            txt_completeaddress.Name = "txt_completeaddress";
+            txt_completeaddress.ReadOnly = true;
+            txt_completeaddress.Size = new Size(219, 129);
+=======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_completeaddress.Location = new Point(136, 305);
             txt_completeaddress.Multiline = true;
             txt_completeaddress.Name = "txt_completeaddress";
             txt_completeaddress.ReadOnly = true;
             txt_completeaddress.Size = new Size(219, 99);
+<<<<<<< HEAD
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_completeaddress.TabIndex = 10;
             txt_completeaddress.TextChanged += textBox9_TextChanged;
             // 
@@ -930,7 +1235,15 @@
             // txt_suffix
             // 
             txt_suffix.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            txt_suffix.Location = new Point(137, 178);
+=======
             txt_suffix.Location = new Point(137, 205);
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            txt_suffix.Location = new Point(137, 205);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_suffix.Name = "txt_suffix";
             txt_suffix.Size = new Size(117, 23);
             txt_suffix.TabIndex = 5;
@@ -938,7 +1251,15 @@
             // txt_lastname
             // 
             txt_lastname.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            txt_lastname.Location = new Point(137, 103);
+=======
             txt_lastname.Location = new Point(137, 130);
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            txt_lastname.Location = new Point(137, 130);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_lastname.Name = "txt_lastname";
             txt_lastname.Size = new Size(219, 23);
             txt_lastname.TabIndex = 2;
@@ -990,7 +1311,15 @@
             // txt_middlename
             // 
             txt_middlename.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            txt_middlename.Location = new Point(137, 153);
+=======
             txt_middlename.Location = new Point(137, 180);
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            txt_middlename.Location = new Point(137, 180);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_middlename.Name = "txt_middlename";
             txt_middlename.Size = new Size(219, 23);
             txt_middlename.TabIndex = 4;
@@ -1313,6 +1642,13 @@
             panel2.Controls.Add(txt_employeeid);
             panel2.Controls.Add(picture_avatar);
             panel2.Controls.Add(txt_headerPositionDepartment);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            panel2.Controls.Add(txt_headerIdno);
+=======
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             panel2.Controls.Add(txt_Headercompletename);
             panel2.Controls.Add(panel3);
             panel2.Dock = DockStyle.Top;
@@ -1325,7 +1661,15 @@
             // 
             txt_employeeid.AutoSize = true;
             txt_employeeid.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            txt_employeeid.Location = new Point(198, 20);
+=======
             txt_employeeid.Location = new Point(84, 37);
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            txt_employeeid.Location = new Point(84, 37);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_employeeid.Name = "txt_employeeid";
             txt_employeeid.Size = new Size(73, 15);
             txt_employeeid.TabIndex = 6;
@@ -1357,8 +1701,28 @@
             txt_headerPositionDepartment.TabIndex = 3;
             txt_headerPositionDepartment.Text = "Department";
             // 
+<<<<<<< HEAD
+<<<<<<< HEAD
+            // txt_headerIdno
+            // 
+            txt_headerIdno.AutoSize = true;
+            txt_headerIdno.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_headerIdno.Location = new Point(84, 36);
+            txt_headerIdno.Name = "txt_headerIdno";
+            txt_headerIdno.Size = new Size(28, 15);
+            txt_headerIdno.TabIndex = 2;
+            txt_headerIdno.Text = "ID #";
+            // 
             // txt_Headercompletename
             // 
+=======
+            // txt_Headercompletename
+            // 
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            // txt_Headercompletename
+            // 
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_Headercompletename.AutoSize = true;
             txt_Headercompletename.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             txt_Headercompletename.Location = new Point(82, 10);
@@ -1382,7 +1746,11 @@
             MainPanel.Location = new Point(160, 147);
             MainPanel.Name = "MainPanel";
             MainPanel.Padding = new Padding(5);
+<<<<<<< HEAD:HRIS/HRIS/HRIS/Forms/Employee/EmployeeRegistration.Designer.cs
+            MainPanel.Size = new Size(954, 524);
+=======
             MainPanel.Size = new Size(954, 498);
+>>>>>>> ed33f07327beea7a4578e142a43c4e2b9bb45300:HRIS/HRIS/HRIS/Views/Forms/Employee/EmployeeRegistration.Designer.cs
             MainPanel.TabIndex = 4;
             // 
             // panel4
@@ -1402,7 +1770,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD:HRIS/HRIS/HRIS/Forms/Employee/EmployeeRegistration.Designer.cs
+            ClientSize = new Size(1114, 671);
+=======
             ClientSize = new Size(1114, 645);
+>>>>>>> ed33f07327beea7a4578e142a43c4e2b9bb45300:HRIS/HRIS/HRIS/Views/Forms/Employee/EmployeeRegistration.Designer.cs
             Controls.Add(panel_basicinfo);
             Controls.Add(MainPanel);
             Controls.Add(panel2);
@@ -1440,6 +1812,13 @@
         private Label label2;
         private Panel panel2;
         private Label txt_headerPositionDepartment;
+<<<<<<< HEAD
+<<<<<<< HEAD
+        private Label txt_headerIdno;
+=======
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         private Label txt_Headercompletename;
         private Panel panel3;
         private TextBox txt_extensionname;
@@ -1520,7 +1899,15 @@
         private OpenFileDialog openFileDialog1;
         private UserControl.JPCircularPictureBox picture_avatar;
         private Label txt_employeeid;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
         private TextBox txt_rfid;
         private Label label1;
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+        private TextBox txt_rfid;
+        private Label label1;
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     }
 }

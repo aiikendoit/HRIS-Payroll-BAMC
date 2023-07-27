@@ -39,8 +39,12 @@ namespace HRIS.Forms.Maintenance
     public partial class MaintenanceForm : Form, ICompanyInformationView
     {
         private Form currentchildform;
+<<<<<<< HEAD
+        string? address1, address2, address3, regionSelectedValue, provinceSelectedValue, towncitySelectedValue, barangaySelectedValue, zipcode;
+=======
         string? address1, address2, address3;
         int regionSelectedValue, provinceSelectedValue, towncitySelectedValue, barangaySelectedValue, zipcodeSelectedValue;
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         private IconButton currentbtn;
         private int companyid;
         private readonly HrisContext _context;
@@ -119,6 +123,23 @@ namespace HRIS.Forms.Maintenance
         private void button2_Click(object sender, EventArgs e)
         {
             frm_AddressMaintenance addrs = new frm_AddressMaintenance();
+<<<<<<< HEAD
+            addrs.ShowDialog();
+
+            //if (addrs.issave == true)
+            //{
+            //    //set value
+            //    address1 = addrs.address1.ToString();
+            //    address2 = addrs.address2.ToString();
+            //    address3 = addrs.address3.ToString();
+            //    regionSelectedValue = addrs.regionSelectedvalue.ToString();
+            //    provinceSelectedValue = addrs.provinceSelectedvalue.ToString();
+            //    towncitySelectedValue = addrs.towncitySelectedvalue.ToString();
+            //    barangaySelectedValue = addrs.barangaySelectedvalue.ToString();
+            //    zipcode = addrs.zipcodeSelectedvalue.ToString();
+            //    txt_completeaddress.Text = addrs.completeaddress.ToString();
+            //}
+=======
             string? add1, add2, add3;
             int provinceid, townid, barangayid, zipcodeid;
             provinceid = provinceSelectedValue;
@@ -146,6 +167,7 @@ namespace HRIS.Forms.Maintenance
                     txt_completeaddress.Text = addrs.completeaddress.ToString();
                 }
             }
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
 
         }
 
@@ -244,6 +266,8 @@ namespace HRIS.Forms.Maintenance
             activatebutton(sender, ColorPalette.color5);
             openchildform(new PositionForm());
         }
+<<<<<<< HEAD
+=======
 
         private void txt_emailaddress_Leave(object sender, EventArgs e)
         {
@@ -432,5 +456,6 @@ namespace HRIS.Forms.Maintenance
         {
             this.Close();
         }
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
     }
 }

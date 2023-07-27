@@ -106,7 +106,7 @@ namespace HRIS
             panelTop.Dock = DockStyle.Top;
             panelTop.Location = new Point(199, 0);
             panelTop.Name = "panelTop";
-            panelTop.Size = new Size(847, 100);
+            panelTop.Size = new Size(585, 84);
             panelTop.TabIndex = 0;
             // 
             // jpCircularPictureBox2
@@ -119,7 +119,7 @@ namespace HRIS
             jpCircularPictureBox2.BorderSize = 2;
             jpCircularPictureBox2.GradientAngle = 50F;
             jpCircularPictureBox2.Image = (Image)resources.GetObject("jpCircularPictureBox2.Image");
-            jpCircularPictureBox2.Location = new Point(779, 56);
+            jpCircularPictureBox2.Location = new Point(511, 24);
             jpCircularPictureBox2.Name = "jpCircularPictureBox2";
             jpCircularPictureBox2.Size = new Size(38, 38);
             jpCircularPictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -130,7 +130,7 @@ namespace HRIS
             // 
             label14.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label14.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.Location = new Point(578, 68);
+            label14.Location = new Point(310, 35);
             label14.Name = "label14";
             label14.Size = new Size(202, 17);
             label14.TabIndex = 3;
@@ -141,7 +141,7 @@ namespace HRIS
             // 
             lbl_formtitle.AutoSize = true;
             lbl_formtitle.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_formtitle.Location = new Point(44, 72);
+            lbl_formtitle.Location = new Point(55, 35);
             lbl_formtitle.Name = "lbl_formtitle";
             lbl_formtitle.Size = new Size(43, 17);
             lbl_formtitle.TabIndex = 1;
@@ -154,7 +154,7 @@ namespace HRIS
             icon_home.IconColor = Color.White;
             icon_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
             icon_home.IconSize = 28;
-            icon_home.Location = new Point(6, 66);
+            icon_home.Location = new Point(17, 29);
             icon_home.Name = "icon_home";
             icon_home.Size = new Size(32, 28);
             icon_home.SizeMode = PictureBoxSizeMode.Zoom;
@@ -170,7 +170,7 @@ namespace HRIS
             iconPictureBox1.IconColor = Color.White;
             iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconPictureBox1.IconSize = 24;
-            iconPictureBox1.Location = new Point(820, 64);
+            iconPictureBox1.Location = new Point(552, 31);
             iconPictureBox1.Name = "iconPictureBox1";
             iconPictureBox1.Size = new Size(24, 24);
             iconPictureBox1.TabIndex = 4;
@@ -184,7 +184,27 @@ namespace HRIS
             panelLeft.Dock = DockStyle.Left;
             panelLeft.Location = new Point(0, 0);
             panelLeft.Name = "panelLeft";
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            panelLeft.Size = new Size(199, 561);
+=======
             panelLeft.Size = new Size(199, 613);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+            panelLeft.Size = new Size(199, 613);
+
+            panelLeft.Size = new Size(199, 561);
+<<<<<<< HEAD
+
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             panelLeft.TabIndex = 1;
             // 
             // panel1
@@ -205,9 +225,29 @@ namespace HRIS
             panel1.Controls.Add(label1);
             panel1.Controls.Add(btn_dashboard);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 100);
+            panel1.Location = new Point(0, 84);
             panel1.Name = "panel1";
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            panel1.Size = new Size(199, 477);
+=======
             panel1.Size = new Size(199, 513);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+            panel1.Size = new Size(199, 513);
+
+            panel1.Size = new Size(199, 477);
+<<<<<<< HEAD
+
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             panel1.TabIndex = 18;
             // 
             // btn_audittrail
@@ -528,7 +568,7 @@ namespace HRIS
             panelLogo.Location = new Point(0, 0);
             panelLogo.Name = "panelLogo";
             panelLogo.Padding = new Padding(10);
-            panelLogo.Size = new Size(199, 100);
+            panelLogo.Size = new Size(199, 84);
             panelLogo.TabIndex = 0;
             // 
             // Image_Logo
@@ -538,7 +578,7 @@ namespace HRIS
             Image_Logo.Image = (Image)resources.GetObject("Image_Logo.Image");
             Image_Logo.Location = new Point(10, 10);
             Image_Logo.Name = "Image_Logo";
-            Image_Logo.Size = new Size(179, 80);
+            Image_Logo.Size = new Size(179, 64);
             Image_Logo.SizeMode = PictureBoxSizeMode.Zoom;
             Image_Logo.TabIndex = 0;
             Image_Logo.TabStop = false;
@@ -550,9 +590,29 @@ namespace HRIS
             HomePanel.BackColor = Color.FromArgb(193, 250, 255);
             HomePanel.Controls.Add(panel2);
             HomePanel.Dock = DockStyle.Fill;
-            HomePanel.Location = new Point(199, 100);
+            HomePanel.Location = new Point(199, 84);
             HomePanel.Name = "HomePanel";
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            HomePanel.Size = new Size(585, 477);
+=======
             HomePanel.Size = new Size(847, 513);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+            HomePanel.Size = new Size(847, 513);
+
+            HomePanel.Size = new Size(585, 477);
+<<<<<<< HEAD
+
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             HomePanel.TabIndex = 2;
             // 
             // panel2
@@ -576,7 +636,27 @@ namespace HRIS
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label5);
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            panel2.Location = new Point(42, 38);
+=======
             panel2.Location = new Point(173, 56);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+            panel2.Location = new Point(173, 56);
+
+            panel2.Location = new Point(42, 38);
+<<<<<<< HEAD
+
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             panel2.Name = "panel2";
             panel2.Size = new Size(511, 409);
             panel2.TabIndex = 4;
@@ -785,9 +865,29 @@ namespace HRIS
             // MainPanel
             // 
             MainPanel.Dock = DockStyle.Fill;
-            MainPanel.Location = new Point(199, 100);
+            MainPanel.Location = new Point(199, 84);
             MainPanel.Name = "MainPanel";
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            MainPanel.Size = new Size(585, 477);
+=======
             MainPanel.Size = new Size(847, 513);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+            MainPanel.Size = new Size(847, 513);
+
+            MainPanel.Size = new Size(585, 477);
+<<<<<<< HEAD
+
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             MainPanel.TabIndex = 3;
             // 
             // btn_hiring
@@ -820,7 +920,27 @@ namespace HRIS
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            ClientSize = new Size(784, 561);
+=======
             ClientSize = new Size(1046, 613);
+>>>>>>> 615004df363606e89cc8c7813c61629b7015ea3f
+=======
+<<<<<<< .merge_file_oDBnkL
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+            ClientSize = new Size(1046, 613);
+
+            ClientSize = new Size(784, 561);
+<<<<<<< HEAD
+
+=======
+>>>>>>> .merge_file_masupj
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
             Controls.Add(HomePanel);
             Controls.Add(MainPanel);
             Controls.Add(panelTop);

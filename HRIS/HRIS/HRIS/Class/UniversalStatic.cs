@@ -20,8 +20,17 @@ namespace HRIS.Class
             dgv.BorderStyle = BorderStyle.None;
             dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgv.GridColor = Color.Gainsboro;
+<<<<<<< HEAD
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
+            // Apply custom column settings
+            for (int i = 0; i < dgv.Columns.Count; i++)
+            {
+                dgv.Columns[i].FillWeight = 1;
+            }
+=======
             dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             //row 
             dgv.RowHeadersVisible = false;
             dgv.AllowUserToResizeRows = false;
@@ -57,6 +66,11 @@ namespace HRIS.Class
             dgv.RowTemplate.DividerHeight = 0;
             dgv.RowTemplate.Height = 35;
         }
+<<<<<<< HEAD
+        public static void formsize(Form form)
+        {
+            form.Size = new Size();
+=======
         public static bool IsEmpty(TextBox textBox)
         {
             bool isEmpty = false;
@@ -72,6 +86,7 @@ namespace HRIS.Class
             }
 
             return isEmpty;
+>>>>>>> ed33f07327beea7a4578e142a43c4e2b9bb45300
         }
         public static bool IsValidEmail(string email)
         {

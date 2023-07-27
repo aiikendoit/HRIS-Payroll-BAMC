@@ -96,9 +96,20 @@ public partial class HrisContext : DbContext
             optionsBuilder.UseSqlServer("Data Source=webserver; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
                           .UseLazyLoadingProxies();
         }
+<<<<<<< HEAD
+
+    }
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+<<<<<<< HEAD
+    //=> optionsBuilder.UseSqlServer("Data Source=webserver; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
+=======
+    // => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
     }
     //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
     //=> optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -555,10 +566,20 @@ public partial class HrisContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("phicno");
             entity.Property(e => e.ProfilePicture).HasColumnType("image");
+<<<<<<< HEAD
+<<<<<<< HEAD
+            entity.Property(e => e.Rfid).HasColumnName("rfid");
+=======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             entity.Property(e => e.Rfid)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("rfid");
+<<<<<<< HEAD
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             entity.Property(e => e.Sssno)
                 .HasMaxLength(50)
                 .IsUnicode(false)
@@ -1061,13 +1082,32 @@ public partial class HrisContext : DbContext
                 .HasComment("getdate()")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
+<<<<<<< HEAD
+<<<<<<< HEAD
+            entity.Property(e => e.Description)
+                .HasMaxLength(500)
+                .IsUnicode(false)
+                .HasColumnName("description");
             entity.Property(e => e.FkDepartment).HasColumnName("FK_department");
             entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
+=======
+            entity.Property(e => e.FkDepartment).HasColumnName("FK_department");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.IsActive).HasColumnName("isActive");
+=======
+            entity.Property(e => e.FkDepartment).HasColumnName("FK_department");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.IsActive).HasColumnName("isActive");
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             entity.Property(e => e.PositionName)
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("positionName");
+<<<<<<< HEAD
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
 
             entity.HasOne(d => d.FkDepartmentNavigation).WithMany(p => p.Positions)
                 .HasForeignKey(d => d.FkDepartment)
@@ -1280,7 +1320,17 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("workassignment", "HR");
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+            entity.Property(e => e.PkWorkassignment)
+                .ValueGeneratedNever()
+                .HasColumnName("PK_workassignment");
+=======
             entity.Property(e => e.PkWorkassignment).HasColumnName("PK_workassignment");
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+            entity.Property(e => e.PkWorkassignment).HasColumnName("PK_workassignment");
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             entity.Property(e => e.Createdby)
                 .HasMaxLength(50)
                 .IsUnicode(false)

@@ -14,4 +14,24 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HRIS
+<<<<<<< HEAD
 build_property.ProjectDir = D:\James System\2023\HRIS with GIT\19 - HRIS-Payroll - July 27,2023\HRIS\HRIS\HRIS\
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\
+=======
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\
+=======
+<<<<<<< .merge_file_ITfeX5
+build_property.ProjectDir = D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\
+=======
+build_property.ProjectDir = C:\Users\KIsrael\Desktop\HRIS-Payroll\HRIS\HRIS\HRIS\
+>>>>>>> .merge_file_Z2FQtD
+>>>>>>> main
+>>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
+=======
+build_property.ProjectDir = D:\James System\2023\HRIS with GIT\18 - HRIS-Payroll - July 26,2023\HRIS\HRIS\HRIS\
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
+>>>>>>> e07265a856610009f6fe3fb054d0883899f9db14

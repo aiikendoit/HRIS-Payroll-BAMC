@@ -31,7 +31,15 @@ namespace HRIS.Presenter
         public void AddPosition(Position position,int departmentid)
         {
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+         bool isPositionExists = _context.Positions.Any(p => p.Description == position.Description && p.FkDepartment == departmentid);
+=======
          bool isPositionExists = _context.Positions.Any(p => p.PositionName == position.PositionName && p.FkDepartment == departmentid);
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+         bool isPositionExists = _context.Positions.Any(p => p.PositionName == position.PositionName && p.FkDepartment == departmentid);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
          if (isPositionExists)
          {
              MessageBox.Show("Position with Department ID " + departmentid +" already exists!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -40,7 +48,15 @@ namespace HRIS.Presenter
          _context.Positions.Add(position);
          _context.SaveChanges();
          MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+<<<<<<< HEAD
+<<<<<<< HEAD
+         LoadPosition();
+=======
          
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+         
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
 
         }
 

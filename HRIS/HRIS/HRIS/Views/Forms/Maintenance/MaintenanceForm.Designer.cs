@@ -28,9 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
+            button4 = new Button();
+            button3 = new Button();
+            textBox4 = new TextBox();
+=======
             btn_cancel = new Button();
             btn_save = new Button();
             txt_emailaddress = new TextBox();
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             txt_completeaddress = new TextBox();
             MainPanel = new Panel();
             panel4 = new Panel();
@@ -69,7 +75,11 @@
             picture_logo = new PictureBox();
             label12 = new Label();
             btn_address = new Button();
+<<<<<<< HEAD
+            textBox8 = new TextBox();
+=======
             txt_fax = new TextBox();
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             label1 = new Label();
             txt_organizationname = new TextBox();
             label11 = new Label();
@@ -853,6 +863,17 @@
             panel_basicinfo.Controls.Add(picture_logo);
             panel_basicinfo.Controls.Add(label12);
             panel_basicinfo.Controls.Add(btn_address);
+<<<<<<< HEAD
+            panel_basicinfo.Controls.Add(textBox8);
+            panel_basicinfo.Controls.Add(label1);
+            panel_basicinfo.Controls.Add(button4);
+            panel_basicinfo.Controls.Add(button3);
+            panel_basicinfo.Controls.Add(textBox4);
+            panel_basicinfo.Controls.Add(txt_completeaddress);
+            panel_basicinfo.Controls.Add(textBox3);
+            panel_basicinfo.Controls.Add(textBox2);
+            panel_basicinfo.Controls.Add(textBox5);
+=======
             panel_basicinfo.Controls.Add(txt_fax);
             panel_basicinfo.Controls.Add(label1);
             panel_basicinfo.Controls.Add(btn_cancel);
@@ -862,6 +883,7 @@
             panel_basicinfo.Controls.Add(txt_website);
             panel_basicinfo.Controls.Add(txt_owner);
             panel_basicinfo.Controls.Add(txt_telephone);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             panel_basicinfo.Controls.Add(label9);
             panel_basicinfo.Controls.Add(txt_organizationname);
             panel_basicinfo.Controls.Add(label11);
@@ -1025,8 +1047,12 @@
             // 
             // openFileDialog1
             // 
+<<<<<<< HEAD
+            openFileDialog1.FileName = "openFileDialog1";
+=======
             openFileDialog1.FileName = "Choose Image";
             openFileDialog1.FileOk += openFileDialog1_FileOk;
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             // 
             // MaintenanceForm
             // 
@@ -1059,9 +1085,15 @@
 
         #endregion
 
+<<<<<<< HEAD
+        private Button button4;
+        private Button button3;
+        private TextBox textBox4;
+=======
         private Button btn_cancel;
         private Button btn_save;
         private TextBox txt_emailaddress;
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         private TextBox txt_completeaddress;
         private Panel MainPanel;
         private Panel panel4;
@@ -1085,7 +1117,11 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
         private Button btn_address;
+<<<<<<< HEAD
+        private PictureBox pictureBox2;
+=======
         private PictureBox picture_logo;
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
         private Label label12;
         private OpenFileDialog openFileDialog1;
         private FontAwesome.Sharp.IconButton btn_position;

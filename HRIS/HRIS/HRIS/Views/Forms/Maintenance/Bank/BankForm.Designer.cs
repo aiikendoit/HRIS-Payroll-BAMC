@@ -35,7 +35,11 @@
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel1 = new FlowLayoutPanel();
+<<<<<<< HEAD
+            txt_search = new TextBox();
+=======
             textBox1 = new TextBox();
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             btn_search = new FontAwesome.Sharp.IconButton();
             btn_refresh = new FontAwesome.Sharp.IconButton();
             dgrid_bank = new DataGridView();
@@ -126,11 +130,19 @@
             btn_view.TextAlign = ContentAlignment.MiddleLeft;
             btn_view.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_view.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+            btn_view.Click += btn_view_Click;
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoSize = true;
+<<<<<<< HEAD
+            flowLayoutPanel1.Controls.Add(txt_search);
+=======
             flowLayoutPanel1.Controls.Add(textBox1);
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             flowLayoutPanel1.Controls.Add(btn_search);
             flowLayoutPanel1.Controls.Add(btn_refresh);
             flowLayoutPanel1.Dock = DockStyle.Top;
@@ -140,15 +152,16 @@
             flowLayoutPanel1.Size = new Size(673, 35);
             flowLayoutPanel1.TabIndex = 26;
             // 
-            // textBox1
+            // txt_search
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(0, 3);
-            textBox1.Margin = new Padding(0, 3, 1, 3);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = " Search";
-            textBox1.Size = new Size(338, 29);
-            textBox1.TabIndex = 0;
+            txt_search.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_search.Location = new Point(0, 3);
+            txt_search.Margin = new Padding(0, 3, 1, 3);
+            txt_search.Name = "txt_search";
+            txt_search.PlaceholderText = " Search";
+            txt_search.Size = new Size(338, 29);
+            txt_search.TabIndex = 0;
+            txt_search.TextChanged += textBox1_TextChanged;
             // 
             // btn_search
             // 
@@ -189,6 +202,10 @@
             btn_refresh.TextAlign = ContentAlignment.MiddleLeft;
             btn_refresh.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_refresh.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+            btn_refresh.Click += btn_refresh_Click;
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
             // 
             // dgrid_bank
             // 
@@ -309,5 +326,6 @@
         private PictureBox pictureBox1;
         private Label label2;
         private Panel panel2;
+        private TextBox txt_search;
     }
 }

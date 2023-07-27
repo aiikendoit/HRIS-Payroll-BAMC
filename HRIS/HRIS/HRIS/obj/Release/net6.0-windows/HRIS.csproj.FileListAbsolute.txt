@@ -375,6 +375,11 @@ D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRI
 D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\obj\Release\net6.0-windows\HRIS.pdb
 D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\obj\Release\net6.0-windows\HRIS.genruntimeconfig.cache
 D:\James System\2023\HRIS with GIT\12 - HRIS-Payroll - July 9,2023\HRIS\HRIS\HRIS\obj\Release\net6.0-windows\ref\HRIS.dll
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
 D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Release\net6.0-windows\HRIS.exe
 D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Release\net6.0-windows\HRIS.dll.config
 D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\bin\Release\net6.0-windows\HRIS.deps.json
@@ -493,3 +498,7 @@ D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HR
 D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Release\net6.0-windows\HRIS.pdb
 D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Release\net6.0-windows\HRIS.genruntimeconfig.cache
 D:\James System\2023\HRIS with GIT\13 - HRIS-Payroll - July 10,2023\HRIS\HRIS\HRIS\obj\Release\net6.0-windows\ref\HRIS.dll
+<<<<<<< HEAD
+>>>>>>> 67147bbd4f97bf4ca6707b247f35dc2e02b627b5
+=======
+>>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba

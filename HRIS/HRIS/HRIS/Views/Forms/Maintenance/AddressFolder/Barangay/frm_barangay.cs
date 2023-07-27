@@ -19,13 +19,17 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.Barangay
         private readonly towncity_Presenter towncity_Presenter;
         public readonly province_Presenter province_Presenter;
         private readonly barangay_Presenter barangay_Presenter;
+        private readonly HrisContext _context;
         public bool isupdate = false;
+        int barangayid;
         public frm_barangay()
         {
             InitializeComponent();
             towncity_Presenter = new towncity_Presenter(this);
             province_Presenter = new province_Presenter(this);
             barangay_Presenter = new barangay_Presenter(this);
+            _context = new HrisContext();
+            
            
         }
 
@@ -70,7 +74,8 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.Barangay
         {
             if (isupdate == true)
             {
-
+                updateBarangay();
+                this.Close();
             }
             else
             {
@@ -94,6 +99,34 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.Barangay
             barangay_Presenter.AddBarangay(b);
 
         }
+        private void updateBarangay()
+        {
+            string? createdby = Properties.Settings.Default.completename;
+            int id = Properties.Settings.Default.usercode;
+            try
+            {
+                var existingbarangay = _context.Barangays.Find(barangayid);
+                if (existingbarangay != null)
+                {
+                    existingbarangay.Description = txt_barangayname.Text;
+                    existingbarangay.IsActive = checkBox_isactive.Checked;
+                    existingbarangay.FkTownCity = Convert.ToInt32(txt_towncity.SelectedValue);
+                    existingbarangay.Createdby = createdby;
+                    barangay_Presenter.UpdateBarangay(existingbarangay);
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException != null)
+                {
+                    MessageBox.Show($"An error occurred while saving the entity changes. Inner exception: {ex.InnerException.Message}");
+                }
+                else
+                {
+                    MessageBox.Show($"An error occurred while saving the entity changes. Exception: {ex.Message}");
+                }
+            }
+        }
         public void putdata(int brgyid,int towncityid)
         {
             
@@ -101,8 +134,6 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.Barangay
             barangay_Presenter.loadBarangaywhere(brgyid);
             btn_saveandnew.Visible = false;
             txt_towncity.SelectedValue = towncityid;
-            
-
         }
 
         public void DisplayBarangay(List<Models.Barangay> Barangays)
@@ -112,6 +143,7 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.Barangay
                 if (Barangays != null)
                 {
                     Models.Barangay brgy = Barangays[0];
+                    barangayid = brgy.PkBarangay;
                     txt_barangayname.Text = brgy.Description;
                     checkBox_isactive.Checked = brgy.IsActive ?? false;
                 }

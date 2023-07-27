@@ -1,5 +1,6 @@
 ﻿using HRIS.Models;
 using HRIS.Views.Forms.Maintenance.AddressFolder.Barangay;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,10 +34,10 @@ namespace HRIS.Presenter
                 .ToList();
             _view.DisplayBarangay(p);
         }
-        public void LoadAllBarangay()
+        public void LoadAllBarangay( DataGridView dataGridView)
         {
             var p = _context.Barangays.ToList();
-            _view.DisplayBarangay(p);
+            dataGridView.DataSource = p;
         }
         public bool AddBarangay(Barangay barangay)
         {
@@ -58,6 +59,24 @@ namespace HRIS.Presenter
 
             }
             return isexist;
+        }
+        public void UpdateBarangay(Barangay barangay)
+        {
+            var existingBrgy = _context.Barangays.Find(barangay.PkBarangay);
+
+            if (existingBrgy != null)
+            {
+                _context.Entry(existingBrgy).State = EntityState.Detached;
+                _context.Entry(barangay).State = EntityState.Modified;
+                _context.Update(barangay);
+                _context.SaveChanges();
+                MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
+            }
+            else
+            {
+                MessageBox.Show("Barangay not found");
+            }
         }
     }
 }

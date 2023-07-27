@@ -3950,6 +3950,9 @@
     "version": "1.0.0",
     "restore": {
 <<<<<<< HEAD
+      "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\19 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -3977,11 +3980,16 @@
 >>>>>>> fe349299761e515d7745427e0d656cb50406e3cd
 =======
       "projectUniqueName": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+>>>>>>> e07265a856610009f6fe3fb054d0883899f9db14
       "projectName": "HRIS",
-      "projectPath": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "projectPath": "D:\\James System\\2023\\HRIS with GIT\\19 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
+<<<<<<< HEAD
+      "outputPath": "D:\\James System\\2023\\HRIS with GIT\\19 - HRIS-Payroll - July 27,2023\\HRIS\\HRIS\\HRIS\\obj\\",
+=======
       "outputPath": "D:\\James System\\2023\\HRIS with GIT\\18 - HRIS-Payroll - July 26,2023\\HRIS\\HRIS\\HRIS\\obj\\",
 >>>>>>> 0ff9b6f7192f6e06fa8d028c4346226376e68bba
+>>>>>>> e07265a856610009f6fe3fb054d0883899f9db14
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

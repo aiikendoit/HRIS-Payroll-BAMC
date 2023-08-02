@@ -46,7 +46,7 @@
             btn_relationship = new FontAwesome.Sharp.IconButton();
             iconButton17 = new FontAwesome.Sharp.IconButton();
             btn_position = new FontAwesome.Sharp.IconButton();
-            iconButton15 = new FontAwesome.Sharp.IconButton();
+            btn_offencetype = new FontAwesome.Sharp.IconButton();
             btn_nationality = new FontAwesome.Sharp.IconButton();
             btn_licenseType = new FontAwesome.Sharp.IconButton();
             btn_leaveType = new FontAwesome.Sharp.IconButton();
@@ -222,7 +222,7 @@
             panelmenu.Controls.Add(btn_relationship);
             panelmenu.Controls.Add(iconButton17);
             panelmenu.Controls.Add(btn_position);
-            panelmenu.Controls.Add(iconButton15);
+            panelmenu.Controls.Add(btn_offencetype);
             panelmenu.Controls.Add(btn_nationality);
             panelmenu.Controls.Add(btn_licenseType);
             panelmenu.Controls.Add(btn_leaveType);
@@ -424,30 +424,31 @@
             btn_position.UseVisualStyleBackColor = false;
             btn_position.Click += iconButton16_Click;
             // 
-            // iconButton15
+            // btn_offencetype
             // 
-            iconButton15.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton15.Cursor = Cursors.Hand;
-            iconButton15.Dock = DockStyle.Top;
-            iconButton15.FlatAppearance.BorderSize = 0;
-            iconButton15.FlatStyle = FlatStyle.Flat;
-            iconButton15.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton15.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            iconButton15.IconColor = Color.White;
-            iconButton15.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton15.IconSize = 20;
-            iconButton15.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton15.Location = new Point(2, 394);
-            iconButton15.Margin = new Padding(4, 3, 4, 3);
-            iconButton15.Name = "iconButton15";
-            iconButton15.Padding = new Padding(10, 0, 0, 0);
-            iconButton15.Size = new Size(173, 28);
-            iconButton15.TabIndex = 37;
-            iconButton15.Tag = "Offense Type";
-            iconButton15.Text = "Offense Type";
-            iconButton15.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton15.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton15.UseVisualStyleBackColor = false;
+            btn_offencetype.BackColor = Color.FromArgb(0, 127, 152);
+            btn_offencetype.Cursor = Cursors.Hand;
+            btn_offencetype.Dock = DockStyle.Top;
+            btn_offencetype.FlatAppearance.BorderSize = 0;
+            btn_offencetype.FlatStyle = FlatStyle.Flat;
+            btn_offencetype.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_offencetype.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_offencetype.IconColor = Color.White;
+            btn_offencetype.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_offencetype.IconSize = 20;
+            btn_offencetype.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_offencetype.Location = new Point(2, 394);
+            btn_offencetype.Margin = new Padding(4, 3, 4, 3);
+            btn_offencetype.Name = "btn_offencetype";
+            btn_offencetype.Padding = new Padding(10, 0, 0, 0);
+            btn_offencetype.Size = new Size(173, 28);
+            btn_offencetype.TabIndex = 37;
+            btn_offencetype.Tag = "Offence Type";
+            btn_offencetype.Text = "Offence Type";
+            btn_offencetype.TextAlign = ContentAlignment.MiddleLeft;
+            btn_offencetype.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_offencetype.UseVisualStyleBackColor = false;
+            btn_offencetype.Click += btn_offencetype_Click;
             // 
             // btn_nationality
             // 
@@ -525,6 +526,7 @@
             btn_leaveType.TextAlign = ContentAlignment.MiddleLeft;
             btn_leaveType.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_leaveType.UseVisualStyleBackColor = false;
+            btn_leaveType.Click += btn_leaveType_Click;
             // 
             // btn_leavenoticeType
             // 
@@ -1089,7 +1091,7 @@
         private Label label12;
         private OpenFileDialog openFileDialog1;
         private FontAwesome.Sharp.IconButton btn_position;
-        private FontAwesome.Sharp.IconButton iconButton15;
+        private FontAwesome.Sharp.IconButton btn_offencetype;
         private FontAwesome.Sharp.IconButton btn_licenseType;
         private FontAwesome.Sharp.IconButton btn_leaveType;
         private FontAwesome.Sharp.IconButton btn_leavenoticeType;

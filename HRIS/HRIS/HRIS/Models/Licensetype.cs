@@ -9,11 +9,13 @@ public partial class Licensetype
 
     public string? Description { get; set; }
 
-    public bool? IsActive { get; set; }
+    public bool IsActive { get; set; }
 
     public DateTime? Createddate { get; set; }
 
-    public int? Createdby { get; set; }
+    public string? Createdby { get; set; }
+
+    public int? FkSystemUser { get; set; }
 
     public virtual ICollection<Employeelicense> Employeelicenses { get; set; } = new List<Employeelicense>();
 }

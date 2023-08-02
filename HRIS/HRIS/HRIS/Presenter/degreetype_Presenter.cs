@@ -24,7 +24,7 @@ namespace HRIS.Presenter
         public void LoadDegreeType()
         {
             var p = _context.Degreetypes.ToList();
-            degreetypedata = _context.Degreetypes.ToList();
+            degreetypedata = p;
             _view.DisplayDegreetype(p);
         }
         public void AddDegreeType(Degreetype degreetype)

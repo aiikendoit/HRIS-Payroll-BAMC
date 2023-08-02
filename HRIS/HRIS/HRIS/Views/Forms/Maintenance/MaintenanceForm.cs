@@ -14,7 +14,9 @@ using HRIS.Forms.Maintenance.License;
 using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Maintenance;
+using HRIS.Views.Forms.Maintenance.Leaves;
 using HRIS.Views.Forms.Maintenance.NationalityFolder;
+using HRIS.Views.Forms.Maintenance.Offensetype;
 using HRIS.Views.Forms.Maintenance.Positions;
 using HRIS.Views.Forms.Maintenance.RelationShip;
 using HRIS.Views.Forms.Maintenance.Religion;
@@ -432,6 +434,18 @@ namespace HRIS.Forms.Maintenance
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_leaveType_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new LeaveTypeForm());
+        }
+
+        private void btn_offencetype_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new OffenceTypeForm());
         }
     }
 }

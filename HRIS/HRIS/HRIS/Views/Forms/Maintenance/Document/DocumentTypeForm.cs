@@ -1,6 +1,7 @@
 ﻿using HRIS.Class;
 using HRIS.Models;
 using HRIS.Presenter;
+using HRIS.Views.Forms.Maintenance.Degreetype;
 using HRIS.Views.Forms.Maintenance.Document;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace HRIS.Forms.Maintenance.Document
@@ -24,7 +26,18 @@ namespace HRIS.Forms.Maintenance.Document
             documenttype_Presenter = new documenttype_Presenter(this);
             documenttype_Presenter.LoadDocumenttype();
         }
-
+        private void search()
+        {
+            string searchQuery = txt_search.Text.Trim();
+            if (string.IsNullOrEmpty(searchQuery))
+            {
+                documenttype_Presenter.LoadDocumenttype();
+            }
+            else
+            {
+                documenttype_Presenter.SearchData(searchQuery);
+            }
+        }
         public void DisplayDocumentype(List<Doctype> documentTypes)
         {
             dgrid_disciplinary.DataSource = documentTypes;
@@ -52,6 +65,46 @@ namespace HRIS.Forms.Maintenance.Document
         {
             var dt = new frm_documenttype();
             dt.ShowDialog();
+            documenttype_Presenter.LoadDocumenttype();
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            var selecteddoctype = dgrid_disciplinary.SelectedRows[0].DataBoundItem as Models.Doctype;
+            if (selecteddoctype != null)
+            {
+                var doctype = new frm_documenttype();
+                doctype.isupdate = true;
+                doctype.putdata(this, selecteddoctype);
+                doctype.ShowDialog(this);
+                documenttype_Presenter.LoadDocumenttype();
+            }
+        }
+
+        private void btn_view_Click(object sender, EventArgs e)
+        {
+            var selecteddoctype = dgrid_disciplinary.SelectedRows[0].DataBoundItem as Models.Doctype;
+            if (selecteddoctype != null)
+            {
+                var doctype = new frm_documenttype();
+                doctype.putdata(this, selecteddoctype);
+                doctype.ShowDialog(this);
+                documenttype_Presenter.LoadDocumenttype();
+            }
+        }
+
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+            search();
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            search();
+        }
+
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
             documenttype_Presenter.LoadDocumenttype();
         }
     }

@@ -58,6 +58,7 @@ namespace HRIS.Forms.Maintenance.CivilStatus
         {
             dgrid_civilstatus.DataSource = Civilstatuses;
             dgrid_civilstatus.Columns[0].HeaderText = "ID";
+            dgrid_civilstatus.Columns[1].HeaderText = "Civil Status";
             dgrid_civilstatus.Columns["Createddate"].HeaderText = "Created date";
             dgrid_civilstatus.Columns["Createdby"].HeaderText = "Created by";
             dgrid_civilstatus.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;

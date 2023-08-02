@@ -8,6 +8,7 @@ using HRIS.Forms.Maintenance.Department;
 using HRIS.Forms.Maintenance.Disciplinary;
 using HRIS.Forms.Maintenance.Document;
 using HRIS.Forms.Maintenance.EducationaLevel;
+using HRIS.Forms.Maintenance.Employment;
 using HRIS.Forms.Maintenance.Leaves;
 using HRIS.Forms.Maintenance.License;
 using HRIS.Models;
@@ -212,7 +213,7 @@ namespace HRIS.Forms.Maintenance
         private void btn_employmenttype_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new EducationalLevelForm());
+            openchildform(new EmploymentTypeForm());
         }
 
         private void btn_leavenoticeType_Click(object sender, EventArgs e)

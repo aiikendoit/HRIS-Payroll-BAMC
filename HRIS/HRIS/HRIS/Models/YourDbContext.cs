@@ -879,10 +879,6 @@ public partial class YourDbContext : DbContext
                 .HasColumnName("description");
             entity.Property(e => e.IsPaid).HasColumnName("isPaid");
             entity.Property(e => e.Isactive).HasColumnName("isactive");
-            entity.Property(e => e.Leavecode)
-                .HasMaxLength(10)
-                .IsUnicode(false)
-                .HasColumnName("leavecode");
         });
 
         modelBuilder.Entity<Licensetype>(entity =>
@@ -950,7 +946,7 @@ public partial class YourDbContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("description");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
-            entity.Property(e => e.Remarks)
+            entity.Property(e => e.Severity)
                 .IsUnicode(false)
                 .HasColumnName("remarks");
         });

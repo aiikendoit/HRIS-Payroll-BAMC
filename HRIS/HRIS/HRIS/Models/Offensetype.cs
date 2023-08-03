@@ -9,13 +9,15 @@ public partial class Offensetype
 
     public string? Description { get; set; }
 
-    public string? Remarks { get; set; }
+    public int Severity { get; set; }
 
-    public bool? IsActive { get; set; }
+    public bool IsActive { get; set; }
 
     public DateTime? Createddate { get; set; }
 
-    public int? Createdby { get; set; }
+    public string? Createdby { get; set; }
+
+    public int? FkSystemUser { get; set; }
 
     public virtual ICollection<Employeedisciplinary> Employeedisciplinaries { get; set; } = new List<Employeedisciplinary>();
 }

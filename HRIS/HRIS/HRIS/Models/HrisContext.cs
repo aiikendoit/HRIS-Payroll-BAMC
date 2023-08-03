@@ -908,17 +908,20 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("leavenoticetype", "Template");
 
-            entity.Property(e => e.PkLeavenoticetype)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_leavenoticetype");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkLeavenoticetype).HasColumnName("PK_leavenoticetype");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.Isactive).HasColumnName("isactive");
         });
 
@@ -960,23 +963,22 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("leavetype", "Template");
 
-            entity.Property(e => e.PkLeavetype)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_leavetype");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkLeavetype).HasColumnName("PK_leavetype");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsPaid).HasColumnName("isPaid");
             entity.Property(e => e.Isactive).HasColumnName("isactive");
-            entity.Property(e => e.Leavecode)
-                .HasMaxLength(10)
-                .IsUnicode(false)
-                .HasColumnName("leavecode");
         });
 
         modelBuilder.Entity<Licensetype>(entity =>
@@ -985,17 +987,20 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("licensetype", "Template");
 
-            entity.Property(e => e.PkLicensetype)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_licensetype");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkLicensetype).HasColumnName("PK_licensetype");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
         });
 
@@ -1032,21 +1037,22 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("offensetype", "Template");
 
-            entity.Property(e => e.PkOffensetype)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_offensetype");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkOffensetype).HasColumnName("PK_offensetype");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
-            entity.Property(e => e.Remarks)
-                .IsUnicode(false)
-                .HasColumnName("remarks");
+            entity.Property(e => e.Severity).HasColumnName("severity");
         });
 
         modelBuilder.Entity<Position>(entity =>

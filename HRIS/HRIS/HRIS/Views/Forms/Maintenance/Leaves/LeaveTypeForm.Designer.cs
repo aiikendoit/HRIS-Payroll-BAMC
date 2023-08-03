@@ -1,6 +1,6 @@
-﻿namespace HRIS.Views.Forms.Maintenance.NationalityFolder
+﻿namespace HRIS.Views.Forms.Maintenance.Leaves
 {
-    partial class NationalityForm
+    partial class LeaveTypeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,28 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NationalityForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LeaveTypeForm));
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             flowLayoutPanel2 = new FlowLayoutPanel();
             btn_new = new FontAwesome.Sharp.IconButton();
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
-            label2 = new Label();
-            txt_totalcount = new Label();
-            panel1 = new Panel();
-            ID = new DataGridViewTextBoxColumn();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             txt_search = new TextBox();
             btn_search = new FontAwesome.Sharp.IconButton();
             btn_refresh = new FontAwesome.Sharp.IconButton();
             pictureBox1 = new PictureBox();
-            dgrid_nationality = new DataGridView();
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            label2 = new Label();
+            ID = new DataGridViewTextBoxColumn();
+            txt_totalcount = new Label();
+            panel1 = new Panel();
+            dgrid_Leavetype = new DataGridView();
             panel2 = new Panel();
+            Column1 = new DataGridViewTextBoxColumn();
             flowLayoutPanel2.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgrid_nationality).BeginInit();
             flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgrid_Leavetype).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,8 +65,8 @@
             flowLayoutPanel2.Location = new Point(0, 72);
             flowLayoutPanel2.Margin = new Padding(0);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(694, 37);
-            flowLayoutPanel2.TabIndex = 42;
+            flowLayoutPanel2.Size = new Size(800, 36);
+            flowLayoutPanel2.TabIndex = 67;
             // 
             // btn_new
             // 
@@ -128,40 +131,18 @@
             btn_view.UseVisualStyleBackColor = false;
             btn_view.Click += btn_view_Click;
             // 
-            // label2
+            // flowLayoutPanel1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(27, 2);
-            label2.Name = "label2";
-            label2.Size = new Size(128, 30);
-            label2.TabIndex = 2;
-            label2.Text = "Nationality";
-            label2.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // txt_totalcount
-            // 
-            txt_totalcount.AutoSize = true;
-            txt_totalcount.ForeColor = Color.Black;
-            txt_totalcount.Location = new Point(5, 6);
-            txt_totalcount.Name = "txt_totalcount";
-            txt_totalcount.Size = new Size(94, 15);
-            txt_totalcount.TabIndex = 0;
-            txt_totalcount.Text = "Total record(s): 0";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(txt_totalcount);
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 386);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(694, 27);
-            panel1.TabIndex = 44;
-            // 
-            // ID
-            // 
-            ID.HeaderText = "ID";
-            ID.Name = "ID";
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.Controls.Add(txt_search);
+            flowLayoutPanel1.Controls.Add(btn_search);
+            flowLayoutPanel1.Controls.Add(btn_refresh);
+            flowLayoutPanel1.Dock = DockStyle.Top;
+            flowLayoutPanel1.Location = new Point(0, 37);
+            flowLayoutPanel1.Margin = new Padding(0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(800, 35);
+            flowLayoutPanel1.TabIndex = 66;
             // 
             // txt_search
             // 
@@ -227,9 +208,44 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
-            // dgrid_nationality
+            // label2
             // 
-            dgrid_nationality.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(27, 2);
+            label2.Name = "label2";
+            label2.Size = new Size(125, 30);
+            label2.TabIndex = 2;
+            label2.Text = "Leave type";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // ID
+            // 
+            ID.HeaderText = "ID";
+            ID.Name = "ID";
+            // 
+            // txt_totalcount
+            // 
+            txt_totalcount.AutoSize = true;
+            txt_totalcount.ForeColor = Color.Black;
+            txt_totalcount.Location = new Point(5, 6);
+            txt_totalcount.Name = "txt_totalcount";
+            txt_totalcount.Size = new Size(94, 15);
+            txt_totalcount.TabIndex = 0;
+            txt_totalcount.Text = "Total record(s): 0";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(txt_totalcount);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(0, 423);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(800, 27);
+            panel1.TabIndex = 69;
+            // 
+            // dgrid_Leavetype
+            // 
+            dgrid_Leavetype.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.IndianRed;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -237,27 +253,30 @@
             dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgrid_nationality.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgrid_nationality.ColumnHeadersHeight = 50;
-            dgrid_nationality.Dock = DockStyle.Fill;
-            dgrid_nationality.Location = new Point(0, 109);
-            dgrid_nationality.Name = "dgrid_nationality";
-            dgrid_nationality.RowTemplate.Height = 25;
-            dgrid_nationality.Size = new Size(694, 277);
-            dgrid_nationality.TabIndex = 43;
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.AutoSize = true;
-            flowLayoutPanel1.Controls.Add(txt_search);
-            flowLayoutPanel1.Controls.Add(btn_search);
-            flowLayoutPanel1.Controls.Add(btn_refresh);
-            flowLayoutPanel1.Dock = DockStyle.Top;
-            flowLayoutPanel1.Location = new Point(0, 37);
-            flowLayoutPanel1.Margin = new Padding(0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(694, 35);
-            flowLayoutPanel1.TabIndex = 41;
+            dgrid_Leavetype.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgrid_Leavetype.ColumnHeadersHeight = 50;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dgrid_Leavetype.DefaultCellStyle = dataGridViewCellStyle2;
+            dgrid_Leavetype.Dock = DockStyle.Fill;
+            dgrid_Leavetype.Location = new Point(0, 108);
+            dgrid_Leavetype.Name = "dgrid_Leavetype";
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgrid_Leavetype.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dgrid_Leavetype.RowTemplate.Height = 25;
+            dgrid_Leavetype.Size = new Size(800, 315);
+            dgrid_Leavetype.TabIndex = 68;
             // 
             // panel2
             // 
@@ -266,31 +285,36 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(694, 37);
-            panel2.TabIndex = 45;
+            panel2.Size = new Size(800, 37);
+            panel2.TabIndex = 70;
             // 
-            // NationalityForm
+            // Column1
+            // 
+            Column1.HeaderText = "ID";
+            Column1.Name = "Column1";
+            Column1.Width = 252;
+            // 
+            // LeaveTypeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(694, 413);
-            Controls.Add(dgrid_nationality);
+            ClientSize = new Size(800, 450);
+            Controls.Add(dgrid_Leavetype);
             Controls.Add(flowLayoutPanel2);
-            Controls.Add(panel1);
             Controls.Add(flowLayoutPanel1);
+            Controls.Add(panel1);
             Controls.Add(panel2);
-            Name = "NationalityForm";
+            Name = "LeaveTypeForm";
             StartPosition = FormStartPosition.CenterParent;
-            Text = "NationalityForm";
-            Load += NationalityForm_Load;
+            Text = "LeaveTypeForm";
             flowLayoutPanel2.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgrid_nationality).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgrid_Leavetype).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
@@ -303,16 +327,17 @@
         private FontAwesome.Sharp.IconButton btn_new;
         private FontAwesome.Sharp.IconButton btn_edit;
         private FontAwesome.Sharp.IconButton btn_view;
-        private Label label2;
-        private Label txt_totalcount;
-        private Panel panel1;
-        private DataGridViewTextBoxColumn ID;
+        private FlowLayoutPanel flowLayoutPanel1;
         private TextBox txt_search;
         private FontAwesome.Sharp.IconButton btn_search;
         private FontAwesome.Sharp.IconButton btn_refresh;
         private PictureBox pictureBox1;
-        private DataGridView dgrid_nationality;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private Label label2;
+        private DataGridViewTextBoxColumn ID;
+        private Label txt_totalcount;
+        private Panel panel1;
+        private DataGridView dgrid_Leavetype;
         private Panel panel2;
+        private DataGridViewTextBoxColumn Column1;
     }
 }

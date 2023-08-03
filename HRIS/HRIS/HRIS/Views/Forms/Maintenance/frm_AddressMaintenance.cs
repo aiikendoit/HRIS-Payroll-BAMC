@@ -36,11 +36,6 @@ namespace HRIS.Forms.Maintenance
             region_Presenter = new region_Presenter(this);
             zipcode_Presenter = new zipcode_Presenter(this);
             province_Presenter.loadProvince();
-            //region_Presenter.loadRegion();
-            //txt_province.SelectedIndex = -1;
-            //txt_towncity.SelectedIndex = -1;
-            //txt_barangay.SelectedIndex = -1;
-            //txt_region.SelectedIndex = -1;
 
 
         }

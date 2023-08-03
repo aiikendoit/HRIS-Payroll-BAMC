@@ -2533,6 +2533,8 @@ D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS
 D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Hiring.HiringForm.resources
 D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Barangay.BarangayForm.resources
 D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.AddressFolder.Barangay.frm_barangay.resources
+D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.AddressFolder.ProvincesFolder.frm_province.resources
+D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.AddressFolder.ProvincesFolder.ProvinceForm.resources
 D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.Bank.BankForm.resources
 D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.Bank.frm_bank_add.resources
 D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Forms.Maintenance.CivilStatus.CivilStatusForm.resources

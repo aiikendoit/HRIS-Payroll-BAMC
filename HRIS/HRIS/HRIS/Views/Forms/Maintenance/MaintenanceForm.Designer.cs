@@ -39,12 +39,12 @@
             txt_telephone = new TextBox();
             btn_basicinformation = new FontAwesome.Sharp.IconButton();
             panelmenu = new Panel();
-            iconButton21 = new FontAwesome.Sharp.IconButton();
-            iconButton20 = new FontAwesome.Sharp.IconButton();
-            iconButton19 = new FontAwesome.Sharp.IconButton();
+            btn_ = new FontAwesome.Sharp.IconButton();
+            btn_towncity = new FontAwesome.Sharp.IconButton();
+            btn_salarysetting = new FontAwesome.Sharp.IconButton();
             btn_religion = new FontAwesome.Sharp.IconButton();
             btn_relationship = new FontAwesome.Sharp.IconButton();
-            iconButton17 = new FontAwesome.Sharp.IconButton();
+            btn_province = new FontAwesome.Sharp.IconButton();
             btn_position = new FontAwesome.Sharp.IconButton();
             btn_offencetype = new FontAwesome.Sharp.IconButton();
             btn_nationality = new FontAwesome.Sharp.IconButton();
@@ -215,12 +215,12 @@
             // 
             panelmenu.AutoScroll = true;
             panelmenu.BackColor = Color.FromArgb(0, 127, 152);
-            panelmenu.Controls.Add(iconButton21);
-            panelmenu.Controls.Add(iconButton20);
-            panelmenu.Controls.Add(iconButton19);
+            panelmenu.Controls.Add(btn_);
+            panelmenu.Controls.Add(btn_towncity);
+            panelmenu.Controls.Add(btn_salarysetting);
             panelmenu.Controls.Add(btn_religion);
             panelmenu.Controls.Add(btn_relationship);
-            panelmenu.Controls.Add(iconButton17);
+            panelmenu.Controls.Add(btn_province);
             panelmenu.Controls.Add(btn_position);
             panelmenu.Controls.Add(btn_offencetype);
             panelmenu.Controls.Add(btn_nationality);
@@ -246,80 +246,80 @@
             panelmenu.Size = new Size(194, 420);
             panelmenu.TabIndex = 7;
             // 
-            // iconButton21
+            // btn_
             // 
-            iconButton21.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton21.Cursor = Cursors.Hand;
-            iconButton21.Dock = DockStyle.Top;
-            iconButton21.FlatAppearance.BorderSize = 0;
-            iconButton21.FlatStyle = FlatStyle.Flat;
-            iconButton21.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton21.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            iconButton21.IconColor = Color.White;
-            iconButton21.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton21.IconSize = 20;
-            iconButton21.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton21.Location = new Point(2, 590);
-            iconButton21.Margin = new Padding(4, 3, 4, 3);
-            iconButton21.Name = "iconButton21";
-            iconButton21.Padding = new Padding(10, 0, 0, 0);
-            iconButton21.Size = new Size(173, 28);
-            iconButton21.TabIndex = 43;
-            iconButton21.Tag = "Wage Factor";
-            iconButton21.Text = "Wage Factor";
-            iconButton21.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton21.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton21.UseVisualStyleBackColor = false;
+            btn_.BackColor = Color.FromArgb(0, 127, 152);
+            btn_.Cursor = Cursors.Hand;
+            btn_.Dock = DockStyle.Top;
+            btn_.FlatAppearance.BorderSize = 0;
+            btn_.FlatStyle = FlatStyle.Flat;
+            btn_.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_.IconColor = Color.White;
+            btn_.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_.IconSize = 20;
+            btn_.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_.Location = new Point(2, 590);
+            btn_.Margin = new Padding(4, 3, 4, 3);
+            btn_.Name = "btn_";
+            btn_.Padding = new Padding(10, 0, 0, 0);
+            btn_.Size = new Size(173, 28);
+            btn_.TabIndex = 43;
+            btn_.Tag = "Wage Factor";
+            btn_.Text = "Wage Factor";
+            btn_.TextAlign = ContentAlignment.MiddleLeft;
+            btn_.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_.UseVisualStyleBackColor = false;
             // 
-            // iconButton20
+            // btn_towncity
             // 
-            iconButton20.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton20.Cursor = Cursors.Hand;
-            iconButton20.Dock = DockStyle.Top;
-            iconButton20.FlatAppearance.BorderSize = 0;
-            iconButton20.FlatStyle = FlatStyle.Flat;
-            iconButton20.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton20.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            iconButton20.IconColor = Color.White;
-            iconButton20.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton20.IconSize = 20;
-            iconButton20.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton20.Location = new Point(2, 562);
-            iconButton20.Margin = new Padding(4, 3, 4, 3);
-            iconButton20.Name = "iconButton20";
-            iconButton20.Padding = new Padding(10, 0, 0, 0);
-            iconButton20.Size = new Size(173, 28);
-            iconButton20.TabIndex = 42;
-            iconButton20.Tag = "Town/City";
-            iconButton20.Text = "Town/City";
-            iconButton20.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton20.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton20.UseVisualStyleBackColor = false;
+            btn_towncity.BackColor = Color.FromArgb(0, 127, 152);
+            btn_towncity.Cursor = Cursors.Hand;
+            btn_towncity.Dock = DockStyle.Top;
+            btn_towncity.FlatAppearance.BorderSize = 0;
+            btn_towncity.FlatStyle = FlatStyle.Flat;
+            btn_towncity.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_towncity.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_towncity.IconColor = Color.White;
+            btn_towncity.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_towncity.IconSize = 20;
+            btn_towncity.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_towncity.Location = new Point(2, 562);
+            btn_towncity.Margin = new Padding(4, 3, 4, 3);
+            btn_towncity.Name = "btn_towncity";
+            btn_towncity.Padding = new Padding(10, 0, 0, 0);
+            btn_towncity.Size = new Size(173, 28);
+            btn_towncity.TabIndex = 42;
+            btn_towncity.Tag = "Town/City";
+            btn_towncity.Text = "Town/City";
+            btn_towncity.TextAlign = ContentAlignment.MiddleLeft;
+            btn_towncity.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_towncity.UseVisualStyleBackColor = false;
             // 
-            // iconButton19
+            // btn_salarysetting
             // 
-            iconButton19.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton19.Cursor = Cursors.Hand;
-            iconButton19.Dock = DockStyle.Top;
-            iconButton19.FlatAppearance.BorderSize = 0;
-            iconButton19.FlatStyle = FlatStyle.Flat;
-            iconButton19.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton19.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            iconButton19.IconColor = Color.White;
-            iconButton19.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton19.IconSize = 20;
-            iconButton19.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton19.Location = new Point(2, 534);
-            iconButton19.Margin = new Padding(4, 3, 4, 3);
-            iconButton19.Name = "iconButton19";
-            iconButton19.Padding = new Padding(10, 0, 0, 0);
-            iconButton19.Size = new Size(173, 28);
-            iconButton19.TabIndex = 41;
-            iconButton19.Tag = "Salary Type";
-            iconButton19.Text = "Salary Setting";
-            iconButton19.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton19.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton19.UseVisualStyleBackColor = false;
+            btn_salarysetting.BackColor = Color.FromArgb(0, 127, 152);
+            btn_salarysetting.Cursor = Cursors.Hand;
+            btn_salarysetting.Dock = DockStyle.Top;
+            btn_salarysetting.FlatAppearance.BorderSize = 0;
+            btn_salarysetting.FlatStyle = FlatStyle.Flat;
+            btn_salarysetting.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_salarysetting.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_salarysetting.IconColor = Color.White;
+            btn_salarysetting.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_salarysetting.IconSize = 20;
+            btn_salarysetting.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_salarysetting.Location = new Point(2, 534);
+            btn_salarysetting.Margin = new Padding(4, 3, 4, 3);
+            btn_salarysetting.Name = "btn_salarysetting";
+            btn_salarysetting.Padding = new Padding(10, 0, 0, 0);
+            btn_salarysetting.Size = new Size(173, 28);
+            btn_salarysetting.TabIndex = 41;
+            btn_salarysetting.Tag = "Salary Type";
+            btn_salarysetting.Text = "Salary Setting";
+            btn_salarysetting.TextAlign = ContentAlignment.MiddleLeft;
+            btn_salarysetting.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_salarysetting.UseVisualStyleBackColor = false;
             // 
             // btn_religion
             // 
@@ -373,30 +373,31 @@
             btn_relationship.UseVisualStyleBackColor = false;
             btn_relationship.Click += btn_relationship_Click;
             // 
-            // iconButton17
+            // btn_province
             // 
-            iconButton17.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton17.Cursor = Cursors.Hand;
-            iconButton17.Dock = DockStyle.Top;
-            iconButton17.FlatAppearance.BorderSize = 0;
-            iconButton17.FlatStyle = FlatStyle.Flat;
-            iconButton17.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton17.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            iconButton17.IconColor = Color.White;
-            iconButton17.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton17.IconSize = 20;
-            iconButton17.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton17.Location = new Point(2, 450);
-            iconButton17.Margin = new Padding(4, 3, 4, 3);
-            iconButton17.Name = "iconButton17";
-            iconButton17.Padding = new Padding(10, 0, 0, 0);
-            iconButton17.Size = new Size(173, 28);
-            iconButton17.TabIndex = 39;
-            iconButton17.Tag = "Province";
-            iconButton17.Text = "Province";
-            iconButton17.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton17.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton17.UseVisualStyleBackColor = false;
+            btn_province.BackColor = Color.FromArgb(0, 127, 152);
+            btn_province.Cursor = Cursors.Hand;
+            btn_province.Dock = DockStyle.Top;
+            btn_province.FlatAppearance.BorderSize = 0;
+            btn_province.FlatStyle = FlatStyle.Flat;
+            btn_province.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_province.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_province.IconColor = Color.White;
+            btn_province.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_province.IconSize = 20;
+            btn_province.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_province.Location = new Point(2, 450);
+            btn_province.Margin = new Padding(4, 3, 4, 3);
+            btn_province.Name = "btn_province";
+            btn_province.Padding = new Padding(10, 0, 0, 0);
+            btn_province.Size = new Size(173, 28);
+            btn_province.TabIndex = 39;
+            btn_province.Tag = "Province";
+            btn_province.Text = "Province";
+            btn_province.TextAlign = ContentAlignment.MiddleLeft;
+            btn_province.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_province.UseVisualStyleBackColor = false;
+            btn_province.Click += btn_province_Click;
             // 
             // btn_position
             // 
@@ -1104,11 +1105,11 @@
         private FontAwesome.Sharp.IconButton btn_civilstatus;
         private FontAwesome.Sharp.IconButton btn_bank;
         private FontAwesome.Sharp.IconButton btn_barangay;
-        private FontAwesome.Sharp.IconButton iconButton21;
-        private FontAwesome.Sharp.IconButton iconButton20;
-        private FontAwesome.Sharp.IconButton iconButton19;
+        private FontAwesome.Sharp.IconButton btn_;
+        private FontAwesome.Sharp.IconButton btn_towncity;
+        private FontAwesome.Sharp.IconButton btn_salarysetting;
         private FontAwesome.Sharp.IconButton btn_religion;
-        private FontAwesome.Sharp.IconButton iconButton17;
+        private FontAwesome.Sharp.IconButton btn_province;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private Panel panel2;
         private FontAwesome.Sharp.IconButton btn_nationality;

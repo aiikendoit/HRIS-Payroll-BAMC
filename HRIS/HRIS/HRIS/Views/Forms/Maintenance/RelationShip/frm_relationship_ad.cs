@@ -1,4 +1,5 @@
-﻿using HRIS.Models;
+﻿using HRIS.Forms.Maintenance.Degreetype;
+using HRIS.Models;
 using HRIS.Presenter;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,15 @@ namespace HRIS.Views.Forms.Maintenance.RelationShip
     public partial class frm_relationship_ad : Form, IRelationshipView
     {
         private readonly relationship_Presenter relationship_Presenter;
+        private RelationshipForm relationshipForm;
+        private Models.Relationship Selectedrelationship;
+        public bool isupdate = false;
         public frm_relationship_ad()
         {
             InitializeComponent();
             relationship_Presenter = new relationship_Presenter(this);
+            relationshipForm = new RelationshipForm();
+            Selectedrelationship = new Models.Relationship();
         }
 
 
@@ -29,7 +35,14 @@ namespace HRIS.Views.Forms.Maintenance.RelationShip
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            save();
+            if (isupdate)
+            {
+                update();
+            }
+            else
+            {
+                save();
+            }
         }
         private void save()
         {
@@ -42,8 +55,47 @@ namespace HRIS.Views.Forms.Maintenance.RelationShip
                 Createdby = createdby,
                 FkSystemUser = id
             };
-            relationship_Presenter.AddRelationship(cv);
-            MessageBox.Show("Added Successfully!");
+          if (!relationship_Presenter.AddRelationship(cv))
+            {
+                this.Close();
+            }
+           
+        }
+        public void putdata(RelationshipForm relationshipForm, Models.Relationship relationship)
+        {
+            if (isupdate)
+            {
+                btn_cancel.Select();
+                this.relationshipForm = relationshipForm;
+                this.Selectedrelationship = relationship;
+                txt_relationship.Text = Selectedrelationship.Description;
+                checkBox_isactive.Checked = Selectedrelationship.Isactive;
+            }
+            else
+            {
+                btn_cancel.Select();
+                this.relationshipForm = relationshipForm;
+                this.Selectedrelationship = relationship;
+                txt_relationship.Text = Selectedrelationship.Description;
+                checkBox_isactive.Checked = Selectedrelationship.Isactive;
+                //disable control
+                txt_relationship.Enabled = false;
+                checkBox_isactive.Enabled = false;
+                btn_save.Visible = false;
+            }
+        }
+        private void update()
+        {
+
+            var selRelation = Selectedrelationship as Models.Relationship;
+
+            selRelation.Description = txt_relationship.Text;
+            selRelation.Isactive = checkBox_isactive.Checked;
+            relationship_Presenter.UpdateRelationship(selRelation);
+            this.Close();
+        }
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

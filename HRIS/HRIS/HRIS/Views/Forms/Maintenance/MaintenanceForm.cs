@@ -14,6 +14,7 @@ using HRIS.Forms.Maintenance.License;
 using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Maintenance;
+using HRIS.Views.Forms.Maintenance.AddressFolder.ProvincesFolder;
 using HRIS.Views.Forms.Maintenance.Leaves;
 using HRIS.Views.Forms.Maintenance.NationalityFolder;
 using HRIS.Views.Forms.Maintenance.Offensetype;
@@ -446,6 +447,12 @@ namespace HRIS.Forms.Maintenance
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new OffenceTypeForm());
+        }
+
+        private void btn_province_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new ProvinceForm());
         }
     }
 }

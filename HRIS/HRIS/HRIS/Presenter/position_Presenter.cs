@@ -13,14 +13,17 @@ namespace HRIS.Presenter
     {
         private readonly HrisContext _context;
         private readonly IPositionView _view;
+        private List<Position> positionsdATA;
         public position_Presenter(IPositionView view)
         {
             _view = view;
             _context = new HrisContext();
+            positionsdATA = new List<Position>();
         }
         public void LoadPosition()
         {
             var p = _context.Positions.ToList();
+            positionsdATA = p;
             _view.DisplayPosition(p);
         }
         public void LoadPositionwithWhere(int departmentid)
@@ -53,6 +56,16 @@ namespace HRIS.Presenter
         {
             _context.Positions.Remove(position);
             _context.SaveChanges();
+        }
+        public void SearchData(string searchQuery)
+        {
+            var searchResults = positionsdATA
+                 .Where(b => b.PkPosition.ToString().Contains(searchQuery)
+                 || (b.PositionName != null && b.PositionName.Contains(searchQuery,
+                 StringComparison.OrdinalIgnoreCase)))
+                 .ToList();
+
+            _view.DisplayPosition(searchResults);
         }
     }
 }

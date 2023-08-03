@@ -1,4 +1,5 @@
 ﻿using HRIS.Class;
+using HRIS.Forms.Maintenance.Degreetype;
 using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Maintenance.Department;
@@ -19,6 +20,9 @@ namespace HRIS.Views.Forms.Maintenance.Positions
     {
         private readonly position_Presenter position_Presenter;
         private readonly department_Presenter department_Presenter;
+        private PositionForm positionForm;
+        private Models.Position Selectedposition;
+        public bool isupdate = false;
         public frm_position()
         {
             InitializeComponent();
@@ -26,6 +30,8 @@ namespace HRIS.Views.Forms.Maintenance.Positions
             department_Presenter = new department_Presenter(this);
             UniversalStatic.customDatagrid(dgrid_position);
             department_Presenter.LoadDepartment();
+            this.Selectedposition = new Models.Position();
+            this.positionForm = new PositionForm();
         }
 
 
@@ -45,7 +51,35 @@ namespace HRIS.Views.Forms.Maintenance.Positions
             position_Presenter.AddPosition(cv, departmentid);
             loadposition();
         }
-
+        public void putdata(PositionForm positionForm, Models.Position position)
+        {
+            if (isupdate)
+            {
+                btn_cancel.Select();
+                this.positionForm = positionForm;
+                this.Selectedposition = position;
+                txt_position.Text = Selectedposition.PositionName;
+                txt_department.SelectedValue = Selectedposition.FkDepartment;
+                checkBox_isactive.Checked = Selectedposition.IsActive;
+            }
+            else
+            {
+                btn_cancel.Select();
+                this.positionForm = positionForm;
+                this.Selectedposition = position;
+                txt_position.Text = Selectedposition.PositionName;
+                txt_department.SelectedValue = Selectedposition.FkDepartment;
+                checkBox_isactive.Checked = Selectedposition.IsActive;
+                //disable control
+                txt_department.Enabled = false;
+                txt_position.Enabled = false;
+                checkBox_isactive.Enabled = false;
+                btn_create.Visible = false;
+                btn_delete.Visible = false;
+                btn_update.Visible = false;
+                dgrid_position.Enabled = false;
+            }
+        }
         private void frm_position_Load(object sender, EventArgs e)
         {
 
@@ -89,7 +123,7 @@ namespace HRIS.Views.Forms.Maintenance.Positions
         private void btn_create_Click(object sender, EventArgs e)
         {
             addposition();
-            
+
         }
         private void loadposition()
         {
@@ -136,6 +170,11 @@ namespace HRIS.Views.Forms.Maintenance.Positions
                     loadposition();
                 }
             }
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

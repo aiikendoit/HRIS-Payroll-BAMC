@@ -11,7 +11,7 @@ public partial class Position
 
     public string? PositionName { get; set; }
 
-    public bool? IsActive { get; set; }
+    public bool IsActive { get; set; }
 
     /// <summary>
     /// getdate()

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace HRIS.Views.Forms.Maintenance.Religion
 {
@@ -18,6 +19,7 @@ namespace HRIS.Views.Forms.Maintenance.Religion
         private readonly religion_Presenter religion_Presenter;
         private ReligionForm religionForm;
         private Models.Religion selectedReligion;
+        public bool isupdate = false;
         public frm_religion_Add()
         {
             InitializeComponent();
@@ -46,11 +48,25 @@ namespace HRIS.Views.Forms.Maintenance.Religion
         }
         public void putdata(ReligionForm religionForm, Models.Religion selectedreligion)
         {
-            this.religionForm = religionForm;
-            this.selectedReligion = selectedreligion;
-            txt_religion.Text = selectedreligion.Description;
-            checkBox_isactive.Checked = selectedreligion.IsActive;
-            btn_save.Text = "Update";
+            if (isupdate)
+            {
+                this.religionForm = religionForm;
+                this.selectedReligion = selectedreligion;
+                txt_religion.Text = selectedreligion.Description;
+                checkBox_isactive.Checked = selectedreligion.IsActive;
+            }
+            else
+            {
+                this.religionForm = religionForm;
+                this.selectedReligion = selectedreligion;
+                txt_religion.Text = selectedreligion.Description;
+                checkBox_isactive.Checked = selectedreligion.IsActive;
+                //disable control
+                txt_religion.Enabled = false;
+                checkBox_isactive.Enabled = false;
+                btn_save.Visible = false;
+            }
+               
         }
         private void save()
         {
@@ -63,9 +79,11 @@ namespace HRIS.Views.Forms.Maintenance.Religion
                 Createdby = createdby,
                 FkSystemUser = id
             };
-            religion_Presenter.AddReligion(cv);
-            MessageBox.Show("Added Successfully!","Success");
-            this.Close();
+           if (!religion_Presenter.AddReligion(cv))
+            {
+                this.Close();
+            }
+            
         }
         private void update()
         {
@@ -79,7 +97,6 @@ namespace HRIS.Views.Forms.Maintenance.Religion
             selectper.FkSystemUser = id;
 
             religion_Presenter.UpdateReligion(selectper);
-            MessageBox.Show("Updated Successfully!","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
             this.Close();
         }
 

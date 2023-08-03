@@ -1,6 +1,6 @@
-﻿namespace HRIS.Views.Forms.Maintenance.Religion
+﻿namespace HRIS.Views.Forms.Maintenance.AddressFolder.ProvincesFolder
 {
-    partial class ReligionForm
+    partial class ProvinceForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,30 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReligionForm));
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProvinceForm));
+            dgrid_provinces = new DataGridView();
             flowLayoutPanel2 = new FlowLayoutPanel();
             btn_new = new FontAwesome.Sharp.IconButton();
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
-            label2 = new Label();
-            txt_totalcount = new Label();
-            panel1 = new Panel();
-            ID = new DataGridViewTextBoxColumn();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             txt_search = new TextBox();
             btn_search = new FontAwesome.Sharp.IconButton();
             btn_refresh = new FontAwesome.Sharp.IconButton();
             pictureBox1 = new PictureBox();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            dgrid_religion = new DataGridView();
+            label2 = new Label();
+            ID = new DataGridViewTextBoxColumn();
+            txt_totalcount = new Label();
+            panel1 = new Panel();
             panel2 = new Panel();
+            Column1 = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dgrid_provinces).BeginInit();
             flowLayoutPanel2.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgrid_religion).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
+            // 
+            // dgrid_provinces
+            // 
+            dgrid_provinces.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.IndianRed;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgrid_provinces.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgrid_provinces.ColumnHeadersHeight = 50;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dgrid_provinces.DefaultCellStyle = dataGridViewCellStyle2;
+            dgrid_provinces.Dock = DockStyle.Fill;
+            dgrid_provinces.Location = new Point(0, 108);
+            dgrid_provinces.Name = "dgrid_provinces";
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgrid_provinces.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dgrid_provinces.RowTemplate.Height = 25;
+            dgrid_provinces.Size = new Size(800, 315);
+            dgrid_provinces.TabIndex = 83;
             // 
             // flowLayoutPanel2
             // 
@@ -62,8 +100,8 @@
             flowLayoutPanel2.Location = new Point(0, 72);
             flowLayoutPanel2.Margin = new Padding(0);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(685, 37);
-            flowLayoutPanel2.TabIndex = 37;
+            flowLayoutPanel2.Size = new Size(800, 36);
+            flowLayoutPanel2.TabIndex = 82;
             // 
             // btn_new
             // 
@@ -128,40 +166,18 @@
             btn_view.UseVisualStyleBackColor = false;
             btn_view.Click += btn_view_Click;
             // 
-            // label2
+            // flowLayoutPanel1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(27, 2);
-            label2.Name = "label2";
-            label2.Size = new Size(96, 30);
-            label2.TabIndex = 2;
-            label2.Text = "Religion";
-            label2.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // txt_totalcount
-            // 
-            txt_totalcount.AutoSize = true;
-            txt_totalcount.ForeColor = Color.Black;
-            txt_totalcount.Location = new Point(5, 6);
-            txt_totalcount.Name = "txt_totalcount";
-            txt_totalcount.Size = new Size(94, 15);
-            txt_totalcount.TabIndex = 0;
-            txt_totalcount.Text = "Total record(s): 0";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(txt_totalcount);
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 400);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(685, 27);
-            panel1.TabIndex = 39;
-            // 
-            // ID
-            // 
-            ID.HeaderText = "ID";
-            ID.Name = "ID";
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.Controls.Add(txt_search);
+            flowLayoutPanel1.Controls.Add(btn_search);
+            flowLayoutPanel1.Controls.Add(btn_refresh);
+            flowLayoutPanel1.Dock = DockStyle.Top;
+            flowLayoutPanel1.Location = new Point(0, 37);
+            flowLayoutPanel1.Margin = new Padding(0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(800, 35);
+            flowLayoutPanel1.TabIndex = 81;
             // 
             // txt_search
             // 
@@ -227,37 +243,40 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
-            // flowLayoutPanel1
+            // label2
             // 
-            flowLayoutPanel1.AutoSize = true;
-            flowLayoutPanel1.Controls.Add(txt_search);
-            flowLayoutPanel1.Controls.Add(btn_search);
-            flowLayoutPanel1.Controls.Add(btn_refresh);
-            flowLayoutPanel1.Dock = DockStyle.Top;
-            flowLayoutPanel1.Location = new Point(0, 37);
-            flowLayoutPanel1.Margin = new Padding(0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(685, 35);
-            flowLayoutPanel1.TabIndex = 36;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(27, 2);
+            label2.Name = "label2";
+            label2.Size = new Size(113, 30);
+            label2.TabIndex = 2;
+            label2.Text = "Provinces";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // dgrid_religion
+            // ID
             // 
-            dgrid_religion.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.IndianRed;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgrid_religion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgrid_religion.ColumnHeadersHeight = 50;
-            dgrid_religion.Dock = DockStyle.Fill;
-            dgrid_religion.Location = new Point(0, 109);
-            dgrid_religion.Name = "dgrid_religion";
-            dgrid_religion.RowTemplate.Height = 25;
-            dgrid_religion.Size = new Size(685, 291);
-            dgrid_religion.TabIndex = 38;
+            ID.HeaderText = "ID";
+            ID.Name = "ID";
+            // 
+            // txt_totalcount
+            // 
+            txt_totalcount.AutoSize = true;
+            txt_totalcount.ForeColor = Color.Black;
+            txt_totalcount.Location = new Point(5, 6);
+            txt_totalcount.Name = "txt_totalcount";
+            txt_totalcount.Size = new Size(94, 15);
+            txt_totalcount.TabIndex = 0;
+            txt_totalcount.Text = "Total record(s): 0";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(txt_totalcount);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(0, 423);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(800, 27);
+            panel1.TabIndex = 84;
             // 
             // panel2
             // 
@@ -266,31 +285,36 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(685, 37);
-            panel2.TabIndex = 40;
+            panel2.Size = new Size(800, 37);
+            panel2.TabIndex = 85;
             // 
-            // ReligionForm
+            // Column1
+            // 
+            Column1.HeaderText = "ID";
+            Column1.Name = "Column1";
+            Column1.Width = 252;
+            // 
+            // ProvinceForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(685, 427);
-            Controls.Add(dgrid_religion);
+            ClientSize = new Size(800, 450);
+            Controls.Add(dgrid_provinces);
             Controls.Add(flowLayoutPanel2);
-            Controls.Add(panel1);
             Controls.Add(flowLayoutPanel1);
+            Controls.Add(panel1);
             Controls.Add(panel2);
-            Name = "ReligionForm";
+            Name = "ProvinceForm";
             StartPosition = FormStartPosition.CenterParent;
-            Text = "ReligionForm";
-            Load += ReligionForm_Load;
+            Text = "ProvinceForm";
+            ((System.ComponentModel.ISupportInitialize)dgrid_provinces).EndInit();
             flowLayoutPanel2.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgrid_religion).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
@@ -299,20 +323,21 @@
 
         #endregion
 
+        private DataGridView dgrid_provinces;
         private FlowLayoutPanel flowLayoutPanel2;
         private FontAwesome.Sharp.IconButton btn_new;
         private FontAwesome.Sharp.IconButton btn_edit;
         private FontAwesome.Sharp.IconButton btn_view;
-        private Label label2;
-        private Label txt_totalcount;
-        private Panel panel1;
-        private DataGridViewTextBoxColumn ID;
+        private FlowLayoutPanel flowLayoutPanel1;
         private TextBox txt_search;
         private FontAwesome.Sharp.IconButton btn_search;
         private FontAwesome.Sharp.IconButton btn_refresh;
         private PictureBox pictureBox1;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private DataGridView dgrid_religion;
+        private Label label2;
+        private DataGridViewTextBoxColumn ID;
+        private Label txt_totalcount;
+        private Panel panel1;
         private Panel panel2;
+        private DataGridViewTextBoxColumn Column1;
     }
 }

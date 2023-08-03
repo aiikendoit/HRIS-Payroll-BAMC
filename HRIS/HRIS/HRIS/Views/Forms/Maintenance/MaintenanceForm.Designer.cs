@@ -320,6 +320,7 @@
             btn_salarysetting.TextAlign = ContentAlignment.MiddleLeft;
             btn_salarysetting.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_salarysetting.UseVisualStyleBackColor = false;
+            btn_salarysetting.Click += btn_salarysetting_Click;
             // 
             // btn_religion
             // 

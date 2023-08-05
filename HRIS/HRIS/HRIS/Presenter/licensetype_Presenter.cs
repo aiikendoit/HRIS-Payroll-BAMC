@@ -27,12 +27,23 @@ namespace HRIS.Presenter
             licensetypesData = p;
             _view.DisplayLicensetype(p);
         }
-        public void Addlicensetype(Licensetype licensetype)
+        public bool Addlicensetype(Licensetype licensetype)
         {
-            _context.Licensetypes.Add(licensetype);
+            bool isexist = false;
+            if (!_context.Licensetypes.Any(r => r.Description == licensetype.Description))
+            {
+                _context.Licensetypes.Add(licensetype);
             _context.SaveChanges();
             MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                isexist = true;
+                MessageBox.Show("License type already existed!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
             LoadLicentype();
+            return isexist;
         }
         public void UpdateLicense(Licensetype licensetype)
         {

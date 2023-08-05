@@ -33,5 +33,7 @@ public partial class SystemUser
 
     public virtual ICollection<Religion> Religions { get; set; } = new List<Religion>();
 
+    public virtual ICollection<Salarytype> Salarytypes { get; set; } = new List<Salarytype>();
+
     public virtual ICollection<Workassignment> Workassignments { get; set; } = new List<Workassignment>();
 }

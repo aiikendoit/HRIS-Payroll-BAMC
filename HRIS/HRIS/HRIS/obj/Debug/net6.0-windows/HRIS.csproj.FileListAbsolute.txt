@@ -2581,6 +2581,10 @@ D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS
 D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.pdb
 D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
 D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
+<<<<<<< HEAD
+D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.SalarySetting.SalarySettingForm.resources
+D:\James System\2023\HRIS with GIT\27 - HRIS-Payroll - Aug 3,2023\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.SalarySetting.frm_salarysetting.resources
+=======
 C:\Users\KIsrael\Pictures\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
 C:\Users\KIsrael\Pictures\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll.config
 C:\Users\KIsrael\Pictures\HRIS-Payroll\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
@@ -2714,3 +2718,4 @@ C:\Users\KIsrael\Pictures\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\H
 C:\Users\KIsrael\Pictures\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.genruntimeconfig.cache
 C:\Users\KIsrael\Pictures\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\ref\HRIS.dll
 C:\Users\KIsrael\Pictures\HRIS-Payroll\HRIS\HRIS\HRIS\obj\Debug\net6.0-windows\HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder.TownCityForm.resources
+>>>>>>> 7bae7fa125325521c4af787cc5b2ab0d24ee36b3

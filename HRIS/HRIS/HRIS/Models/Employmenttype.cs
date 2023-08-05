@@ -20,4 +20,6 @@ public partial class Employmenttype
     public virtual ICollection<Employmentstatus> Employmentstatuses { get; set; } = new List<Employmentstatus>();
 
     public virtual ICollection<Leavessetting> Leavessettings { get; set; } = new List<Leavessetting>();
+
+    public virtual ICollection<Salarytype> Salarytypes { get; set; } = new List<Salarytype>();
 }

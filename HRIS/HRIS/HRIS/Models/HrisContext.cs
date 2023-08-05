@@ -1189,23 +1189,36 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("salarytype", "Template");
 
-            entity.Property(e => e.PkSalarytype)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_salarytype");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkSalarytype).HasColumnName("PK_salarytype");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .IsUnicode(false)
                 .HasColumnName("description");
-            entity.Property(e => e.FkEmployeetype).HasColumnName("FK_employeetype");
+            entity.Property(e => e.FkEmploymenttype).HasColumnName("FK_employmenttype");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.IsActive).HasColumnName("isActive");
             entity.Property(e => e.IsAllowance).HasColumnName("isAllowance");
             entity.Property(e => e.IsBasicPay).HasColumnName("isBasicPay");
             entity.Property(e => e.IsBonus).HasColumnName("isBonus");
             entity.Property(e => e.IsCola).HasColumnName("isCOLA");
+            entity.Property(e => e.IsPercentage).HasColumnName("isPercentage");
             entity.Property(e => e.IsTaxable).HasColumnName("isTaxable");
             entity.Property(e => e.IsThirteenMonth).HasColumnName("isThirteenMonth");
+
+            entity.HasOne(d => d.FkEmploymenttypeNavigation).WithMany(p => p.Salarytypes)
+                .HasForeignKey(d => d.FkEmploymenttype)
+                .HasConstraintName("FK_salarytype_employeetype");
+
+            entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.Salarytypes)
+                .HasForeignKey(d => d.FkSystemUser)
+                .HasConstraintName("FK_salarytype_systemuser");
         });
 
         modelBuilder.Entity<SystemUser>(entity =>

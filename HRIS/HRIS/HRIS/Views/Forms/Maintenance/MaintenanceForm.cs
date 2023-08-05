@@ -22,6 +22,7 @@ using HRIS.Views.Forms.Maintenance.Offensetype;
 using HRIS.Views.Forms.Maintenance.Positions;
 using HRIS.Views.Forms.Maintenance.RelationShip;
 using HRIS.Views.Forms.Maintenance.Religion;
+using HRIS.Views.Forms.Maintenance.SalarySetting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.Logging;
 using Microsoft.Win32;
@@ -456,10 +457,17 @@ namespace HRIS.Forms.Maintenance
             openchildform(new ProvinceForm());
         }
 
+<<<<<<< HEAD
+        private void btn_salarysetting_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new SalarySettingForm());
+=======
         private void btn_townCity_click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new TownCityForm());
+>>>>>>> 7bae7fa125325521c4af787cc5b2ab0d24ee36b3
         }
     }
 }

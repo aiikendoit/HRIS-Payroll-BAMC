@@ -15,6 +15,7 @@ using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Maintenance;
 using HRIS.Views.Forms.Maintenance.AddressFolder.ProvincesFolder;
+using HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder;
 using HRIS.Views.Forms.Maintenance.Leaves;
 using HRIS.Views.Forms.Maintenance.NationalityFolder;
 using HRIS.Views.Forms.Maintenance.Offensetype;
@@ -456,10 +457,17 @@ namespace HRIS.Forms.Maintenance
             openchildform(new ProvinceForm());
         }
 
+<<<<<<< HEAD
         private void btn_salarysetting_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new SalarySettingForm());
+=======
+        private void btn_townCity_click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new TownCityForm());
+>>>>>>> 7bae7fa125325521c4af787cc5b2ab0d24ee36b3
         }
     }
 }

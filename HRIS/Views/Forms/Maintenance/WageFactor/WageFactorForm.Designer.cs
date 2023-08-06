@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WageFactorForm));
             dgrid_wagefactor = new DataGridView();
             flowLayoutPanel2 = new FlowLayoutPanel();
@@ -56,14 +56,14 @@
             // dgrid_wagefactor
             // 
             dgrid_wagefactor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.IndianRed;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgrid_wagefactor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.IndianRed;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgrid_wagefactor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_wagefactor.ColumnHeadersHeight = 50;
             dgrid_wagefactor.Dock = DockStyle.Fill;
             dgrid_wagefactor.Location = new Point(0, 109);
@@ -71,6 +71,7 @@
             dgrid_wagefactor.RowTemplate.Height = 25;
             dgrid_wagefactor.Size = new Size(623, 268);
             dgrid_wagefactor.TabIndex = 48;
+            dgrid_wagefactor.CellFormatting += dgrid_wagefactor_CellFormatting;
             // 
             // flowLayoutPanel2
             // 

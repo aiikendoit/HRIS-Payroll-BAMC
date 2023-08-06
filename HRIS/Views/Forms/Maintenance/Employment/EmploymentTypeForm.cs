@@ -34,8 +34,9 @@ namespace HRIS.Forms.Maintenance.Employment
             dgrid_employmenttype.Columns["Createddate"].HeaderText = "Created date";
             dgrid_employmenttype.Columns["Createdby"].HeaderText = "Created by";
             dgrid_employmenttype.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            if (dgrid_employmenttype.ColumnCount == 8)
+            if (dgrid_employmenttype.ColumnCount == 9)
             {
+                dgrid_employmenttype.Columns.RemoveAt(8);
                 dgrid_employmenttype.Columns.RemoveAt(7);
                 dgrid_employmenttype.Columns.RemoveAt(6);
                 dgrid_employmenttype.Columns.RemoveAt(5);

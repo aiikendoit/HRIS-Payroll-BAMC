@@ -92,7 +92,6 @@ namespace HRIS.Views.Forms.Maintenance.SalarySetting
                 {
                     salarysetting_Presenter.LoadSalarysetting();
                 }
-
             }
         }
 
@@ -109,6 +108,26 @@ namespace HRIS.Views.Forms.Maintenance.SalarySetting
         private void btn_refresh_Click(object sender, EventArgs e)
         {
             salarysetting_Presenter.LoadSalarysetting();
+        }
+
+        private void btn_view_Click(object sender, EventArgs e)
+        {
+            var selectedsalary = dgrid_salarysetting.SelectedRows[0].DataBoundItem as Models.Salarytype;
+            if (selectedsalary != null)
+            {
+                var ss = new frm_salarysetting();
+                ss.putdata(this, selectedsalary);
+                ss.ShowDialog(this);
+                if (txt_search.Text != string.Empty)
+                {
+                    salarysetting_Presenter.LoadSalarysetting();
+                    search();
+                }
+                else
+                {
+                    salarysetting_Presenter.LoadSalarysetting();
+                }
+            }
         }
     }
 }

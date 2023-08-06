@@ -82,6 +82,7 @@ namespace HRIS.Views.Forms.Maintenance.SalarySetting
             int id = Properties.Settings.Default.usercode;
             var cv = new Models.Salarytype
             {
+                FkEmploymenttype = Convert.ToInt32(txt_employmenttype.SelectedValue),
                 Description = txt_salarytype.Text,
                 IsActive = checkBox_isactive.Checked,
                 IsBasicPay = checkBox_isBasicpay.Checked,

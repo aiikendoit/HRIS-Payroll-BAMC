@@ -13,23 +13,38 @@ namespace HRIS.Presenter
     {
         private readonly IReligionView _religionview;
         private readonly HrisContext _context;
+        private List<Religion> religionsData;
         public religion_Presenter(IReligionView view)
         {
             _religionview = view;
             _context = new HrisContext();
+            religionsData = new List<Religion>();
         }
         public void LoadReligion()
         {
             var p = _context.Religions.ToList();
+            religionsData = p;
             _religionview.DisplayReligion(p);
         }
 
-        public void AddReligion(Religion religion)
+        public bool AddReligion(Religion religion)
         {
-            _context.Religions.Add(religion);
-            _context.SaveChanges();
-            _religionview.ClearFields();
+            bool isexist = false;
+            if (!_context.Religions.Any(r => r.Description == religion.Description))
+            {
+                _context.Religions.Add(religion);
+                _context.SaveChanges();
+                MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                _religionview.ClearFields();
+            }
+            else
+            {
+                isexist = true;
+                MessageBox.Show("Religion already existed!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+               
             LoadReligion();
+            return isexist;
         }
 
         public void UpdateReligion(Religion religion)
@@ -37,16 +52,20 @@ namespace HRIS.Presenter
 
             _context.Religions.Update(religion);
             _context.SaveChanges();
+            MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _religionview.ClearFields();
             LoadReligion();
+        }
+        public void SearchData(string searchQuery)
+        {
+            var searchResults = religionsData
+                 .Where(b => b.PkReligion.ToString().Contains(searchQuery)
+                 || (b.Description != null && b.Description.Contains(searchQuery,
+                 StringComparison.OrdinalIgnoreCase)))
+                 .ToList();
+
+            _religionview.DisplayReligion(searchResults);
         }
 
-        public void DeleteReligion(Religion religion)
-        {
-            _context.Religions.Remove(religion);
-            _context.SaveChanges();
-            _religionview.ClearFields();
-            LoadReligion();
-        }
     }
 }

@@ -8,15 +8,20 @@ using HRIS.Forms.Maintenance.Department;
 using HRIS.Forms.Maintenance.Disciplinary;
 using HRIS.Forms.Maintenance.Document;
 using HRIS.Forms.Maintenance.EducationaLevel;
+using HRIS.Forms.Maintenance.Employment;
 using HRIS.Forms.Maintenance.Leaves;
 using HRIS.Forms.Maintenance.License;
 using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Maintenance;
+using HRIS.Views.Forms.Maintenance.AddressFolder.ProvincesFolder;
+using HRIS.Views.Forms.Maintenance.Leaves;
 using HRIS.Views.Forms.Maintenance.NationalityFolder;
+using HRIS.Views.Forms.Maintenance.Offensetype;
 using HRIS.Views.Forms.Maintenance.Positions;
 using HRIS.Views.Forms.Maintenance.RelationShip;
 using HRIS.Views.Forms.Maintenance.Religion;
+using HRIS.Views.Forms.Maintenance.SalarySetting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.Logging;
 using Microsoft.Win32;
@@ -212,7 +217,7 @@ namespace HRIS.Forms.Maintenance
         private void btn_employmenttype_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new EducationalLevelForm());
+            openchildform(new EmploymentTypeForm());
         }
 
         private void btn_leavenoticeType_Click(object sender, EventArgs e)
@@ -431,6 +436,30 @@ namespace HRIS.Forms.Maintenance
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_leaveType_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new LeaveTypeForm());
+        }
+
+        private void btn_offencetype_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new OffenceTypeForm());
+        }
+
+        private void btn_province_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new ProvinceForm());
+        }
+
+        private void btn_salarysetting_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new SalarySettingForm());
         }
     }
 }

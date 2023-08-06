@@ -75,7 +75,7 @@ public partial class Employee
 
     public byte[]? ProfilePicture { get; set; }
 
-    public bool? IsActive { get; set; }
+    public bool IsActive { get; set; }
 
     public DateTime? Createddate { get; set; }
 

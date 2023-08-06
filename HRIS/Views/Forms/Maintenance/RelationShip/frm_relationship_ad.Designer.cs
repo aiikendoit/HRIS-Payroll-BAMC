@@ -32,16 +32,20 @@
             checkBox_isactive = new CheckBox();
             label1 = new Label();
             txt_relationship = new TextBox();
+            btn_cancel = new Button();
             SuspendLayout();
             // 
             // btn_save
             // 
-            btn_save.Location = new Point(256, 110);
+            btn_save.BackColor = SystemColors.ActiveCaption;
+            btn_save.FlatAppearance.BorderSize = 0;
+            btn_save.FlatStyle = FlatStyle.Flat;
+            btn_save.Location = new Point(211, 106);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(73, 36);
             btn_save.TabIndex = 7;
             btn_save.Text = "Save";
-            btn_save.UseVisualStyleBackColor = true;
+            btn_save.UseVisualStyleBackColor = false;
             btn_save.Click += btn_save_Click;
             // 
             // checkBox_isactive
@@ -67,15 +71,29 @@
             // 
             txt_relationship.Location = new Point(111, 43);
             txt_relationship.Name = "txt_relationship";
-            txt_relationship.Size = new Size(218, 23);
+            txt_relationship.Size = new Size(252, 23);
             txt_relationship.TabIndex = 4;
+            // 
+            // btn_cancel
+            // 
+            btn_cancel.BackColor = Color.White;
+            btn_cancel.FlatAppearance.BorderColor = SystemColors.ActiveCaption;
+            btn_cancel.FlatStyle = FlatStyle.Flat;
+            btn_cancel.Location = new Point(290, 106);
+            btn_cancel.Name = "btn_cancel";
+            btn_cancel.Size = new Size(73, 36);
+            btn_cancel.TabIndex = 7;
+            btn_cancel.Text = "Cancel";
+            btn_cancel.UseVisualStyleBackColor = false;
+            btn_cancel.Click += btn_cancel_Click;
             // 
             // frm_relationship_ad
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(348, 171);
+            ClientSize = new Size(392, 178);
+            Controls.Add(btn_cancel);
             Controls.Add(btn_save);
             Controls.Add(checkBox_isactive);
             Controls.Add(label1);
@@ -97,5 +115,6 @@
         private CheckBox checkBox_isactive;
         private Label label1;
         private TextBox txt_relationship;
+        private Button btn_cancel;
     }
 }

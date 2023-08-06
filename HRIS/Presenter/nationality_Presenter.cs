@@ -10,39 +10,46 @@ namespace HRIS.Presenter
 {
     public class nationality_Presenter
     {
-        private readonly INationalityView _nationalityView;
+        private readonly INationalityView _view;
         private readonly HrisContext _context;
-
+        private List<Nationality> nationalitiesData;
         public nationality_Presenter(INationalityView view)
         {
-            _nationalityView = view;
+            _view = view;
             _context = new HrisContext();
+            nationalitiesData = new List<Nationality>();
         }
         public void loadNationality()
         {
             var p = _context.Nationalities.ToList();
-            _nationalityView.DisplayNationality(p);
+            nationalitiesData = p;
+            _view.DisplayNationality(p);
         }
         public void AddNationality(Nationality nationality)
         {
             _context.Nationalities.Add(nationality);
             _context.SaveChanges();
-            _nationalityView.ClearFields();
+            _view.ClearFields();
+            MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             loadNationality();
         }
         public void UpdateNationality(Nationality nationality)
         {
             _context.Nationalities.Update(nationality);
             _context.SaveChanges();
-            _nationalityView.ClearFields();
+            MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            _view.ClearFields();
             loadNationality();
         }
-        public void DeleteNationality(Nationality nationality)
+        public void SearchData(string searchQuery)
         {
-            _context.Nationalities.Remove(nationality);
-            _context.SaveChanges();
-            _nationalityView.ClearFields();
-            loadNationality();
+            var searchResults = nationalitiesData
+                 .Where(b => b.PkNationality.ToString().Contains(searchQuery)
+                 || (b.Description != null && b.Description.Contains(searchQuery,
+                 StringComparison.OrdinalIgnoreCase)))
+                 .ToList();
+
+            _view.DisplayNationality(searchResults);
         }
 
     }

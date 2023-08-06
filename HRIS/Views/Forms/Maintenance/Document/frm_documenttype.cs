@@ -44,6 +44,42 @@ namespace HRIS.Views.Forms.Maintenance.Document
             documenttype_Presenter.AddDocumentType(cv);
             this.Close();
         }
+        private void update() 
+        {
+            var selddoctype = Seleteddoctype as Models.Doctype;
+
+            selddoctype.Description = txt_documenttype.Text;
+            selddoctype.IsActive = checkBox_isactive.Checked;
+            selddoctype.IsCertiificate = checkBox_isCertificate.Checked;
+            documenttype_Presenter.UpdateDocumenttype(selddoctype);
+            this.Close();
+        }
+        public void putdata(DocumentTypeForm documentTypeForm, Doctype doctype)
+        {
+            if (isupdate)
+            {
+                btn_cancel.Select();
+                this.DocumentTypeForm = documentTypeForm;
+                this.Seleteddoctype = doctype;
+                txt_documenttype.Text = Seleteddoctype.Description;
+                checkBox_isactive.Checked = Seleteddoctype.IsActive;
+                checkBox_isCertificate.Checked = Seleteddoctype.IsCertiificate;
+            }
+            else
+            {
+                btn_cancel.Select();
+                this.DocumentTypeForm = documentTypeForm;
+                this.Seleteddoctype = doctype;
+                txt_documenttype.Text = Seleteddoctype.Description;
+                checkBox_isactive.Checked = Seleteddoctype.IsActive;
+                checkBox_isCertificate.Checked = Seleteddoctype.IsCertiificate;
+                //disable control
+                txt_documenttype.Enabled = false;
+                checkBox_isCertificate.Enabled = false;
+                checkBox_isactive.Enabled = false;
+                btn_save.Visible = false;
+            }
+        }
         public void DisplayDocumentype(List<Doctype> documentTypes)
         {
 
@@ -53,12 +89,17 @@ namespace HRIS.Views.Forms.Maintenance.Document
         {
             if (isupdate)
             {
-
+                update();
             }
             else
             {
                 save();
             }
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

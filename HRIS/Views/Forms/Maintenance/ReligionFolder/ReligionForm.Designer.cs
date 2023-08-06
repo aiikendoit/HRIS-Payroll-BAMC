@@ -35,10 +35,10 @@
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
             label2 = new Label();
-            label1 = new Label();
+            txt_totalcount = new Label();
             panel1 = new Panel();
             ID = new DataGridViewTextBoxColumn();
-            textBox1 = new TextBox();
+            txt_search = new TextBox();
             btn_search = new FontAwesome.Sharp.IconButton();
             btn_refresh = new FontAwesome.Sharp.IconButton();
             pictureBox1 = new PictureBox();
@@ -126,6 +126,7 @@
             btn_view.TextAlign = ContentAlignment.MiddleLeft;
             btn_view.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_view.UseVisualStyleBackColor = false;
+            btn_view.Click += btn_view_Click;
             // 
             // label2
             // 
@@ -138,19 +139,19 @@
             label2.Text = "Religion";
             label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // txt_totalcount
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(5, 6);
-            label1.Name = "label1";
-            label1.Size = new Size(94, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Total record(s): 0";
+            txt_totalcount.AutoSize = true;
+            txt_totalcount.ForeColor = Color.Black;
+            txt_totalcount.Location = new Point(5, 6);
+            txt_totalcount.Name = "txt_totalcount";
+            txt_totalcount.Size = new Size(94, 15);
+            txt_totalcount.TabIndex = 0;
+            txt_totalcount.Text = "Total record(s): 0";
             // 
             // panel1
             // 
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(txt_totalcount);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 400);
             panel1.Name = "panel1";
@@ -162,15 +163,16 @@
             ID.HeaderText = "ID";
             ID.Name = "ID";
             // 
-            // textBox1
+            // txt_search
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(0, 3);
-            textBox1.Margin = new Padding(0, 3, 1, 3);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = " Search";
-            textBox1.Size = new Size(338, 29);
-            textBox1.TabIndex = 0;
+            txt_search.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_search.Location = new Point(0, 3);
+            txt_search.Margin = new Padding(0, 3, 1, 3);
+            txt_search.Name = "txt_search";
+            txt_search.PlaceholderText = " Search";
+            txt_search.Size = new Size(338, 29);
+            txt_search.TabIndex = 0;
+            txt_search.TextChanged += txt_search_TextChanged;
             // 
             // btn_search
             // 
@@ -191,6 +193,7 @@
             btn_search.TextAlign = ContentAlignment.MiddleLeft;
             btn_search.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_search.UseVisualStyleBackColor = false;
+            btn_search.Click += btn_search_Click;
             // 
             // btn_refresh
             // 
@@ -211,6 +214,7 @@
             btn_refresh.TextAlign = ContentAlignment.MiddleLeft;
             btn_refresh.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_refresh.UseVisualStyleBackColor = false;
+            btn_refresh.Click += btn_refresh_Click;
             // 
             // pictureBox1
             // 
@@ -226,7 +230,7 @@
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoSize = true;
-            flowLayoutPanel1.Controls.Add(textBox1);
+            flowLayoutPanel1.Controls.Add(txt_search);
             flowLayoutPanel1.Controls.Add(btn_search);
             flowLayoutPanel1.Controls.Add(btn_refresh);
             flowLayoutPanel1.Dock = DockStyle.Top;
@@ -300,10 +304,10 @@
         private FontAwesome.Sharp.IconButton btn_edit;
         private FontAwesome.Sharp.IconButton btn_view;
         private Label label2;
-        private Label label1;
+        private Label txt_totalcount;
         private Panel panel1;
         private DataGridViewTextBoxColumn ID;
-        private TextBox textBox1;
+        private TextBox txt_search;
         private FontAwesome.Sharp.IconButton btn_search;
         private FontAwesome.Sharp.IconButton btn_refresh;
         private PictureBox pictureBox1;

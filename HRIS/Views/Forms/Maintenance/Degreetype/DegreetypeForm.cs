@@ -75,7 +75,16 @@ namespace HRIS.Forms.Maintenance.Degreetype
                 degtype.isupdate = true;
                 degtype.putdata(this, selectedDegreetype);
                 degtype.ShowDialog(this);
-                degreetype_Presenter.LoadDegreeType();
+                if (txt_search.Text != string.Empty)
+                {
+                    degreetype_Presenter.LoadDegreeType();
+                    search();
+                }
+                else
+                {
+                    degreetype_Presenter.LoadDegreeType();
+                }
+                
             }
         }
 
@@ -87,7 +96,15 @@ namespace HRIS.Forms.Maintenance.Degreetype
                 var degtype = new frm_degreeType();
                 degtype.putdata(this, selectedDegreetype);
                 degtype.ShowDialog(this);
-                degreetype_Presenter.LoadDegreeType();
+                if (txt_search.Text != string.Empty)
+                {
+                    degreetype_Presenter.LoadDegreeType();
+                    search();
+                }
+                else
+                {
+                    degreetype_Presenter.LoadDegreeType();
+                }
             }
         }
 

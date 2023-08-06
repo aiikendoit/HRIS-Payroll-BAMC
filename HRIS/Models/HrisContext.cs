@@ -886,20 +886,20 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("employmenttype", "Template");
 
-            entity.Property(e => e.PkEmploymenttype)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_employmenttype");
+            entity.Property(e => e.PkEmploymenttype).HasColumnName("PK_employmenttype");
             entity.Property(e => e.Createdby)
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
         });
 
@@ -909,17 +909,20 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("leavenoticetype", "Template");
 
-            entity.Property(e => e.PkLeavenoticetype)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_leavenoticetype");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkLeavenoticetype).HasColumnName("PK_leavenoticetype");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.Isactive).HasColumnName("isactive");
         });
 
@@ -961,23 +964,22 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("leavetype", "Template");
 
-            entity.Property(e => e.PkLeavetype)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_leavetype");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkLeavetype).HasColumnName("PK_leavetype");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsPaid).HasColumnName("isPaid");
             entity.Property(e => e.Isactive).HasColumnName("isactive");
-            entity.Property(e => e.Leavecode)
-                .HasMaxLength(10)
-                .IsUnicode(false)
-                .HasColumnName("leavecode");
         });
 
         modelBuilder.Entity<Licensetype>(entity =>
@@ -986,17 +988,20 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("licensetype", "Template");
 
-            entity.Property(e => e.PkLicensetype)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_licensetype");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkLicensetype).HasColumnName("PK_licensetype");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
         });
 
@@ -1033,21 +1038,22 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("offensetype", "Template");
 
-            entity.Property(e => e.PkOffensetype)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_offensetype");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkOffensetype).HasColumnName("PK_offensetype");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
-            entity.Property(e => e.Remarks)
-                .IsUnicode(false)
-                .HasColumnName("remarks");
+            entity.Property(e => e.Severity).HasColumnName("severity");
         });
 
         modelBuilder.Entity<Position>(entity =>
@@ -1099,6 +1105,7 @@ public partial class HrisContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("description");
             entity.Property(e => e.FkRegion).HasColumnName("FK_region");
+            entity.Property(e => e.FkSysetmUser).HasColumnName("FK_sysetmUser");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
         });
 
@@ -1182,23 +1189,36 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("salarytype", "Template");
 
-            entity.Property(e => e.PkSalarytype)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_salarytype");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkSalarytype).HasColumnName("PK_salarytype");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Description)
                 .IsUnicode(false)
                 .HasColumnName("description");
-            entity.Property(e => e.FkEmployeetype).HasColumnName("FK_employeetype");
+            entity.Property(e => e.FkEmploymenttype).HasColumnName("FK_employmenttype");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.IsActive).HasColumnName("isActive");
             entity.Property(e => e.IsAllowance).HasColumnName("isAllowance");
             entity.Property(e => e.IsBasicPay).HasColumnName("isBasicPay");
             entity.Property(e => e.IsBonus).HasColumnName("isBonus");
             entity.Property(e => e.IsCola).HasColumnName("isCOLA");
+            entity.Property(e => e.IsPercentage).HasColumnName("isPercentage");
             entity.Property(e => e.IsTaxable).HasColumnName("isTaxable");
             entity.Property(e => e.IsThirteenMonth).HasColumnName("isThirteenMonth");
+
+            entity.HasOne(d => d.FkEmploymenttypeNavigation).WithMany(p => p.Salarytypes)
+                .HasForeignKey(d => d.FkEmploymenttype)
+                .HasConstraintName("FK_salarytype_employeetype");
+
+            entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.Salarytypes)
+                .HasForeignKey(d => d.FkSystemUser)
+                .HasConstraintName("FK_salarytype_systemuser");
         });
 
         modelBuilder.Entity<SystemUser>(entity =>

@@ -1,4 +1,5 @@
-﻿using HRIS.Forms.Maintenance.Degreetype;
+﻿using HRIS.Class;
+using HRIS.Forms.Maintenance.Degreetype;
 using HRIS.Models;
 using HRIS.Presenter;
 using System;
@@ -69,6 +70,7 @@ namespace HRIS.Views.Forms.Maintenance.Degreetype
         }
         private void save()
         {
+            if (UniversalStatic.IsEmpty(txt_degreetype)) return;
             string? createdby = Properties.Settings.Default.completename;
             int id = Properties.Settings.Default.usercode;
             var cv = new Models.Degreetype

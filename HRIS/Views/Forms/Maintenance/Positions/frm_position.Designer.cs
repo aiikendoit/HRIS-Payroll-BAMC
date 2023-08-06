@@ -37,12 +37,13 @@
             dgrid_position = new DataGridView();
             btn_delete = new Button();
             btn_create = new Button();
+            btn_cancel = new Button();
             ((System.ComponentModel.ISupportInitialize)dgrid_position).BeginInit();
             SuspendLayout();
             // 
             // btn_update
             // 
-            btn_update.Location = new Point(320, 112);
+            btn_update.Location = new Point(241, 112);
             btn_update.Name = "btn_update";
             btn_update.Size = new Size(73, 36);
             btn_update.TabIndex = 7;
@@ -107,7 +108,7 @@
             // 
             // btn_delete
             // 
-            btn_delete.Location = new Point(399, 112);
+            btn_delete.Location = new Point(320, 112);
             btn_delete.Name = "btn_delete";
             btn_delete.Size = new Size(73, 36);
             btn_delete.TabIndex = 11;
@@ -117,7 +118,7 @@
             // 
             // btn_create
             // 
-            btn_create.Location = new Point(241, 112);
+            btn_create.Location = new Point(162, 112);
             btn_create.Name = "btn_create";
             btn_create.Size = new Size(73, 36);
             btn_create.TabIndex = 12;
@@ -125,12 +126,23 @@
             btn_create.UseVisualStyleBackColor = true;
             btn_create.Click += btn_create_Click;
             // 
+            // btn_cancel
+            // 
+            btn_cancel.Location = new Point(399, 112);
+            btn_cancel.Name = "btn_cancel";
+            btn_cancel.Size = new Size(73, 36);
+            btn_cancel.TabIndex = 13;
+            btn_cancel.Text = "Cancel";
+            btn_cancel.UseVisualStyleBackColor = true;
+            btn_cancel.Click += btn_cancel_Click;
+            // 
             // frm_position
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(499, 330);
+            Controls.Add(btn_cancel);
             Controls.Add(btn_create);
             Controls.Add(btn_delete);
             Controls.Add(dgrid_position);
@@ -145,7 +157,7 @@
             MinimizeBox = false;
             Name = "frm_position";
             StartPosition = FormStartPosition.CenterParent;
-            Text = "Add Position";
+            Text = "Position type";
             Load += frm_position_Load;
             ((System.ComponentModel.ISupportInitialize)dgrid_position).EndInit();
             ResumeLayout(false);
@@ -163,5 +175,6 @@
         private DataGridView dgrid_position;
         private Button btn_delete;
         private Button btn_create;
+        private Button btn_cancel;
     }
 }

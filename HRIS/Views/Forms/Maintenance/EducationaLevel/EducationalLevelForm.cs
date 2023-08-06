@@ -31,22 +31,39 @@ namespace HRIS.Forms.Maintenance.EducationaLevel
         {
             dgrid_educationalLevel.DataSource = Educationallevels;
             dgrid_educationalLevel.Columns[0].HeaderText = "ID";
-            if (dgrid_educationalLevel.ColumnCount == 9)
+            dgrid_educationalLevel.Columns[1].HeaderText = "Educational level";
+            dgrid_educationalLevel.Columns["Createddate"].HeaderText = "Created date";
+            dgrid_educationalLevel.Columns["Createdby"].HeaderText = "Created by";
+            dgrid_educationalLevel.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            if (dgrid_educationalLevel.ColumnCount == 10)
             {
                 //Remove unnecessary column
+                dgrid_educationalLevel.Columns.RemoveAt(9);
+                dgrid_educationalLevel.Columns.RemoveAt(8);
                 dgrid_educationalLevel.Columns.RemoveAt(7);
                 dgrid_educationalLevel.Columns.RemoveAt(6);
                 dgrid_educationalLevel.Columns.RemoveAt(5);
-                dgrid_educationalLevel.Columns.RemoveAt(4);
             }
             dgrid_educationalLevel.AutoGenerateColumns = false;
+            txt_totalcount.Text = "Total record(s): " + dgrid_educationalLevel.RowCount.ToString();
         }
 
         private void EducationalLevelForm_Load(object sender, EventArgs e)
         {
 
         }
-
+        private void search()
+        {
+            string searchQuery = txt_search.Text.Trim();
+            if (string.IsNullOrEmpty(searchQuery))
+            {
+                educationlevel_Presenter.LoadEducationallevel();
+            }
+            else
+            {
+                educationlevel_Presenter.SearchData(searchQuery);
+            }
+        }
         private void btn_save_Click(object sender, EventArgs e)
         {
             var p = new frm_educationllevel_add();
@@ -60,11 +77,39 @@ namespace HRIS.Forms.Maintenance.EducationaLevel
             var selectcivilstatus = dgrid_educationalLevel.SelectedRows[0].DataBoundItem as Models.Educationallevel;
             if (selectcivilstatus != null)
             {
-                frm_educationllevel_add frm_Educationllevel_Add = new frm_educationllevel_add();
-                frm_Educationllevel_Add.putdata(this, selectcivilstatus);
-                frm_Educationllevel_Add.ShowDialog(this);
+                var educ = new frm_educationllevel_add();
+                educ.isupdate = true;
+                educ.putdata(this, selectcivilstatus);
+                educ.ShowDialog(this);
                 educationlevel_Presenter.LoadEducationallevel();
             }
+        }
+
+        private void btn_view_Click(object sender, EventArgs e)
+        {
+            var selectcivilstatus = dgrid_educationalLevel.SelectedRows[0].DataBoundItem as Models.Educationallevel;
+            if (selectcivilstatus != null)
+            {
+                var educ = new frm_educationllevel_add();
+                educ.putdata(this, selectcivilstatus);
+                educ.ShowDialog(this);
+                educationlevel_Presenter.LoadEducationallevel();
+            }
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            search();
+        }
+
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+            search();
+        }
+
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            educationlevel_Presenter.LoadEducationallevel();
         }
     }
 }

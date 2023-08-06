@@ -11,6 +11,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace HRIS.Views.Forms.Maintenance.Religion
@@ -36,6 +37,10 @@ namespace HRIS.Views.Forms.Maintenance.Religion
         {
             dgrid_religion.DataSource = Religions;
             dgrid_religion.Columns[0].HeaderText = "ID";
+            dgrid_religion.Columns["Description"].HeaderText = "Religion";
+            dgrid_religion.Columns["Createddate"].HeaderText = "Created date";
+            dgrid_religion.Columns["Createdby"].HeaderText = "Created by";
+            dgrid_religion.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             if (dgrid_religion.ColumnCount == 8)
             {
                 //Remove unnecessary column
@@ -44,8 +49,20 @@ namespace HRIS.Views.Forms.Maintenance.Religion
                 dgrid_religion.Columns.RemoveAt(5);
             }
             dgrid_religion.AutoGenerateColumns = false;
+            txt_totalcount.Text = "Total count(s): " + dgrid_religion.RowCount.ToString();
         }
-
+        private void search()
+        {
+            string searchQuery = txt_search.Text.Trim();
+            if (string.IsNullOrEmpty(searchQuery))
+            {
+                religion_Presenter.LoadReligion();
+            }
+            else
+            {
+                religion_Presenter.SearchData(searchQuery);
+            }
+        }
         private void ReligionForm_Load(object sender, EventArgs e)
         {
 
@@ -64,9 +81,46 @@ namespace HRIS.Views.Forms.Maintenance.Religion
             if (selectReligion != null)
             {
                 frm_religion_Add frm_Religion_Add = new frm_religion_Add();
+                frm_Religion_Add.isupdate = true;
                 frm_Religion_Add.putdata(this, selectReligion);
                 frm_Religion_Add.ShowDialog(this);
                 religion_Presenter.LoadReligion();
+            }
+        }
+
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+            search();
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            search();
+        }
+
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            religion_Presenter.LoadReligion();
+        }
+
+        private void btn_view_Click(object sender, EventArgs e)
+        {
+            var selectReligion = dgrid_religion.SelectedRows[0].DataBoundItem as Models.Religion;
+            if (selectReligion != null)
+            {
+                frm_religion_Add frm_Religion_Add = new frm_religion_Add();
+                frm_Religion_Add.isupdate = true;
+                frm_Religion_Add.putdata(this, selectReligion);
+                frm_Religion_Add.ShowDialog(this);
+                if (txt_search.Text != string.Empty)
+                {
+                    religion_Presenter.LoadReligion();
+                    search();
+                }
+                else
+                {
+                    religion_Presenter.LoadReligion();
+                }
             }
         }
     }

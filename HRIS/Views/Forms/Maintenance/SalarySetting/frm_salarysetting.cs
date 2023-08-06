@@ -102,6 +102,7 @@ namespace HRIS.Views.Forms.Maintenance.SalarySetting
 
             var selectedsalary = Selectedsalarytype as Models.Salarytype;
 
+            selectedsalary.FkEmploymenttype = Convert.ToInt32(txt_employmenttype.SelectedValue);
             selectedsalary.Description = txt_salarytype.Text;
             selectedsalary.IsActive = checkBox_isactive.Checked;
             selectedsalary.IsBasicPay = checkBox_isBasicpay.Checked;

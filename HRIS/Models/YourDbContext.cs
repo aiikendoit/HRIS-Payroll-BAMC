@@ -1174,9 +1174,9 @@ public partial class YourDbContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
-            entity.Property(e => e.Remarks)
+            entity.Property(e => e.Description)
                 .IsUnicode(false)
-                .HasColumnName("remarks");
+                .HasColumnName("description");
         });
 
         modelBuilder.Entity<Workassignment>(entity =>

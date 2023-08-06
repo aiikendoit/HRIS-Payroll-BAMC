@@ -1285,18 +1285,22 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("wagefactor", "Template");
 
-            entity.Property(e => e.PkWagefactor)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_wagefactor");
+            entity.Property(e => e.PkWagefactor).HasColumnName("PK_wagefactor");
             entity.Property(e => e.Amount).HasColumnName("amount");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasComment("getdate()")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
-            entity.Property(e => e.IsActive).HasColumnName("isActive");
-            entity.Property(e => e.Remarks)
+            entity.Property(e => e.Description)
+                .HasMaxLength(50)
                 .IsUnicode(false)
-                .HasColumnName("remarks");
+                .HasColumnName("description");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.IsActive).HasColumnName("isActive");
         });
 
         modelBuilder.Entity<Workassignment>(entity =>

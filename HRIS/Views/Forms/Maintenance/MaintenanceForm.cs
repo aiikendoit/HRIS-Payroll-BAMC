@@ -22,6 +22,7 @@ using HRIS.Views.Forms.Maintenance.Positions;
 using HRIS.Views.Forms.Maintenance.RelationShip;
 using HRIS.Views.Forms.Maintenance.Religion;
 using HRIS.Views.Forms.Maintenance.SalarySetting;
+using HRIS.Views.Forms.Maintenance.WageFactor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.Logging;
 using Microsoft.Win32;
@@ -460,6 +461,12 @@ namespace HRIS.Forms.Maintenance
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new SalarySettingForm());
+        }
+
+        private void btn_wagefactor_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new WageFactorForm());
         }
     }
 }

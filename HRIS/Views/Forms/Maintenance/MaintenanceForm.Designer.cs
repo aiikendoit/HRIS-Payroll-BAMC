@@ -39,7 +39,7 @@
             txt_telephone = new TextBox();
             btn_basicinformation = new FontAwesome.Sharp.IconButton();
             panelmenu = new Panel();
-            btn_ = new FontAwesome.Sharp.IconButton();
+            btn_wagefactor = new FontAwesome.Sharp.IconButton();
             btn_towncity = new FontAwesome.Sharp.IconButton();
             btn_salarysetting = new FontAwesome.Sharp.IconButton();
             btn_religion = new FontAwesome.Sharp.IconButton();
@@ -215,7 +215,7 @@
             // 
             panelmenu.AutoScroll = true;
             panelmenu.BackColor = Color.FromArgb(0, 127, 152);
-            panelmenu.Controls.Add(btn_);
+            panelmenu.Controls.Add(btn_wagefactor);
             panelmenu.Controls.Add(btn_towncity);
             panelmenu.Controls.Add(btn_salarysetting);
             panelmenu.Controls.Add(btn_religion);
@@ -246,30 +246,31 @@
             panelmenu.Size = new Size(194, 420);
             panelmenu.TabIndex = 7;
             // 
-            // btn_
+            // btn_wagefactor
             // 
-            btn_.BackColor = Color.FromArgb(0, 127, 152);
-            btn_.Cursor = Cursors.Hand;
-            btn_.Dock = DockStyle.Top;
-            btn_.FlatAppearance.BorderSize = 0;
-            btn_.FlatStyle = FlatStyle.Flat;
-            btn_.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            btn_.IconColor = Color.White;
-            btn_.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_.IconSize = 20;
-            btn_.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_.Location = new Point(2, 590);
-            btn_.Margin = new Padding(4, 3, 4, 3);
-            btn_.Name = "btn_";
-            btn_.Padding = new Padding(10, 0, 0, 0);
-            btn_.Size = new Size(173, 28);
-            btn_.TabIndex = 43;
-            btn_.Tag = "Wage Factor";
-            btn_.Text = "Wage Factor";
-            btn_.TextAlign = ContentAlignment.MiddleLeft;
-            btn_.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_.UseVisualStyleBackColor = false;
+            btn_wagefactor.BackColor = Color.FromArgb(0, 127, 152);
+            btn_wagefactor.Cursor = Cursors.Hand;
+            btn_wagefactor.Dock = DockStyle.Top;
+            btn_wagefactor.FlatAppearance.BorderSize = 0;
+            btn_wagefactor.FlatStyle = FlatStyle.Flat;
+            btn_wagefactor.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_wagefactor.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_wagefactor.IconColor = Color.White;
+            btn_wagefactor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_wagefactor.IconSize = 20;
+            btn_wagefactor.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_wagefactor.Location = new Point(2, 590);
+            btn_wagefactor.Margin = new Padding(4, 3, 4, 3);
+            btn_wagefactor.Name = "btn_wagefactor";
+            btn_wagefactor.Padding = new Padding(10, 0, 0, 0);
+            btn_wagefactor.Size = new Size(173, 28);
+            btn_wagefactor.TabIndex = 43;
+            btn_wagefactor.Tag = "Wage Factor";
+            btn_wagefactor.Text = "Wage Factor";
+            btn_wagefactor.TextAlign = ContentAlignment.MiddleLeft;
+            btn_wagefactor.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_wagefactor.UseVisualStyleBackColor = false;
+            btn_wagefactor.Click += btn_wagefactor_Click;
             // 
             // btn_towncity
             // 
@@ -1106,7 +1107,7 @@
         private FontAwesome.Sharp.IconButton btn_civilstatus;
         private FontAwesome.Sharp.IconButton btn_bank;
         private FontAwesome.Sharp.IconButton btn_barangay;
-        private FontAwesome.Sharp.IconButton btn_;
+        private FontAwesome.Sharp.IconButton btn_wagefactor;
         private FontAwesome.Sharp.IconButton btn_towncity;
         private FontAwesome.Sharp.IconButton btn_salarysetting;
         private FontAwesome.Sharp.IconButton btn_religion;

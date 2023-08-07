@@ -70,5 +70,13 @@ namespace HRIS.Presenter
 
             _view.DisplayTownCity(searchResults);
         }
+
+        public void AddTownCity(Towncity Towncities)
+        {
+            _context.Towncities.Add(Towncities);
+            _context.SaveChanges();
+            MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            loadTownCity_All();
+        }
     }
 }

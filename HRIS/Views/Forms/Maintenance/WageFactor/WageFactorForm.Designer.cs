@@ -104,6 +104,7 @@
             btn_new.TextAlign = ContentAlignment.MiddleLeft;
             btn_new.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_new.UseVisualStyleBackColor = false;
+            btn_new.Click += btn_new_Click;
             // 
             // btn_edit
             // 
@@ -124,6 +125,7 @@
             btn_edit.TextAlign = ContentAlignment.MiddleLeft;
             btn_edit.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_edit.UseVisualStyleBackColor = false;
+            btn_edit.Click += btn_edit_Click;
             // 
             // btn_view
             // 
@@ -144,6 +146,7 @@
             btn_view.TextAlign = ContentAlignment.MiddleLeft;
             btn_view.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_view.UseVisualStyleBackColor = false;
+            btn_view.Click += btn_view_Click;
             // 
             // label2
             // 
@@ -189,6 +192,7 @@
             txt_search.PlaceholderText = " Search";
             txt_search.Size = new Size(338, 29);
             txt_search.TabIndex = 0;
+            txt_search.TextChanged += txt_search_TextChanged;
             // 
             // btn_search
             // 
@@ -209,6 +213,7 @@
             btn_search.TextAlign = ContentAlignment.MiddleLeft;
             btn_search.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_search.UseVisualStyleBackColor = false;
+            btn_search.Click += btn_search_Click;
             // 
             // btn_refresh
             // 
@@ -229,6 +234,7 @@
             btn_refresh.TextAlign = ContentAlignment.MiddleLeft;
             btn_refresh.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_refresh.UseVisualStyleBackColor = false;
+            btn_refresh.Click += btn_refresh_Click;
             // 
             // pictureBox1
             // 

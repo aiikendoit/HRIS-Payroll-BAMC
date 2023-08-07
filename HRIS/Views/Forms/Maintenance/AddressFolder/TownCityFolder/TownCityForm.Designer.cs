@@ -122,6 +122,7 @@
             btn_new.TextAlign = ContentAlignment.MiddleLeft;
             btn_new.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_new.UseVisualStyleBackColor = false;
+            btn_new.Click += btn_new_Click;
             // 
             // btn_edit
             // 

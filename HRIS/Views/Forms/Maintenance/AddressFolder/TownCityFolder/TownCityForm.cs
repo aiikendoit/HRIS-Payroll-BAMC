@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using HRIS.Class;
 using HRIS.Models;
 using HRIS.Presenter;
+using HRIS.Views.Forms.Maintenance.SalarySetting;
 
 namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
 {
@@ -50,7 +51,7 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
             dgrid_towncity.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             if (dgrid_towncity.ColumnCount == 8)
             {
-                
+
                 dgrid_towncity.Columns.RemoveAt(7);
                 dgrid_towncity.Columns.RemoveAt(6);
                 dgrid_towncity.Columns.RemoveAt(5);
@@ -80,6 +81,13 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
             search();
+        }
+
+        private void btn_new_Click(object sender, EventArgs e)
+        {
+            var st = new frm_towncity();
+            st.ShowDialog();
+            //salarysetting_Presenter.LoadSalarysetting();
         }
     }
 }

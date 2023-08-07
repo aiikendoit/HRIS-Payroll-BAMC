@@ -15,10 +15,12 @@ namespace HRIS.Presenter
         
         private readonly ITownCityView _view;
         private readonly HrisContext _context;
+        private List<Towncity> _TowncityListData;
         public towncity_Presenter(ITownCityView view)
         {
             _view = view;
             _context = new HrisContext();
+            _TowncityListData = new List<Towncity>();
         }
         public void loadTowncity(int? provinceid)
         {
@@ -26,6 +28,7 @@ namespace HRIS.Presenter
                 .Where(e => e.FkProvince == provinceid) 
                 .OrderBy(e => e.Description) 
                 .ToList();
+            
             _view.DisplayTownCity(p);
         }
         public void loadtowncityWhere(int? towncityid)
@@ -53,8 +56,19 @@ namespace HRIS.Presenter
             var p = _context.Towncities
                 .OrderBy(e => e.Description)
                 .ToList();
+            _TowncityListData = p.ToList();
             _view.DisplayTownCity(p);
         }
 
+        internal void SearchData(string searchQuery)
+        {
+            var searchResults = _TowncityListData
+                 .Where(b => b.PkTowncity.ToString().Contains(searchQuery)
+                 || (b.Description != null && b.Description.Contains(searchQuery,
+                 StringComparison.OrdinalIgnoreCase)))
+                 .ToList();
+
+            _view.DisplayTownCity(searchResults);
+        }
     }
 }

@@ -15,6 +15,7 @@ using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Maintenance;
 using HRIS.Views.Forms.Maintenance.AddressFolder.ProvincesFolder;
+using HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder;
 using HRIS.Views.Forms.Maintenance.Leaves;
 using HRIS.Views.Forms.Maintenance.NationalityFolder;
 using HRIS.Views.Forms.Maintenance.Offensetype;
@@ -467,6 +468,12 @@ namespace HRIS.Forms.Maintenance
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new WageFactorForm());
+        }
+
+        private void btn_towncity_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new TownCityForm());
         }
     }
 }

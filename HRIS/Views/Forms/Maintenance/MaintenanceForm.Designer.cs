@@ -296,6 +296,7 @@
             btn_towncity.TextAlign = ContentAlignment.MiddleLeft;
             btn_towncity.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_towncity.UseVisualStyleBackColor = false;
+            btn_towncity.Click += btn_towncity_Click;
             // 
             // btn_salarysetting
             // 

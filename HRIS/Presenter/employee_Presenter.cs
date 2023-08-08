@@ -1,4 +1,5 @@
-﻿using HRIS.Models;
+﻿
+using HRIS.Models;
 using HRIS.Views.Forms.Employee;
 using HRIS.Views.Forms.Maintenance.CivilStatus;
 using Microsoft.EntityFrameworkCore;
@@ -90,7 +91,7 @@ namespace HRIS.Presenter
 
             dataGridView.DataSource = query.ToList();
         }
-        public void updateEmployee(Employee employee)
+        public void updateEmployee(Models.Employee employee)
         {
             _context.Employees.Update(employee);
             _context.SaveChanges();
@@ -98,7 +99,7 @@ namespace HRIS.Presenter
             MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
-        public bool AddEmployee(Employee employee)
+        public bool AddEmployee(Models.Employee employee)
         {
             bool isexist = false;
             // Check if the employee already exists
@@ -119,7 +120,7 @@ namespace HRIS.Presenter
             }
             return isexist;
         }
-        public void AddEmployeeWithForeignKey(Employee employee) 
+        public void AddEmployeeWithForeignKey(Models.Employee employee) 
         { 
 
         }

@@ -84,9 +84,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(12, 27);
             label1.Name = "label1";
-            label1.Size = new Size(49, 15);
+            label1.Size = new Size(48, 15);
             label1.TabIndex = 30;
-            label1.Text = "Offence";
+            label1.Text = "Offense";
             // 
             // txt_severity
             // 
@@ -126,7 +126,7 @@
             MinimizeBox = false;
             Name = "frm_offencetype";
             StartPosition = FormStartPosition.CenterParent;
-            Text = "Offence type";
+            Text = "Offense type";
             ResumeLayout(false);
             PerformLayout();
         }

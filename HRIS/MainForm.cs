@@ -15,7 +15,7 @@ namespace HRIS
 
         private IconButton currentbtn;
         private Form currentchildform;
-        
+
         public MainForm()
         {
             InitializeComponent();

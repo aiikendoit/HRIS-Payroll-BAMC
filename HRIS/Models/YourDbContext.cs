@@ -331,15 +331,15 @@ public partial class YourDbContext : DbContext
                 .HasForeignKey(d => d.FkDegreetype)
                 .HasConstraintName("FK_educationalattainment_degreetype");
 
-            entity.HasOne(d => d.PkEducationalattainmentNavigation).WithOne(p => p.Educationalattainment)
-                .HasForeignKey<Educationalattainment>(d => d.PkEducationalattainment)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_educationlevel");
+            //entity.HasOne(d => d.PkEducationalattainment).WithOne(p => p.Educationalattainment)
+            //    .HasForeignKey<Educationalattainment>(d => d.PkEducationalattainment)
+            //    .OnDelete(DeleteBehavior.ClientSetNull)
+            //    .HasConstraintName("FK_educationlevel");
 
-            entity.HasOne(d => d.PkEducationalattainment1).WithOne(p => p.Educationalattainment)
-                .HasForeignKey<Educationalattainment>(d => d.PkEducationalattainment)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_employee");
+            //entity.HasOne(d => d.PkEducationalattainment1).WithOne(p => p.Educationalattainment)
+            //    .HasForeignKey<Educationalattainment>(d => d.PkEducationalattainment)
+            //    .OnDelete(DeleteBehavior.ClientSetNull)
+            //    .HasConstraintName("FK_employee");
         });
 
         modelBuilder.Entity<Educationallevel>(entity =>

@@ -21,13 +21,13 @@ namespace HRIS.Forms.Employee
         private readonly workassignment_Presenter workassignment_Presenter;
         private string emp_id;
 
-        public emp_workassignment(string employeeid)
+        public emp_workassignment(int PKEmployeeID)
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_workassignment);
             workassignment_Presenter = new workassignment_Presenter(this);
-            loadWorkAssignment(Convert.ToInt32(employeeid));
-            emp_id = employeeid;
+            loadWorkAssignment(Convert.ToInt32(PKEmployeeID));
+            emp_id = PKEmployeeID.ToString();
         }
 
         public void DisplayWorkAssignment(List<Workassignment> workassignments)

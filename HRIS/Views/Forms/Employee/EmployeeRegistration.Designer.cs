@@ -191,7 +191,7 @@
             panelmenu.Location = new Point(0, 57);
             panelmenu.Name = "panelmenu";
             panelmenu.Padding = new Padding(2);
-            panelmenu.Size = new Size(160, 588);
+            panelmenu.Size = new Size(177, 588);
             panelmenu.TabIndex = 1;
             // 
             // btn_documents
@@ -210,7 +210,7 @@
             btn_documents.Location = new Point(2, 422);
             btn_documents.Name = "btn_documents";
             btn_documents.Padding = new Padding(10, 0, 0, 0);
-            btn_documents.Size = new Size(156, 30);
+            btn_documents.Size = new Size(173, 30);
             btn_documents.TabIndex = 36;
             btn_documents.Tag = "Documents";
             btn_documents.Text = "Documents";
@@ -236,7 +236,7 @@
             btn_benefits.Location = new Point(2, 392);
             btn_benefits.Name = "btn_benefits";
             btn_benefits.Padding = new Padding(10, 0, 0, 0);
-            btn_benefits.Size = new Size(156, 30);
+            btn_benefits.Size = new Size(173, 30);
             btn_benefits.TabIndex = 35;
             btn_benefits.Tag = "Benefits";
             btn_benefits.Text = "Benefits";
@@ -262,7 +262,7 @@
             btn_disciplinaryaction.Location = new Point(2, 362);
             btn_disciplinaryaction.Name = "btn_disciplinaryaction";
             btn_disciplinaryaction.Padding = new Padding(10, 0, 0, 0);
-            btn_disciplinaryaction.Size = new Size(156, 30);
+            btn_disciplinaryaction.Size = new Size(173, 30);
             btn_disciplinaryaction.TabIndex = 34;
             btn_disciplinaryaction.Tag = "Disciplinary Action";
             btn_disciplinaryaction.Text = "Disciplinary Action";
@@ -288,7 +288,7 @@
             btn_salarysettings.Location = new Point(2, 332);
             btn_salarysettings.Name = "btn_salarysettings";
             btn_salarysettings.Padding = new Padding(10, 0, 0, 0);
-            btn_salarysettings.Size = new Size(156, 30);
+            btn_salarysettings.Size = new Size(173, 30);
             btn_salarysettings.TabIndex = 33;
             btn_salarysettings.Tag = "Salary Settings";
             btn_salarysettings.Text = "Salary Settings";
@@ -314,7 +314,7 @@
             btn_tranings.Location = new Point(2, 302);
             btn_tranings.Name = "btn_tranings";
             btn_tranings.Padding = new Padding(10, 0, 0, 0);
-            btn_tranings.Size = new Size(156, 30);
+            btn_tranings.Size = new Size(173, 30);
             btn_tranings.TabIndex = 32;
             btn_tranings.Tag = "Trainings";
             btn_tranings.Text = "Trainings";
@@ -340,7 +340,7 @@
             btn_seminar.Location = new Point(2, 272);
             btn_seminar.Name = "btn_seminar";
             btn_seminar.Padding = new Padding(10, 0, 0, 0);
-            btn_seminar.Size = new Size(156, 30);
+            btn_seminar.Size = new Size(173, 30);
             btn_seminar.TabIndex = 31;
             btn_seminar.Tag = "Seminars";
             btn_seminar.Text = "Seminars";
@@ -366,7 +366,7 @@
             btn_dependents.Location = new Point(2, 242);
             btn_dependents.Name = "btn_dependents";
             btn_dependents.Padding = new Padding(10, 0, 0, 0);
-            btn_dependents.Size = new Size(156, 30);
+            btn_dependents.Size = new Size(173, 30);
             btn_dependents.TabIndex = 27;
             btn_dependents.Tag = "Dependents";
             btn_dependents.Text = "Dependents";
@@ -392,7 +392,7 @@
             btn_leaverecords.Location = new Point(2, 212);
             btn_leaverecords.Name = "btn_leaverecords";
             btn_leaverecords.Padding = new Padding(10, 0, 0, 0);
-            btn_leaverecords.Size = new Size(156, 30);
+            btn_leaverecords.Size = new Size(173, 30);
             btn_leaverecords.TabIndex = 29;
             btn_leaverecords.Tag = "Leave Records";
             btn_leaverecords.Text = "Leave Records";
@@ -418,7 +418,7 @@
             btn_leavesetting.Location = new Point(2, 182);
             btn_leavesetting.Name = "btn_leavesetting";
             btn_leavesetting.Padding = new Padding(10, 0, 0, 0);
-            btn_leavesetting.Size = new Size(156, 30);
+            btn_leavesetting.Size = new Size(173, 30);
             btn_leavesetting.TabIndex = 28;
             btn_leavesetting.Tag = "Leave Setting";
             btn_leavesetting.Text = "Leave Setting";
@@ -444,7 +444,7 @@
             btn_dutyschedule.Location = new Point(2, 152);
             btn_dutyschedule.Name = "btn_dutyschedule";
             btn_dutyschedule.Padding = new Padding(10, 0, 0, 0);
-            btn_dutyschedule.Size = new Size(156, 30);
+            btn_dutyschedule.Size = new Size(173, 30);
             btn_dutyschedule.TabIndex = 24;
             btn_dutyschedule.Tag = "Duty Schedule";
             btn_dutyschedule.Text = "Duty Schedule";
@@ -470,7 +470,7 @@
             btn_workassignment.Location = new Point(2, 122);
             btn_workassignment.Name = "btn_workassignment";
             btn_workassignment.Padding = new Padding(10, 0, 0, 0);
-            btn_workassignment.Size = new Size(156, 30);
+            btn_workassignment.Size = new Size(173, 30);
             btn_workassignment.TabIndex = 25;
             btn_workassignment.Tag = "Work Assignment";
             btn_workassignment.Text = "Work Assignment";
@@ -496,7 +496,7 @@
             btn_employment.Location = new Point(2, 92);
             btn_employment.Name = "btn_employment";
             btn_employment.Padding = new Padding(10, 0, 0, 0);
-            btn_employment.Size = new Size(156, 30);
+            btn_employment.Size = new Size(173, 30);
             btn_employment.TabIndex = 26;
             btn_employment.Tag = "Employment";
             btn_employment.Text = "Employment";
@@ -522,7 +522,7 @@
             btn_licenseinformation.Location = new Point(2, 62);
             btn_licenseinformation.Name = "btn_licenseinformation";
             btn_licenseinformation.Padding = new Padding(10, 0, 0, 0);
-            btn_licenseinformation.Size = new Size(156, 30);
+            btn_licenseinformation.Size = new Size(173, 30);
             btn_licenseinformation.TabIndex = 30;
             btn_licenseinformation.Tag = "License Information";
             btn_licenseinformation.Text = "License Information";
@@ -548,10 +548,10 @@
             btn_education.Location = new Point(2, 32);
             btn_education.Name = "btn_education";
             btn_education.Padding = new Padding(10, 0, 0, 0);
-            btn_education.Size = new Size(156, 30);
+            btn_education.Size = new Size(173, 30);
             btn_education.TabIndex = 23;
-            btn_education.Tag = "Education";
-            btn_education.Text = "Education";
+            btn_education.Tag = "Educational Attainment";
+            btn_education.Text = "Educational Attainment";
             btn_education.TextAlign = ContentAlignment.MiddleLeft;
             btn_education.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_education.UseVisualStyleBackColor = false;
@@ -574,7 +574,7 @@
             btn_basicinformation.Location = new Point(2, 2);
             btn_basicinformation.Name = "btn_basicinformation";
             btn_basicinformation.Padding = new Padding(10, 0, 0, 0);
-            btn_basicinformation.Size = new Size(156, 30);
+            btn_basicinformation.Size = new Size(173, 30);
             btn_basicinformation.TabIndex = 22;
             btn_basicinformation.Tag = "Basic Information";
             btn_basicinformation.Text = "Basic Information";
@@ -655,9 +655,9 @@
             panel_basicinfo.Controls.Add(iconPictureBox1);
             panel_basicinfo.Controls.Add(label2);
             panel_basicinfo.Dock = DockStyle.Fill;
-            panel_basicinfo.Location = new Point(160, 147);
+            panel_basicinfo.Location = new Point(177, 147);
             panel_basicinfo.Name = "panel_basicinfo";
-            panel_basicinfo.Size = new Size(954, 498);
+            panel_basicinfo.Size = new Size(937, 498);
             panel_basicinfo.TabIndex = 0;
             // 
             // txt_rfid
@@ -742,7 +742,7 @@
             txt_bloodtype.DropDownStyle = ComboBoxStyle.DropDownList;
             txt_bloodtype.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_bloodtype.FormattingEnabled = true;
-            txt_bloodtype.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
+            txt_bloodtype.Items.AddRange(new object[] { "Not Applicable", "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
             txt_bloodtype.Location = new Point(444, 129);
             txt_bloodtype.Name = "txt_bloodtype";
             txt_bloodtype.Size = new Size(202, 23);
@@ -1316,9 +1316,9 @@
             panel2.Controls.Add(txt_Headercompletename);
             panel2.Controls.Add(panel3);
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(160, 57);
+            panel2.Location = new Point(177, 57);
             panel2.Name = "panel2";
-            panel2.Size = new Size(954, 90);
+            panel2.Size = new Size(937, 90);
             panel2.TabIndex = 3;
             // 
             // txt_employeeid
@@ -1373,16 +1373,16 @@
             panel3.Dock = DockStyle.Bottom;
             panel3.Location = new Point(0, 76);
             panel3.Name = "panel3";
-            panel3.Size = new Size(954, 14);
+            panel3.Size = new Size(937, 14);
             panel3.TabIndex = 0;
             // 
             // MainPanel
             // 
             MainPanel.Dock = DockStyle.Fill;
-            MainPanel.Location = new Point(160, 147);
+            MainPanel.Location = new Point(177, 147);
             MainPanel.Name = "MainPanel";
             MainPanel.Padding = new Padding(5);
-            MainPanel.Size = new Size(954, 498);
+            MainPanel.Size = new Size(937, 498);
             MainPanel.TabIndex = 4;
             // 
             // panel4

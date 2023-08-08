@@ -93,12 +93,13 @@ public partial class HrisContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer("Data Source=webserver; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
+            optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
                           .UseLazyLoadingProxies();
         }
+
     }
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-  //      => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+    //        => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -392,11 +393,13 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("educationalattainment", "HR");
 
-            entity.Property(e => e.PkEducationalattainment)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_educationalattainment");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkEducationalattainment).HasColumnName("PK_educationalattainment");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Educationaldegree)
@@ -406,27 +409,30 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.FkDegreetype).HasColumnName("FK_degreetype");
             entity.Property(e => e.FkEducationallevel).HasColumnName("FK_educationallevel");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.Schoolattended)
-                .HasColumnType("datetime")
+                .HasMaxLength(500)
+                .IsUnicode(false)
                 .HasColumnName("schoolattended");
             entity.Property(e => e.Yeargraduated)
-                .HasMaxLength(50)
-                .IsUnicode(false)
+                .HasColumnType("date")
                 .HasColumnName("yeargraduated");
 
             entity.HasOne(d => d.FkDegreetypeNavigation).WithMany(p => p.Educationalattainments)
                 .HasForeignKey(d => d.FkDegreetype)
                 .HasConstraintName("FK_educationalattainment_degreetype");
 
-            entity.HasOne(d => d.PkEducationalattainmentNavigation).WithOne(p => p.Educationalattainment)
-                .HasForeignKey<Educationalattainment>(d => d.PkEducationalattainment)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_educationlevel");
+            entity.HasOne(d => d.FkEducationallevelNavigation).WithMany(p => p.Educationalattainments)
+                .HasForeignKey(d => d.FkEducationallevel)
+                .HasConstraintName("FK_educationalattainment_educationallevel");
 
-            entity.HasOne(d => d.PkEducationalattainment1).WithOne(p => p.Educationalattainment)
-                .HasForeignKey<Educationalattainment>(d => d.PkEducationalattainment)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+            entity.HasOne(d => d.FkEmployeeNavigation).WithMany(p => p.Educationalattainments)
+                .HasForeignKey(d => d.FkEmployee)
                 .HasConstraintName("FK_employee");
+
+            entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.Educationalattainments)
+                .HasForeignKey(d => d.FkSystemUser)
+                .HasConstraintName("FK_educationalattainment_systemuser");
         });
 
         modelBuilder.Entity<Educationallevel>(entity =>
@@ -546,6 +552,9 @@ public partial class HrisContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("idno");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
+            entity.Property(e => e.IsBamcemployee).HasColumnName("isBAMCEmployee");
+            entity.Property(e => e.IsDoctor).HasColumnName("isDoctor");
+            entity.Property(e => e.IsOutsource).HasColumnName("isOutsource");
             entity.Property(e => e.Lastname)
                 .HasMaxLength(100)
                 .IsUnicode(false)
@@ -586,15 +595,15 @@ public partial class HrisContext : DbContext
 
             entity.HasOne(d => d.FkBankNameNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkBankName)
-                .HasConstraintName("FK_bank");
+                .HasConstraintName("FK_employee_bank");
 
             entity.HasOne(d => d.FkBarangayNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkBarangay)
-                .HasConstraintName("FK_barangay");
+                .HasConstraintName("FK_employee_barangay");
 
             entity.HasOne(d => d.FkCivilstatusNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkCivilstatus)
-                .HasConstraintName("FK_civilstatus");
+                .HasConstraintName("FK_employee_civilstatus");
 
             entity.HasOne(d => d.FkEducationallevelNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkEducationallevel)
@@ -606,7 +615,7 @@ public partial class HrisContext : DbContext
 
             entity.HasOne(d => d.FkProvinceNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkProvince)
-                .HasConstraintName("FK_province");
+                .HasConstraintName("FK_employee_province");
 
             entity.HasOne(d => d.FkRelationshipNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkRelationship)
@@ -614,15 +623,15 @@ public partial class HrisContext : DbContext
 
             entity.HasOne(d => d.FkReligionNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkReligion)
-                .HasConstraintName("FK_religion");
+                .HasConstraintName("FK_employee_religion");
 
             entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkSystemUser)
-                .HasConstraintName("FK_systemuser_employee");
+                .HasConstraintName("FK_employee_systemuser");
 
             entity.HasOne(d => d.FkTowncityNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkTowncity)
-                .HasConstraintName("FK_towncity");
+                .HasConstraintName("FK_employee_towncity");
 
             entity.HasOne(d => d.FkZipcodeNavigation).WithMany(p => p.Employees)
                 .HasForeignKey(d => d.FkZipcode)

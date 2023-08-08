@@ -23,6 +23,8 @@ public partial class SystemUser
 
     public virtual ICollection<BankName> BankNames { get; set; } = new List<BankName>();
 
+    public virtual ICollection<Educationalattainment> Educationalattainments { get; set; } = new List<Educationalattainment>();
+
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 
     public virtual Department? FkDepartmentNavigation { get; set; }

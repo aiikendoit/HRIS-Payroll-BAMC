@@ -53,7 +53,7 @@ namespace HRIS.Views.Forms.Employee
         private void btn_search_Click(object sender, EventArgs e)
         {
             if (UniversalStatic.IsEmpty(txt_lastname)) return;
-            if (UniversalStatic.IsEmpty(txt_firstname)) return;
+            else if (UniversalStatic.IsEmpty(txt_firstname)) return;
             search();
         }
         private void search()
@@ -61,6 +61,17 @@ namespace HRIS.Views.Forms.Employee
             string lastname = txt_lastname.Text;
             string firstname = txt_firstname.Text;
             employee_Presenter.LoadAllSearchEmployee(lastname, firstname);
+
+            if (dgrid_employee.RowCount == 0) // Check if data grid is empty
+            {
+                // Data grid is empty, disable the button
+                btn_newEmployee.Enabled = true;
+            }
+            else
+            {
+                // Data grid has rows, enable the button
+                btn_newEmployee.Enabled = false;
+            }
         }
 
         private void dgrid_employee_CellClick(object sender, DataGridViewCellEventArgs e)

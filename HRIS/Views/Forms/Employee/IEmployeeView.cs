@@ -10,5 +10,6 @@ namespace HRIS.Views.Forms.Employee
     {
         void DisplayEmployee(List<Models.Employee> employees);
         void DisplayEmployeeAllDetails(List<Models.Employee> employees);
+        void DisplayEmployeeCustomView(List<object> employees);
     }
 }

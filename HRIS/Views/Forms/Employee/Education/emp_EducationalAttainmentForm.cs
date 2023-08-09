@@ -21,7 +21,7 @@ namespace HRIS.Forms.Employee
         private int PKEmployeeid;
         private readonly educationalattainment_emp_Presenter educationalattainment_Emp_Presenter;
         private DataView dataView;
-
+        
         public emp_EducationalAttainment(int PKEmployeeID)
         {
             InitializeComponent();
@@ -39,8 +39,8 @@ namespace HRIS.Forms.Employee
         }
         private void loadEducationAttainment()
         {
-            educationalattainment_Emp_Presenter.loadAttainment(dgrid_educationalattainment, PKEmployeeid);
-
+         educationalattainment_Emp_Presenter.LoadAttainment(PKEmployeeid);
+        
         }
 
         private void btn_new_Click(object sender, EventArgs e)
@@ -76,27 +76,7 @@ namespace HRIS.Forms.Employee
             educ.ShowDialog();
             loadEducationAttainment();
         }
-        private void search()
-        {
-            string searchTerm = txt_search.Text.ToLower();
-            dgrid_educationalattainment.SuspendLayout();
-
-            foreach (DataGridViewRow row in dgrid_educationalattainment.Rows)
-            {
-                bool rowVisible = false;
-
-                foreach (DataGridViewCell cell in row.Cells)
-                {
-                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(searchTerm))
-                    {
-                        rowVisible = true;
-                        break;
-                    }
-                }
-                row.Visible = rowVisible;
-            }
-            dgrid_educationalattainment.ResumeLayout();
-        }
+        
         private void btn_view_Click(object sender, EventArgs e)
         {
             var educid = dgrid_educationalattainment.SelectedRows[0].Cells[0].Value;
@@ -110,7 +90,18 @@ namespace HRIS.Forms.Employee
         {
             loadEducationAttainment();
         }
-
+        private void search()
+        {
+            string searchQuery = txt_search.Text.Trim();
+            if (string.IsNullOrEmpty(searchQuery))
+            {
+                loadEducationAttainment();
+            }
+            else
+            {
+                educationalattainment_Emp_Presenter.SearchData(searchQuery);
+            }
+        }
         private void btn_search_Click(object sender, EventArgs e)
         {
             search();
@@ -119,6 +110,11 @@ namespace HRIS.Forms.Employee
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
             search();
+        }
+
+        public void DisplayAttainmentCustom(List<object> employee_attainment)
+        {
+           dgrid_educationalattainment.DataSource = employee_attainment;
         }
     }
 }

@@ -39,13 +39,18 @@
             btn_view = new FontAwesome.Sharp.IconButton();
             dgrid_employee = new DataGridView();
             panel1 = new Panel();
-            label1 = new Label();
+            txt_totalcount = new Label();
             panel2 = new Panel();
+            panel3 = new Panel();
+            btn_inactiveEmployee = new FontAwesome.Sharp.IconButton();
+            label3 = new Label();
+            btn_userRegistration = new FontAwesome.Sharp.IconButton();
+            label2 = new Label();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgrid_employee).BeginInit();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -202,34 +207,33 @@
             dgrid_employee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_employee.ColumnHeadersHeight = 50;
             dgrid_employee.Dock = DockStyle.Fill;
-            dgrid_employee.Location = new Point(2, 0);
+            dgrid_employee.Location = new Point(5, 76);
             dgrid_employee.Name = "dgrid_employee";
             dgrid_employee.RowTemplate.Height = 25;
-            dgrid_employee.Size = new Size(1084, 542);
+            dgrid_employee.Size = new Size(919, 542);
             dgrid_employee.TabIndex = 4;
             // 
             // panel1
             // 
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(txt_totalcount);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(5, 618);
             panel1.Name = "panel1";
             panel1.Size = new Size(1086, 27);
             panel1.TabIndex = 5;
             // 
-            // label1
+            // txt_totalcount
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(5, 6);
-            label1.Name = "label1";
-            label1.Size = new Size(94, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Total record(s): 0";
+            txt_totalcount.AutoSize = true;
+            txt_totalcount.ForeColor = Color.Black;
+            txt_totalcount.Location = new Point(5, 6);
+            txt_totalcount.Name = "txt_totalcount";
+            txt_totalcount.Size = new Size(94, 15);
+            txt_totalcount.TabIndex = 0;
+            txt_totalcount.Text = "Total record(s): 0";
             // 
             // panel2
             // 
-            panel2.Controls.Add(dgrid_employee);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(5, 76);
             panel2.Name = "panel2";
@@ -237,12 +241,104 @@
             panel2.Size = new Size(1086, 542);
             panel2.TabIndex = 6;
             // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(0, 127, 152);
+            panel3.Controls.Add(btn_inactiveEmployee);
+            panel3.Controls.Add(label3);
+            panel3.Controls.Add(btn_userRegistration);
+            panel3.Controls.Add(label2);
+            panel3.Dock = DockStyle.Right;
+            panel3.Location = new Point(924, 76);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(167, 542);
+            panel3.TabIndex = 7;
+            // 
+            // btn_inactiveEmployee
+            // 
+            btn_inactiveEmployee.BackColor = Color.FromArgb(0, 127, 152);
+            btn_inactiveEmployee.Cursor = Cursors.Hand;
+            btn_inactiveEmployee.Dock = DockStyle.Top;
+            btn_inactiveEmployee.FlatAppearance.BorderSize = 0;
+            btn_inactiveEmployee.FlatStyle = FlatStyle.Flat;
+            btn_inactiveEmployee.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_inactiveEmployee.ForeColor = Color.White;
+            btn_inactiveEmployee.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_inactiveEmployee.IconColor = Color.White;
+            btn_inactiveEmployee.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_inactiveEmployee.IconSize = 20;
+            btn_inactiveEmployee.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_inactiveEmployee.Location = new Point(0, 82);
+            btn_inactiveEmployee.Margin = new Padding(4, 3, 4, 3);
+            btn_inactiveEmployee.Name = "btn_inactiveEmployee";
+            btn_inactiveEmployee.Padding = new Padding(10, 0, 0, 0);
+            btn_inactiveEmployee.Size = new Size(167, 28);
+            btn_inactiveEmployee.TabIndex = 26;
+            btn_inactiveEmployee.Tag = "In-active Employee";
+            btn_inactiveEmployee.Text = "In-active Employee";
+            btn_inactiveEmployee.TextAlign = ContentAlignment.MiddleLeft;
+            btn_inactiveEmployee.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_inactiveEmployee.UseVisualStyleBackColor = false;
+            btn_inactiveEmployee.Click += btn_inactiveEmployee_Click;
+            // 
+            // label3
+            // 
+            label3.BackColor = Color.FromArgb(86, 180, 206);
+            label3.Dock = DockStyle.Top;
+            label3.Location = new Point(0, 55);
+            label3.Name = "label3";
+            label3.Padding = new Padding(5, 0, 0, 0);
+            label3.Size = new Size(167, 27);
+            label3.TabIndex = 28;
+            label3.Text = "VIEW";
+            label3.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // btn_userRegistration
+            // 
+            btn_userRegistration.BackColor = Color.FromArgb(0, 127, 152);
+            btn_userRegistration.Cursor = Cursors.Hand;
+            btn_userRegistration.Dock = DockStyle.Top;
+            btn_userRegistration.FlatAppearance.BorderSize = 0;
+            btn_userRegistration.FlatStyle = FlatStyle.Flat;
+            btn_userRegistration.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_userRegistration.ForeColor = Color.White;
+            btn_userRegistration.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_userRegistration.IconColor = Color.White;
+            btn_userRegistration.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_userRegistration.IconSize = 20;
+            btn_userRegistration.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_userRegistration.Location = new Point(0, 27);
+            btn_userRegistration.Margin = new Padding(4, 3, 4, 3);
+            btn_userRegistration.Name = "btn_userRegistration";
+            btn_userRegistration.Padding = new Padding(10, 0, 0, 0);
+            btn_userRegistration.Size = new Size(167, 28);
+            btn_userRegistration.TabIndex = 25;
+            btn_userRegistration.Tag = "User Registration";
+            btn_userRegistration.Text = "User Registration";
+            btn_userRegistration.TextAlign = ContentAlignment.MiddleLeft;
+            btn_userRegistration.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_userRegistration.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            label2.BackColor = Color.FromArgb(86, 180, 206);
+            label2.Dock = DockStyle.Top;
+            label2.Location = new Point(0, 0);
+            label2.Name = "label2";
+            label2.Padding = new Padding(5, 0, 0, 0);
+            label2.Size = new Size(167, 27);
+            label2.TabIndex = 27;
+            label2.Text = "ACTION";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // EmployeeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(139, 215, 231);
             ClientSize = new Size(1096, 650);
+            Controls.Add(dgrid_employee);
+            Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(flowLayoutPanel2);
@@ -252,14 +348,13 @@
             Padding = new Padding(5);
             Text = "EmployeeForm";
             Load += EmployeeForm_Load;
-            Shown += EmployeeForm_Shown;
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
             flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgrid_employee).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -275,7 +370,12 @@
         private FontAwesome.Sharp.IconButton btn_view;
         private DataGridView dgrid_employee;
         private Panel panel1;
-        private Label label1;
+        private Label txt_totalcount;
         private Panel panel2;
+        private Panel panel3;
+        private FontAwesome.Sharp.IconButton btn_inactiveEmployee;
+        private FontAwesome.Sharp.IconButton btn_userRegistration;
+        private Label label2;
+        private Label label3;
     }
 }

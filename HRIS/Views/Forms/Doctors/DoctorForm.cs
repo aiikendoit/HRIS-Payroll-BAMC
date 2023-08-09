@@ -90,5 +90,10 @@ namespace HRIS.Forms.Doctors
         {
             changeDgridSize();
         }
+
+        public void DisplayEmployeeCustomView(List<object> employees)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

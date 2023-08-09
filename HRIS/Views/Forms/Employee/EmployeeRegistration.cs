@@ -38,6 +38,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using Timer = System.Windows.Forms.Timer;
@@ -66,6 +67,7 @@ namespace HRIS.Forms.Employee
         private int employeeid;
         string? address1, address2, address3;
         int regionSelectedValue, provinceSelectedValue, towncitySelectedValue, barangaySelectedValue, zipcodeSelectedValue;
+        public bool isUpdate = false;
 
         public EmployeeRegistration(string headername)
         {
@@ -456,7 +458,17 @@ namespace HRIS.Forms.Employee
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            if (btn_save.Text == "Save")
+            if (isUpdate)
+            {
+                if (UniversalStatic.IsEmpty(txt_idno)) return;
+                if (UniversalStatic.IsEmpty(txt_lastname)) return;
+                if (UniversalStatic.IsEmpty(txt_firstname)) return;
+                if (UniversalStatic.IsEmpty(txt_completeaddress)) return;
+                if (txt_bank.Text != "Not Applicable") { if (UniversalStatic.IsEmpty(txt_accountnumber)) return; }
+                updateEmployee();
+
+            }
+            else
             {
                 if (UniversalStatic.IsEmpty(txt_idno)) return;
                 if (UniversalStatic.IsEmpty(txt_lastname)) return;
@@ -465,28 +477,48 @@ namespace HRIS.Forms.Employee
                 if (txt_bank.Text != "Not Applicable") { if (UniversalStatic.IsEmpty(txt_accountnumber)) return; }
                 addEmployee();
             }
-            if (btn_save.Text == "Update")
-            {
-                if (UniversalStatic.IsEmpty(txt_idno)) return;
-                if (UniversalStatic.IsEmpty(txt_lastname)) return;
-                if (UniversalStatic.IsEmpty(txt_firstname)) return;
-                if (UniversalStatic.IsEmpty(txt_completeaddress)) return;
-                if (txt_bank.Text != "Not Applicable") { if (UniversalStatic.IsEmpty(txt_accountnumber)) return; }
-                updateEmployee();
-            }
 
         }
         public void putdata(int employeeid, string position, string department)
         {
-            employee_Presenter.LoadEmployeewithWhere(employeeid);
-            txt_idno.Enabled = false;
-            txt_headerPositionDepartment.Text = position + " | " + department;
+            if (isUpdate)
+            {
+                //Edit
+                employee_Presenter.LoadEmployeewithWhere(employeeid);
+                txt_idno.Enabled = false;
+                txt_position.Text = position;
+                txt_department.Text = department;
+            }
+            else
+            {
+                //view
+                employee_Presenter.LoadEmployeewithWhere(employeeid);
+                txt_idno.Enabled = false;
+                txt_position.Text = position;
+                txt_department.Text = department;
+                //Disable control
+                btn_save.Visible = false;
+                btn_cancel.Visible = false;
+                foreach (Control control in this.panel_basicinfo.Controls)
+                {
+                    if (!(control is Label) && !(control is Button))
+                    {
+                        control.Enabled = false;
+                    }
+                }
+            }
+
+        }
+        public void putDataNewEmployee(string lastname, string firtname)
+        {
+            txt_lastname.Text = lastname;
+            txt_firstname.Text = firtname;
         }
         public void putdataDoctor(int employeeid, string position, string department)
         {
             employee_Presenter.LoadEmployeewithWhere(employeeid);
             txt_idno.Enabled = false;
-            txt_headerPositionDepartment.Text = position + " | " + department;
+            txt_position.Text = position + " | " + department;
         }
 
         public void DisplayEmployee(List<Models.Employee> employees)
@@ -681,7 +713,7 @@ namespace HRIS.Forms.Employee
                 if (employees != null && employees.Count > 0)
                 {
                     Models.Employee employee = employees[0];
-                   // Navigation
+                    // Navigation
                     Barangay? barangay = employee.FkBarangayNavigation;
                     txt_employeeid.Text = employee.Idno;
                     txt_firstname.Text = employee.Firstname;
@@ -745,7 +777,7 @@ namespace HRIS.Forms.Employee
                         mdname = md.ToString() + ". ";
                     }
                     txt_Headercompletename.Text = employee?.Firstname + " " + mdname + employee?.Lastname;
-                    employeeid = employee.PkEmployee;
+                    employeeid = employee?.PkEmployee ?? 0;
                     btn_save.Text = "Update";
                     btn_cancel.Select();
                 }
@@ -765,5 +797,9 @@ namespace HRIS.Forms.Employee
             this.Controls.Add(dataGridView);
         }
 
+        public void DisplayEmployeeCustomView(List<object> employees)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

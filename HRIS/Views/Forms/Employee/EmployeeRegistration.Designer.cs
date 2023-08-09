@@ -118,12 +118,13 @@
             panel2 = new Panel();
             txt_employeeid = new Label();
             picture_avatar = new UserControl.JPCircularPictureBox();
-            txt_headerPositionDepartment = new Label();
+            txt_position = new Label();
             txt_Headercompletename = new Label();
             panel3 = new Panel();
             MainPanel = new Panel();
             panel4 = new Panel();
             openFileDialog1 = new OpenFileDialog();
+            txt_department = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btn_sidebardrawer).BeginInit();
             panelmenu.SuspendLayout();
@@ -1312,7 +1313,8 @@
             // 
             panel2.Controls.Add(txt_employeeid);
             panel2.Controls.Add(picture_avatar);
-            panel2.Controls.Add(txt_headerPositionDepartment);
+            panel2.Controls.Add(txt_department);
+            panel2.Controls.Add(txt_position);
             panel2.Controls.Add(txt_Headercompletename);
             panel2.Controls.Add(panel3);
             panel2.Dock = DockStyle.Top;
@@ -1325,7 +1327,7 @@
             // 
             txt_employeeid.AutoSize = true;
             txt_employeeid.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_employeeid.Location = new Point(84, 37);
+            txt_employeeid.Location = new Point(65, 26);
             txt_employeeid.Name = "txt_employeeid";
             txt_employeeid.Size = new Size(73, 15);
             txt_employeeid.TabIndex = 6;
@@ -1342,26 +1344,26 @@
             picture_avatar.Image = (Image)resources.GetObject("picture_avatar.Image");
             picture_avatar.Location = new Point(4, 5);
             picture_avatar.Name = "picture_avatar";
-            picture_avatar.Size = new Size(70, 70);
+            picture_avatar.Size = new Size(57, 57);
             picture_avatar.SizeMode = PictureBoxSizeMode.StretchImage;
             picture_avatar.TabIndex = 5;
             picture_avatar.TabStop = false;
             // 
-            // txt_headerPositionDepartment
+            // txt_position
             // 
-            txt_headerPositionDepartment.AutoSize = true;
-            txt_headerPositionDepartment.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_headerPositionDepartment.Location = new Point(84, 54);
-            txt_headerPositionDepartment.Name = "txt_headerPositionDepartment";
-            txt_headerPositionDepartment.Size = new Size(70, 15);
-            txt_headerPositionDepartment.TabIndex = 3;
-            txt_headerPositionDepartment.Text = "Department";
+            txt_position.AutoSize = true;
+            txt_position.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_position.Location = new Point(65, 42);
+            txt_position.Name = "txt_position";
+            txt_position.Size = new Size(70, 15);
+            txt_position.TabIndex = 3;
+            txt_position.Text = "Department";
             // 
             // txt_Headercompletename
             // 
             txt_Headercompletename.AutoSize = true;
             txt_Headercompletename.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            txt_Headercompletename.Location = new Point(82, 10);
+            txt_Headercompletename.Location = new Point(65, 2);
             txt_Headercompletename.Name = "txt_Headercompletename";
             txt_Headercompletename.Size = new Size(64, 25);
             txt_Headercompletename.TabIndex = 1;
@@ -1397,6 +1399,16 @@
             // openFileDialog1
             // 
             openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // txt_department
+            // 
+            txt_department.AutoSize = true;
+            txt_department.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_department.Location = new Point(65, 58);
+            txt_department.Name = "txt_department";
+            txt_department.Size = new Size(70, 15);
+            txt_department.TabIndex = 3;
+            txt_department.Text = "Department";
             // 
             // EmployeeRegistration
             // 
@@ -1439,7 +1451,7 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
         private Panel panel2;
-        private Label txt_headerPositionDepartment;
+        private Label txt_position;
         private Label txt_Headercompletename;
         private Panel panel3;
         private TextBox txt_extensionname;
@@ -1522,5 +1534,6 @@
         private Label txt_employeeid;
         private TextBox txt_rfid;
         private Label label1;
+        private Label txt_department;
     }
 }

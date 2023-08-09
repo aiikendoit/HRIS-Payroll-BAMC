@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace HRIS.Presenter
 {
@@ -15,11 +16,13 @@ namespace HRIS.Presenter
         private readonly I_emp_EducationalAttainmentView _view;
         private readonly HrisContext _context;
         private List<Educationalattainment> educationalattainmentsData;
+        private List<object> attainmentList;
         public educationalattainment_emp_Presenter(I_emp_EducationalAttainmentView view)
         {
             _view = view;
             _context = new HrisContext();
             educationalattainmentsData = new List<Educationalattainment>(); 
+            attainmentList = new List<object>();
         }
         public void LoadEducAttainment(int pkeducID)
         {
@@ -29,12 +32,12 @@ namespace HRIS.Presenter
             educationalattainmentsData = p;
             _view.DisplayEmployeeEducAttainment(p);
         }
-        public void loadAttainment(DataGridView dataGridView, int PKEmployeeID)
+        public void LoadAttainment(int PKEmployeeID)
         {
             var query = from educ in _context.Educationalattainments
                         join educlevel in _context.Educationallevels on educ.FkEducationallevel equals educlevel.PkEducationallevel
                         join degreetype in _context.Degreetypes on educ.FkDegreetype equals degreetype.PkDegreetype
-                       where educ.FkEmployee == PKEmployeeID
+                        where educ.FkEmployee == PKEmployeeID
                         orderby educ.Yeargraduated descending
                         select new
                         {
@@ -45,8 +48,12 @@ namespace HRIS.Presenter
                             EducationalDegree = educ.Educationaldegree,
                             Degreetype = degreetype.Description,
                         };
-            dataGridView.DataSource = query.ToList();
+
+            _view.DisplayAttainmentCustom(query.ToList<object>());
+            attainmentList = query.ToList<object>();
         }
+
+
         public void AddEducAttainment(Educationalattainment educationalattainment)
         {
             try
@@ -60,7 +67,7 @@ namespace HRIS.Presenter
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.InnerException.Message.ToString());
+                MessageBox.Show(ex.Message.ToString());
             }
         }
         public void UpdateEducAttainment(Educationalattainment educationalattainment)
@@ -77,11 +84,14 @@ namespace HRIS.Presenter
         }
         public void SearchData(string searchQuery)
         {
-            var searchResults = educationalattainmentsData
-                 .Where(b => b.PkEducationalattainment.ToString().Contains(searchQuery)
-                )
-                 .ToList();
-            _view.DisplayEmployeeEducAttainment(searchResults);
+            var searchResults = attainmentList
+            .Where(item =>
+            (item.GetType().GetProperty("EducationalAttainment")?.GetValue(item)?.ToString()?.IndexOf(searchQuery, StringComparison.OrdinalIgnoreCase) >= 0) ||
+            (item.GetType().GetProperty("SchoolAttended")?.GetValue(item)?.ToString()?.IndexOf(searchQuery, StringComparison.OrdinalIgnoreCase) >= 0) ||
+            (item.GetType().GetProperty("YearGraduated")?.GetValue(item)?.ToString()?.IndexOf(searchQuery, StringComparison.OrdinalIgnoreCase) >= 0)
+            )
+            .ToList();
+            _view.DisplayAttainmentCustom(searchResults.ToList());
         }
     }
 }

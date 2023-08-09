@@ -162,5 +162,10 @@ namespace HRIS.Forms.Employee.Education
         {
             this.Close();
         }
+
+        public void DisplayAttainmentCustom(List<object> employee_attainment)
+        {
+            
+        }
     }
 }

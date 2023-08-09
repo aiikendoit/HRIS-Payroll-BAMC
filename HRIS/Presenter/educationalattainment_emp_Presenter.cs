@@ -67,7 +67,7 @@ namespace HRIS.Presenter
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.InnerException.Message.ToString());
+                MessageBox.Show(ex.Message.ToString());
             }
         }
         public void UpdateEducAttainment(Educationalattainment educationalattainment)

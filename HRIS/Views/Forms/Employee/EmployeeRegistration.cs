@@ -777,7 +777,7 @@ namespace HRIS.Forms.Employee
                         mdname = md.ToString() + ". ";
                     }
                     txt_Headercompletename.Text = employee?.Firstname + " " + mdname + employee?.Lastname;
-                    employeeid = employee.PkEmployee;
+                    employeeid = employee?.PkEmployee ?? 0;
                     btn_save.Text = "Update";
                     btn_cancel.Select();
                 }

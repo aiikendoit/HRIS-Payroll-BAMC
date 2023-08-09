@@ -79,11 +79,11 @@ namespace HRIS.Forms.Employee
             string docname = "Employee";
             string? position = dgrid_employee.SelectedRows[0].Cells["Position"].Value?.ToString() ?? string.Empty;
             string? department = dgrid_employee.SelectedRows[0].Cells["Department"].Value?.ToString() ?? string.Empty;
-            int selectedEmployee = (int)dgrid_employee.SelectedRows[0].Cells["ID"].Value;
+            int PKEmployeeID = (int)dgrid_employee.SelectedRows[0].Cells["ID"].Value;
 
             var emp = new EmployeeRegistration(docname);
             emp.loadallCombobox();
-            emp.putdata(selectedEmployee,position,department);
+            emp.putdata(PKEmployeeID, position,department);
             emp.ShowDialog(this);
             loademployee();
 
@@ -105,25 +105,30 @@ namespace HRIS.Forms.Employee
         }
         private void searchData()
         {
+            string searchTerm = txt_search.Text.ToLower();
+            dgrid_employee.SuspendLayout();
 
+            foreach (DataGridViewRow row in dgrid_employee.Rows)
+            {
+                bool rowVisible = false;
+
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(searchTerm))
+                    {
+                        rowVisible = true;
+                        break;
+                    }
+                }
+                row.Visible = rowVisible;
+            }
+            dgrid_employee.ResumeLayout();
         }
 
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
-            string searchQuery = txt_search.Text.Trim();
-            var employees = (List<Models.Employee>)dgrid_employee.DataSource;
-            if (string.IsNullOrEmpty(searchQuery))
-            {
-                loademployee();
-            }
-            else
-            {
-                var searchResults = employees?.Where(emp =>
-                 emp.Idno.Contains(searchQuery, StringComparison.OrdinalIgnoreCase) ||
-                 emp.Lastname.Contains(searchQuery, StringComparison.OrdinalIgnoreCase)).ToList();
-                dgrid_employee.DataSource = searchResults;
-            }
 
+            searchData();
 
         }
 

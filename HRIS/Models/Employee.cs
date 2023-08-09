@@ -87,7 +87,13 @@ public partial class Employee
 
     public string? Employeetype { get; set; }
 
-    public virtual Educationalattainment? Educationalattainment { get; set; }
+    public bool? IsDoctor { get; set; }
+
+    public bool? IsOutsource { get; set; }
+
+    public bool? IsBamcemployee { get; set; }
+
+    public virtual ICollection<Educationalattainment> Educationalattainments { get; set; } = new List<Educationalattainment>();
 
     public virtual Employeedependent? Employeedependent { get; set; }
 

@@ -50,7 +50,9 @@ namespace HRIS
             btn_leaves = new FontAwesome.Sharp.IconButton();
             btn_dutyschedule = new FontAwesome.Sharp.IconButton();
             btn_doctors = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             btn_employee = new FontAwesome.Sharp.IconButton();
+            btn_hiring = new FontAwesome.Sharp.IconButton();
             label1 = new Label();
             btn_dashboard = new FontAwesome.Sharp.IconButton();
             panelLogo = new Panel();
@@ -77,7 +79,6 @@ namespace HRIS
             label5 = new Label();
             iconSplitButton1 = new FontAwesome.Sharp.IconSplitButton();
             MainPanel = new Panel();
-            btn_hiring = new FontAwesome.Sharp.IconButton();
             panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)jpCircularPictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)icon_home).BeginInit();
@@ -200,6 +201,7 @@ namespace HRIS
             panel1.Controls.Add(btn_leaves);
             panel1.Controls.Add(btn_dutyschedule);
             panel1.Controls.Add(btn_doctors);
+            panel1.Controls.Add(iconButton1);
             panel1.Controls.Add(btn_employee);
             panel1.Controls.Add(btn_hiring);
             panel1.Controls.Add(label1);
@@ -223,7 +225,7 @@ namespace HRIS
             btn_audittrail.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_audittrail.IconSize = 25;
             btn_audittrail.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_audittrail.Location = new Point(0, 466);
+            btn_audittrail.Location = new Point(0, 501);
             btn_audittrail.Name = "btn_audittrail";
             btn_audittrail.Padding = new Padding(10, 0, 0, 0);
             btn_audittrail.Size = new Size(199, 35);
@@ -248,7 +250,7 @@ namespace HRIS
             btn_reportmanager.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_reportmanager.IconSize = 25;
             btn_reportmanager.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_reportmanager.Location = new Point(0, 431);
+            btn_reportmanager.Location = new Point(0, 466);
             btn_reportmanager.Name = "btn_reportmanager";
             btn_reportmanager.Padding = new Padding(10, 0, 0, 0);
             btn_reportmanager.Size = new Size(199, 35);
@@ -273,7 +275,7 @@ namespace HRIS
             btn_maintenance.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_maintenance.IconSize = 25;
             btn_maintenance.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_maintenance.Location = new Point(0, 396);
+            btn_maintenance.Location = new Point(0, 431);
             btn_maintenance.Name = "btn_maintenance";
             btn_maintenance.Padding = new Padding(10, 0, 0, 0);
             btn_maintenance.Size = new Size(199, 35);
@@ -289,7 +291,7 @@ namespace HRIS
             // 
             label2.BackColor = Color.FromArgb(86, 180, 206);
             label2.Dock = DockStyle.Top;
-            label2.Location = new Point(0, 369);
+            label2.Location = new Point(0, 404);
             label2.Name = "label2";
             label2.Padding = new Padding(5, 0, 0, 0);
             label2.Size = new Size(199, 27);
@@ -310,7 +312,7 @@ namespace HRIS
             btn_attendance.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_attendance.IconSize = 25;
             btn_attendance.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_attendance.Location = new Point(0, 334);
+            btn_attendance.Location = new Point(0, 369);
             btn_attendance.Name = "btn_attendance";
             btn_attendance.Padding = new Padding(10, 0, 0, 0);
             btn_attendance.Size = new Size(199, 35);
@@ -335,7 +337,7 @@ namespace HRIS
             btn_training.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_training.IconSize = 25;
             btn_training.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_training.Location = new Point(0, 299);
+            btn_training.Location = new Point(0, 334);
             btn_training.Name = "btn_training";
             btn_training.Padding = new Padding(10, 0, 0, 0);
             btn_training.Size = new Size(199, 35);
@@ -360,7 +362,7 @@ namespace HRIS
             btn_seminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_seminar.IconSize = 25;
             btn_seminar.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_seminar.Location = new Point(0, 264);
+            btn_seminar.Location = new Point(0, 299);
             btn_seminar.Name = "btn_seminar";
             btn_seminar.Padding = new Padding(10, 0, 0, 0);
             btn_seminar.Size = new Size(199, 35);
@@ -376,7 +378,7 @@ namespace HRIS
             // 
             label15.BackColor = Color.FromArgb(86, 180, 206);
             label15.Dock = DockStyle.Top;
-            label15.Location = new Point(0, 237);
+            label15.Location = new Point(0, 272);
             label15.Name = "label15";
             label15.Padding = new Padding(5, 0, 0, 0);
             label15.Size = new Size(199, 27);
@@ -397,7 +399,7 @@ namespace HRIS
             btn_leaves.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_leaves.IconSize = 25;
             btn_leaves.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_leaves.Location = new Point(0, 202);
+            btn_leaves.Location = new Point(0, 237);
             btn_leaves.Name = "btn_leaves";
             btn_leaves.Padding = new Padding(10, 0, 0, 0);
             btn_leaves.Size = new Size(199, 35);
@@ -422,7 +424,7 @@ namespace HRIS
             btn_dutyschedule.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_dutyschedule.IconSize = 25;
             btn_dutyschedule.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_dutyschedule.Location = new Point(0, 167);
+            btn_dutyschedule.Location = new Point(0, 202);
             btn_dutyschedule.Name = "btn_dutyschedule";
             btn_dutyschedule.Padding = new Padding(10, 0, 0, 0);
             btn_dutyschedule.Size = new Size(199, 35);
@@ -447,7 +449,7 @@ namespace HRIS
             btn_doctors.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_doctors.IconSize = 25;
             btn_doctors.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_doctors.Location = new Point(0, 132);
+            btn_doctors.Location = new Point(0, 167);
             btn_doctors.Name = "btn_doctors";
             btn_doctors.Padding = new Padding(10, 0, 0, 0);
             btn_doctors.Size = new Size(199, 35);
@@ -458,6 +460,30 @@ namespace HRIS
             btn_doctors.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_doctors.UseVisualStyleBackColor = false;
             btn_doctors.Click += btn_doctors_Click;
+            // 
+            // iconButton1
+            // 
+            iconButton1.BackColor = Color.FromArgb(0, 127, 152);
+            iconButton1.Cursor = Cursors.Hand;
+            iconButton1.Dock = DockStyle.Top;
+            iconButton1.FlatAppearance.BorderSize = 0;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.User;
+            iconButton1.IconColor = Color.White;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.IconSize = 25;
+            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton1.Location = new Point(0, 132);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Padding = new Padding(10, 0, 0, 0);
+            iconButton1.Size = new Size(199, 35);
+            iconButton1.TabIndex = 33;
+            iconButton1.Tag = "Outsource";
+            iconButton1.Text = "Outsource";
+            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
+            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton1.UseVisualStyleBackColor = false;
             // 
             // btn_employee
             // 
@@ -476,12 +502,37 @@ namespace HRIS
             btn_employee.Padding = new Padding(10, 0, 0, 0);
             btn_employee.Size = new Size(199, 35);
             btn_employee.TabIndex = 19;
-            btn_employee.Tag = "Employees";
-            btn_employee.Text = "Employees";
+            btn_employee.Tag = "Employee";
+            btn_employee.Text = "Employee";
             btn_employee.TextAlign = ContentAlignment.MiddleLeft;
             btn_employee.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_employee.UseVisualStyleBackColor = false;
             btn_employee.Click += btn_employee_Click;
+            // 
+            // btn_hiring
+            // 
+            btn_hiring.BackColor = Color.FromArgb(0, 127, 152);
+            btn_hiring.Cursor = Cursors.Hand;
+            btn_hiring.Dock = DockStyle.Top;
+            btn_hiring.FlatAppearance.BorderSize = 0;
+            btn_hiring.FlatStyle = FlatStyle.Flat;
+            btn_hiring.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_hiring.IconChar = FontAwesome.Sharp.IconChar.Bullhorn;
+            btn_hiring.IconColor = Color.White;
+            btn_hiring.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_hiring.IconSize = 25;
+            btn_hiring.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_hiring.Location = new Point(0, 62);
+            btn_hiring.Name = "btn_hiring";
+            btn_hiring.Padding = new Padding(10, 0, 0, 0);
+            btn_hiring.Size = new Size(199, 35);
+            btn_hiring.TabIndex = 32;
+            btn_hiring.Tag = "Hiring";
+            btn_hiring.Text = "Hiring";
+            btn_hiring.TextAlign = ContentAlignment.MiddleLeft;
+            btn_hiring.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_hiring.UseVisualStyleBackColor = false;
+            btn_hiring.Click += btn_hiring_Click;
             // 
             // label1
             // 
@@ -790,31 +841,6 @@ namespace HRIS
             MainPanel.Size = new Size(847, 513);
             MainPanel.TabIndex = 3;
             // 
-            // btn_hiring
-            // 
-            btn_hiring.BackColor = Color.FromArgb(0, 127, 152);
-            btn_hiring.Cursor = Cursors.Hand;
-            btn_hiring.Dock = DockStyle.Top;
-            btn_hiring.FlatAppearance.BorderSize = 0;
-            btn_hiring.FlatStyle = FlatStyle.Flat;
-            btn_hiring.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_hiring.IconChar = FontAwesome.Sharp.IconChar.Bullhorn;
-            btn_hiring.IconColor = Color.White;
-            btn_hiring.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_hiring.IconSize = 25;
-            btn_hiring.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_hiring.Location = new Point(0, 62);
-            btn_hiring.Name = "btn_hiring";
-            btn_hiring.Padding = new Padding(10, 0, 0, 0);
-            btn_hiring.Size = new Size(199, 35);
-            btn_hiring.TabIndex = 32;
-            btn_hiring.Tag = "Hiring";
-            btn_hiring.Text = "Hiring";
-            btn_hiring.TextAlign = ContentAlignment.MiddleLeft;
-            btn_hiring.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_hiring.UseVisualStyleBackColor = false;
-            btn_hiring.Click += btn_hiring_Click;
-            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -900,5 +926,6 @@ namespace HRIS
         private FontAwesome.Sharp.IconButton btn_seminar;
         private Label label15;
         private FontAwesome.Sharp.IconButton btn_hiring;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

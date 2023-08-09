@@ -11,9 +11,9 @@ public partial class Educationalattainment
 
     public int? FkEmployee { get; set; }
 
-    public DateTime? Schoolattended { get; set; }
+    public string? Schoolattended { get; set; }
 
-    public string? Yeargraduated { get; set; }
+    public DateTime Yeargraduated { get; set; }
 
     public string? Educationaldegree { get; set; }
 
@@ -21,11 +21,15 @@ public partial class Educationalattainment
 
     public DateTime? Createddate { get; set; }
 
-    public int? Createdby { get; set; }
+    public string? Createdby { get; set; }
+
+    public int? FkSystemUser { get; set; }
 
     public virtual Degreetype? FkDegreetypeNavigation { get; set; }
 
-    public virtual Employee PkEducationalattainment1 { get; set; } = null!;
+    public virtual Educationallevel? FkEducationallevelNavigation { get; set; }
 
-    public virtual Educationallevel PkEducationalattainmentNavigation { get; set; } = null!;
+    public virtual Employee? FkEmployeeNavigation { get; set; }
+
+    public virtual SystemUser? FkSystemUserNavigation { get; set; }
 }

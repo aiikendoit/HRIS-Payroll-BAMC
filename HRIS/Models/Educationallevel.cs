@@ -17,7 +17,7 @@ public partial class Educationallevel
 
     public int? FkSystemUser { get; set; }
 
-    public virtual Educationalattainment? Educationalattainment { get; set; }
+    public virtual ICollection<Educationalattainment> Educationalattainments { get; set; } = new List<Educationalattainment>();
 
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 

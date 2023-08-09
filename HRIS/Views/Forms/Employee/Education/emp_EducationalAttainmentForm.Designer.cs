@@ -1,6 +1,6 @@
-﻿namespace HRIS.Views.Forms.Maintenance.WageFactor
+﻿namespace HRIS.Forms.Employee
 {
-    partial class WageFactorForm
+    partial class emp_EducationalAttainment
     {
         /// <summary>
         /// Required designer variable.
@@ -29,49 +29,28 @@
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WageFactorForm));
-            dgrid_wagefactor = new DataGridView();
             flowLayoutPanel2 = new FlowLayoutPanel();
             btn_new = new FontAwesome.Sharp.IconButton();
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
-            label2 = new Label();
-            txt_totalcount = new Label();
-            panel1 = new Panel();
-            ID = new DataGridViewTextBoxColumn();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             txt_search = new TextBox();
             btn_search = new FontAwesome.Sharp.IconButton();
             btn_refresh = new FontAwesome.Sharp.IconButton();
-            pictureBox1 = new PictureBox();
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            dgrid_educationalattainment = new DataGridView();
+            panel1 = new Panel();
+            txt_totalcount = new Label();
             panel2 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)dgrid_wagefactor).BeginInit();
+            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            label2 = new Label();
+            ID = new DataGridViewTextBoxColumn();
             flowLayoutPanel2.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgrid_educationalattainment).BeginInit();
+            panel1.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // dgrid_wagefactor
-            // 
-            dgrid_wagefactor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.IndianRed;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgrid_wagefactor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgrid_wagefactor.ColumnHeadersHeight = 50;
-            dgrid_wagefactor.Dock = DockStyle.Fill;
-            dgrid_wagefactor.Location = new Point(0, 109);
-            dgrid_wagefactor.Name = "dgrid_wagefactor";
-            dgrid_wagefactor.RowTemplate.Height = 25;
-            dgrid_wagefactor.Size = new Size(623, 268);
-            dgrid_wagefactor.TabIndex = 48;
-            dgrid_wagefactor.CellFormatting += dgrid_wagefactor_CellFormatting;
             // 
             // flowLayoutPanel2
             // 
@@ -79,11 +58,11 @@
             flowLayoutPanel2.Controls.Add(btn_edit);
             flowLayoutPanel2.Controls.Add(btn_view);
             flowLayoutPanel2.Dock = DockStyle.Top;
-            flowLayoutPanel2.Location = new Point(0, 72);
+            flowLayoutPanel2.Location = new Point(0, 75);
             flowLayoutPanel2.Margin = new Padding(0);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(623, 37);
-            flowLayoutPanel2.TabIndex = 47;
+            flowLayoutPanel2.Size = new Size(800, 36);
+            flowLayoutPanel2.TabIndex = 7;
             // 
             // btn_new
             // 
@@ -95,8 +74,8 @@
             btn_new.IconColor = Color.White;
             btn_new.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_new.IconSize = 20;
-            btn_new.Location = new Point(0, 3);
-            btn_new.Margin = new Padding(0, 3, 1, 3);
+            btn_new.Location = new Point(3, 3);
+            btn_new.Margin = new Padding(3, 3, 1, 3);
             btn_new.Name = "btn_new";
             btn_new.Size = new Size(73, 30);
             btn_new.TabIndex = 4;
@@ -116,7 +95,7 @@
             btn_edit.IconColor = Color.White;
             btn_edit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_edit.IconSize = 20;
-            btn_edit.Location = new Point(75, 3);
+            btn_edit.Location = new Point(78, 3);
             btn_edit.Margin = new Padding(1, 3, 1, 3);
             btn_edit.Name = "btn_edit";
             btn_edit.Size = new Size(73, 30);
@@ -137,7 +116,7 @@
             btn_view.IconColor = Color.White;
             btn_view.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_view.IconSize = 20;
-            btn_view.Location = new Point(150, 3);
+            btn_view.Location = new Point(153, 3);
             btn_view.Margin = new Padding(1, 3, 1, 3);
             btn_view.Name = "btn_view";
             btn_view.Size = new Size(73, 30);
@@ -148,46 +127,24 @@
             btn_view.UseVisualStyleBackColor = false;
             btn_view.Click += btn_view_Click;
             // 
-            // label2
+            // flowLayoutPanel1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(27, 2);
-            label2.Name = "label2";
-            label2.Size = new Size(140, 30);
-            label2.TabIndex = 2;
-            label2.Text = "Wage factor";
-            label2.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // txt_totalcount
-            // 
-            txt_totalcount.AutoSize = true;
-            txt_totalcount.ForeColor = Color.Black;
-            txt_totalcount.Location = new Point(5, 6);
-            txt_totalcount.Name = "txt_totalcount";
-            txt_totalcount.Size = new Size(94, 15);
-            txt_totalcount.TabIndex = 0;
-            txt_totalcount.Text = "Total record(s): 0";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(txt_totalcount);
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 377);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(623, 27);
-            panel1.TabIndex = 49;
-            // 
-            // ID
-            // 
-            ID.HeaderText = "ID";
-            ID.Name = "ID";
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.Controls.Add(txt_search);
+            flowLayoutPanel1.Controls.Add(btn_search);
+            flowLayoutPanel1.Controls.Add(btn_refresh);
+            flowLayoutPanel1.Dock = DockStyle.Top;
+            flowLayoutPanel1.Location = new Point(0, 40);
+            flowLayoutPanel1.Margin = new Padding(0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(800, 35);
+            flowLayoutPanel1.TabIndex = 6;
             // 
             // txt_search
             // 
             txt_search.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_search.Location = new Point(0, 3);
-            txt_search.Margin = new Padding(0, 3, 1, 3);
+            txt_search.Location = new Point(3, 3);
+            txt_search.Margin = new Padding(3, 3, 1, 3);
             txt_search.Name = "txt_search";
             txt_search.PlaceholderText = " Search";
             txt_search.Size = new Size(338, 29);
@@ -204,7 +161,7 @@
             btn_search.IconColor = Color.White;
             btn_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_search.IconSize = 20;
-            btn_search.Location = new Point(340, 3);
+            btn_search.Location = new Point(343, 3);
             btn_search.Margin = new Padding(1, 3, 1, 3);
             btn_search.Name = "btn_search";
             btn_search.Size = new Size(77, 29);
@@ -225,7 +182,7 @@
             btn_refresh.IconColor = Color.White;
             btn_refresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_refresh.IconSize = 20;
-            btn_refresh.Location = new Point(419, 3);
+            btn_refresh.Location = new Point(422, 3);
             btn_refresh.Margin = new Padding(1, 3, 1, 3);
             btn_refresh.Name = "btn_refresh";
             btn_refresh.Size = new Size(77, 29);
@@ -236,82 +193,126 @@
             btn_refresh.UseVisualStyleBackColor = false;
             btn_refresh.Click += btn_refresh_Click;
             // 
-            // pictureBox1
+            // dgrid_educationalattainment
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(2, 6);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Padding = new Padding(20);
-            pictureBox1.Size = new Size(25, 25);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
+            dgrid_educationalattainment.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.IndianRed;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgrid_educationalattainment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgrid_educationalattainment.ColumnHeadersHeight = 50;
+            dgrid_educationalattainment.Dock = DockStyle.Fill;
+            dgrid_educationalattainment.Location = new Point(0, 111);
+            dgrid_educationalattainment.Name = "dgrid_educationalattainment";
+            dgrid_educationalattainment.RowTemplate.Height = 25;
+            dgrid_educationalattainment.Size = new Size(800, 312);
+            dgrid_educationalattainment.TabIndex = 8;
+            dgrid_educationalattainment.CellFormatting += dgrid_educationalattainment_CellFormatting;
             // 
-            // flowLayoutPanel1
+            // panel1
             // 
-            flowLayoutPanel1.AutoSize = true;
-            flowLayoutPanel1.Controls.Add(txt_search);
-            flowLayoutPanel1.Controls.Add(btn_search);
-            flowLayoutPanel1.Controls.Add(btn_refresh);
-            flowLayoutPanel1.Dock = DockStyle.Top;
-            flowLayoutPanel1.Location = new Point(0, 37);
-            flowLayoutPanel1.Margin = new Padding(0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(623, 35);
-            flowLayoutPanel1.TabIndex = 46;
+            panel1.Controls.Add(txt_totalcount);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(0, 423);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(800, 27);
+            panel1.TabIndex = 9;
+            // 
+            // txt_totalcount
+            // 
+            txt_totalcount.AutoSize = true;
+            txt_totalcount.ForeColor = Color.Black;
+            txt_totalcount.Location = new Point(5, 6);
+            txt_totalcount.Name = "txt_totalcount";
+            txt_totalcount.Size = new Size(94, 15);
+            txt_totalcount.TabIndex = 0;
+            txt_totalcount.Text = "Total record(s): 0";
             // 
             // panel2
             // 
-            panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(iconPictureBox1);
             panel2.Controls.Add(label2);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(623, 37);
-            panel2.TabIndex = 50;
+            panel2.Size = new Size(800, 40);
+            panel2.TabIndex = 10;
             // 
-            // WageFactorForm
+            // iconPictureBox1
+            // 
+            iconPictureBox1.BackColor = Color.White;
+            iconPictureBox1.ForeColor = SystemColors.ControlText;
+            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserGraduate;
+            iconPictureBox1.IconColor = SystemColors.ControlText;
+            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox1.Location = new Point(11, 5);
+            iconPictureBox1.Name = "iconPictureBox1";
+            iconPictureBox1.Size = new Size(32, 32);
+            iconPictureBox1.TabIndex = 3;
+            iconPictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(49, 5);
+            label2.Name = "label2";
+            label2.Size = new Size(280, 32);
+            label2.TabIndex = 2;
+            label2.Text = "Educational attainment";
+            // 
+            // ID
+            // 
+            ID.HeaderText = "ID";
+            ID.Name = "ID";
+            // 
+            // emp_EducationalAttainment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(623, 404);
-            Controls.Add(dgrid_wagefactor);
+            ClientSize = new Size(800, 450);
+            Controls.Add(dgrid_educationalattainment);
             Controls.Add(flowLayoutPanel2);
-            Controls.Add(panel1);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel2);
-            Name = "WageFactorForm";
-            Text = "WageFactorForm";
-            ((System.ComponentModel.ISupportInitialize)dgrid_wagefactor).EndInit();
+            Controls.Add(panel1);
+            Name = "emp_EducationalAttainment";
+            Text = "empEducationalAttainment";
+            Load += emp_EducationalAttainment_Load;
             flowLayoutPanel2.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgrid_educationalattainment).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dgrid_wagefactor;
         private FlowLayoutPanel flowLayoutPanel2;
         private FontAwesome.Sharp.IconButton btn_new;
         private FontAwesome.Sharp.IconButton btn_edit;
         private FontAwesome.Sharp.IconButton btn_view;
-        private Label label2;
-        private Label txt_totalcount;
-        private Panel panel1;
-        private DataGridViewTextBoxColumn ID;
+        private FlowLayoutPanel flowLayoutPanel1;
         private TextBox txt_search;
         private FontAwesome.Sharp.IconButton btn_search;
         private FontAwesome.Sharp.IconButton btn_refresh;
-        private PictureBox pictureBox1;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private DataGridView dgrid_educationalattainment;
+        private Panel panel1;
+        private Label txt_totalcount;
         private Panel panel2;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private Label label2;
+        private DataGridViewTextBoxColumn ID;
     }
 }

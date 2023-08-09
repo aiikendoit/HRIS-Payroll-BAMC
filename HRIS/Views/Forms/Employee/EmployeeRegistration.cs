@@ -63,7 +63,7 @@ namespace HRIS.Forms.Employee
         private Form currentchildform;
         private IconButton currentbtn;
         String headername;
-        private string? employeeid;
+        private int employeeid;
         string? address1, address2, address3;
         int regionSelectedValue, provinceSelectedValue, towncitySelectedValue, barangaySelectedValue, zipcodeSelectedValue;
 
@@ -111,7 +111,7 @@ namespace HRIS.Forms.Employee
         #region "Procedure"
         private void collapsemenu()
         {
-            if (panelmenu.Width == 160)
+            if (panelmenu.Width == 177)
             {
                 //setting the width of a panel to 60
                 int width = 160;
@@ -134,7 +134,7 @@ namespace HRIS.Forms.Employee
             else
             {
 
-                panelmenu.Width = 160;
+                panelmenu.Width = 177;
 
                 //looping through each button to make text to null
                 foreach (Button menubutton in panelmenu.Controls)
@@ -148,9 +148,9 @@ namespace HRIS.Forms.Employee
         }
         private void mousehover()
         {
-            if (panelmenu.Width < 160)
+            if (panelmenu.Width < 177)
             {
-                panelmenu.Width = 160;
+                panelmenu.Width = 177;
                 //looping through each button to make text to null
                 foreach (Button menubutton in panelmenu.Controls)
                 {
@@ -251,7 +251,7 @@ namespace HRIS.Forms.Employee
         private void btn_education_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_EducationalAttainment());
+            openchildform(new emp_EducationalAttainment(employeeid));
         }
 
         private void btn_shifting_Click(object sender, EventArgs e)
@@ -476,7 +476,7 @@ namespace HRIS.Forms.Employee
             }
 
         }
-        public void putdata(int employeeid,string position,string department)
+        public void putdata(int employeeid, string position, string department)
         {
             employee_Presenter.LoadEmployeewithWhere(employeeid);
             txt_idno.Enabled = false;
@@ -681,7 +681,7 @@ namespace HRIS.Forms.Employee
                 if (employees != null && employees.Count > 0)
                 {
                     Models.Employee employee = employees[0];
-                    //Navigation
+                   // Navigation
                     Barangay? barangay = employee.FkBarangayNavigation;
                     txt_employeeid.Text = employee.Idno;
                     txt_firstname.Text = employee.Firstname;
@@ -735,6 +735,7 @@ namespace HRIS.Forms.Employee
                         img = employee.ProfilePicture;
                         MemoryStream memoryStream = new MemoryStream(img);
                         profilepic.Image = Image.FromStream(memoryStream);
+                        picture_avatar.Image = Image.FromStream(memoryStream);
                     }
                     string? mdname = employee?.Middlename;
                     char md;
@@ -744,7 +745,7 @@ namespace HRIS.Forms.Employee
                         mdname = md.ToString() + ". ";
                     }
                     txt_Headercompletename.Text = employee?.Firstname + " " + mdname + employee?.Lastname;
-                    employeeid = employee?.PkEmployee.ToString();
+                    employeeid = employee.PkEmployee;
                     btn_save.Text = "Update";
                     btn_cancel.Select();
                 }

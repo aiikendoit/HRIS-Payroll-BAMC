@@ -46,5 +46,17 @@ namespace HRIS.Properties {
                 this["completename"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string employeeidno {
+            get {
+                return ((string)(this["employeeidno"]));
+            }
+            set {
+                this["employeeidno"] = value;
+            }
+        }
     }
 }

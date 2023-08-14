@@ -32,7 +32,7 @@
             employee_label = new Label();
             label2 = new Label();
             label3 = new Label();
-            comboBox1 = new ComboBox();
+            comboBox_DocType = new ComboBox();
             textBox1 = new TextBox();
             label4 = new Label();
             richTextBox1 = new RichTextBox();
@@ -85,13 +85,13 @@
             label3.TabIndex = 0;
             label3.Text = "Description";
             // 
-            // comboBox1
+            // comboBox_DocType
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(148, 47);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(258, 29);
-            comboBox1.TabIndex = 1;
+            comboBox_DocType.FormattingEnabled = true;
+            comboBox_DocType.Location = new Point(148, 47);
+            comboBox_DocType.Name = "comboBox_DocType";
+            comboBox_DocType.Size = new Size(258, 29);
+            comboBox_DocType.TabIndex = 1;
             // 
             // textBox1
             // 
@@ -160,15 +160,19 @@
             Controls.Add(label5);
             Controls.Add(richTextBox1);
             Controls.Add(textBox1);
-            Controls.Add(comboBox1);
+            Controls.Add(comboBox_DocType);
             Controls.Add(employee_label);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(4);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Add_Docs";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Add Document";
             Load += Add_Docs_Load;
             ResumeLayout(false);
@@ -181,7 +185,7 @@
         private Label employee_label;
         private Label label2;
         private Label label3;
-        private ComboBox comboBox1;
+        private ComboBox comboBox_DocType;
         private TextBox textBox1;
         private Label label4;
         private RichTextBox richTextBox1;

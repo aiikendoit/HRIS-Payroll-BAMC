@@ -37,7 +37,7 @@ namespace HRIS.Forms.Employee
 
         private void loadWorkAssignment(int employeeid)
         {
-            workassignment_Presenter.loadWorkAssignment(employeeid, dgrid_workassignment);
+            workassignment_Presenter.loadWorkAssignment(employeeid);
         }
 
         private void emp_workassignment_Load(object sender, EventArgs e)
@@ -64,6 +64,11 @@ namespace HRIS.Forms.Employee
         private void iconButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void DisplayWorkAssignmentCustom(List<object> workassingmentlist)
+        {
+           dgrid_workassignment.DataSource = workassingmentlist;
         }
     }
 }

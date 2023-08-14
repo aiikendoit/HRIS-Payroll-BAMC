@@ -19,7 +19,7 @@ public partial class Workassignment
 
     public string? Jobscope { get; set; }
 
-    public bool? IsManager { get; set; }
+    public bool IsManager { get; set; }
 
     public DateTime? Startdate { get; set; }
 

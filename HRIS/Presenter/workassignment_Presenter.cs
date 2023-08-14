@@ -14,13 +14,14 @@ namespace HRIS.Presenter
     {
         private readonly HrisContext _context;
         private readonly IWorkAssigmentView _view;
-        
+        private List<object> workassignmentList;
         public  workassignment_Presenter(IWorkAssigmentView view)
         {
             _view = view;
             _context = new HrisContext();
+            workassignmentList = new List<object>();
         }
-        public void loadWorkAssignment(int employeeid,DataGridView dataGridView)
+        public void loadWorkAssignment(int employeeid)
         {
             var query = from workass in _context.Workassignments
                         join department in _context.Departments on workass.FkDepartment equals department.PkDepartment
@@ -33,14 +34,12 @@ namespace HRIS.Presenter
                             Department = department.Description,
                             Position = position.PositionName,
                             JobDescription = workass.Jobdescription,
-                            Responsibilities  = workass.Responsibilities,
-                            Jobscope = workass.Jobscope,
                             workass.IsManager,
                             Startdate = workass.Startdate,
                             Enddate = workass.Enddate,
                         };
-
-            dataGridView.DataSource = query.ToList();
+            _view.DisplayWorkAssignmentCustom(query.ToList<object>());
+            workassignmentList = query.ToList<object>();
         }
         public void loadWorkAssignmentWithWhere(int workassignmentid)
         {

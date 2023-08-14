@@ -722,7 +722,7 @@ public partial class YourDbContext : DbContext
             entity.Property(e => e.PkEmployeelicense)
                 .ValueGeneratedNever()
                 .HasColumnName("PK_employeelicense");
-            entity.Property(e => e.Createby).HasColumnName("createby");
+            entity.Property(e => e.Createdby).HasColumnName("createby");
             entity.Property(e => e.Createddate)
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");

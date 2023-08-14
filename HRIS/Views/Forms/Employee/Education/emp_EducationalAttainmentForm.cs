@@ -4,6 +4,7 @@ using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Employee.Education;
 using HRIS.Views.Forms.Maintenance.Degreetype;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,13 +21,15 @@ namespace HRIS.Forms.Employee
     {
         private int PKEmployeeid;
         private readonly educationalattainment_emp_Presenter educationalattainment_Emp_Presenter;
+        private readonly HrisContext _context;
         private DataView dataView;
-        
+
         public emp_EducationalAttainment(int PKEmployeeID)
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_educationalattainment);
             educationalattainment_Emp_Presenter = new educationalattainment_emp_Presenter(this);
+            _context = new HrisContext();
             dataView = new DataView();
             PKEmployeeid = PKEmployeeID;
             loadEducationAttainment();
@@ -39,8 +42,8 @@ namespace HRIS.Forms.Employee
         }
         private void loadEducationAttainment()
         {
-         educationalattainment_Emp_Presenter.LoadAttainment(PKEmployeeid);
-        
+            educationalattainment_Emp_Presenter.LoadAttainment(PKEmployeeid);
+
         }
 
         private void btn_new_Click(object sender, EventArgs e)
@@ -76,7 +79,7 @@ namespace HRIS.Forms.Employee
             educ.ShowDialog();
             loadEducationAttainment();
         }
-        
+
         private void btn_view_Click(object sender, EventArgs e)
         {
             var educid = dgrid_educationalattainment.SelectedRows[0].Cells[0].Value;
@@ -114,7 +117,30 @@ namespace HRIS.Forms.Employee
 
         public void DisplayAttainmentCustom(List<object> employee_attainment)
         {
-           dgrid_educationalattainment.DataSource = employee_attainment;
+            dgrid_educationalattainment.DataSource = employee_attainment;
+        }
+        private void delete(int educID)
+        {
+            var existingEduc = _context.Educationalattainments.Find(educID);
+            if (existingEduc != null)
+            {
+                existingEduc.IsDeleted = true;
+                educationalattainment_Emp_Presenter.DeleteEducationAttainment(existingEduc);
+            }
+        }
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            int educID = (int)dgrid_educationalattainment.SelectedRows[0].Cells[0].Value;
+            string? educattainment = dgrid_educationalattainment.SelectedRows[0].Cells[1].Value.ToString();
+            if (educID != 0)
+            {
+                if (MessageBox.Show("Are you sure to delete " + educattainment,
+                    "Please confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                {
+                    delete(educID);
+                    loadEducationAttainment();
+                }
+            }
         }
     }
 }

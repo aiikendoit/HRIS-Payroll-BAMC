@@ -96,7 +96,9 @@ namespace HRIS.Forms.Employee.Education
                 Educationaldegree = txt_educationaldegree.Text,
                 FkDegreetype = Convert.ToInt32(txt_degreetype.SelectedValue),
                 Createdby = createdby,
-                FkSystemUser = id
+                FkSystemUser = id,
+                IsDeleted = false
+               
             };
             _presenter.AddEducAttainment(cv);
             this.Close();
@@ -113,6 +115,7 @@ namespace HRIS.Forms.Employee.Education
                 existingeduc.Yeargraduated = txt_yeargraduated.Value.Date;
                 existingeduc.Educationaldegree = txt_educationaldegree.Text;
                 existingeduc.FkDegreetype = Convert.ToInt32(txt_degreetype.SelectedValue);
+
                 _presenter.UpdateEducAttainment(existingeduc);
                 this.Close();
             }

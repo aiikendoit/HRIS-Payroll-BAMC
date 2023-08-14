@@ -31,16 +31,16 @@
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
-            button4 = new Button();
-            button3 = new Button();
-            comboBox3 = new ComboBox();
-            textBox1 = new TextBox();
-            textBox10 = new TextBox();
+            btn_cancel = new Button();
+            btn_save = new Button();
+            txt_licensetype = new ComboBox();
+            txt_expiryreminder = new TextBox();
+            txt_licensenumber = new TextBox();
             label22 = new Label();
             label1 = new Label();
             label19 = new Label();
             label18 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            txt_expirydate = new DateTimePicker();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             SuspendLayout();
@@ -78,57 +78,59 @@
             label2.TabIndex = 2;
             label2.Text = "New License";
             // 
-            // button4
+            // btn_cancel
             // 
-            button4.BackColor = Color.Transparent;
-            button4.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(292, 239);
-            button4.Name = "button4";
-            button4.Size = new Size(91, 36);
-            button4.TabIndex = 32;
-            button4.Text = "Cancel";
-            button4.UseVisualStyleBackColor = false;
+            btn_cancel.BackColor = Color.Transparent;
+            btn_cancel.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
+            btn_cancel.FlatStyle = FlatStyle.Flat;
+            btn_cancel.Location = new Point(292, 239);
+            btn_cancel.Name = "btn_cancel";
+            btn_cancel.Size = new Size(91, 36);
+            btn_cancel.TabIndex = 5;
+            btn_cancel.Text = "Cancel";
+            btn_cancel.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_save
             // 
-            button3.BackColor = Color.FromArgb(0, 127, 152);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(195, 239);
-            button3.Name = "button3";
-            button3.Size = new Size(91, 36);
-            button3.TabIndex = 31;
-            button3.Text = "Save";
-            button3.UseVisualStyleBackColor = false;
+            btn_save.BackColor = Color.FromArgb(0, 127, 152);
+            btn_save.FlatAppearance.BorderSize = 0;
+            btn_save.FlatStyle = FlatStyle.Flat;
+            btn_save.ForeColor = Color.White;
+            btn_save.Location = new Point(195, 239);
+            btn_save.Name = "btn_save";
+            btn_save.Size = new Size(91, 36);
+            btn_save.TabIndex = 4;
+            btn_save.Text = "Save";
+            btn_save.UseVisualStyleBackColor = false;
+            btn_save.Click += btn_save_Click;
             // 
-            // comboBox3
+            // txt_licensetype
             // 
-            comboBox3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(154, 56);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(229, 25);
-            comboBox3.TabIndex = 30;
+            txt_licensetype.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_licensetype.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_licensetype.FormattingEnabled = true;
+            txt_licensetype.Location = new Point(154, 56);
+            txt_licensetype.Name = "txt_licensetype";
+            txt_licensetype.Size = new Size(229, 25);
+            txt_licensetype.TabIndex = 0;
             // 
-            // textBox1
+            // txt_expiryreminder
             // 
-            textBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(154, 174);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(229, 50);
-            textBox1.TabIndex = 26;
+            txt_expiryreminder.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_expiryreminder.Location = new Point(154, 174);
+            txt_expiryreminder.Multiline = true;
+            txt_expiryreminder.Name = "txt_expiryreminder";
+            txt_expiryreminder.Size = new Size(229, 50);
+            txt_expiryreminder.TabIndex = 3;
             // 
-            // textBox10
+            // txt_licensenumber
             // 
-            textBox10.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox10.Location = new Point(154, 87);
-            textBox10.Multiline = true;
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(229, 50);
-            textBox10.TabIndex = 27;
+            txt_licensenumber.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_licensenumber.Location = new Point(154, 87);
+            txt_licensenumber.Multiline = true;
+            txt_licensenumber.Name = "txt_licensenumber";
+            txt_licensenumber.Size = new Size(229, 50);
+            txt_licensenumber.TabIndex = 1;
             // 
             // label22
             // 
@@ -170,14 +172,14 @@
             label18.TabIndex = 23;
             label18.Text = "License #";
             // 
-            // dateTimePicker1
+            // txt_expirydate
             // 
-            dateTimePicker1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(154, 143);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(229, 25);
-            dateTimePicker1.TabIndex = 33;
+            txt_expirydate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_expirydate.Format = DateTimePickerFormat.Short;
+            txt_expirydate.Location = new Point(154, 143);
+            txt_expirydate.Name = "txt_expirydate";
+            txt_expirydate.Size = new Size(229, 25);
+            txt_expirydate.TabIndex = 2;
             // 
             // emp_AddLicense
             // 
@@ -185,18 +187,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(399, 293);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(txt_expirydate);
             Controls.Add(panel2);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(comboBox3);
-            Controls.Add(textBox1);
-            Controls.Add(textBox10);
+            Controls.Add(btn_cancel);
+            Controls.Add(btn_save);
+            Controls.Add(txt_licensetype);
+            Controls.Add(txt_expiryreminder);
+            Controls.Add(txt_licensenumber);
             Controls.Add(label22);
             Controls.Add(label1);
             Controls.Add(label19);
             Controls.Add(label18);
             DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "emp_AddLicense";
@@ -213,15 +216,15 @@
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
-        private Button button4;
-        private Button button3;
-        private ComboBox comboBox3;
-        private TextBox textBox1;
-        private TextBox textBox10;
+        private Button btn_cancel;
+        private Button btn_save;
+        private ComboBox txt_licensetype;
+        private TextBox txt_expiryreminder;
+        private TextBox txt_licensenumber;
         private Label label22;
         private Label label1;
         private Label label19;
         private Label label18;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker txt_expirydate;
     }
 }

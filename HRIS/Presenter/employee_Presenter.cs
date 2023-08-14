@@ -25,7 +25,8 @@ namespace HRIS.Presenter
         }
         public void LoadEmployeewithWhere(int employeeid)
         {
-            var p = _context.Employees.Where(c => c.PkEmployee == employeeid).ToList();
+            var p = _context.Employees.Where(c => c.PkEmployee == employeeid)
+                .ToList();
             _view.DisplayEmployeeAllDetails(p);
         }
         public void LoadAllSearchEmployee(string lastname, string firstname)

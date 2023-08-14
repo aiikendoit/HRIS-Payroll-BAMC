@@ -142,7 +142,7 @@
             iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.LaptopMedical;
             iconPictureBox1.IconColor = SystemColors.ControlText;
             iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox1.Location = new Point(13, 5);
+            iconPictureBox1.Location = new Point(10, 8);
             iconPictureBox1.Name = "iconPictureBox1";
             iconPictureBox1.Size = new Size(32, 32);
             iconPictureBox1.TabIndex = 3;

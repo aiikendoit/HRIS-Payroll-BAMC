@@ -91,7 +91,6 @@ namespace HRIS.Forms.Employee.Employment
         }
         private void update()
         {
-
             var existingEmployment = _context.Employmentstatuses.Find(EmploymentID);
             if (existingEmployment != null)
             {

@@ -17,7 +17,8 @@ namespace HRIS
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             
-            Application.Run(new Userlogin());
+            //Application.Run(new Userlogin());
+            
         }
     }
 }

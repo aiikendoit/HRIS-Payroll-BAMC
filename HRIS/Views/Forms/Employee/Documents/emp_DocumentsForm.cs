@@ -1,4 +1,8 @@
 ﻿using HRIS.Class;
+using HRIS.Presenter;
+using HRIS.Views.Forms.Employee;
+using HRIS.Views.Forms.Employee.Documents;
+using HRIS.Views.Forms.Maintenance.SalarySetting;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +26,13 @@ namespace HRIS.Forms.Employee.Documents
         private void emp_DocumentsForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            var st = new Add_Docs();
+            st.ShowDialog();
+            //salarysetting_Presenter.LoadSalarysetting();
         }
     }
 }

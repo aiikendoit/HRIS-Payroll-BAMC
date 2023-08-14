@@ -119,8 +119,11 @@
             Controls.Add(checkBox_isactive);
             Controls.Add(txt_towncity);
             Controls.Add(label1);
+            MaximizeBox = false;
             Name = "frm_towncity";
-            Text = "frm_towncity";
+            SizeGripStyle = SizeGripStyle.Hide;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Town / City";
             ResumeLayout(false);
             PerformLayout();
         }

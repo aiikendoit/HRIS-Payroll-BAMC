@@ -33,8 +33,20 @@ namespace HRIS.Forms.Employee.Employment
             EmpID = PKEmployeeID;
 
             //set watermark for datepicker
-            txt_startdate.Value = null;
-            txt_enddate.Value = null;
+            customizedatepicker();
+        }
+        private void customizedatepicker()
+        {
+            //txt_startdate.DropDownSize = new Size(220, 200);
+            //txt_startdate.MonthCalendar.ShowFooter = false;
+            //txt_enddate.DropDownSize = new Size(220, 200);
+            //txt_enddate.MonthCalendar.ShowFooter = false;
+            //txt_startdate.AllowNull = true;
+            //txt_enddate.AllowNull = true;
+            //txt_startdate.Value = null;
+            //txt_enddate.Value = null;
+
+
         }
         public void putdata(int PKEmploymentID)
         {
@@ -136,6 +148,11 @@ namespace HRIS.Forms.Employee.Employment
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_enddate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

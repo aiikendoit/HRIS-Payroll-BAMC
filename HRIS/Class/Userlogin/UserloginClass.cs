@@ -36,8 +36,10 @@ namespace HRIS.Class.Userlogin
                                 {
                                     string? completename = reader["completename"].ToString();
                                     int id = reader.GetInt32("id");
+                                    string employeeidno = reader.GetString("usercode").ToString();
                                     Properties.Settings.Default.completename = completename;
                                     Properties.Settings.Default.usercode = id;
+                                    Properties.Settings.Default.employeeidno = employeeidno;
                                     Properties.Settings.Default.Save();
                                     hasdata = true;
                                     Cursor.Current = Cursors.Default;
@@ -59,5 +61,10 @@ namespace HRIS.Class.Userlogin
             }
             return hasdata;
         }
+        //public static bool checkUserConfirmation()
+        //{
+        //    bool hasdata = false;
+            
+        //}
     }
 }

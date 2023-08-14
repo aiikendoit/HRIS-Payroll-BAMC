@@ -27,8 +27,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Syncfusion.SfInput.WinForms" Version="22.2.8" />
-    <PackageReference Include="Syncfusion.Xamarin.SfPicker" Version="22.2.8" />
+    <PackageReference Include="Syncfusion.SfInput.WinForms" Version="21.2.10" />
   </ItemGroup>
 
   <ItemGroup>

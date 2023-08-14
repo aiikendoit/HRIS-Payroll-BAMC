@@ -74,7 +74,7 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
             this.Close();
         }
 
-          public void DisplayProvinces(List<Models.Province> Provinces)
+        public void DisplayProvinces(List<Models.Province> Provinces)
         {
             drpdwn_province.DataSource = Provinces;
             drpdwn_province.DisplayMember = "Description";
@@ -88,7 +88,7 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
 
         public void DisplayTownCity(List<Towncity> Towncities)
         {
-//            throw new NotImplementedException();
+            //            throw new NotImplementedException();
         }
 
         public void DisplayProvince(int provinces)

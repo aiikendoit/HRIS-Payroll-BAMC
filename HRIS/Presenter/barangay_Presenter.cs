@@ -24,7 +24,7 @@ namespace HRIS.Presenter
         public void loadBarangays(int? towncityid)
         {
             var p = _context.Barangays
-                .Where(e => e.FkTownCity == towncityid)
+                .Where(e => e.FkTownCity == towncityid && e.IsActive == true)
                 .OrderBy(e => e.Description)
                 .ToList();
             _view.DisplayBarangay(p);

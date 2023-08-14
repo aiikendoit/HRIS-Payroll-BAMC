@@ -16,5 +16,10 @@ namespace HRIS.Views.Forms.Employee.Documents
         {
             InitializeComponent();
         }
+
+        private void Add_Docs_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

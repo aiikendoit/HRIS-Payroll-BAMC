@@ -94,7 +94,6 @@ namespace HRIS.Forms.Employee
             // Load data into combobox
             loadallCombobox();
 
-
         }
         public void loadallCombobox()
         {
@@ -282,13 +281,13 @@ namespace HRIS.Forms.Employee
         private void iconButton5_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_licenseInfoForm());
+            openchildform(new emp_licenseInfoForm(employeeid));
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_employmentForm());
+            openchildform(new emp_employmentForm(employeeid));
         }
 
         private void iconButton3_Click(object sender, EventArgs e)

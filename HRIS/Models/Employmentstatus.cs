@@ -11,7 +11,7 @@ public partial class Employmentstatus
 
     public DateTime? Startdate { get; set; }
 
-    public string? Enddate { get; set; }
+    public DateTime? Enddate { get; set; }
 
     public string? Remarks { get; set; }
 
@@ -19,7 +19,11 @@ public partial class Employmentstatus
 
     public DateTime? Createddate { get; set; }
 
-    public int? Createdby { get; set; }
+    public string? Createdby { get; set; }
+
+    public int? FkSystemUser { get; set; }
+
+    public bool IsDeleted { get; set; }
 
     public virtual Employee? FkEmployeeNavigation { get; set; }
 

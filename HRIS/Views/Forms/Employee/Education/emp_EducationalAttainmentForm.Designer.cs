@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             flowLayoutPanel2 = new FlowLayoutPanel();
             btn_new = new FontAwesome.Sharp.IconButton();
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
+            btn_delete = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel1 = new FlowLayoutPanel();
             txt_search = new TextBox();
             btn_search = new FontAwesome.Sharp.IconButton();
@@ -57,6 +58,7 @@
             flowLayoutPanel2.Controls.Add(btn_new);
             flowLayoutPanel2.Controls.Add(btn_edit);
             flowLayoutPanel2.Controls.Add(btn_view);
+            flowLayoutPanel2.Controls.Add(btn_delete);
             flowLayoutPanel2.Dock = DockStyle.Top;
             flowLayoutPanel2.Location = new Point(0, 75);
             flowLayoutPanel2.Margin = new Padding(0);
@@ -127,6 +129,27 @@
             btn_view.UseVisualStyleBackColor = false;
             btn_view.Click += btn_view_Click;
             // 
+            // btn_delete
+            // 
+            btn_delete.BackColor = Color.FromArgb(255, 43, 43);
+            btn_delete.FlatAppearance.BorderSize = 0;
+            btn_delete.FlatStyle = FlatStyle.Flat;
+            btn_delete.ForeColor = Color.White;
+            btn_delete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            btn_delete.IconColor = Color.White;
+            btn_delete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_delete.IconSize = 20;
+            btn_delete.Location = new Point(228, 3);
+            btn_delete.Margin = new Padding(1, 3, 1, 3);
+            btn_delete.Name = "btn_delete";
+            btn_delete.Size = new Size(73, 30);
+            btn_delete.TabIndex = 8;
+            btn_delete.Text = "Delete";
+            btn_delete.TextAlign = ContentAlignment.MiddleLeft;
+            btn_delete.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_delete.UseVisualStyleBackColor = false;
+            btn_delete.Click += btn_delete_Click;
+            // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoSize = true;
@@ -196,14 +219,14 @@
             // dgrid_educationalattainment
             // 
             dgrid_educationalattainment.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.IndianRed;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgrid_educationalattainment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.IndianRed;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgrid_educationalattainment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dgrid_educationalattainment.ColumnHeadersHeight = 50;
             dgrid_educationalattainment.Dock = DockStyle.Fill;
             dgrid_educationalattainment.Location = new Point(0, 111);
@@ -314,5 +337,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
         private DataGridViewTextBoxColumn ID;
+        private FontAwesome.Sharp.IconButton btn_delete;
     }
 }

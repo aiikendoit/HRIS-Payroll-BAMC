@@ -37,7 +37,7 @@ namespace HRIS.Presenter
             var query = from educ in _context.Educationalattainments
                         join educlevel in _context.Educationallevels on educ.FkEducationallevel equals educlevel.PkEducationallevel
                         join degreetype in _context.Degreetypes on educ.FkDegreetype equals degreetype.PkDegreetype
-                        where educ.FkEmployee == PKEmployeeID
+                        where educ.FkEmployee == PKEmployeeID && educ.IsDeleted == false
                         orderby educ.Yeargraduated descending
                         select new
                         {
@@ -67,7 +67,7 @@ namespace HRIS.Presenter
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString());
+                MessageBox.Show(ex.InnerException.ToString());
             }
         }
         public void UpdateEducAttainment(Educationalattainment educationalattainment)
@@ -80,6 +80,17 @@ namespace HRIS.Presenter
                 _context.Entry(educationalattainment).State = EntityState.Modified;
                 _context.SaveChanges();
                 MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        public void DeleteEducationAttainment(Educationalattainment educationalattainment)
+        {
+            var existingEduc = _context.Educationalattainments.Find(educationalattainment.PkEducationalattainment);
+            if (existingEduc != null)
+            {
+                _context.Entry(existingEduc).State = EntityState.Detached;
+                _context.Entry(educationalattainment).State = EntityState.Modified;
+                _context.SaveChanges();
+                MessageBox.Show("Successfully Deleted!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         public void SearchData(string searchQuery)

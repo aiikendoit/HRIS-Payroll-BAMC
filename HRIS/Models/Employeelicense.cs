@@ -13,13 +13,17 @@ public partial class Employeelicense
 
     public string? Licensenumber { get; set; }
 
-    public string? Expirydate { get; set; }
+    public DateTime Expirydate { get; set; }
 
     public string? Remarks { get; set; }
 
     public DateTime? Createddate { get; set; }
 
-    public int? Createby { get; set; }
+    public string? Createdby { get; set; }
+
+    public int? FkSystemUser { get; set; }
+
+    public bool IsDeleted { get; set; }
 
     public virtual Employee? FkEmployeeNavigation { get; set; }
 

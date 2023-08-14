@@ -39,8 +39,8 @@
             label1 = new Label();
             label19 = new Label();
             label3 = new Label();
-            txt_enddate = new Syncfusion.WinForms.Input.SfDateTimeEdit();
             txt_startdate = new Syncfusion.WinForms.Input.SfDateTimeEdit();
+            txt_enddate = new Syncfusion.WinForms.Input.SfDateTimeEdit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             SuspendLayout();
@@ -164,25 +164,25 @@
             label3.TabIndex = 38;
             label3.Text = "Start date";
             // 
-            // txt_enddate
-            // 
-            txt_enddate.AllowNull = true;
-            txt_enddate.Location = new Point(166, 115);
-            txt_enddate.Name = "txt_enddate";
-            txt_enddate.Size = new Size(143, 23);
-            txt_enddate.TabIndex = 45;
-            txt_enddate.ToolTipText = "";
-            txt_enddate.Watermark = "Select a date";
-            // 
             // txt_startdate
             // 
             txt_startdate.AllowNull = true;
-            txt_startdate.Location = new Point(166, 86);
+            txt_startdate.Location = new Point(166, 89);
             txt_startdate.Name = "txt_startdate";
             txt_startdate.Size = new Size(143, 23);
-            txt_startdate.TabIndex = 45;
-            txt_startdate.ToolTipText = "";
+            txt_startdate.TabIndex = 44;
+            txt_startdate.Value = null;
             txt_startdate.Watermark = "Select a date";
+            // 
+            // txt_enddate
+            // 
+            txt_enddate.AllowNull = true;
+            txt_enddate.Location = new Point(166, 117);
+            txt_enddate.Name = "txt_enddate";
+            txt_enddate.Size = new Size(143, 23);
+            txt_enddate.TabIndex = 44;
+            txt_enddate.Value = null;
+            txt_enddate.Watermark = "Select a date";
             // 
             // emp_AddEmployment
             // 
@@ -190,8 +190,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(408, 258);
-            Controls.Add(txt_startdate);
             Controls.Add(txt_enddate);
+            Controls.Add(txt_startdate);
             Controls.Add(panel2);
             Controls.Add(btn_cancel);
             Controls.Add(btn_save);
@@ -226,7 +226,7 @@
         private Label label1;
         private Label label19;
         private Label label3;
-        private Syncfusion.WinForms.Input.SfDateTimeEdit txt_enddate;
         private Syncfusion.WinForms.Input.SfDateTimeEdit txt_startdate;
+        private Syncfusion.WinForms.Input.SfDateTimeEdit txt_enddate;
     }
 }

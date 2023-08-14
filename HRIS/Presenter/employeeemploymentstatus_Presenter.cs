@@ -1,6 +1,8 @@
-﻿using HRIS.Models;
+﻿using HRIS.Class.Userlogin;
+using HRIS.Models;
 using HRIS.Views.Forms.Employee.Employment;
 using HRIS.Views.Forms.Employee.License_information;
+using HRIS.Views.Forms.Userlogin;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -48,39 +50,57 @@ namespace HRIS.Presenter
         }
         public void AddEmploymentStatus(Employmentstatus employmentstatus)
         {
-            try
+            var ver = new UserConfirmation();
+            ver.ShowDialog();
+            if (ver.islogin)
             {
-                _context.Employmentstatuses.Add(employmentstatus);
-                _context.SaveChanges();
-                MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                try
+                {
+                    _context.Employmentstatuses.Add(employmentstatus);
+                    _context.SaveChanges();
+                    MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.InnerException.ToString());
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.InnerException.ToString());
-            }
+           
         }
         public void UpdateEmploymentStatus(Employmentstatus employmentstatus)
         {
-            var existingEmployment = _context.Employmentstatuses.Find(employmentstatus.PkEmployment);
-
-            if (existingEmployment != null)
+            var ver = new UserConfirmation();
+            ver.ShowDialog();
+            if (ver.islogin)
             {
-                _context.Entry(existingEmployment).State = EntityState.Detached;
-                _context.Entry(employmentstatus).State = EntityState.Modified;
-                _context.SaveChanges();
-                MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                var existingEmployment = _context.Employmentstatuses.Find(employmentstatus.PkEmployment);
+
+                if (existingEmployment != null)
+                {
+                    _context.Entry(existingEmployment).State = EntityState.Detached;
+                    _context.Entry(employmentstatus).State = EntityState.Modified;
+                    _context.SaveChanges();
+                    MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
+               
         }
         public void DeleteEmploymentStatus(Employmentstatus employmentstatus)
         {
-            var existingEmployment = _context.Employmentstatuses.Find(employmentstatus.PkEmployment);
-            if (existingEmployment != null)
+            var ver = new UserConfirmation();
+            ver.ShowDialog();
+            if (ver.islogin)
             {
-                _context.Entry(existingEmployment).State = EntityState.Detached;
-                _context.Entry(employmentstatus).State = EntityState.Modified;
-                _context.SaveChanges();
-                MessageBox.Show("Successfully Deleted!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                var existingEmployment = _context.Employmentstatuses.Find(employmentstatus.PkEmployment);
+                if (existingEmployment != null)
+                {
+                    _context.Entry(existingEmployment).State = EntityState.Detached;
+                    _context.Entry(employmentstatus).State = EntityState.Modified;
+                    _context.SaveChanges();
+                    MessageBox.Show("Successfully Deleted!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
+               
         }
         public void SearchData(string searchQuery)
         {

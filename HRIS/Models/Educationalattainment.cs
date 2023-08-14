@@ -25,6 +25,8 @@ public partial class Educationalattainment
 
     public int? FkSystemUser { get; set; }
 
+    public bool IsDeleted { get; set; }
+
     public virtual Degreetype? FkDegreetypeNavigation { get; set; }
 
     public virtual Educationallevel? FkEducationallevelNavigation { get; set; }

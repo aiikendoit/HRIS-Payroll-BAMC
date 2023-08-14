@@ -410,6 +410,7 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.FkEducationallevel).HasColumnName("FK_educationallevel");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.IsDeleted).HasColumnName("isDeleted");
             entity.Property(e => e.Schoolattended)
                 .HasMaxLength(500)
                 .IsUnicode(false)
@@ -822,18 +823,22 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("employeelicense", "HR");
 
-            entity.Property(e => e.PkEmployeelicense)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_employeelicense");
-            entity.Property(e => e.Createby).HasColumnName("createby");
+            entity.Property(e => e.PkEmployeelicense).HasColumnName("PK_employeelicense");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Expirydate)
-                .IsUnicode(false)
+                .HasColumnType("date")
                 .HasColumnName("expirydate");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkLicensetype).HasColumnName("FK_licensetype");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.IsDeleted).HasColumnName("isDeleted");
             entity.Property(e => e.Licensenumber)
                 .HasMaxLength(500)
                 .IsUnicode(false)
@@ -858,25 +863,27 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("employmentstatus", "HR");
 
-            entity.Property(e => e.PkEmployment)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_employment");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkEmployment).HasColumnName("PK_employment");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Enddate)
-                .HasMaxLength(50)
-                .IsUnicode(false)
+                .HasColumnType("date")
                 .HasColumnName("enddate");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkEmploymenttype).HasColumnName("FK_employmenttype");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.IsDeleted).HasColumnName("isDeleted");
             entity.Property(e => e.Remarks)
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("remarks");
             entity.Property(e => e.Startdate)
-                .HasColumnType("datetime")
+                .HasColumnType("date")
                 .HasColumnName("startdate");
 
             entity.HasOne(d => d.FkEmployeeNavigation).WithMany(p => p.Employmentstatuses)

@@ -16,7 +16,7 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace HRIS.Views.Forms.Employee.Documents
 {
-    public partial class Add_Docs : Form, IEmployeeView, IDocumentTypeView,IEmployeeDocumentView
+    public partial class Add_Docs : Form, IEmployeeView, IDocumentTypeView, IEmployeeDocumentView
     {
         int EmpID = 0;
         private readonly employee_Presenter emp_Presenter;

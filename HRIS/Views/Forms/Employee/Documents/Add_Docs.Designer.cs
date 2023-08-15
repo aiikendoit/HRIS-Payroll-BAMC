@@ -37,6 +37,7 @@
             label5 = new Label();
             button1 = new Button();
             btn_save = new Button();
+            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // label2
@@ -127,12 +128,21 @@
             btn_save.UseVisualStyleBackColor = true;
             btn_save.Click += btn_save_Click;
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(22, 268);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 29);
+            comboBox1.TabIndex = 6;
+            // 
             // Add_Docs
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(434, 330);
+            Controls.Add(comboBox1);
             Controls.Add(btn_save);
             Controls.Add(button1);
             Controls.Add(label5);
@@ -165,5 +175,6 @@
         private Label label5;
         private Button button1;
         private Button btn_save;
+        private ComboBox comboBox1;
     }
 }

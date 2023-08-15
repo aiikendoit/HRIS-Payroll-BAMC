@@ -118,13 +118,13 @@
             panel2 = new Panel();
             txt_employeeid = new Label();
             picture_avatar = new UserControl.JPCircularPictureBox();
+            txt_department = new Label();
             txt_position = new Label();
             txt_Headercompletename = new Label();
             panel3 = new Panel();
             MainPanel = new Panel();
             panel4 = new Panel();
             openFileDialog1 = new OpenFileDialog();
-            txt_department = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btn_sidebardrawer).BeginInit();
             panelmenu.SuspendLayout();
@@ -143,7 +143,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1114, 56);
+            panel1.Size = new Size(1093, 56);
             panel1.TabIndex = 0;
             // 
             // label_Headername
@@ -192,7 +192,7 @@
             panelmenu.Location = new Point(0, 57);
             panelmenu.Name = "panelmenu";
             panelmenu.Padding = new Padding(2);
-            panelmenu.Size = new Size(177, 588);
+            panelmenu.Size = new Size(177, 598);
             panelmenu.TabIndex = 1;
             // 
             // btn_documents
@@ -658,13 +658,13 @@
             panel_basicinfo.Dock = DockStyle.Fill;
             panel_basicinfo.Location = new Point(177, 147);
             panel_basicinfo.Name = "panel_basicinfo";
-            panel_basicinfo.Size = new Size(937, 498);
+            panel_basicinfo.Size = new Size(916, 508);
             panel_basicinfo.TabIndex = 0;
             // 
             // txt_rfid
             // 
             txt_rfid.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_rfid.Location = new Point(137, 104);
+            txt_rfid.Location = new Point(104, 101);
             txt_rfid.Name = "txt_rfid";
             txt_rfid.Size = new Size(219, 23);
             txt_rfid.TabIndex = 32;
@@ -673,7 +673,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(44, 108);
+            label1.Location = new Point(11, 105);
             label1.Name = "label1";
             label1.Size = new Size(41, 15);
             label1.TabIndex = 33;
@@ -682,7 +682,7 @@
             // checkBox_isactive
             // 
             checkBox_isactive.AutoSize = true;
-            checkBox_isactive.Location = new Point(444, 413);
+            checkBox_isactive.Location = new Point(404, 410);
             checkBox_isactive.Name = "checkBox_isactive";
             checkBox_isactive.Size = new Size(67, 19);
             checkBox_isactive.TabIndex = 25;
@@ -694,7 +694,7 @@
             txt_bank.DropDownStyle = ComboBoxStyle.DropDownList;
             txt_bank.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_bank.FormattingEnabled = true;
-            txt_bank.Location = new Point(444, 254);
+            txt_bank.Location = new Point(404, 251);
             txt_bank.Name = "txt_bank";
             txt_bank.Size = new Size(202, 23);
             txt_bank.TabIndex = 20;
@@ -704,7 +704,7 @@
             btn_cancel.BackColor = Color.Transparent;
             btn_cancel.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
             btn_cancel.FlatStyle = FlatStyle.Flat;
-            btn_cancel.Location = new Point(233, 439);
+            btn_cancel.Location = new Point(200, 436);
             btn_cancel.Name = "btn_cancel";
             btn_cancel.Size = new Size(91, 36);
             btn_cancel.TabIndex = 31;
@@ -718,7 +718,7 @@
             btn_save.FlatAppearance.BorderSize = 0;
             btn_save.FlatStyle = FlatStyle.Flat;
             btn_save.ForeColor = Color.White;
-            btn_save.Location = new Point(136, 439);
+            btn_save.Location = new Point(103, 436);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(91, 36);
             btn_save.TabIndex = 30;
@@ -730,7 +730,7 @@
             // 
             profilepic.Cursor = Cursors.Hand;
             profilepic.Image = (Image)resources.GetObject("profilepic.Image");
-            profilepic.Location = new Point(742, 54);
+            profilepic.Location = new Point(696, 51);
             profilepic.Name = "profilepic";
             profilepic.Size = new Size(204, 195);
             profilepic.SizeMode = PictureBoxSizeMode.Zoom;
@@ -744,7 +744,7 @@
             txt_bloodtype.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_bloodtype.FormattingEnabled = true;
             txt_bloodtype.Items.AddRange(new object[] { "Not Applicable", "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" });
-            txt_bloodtype.Location = new Point(444, 129);
+            txt_bloodtype.Location = new Point(404, 126);
             txt_bloodtype.Name = "txt_bloodtype";
             txt_bloodtype.Size = new Size(202, 23);
             txt_bloodtype.TabIndex = 15;
@@ -754,7 +754,7 @@
             txt_natinality.DropDownStyle = ComboBoxStyle.DropDownList;
             txt_natinality.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_natinality.FormattingEnabled = true;
-            txt_natinality.Location = new Point(444, 104);
+            txt_natinality.Location = new Point(404, 101);
             txt_natinality.Name = "txt_natinality";
             txt_natinality.Size = new Size(202, 23);
             txt_natinality.TabIndex = 14;
@@ -764,7 +764,7 @@
             txt_religion.DropDownStyle = ComboBoxStyle.DropDownList;
             txt_religion.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_religion.FormattingEnabled = true;
-            txt_religion.Location = new Point(444, 79);
+            txt_religion.Location = new Point(404, 76);
             txt_religion.Name = "txt_religion";
             txt_religion.Size = new Size(202, 23);
             txt_religion.TabIndex = 13;
@@ -774,7 +774,7 @@
             txt_relationship_combobox.DropDownStyle = ComboBoxStyle.DropDownList;
             txt_relationship_combobox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_relationship_combobox.FormattingEnabled = true;
-            txt_relationship_combobox.Location = new Point(444, 356);
+            txt_relationship_combobox.Location = new Point(404, 353);
             txt_relationship_combobox.Name = "txt_relationship_combobox";
             txt_relationship_combobox.Size = new Size(202, 23);
             txt_relationship_combobox.TabIndex = 23;
@@ -784,7 +784,7 @@
             txt_educatinlevel.DropDownStyle = ComboBoxStyle.DropDownList;
             txt_educatinlevel.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_educatinlevel.FormattingEnabled = true;
-            txt_educatinlevel.Location = new Point(444, 229);
+            txt_educatinlevel.Location = new Point(404, 226);
             txt_educatinlevel.Name = "txt_educatinlevel";
             txt_educatinlevel.Size = new Size(202, 23);
             txt_educatinlevel.TabIndex = 19;
@@ -794,14 +794,14 @@
             txt_civilstatus.DropDownStyle = ComboBoxStyle.DropDownList;
             txt_civilstatus.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_civilstatus.FormattingEnabled = true;
-            txt_civilstatus.Location = new Point(444, 54);
+            txt_civilstatus.Location = new Point(404, 51);
             txt_civilstatus.Name = "txt_civilstatus";
             txt_civilstatus.Size = new Size(202, 23);
             txt_civilstatus.TabIndex = 12;
             // 
             // btn_addressinfo
             // 
-            btn_addressinfo.Location = new Point(136, 410);
+            btn_addressinfo.Location = new Point(103, 407);
             btn_addressinfo.Name = "btn_addressinfo";
             btn_addressinfo.Size = new Size(129, 23);
             btn_addressinfo.TabIndex = 11;
@@ -813,7 +813,7 @@
             // 
             radioButton_female.AutoSize = true;
             radioButton_female.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            radioButton_female.Location = new Point(198, 282);
+            radioButton_female.Location = new Point(165, 279);
             radioButton_female.Name = "radioButton_female";
             radioButton_female.Size = new Size(63, 19);
             radioButton_female.TabIndex = 9;
@@ -825,7 +825,7 @@
             // 
             radioButton_male.AutoSize = true;
             radioButton_male.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            radioButton_male.Location = new Point(138, 282);
+            radioButton_male.Location = new Point(105, 279);
             radioButton_male.Name = "radioButton_male";
             radioButton_male.Size = new Size(51, 19);
             radioButton_male.TabIndex = 8;
@@ -837,7 +837,7 @@
             // 
             txt_birthdate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_birthdate.Format = DateTimePickerFormat.Short;
-            txt_birthdate.Location = new Point(137, 255);
+            txt_birthdate.Location = new Point(104, 252);
             txt_birthdate.Name = "txt_birthdate";
             txt_birthdate.Size = new Size(219, 23);
             txt_birthdate.TabIndex = 7;
@@ -846,7 +846,7 @@
             // txt_tinnumber
             // 
             txt_tinnumber.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_tinnumber.Location = new Point(744, 330);
+            txt_tinnumber.Location = new Point(698, 327);
             txt_tinnumber.Name = "txt_tinnumber";
             txt_tinnumber.Size = new Size(198, 23);
             txt_tinnumber.TabIndex = 29;
@@ -854,7 +854,7 @@
             // txt_philhealth
             // 
             txt_philhealth.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_philhealth.Location = new Point(744, 305);
+            txt_philhealth.Location = new Point(698, 302);
             txt_philhealth.Name = "txt_philhealth";
             txt_philhealth.Size = new Size(198, 23);
             txt_philhealth.TabIndex = 28;
@@ -862,7 +862,7 @@
             // txt_emergencyContactName
             // 
             txt_emergencyContactName.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_emergencyContactName.Location = new Point(444, 331);
+            txt_emergencyContactName.Location = new Point(404, 328);
             txt_emergencyContactName.Name = "txt_emergencyContactName";
             txt_emergencyContactName.Size = new Size(202, 23);
             txt_emergencyContactName.TabIndex = 22;
@@ -870,7 +870,7 @@
             // txt_emailaddress
             // 
             txt_emailaddress.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_emailaddress.Location = new Point(444, 204);
+            txt_emailaddress.Location = new Point(404, 201);
             txt_emailaddress.Name = "txt_emailaddress";
             txt_emailaddress.Size = new Size(202, 23);
             txt_emailaddress.TabIndex = 18;
@@ -878,7 +878,7 @@
             // txt_extensionname
             // 
             txt_extensionname.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_extensionname.Location = new Point(137, 230);
+            txt_extensionname.Location = new Point(104, 227);
             txt_extensionname.Name = "txt_extensionname";
             txt_extensionname.Size = new Size(219, 23);
             txt_extensionname.TabIndex = 6;
@@ -887,7 +887,7 @@
             // txt_firstname
             // 
             txt_firstname.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_firstname.Location = new Point(137, 155);
+            txt_firstname.Location = new Point(104, 152);
             txt_firstname.Name = "txt_firstname";
             txt_firstname.Size = new Size(219, 23);
             txt_firstname.TabIndex = 3;
@@ -896,7 +896,7 @@
             // txt_completeaddress
             // 
             txt_completeaddress.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_completeaddress.Location = new Point(136, 305);
+            txt_completeaddress.Location = new Point(103, 302);
             txt_completeaddress.Multiline = true;
             txt_completeaddress.Name = "txt_completeaddress";
             txt_completeaddress.ReadOnly = true;
@@ -907,7 +907,7 @@
             // txt_pagibig
             // 
             txt_pagibig.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_pagibig.Location = new Point(744, 280);
+            txt_pagibig.Location = new Point(698, 277);
             txt_pagibig.Name = "txt_pagibig";
             txt_pagibig.Size = new Size(198, 23);
             txt_pagibig.TabIndex = 27;
@@ -915,7 +915,7 @@
             // txt_accountnumber
             // 
             txt_accountnumber.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_accountnumber.Location = new Point(444, 279);
+            txt_accountnumber.Location = new Point(404, 276);
             txt_accountnumber.Name = "txt_accountnumber";
             txt_accountnumber.Size = new Size(202, 23);
             txt_accountnumber.TabIndex = 21;
@@ -923,7 +923,7 @@
             // txt_cellno
             // 
             txt_cellno.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_cellno.Location = new Point(444, 179);
+            txt_cellno.Location = new Point(404, 176);
             txt_cellno.Name = "txt_cellno";
             txt_cellno.Size = new Size(202, 23);
             txt_cellno.TabIndex = 17;
@@ -931,7 +931,7 @@
             // txt_suffix
             // 
             txt_suffix.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_suffix.Location = new Point(137, 205);
+            txt_suffix.Location = new Point(104, 202);
             txt_suffix.Name = "txt_suffix";
             txt_suffix.Size = new Size(117, 23);
             txt_suffix.TabIndex = 5;
@@ -939,7 +939,7 @@
             // txt_lastname
             // 
             txt_lastname.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_lastname.Location = new Point(137, 130);
+            txt_lastname.Location = new Point(104, 127);
             txt_lastname.Name = "txt_lastname";
             txt_lastname.Size = new Size(219, 23);
             txt_lastname.TabIndex = 2;
@@ -949,7 +949,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(44, 259);
+            label13.Location = new Point(11, 256);
             label13.Name = "label13";
             label13.Size = new Size(55, 15);
             label13.TabIndex = 3;
@@ -958,7 +958,7 @@
             // txt_emergencyContactno
             // 
             txt_emergencyContactno.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_emergencyContactno.Location = new Point(444, 381);
+            txt_emergencyContactno.Location = new Point(404, 378);
             txt_emergencyContactno.Name = "txt_emergencyContactno";
             txt_emergencyContactno.Size = new Size(202, 23);
             txt_emergencyContactno.TabIndex = 24;
@@ -966,7 +966,7 @@
             // txt_biometric
             // 
             txt_biometric.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_biometric.Location = new Point(137, 78);
+            txt_biometric.Location = new Point(104, 75);
             txt_biometric.Name = "txt_biometric";
             txt_biometric.Size = new Size(219, 23);
             txt_biometric.TabIndex = 1;
@@ -975,7 +975,7 @@
             // txt_sss
             // 
             txt_sss.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_sss.Location = new Point(744, 255);
+            txt_sss.Location = new Point(698, 252);
             txt_sss.Name = "txt_sss";
             txt_sss.Size = new Size(198, 23);
             txt_sss.TabIndex = 26;
@@ -983,7 +983,7 @@
             // txt_telephoneno
             // 
             txt_telephoneno.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_telephoneno.Location = new Point(444, 154);
+            txt_telephoneno.Location = new Point(404, 151);
             txt_telephoneno.Name = "txt_telephoneno";
             txt_telephoneno.Size = new Size(202, 23);
             txt_telephoneno.TabIndex = 16;
@@ -991,7 +991,7 @@
             // txt_middlename
             // 
             txt_middlename.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_middlename.Location = new Point(137, 180);
+            txt_middlename.Location = new Point(104, 177);
             txt_middlename.Name = "txt_middlename";
             txt_middlename.Size = new Size(219, 23);
             txt_middlename.TabIndex = 4;
@@ -1001,7 +1001,7 @@
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label22.Location = new Point(365, 134);
+            label22.Location = new Point(332, 131);
             label22.Name = "label22";
             label22.Size = new Size(70, 15);
             label22.TabIndex = 3;
@@ -1011,7 +1011,7 @@
             // 
             label35.AutoSize = true;
             label35.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label35.Location = new Point(656, 335);
+            label35.Location = new Point(617, 332);
             label35.Name = "label35";
             label35.Size = new Size(25, 15);
             label35.TabIndex = 2;
@@ -1021,7 +1021,7 @@
             // 
             label30.AutoSize = true;
             label30.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label30.Location = new Point(365, 336);
+            label30.Location = new Point(332, 333);
             label30.Name = "label30";
             label30.Size = new Size(39, 15);
             label30.TabIndex = 2;
@@ -1031,7 +1031,7 @@
             // 
             label33.AutoSize = true;
             label33.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label33.Location = new Point(655, 312);
+            label33.Location = new Point(615, 309);
             label33.Name = "label33";
             label33.Size = new Size(72, 15);
             label33.TabIndex = 2;
@@ -1041,7 +1041,7 @@
             // 
             label29.AutoSize = true;
             label29.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label29.Location = new Point(492, 309);
+            label29.Location = new Point(452, 306);
             label29.Name = "label29";
             label29.Size = new Size(119, 15);
             label29.TabIndex = 2;
@@ -1051,7 +1051,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(44, 159);
+            label9.Location = new Point(11, 156);
             label9.Name = "label9";
             label9.Size = new Size(59, 15);
             label9.TabIndex = 3;
@@ -1061,7 +1061,7 @@
             // 
             label21.AutoSize = true;
             label21.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label21.Location = new Point(365, 209);
+            label21.Location = new Point(332, 206);
             label21.Name = "label21";
             label21.Size = new Size(36, 15);
             label21.TabIndex = 2;
@@ -1071,7 +1071,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.Location = new Point(44, 234);
+            label12.Location = new Point(11, 231);
             label12.Name = "label12";
             label12.Size = new Size(91, 15);
             label12.TabIndex = 2;
@@ -1081,7 +1081,7 @@
             // 
             label32.AutoSize = true;
             label32.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label32.Location = new Point(655, 286);
+            label32.Location = new Point(615, 283);
             label32.Name = "label32";
             label32.Size = new Size(62, 15);
             label32.TabIndex = 3;
@@ -1091,7 +1091,7 @@
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label25.Location = new Point(365, 284);
+            label25.Location = new Point(332, 281);
             label25.Name = "label25";
             label25.Size = new Size(62, 15);
             label25.TabIndex = 3;
@@ -1101,7 +1101,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.Location = new Point(44, 308);
+            label15.Location = new Point(11, 305);
             label15.Name = "label15";
             label15.Size = new Size(49, 15);
             label15.TabIndex = 3;
@@ -1111,7 +1111,7 @@
             // 
             label20.AutoSize = true;
             label20.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label20.Location = new Point(365, 183);
+            label20.Location = new Point(332, 180);
             label20.Name = "label20";
             label20.Size = new Size(37, 15);
             label20.TabIndex = 3;
@@ -1120,7 +1120,7 @@
             // txt_idno
             // 
             txt_idno.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_idno.Location = new Point(137, 53);
+            txt_idno.Location = new Point(104, 50);
             txt_idno.Name = "txt_idno";
             txt_idno.Size = new Size(219, 23);
             txt_idno.TabIndex = 0;
@@ -1130,7 +1130,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(44, 209);
+            label11.Location = new Point(11, 206);
             label11.Name = "label11";
             label11.Size = new Size(37, 15);
             label11.TabIndex = 3;
@@ -1140,7 +1140,7 @@
             // 
             label28.AutoSize = true;
             label28.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label28.Location = new Point(365, 386);
+            label28.Location = new Point(332, 383);
             label28.Name = "label28";
             label28.Size = new Size(59, 15);
             label28.TabIndex = 2;
@@ -1150,7 +1150,7 @@
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label19.Location = new Point(365, 108);
+            label19.Location = new Point(332, 105);
             label19.Name = "label19";
             label19.Size = new Size(65, 15);
             label19.TabIndex = 2;
@@ -1160,7 +1160,7 @@
             // 
             label34.AutoSize = true;
             label34.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label34.Location = new Point(650, 55);
+            label34.Location = new Point(610, 52);
             label34.Name = "label34";
             label34.Size = new Size(88, 17);
             label34.TabIndex = 2;
@@ -1170,7 +1170,7 @@
             // 
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label31.Location = new Point(655, 261);
+            label31.Location = new Point(615, 258);
             label31.Name = "label31";
             label31.Size = new Size(44, 15);
             label31.TabIndex = 2;
@@ -1180,7 +1180,7 @@
             // 
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label24.Location = new Point(365, 259);
+            label24.Location = new Point(332, 256);
             label24.Name = "label24";
             label24.Size = new Size(66, 15);
             label24.TabIndex = 2;
@@ -1190,7 +1190,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.Location = new Point(44, 284);
+            label14.Location = new Point(11, 281);
             label14.Name = "label14";
             label14.Size = new Size(45, 15);
             label14.TabIndex = 2;
@@ -1200,7 +1200,7 @@
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label18.Location = new Point(365, 158);
+            label18.Location = new Point(332, 155);
             label18.Name = "label18";
             label18.Size = new Size(34, 15);
             label18.TabIndex = 2;
@@ -1210,7 +1210,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(44, 133);
+            label8.Location = new Point(11, 130);
             label8.Name = "label8";
             label8.Size = new Size(58, 15);
             label8.TabIndex = 2;
@@ -1220,7 +1220,7 @@
             // 
             label27.AutoSize = true;
             label27.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label27.Location = new Point(365, 361);
+            label27.Location = new Point(332, 358);
             label27.Name = "label27";
             label27.Size = new Size(72, 15);
             label27.TabIndex = 2;
@@ -1230,7 +1230,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.Location = new Point(365, 83);
+            label17.Location = new Point(332, 80);
             label17.Name = "label17";
             label17.Size = new Size(50, 15);
             label17.TabIndex = 3;
@@ -1240,7 +1240,7 @@
             // 
             label23.AutoSize = true;
             label23.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label23.Location = new Point(365, 234);
+            label23.Location = new Point(332, 231);
             label23.Name = "label23";
             label23.Size = new Size(60, 15);
             label23.TabIndex = 2;
@@ -1250,7 +1250,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(44, 185);
+            label10.Location = new Point(11, 182);
             label10.Name = "label10";
             label10.Size = new Size(74, 15);
             label10.TabIndex = 2;
@@ -1260,7 +1260,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label16.Location = new Point(365, 57);
+            label16.Location = new Point(332, 54);
             label16.Name = "label16";
             label16.Size = new Size(65, 15);
             label16.TabIndex = 2;
@@ -1270,7 +1270,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(44, 82);
+            label7.Location = new Point(11, 79);
             label7.Name = "label7";
             label7.Size = new Size(68, 15);
             label7.TabIndex = 3;
@@ -1280,7 +1280,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(44, 57);
+            label6.Location = new Point(11, 54);
             label6.Name = "label6";
             label6.Size = new Size(28, 15);
             label6.TabIndex = 2;
@@ -1293,7 +1293,7 @@
             iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
             iconPictureBox1.IconColor = SystemColors.ControlText;
             iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox1.Location = new Point(3, 5);
+            iconPictureBox1.Location = new Point(10, 7);
             iconPictureBox1.Name = "iconPictureBox1";
             iconPictureBox1.Size = new Size(32, 32);
             iconPictureBox1.TabIndex = 1;
@@ -1303,7 +1303,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(37, 5);
+            label2.Location = new Point(40, 5);
             label2.Name = "label2";
             label2.Size = new Size(217, 32);
             label2.TabIndex = 0;
@@ -1320,7 +1320,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(177, 57);
             panel2.Name = "panel2";
-            panel2.Size = new Size(937, 90);
+            panel2.Size = new Size(916, 90);
             panel2.TabIndex = 3;
             // 
             // txt_employeeid
@@ -1349,6 +1349,16 @@
             picture_avatar.TabIndex = 5;
             picture_avatar.TabStop = false;
             // 
+            // txt_department
+            // 
+            txt_department.AutoSize = true;
+            txt_department.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_department.Location = new Point(65, 58);
+            txt_department.Name = "txt_department";
+            txt_department.Size = new Size(70, 15);
+            txt_department.TabIndex = 3;
+            txt_department.Text = "Department";
+            // 
             // txt_position
             // 
             txt_position.AutoSize = true;
@@ -1375,7 +1385,7 @@
             panel3.Dock = DockStyle.Bottom;
             panel3.Location = new Point(0, 76);
             panel3.Name = "panel3";
-            panel3.Size = new Size(937, 14);
+            panel3.Size = new Size(916, 14);
             panel3.TabIndex = 0;
             // 
             // MainPanel
@@ -1384,7 +1394,7 @@
             MainPanel.Location = new Point(177, 147);
             MainPanel.Name = "MainPanel";
             MainPanel.Padding = new Padding(5);
-            MainPanel.Size = new Size(937, 498);
+            MainPanel.Size = new Size(916, 508);
             MainPanel.TabIndex = 4;
             // 
             // panel4
@@ -1393,28 +1403,18 @@
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 56);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1114, 1);
+            panel4.Size = new Size(1093, 1);
             panel4.TabIndex = 5;
             // 
             // openFileDialog1
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
-            // txt_department
-            // 
-            txt_department.AutoSize = true;
-            txt_department.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_department.Location = new Point(65, 58);
-            txt_department.Name = "txt_department";
-            txt_department.Size = new Size(70, 15);
-            txt_department.TabIndex = 3;
-            txt_department.Text = "Department";
-            // 
             // EmployeeRegistration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1114, 645);
+            ClientSize = new Size(1093, 655);
             Controls.Add(panel_basicinfo);
             Controls.Add(MainPanel);
             Controls.Add(panel2);

@@ -125,15 +125,30 @@ namespace HRIS.Forms.Employee.Employment
 
                 if (endDateCell.Value != null)
                 {
-                    // Set the background color to red if End Date has a value
-                    statusCell.Style.BackColor = Color.Red;
-                    statusCell.Style.SelectionBackColor = Color.Red;
+                    DateTime endDate = (DateTime)endDateCell.Value; // Assuming the value is of type DateTime
+                    DateTime currentDate = DateTime.Now;
+
+                    if (endDate > currentDate)
+                    {
+                        // Set the background color to green if End Date is in the future
+                        statusCell.Style.BackColor = Color.Green;
+                        statusCell.Style.SelectionBackColor = Color.Green;
+                        statusCell.ToolTipText = "Active";
+                    }
+                    else
+                    {
+                        // Set the background color to red if End Date is in the past
+                        statusCell.Style.BackColor = Color.Red;
+                        statusCell.Style.SelectionBackColor = Color.Red;
+                        statusCell.ToolTipText = "Inactive";
+                    }
                 }
                 else
                 {
                     // Set the background color to green if End Date is null
                     statusCell.Style.BackColor = Color.Green;
                     statusCell.Style.SelectionBackColor = Color.Green;
+                    statusCell.ToolTipText = "Active";
                 }
             }
         }
@@ -165,18 +180,39 @@ namespace HRIS.Forms.Employee.Employment
                 DataGridViewRow selectedRow = dgrid_employment.SelectedRows[0];
                 DataGridViewCell endDateCell = selectedRow.Cells["EmploymentEndDate"];
 
+                DateTime currentDate = DateTime.Now; // Current date
+
                 if (endDateCell.Value != null)
                 {
-                    btn_edit.Enabled = false;
-                    btn_edit.IconColor = Color.DarkGray;
+                    DateTime endDate = (DateTime)endDateCell.Value;
+
+                    if (endDateCell.Value != null && endDate > currentDate)
+                    {
+                        // Enable the edit button if End Date is in the past or today
+                        btn_edit.Enabled = true;
+                        btn_edit.IconColor = Color.White;
+
+                    }
+                    else
+                    {
+                        // Disable the edit button if End Date is in the future or not null
+                        btn_edit.Enabled = false;
+                        btn_edit.IconColor = Color.DarkGray;
+                    }
                 }
                 else
                 {
+                    // Enable the edit button if End Date is null
                     btn_edit.Enabled = true;
                     btn_edit.IconColor = Color.White;
                 }
             }
+
         }
 
+        private void dgrid_employment_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

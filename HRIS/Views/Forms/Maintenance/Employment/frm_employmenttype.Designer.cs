@@ -33,13 +33,15 @@
             checkBox_isactive = new CheckBox();
             txt_employmenttype = new TextBox();
             label1 = new Label();
+            checkBox_organicemployee = new CheckBox();
+            checkBox_inorganicemployee = new CheckBox();
             SuspendLayout();
             // 
             // btn_cancel
             // 
             btn_cancel.FlatAppearance.BorderColor = SystemColors.ActiveCaption;
             btn_cancel.FlatStyle = FlatStyle.Flat;
-            btn_cancel.Location = new Point(310, 110);
+            btn_cancel.Location = new Point(310, 130);
             btn_cancel.Name = "btn_cancel";
             btn_cancel.Size = new Size(72, 40);
             btn_cancel.TabIndex = 13;
@@ -52,7 +54,7 @@
             btn_save.BackColor = SystemColors.ActiveCaption;
             btn_save.FlatAppearance.BorderSize = 0;
             btn_save.FlatStyle = FlatStyle.Flat;
-            btn_save.Location = new Point(228, 110);
+            btn_save.Location = new Point(228, 130);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(76, 40);
             btn_save.TabIndex = 12;
@@ -86,14 +88,36 @@
             label1.TabIndex = 9;
             label1.Text = "Employment type";
             // 
+            // checkBox_organicemployee
+            // 
+            checkBox_organicemployee.AutoSize = true;
+            checkBox_organicemployee.Location = new Point(116, 97);
+            checkBox_organicemployee.Name = "checkBox_organicemployee";
+            checkBox_organicemployee.Size = new Size(123, 19);
+            checkBox_organicemployee.TabIndex = 11;
+            checkBox_organicemployee.Text = "Organic Employee";
+            checkBox_organicemployee.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_inorganicemployee
+            // 
+            checkBox_inorganicemployee.AutoSize = true;
+            checkBox_inorganicemployee.Location = new Point(245, 97);
+            checkBox_inorganicemployee.Name = "checkBox_inorganicemployee";
+            checkBox_inorganicemployee.Size = new Size(133, 19);
+            checkBox_inorganicemployee.TabIndex = 11;
+            checkBox_inorganicemployee.Text = "InOrganic Employee";
+            checkBox_inorganicemployee.UseVisualStyleBackColor = true;
+            // 
             // frm_employmenttype
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(394, 179);
+            ClientSize = new Size(394, 193);
             Controls.Add(btn_cancel);
             Controls.Add(btn_save);
+            Controls.Add(checkBox_inorganicemployee);
+            Controls.Add(checkBox_organicemployee);
             Controls.Add(checkBox_isactive);
             Controls.Add(txt_employmenttype);
             Controls.Add(label1);
@@ -115,5 +139,7 @@
         private CheckBox checkBox_isactive;
         private TextBox txt_employmenttype;
         private Label label1;
+        private CheckBox checkBox_organicemployee;
+        private CheckBox checkBox_inorganicemployee;
     }
 }

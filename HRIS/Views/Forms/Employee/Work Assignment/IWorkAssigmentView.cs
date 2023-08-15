@@ -9,6 +9,7 @@ namespace HRIS.Views.Forms.Employee.Work_Assignment
     public interface IWorkAssigmentView
     {
         void DisplayWorkAssignment(List<Models.Workassignment> workassignments);
+        void DisplayWorkAssignmentCustom(List<object> workassingmentlist);
        
     }
 }

@@ -91,7 +91,6 @@ namespace HRIS.Forms.Employee.Employment
         }
         private void update()
         {
-
             var existingEmployment = _context.Employmentstatuses.Find(EmploymentID);
             if (existingEmployment != null)
             {
@@ -153,6 +152,11 @@ namespace HRIS.Forms.Employee.Employment
         private void txt_enddate_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void DsiplayEmploymentCustom(List<object> Employmentlist)
+        {
+            //throw new NotImplementedException();
         }
     }
 }

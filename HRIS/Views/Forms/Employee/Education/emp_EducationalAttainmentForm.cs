@@ -131,7 +131,7 @@ namespace HRIS.Forms.Employee
         private void btn_delete_Click(object sender, EventArgs e)
         {
             int educID = (int)dgrid_educationalattainment.SelectedRows[0].Cells[0].Value;
-            string? educattainment = dgrid_educationalattainment.SelectedRows[0].Cells[1].Value.ToString();
+            string? educattainment = dgrid_educationalattainment.SelectedRows[0].Cells[2].Value.ToString();
             if (educID != 0)
             {
                 if (MessageBox.Show("Are you sure to delete " + educattainment,

@@ -22,9 +22,14 @@ namespace HRIS.Presenter
         }
         public void LoadEducationallevel()
         {
-            var p = _context.Educationallevels.ToList();
+            var p = _context.Educationallevels
+             .OrderBy(e => e.PkEducationallevel == 1000 ? 0 : 1)
+             .ThenBy(e => e.Description)
+             .ToList();
             educationaldata = p;
             _view.DisplayEducationalLevel(p);
+
+
         }
         public void AddEducationalLevel(Models.Educationallevel educationallevel)
         {

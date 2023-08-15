@@ -14,17 +14,35 @@ namespace HRIS.Presenter
         private readonly IEmploymentTypeView _view;
         private readonly HrisContext _context;
         private List<Employmenttype> employmenttypeData;
+        private List<object> employmentList;
         public employmenttype_Presenter(IEmploymentTypeView view)
         {
             _view = view;
             _context = new HrisContext();
             employmenttypeData = new List<Employmenttype>();
+            employmentList = new List<object>();
         }
         public void LoadEmployment()
         {
             var p = _context.Employmenttypes.ToList();
             employmenttypeData = p;
             _view.DisplayEmployment(p);
+        }
+        public void LoadEmploymentListCustom()
+        {
+            var query = from employment in _context.Employmenttypes
+                        orderby employment.Description descending
+                        select new
+                        {
+                            ID = employment.PkEmploymenttype,
+                            isActive = employment.IsActive,
+                            Description = employment.Description,
+                            isOrganic = employment.IsOrganic,
+                            isInOrganic = employment.IsInOrganic,
+                            CreatedDate = employment.Createddate,
+                        };
+            _view.DsiplayEmploymentCustom(query.ToList<object>());
+            employmentList = query.ToList<object>();
         }
         public void AddEmploymenttype(Employmenttype employmenttype)
         {

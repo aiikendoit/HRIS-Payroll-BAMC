@@ -28,40 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            employee_label = new Label();
             label2 = new Label();
             label3 = new Label();
             comboBox_DocType = new ComboBox();
-            textBox1 = new TextBox();
+            textBox_Description = new TextBox();
             label4 = new Label();
-            richTextBox1 = new RichTextBox();
+            richTextBox_Remarks = new RichTextBox();
             label5 = new Label();
             button1 = new Button();
             btn_save = new Button();
+            comboBox1 = new ComboBox();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(16, 23);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(124, 21);
-            label1.TabIndex = 0;
-            label1.Text = "Employee Name";
-            // 
-            // employee_label
-            // 
-            employee_label.AutoSize = true;
-            employee_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            employee_label.Location = new Point(148, 23);
-            employee_label.Margin = new Padding(4, 0, 4, 0);
-            employee_label.Name = "employee_label";
-            employee_label.Size = new Size(31, 21);
-            employee_label.TabIndex = 0;
-            employee_label.Text = "___";
             // 
             // label2
             // 
@@ -87,18 +64,19 @@
             // 
             // comboBox_DocType
             // 
+            comboBox_DocType.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox_DocType.FormattingEnabled = true;
             comboBox_DocType.Location = new Point(148, 47);
             comboBox_DocType.Name = "comboBox_DocType";
             comboBox_DocType.Size = new Size(258, 29);
             comboBox_DocType.TabIndex = 1;
             // 
-            // textBox1
+            // textBox_Description
             // 
-            textBox1.Location = new Point(148, 82);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(258, 29);
-            textBox1.TabIndex = 2;
+            textBox_Description.Location = new Point(148, 82);
+            textBox_Description.Name = "textBox_Description";
+            textBox_Description.Size = new Size(258, 29);
+            textBox_Description.TabIndex = 2;
             // 
             // label4
             // 
@@ -111,13 +89,13 @@
             label4.TabIndex = 0;
             label4.Text = "Remarks";
             // 
-            // richTextBox1
+            // richTextBox_Remarks
             // 
-            richTextBox1.Location = new Point(148, 117);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(258, 77);
-            richTextBox1.TabIndex = 3;
-            richTextBox1.Text = "";
+            richTextBox_Remarks.Location = new Point(148, 117);
+            richTextBox_Remarks.Name = "richTextBox_Remarks";
+            richTextBox_Remarks.Size = new Size(258, 77);
+            richTextBox_Remarks.TabIndex = 3;
+            richTextBox_Remarks.Text = "";
             // 
             // label5
             // 
@@ -148,6 +126,15 @@
             btn_save.TabIndex = 5;
             btn_save.Text = "Save";
             btn_save.UseVisualStyleBackColor = true;
+            btn_save.Click += btn_save_Click;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(22, 268);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 29);
+            comboBox1.TabIndex = 6;
             // 
             // Add_Docs
             // 
@@ -155,17 +142,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(434, 330);
+            Controls.Add(comboBox1);
             Controls.Add(btn_save);
             Controls.Add(button1);
             Controls.Add(label5);
-            Controls.Add(richTextBox1);
-            Controls.Add(textBox1);
+            Controls.Add(richTextBox_Remarks);
+            Controls.Add(textBox_Description);
             Controls.Add(comboBox_DocType);
-            Controls.Add(employee_label);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(4);
@@ -180,17 +166,15 @@
         }
 
         #endregion
-
-        private Label label1;
-        private Label employee_label;
         private Label label2;
         private Label label3;
         private ComboBox comboBox_DocType;
-        private TextBox textBox1;
+        private TextBox textBox_Description;
         private Label label4;
-        private RichTextBox richTextBox1;
+        private RichTextBox richTextBox_Remarks;
         private Label label5;
         private Button button1;
         private Button btn_save;
+        private ComboBox comboBox1;
     }
 }

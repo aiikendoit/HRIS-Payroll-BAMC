@@ -197,8 +197,29 @@ namespace HRIS.Forms.Employee.Work_Assignment
                     txt_reponsibilities.Text = wk.Responsibilities;
                     txt_jobscope.Text = wk.Jobscope;
                     checkBox_ishead.Checked = wk.IsManager;
-                    txt_startdate.Value = wk.Startdate;
-                    txt_enddate.Value = wk.Enddate;
+//<<<<<<< HEAD
+                    
+//                    if (wk.Startdate == null)
+//                    {
+//                        txt_startdate.Format = DateTimePickerFormat.Custom;
+//                        txt_startdate.CustomFormat = " ";
+//                    } else
+//                    {
+//                        txt_startdate.Value = (DateTime)wk.Startdate;
+//                    }
+//                    if (wk.Enddate == null)
+//                    {
+//                        txt_enddate.Format = DateTimePickerFormat.Custom;
+//                        txt_enddate.CustomFormat = " ";
+//                    }
+//                    else
+//                    {
+//                        txt_enddate.Value = (DateTime)wk.Enddate;
+//                    }
+//=======
+//                    txt_startdate.Value = wk.Startdate;
+//                    txt_enddate.Value = wk.Enddate;
+//>>>>>>> origin/main
 
                 }
             }

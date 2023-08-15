@@ -274,8 +274,8 @@
             btn_inactiveEmployee.Padding = new Padding(10, 0, 0, 0);
             btn_inactiveEmployee.Size = new Size(167, 28);
             btn_inactiveEmployee.TabIndex = 26;
-            btn_inactiveEmployee.Tag = "In-active Employee";
-            btn_inactiveEmployee.Text = "In-active Employee";
+            btn_inactiveEmployee.Tag = "Archive Employee";
+            btn_inactiveEmployee.Text = "Archive Employee";
             btn_inactiveEmployee.TextAlign = ContentAlignment.MiddleLeft;
             btn_inactiveEmployee.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_inactiveEmployee.UseVisualStyleBackColor = false;

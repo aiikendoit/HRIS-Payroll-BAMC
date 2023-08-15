@@ -153,5 +153,10 @@ namespace HRIS.Forms.Employee.Employment
         {
 
         }
+
+        public void DsiplayEmploymentCustom(List<object> Employmentlist)
+        {
+            //throw new NotImplementedException();
+        }
     }
 }

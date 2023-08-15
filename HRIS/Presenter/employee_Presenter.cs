@@ -77,10 +77,8 @@ namespace HRIS.Presenter
                             Address = employee.Address1 + " " + employee.Address2 + " " + employee.Address3 + " " + barangay.Description
                             + " " + townCity.Description + " " + province.Description + " " + zipcode.Zipcode1 ,
                         };
-
            employeesData =  query.ToList<object>();
-            _view.DisplayEmployeeCustomView(employeesData);
-
+           _view.DisplayEmployeeCustomView(employeesData);
         }
         public void loadEmployeeJoin_InActive()
         {

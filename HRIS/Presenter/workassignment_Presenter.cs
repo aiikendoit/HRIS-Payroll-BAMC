@@ -1,5 +1,6 @@
 ﻿using HRIS.Models;
 using HRIS.Views.Forms.Employee.Work_Assignment;
+using HRIS.Views.Forms.Userlogin;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -26,7 +27,7 @@ namespace HRIS.Presenter
             var query = from workass in _context.Workassignments
                         join department in _context.Departments on workass.FkDepartment equals department.PkDepartment
                         join position in _context.Positions on workass.FkPosition equals position.PkPosition
-                        where workass.FkEmployee == employeeid
+                        where workass.FkEmployee == employeeid && workass.IsDeleted == false
                         orderby workass.Startdate descending
                         select new
                         {
@@ -34,7 +35,7 @@ namespace HRIS.Presenter
                             Department = department.Description,
                             Position = position.PositionName,
                             JobDescription = workass.Jobdescription,
-                            workass.IsManager,
+                            isManager = workass.IsManager,
                             Startdate = workass.Startdate,
                             Enddate = workass.Enddate,
                         };
@@ -52,23 +53,53 @@ namespace HRIS.Presenter
         }
         public void AddWorkAssignment(Workassignment workassignment)
         {
-            _context.Workassignments.Add(workassignment);
-            _context.SaveChanges();
+            var ver = new UserConfirmation();
+            ver.ShowDialog();
+            if (ver.islogin)
+            {
+                _context.Workassignments.Add(workassignment);
+                _context.SaveChanges();
+                MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+             
         }
         public void UpdateWorkAssignment(Workassignment workassignment)
         {
-            var existingWorkassignment = _context.Workassignments.Find(workassignment.PkWorkassignment);
+            var ver = new UserConfirmation();
+            ver.ShowDialog();
+            if (ver.islogin)
+            {
+                var existingWorkassignment = _context.Workassignments.Find(workassignment.PkWorkassignment);
 
-            if (existingWorkassignment != null)
-            {
-                _context.Entry(existingWorkassignment).State = EntityState.Detached;
-                _context.Entry(workassignment).State = EntityState.Modified;
-                _context.SaveChanges();
-                MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (existingWorkassignment != null)
+                {
+                    _context.Entry(existingWorkassignment).State = EntityState.Detached;
+                    _context.Entry(workassignment).State = EntityState.Modified;
+                    _context.SaveChanges();
+                    MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Workassignment not found");
+                }
             }
-            else
+                
+
+        }
+        public void DeleteWorkAssignment(Workassignment workassignment)
+        {
+            var ver = new UserConfirmation();
+            ver.ShowDialog();
+            if (ver.islogin)
             {
-                MessageBox.Show("Workassignment not found");
+                var existingWorkAssigment = _context.Workassignments.Find(workassignment.PkWorkassignment);
+                if (existingWorkAssigment != null)
+                {
+                    _context.Entry(existingWorkAssigment).State = EntityState.Detached;
+                    _context.Entry(workassignment).State = EntityState.Modified;
+                    _context.SaveChanges();
+                    MessageBox.Show("Successfully Deleted!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
 
         }

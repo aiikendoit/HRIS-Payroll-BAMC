@@ -33,16 +33,25 @@
             btn_new = new FontAwesome.Sharp.IconButton();
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
+            btn_delete = new FontAwesome.Sharp.IconButton();
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            textBox1 = new TextBox();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
+            txt_search = new TextBox();
+            btn_search = new FontAwesome.Sharp.IconButton();
+            btn_refresh = new FontAwesome.Sharp.IconButton();
             dgrid_workassignment = new DataGridView();
+            ColorStatus = new DataGridViewTextBoxColumn();
+            WorkEmploymentID = new DataGridViewTextBoxColumn();
+            WorkEmploymentDepartment = new DataGridViewTextBoxColumn();
+            WorkEmploymentPosition = new DataGridViewTextBoxColumn();
+            WorkEmploymentJobDescription = new DataGridViewTextBoxColumn();
+            WorkEmploymentisManager = new DataGridViewCheckBoxColumn();
+            Startdate = new DataGridViewTextBoxColumn();
+            EndDate = new DataGridViewTextBoxColumn();
             panel1 = new Panel();
-            label1 = new Label();
+            txt_totalcount = new Label();
             flowLayoutPanel2.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
@@ -56,6 +65,7 @@
             flowLayoutPanel2.Controls.Add(btn_new);
             flowLayoutPanel2.Controls.Add(btn_edit);
             flowLayoutPanel2.Controls.Add(btn_view);
+            flowLayoutPanel2.Controls.Add(btn_delete);
             flowLayoutPanel2.Dock = DockStyle.Top;
             flowLayoutPanel2.Location = new Point(0, 78);
             flowLayoutPanel2.Margin = new Padding(0);
@@ -124,6 +134,28 @@
             btn_view.TextAlign = ContentAlignment.MiddleLeft;
             btn_view.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_view.UseVisualStyleBackColor = false;
+            btn_view.Click += btn_view_Click;
+            // 
+            // btn_delete
+            // 
+            btn_delete.BackColor = Color.FromArgb(255, 43, 43);
+            btn_delete.FlatAppearance.BorderSize = 0;
+            btn_delete.FlatStyle = FlatStyle.Flat;
+            btn_delete.ForeColor = Color.White;
+            btn_delete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            btn_delete.IconColor = Color.White;
+            btn_delete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_delete.IconSize = 20;
+            btn_delete.Location = new Point(228, 3);
+            btn_delete.Margin = new Padding(1, 3, 1, 3);
+            btn_delete.Name = "btn_delete";
+            btn_delete.Size = new Size(73, 30);
+            btn_delete.TabIndex = 8;
+            btn_delete.Text = "Delete";
+            btn_delete.TextAlign = ContentAlignment.MiddleLeft;
+            btn_delete.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_delete.UseVisualStyleBackColor = false;
+            btn_delete.Click += btn_delete_Click;
             // 
             // panel2
             // 
@@ -161,9 +193,9 @@
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoSize = true;
-            flowLayoutPanel1.Controls.Add(textBox1);
-            flowLayoutPanel1.Controls.Add(iconButton1);
-            flowLayoutPanel1.Controls.Add(iconButton2);
+            flowLayoutPanel1.Controls.Add(txt_search);
+            flowLayoutPanel1.Controls.Add(btn_search);
+            flowLayoutPanel1.Controls.Add(btn_refresh);
             flowLayoutPanel1.Dock = DockStyle.Top;
             flowLayoutPanel1.Location = new Point(0, 43);
             flowLayoutPanel1.Margin = new Padding(0);
@@ -171,56 +203,56 @@
             flowLayoutPanel1.Size = new Size(800, 35);
             flowLayoutPanel1.TabIndex = 16;
             // 
-            // textBox1
+            // txt_search
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(3, 3);
-            textBox1.Margin = new Padding(3, 3, 1, 3);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = " Search";
-            textBox1.Size = new Size(338, 29);
-            textBox1.TabIndex = 0;
+            txt_search.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_search.Location = new Point(3, 3);
+            txt_search.Margin = new Padding(3, 3, 1, 3);
+            txt_search.Name = "txt_search";
+            txt_search.PlaceholderText = " Search";
+            txt_search.Size = new Size(338, 29);
+            txt_search.TabIndex = 0;
             // 
-            // iconButton1
+            // btn_search
             // 
-            iconButton1.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.ForeColor = Color.White;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 20;
-            iconButton1.Location = new Point(343, 3);
-            iconButton1.Margin = new Padding(1, 3, 1, 3);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(77, 29);
-            iconButton1.TabIndex = 1;
-            iconButton1.Text = "Search";
-            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton1.UseVisualStyleBackColor = false;
-            iconButton1.Click += iconButton1_Click;
+            btn_search.BackColor = Color.FromArgb(0, 127, 152);
+            btn_search.FlatAppearance.BorderSize = 0;
+            btn_search.FlatStyle = FlatStyle.Flat;
+            btn_search.ForeColor = Color.White;
+            btn_search.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            btn_search.IconColor = Color.White;
+            btn_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_search.IconSize = 20;
+            btn_search.Location = new Point(343, 3);
+            btn_search.Margin = new Padding(1, 3, 1, 3);
+            btn_search.Name = "btn_search";
+            btn_search.Size = new Size(77, 29);
+            btn_search.TabIndex = 1;
+            btn_search.Text = "Search";
+            btn_search.TextAlign = ContentAlignment.MiddleLeft;
+            btn_search.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_search.UseVisualStyleBackColor = false;
+            btn_search.Click += iconButton1_Click;
             // 
-            // iconButton2
+            // btn_refresh
             // 
-            iconButton2.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.ForeColor = Color.White;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowsRotate;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.IconSize = 20;
-            iconButton2.Location = new Point(422, 3);
-            iconButton2.Margin = new Padding(1, 3, 1, 3);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(77, 29);
-            iconButton2.TabIndex = 2;
-            iconButton2.Text = "Refresh";
-            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton2.UseVisualStyleBackColor = false;
+            btn_refresh.BackColor = Color.FromArgb(0, 127, 152);
+            btn_refresh.FlatAppearance.BorderSize = 0;
+            btn_refresh.FlatStyle = FlatStyle.Flat;
+            btn_refresh.ForeColor = Color.White;
+            btn_refresh.IconChar = FontAwesome.Sharp.IconChar.ArrowsRotate;
+            btn_refresh.IconColor = Color.White;
+            btn_refresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_refresh.IconSize = 20;
+            btn_refresh.Location = new Point(422, 3);
+            btn_refresh.Margin = new Padding(1, 3, 1, 3);
+            btn_refresh.Name = "btn_refresh";
+            btn_refresh.Size = new Size(77, 29);
+            btn_refresh.TabIndex = 2;
+            btn_refresh.Text = "Refresh";
+            btn_refresh.TextAlign = ContentAlignment.MiddleLeft;
+            btn_refresh.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_refresh.UseVisualStyleBackColor = false;
             // 
             // dgrid_workassignment
             // 
@@ -233,31 +265,76 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_workassignment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_workassignment.ColumnHeadersHeight = 50;
+            dgrid_workassignment.Columns.AddRange(new DataGridViewColumn[] { ColorStatus, WorkEmploymentID, WorkEmploymentDepartment, WorkEmploymentPosition, WorkEmploymentJobDescription, WorkEmploymentisManager, Startdate, EndDate });
             dgrid_workassignment.Dock = DockStyle.Fill;
             dgrid_workassignment.Location = new Point(0, 114);
             dgrid_workassignment.Name = "dgrid_workassignment";
             dgrid_workassignment.RowTemplate.Height = 25;
             dgrid_workassignment.Size = new Size(800, 309);
             dgrid_workassignment.TabIndex = 18;
+            dgrid_workassignment.CellFormatting += dgrid_workassignment_CellFormatting;
+            dgrid_workassignment.SelectionChanged += dgrid_workassignment_SelectionChanged;
+            // 
+            // ColorStatus
+            // 
+            ColorStatus.HeaderText = "";
+            ColorStatus.Name = "ColorStatus";
+            // 
+            // WorkEmploymentID
+            // 
+            WorkEmploymentID.HeaderText = "ID";
+            WorkEmploymentID.Name = "WorkEmploymentID";
+            // 
+            // WorkEmploymentDepartment
+            // 
+            WorkEmploymentDepartment.HeaderText = "Department";
+            WorkEmploymentDepartment.Name = "WorkEmploymentDepartment";
+            // 
+            // WorkEmploymentPosition
+            // 
+            WorkEmploymentPosition.HeaderText = "Position";
+            WorkEmploymentPosition.Name = "WorkEmploymentPosition";
+            // 
+            // WorkEmploymentJobDescription
+            // 
+            WorkEmploymentJobDescription.HeaderText = "Job Description";
+            WorkEmploymentJobDescription.Name = "WorkEmploymentJobDescription";
+            // 
+            // WorkEmploymentisManager
+            // 
+            WorkEmploymentisManager.HeaderText = "isManager";
+            WorkEmploymentisManager.Name = "WorkEmploymentisManager";
+            WorkEmploymentisManager.Resizable = DataGridViewTriState.True;
+            WorkEmploymentisManager.SortMode = DataGridViewColumnSortMode.Automatic;
+            // 
+            // Startdate
+            // 
+            Startdate.HeaderText = "Start Date";
+            Startdate.Name = "Startdate";
+            // 
+            // EndDate
+            // 
+            EndDate.HeaderText = "End Date";
+            EndDate.Name = "EndDate";
             // 
             // panel1
             // 
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(txt_totalcount);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 423);
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 27);
             panel1.TabIndex = 19;
             // 
-            // label1
+            // txt_totalcount
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(5, 6);
-            label1.Name = "label1";
-            label1.Size = new Size(94, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Total record(s): 0";
+            txt_totalcount.AutoSize = true;
+            txt_totalcount.ForeColor = Color.Black;
+            txt_totalcount.Location = new Point(5, 6);
+            txt_totalcount.Name = "txt_totalcount";
+            txt_totalcount.Size = new Size(94, 15);
+            txt_totalcount.TabIndex = 0;
+            txt_totalcount.Text = "Total record(s): 0";
             // 
             // emp_workassignment
             // 
@@ -296,11 +373,20 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
-        private TextBox textBox1;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private TextBox txt_search;
+        private FontAwesome.Sharp.IconButton btn_search;
+        private FontAwesome.Sharp.IconButton btn_refresh;
         private DataGridView dgrid_workassignment;
         private Panel panel1;
-        private Label label1;
+        private Label txt_totalcount;
+        private FontAwesome.Sharp.IconButton btn_delete;
+        private DataGridViewTextBoxColumn ColorStatus;
+        private DataGridViewTextBoxColumn WorkEmploymentID;
+        private DataGridViewTextBoxColumn WorkEmploymentDepartment;
+        private DataGridViewTextBoxColumn WorkEmploymentPosition;
+        private DataGridViewTextBoxColumn WorkEmploymentJobDescription;
+        private DataGridViewCheckBoxColumn WorkEmploymentisManager;
+        private DataGridViewTextBoxColumn Startdate;
+        private DataGridViewTextBoxColumn EndDate;
     }
 }

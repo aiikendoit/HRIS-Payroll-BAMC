@@ -30,8 +30,7 @@
         {
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            label2 = new Label();
-            txt_enddate = new DateTimePicker();
+            label_header = new Label();
             btn_cancel = new Button();
             btn_save = new Button();
             txt_department = new ComboBox();
@@ -46,8 +45,9 @@
             label5 = new Label();
             txt_reponsibilities = new TextBox();
             label1 = new Label();
-            txt_startdate = new DateTimePicker();
             checkBox_ishead = new CheckBox();
+            txt_enddate = new Syncfusion.WinForms.Input.SfDateTimeEdit();
+            txt_startdate = new Syncfusion.WinForms.Input.SfDateTimeEdit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             SuspendLayout();
@@ -55,7 +55,7 @@
             // panel2
             // 
             panel2.Controls.Add(iconPictureBox1);
-            panel2.Controls.Add(label2);
+            panel2.Controls.Add(label_header);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
@@ -75,27 +75,15 @@
             iconPictureBox1.TabIndex = 3;
             iconPictureBox1.TabStop = false;
             // 
-            // label2
+            // label_header
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(46, 8);
-            label2.Name = "label2";
-            label2.Size = new Size(215, 25);
-            label2.TabIndex = 2;
-            label2.Text = "New Work Assignment";
-            // 
-            // txt_enddate
-            // 
-            txt_enddate.CustomFormat = " ";
-            txt_enddate.Enabled = false;
-            txt_enddate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_enddate.Format = DateTimePickerFormat.Custom;
-            txt_enddate.Location = new Point(117, 337);
-            txt_enddate.Name = "txt_enddate";
-            txt_enddate.Size = new Size(270, 25);
-            txt_enddate.TabIndex = 44;
-            txt_enddate.ValueChanged += txt_enddate_ValueChanged;
+            label_header.AutoSize = true;
+            label_header.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label_header.Location = new Point(46, 8);
+            label_header.Name = "label_header";
+            label_header.Size = new Size(215, 25);
+            label_header.TabIndex = 2;
+            label_header.Text = "New Work Assignment";
             // 
             // btn_cancel
             // 
@@ -105,9 +93,10 @@
             btn_cancel.Location = new Point(296, 372);
             btn_cancel.Name = "btn_cancel";
             btn_cancel.Size = new Size(91, 36);
-            btn_cancel.TabIndex = 43;
+            btn_cancel.TabIndex = 9;
             btn_cancel.Text = "Cancel";
             btn_cancel.UseVisualStyleBackColor = false;
+            btn_cancel.Click += btn_cancel_Click;
             // 
             // btn_save
             // 
@@ -118,7 +107,7 @@
             btn_save.Location = new Point(199, 372);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(91, 36);
-            btn_save.TabIndex = 42;
+            btn_save.TabIndex = 8;
             btn_save.Text = "Save";
             btn_save.UseVisualStyleBackColor = false;
             btn_save.Click += btn_save_Click;
@@ -131,7 +120,7 @@
             txt_department.Location = new Point(117, 46);
             txt_department.Name = "txt_department";
             txt_department.Size = new Size(270, 25);
-            txt_department.TabIndex = 41;
+            txt_department.TabIndex = 0;
             txt_department.SelectedIndexChanged += txt_department_SelectedIndexChanged;
             // 
             // txt_jobscope
@@ -141,7 +130,7 @@
             txt_jobscope.Multiline = true;
             txt_jobscope.Name = "txt_jobscope";
             txt_jobscope.Size = new Size(270, 50);
-            txt_jobscope.TabIndex = 40;
+            txt_jobscope.TabIndex = 4;
             // 
             // label22
             // 
@@ -191,7 +180,7 @@
             txt_position.Location = new Point(117, 77);
             txt_position.Name = "txt_position";
             txt_position.Size = new Size(270, 25);
-            txt_position.TabIndex = 41;
+            txt_position.TabIndex = 1;
             // 
             // label4
             // 
@@ -210,7 +199,7 @@
             txt_jobdescription.Multiline = true;
             txt_jobdescription.Name = "txt_jobdescription";
             txt_jobdescription.Size = new Size(270, 50);
-            txt_jobdescription.TabIndex = 40;
+            txt_jobdescription.TabIndex = 2;
             // 
             // label5
             // 
@@ -229,7 +218,7 @@
             txt_reponsibilities.Multiline = true;
             txt_reponsibilities.Name = "txt_reponsibilities";
             txt_reponsibilities.Size = new Size(270, 50);
-            txt_reponsibilities.TabIndex = 40;
+            txt_reponsibilities.TabIndex = 3;
             // 
             // label1
             // 
@@ -241,24 +230,35 @@
             label1.TabIndex = 38;
             label1.Text = "Start date";
             // 
-            // txt_startdate
-            // 
-            txt_startdate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_startdate.Format = DateTimePickerFormat.Short;
-            txt_startdate.Location = new Point(117, 306);
-            txt_startdate.Name = "txt_startdate";
-            txt_startdate.Size = new Size(270, 25);
-            txt_startdate.TabIndex = 44;
-            // 
             // checkBox_ishead
             // 
             checkBox_ishead.AutoSize = true;
-            checkBox_ishead.Location = new Point(117, 278);
+            checkBox_ishead.Location = new Point(117, 280);
             checkBox_ishead.Name = "checkBox_ishead";
             checkBox_ishead.Size = new Size(54, 19);
-            checkBox_ishead.TabIndex = 45;
+            checkBox_ishead.TabIndex = 5;
             checkBox_ishead.Text = "Head";
             checkBox_ishead.UseVisualStyleBackColor = true;
+            // 
+            // txt_enddate
+            // 
+            txt_enddate.AllowNull = true;
+            txt_enddate.Location = new Point(118, 337);
+            txt_enddate.Name = "txt_enddate";
+            txt_enddate.Size = new Size(272, 23);
+            txt_enddate.TabIndex = 7;
+            txt_enddate.Value = null;
+            txt_enddate.Watermark = "Select a date";
+            // 
+            // txt_startdate
+            // 
+            txt_startdate.AllowNull = true;
+            txt_startdate.Location = new Point(118, 309);
+            txt_startdate.Name = "txt_startdate";
+            txt_startdate.Size = new Size(272, 23);
+            txt_startdate.TabIndex = 6;
+            txt_startdate.Value = null;
+            txt_startdate.Watermark = "Select a date";
             // 
             // emp_AddworkAssignment
             // 
@@ -266,10 +266,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(402, 424);
+            Controls.Add(txt_enddate);
+            Controls.Add(txt_startdate);
             Controls.Add(checkBox_ishead);
             Controls.Add(panel2);
-            Controls.Add(txt_startdate);
-            Controls.Add(txt_enddate);
             Controls.Add(btn_cancel);
             Controls.Add(btn_save);
             Controls.Add(txt_position);
@@ -301,8 +301,7 @@
 
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private Label label2;
-        private DateTimePicker txt_enddate;
+        private Label label_header;
         private Button btn_cancel;
         private Button btn_save;
         private ComboBox txt_department;
@@ -317,7 +316,8 @@
         private Label label5;
         private TextBox txt_reponsibilities;
         private Label label1;
-        private DateTimePicker txt_startdate;
         private CheckBox checkBox_ishead;
+        private Syncfusion.WinForms.Input.SfDateTimeEdit txt_enddate;
+        private Syncfusion.WinForms.Input.SfDateTimeEdit txt_startdate;
     }
 }

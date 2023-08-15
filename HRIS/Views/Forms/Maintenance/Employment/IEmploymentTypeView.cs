@@ -10,5 +10,6 @@ namespace HRIS.Views.Forms.Maintenance.Employment
     public interface IEmploymentTypeView
     {
         void DisplayEmployment(List<Models.Employmenttype> employments);
+        void DsiplayEmploymentCustom(List<object> Employmentlist);
     }
 }

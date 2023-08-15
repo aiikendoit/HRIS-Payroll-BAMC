@@ -19,7 +19,7 @@ public partial class Workassignment
 
     public string? Jobscope { get; set; }
 
-    public bool? IsManager { get; set; }
+    public bool IsManager { get; set; }
 
     public DateTime? Startdate { get; set; }
 
@@ -30,6 +30,8 @@ public partial class Workassignment
     public string? Createdby { get; set; }
 
     public int? FkSystemUser { get; set; }
+
+    public bool IsDeleted { get; set; }
 
     public virtual Department? FkDepartmentNavigation { get; set; }
 

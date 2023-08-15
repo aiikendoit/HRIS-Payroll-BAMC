@@ -630,7 +630,7 @@ public partial class YourDbContext : DbContext
             entity.Property(e => e.PkEmployeedocument)
                 .ValueGeneratedNever()
                 .HasColumnName("PK_employeedocument");
-            entity.Property(e => e.Createby).HasColumnName("createby");
+            entity.Property(e => e.Createdby).HasColumnName("createdby");
             entity.Property(e => e.Createddate)
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
@@ -638,9 +638,7 @@ public partial class YourDbContext : DbContext
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("description");
-            entity.Property(e => e.File)
-                .HasColumnType("image")
-                .HasColumnName("file");
+           
             entity.Property(e => e.FkDoctype).HasColumnName("FK_doctype");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.Remarks)

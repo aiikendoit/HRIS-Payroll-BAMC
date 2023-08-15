@@ -17,10 +17,13 @@ namespace HRIS.Forms.Employee.Documents
 {
     public partial class emp_DocumentsForm : Form
     {
-        public emp_DocumentsForm()
+        public int EmpID = 0;
+        public emp_DocumentsForm(int PkEmployeeID)
+
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_documents);
+            EmpID = PkEmployeeID;
         }
 
         private void emp_DocumentsForm_Load(object sender, EventArgs e)
@@ -28,11 +31,12 @@ namespace HRIS.Forms.Employee.Documents
 
         }
 
-        private void iconButton4_Click(object sender, EventArgs e)
+        private void btn_new_Click(object sender, EventArgs e)
         {
-            var st = new Add_Docs();
+            var st = new Add_Docs(EmpID);
             st.ShowDialog();
-            //salarysetting_Presenter.LoadSalarysetting();
         }
+
+
     }
 }

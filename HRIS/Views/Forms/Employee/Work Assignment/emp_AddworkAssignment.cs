@@ -177,7 +177,7 @@ namespace HRIS.Forms.Employee.Work_Assignment
                     txt_jobdescription.Text = wk.Jobdescription;
                     txt_reponsibilities.Text = wk.Responsibilities;
                     txt_jobscope.Text = wk.Jobscope;
-                    checkBox_ishead.Checked = wk.IsManager ?? false;
+                    checkBox_ishead.Checked = wk.IsManager;
                     
                     if (wk.Startdate == null)
                     {

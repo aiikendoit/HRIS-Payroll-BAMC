@@ -96,10 +96,9 @@ public partial class HrisContext : DbContext
             optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
                           .UseLazyLoadingProxies();
         }
-
     }
-    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-    //        => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+//        => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -731,10 +730,11 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("employeedocument", "HR");
 
-            entity.Property(e => e.PkEmployeedocument)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_employeedocument");
-            entity.Property(e => e.Createby).HasColumnName("createby");
+            entity.Property(e => e.PkEmployeedocument).HasColumnName("PK_employeedocument");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
@@ -742,11 +742,10 @@ public partial class HrisContext : DbContext
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("description");
-            entity.Property(e => e.File)
-                .HasColumnType("image")
-                .HasColumnName("file");
+            entity.Property(e => e.EmployeeDocs).HasColumnName("employeeDocs");
             entity.Property(e => e.FkDoctype).HasColumnName("FK_doctype");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.Remarks)
                 .IsUnicode(false)
                 .HasColumnName("remarks");
@@ -869,6 +868,7 @@ public partial class HrisContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Enddate)
@@ -916,6 +916,8 @@ public partial class HrisContext : DbContext
                 .HasColumnName("description");
             entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsActive).HasColumnName("isActive");
+            entity.Property(e => e.IsInOrganic).HasColumnName("isInOrganic");
+            entity.Property(e => e.IsOrganic).HasColumnName("isOrganic");
         });
 
         modelBuilder.Entity<Leavenoticetype>(entity =>
@@ -1339,6 +1341,7 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkPosition).HasColumnName("FK_position");
             entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
+            entity.Property(e => e.IsDeleted).HasColumnName("isDeleted");
             entity.Property(e => e.IsManager).HasColumnName("isManager");
             entity.Property(e => e.Jobdescription)
                 .HasMaxLength(500)

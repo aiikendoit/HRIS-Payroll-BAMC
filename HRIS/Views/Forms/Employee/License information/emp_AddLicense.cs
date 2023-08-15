@@ -71,8 +71,8 @@ namespace HRIS.Forms.Employee.License_information
         }
         private void save()
         {
-            if (UniversalStatic.IsEmpty(txt_licensenumber)) return;
-            if (UniversalStatic.IsEmpty(txt_expiryreminder)) return;
+            if (UniversalStatic.IsEmpty(txt_licensenumber)  && UniversalStatic.IsEmpty(txt_expiryreminder)) return;
+            //if (UniversalStatic.IsEmpty(txt_expiryreminder)) return;
             string? createdby = Properties.Settings.Default.completename;
             int id = Properties.Settings.Default.usercode;
             var cv = new Models.Employeelicense

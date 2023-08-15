@@ -4,6 +4,7 @@ using HRIS.Views.Forms.Employee.Work_Assignment;
 using HRIS.Views.Forms.Maintenance.Department;
 using HRIS.Views.Forms.Maintenance.Positions;
 using Microsoft.EntityFrameworkCore;
+using Syncfusion.WinForms.Input;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,7 @@ namespace HRIS.Forms.Employee.Work_Assignment
         private readonly HrisContext _context;
         private string emp_ID;
         private int workassignmentid;
+        public bool isUpdate = false;
         public emp_AddworkAssignment(string employeeid)
         {
             InitializeComponent();
@@ -33,7 +35,6 @@ namespace HRIS.Forms.Employee.Work_Assignment
             _context = new HrisContext();
             department_presenter.LoadDepartment();
             emp_ID = employeeid;
-            label1.Text = employeeid;
         }
 
         public void DisplayDepartment(List<Department> departments)
@@ -65,26 +66,22 @@ namespace HRIS.Forms.Employee.Work_Assignment
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            if (btn_save.Text == "Save")
-            {
-                add();
-            }
-            if (btn_save.Text == "Update")
+            if (isUpdate)
             {
                 update();
             }
-            
-           
+            else
+            {
+                add();
+            }
+
+
         }
         private void add()
         {
             try
             {
-                DateTime? dateTime = null;
-                if (txt_enddate.Format != DateTimePickerFormat.Custom)
-                {
-                    dateTime = txt_enddate.Value;
-                }
+
                 string? createdby = Properties.Settings.Default.completename;
                 int id = Properties.Settings.Default.usercode;
                 var cv = new Workassignment
@@ -97,12 +94,11 @@ namespace HRIS.Forms.Employee.Work_Assignment
                     Jobscope = txt_jobscope.Text,
                     IsManager = checkBox_ishead.Checked,
                     Startdate = txt_startdate.Value,
-                    Enddate = dateTime,
+                    Enddate = txt_enddate.Value,
                     Createdby = createdby,
                     FkSystemUser = id
                 };
                 workassignment_presenter.AddWorkAssignment(cv);
-                MessageBox.Show("Added Successfully!");
                 this.Close();
             }
             catch (Exception ex)
@@ -124,9 +120,7 @@ namespace HRIS.Forms.Employee.Work_Assignment
             try
             {
                 var existingWorkAssignment = _context.Workassignments.Find(workassignmentid);
-    
-                DateTime? dateTime = null;
-                if (txt_enddate.Format == DateTimePickerFormat.Short) { dateTime = txt_enddate.Value; }
+
 
                 if (existingWorkAssignment != null)
                 {
@@ -138,9 +132,9 @@ namespace HRIS.Forms.Employee.Work_Assignment
                     existingWorkAssignment.Jobscope = txt_jobscope.Text;
                     existingWorkAssignment.IsManager = checkBox_ishead.Checked;
                     existingWorkAssignment.Startdate = txt_startdate.Value;
-                    existingWorkAssignment.Enddate = dateTime;
+                    existingWorkAssignment.Enddate = txt_enddate.Value;
                     workassignment_presenter.UpdateWorkAssignment(existingWorkAssignment);
-                  
+
                 }
             }
             catch (Exception ex)
@@ -159,10 +153,35 @@ namespace HRIS.Forms.Employee.Work_Assignment
         }
         public void putdata(int workass)
         {
-            workassignmentid = workass;
-            workassignment_presenter.loadWorkAssignmentWithWhere(workass);
-            txt_enddate.Enabled = true;
-            btn_save.Text = "Update";
+            if (isUpdate)
+            {
+                workassignmentid = workass;
+                workassignment_presenter.loadWorkAssignmentWithWhere(workass);
+                txt_enddate.Enabled = true;
+                btn_cancel.Select();
+                label_header.Text = "Edit Work Assignment";
+            }
+            else
+            {
+
+                workassignmentid = workass;
+                workassignment_presenter.loadWorkAssignmentWithWhere(workass);
+                txt_enddate.Enabled = true;
+                btn_save.Visible = false;
+                btn_cancel.Select();
+                //disable control
+                foreach (Control control in this.Controls)
+                {
+                    if (control is TextBox ||
+                        control is SfDateTimeEdit ||
+                        control is ComboBox || control is CheckBox)
+                    {
+                        control.Enabled = false;
+                    }
+                }
+                label_header.Text = "View Work Assignment";
+            }
+
         }
 
         public void DisplayWorkAssignment(List<Workassignment> workassignments)
@@ -178,24 +197,8 @@ namespace HRIS.Forms.Employee.Work_Assignment
                     txt_reponsibilities.Text = wk.Responsibilities;
                     txt_jobscope.Text = wk.Jobscope;
                     checkBox_ishead.Checked = wk.IsManager;
-                    
-                    if (wk.Startdate == null)
-                    {
-                        txt_startdate.Format = DateTimePickerFormat.Custom;
-                        txt_startdate.CustomFormat = " ";
-                    } else
-                    {
-                        txt_startdate.Value = (DateTime)wk.Startdate;
-                    }
-                    if (wk.Enddate == null)
-                    {
-                        txt_enddate.Format = DateTimePickerFormat.Custom;
-                        txt_enddate.CustomFormat = " ";
-                    }
-                    else
-                    {
-                        txt_enddate.Value = (DateTime)wk.Enddate;
-                    }
+                    txt_startdate.Value = wk.Startdate;
+                    txt_enddate.Value = wk.Enddate;
 
                 }
             }
@@ -214,12 +217,16 @@ namespace HRIS.Forms.Employee.Work_Assignment
 
         private void txt_enddate_ValueChanged(object sender, EventArgs e)
         {
-            txt_enddate.Format = DateTimePickerFormat.Short;
         }
 
         public void DisplayWorkAssignmentCustom(List<object> workassingmentlist)
         {
             throw new NotImplementedException();
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -31,6 +31,8 @@ public partial class Workassignment
 
     public int? FkSystemUser { get; set; }
 
+    public bool IsDeleted { get; set; }
+
     public virtual Department? FkDepartmentNavigation { get; set; }
 
     public virtual Employee? FkEmployeeNavigation { get; set; }

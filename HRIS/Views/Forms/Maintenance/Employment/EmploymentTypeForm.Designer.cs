@@ -41,12 +41,18 @@
             btn_search = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel2 = new FlowLayoutPanel();
             btn_view = new FontAwesome.Sharp.IconButton();
-            btn_cancel = new FontAwesome.Sharp.IconButton();
+            btn_refresh = new FontAwesome.Sharp.IconButton();
             ID = new DataGridViewTextBoxColumn();
             pictureBox1 = new PictureBox();
             label2 = new Label();
             panel2 = new Panel();
             flowLayoutPanel1 = new FlowLayoutPanel();
+            isActive = new DataGridViewTextBoxColumn();
+            EmploymentID = new DataGridViewTextBoxColumn();
+            EmploymentDescription = new DataGridViewTextBoxColumn();
+            isOrganic = new DataGridViewCheckBoxColumn();
+            isInOrganic = new DataGridViewCheckBoxColumn();
+            Createddate = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgrid_employmenttype).BeginInit();
             panel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -67,6 +73,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_employmenttype.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_employmenttype.ColumnHeadersHeight = 50;
+            dgrid_employmenttype.Columns.AddRange(new DataGridViewColumn[] { isActive, EmploymentID, EmploymentDescription, isOrganic, isInOrganic, Createddate });
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.Window;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -89,6 +96,7 @@
             dgrid_employmenttype.RowTemplate.Height = 25;
             dgrid_employmenttype.Size = new Size(800, 315);
             dgrid_employmenttype.TabIndex = 58;
+            dgrid_employmenttype.CellFormatting += dgrid_employmenttype_CellFormatting;
             // 
             // panel1
             // 
@@ -216,26 +224,26 @@
             btn_view.UseVisualStyleBackColor = false;
             btn_view.Click += btn_view_Click;
             // 
-            // btn_cancel
+            // btn_refresh
             // 
-            btn_cancel.BackColor = Color.FromArgb(0, 127, 152);
-            btn_cancel.FlatAppearance.BorderSize = 0;
-            btn_cancel.FlatStyle = FlatStyle.Flat;
-            btn_cancel.ForeColor = Color.White;
-            btn_cancel.IconChar = FontAwesome.Sharp.IconChar.ArrowsRotate;
-            btn_cancel.IconColor = Color.White;
-            btn_cancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_cancel.IconSize = 20;
-            btn_cancel.Location = new Point(419, 3);
-            btn_cancel.Margin = new Padding(1, 3, 1, 3);
-            btn_cancel.Name = "btn_cancel";
-            btn_cancel.Size = new Size(77, 29);
-            btn_cancel.TabIndex = 2;
-            btn_cancel.Text = "Refresh";
-            btn_cancel.TextAlign = ContentAlignment.MiddleLeft;
-            btn_cancel.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_cancel.UseVisualStyleBackColor = false;
-            btn_cancel.Click += btn_cancel_Click;
+            btn_refresh.BackColor = Color.FromArgb(0, 127, 152);
+            btn_refresh.FlatAppearance.BorderSize = 0;
+            btn_refresh.FlatStyle = FlatStyle.Flat;
+            btn_refresh.ForeColor = Color.White;
+            btn_refresh.IconChar = FontAwesome.Sharp.IconChar.ArrowsRotate;
+            btn_refresh.IconColor = Color.White;
+            btn_refresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_refresh.IconSize = 20;
+            btn_refresh.Location = new Point(419, 3);
+            btn_refresh.Margin = new Padding(1, 3, 1, 3);
+            btn_refresh.Name = "btn_refresh";
+            btn_refresh.Size = new Size(77, 29);
+            btn_refresh.TabIndex = 2;
+            btn_refresh.Text = "Refresh";
+            btn_refresh.TextAlign = ContentAlignment.MiddleLeft;
+            btn_refresh.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_refresh.UseVisualStyleBackColor = false;
+            btn_refresh.Click += btn_refresh_Click;
             // 
             // ID
             // 
@@ -279,13 +287,47 @@
             flowLayoutPanel1.AutoSize = true;
             flowLayoutPanel1.Controls.Add(txt_search);
             flowLayoutPanel1.Controls.Add(btn_search);
-            flowLayoutPanel1.Controls.Add(btn_cancel);
+            flowLayoutPanel1.Controls.Add(btn_refresh);
             flowLayoutPanel1.Dock = DockStyle.Top;
             flowLayoutPanel1.Location = new Point(0, 37);
             flowLayoutPanel1.Margin = new Padding(0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(800, 35);
             flowLayoutPanel1.TabIndex = 56;
+            // 
+            // isActive
+            // 
+            isActive.HeaderText = "isActive";
+            isActive.Name = "isActive";
+            // 
+            // EmploymentID
+            // 
+            EmploymentID.HeaderText = "ID";
+            EmploymentID.Name = "EmploymentID";
+            // 
+            // EmploymentDescription
+            // 
+            EmploymentDescription.HeaderText = "Description";
+            EmploymentDescription.Name = "EmploymentDescription";
+            // 
+            // isOrganic
+            // 
+            isOrganic.HeaderText = "isOrganic";
+            isOrganic.Name = "isOrganic";
+            isOrganic.Resizable = DataGridViewTriState.True;
+            isOrganic.SortMode = DataGridViewColumnSortMode.Automatic;
+            // 
+            // isInOrganic
+            // 
+            isInOrganic.HeaderText = "isInOrganic";
+            isInOrganic.Name = "isInOrganic";
+            isInOrganic.Resizable = DataGridViewTriState.True;
+            isInOrganic.SortMode = DataGridViewColumnSortMode.Automatic;
+            // 
+            // Createddate
+            // 
+            Createddate.HeaderText = "Createddate";
+            Createddate.Name = "Createddate";
             // 
             // EmploymentTypeForm
             // 
@@ -324,11 +366,17 @@
         private FontAwesome.Sharp.IconButton btn_search;
         private FlowLayoutPanel flowLayoutPanel2;
         private FontAwesome.Sharp.IconButton btn_view;
-        private FontAwesome.Sharp.IconButton btn_cancel;
+        private FontAwesome.Sharp.IconButton btn_refresh;
         private DataGridViewTextBoxColumn ID;
         private PictureBox pictureBox1;
         private Label label2;
         private Panel panel2;
         private FlowLayoutPanel flowLayoutPanel1;
+        private DataGridViewTextBoxColumn isActive;
+        private DataGridViewTextBoxColumn EmploymentID;
+        private DataGridViewTextBoxColumn EmploymentDescription;
+        private DataGridViewCheckBoxColumn isOrganic;
+        private DataGridViewCheckBoxColumn isInOrganic;
+        private DataGridViewTextBoxColumn Createddate;
     }
 }

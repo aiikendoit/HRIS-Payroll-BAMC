@@ -143,5 +143,10 @@ namespace HRIS.Views.Forms.Maintenance.SalarySetting
         {
             this.Close();
         }
+
+        public void DsiplayEmploymentCustom(List<object> Employmentlist)
+        {
+           // throw new NotImplementedException();
+        }
     }
 }

@@ -11,6 +11,10 @@ public partial class Employmenttype
 
     public bool IsActive { get; set; }
 
+    public bool IsOrganic { get; set; }
+
+    public bool IsInOrganic { get; set; }
+
     public DateTime? Createddate { get; set; }
 
     public string? Createdby { get; set; }

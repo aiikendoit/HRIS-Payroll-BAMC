@@ -78,6 +78,7 @@
             dgrid_employment.RowTemplate.Height = 25;
             dgrid_employment.Size = new Size(800, 312);
             dgrid_employment.TabIndex = 18;
+            dgrid_employment.CellContentClick += dgrid_employment_CellContentClick;
             dgrid_employment.CellFormatting += dgrid_employment_CellFormatting;
             dgrid_employment.CellStateChanged += dgrid_employment_CellStateChanged;
             dgrid_employment.SelectionChanged += dgrid_employment_SelectionChanged;

@@ -36,6 +36,8 @@ namespace HRIS.Views.Forms.Maintenance.Employment
                 this.Selectedemploymenttype = employmenttype;
                 txt_employmenttype.Text = Selectedemploymenttype.Description;
                 checkBox_isactive.Checked = Selectedemploymenttype.IsActive;
+                checkBox_organicemployee.Checked = Selectedemploymenttype.IsOrganic;
+                checkBox_inorganicemployee.Checked = Selectedemploymenttype.IsInOrganic;
             }
             else
             {
@@ -44,6 +46,8 @@ namespace HRIS.Views.Forms.Maintenance.Employment
                 this.Selectedemploymenttype = employmenttype;
                 txt_employmenttype.Text = Selectedemploymenttype.Description;
                 checkBox_isactive.Checked = Selectedemploymenttype.IsActive;
+                checkBox_organicemployee.Checked = Selectedemploymenttype.IsOrganic;
+                checkBox_inorganicemployee.Checked = Selectedemploymenttype.IsInOrganic;
                 //disable control
                 txt_employmenttype.Enabled = false;
                 checkBox_isactive.Enabled = false;
@@ -58,6 +62,8 @@ namespace HRIS.Views.Forms.Maintenance.Employment
             {
                 Description = txt_employmenttype.Text,
                 IsActive = checkBox_isactive.Checked,
+                IsOrganic = checkBox_organicemployee.Checked,
+                IsInOrganic = checkBox_inorganicemployee.Checked,
                 Createdby = createdby,
                 FkSystemUser = id
             };
@@ -71,6 +77,8 @@ namespace HRIS.Views.Forms.Maintenance.Employment
 
             selEmType.Description = txt_employmenttype.Text;
             selEmType.IsActive = checkBox_isactive.Checked;
+            selEmType.IsOrganic = checkBox_organicemployee.Checked;
+            selEmType.IsInOrganic = checkBox_inorganicemployee.Checked;
             employmenttype_Presenter.UpdateEmployment(selEmType);
             this.Close();
         }
@@ -94,6 +102,11 @@ namespace HRIS.Views.Forms.Maintenance.Employment
             {
                 save();
             }
+        }
+
+        public void DsiplayEmploymentCustom(List<object> Employmentlist)
+        {
+            // throw new NotImplementedException();
         }
     }
 }

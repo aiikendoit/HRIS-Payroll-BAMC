@@ -191,7 +191,7 @@ namespace HRIS.Forms.Employee.Employment
                         // Enable the edit button if End Date is in the past or today
                         btn_edit.Enabled = true;
                         btn_edit.IconColor = Color.White;
-                       
+
                     }
                     else
                     {
@@ -210,5 +210,9 @@ namespace HRIS.Forms.Employee.Employment
 
         }
 
+        private void dgrid_employment_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

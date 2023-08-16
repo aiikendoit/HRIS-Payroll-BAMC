@@ -36,13 +36,9 @@
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
-            label1 = new Label();
+            label_total = new Label();
             ID = new DataGridViewTextBoxColumn();
             dgrid_documents = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
             textBox1 = new TextBox();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             iconButton2 = new FontAwesome.Sharp.IconButton();
@@ -162,15 +158,15 @@
             label2.TabIndex = 2;
             label2.Text = "Documents";
             // 
-            // label1
+            // label_total
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(5, 6);
-            label1.Name = "label1";
-            label1.Size = new Size(94, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Total record(s): 0";
+            label_total.AutoSize = true;
+            label_total.ForeColor = Color.Black;
+            label_total.Location = new Point(5, 6);
+            label_total.Name = "label_total";
+            label_total.Size = new Size(94, 15);
+            label_total.TabIndex = 0;
+            label_total.Text = "Total record(s): 0";
             // 
             // ID
             // 
@@ -189,33 +185,12 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_documents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_documents.ColumnHeadersHeight = 50;
-            dgrid_documents.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
             dgrid_documents.Dock = DockStyle.Fill;
             dgrid_documents.Location = new Point(0, 111);
             dgrid_documents.Name = "dgrid_documents";
             dgrid_documents.RowTemplate.Height = 25;
             dgrid_documents.Size = new Size(800, 312);
             dgrid_documents.TabIndex = 33;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "ID";
-            Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Document type";
-            Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Date Added";
-            Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Document";
-            Column4.Name = "Column4";
             // 
             // textBox1
             // 
@@ -282,7 +257,7 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(label_total);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 423);
             panel1.Name = "panel1";
@@ -324,7 +299,7 @@
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
-        private Label label1;
+        private Label label_total;
         private DataGridViewTextBoxColumn ID;
         private DataGridView dgrid_documents;
         private TextBox textBox1;
@@ -332,9 +307,5 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
     }
 }

@@ -34,10 +34,9 @@
             textBox_Description = new TextBox();
             label4 = new Label();
             richTextBox_Remarks = new RichTextBox();
-            label5 = new Label();
-            button1 = new Button();
+            label_FilePath = new Label();
+            buttonAttachedFile = new Button();
             btn_save = new Button();
-            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // label2
@@ -97,24 +96,25 @@
             richTextBox_Remarks.TabIndex = 3;
             richTextBox_Remarks.Text = "";
             // 
-            // label5
+            // label_FilePath
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(245, 204);
-            label5.Name = "label5";
-            label5.Size = new Size(70, 21);
-            label5.TabIndex = 4;
-            label5.Text = "filename";
+            label_FilePath.AutoSize = true;
+            label_FilePath.Location = new Point(245, 204);
+            label_FilePath.Name = "label_FilePath";
+            label_FilePath.Size = new Size(70, 21);
+            label_FilePath.TabIndex = 4;
+            label_FilePath.Text = "filename";
             // 
-            // button1
+            // buttonAttachedFile
             // 
-            button1.FlatAppearance.BorderSize = 0;
-            button1.Location = new Point(148, 200);
-            button1.Name = "button1";
-            button1.Size = new Size(91, 29);
-            button1.TabIndex = 5;
-            button1.Text = "Attached";
-            button1.UseVisualStyleBackColor = true;
+            buttonAttachedFile.FlatAppearance.BorderSize = 0;
+            buttonAttachedFile.Location = new Point(148, 200);
+            buttonAttachedFile.Name = "buttonAttachedFile";
+            buttonAttachedFile.Size = new Size(91, 29);
+            buttonAttachedFile.TabIndex = 5;
+            buttonAttachedFile.Text = "Attached";
+            buttonAttachedFile.UseVisualStyleBackColor = true;
+            buttonAttachedFile.Click += buttonAttachedFile_Click;
             // 
             // btn_save
             // 
@@ -128,24 +128,15 @@
             btn_save.UseVisualStyleBackColor = true;
             btn_save.Click += btn_save_Click;
             // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(22, 268);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 29);
-            comboBox1.TabIndex = 6;
-            // 
             // Add_Docs
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(434, 330);
-            Controls.Add(comboBox1);
             Controls.Add(btn_save);
-            Controls.Add(button1);
-            Controls.Add(label5);
+            Controls.Add(buttonAttachedFile);
+            Controls.Add(label_FilePath);
             Controls.Add(richTextBox_Remarks);
             Controls.Add(textBox_Description);
             Controls.Add(comboBox_DocType);
@@ -172,9 +163,8 @@
         private TextBox textBox_Description;
         private Label label4;
         private RichTextBox richTextBox_Remarks;
-        private Label label5;
-        private Button button1;
+        private Label label_FilePath;
+        private Button buttonAttachedFile;
         private Button btn_save;
-        private ComboBox comboBox1;
     }
 }

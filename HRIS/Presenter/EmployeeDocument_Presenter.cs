@@ -34,5 +34,10 @@ namespace HRIS.Presenter
 
             
         }
+
+        public void loadEmployeeDocsDetails()
+        {
+
+        }
     }
 }

@@ -175,6 +175,8 @@
             // 
             // dgrid_documents
             // 
+            dgrid_documents.AllowUserToAddRows = false;
+            dgrid_documents.AllowUserToDeleteRows = false;
             dgrid_documents.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.IndianRed;
@@ -188,9 +190,11 @@
             dgrid_documents.Dock = DockStyle.Fill;
             dgrid_documents.Location = new Point(0, 111);
             dgrid_documents.Name = "dgrid_documents";
+            dgrid_documents.ReadOnly = true;
             dgrid_documents.RowTemplate.Height = 25;
             dgrid_documents.Size = new Size(800, 312);
             dgrid_documents.TabIndex = 33;
+            dgrid_documents.CellFormatting += dgrid_documents_CellFormatting;
             // 
             // textBox1
             // 

@@ -36,6 +36,16 @@ namespace HRIS.Forms.Employee.Documents
         private void loadEmployeeDocumentsData()
         {
             _presenterEmployeeDocs.loadEmployeeDocsDetails(EmpID);
+            dgv_hideCols();
+        }
+
+        private void dgv_hideCols()
+        {
+            dgrid_documents.Columns[0].Visible = false;
+            dgrid_documents.Columns[1].Visible = false;
+            dgrid_documents.Columns[2].Visible = false;
+            dgrid_documents.Columns[6].Visible = false;
+            dgrid_documents.Columns[7].Visible = false;
         }
 
         private void emp_DocumentsForm_Load(object sender, EventArgs e)
@@ -45,8 +55,9 @@ namespace HRIS.Forms.Employee.Documents
 
         private void btn_new_Click(object sender, EventArgs e)
         {
-            var st = new Add_Docs(EmpID);
-            st.ShowDialog();
+            var addNew = new Add_Docs(EmpID);
+            addNew.ShowDialog();
+            loadEmployeeDocumentsData();
         }
 
         public void DisplayEmployeeDocuments(List<Employeedocument> Employeedocuments)
@@ -60,6 +71,21 @@ namespace HRIS.Forms.Employee.Documents
             dgrid_documents.DataSource = Employeedocuments;
             //changeDgridSize();
             label_total.Text = "Total count(s): " + dgrid_documents.RowCount.ToString();
+        }
+
+        private void dgrid_documents_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            //dgrid_documents.Columns[0].Width = 50;
+            //dgrid_documents.Columns[2].Width = 250;
+            //dgrid_documents.Columns[3].Width = 100;
+            //dgrid_documents.Columns[1].HeaderText = "Educational Attainment";
+            //dgrid_documents.Columns[2].HeaderText = "School Attended";
+            dgrid_documents.Columns[3].HeaderText = "Description";
+            dgrid_documents.Columns[4].HeaderText = "Remarks";
+            dgrid_documents.Columns[5].HeaderText = "Created Date";
+            
+            
+
         }
     }
 }

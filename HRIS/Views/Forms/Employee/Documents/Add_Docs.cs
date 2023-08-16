@@ -132,7 +132,7 @@ namespace HRIS.Views.Forms.Employee.Documents
             }
         }
 
-        public void DisplayEmployees(List<Employeedocument> Employeedocuments)
+        public void DisplayEmployeeDocuments(List<Employeedocument> Employeedocuments)
         {
             throw new NotImplementedException();
         }
@@ -145,6 +145,11 @@ namespace HRIS.Views.Forms.Employee.Documents
                 selectedFilePath = openFileDialog.FileName;
                 label_FilePath.Text = selectedFilePath;
             }
+        }
+
+        public void DisplayEmployeeDocumentsData(List<object> Employeedocuments)
+        {
+            throw new NotImplementedException();
         }
     }
 }

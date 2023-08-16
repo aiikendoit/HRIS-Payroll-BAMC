@@ -1,4 +1,5 @@
 ﻿using HRIS.Class;
+using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Employee;
 using HRIS.Views.Forms.Employee.Documents;
@@ -15,15 +16,26 @@ using System.Windows.Forms;
 
 namespace HRIS.Forms.Employee.Documents
 {
-    public partial class emp_DocumentsForm : Form
+    public partial class emp_DocumentsForm : Form, IEmployeeDocumentView
     {
         public int EmpID = 0;
+        //private int PKEmployeeid;
+        private readonly EmployeeDocument_Presenter _presenterEmployeeDocs;
         public emp_DocumentsForm(int PkEmployeeID)
 
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_documents);
+            _presenterEmployeeDocs = new EmployeeDocument_Presenter(this);
             EmpID = PkEmployeeID;
+            //PKEmployeeid = PKEmployeeid;
+            loadEmployeeDocumentsData();
+
+        }
+
+        private void loadEmployeeDocumentsData()
+        {
+            _presenterEmployeeDocs.loadEmployeeDocsDetails(EmpID);
         }
 
         private void emp_DocumentsForm_Load(object sender, EventArgs e)
@@ -37,6 +49,17 @@ namespace HRIS.Forms.Employee.Documents
             st.ShowDialog();
         }
 
+        public void DisplayEmployeeDocuments(List<Employeedocument> Employeedocuments)
+        {
 
+        }
+
+        public void DisplayEmployeeDocumentsData(List<object> Employeedocuments)
+        {
+            //throw new NotImplementedException();
+            dgrid_documents.DataSource = Employeedocuments;
+            //changeDgridSize();
+            label_total.Text = "Total count(s): " + dgrid_documents.RowCount.ToString();
+        }
     }
 }

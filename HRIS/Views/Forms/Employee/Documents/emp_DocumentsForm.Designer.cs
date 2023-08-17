@@ -31,8 +31,8 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             flowLayoutPanel2 = new FlowLayoutPanel();
             btn_new = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            iconButton5 = new FontAwesome.Sharp.IconButton();
+            btn_Edit = new FontAwesome.Sharp.IconButton();
+            btn_viewDocs = new FontAwesome.Sharp.IconButton();
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
@@ -55,8 +55,8 @@
             // flowLayoutPanel2
             // 
             flowLayoutPanel2.Controls.Add(btn_new);
-            flowLayoutPanel2.Controls.Add(iconButton3);
-            flowLayoutPanel2.Controls.Add(iconButton5);
+            flowLayoutPanel2.Controls.Add(btn_Edit);
+            flowLayoutPanel2.Controls.Add(btn_viewDocs);
             flowLayoutPanel2.Dock = DockStyle.Top;
             flowLayoutPanel2.Location = new Point(0, 75);
             flowLayoutPanel2.Margin = new Padding(0);
@@ -85,45 +85,47 @@
             btn_new.UseVisualStyleBackColor = false;
             btn_new.Click += btn_new_Click;
             // 
-            // iconButton3
+            // btn_Edit
             // 
-            iconButton3.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton3.FlatAppearance.BorderSize = 0;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.IconSize = 20;
-            iconButton3.Location = new Point(78, 3);
-            iconButton3.Margin = new Padding(1, 3, 1, 3);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(73, 30);
-            iconButton3.TabIndex = 5;
-            iconButton3.Text = "Edit";
-            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton3.UseVisualStyleBackColor = false;
+            btn_Edit.BackColor = Color.FromArgb(0, 127, 152);
+            btn_Edit.FlatAppearance.BorderSize = 0;
+            btn_Edit.FlatStyle = FlatStyle.Flat;
+            btn_Edit.ForeColor = Color.White;
+            btn_Edit.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
+            btn_Edit.IconColor = Color.White;
+            btn_Edit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_Edit.IconSize = 20;
+            btn_Edit.Location = new Point(78, 3);
+            btn_Edit.Margin = new Padding(1, 3, 1, 3);
+            btn_Edit.Name = "btn_Edit";
+            btn_Edit.Size = new Size(73, 30);
+            btn_Edit.TabIndex = 5;
+            btn_Edit.Text = "Edit";
+            btn_Edit.TextAlign = ContentAlignment.MiddleLeft;
+            btn_Edit.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_Edit.UseVisualStyleBackColor = false;
+            btn_Edit.Click += btn_Edit_Click;
             // 
-            // iconButton5
+            // btn_viewDocs
             // 
-            iconButton5.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton5.FlatAppearance.BorderSize = 0;
-            iconButton5.FlatStyle = FlatStyle.Flat;
-            iconButton5.ForeColor = Color.White;
-            iconButton5.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            iconButton5.IconColor = Color.White;
-            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton5.IconSize = 20;
-            iconButton5.Location = new Point(153, 3);
-            iconButton5.Margin = new Padding(1, 3, 1, 3);
-            iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(73, 30);
-            iconButton5.TabIndex = 6;
-            iconButton5.Text = "View";
-            iconButton5.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton5.UseVisualStyleBackColor = false;
+            btn_viewDocs.BackColor = Color.FromArgb(0, 127, 152);
+            btn_viewDocs.FlatAppearance.BorderSize = 0;
+            btn_viewDocs.FlatStyle = FlatStyle.Flat;
+            btn_viewDocs.ForeColor = Color.White;
+            btn_viewDocs.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            btn_viewDocs.IconColor = Color.White;
+            btn_viewDocs.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_viewDocs.IconSize = 20;
+            btn_viewDocs.Location = new Point(153, 3);
+            btn_viewDocs.Margin = new Padding(1, 3, 1, 3);
+            btn_viewDocs.Name = "btn_viewDocs";
+            btn_viewDocs.Size = new Size(73, 30);
+            btn_viewDocs.TabIndex = 6;
+            btn_viewDocs.Text = "View";
+            btn_viewDocs.TextAlign = ContentAlignment.MiddleLeft;
+            btn_viewDocs.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_viewDocs.UseVisualStyleBackColor = false;
+            btn_viewDocs.Click += btn_viewDocs_Click;
             // 
             // panel2
             // 
@@ -175,6 +177,8 @@
             // 
             // dgrid_documents
             // 
+            dgrid_documents.AllowUserToAddRows = false;
+            dgrid_documents.AllowUserToDeleteRows = false;
             dgrid_documents.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.IndianRed;
@@ -188,9 +192,11 @@
             dgrid_documents.Dock = DockStyle.Fill;
             dgrid_documents.Location = new Point(0, 111);
             dgrid_documents.Name = "dgrid_documents";
+            dgrid_documents.ReadOnly = true;
             dgrid_documents.RowTemplate.Height = 25;
             dgrid_documents.Size = new Size(800, 312);
             dgrid_documents.TabIndex = 33;
+            dgrid_documents.CellFormatting += dgrid_documents_CellFormatting;
             // 
             // textBox1
             // 
@@ -294,8 +300,8 @@
         #endregion
         private FlowLayoutPanel flowLayoutPanel2;
         private FontAwesome.Sharp.IconButton btn_new;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton btn_Edit;
+        private FontAwesome.Sharp.IconButton btn_viewDocs;
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;

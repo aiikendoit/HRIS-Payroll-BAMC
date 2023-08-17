@@ -91,6 +91,7 @@ namespace HRIS.Forms.Employee.Employment
         }
         private void update()
         {
+            //check
             bool isEnddate = false;
             DateTime? enddate;
             var existingEmployment = _context.Employmentstatuses.Find(EmploymentID);

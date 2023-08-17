@@ -12,6 +12,7 @@ using HRIS.Class;
 using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Maintenance.Document;
+using Microsoft.EntityFrameworkCore;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace HRIS.Views.Forms.Employee.Documents
@@ -24,6 +25,7 @@ namespace HRIS.Views.Forms.Employee.Documents
         private readonly EmployeeDocument_Presenter empDocs_Presenter;
         private readonly HrisContext _context;
         public bool isUpdate;
+        private string selectedFilePath;//attached file
         public Add_Docs(int PkEmployee)
         {
             InitializeComponent();
@@ -88,17 +90,41 @@ namespace HRIS.Views.Forms.Employee.Documents
                 //if (UniversalStatic.IsEmpty(txt_expiryreminder)) return;
                 string? createdby = Properties.Settings.Default.completename;
                 int id = Properties.Settings.Default.usercode;
+                
                 var cv = new Models.Employeedocument
                 {
                     FkEmployee = EmpID,
                     FkDoctype = Convert.ToInt32(comboBox_DocType.SelectedValue),
                     Description = textBox_Description.Text,
                     Remarks = richTextBox_Remarks.Text,
+                    Createddate = DateTime.Now, //get current date
                     Createdby = createdby,
                     FkSystemUser = id
                 };
+
+                if (!string.IsNullOrEmpty(selectedFilePath)) // Make sure a file is selected
+                {
+                    byte[] fileData = File.ReadAllBytes(selectedFilePath);
+                    cv.EmployeeDocs = fileData; // Set the file data to the EmployeeDocs property
+                }
+
                 empDocs_Presenter.add_EmployeeDocs(cv);
-                this.Close();
+
+                var confirmResult = MessageBox.Show("Are you sure to add this item ??",
+                                     "Confirm Add!!",
+                                     MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    // If 'Yes', do something here.
+                    MessageBox.Show("Added Successfuly", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    // If 'No', do something here.
+
+                }
+
             }
             catch (Exception x)
             {
@@ -106,7 +132,22 @@ namespace HRIS.Views.Forms.Employee.Documents
             }
         }
 
-        public void DisplayEmployees(List<Employeedocument> Employeedocuments)
+        public void DisplayEmployeeDocuments(List<Employeedocument> Employeedocuments)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void buttonAttachedFile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                selectedFilePath = openFileDialog.FileName;
+                label_FilePath.Text = selectedFilePath;
+            }
+        }
+
+        public void DisplayEmployeeDocumentsData(List<object> Employeedocuments)
         {
             throw new NotImplementedException();
         }

@@ -9,7 +9,9 @@ namespace HRIS.Views.Forms.Employee.Documents
 {
     public interface IEmployeeDocumentView
     {
-        void DisplayEmployees(List<Employeedocument> Employeedocuments);
+        void DisplayEmployeeDocuments(List<Employeedocument> Employeedocuments);
         //void ClearFields();
+        void DisplayEmployeeDocumentsData(List<object> Employeedocuments);  
+
     }
 }

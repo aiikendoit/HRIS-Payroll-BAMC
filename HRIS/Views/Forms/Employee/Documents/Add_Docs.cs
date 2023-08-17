@@ -110,5 +110,10 @@ namespace HRIS.Views.Forms.Employee.Documents
         {
             throw new NotImplementedException();
         }
+
+        public void DisplayEmployeeInActive(List<object> employees)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

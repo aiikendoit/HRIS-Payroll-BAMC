@@ -38,10 +38,21 @@
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
             dgrid_employee = new DataGridView();
+            PKEmployeeID = new DataGridViewTextBoxColumn();
+            ProfilePicture = new DataGridViewImageColumn();
+            EmployeeID = new DataGridViewTextBoxColumn();
+            Name = new DataGridViewTextBoxColumn();
+            Gender = new DataGridViewTextBoxColumn();
+            Department = new DataGridViewTextBoxColumn();
+            Position = new DataGridViewTextBoxColumn();
+            EmploymentStatus = new DataGridViewTextBoxColumn();
+            Address = new DataGridViewTextBoxColumn();
             panel1 = new Panel();
             txt_totalcount = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             btn_inactiveEmployee = new FontAwesome.Sharp.IconButton();
             label3 = new Label();
             btn_userRegistration = new FontAwesome.Sharp.IconButton();
@@ -196,7 +207,7 @@
             // 
             // dgrid_employee
             // 
-            dgrid_employee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgrid_employee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.IndianRed;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -206,12 +217,64 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_employee.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_employee.ColumnHeadersHeight = 50;
+            dgrid_employee.Columns.AddRange(new DataGridViewColumn[] { PKEmployeeID, ProfilePicture, EmployeeID, Name, Gender, Department, Position, EmploymentStatus, Address });
             dgrid_employee.Dock = DockStyle.Fill;
             dgrid_employee.Location = new Point(5, 76);
             dgrid_employee.Name = "dgrid_employee";
             dgrid_employee.RowTemplate.Height = 25;
             dgrid_employee.Size = new Size(919, 542);
             dgrid_employee.TabIndex = 4;
+            dgrid_employee.CellFormatting += dgrid_employee_CellFormatting;
+            dgrid_employee.SizeChanged += dgrid_employee_SizeChanged;
+            dgrid_employee.Paint += dgrid_employee_Paint;
+            // 
+            // PKEmployeeID
+            // 
+            PKEmployeeID.HeaderText = "ID";
+            PKEmployeeID.Name = "PKEmployeeID";
+            PKEmployeeID.Visible = false;
+            // 
+            // ProfilePicture
+            // 
+            ProfilePicture.HeaderText = "";
+            ProfilePicture.Name = "ProfilePicture";
+            ProfilePicture.Resizable = DataGridViewTriState.True;
+            ProfilePicture.SortMode = DataGridViewColumnSortMode.Automatic;
+            // 
+            // EmployeeID
+            // 
+            EmployeeID.HeaderText = "Employee ID";
+            EmployeeID.Name = "EmployeeID";
+            // 
+            // Name
+            // 
+            Name.HeaderText = "Name";
+            Name.Name = "Name";
+            // 
+            // Gender
+            // 
+            Gender.HeaderText = "Gender";
+            Gender.Name = "Gender";
+            // 
+            // Department
+            // 
+            Department.HeaderText = "Department";
+            Department.Name = "Department";
+            // 
+            // Position
+            // 
+            Position.HeaderText = "Position";
+            Position.Name = "Position";
+            // 
+            // EmploymentStatus
+            // 
+            EmploymentStatus.HeaderText = "Employment Status";
+            EmploymentStatus.Name = "EmploymentStatus";
+            // 
+            // Address
+            // 
+            Address.HeaderText = "Address";
+            Address.Name = "Address";
             // 
             // panel1
             // 
@@ -244,6 +307,8 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(0, 127, 152);
+            panel3.Controls.Add(iconButton2);
+            panel3.Controls.Add(iconButton1);
             panel3.Controls.Add(btn_inactiveEmployee);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(btn_userRegistration);
@@ -253,6 +318,60 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(167, 542);
             panel3.TabIndex = 7;
+            // 
+            // iconButton2
+            // 
+            iconButton2.BackColor = Color.FromArgb(0, 127, 152);
+            iconButton2.Cursor = Cursors.Hand;
+            iconButton2.Dock = DockStyle.Top;
+            iconButton2.FlatAppearance.BorderSize = 0;
+            iconButton2.FlatStyle = FlatStyle.Flat;
+            iconButton2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            iconButton2.ForeColor = Color.White;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            iconButton2.IconColor = Color.White;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton2.IconSize = 20;
+            iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton2.Location = new Point(0, 138);
+            iconButton2.Margin = new Padding(4, 3, 4, 3);
+            iconButton2.Name = "iconButton2";
+            iconButton2.Padding = new Padding(10, 0, 0, 0);
+            iconButton2.Size = new Size(167, 28);
+            iconButton2.TabIndex = 30;
+            iconButton2.Tag = "Archive Employee";
+            iconButton2.Text = "total dgrid width";
+            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
+            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton2.UseVisualStyleBackColor = false;
+            iconButton2.Click += iconButton2_Click;
+            // 
+            // iconButton1
+            // 
+            iconButton1.BackColor = Color.FromArgb(0, 127, 152);
+            iconButton1.Cursor = Cursors.Hand;
+            iconButton1.Dock = DockStyle.Top;
+            iconButton1.FlatAppearance.BorderSize = 0;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            iconButton1.ForeColor = Color.White;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            iconButton1.IconColor = Color.White;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.IconSize = 20;
+            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton1.Location = new Point(0, 110);
+            iconButton1.Margin = new Padding(4, 3, 4, 3);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Padding = new Padding(10, 0, 0, 0);
+            iconButton1.Size = new Size(167, 28);
+            iconButton1.TabIndex = 29;
+            iconButton1.Tag = "Archive Employee";
+            iconButton1.Text = "total column width";
+            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
+            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton1.UseVisualStyleBackColor = false;
+            iconButton1.Click += iconButton1_Click;
             // 
             // btn_inactiveEmployee
             // 
@@ -344,7 +463,6 @@
             Controls.Add(flowLayoutPanel2);
             Controls.Add(flowLayoutPanel1);
             DoubleBuffered = true;
-            Name = "EmployeeForm";
             Padding = new Padding(5);
             Text = "EmployeeForm";
             Load += EmployeeForm_Load;
@@ -377,5 +495,16 @@
         private FontAwesome.Sharp.IconButton btn_userRegistration;
         private Label label2;
         private Label label3;
+        private DataGridViewTextBoxColumn PKEmployeeID;
+        private DataGridViewImageColumn ProfilePicture;
+        private DataGridViewTextBoxColumn EmployeeID;
+        private DataGridViewTextBoxColumn Name;
+        private DataGridViewTextBoxColumn Gender;
+        private DataGridViewTextBoxColumn Department;
+        private DataGridViewTextBoxColumn Position;
+        private DataGridViewTextBoxColumn EmploymentStatus;
+        private DataGridViewTextBoxColumn Address;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }

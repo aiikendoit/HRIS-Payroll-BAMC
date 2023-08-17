@@ -95,5 +95,10 @@ namespace HRIS.Forms.Doctors
         {
             throw new NotImplementedException();
         }
+
+        public void DisplayEmployeeInActive(List<object> employees)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

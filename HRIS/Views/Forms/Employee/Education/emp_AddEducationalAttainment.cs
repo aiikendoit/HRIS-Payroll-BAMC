@@ -37,7 +37,7 @@ namespace HRIS.Forms.Employee.Education
             educationlevel_Presenter = new educationlevel_Presenter(this);
             degreetype_Presenter = new degreetype_Presenter(this);
             _presenter = new educationalattainment_emp_Presenter(this);
-            this.emp_EducationalAttainmentForm = new emp_EducationalAttainment(PKEmployeeID);
+            this.emp_EducationalAttainmentForm = new emp_EducationalAttainment(PKEmployeeID, isUpdate);
             this.Selectededucationalattainment = new Models.Educationalattainment();
 
            

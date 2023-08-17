@@ -21,7 +21,7 @@ namespace HRIS.Forms.Employee
         private readonly workassignment_Presenter workassignment_Presenter;
         private string emp_id;
         private readonly HrisContext _context;
-        public emp_workassignment(int PKEmployeeID)
+        public emp_workassignment(int PKEmployeeID, bool isUpdate)
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_workassignment);
@@ -29,6 +29,12 @@ namespace HRIS.Forms.Employee
             _context = new HrisContext();
             loadWorkAssignment(Convert.ToInt32(PKEmployeeID));
             emp_id = PKEmployeeID.ToString();
+            if (isUpdate == false)
+            {
+                btn_new.Visible = false;
+                btn_edit.Visible = false;
+                btn_delete.Visible = false;
+            }
         }
 
         public void DisplayWorkAssignment(List<Workassignment> workassignments)
@@ -57,8 +63,8 @@ namespace HRIS.Forms.Employee
 
             int workassid = (int)dgrid_workassignment.SelectedRows[0].Cells[1].Value;
             emp_AddworkAssignment emp_AddworkAssignment = new emp_AddworkAssignment(emp_id);
-            emp_AddworkAssignment.putdata(workassid);
             emp_AddworkAssignment.isUpdate = true;
+            emp_AddworkAssignment.putdata(workassid);
             emp_AddworkAssignment.ShowDialog();
             loadWorkAssignment(Convert.ToInt32(emp_id));
         }
@@ -138,6 +144,26 @@ namespace HRIS.Forms.Employee
                     statusCell.ToolTipText = "Active";
                 }
             }
+            // Flag to track if any active row is found
+            bool hasActiveRow = false;
+            // Iterate through the DataGridView rows
+            foreach (DataGridViewRow row in dgrid_workassignment.Rows)
+            {
+                // Check if the row index is valid
+                if (!row.IsNewRow)
+                {
+                    DataGridViewCell statusCell = row.Cells["ColorStatus"];
+
+                    // Check if the background color of the "EmpStatus" cell is green
+                    if (statusCell.Style.BackColor == Color.Green)
+                    {
+                        hasActiveRow = true;
+                        break; // No need to continue checking, as we found an active row
+                    }
+                }
+            }
+            // Set the visibility of the btn_new button based on the flag
+            btn_new.Visible = !hasActiveRow;
         }
 
         private void dgrid_workassignment_SelectionChanged(object sender, EventArgs e)

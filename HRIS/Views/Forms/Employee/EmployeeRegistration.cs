@@ -225,6 +225,7 @@ namespace HRIS.Forms.Employee
                     control.Enabled = false;
                 }
             }
+            btn_addressinfo.Enabled = false;
             btn_save.Visible = false;
             btn_cancel.Visible = false;
         }
@@ -252,7 +253,7 @@ namespace HRIS.Forms.Employee
         private void btn_education_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_EducationalAttainment(employeeid));
+            openchildform(new emp_EducationalAttainment(employeeid,isUpdate));
         }
 
         private void btn_shifting_Click(object sender, EventArgs e)
@@ -264,7 +265,7 @@ namespace HRIS.Forms.Employee
         private void btn_workassignment_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_workassignment(employeeid));
+            openchildform(new emp_workassignment(employeeid,isUpdate));
         }
         private void btn_basicinfo_Click(object sender, EventArgs e)
         {
@@ -281,13 +282,13 @@ namespace HRIS.Forms.Employee
         private void iconButton5_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_licenseInfoForm(employeeid));
+            openchildform(new emp_licenseInfoForm(employeeid,isUpdate));
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_employmentForm(employeeid));
+            openchildform(new emp_employmentForm(employeeid,isUpdate));
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
@@ -465,7 +466,7 @@ namespace HRIS.Forms.Employee
                 if (UniversalStatic.IsEmpty(txt_completeaddress)) return;
                 if (txt_bank.Text != "Not Applicable") { if (UniversalStatic.IsEmpty(txt_accountnumber)) return; }
                 updateEmployee();
-
+                employee_Presenter.LoadEmployeewithWhere(employeeid);
             }
             else
             {
@@ -475,6 +476,7 @@ namespace HRIS.Forms.Employee
                 if (UniversalStatic.IsEmpty(txt_completeaddress)) return;
                 if (txt_bank.Text != "Not Applicable") { if (UniversalStatic.IsEmpty(txt_accountnumber)) return; }
                 addEmployee();
+
             }
 
         }
@@ -489,7 +491,7 @@ namespace HRIS.Forms.Employee
                 txt_department.Text = department;
             }
             else
-            {
+            { 
                 //view
                 employee_Presenter.LoadEmployeewithWhere(employeeid);
                 txt_idno.Enabled = false;
@@ -609,7 +611,8 @@ namespace HRIS.Forms.Employee
                 };
                 if (employee_Presenter.AddEmployee(cv) != true)
                 {
-                    this.Close();
+                    employee_Presenter.LoadEmployeeUsingIDno(txt_idno.Text);
+                    isUpdate = true;
                 }
 
             }
@@ -801,6 +804,26 @@ namespace HRIS.Forms.Employee
             throw new NotImplementedException();
         }
 
+        private void EmployeeRegistration_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (employeeid != 0)
+            {
+                if ( employee_Presenter.LoadCheckEmployment(employeeid) == false)
+                {
+                    MessageBox.Show("Please finish adding information in Employee Employment!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    e.Cancel = true; return;
+                }
+                if (employee_Presenter.LoadCheckWorkAssignment(employeeid) == false)
+                {
+                    MessageBox.Show("Please finish adding information in Employee WorkAssignment!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    e.Cancel = true; return;
+                }
+            }
+        }
 
+        public void DisplayEmployeeInActive(List<object> employees)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

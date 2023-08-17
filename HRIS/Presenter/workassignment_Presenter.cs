@@ -83,9 +83,22 @@ namespace HRIS.Presenter
                     MessageBox.Show("Workassignment not found");
                 }
             }
-                
-
         }
+        public void UpdateWorkAssignmentFromEmploymentStatus(Workassignment workassignment)
+        {
+            
+                var existingWorkassignment = _context.Workassignments.Find(workassignment.PkWorkassignment);
+
+                if (existingWorkassignment != null)
+                {
+                    _context.Entry(existingWorkassignment).State = EntityState.Detached;
+                    _context.Entry(workassignment).State = EntityState.Modified;
+                    _context.SaveChanges();
+                    MessageBox.Show("Work assignment of this employee is also ended. Thank you!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            
+        }
+
         public void DeleteWorkAssignment(Workassignment workassignment)
         {
             var ver = new UserConfirmation();

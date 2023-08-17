@@ -91,6 +91,8 @@ namespace HRIS.Forms.Employee.Employment
         }
         private void update()
         {
+            bool isEnddate = false;
+            DateTime? enddate;
             var existingEmployment = _context.Employmentstatuses.Find(EmploymentID);
             if (existingEmployment != null)
             {
@@ -99,7 +101,19 @@ namespace HRIS.Forms.Employee.Employment
                 existingEmployment.Startdate = txt_startdate.Value;
                 existingEmployment.Enddate = txt_enddate.Value;
                 existingEmployment.Remarks = txt_remarks.Text;
-                employeeemploymentstatus_Presenter.UpdateEmploymentStatus(existingEmployment);
+                enddate = txt_enddate.Value;
+
+                DateTime endDateValue = enddate.Value;
+                if (txt_enddate.Value != null && txt_enddate.Value <= DateTime.Now)
+                {
+                    isEnddate = true;
+                   if (enddate.HasValue)
+                    {
+                        endDateValue = enddate.Value;
+                    }
+                }
+                
+                employeeemploymentstatus_Presenter.UpdateEmploymentStatus(existingEmployment, isEnddate, endDateValue);
                 this.Close();
             }
 

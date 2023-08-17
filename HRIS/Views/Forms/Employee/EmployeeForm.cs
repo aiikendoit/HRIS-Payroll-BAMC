@@ -211,22 +211,6 @@ namespace HRIS.Forms.Employee
 
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            int totalColumnWidth = 0;
-            foreach (DataGridViewColumn column in dgrid_employee.Columns)
-            {
-                totalColumnWidth += column.Width;
-            }
-            MessageBox.Show(totalColumnWidth.ToString());
-        }
-
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            int total = 0;
-            total = dgrid_employee.Width;
-            MessageBox.Show(total.ToString());
-        }
 
         private void dgrid_employee_SizeChanged(object sender, EventArgs e)
         {
@@ -236,7 +220,7 @@ namespace HRIS.Forms.Employee
 
         private void dgrid_employee_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
     }
 }

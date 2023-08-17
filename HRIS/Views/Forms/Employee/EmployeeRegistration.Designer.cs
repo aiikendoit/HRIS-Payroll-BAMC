@@ -43,10 +43,10 @@
             btn_leaverecords = new FontAwesome.Sharp.IconButton();
             btn_leavesetting = new FontAwesome.Sharp.IconButton();
             btn_dutyschedule = new FontAwesome.Sharp.IconButton();
-            btn_workassignment = new FontAwesome.Sharp.IconButton();
-            btn_employment = new FontAwesome.Sharp.IconButton();
             btn_licenseinformation = new FontAwesome.Sharp.IconButton();
             btn_education = new FontAwesome.Sharp.IconButton();
+            btn_workassignment = new FontAwesome.Sharp.IconButton();
+            btn_employment = new FontAwesome.Sharp.IconButton();
             btn_basicinformation = new FontAwesome.Sharp.IconButton();
             panel_basicinfo = new Panel();
             txt_rfid = new TextBox();
@@ -182,10 +182,10 @@
             panelmenu.Controls.Add(btn_leaverecords);
             panelmenu.Controls.Add(btn_leavesetting);
             panelmenu.Controls.Add(btn_dutyschedule);
-            panelmenu.Controls.Add(btn_workassignment);
-            panelmenu.Controls.Add(btn_employment);
             panelmenu.Controls.Add(btn_licenseinformation);
             panelmenu.Controls.Add(btn_education);
+            panelmenu.Controls.Add(btn_workassignment);
+            panelmenu.Controls.Add(btn_employment);
             panelmenu.Controls.Add(btn_basicinformation);
             panelmenu.Dock = DockStyle.Left;
             panelmenu.ForeColor = Color.White;
@@ -455,58 +455,6 @@
             btn_dutyschedule.Click += btn_shifting_Click;
             btn_dutyschedule.MouseHover += _MouseHover_;
             // 
-            // btn_workassignment
-            // 
-            btn_workassignment.BackColor = Color.FromArgb(0, 127, 152);
-            btn_workassignment.Cursor = Cursors.Hand;
-            btn_workassignment.Dock = DockStyle.Top;
-            btn_workassignment.FlatAppearance.BorderSize = 0;
-            btn_workassignment.FlatStyle = FlatStyle.Flat;
-            btn_workassignment.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_workassignment.IconChar = FontAwesome.Sharp.IconChar.LaptopMedical;
-            btn_workassignment.IconColor = Color.White;
-            btn_workassignment.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_workassignment.IconSize = 20;
-            btn_workassignment.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_workassignment.Location = new Point(2, 122);
-            btn_workassignment.Name = "btn_workassignment";
-            btn_workassignment.Padding = new Padding(10, 0, 0, 0);
-            btn_workassignment.Size = new Size(173, 30);
-            btn_workassignment.TabIndex = 25;
-            btn_workassignment.Tag = "Work Assignment";
-            btn_workassignment.Text = "Work Assignment";
-            btn_workassignment.TextAlign = ContentAlignment.MiddleLeft;
-            btn_workassignment.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_workassignment.UseVisualStyleBackColor = false;
-            btn_workassignment.Click += btn_workassignment_Click;
-            btn_workassignment.MouseHover += _MouseHover_;
-            // 
-            // btn_employment
-            // 
-            btn_employment.BackColor = Color.FromArgb(0, 127, 152);
-            btn_employment.Cursor = Cursors.Hand;
-            btn_employment.Dock = DockStyle.Top;
-            btn_employment.FlatAppearance.BorderSize = 0;
-            btn_employment.FlatStyle = FlatStyle.Flat;
-            btn_employment.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_employment.IconChar = FontAwesome.Sharp.IconChar.Briefcase;
-            btn_employment.IconColor = Color.White;
-            btn_employment.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_employment.IconSize = 20;
-            btn_employment.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_employment.Location = new Point(2, 92);
-            btn_employment.Name = "btn_employment";
-            btn_employment.Padding = new Padding(10, 0, 0, 0);
-            btn_employment.Size = new Size(173, 30);
-            btn_employment.TabIndex = 26;
-            btn_employment.Tag = "Employment";
-            btn_employment.Text = "Employment";
-            btn_employment.TextAlign = ContentAlignment.MiddleLeft;
-            btn_employment.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_employment.UseVisualStyleBackColor = false;
-            btn_employment.Click += iconButton1_Click;
-            btn_employment.MouseHover += _MouseHover_;
-            // 
             // btn_licenseinformation
             // 
             btn_licenseinformation.BackColor = Color.FromArgb(0, 127, 152);
@@ -520,7 +468,7 @@
             btn_licenseinformation.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_licenseinformation.IconSize = 20;
             btn_licenseinformation.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_licenseinformation.Location = new Point(2, 62);
+            btn_licenseinformation.Location = new Point(2, 122);
             btn_licenseinformation.Name = "btn_licenseinformation";
             btn_licenseinformation.Padding = new Padding(10, 0, 0, 0);
             btn_licenseinformation.Size = new Size(173, 30);
@@ -546,7 +494,7 @@
             btn_education.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_education.IconSize = 20;
             btn_education.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_education.Location = new Point(2, 32);
+            btn_education.Location = new Point(2, 92);
             btn_education.Name = "btn_education";
             btn_education.Padding = new Padding(10, 0, 0, 0);
             btn_education.Size = new Size(173, 30);
@@ -558,6 +506,58 @@
             btn_education.UseVisualStyleBackColor = false;
             btn_education.Click += btn_education_Click;
             btn_education.MouseHover += _MouseHover_;
+            // 
+            // btn_workassignment
+            // 
+            btn_workassignment.BackColor = Color.FromArgb(0, 127, 152);
+            btn_workassignment.Cursor = Cursors.Hand;
+            btn_workassignment.Dock = DockStyle.Top;
+            btn_workassignment.FlatAppearance.BorderSize = 0;
+            btn_workassignment.FlatStyle = FlatStyle.Flat;
+            btn_workassignment.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_workassignment.IconChar = FontAwesome.Sharp.IconChar.LaptopMedical;
+            btn_workassignment.IconColor = Color.White;
+            btn_workassignment.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_workassignment.IconSize = 20;
+            btn_workassignment.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_workassignment.Location = new Point(2, 62);
+            btn_workassignment.Name = "btn_workassignment";
+            btn_workassignment.Padding = new Padding(10, 0, 0, 0);
+            btn_workassignment.Size = new Size(173, 30);
+            btn_workassignment.TabIndex = 25;
+            btn_workassignment.Tag = "Work Assignment";
+            btn_workassignment.Text = "Work Assignment";
+            btn_workassignment.TextAlign = ContentAlignment.MiddleLeft;
+            btn_workassignment.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_workassignment.UseVisualStyleBackColor = false;
+            btn_workassignment.Click += btn_workassignment_Click;
+            btn_workassignment.MouseHover += _MouseHover_;
+            // 
+            // btn_employment
+            // 
+            btn_employment.BackColor = Color.FromArgb(0, 127, 152);
+            btn_employment.Cursor = Cursors.Hand;
+            btn_employment.Dock = DockStyle.Top;
+            btn_employment.FlatAppearance.BorderSize = 0;
+            btn_employment.FlatStyle = FlatStyle.Flat;
+            btn_employment.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_employment.IconChar = FontAwesome.Sharp.IconChar.Briefcase;
+            btn_employment.IconColor = Color.White;
+            btn_employment.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_employment.IconSize = 20;
+            btn_employment.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_employment.Location = new Point(2, 32);
+            btn_employment.Name = "btn_employment";
+            btn_employment.Padding = new Padding(10, 0, 0, 0);
+            btn_employment.Size = new Size(173, 30);
+            btn_employment.TabIndex = 26;
+            btn_employment.Tag = "Employment";
+            btn_employment.Text = "Employment";
+            btn_employment.TextAlign = ContentAlignment.MiddleLeft;
+            btn_employment.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_employment.UseVisualStyleBackColor = false;
+            btn_employment.Click += iconButton1_Click;
+            btn_employment.MouseHover += _MouseHover_;
             // 
             // btn_basicinformation
             // 
@@ -1423,6 +1423,7 @@
             Controls.Add(panel1);
             Name = "EmployeeRegistration";
             StartPosition = FormStartPosition.CenterParent;
+            FormClosing += EmployeeRegistration_FormClosing;
             Load += EmployeeRegistration_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

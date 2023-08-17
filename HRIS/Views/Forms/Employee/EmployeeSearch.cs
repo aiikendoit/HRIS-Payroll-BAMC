@@ -99,5 +99,10 @@ namespace HRIS.Views.Forms.Employee
             emp.ShowDialog(this);
 
         }
+
+        public void DisplayEmployeeInActive(List<object> employees)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

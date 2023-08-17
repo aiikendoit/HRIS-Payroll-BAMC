@@ -54,13 +54,23 @@ namespace HRIS.Presenter
                             //d.Description,
                            e.Description,
                             remarks = e.Remarks,
-                            //employeedocs =  e.EmployeeDocs,
+                            employeedocs =  e.EmployeeDocs,
                             createddate = e.Createddate,
                             createdby = e.Createdby,
                             fk_systeuser = e.FkSystemUser
                         };
             employeeDocument = query.ToList<object>();//error
             _view.DisplayEmployeeDocumentsData(employeeDocument);
+        }
+
+        public void loadEmployeeDocs(int pk_employeedocument) 
+        {
+
+            var p = _context.Employeedocuments.Where(c => c.PkEmployeedocument == pk_employeedocument)
+                .ToList();
+            _view.DisplayEmployeeDocuments(p);
+
+
         }
     }
 }

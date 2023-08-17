@@ -24,7 +24,7 @@ namespace HRIS.Forms.Employee
         private readonly HrisContext _context;
         private DataView dataView;
 
-        public emp_EducationalAttainment(int PKEmployeeID)
+        public emp_EducationalAttainment(int PKEmployeeID, bool isUpdate)
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_educationalattainment);
@@ -33,6 +33,12 @@ namespace HRIS.Forms.Employee
             dataView = new DataView();
             PKEmployeeid = PKEmployeeID;
             loadEducationAttainment();
+            if (isUpdate == false)
+            {
+                btn_new.Visible = false;
+                btn_edit.Visible = false;
+                btn_delete.Visible = false;
+            }
         }
 
 

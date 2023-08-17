@@ -21,7 +21,7 @@ namespace HRIS.Forms.Employee.License_information
         int empID = 0;
         private readonly employeelicenseinformation_Presenter employeelicenseinformation_Presenter;
         private readonly HrisContext _context;
-        public emp_licenseInfoForm(int PKEmployeeID)
+        public emp_licenseInfoForm(int PKEmployeeID, bool isUpdate)
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_license);
@@ -29,6 +29,12 @@ namespace HRIS.Forms.Employee.License_information
             _context = new HrisContext();
             empID = PKEmployeeID;
             loadLicenseinformation();
+            if (isUpdate == false)
+            {
+                btn_new.Visible = false;
+                btn_edit.Visible = false;
+                btn_delete.Visible = false;
+            }
         }
         private void emp_licenseInfoForm_Load(object sender, EventArgs e)
         {

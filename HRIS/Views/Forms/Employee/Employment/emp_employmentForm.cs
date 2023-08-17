@@ -20,7 +20,7 @@ namespace HRIS.Forms.Employee.Employment
         private readonly employeeemploymentstatus_Presenter employeeemploymentstatus_Presenter;
         int empID = 0;
         private readonly HrisContext _context;
-        public emp_employmentForm(int PKEmployeeID)
+        public emp_employmentForm(int PKEmployeeID, bool isUpdate)
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_employment);
@@ -29,6 +29,12 @@ namespace HRIS.Forms.Employee.Employment
             empID = PKEmployeeID;
             //load all the data
             loadEmploymentStatus();
+            if (isUpdate == false)
+            {
+                btn_new.Visible = false;
+                btn_edit.Visible = false;
+                btn_delete.Visible = false;
+            }
         }
         private void loadEmploymentStatus()
         {
@@ -128,12 +134,13 @@ namespace HRIS.Forms.Employee.Employment
                     DateTime endDate = (DateTime)endDateCell.Value; // Assuming the value is of type DateTime
                     DateTime currentDate = DateTime.Now;
 
-                    if (endDate > currentDate)
+                    if (endDate > currentDate )
                     {
                         // Set the background color to green if End Date is in the future
                         statusCell.Style.BackColor = Color.Green;
                         statusCell.Style.SelectionBackColor = Color.Green;
                         statusCell.ToolTipText = "Active";
+                        btn_new.Visible = false;
                     }
                     else
                     {
@@ -141,6 +148,7 @@ namespace HRIS.Forms.Employee.Employment
                         statusCell.Style.BackColor = Color.Red;
                         statusCell.Style.SelectionBackColor = Color.Red;
                         statusCell.ToolTipText = "Inactive";
+                        btn_new.Visible = true;
                     }
                 }
                 else
@@ -149,8 +157,31 @@ namespace HRIS.Forms.Employee.Employment
                     statusCell.Style.BackColor = Color.Green;
                     statusCell.Style.SelectionBackColor = Color.Green;
                     statusCell.ToolTipText = "Active";
+                    btn_new.Visible = false;
                 }
             }
+
+            // Flag to track if any active row is found
+            bool hasActiveRow = false;
+            // Iterate through the DataGridView rows
+            foreach (DataGridViewRow row in dgrid_employment.Rows)
+            {
+                // Check if the row index is valid
+                if (!row.IsNewRow)
+                {
+                    DataGridViewCell statusCell = row.Cells["EmpStatus"];
+
+                    // Check if the background color of the "EmpStatus" cell is green
+                    if (statusCell.Style.BackColor == Color.Green)
+                    {
+                        hasActiveRow = true;
+                        break; // No need to continue checking, as we found an active row
+                    }
+                }
+            }
+
+            // Set the visibility of the btn_new button based on the flag
+            btn_new.Visible = !hasActiveRow;
         }
 
         private void txt_search_TextChanged(object sender, EventArgs e)

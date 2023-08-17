@@ -30,11 +30,11 @@
         {
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            label2 = new Label();
+            label_header = new Label();
             dateTimePicker1 = new DateTimePicker();
             button4 = new Button();
             button3 = new Button();
-            comboBox3 = new ComboBox();
+            txt_employmenttype = new ComboBox();
             textBox1 = new TextBox();
             label22 = new Label();
             label1 = new Label();
@@ -48,7 +48,7 @@
             // panel2
             // 
             panel2.Controls.Add(iconPictureBox1);
-            panel2.Controls.Add(label2);
+            panel2.Controls.Add(label_header);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
@@ -68,15 +68,15 @@
             iconPictureBox1.TabIndex = 3;
             iconPictureBox1.TabStop = false;
             // 
-            // label2
+            // label_header
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(46, 8);
-            label2.Name = "label2";
-            label2.Size = new Size(176, 25);
-            label2.TabIndex = 2;
-            label2.Text = "New Leave Setting";
+            label_header.AutoSize = true;
+            label_header.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label_header.Location = new Point(46, 8);
+            label_header.Name = "label_header";
+            label_header.Size = new Size(176, 25);
+            label_header.TabIndex = 2;
+            label_header.Text = "New Leave Setting";
             // 
             // dateTimePicker1
             // 
@@ -112,14 +112,15 @@
             button3.Text = "Save";
             button3.UseVisualStyleBackColor = false;
             // 
-            // comboBox3
+            // txt_employmenttype
             // 
-            comboBox3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(173, 55);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(229, 25);
-            comboBox3.TabIndex = 51;
+            txt_employmenttype.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_employmenttype.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_employmenttype.FormattingEnabled = true;
+            txt_employmenttype.Location = new Point(173, 55);
+            txt_employmenttype.Name = "txt_employmenttype";
+            txt_employmenttype.Size = new Size(229, 25);
+            txt_employmenttype.TabIndex = 51;
             // 
             // textBox1
             // 
@@ -136,9 +137,9 @@
             label22.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label22.Location = new Point(49, 176);
             label22.Name = "label22";
-            label22.Size = new Size(35, 17);
+            label22.Size = new Size(92, 17);
             label22.TabIndex = 49;
-            label22.Text = "Date";
+            label22.Text = "Effectivity date";
             // 
             // label1
             // 
@@ -189,7 +190,7 @@
             Controls.Add(dateTimePicker1);
             Controls.Add(button4);
             Controls.Add(button3);
-            Controls.Add(comboBox3);
+            Controls.Add(txt_employmenttype);
             Controls.Add(textBox1);
             Controls.Add(label22);
             Controls.Add(label1);
@@ -210,11 +211,11 @@
 
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private Label label2;
+        private Label label_header;
         private DateTimePicker dateTimePicker1;
         private Button button4;
         private Button button3;
-        private ComboBox comboBox3;
+        private ComboBox txt_employmenttype;
         private TextBox textBox1;
         private Label label22;
         private Label label1;

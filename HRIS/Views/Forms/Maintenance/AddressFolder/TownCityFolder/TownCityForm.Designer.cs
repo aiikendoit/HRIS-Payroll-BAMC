@@ -143,6 +143,7 @@
             btn_edit.TextAlign = ContentAlignment.MiddleLeft;
             btn_edit.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_edit.UseVisualStyleBackColor = false;
+            btn_edit.Click += btn_edit_Click;
             // 
             // btn_view
             // 

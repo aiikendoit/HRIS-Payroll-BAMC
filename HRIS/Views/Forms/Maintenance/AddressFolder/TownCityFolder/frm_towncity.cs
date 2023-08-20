@@ -22,6 +22,7 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
         private readonly province_Presenter province_Presenter;
         private TownCityForm townCityForm;
         private Models.Province Selectedprovince;
+        private Models.Towncity SelectedTowncities;
         public bool isupdate = false;
         public frm_towncity()
         {
@@ -64,7 +65,12 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
 
         private void update()
         {
-            throw new NotImplementedException();
+            var SelectedTowncity = SelectedTowncities as Models.Towncity;
+            SelectedTowncity.FkProvince = Convert.ToInt32(drpdwn_province.SelectedValue);
+            SelectedTowncity.Description = txt_towncity.Text;
+            SelectedTowncity.IsActive = checkBox_isactive.Checked;
+            towncity_Presenter.UpdateTownCity(SelectedTowncity);
+            this.Close();
         }
 
 
@@ -94,6 +100,33 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
         public void DisplayProvince(int provinces)
         {
             throw new NotImplementedException();
+        }
+
+        public void putdata(TownCityForm townCityForm, Models.Towncity towncities)
+        {
+            if (isupdate)
+            {
+                btn_cancel.Select();
+                this.townCityForm = townCityForm;
+                this.SelectedTowncities = towncities;
+                txt_towncity.Text = SelectedTowncities.Description;
+                checkBox_isactive.Checked = SelectedTowncities.IsActive;
+                drpdwn_province.SelectedValue = SelectedTowncities.FkProvince;
+            }
+            else
+            {
+                btn_cancel.Select();
+                this.townCityForm = townCityForm;
+                this.SelectedTowncities = towncities;
+                txt_towncity.Text = SelectedTowncities.Description;
+                checkBox_isactive.Checked = SelectedTowncities.IsActive;
+                drpdwn_province.SelectedValue = SelectedTowncities.FkProvince;
+                //disable control
+                drpdwn_province.Enabled = false;
+                txt_towncity.Enabled = false;
+                checkBox_isactive.Enabled = false;
+                btn_save.Visible = false;
+            }
         }
     }
 }

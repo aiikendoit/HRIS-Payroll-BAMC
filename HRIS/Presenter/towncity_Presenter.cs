@@ -78,5 +78,13 @@ namespace HRIS.Presenter
             MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             loadTownCity_All();
         }
+
+        public void UpdateTownCity(Towncity Towncities)
+        {
+            _context.Towncities.Update(Towncities);
+            _context.SaveChanges();
+            MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            loadTownCity_All();
+        }
     }
 }

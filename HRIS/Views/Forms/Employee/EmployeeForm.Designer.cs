@@ -51,8 +51,6 @@
             txt_totalcount = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
             btn_inactiveEmployee = new FontAwesome.Sharp.IconButton();
             label3 = new Label();
             btn_userRegistration = new FontAwesome.Sharp.IconButton();
@@ -307,8 +305,6 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(0, 127, 152);
-            panel3.Controls.Add(iconButton2);
-            panel3.Controls.Add(iconButton1);
             panel3.Controls.Add(btn_inactiveEmployee);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(btn_userRegistration);
@@ -318,60 +314,6 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(167, 542);
             panel3.TabIndex = 7;
-            // 
-            // iconButton2
-            // 
-            iconButton2.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton2.Cursor = Cursors.Hand;
-            iconButton2.Dock = DockStyle.Top;
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton2.ForeColor = Color.White;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.IconSize = 20;
-            iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton2.Location = new Point(0, 138);
-            iconButton2.Margin = new Padding(4, 3, 4, 3);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Padding = new Padding(10, 0, 0, 0);
-            iconButton2.Size = new Size(167, 28);
-            iconButton2.TabIndex = 30;
-            iconButton2.Tag = "Archive Employee";
-            iconButton2.Text = "total dgrid width";
-            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton2.UseVisualStyleBackColor = false;
-            iconButton2.Click += iconButton2_Click;
-            // 
-            // iconButton1
-            // 
-            iconButton1.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton1.Cursor = Cursors.Hand;
-            iconButton1.Dock = DockStyle.Top;
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            iconButton1.ForeColor = Color.White;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 20;
-            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton1.Location = new Point(0, 110);
-            iconButton1.Margin = new Padding(4, 3, 4, 3);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Padding = new Padding(10, 0, 0, 0);
-            iconButton1.Size = new Size(167, 28);
-            iconButton1.TabIndex = 29;
-            iconButton1.Tag = "Archive Employee";
-            iconButton1.Text = "total column width";
-            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton1.UseVisualStyleBackColor = false;
-            iconButton1.Click += iconButton1_Click;
             // 
             // btn_inactiveEmployee
             // 
@@ -504,7 +446,5 @@
         private DataGridViewTextBoxColumn Position;
         private DataGridViewTextBoxColumn EmploymentStatus;
         private DataGridViewTextBoxColumn Address;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }

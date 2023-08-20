@@ -2,6 +2,7 @@
 using HRIS.Models;
 using HRIS.Views.Forms.Employee.Employment;
 using HRIS.Views.Forms.Employee.License_information;
+using HRIS.Views.Forms.Employee.Work_Assignment;
 using HRIS.Views.Forms.Userlogin;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -17,11 +18,14 @@ namespace HRIS.Presenter
         private readonly IEmployeeEmploymentView _view;
         private readonly HrisContext _context;
         private List<object> employmentlist;
+        private readonly IWorkAssigmentView workAssigmentView;
+        private readonly workassignment_Presenter _workassignmentpresenter;
         public employeeemploymentstatus_Presenter(IEmployeeEmploymentView view)
         {
             _view = view;
             _context = new HrisContext();
             employmentlist = new List<object>();
+            _workassignmentpresenter = new workassignment_Presenter(workAssigmentView);
         }
         public void LoadEmployeeEmploymentStatus(int PKEmploymentStatus)
         {
@@ -67,20 +71,46 @@ namespace HRIS.Presenter
             }
            
         }
-        public void UpdateEmploymentStatus(Employmentstatus employmentstatus)
+        private void updateWorkAssignmentEnddate(int? employeeid,DateTime enndate)
+        {
+            //find the workassignment 
+            int pkWorkassignment = _context.Workassignments
+                .Where(e => e.FkEmployee == employeeid && e.IsDeleted != true && (e.Enddate == null || enndate > DateTime.Now))
+                .Select(e => e.PkWorkassignment)
+                .FirstOrDefault();
+            //update the workassignment
+            var existingWorkAssignment = _context.Workassignments.Find(pkWorkassignment);
+            if (existingWorkAssignment != null)
+            {
+                existingWorkAssignment.Enddate = enndate;
+                _workassignmentpresenter.UpdateWorkAssignmentFromEmploymentStatus(existingWorkAssignment);
+
+            }
+        }
+        public void UpdateEmploymentStatus(Employmentstatus employmentstatus, bool isENddate,DateTime enddate)
         {
             var ver = new UserConfirmation();
             ver.ShowDialog();
             if (ver.islogin)
             {
                 var existingEmployment = _context.Employmentstatuses.Find(employmentstatus.PkEmployment);
-
                 if (existingEmployment != null)
                 {
+
+                   
+
+                    
                     _context.Entry(existingEmployment).State = EntityState.Detached;
                     _context.Entry(employmentstatus).State = EntityState.Modified;
                     _context.SaveChanges();
                     MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    //pass value to update workassignment
+                    DateTime? endDate = existingEmployment.Enddate;
+                    if (isENddate)
+                    {
+                        updateWorkAssignmentEnddate(employmentstatus.FkEmployee, enddate);
+                    }
                 }
             }
                

@@ -79,7 +79,7 @@ namespace HRIS.Presenter
             loadTownCity_All();
         }
 
-        public void UpdateTownCity(Towncity Towncities)
+        public void UpdateTownCity(Towncity Towncities) //update method
         {
             _context.Towncities.Update(Towncities);
             _context.SaveChanges();

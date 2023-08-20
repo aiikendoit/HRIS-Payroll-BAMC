@@ -112,5 +112,26 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
 
             }
         }
+
+        private void btn_view_Click(object sender, EventArgs e)
+        {
+            var selectedTownCity = dgrid_towncity.SelectedRows[0].DataBoundItem as Models.Towncity;
+            if (selectedTownCity != null)
+            {
+                var twnCity = new frm_towncity();
+                twnCity.putdata(this, selectedTownCity);
+                twnCity.ShowDialog(this);
+                if (txt_search.Text != string.Empty)
+                {
+                    towncity_Presenter.loadTownCity_All();
+                    search();
+                }
+                else
+                {
+                    towncity_Presenter.loadTownCity_All();
+                }
+
+            }
+        }
     }
 }

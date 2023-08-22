@@ -169,6 +169,7 @@ namespace HRIS.Forms.Employee.Leaves
         }
         private void update()
         {
+            //check
             var existingLeavesetting = _context.Leavessettings.Find(PKleavesettingID);
             if (existingLeavesetting != null)
             {

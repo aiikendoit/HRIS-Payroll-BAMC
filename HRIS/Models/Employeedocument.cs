@@ -17,9 +17,9 @@ public partial class Employeedocument
 
     public byte[]? EmployeeDocs { get; set; }
 
-    public DateTime Createddate { get; set; }
+    public DateTime? Createddate { get; set; }
 
-    public string Createdby { get; set; }
+    public string? Createdby { get; set; }
 
     public int? FkSystemUser { get; set; }
 

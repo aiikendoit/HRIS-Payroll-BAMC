@@ -96,7 +96,6 @@ public partial class HrisContext : DbContext
             optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
                           .UseLazyLoadingProxies();
         }
-
     }
     //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
     //        => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
@@ -693,9 +692,7 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("employeedisciplinary", "HR");
 
-            entity.Property(e => e.PkEmployeedisciplinary)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_employeedisciplinary");
+            entity.Property(e => e.PkEmployeedisciplinary).HasColumnName("PK_employeedisciplinary");
             entity.Property(e => e.Createby).HasColumnName("createby");
             entity.Property(e => e.Createddate)
                 .HasColumnType("datetime")
@@ -715,6 +712,10 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.FkDisciplinarytype).HasColumnName("FK_disciplinarytype");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkOffensetype).HasColumnName("FK_offensetype");
+
+            entity.HasOne(d => d.FkDisciplinarytypeNavigation).WithMany(p => p.Employeedisciplinaries)
+                .HasForeignKey(d => d.FkDisciplinarytype)
+                .HasConstraintName("FK_employeedisciplinary_disciplinarytype");
 
             entity.HasOne(d => d.FkEmployeeNavigation).WithMany(p => p.Employeedisciplinaries)
                 .HasForeignKey(d => d.FkEmployee)
@@ -951,26 +952,32 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("leavessettings", "HR");
 
-            entity.Property(e => e.PkLeavessettings)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_leavessettings");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.PkLeavessettings).HasColumnName("PK_leavessettings");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
-            entity.Property(e => e.FkEmploymenttype).HasColumnName("FK_employmenttype");
+            entity.Property(e => e.Effectivitydate)
+                .HasColumnType("datetime")
+                .HasColumnName("effectivitydate");
+            entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkLeavetype).HasColumnName("FK_leavetype");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
             entity.Property(e => e.IsBaseYearofService).HasColumnName("isBaseYearofService");
-            entity.Property(e => e.Isactive).HasColumnName("isactive");
+            entity.Property(e => e.IsDeleted).HasColumnName("isDeleted");
             entity.Property(e => e.Remarks)
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("remarks");
             entity.Property(e => e.Totaldays).HasColumnName("totaldays");
 
-            entity.HasOne(d => d.FkEmploymenttypeNavigation).WithMany(p => p.Leavessettings)
-                .HasForeignKey(d => d.FkEmploymenttype)
-                .HasConstraintName("FK_leavessettings_employmenttype");
+            entity.HasOne(d => d.FkEmployeeNavigation).WithMany(p => p.Leavessettings)
+                .HasForeignKey(d => d.FkEmployee)
+                .HasConstraintName("FK_leavessettings_employee");
 
             entity.HasOne(d => d.FkLeavetypeNavigation).WithMany(p => p.Leavessettings)
                 .HasForeignKey(d => d.FkLeavetype)

@@ -25,6 +25,8 @@ public partial class Employeedisciplinary
 
     public int? Createby { get; set; }
 
+    public virtual Disciplinarytype? FkDisciplinarytypeNavigation { get; set; }
+
     public virtual Employee? FkEmployeeNavigation { get; set; }
 
     public virtual Offensetype? FkOffensetypeNavigation { get; set; }

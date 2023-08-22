@@ -51,6 +51,23 @@ namespace HRIS.Presenter
             bool hasWorkAssignment = query.Any(); // Check if there are any employment statuses
             return hasWorkAssignment;
         }
+        public bool LoadCheck_onlyOne_Employment(int employeeid)
+        {
+            
+            bool hasemployment = false;
+            var query = _context.Employmentstatuses
+                .Where(e => e.FkEmployee == employeeid && e.Enddate == null || e.Enddate > DateTime.Now ).ToList();
+            hasemployment = query.Any();
+            return hasemployment;
+        }
+        public bool LoadCheck_onlyOne_Workassignment(int employeeid)
+        {
+            bool hasWorkAssignment = false;
+            var query = _context.Workassignments
+                .Where(e => e.FkEmployee == employeeid && e.Enddate == null || e.Enddate > DateTime.Now).ToList();
+            hasWorkAssignment = query.Any();
+            return hasWorkAssignment;
+        }
 
         public void LoadAllSearchEmployee(string lastname, string firstname)
         {

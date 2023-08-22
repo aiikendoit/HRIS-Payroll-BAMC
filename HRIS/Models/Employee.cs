@@ -129,5 +129,7 @@ public partial class Employee
 
     public virtual Zipcode? FkZipcodeNavigation { get; set; }
 
+    public virtual ICollection<Leavessetting> Leavessettings { get; set; } = new List<Leavessetting>();
+
     public virtual ICollection<Workassignment> Workassignments { get; set; } = new List<Workassignment>();
 }

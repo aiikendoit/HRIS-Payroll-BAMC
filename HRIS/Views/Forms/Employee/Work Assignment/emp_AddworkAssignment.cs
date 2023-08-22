@@ -134,7 +134,7 @@ namespace HRIS.Forms.Employee.Work_Assignment
                     existingWorkAssignment.Startdate = txt_startdate.Value;
                     existingWorkAssignment.Enddate = txt_enddate.Value;
                     workassignment_presenter.UpdateWorkAssignment(existingWorkAssignment);
-
+                    this.Close();
                 }
             }
             catch (Exception ex)

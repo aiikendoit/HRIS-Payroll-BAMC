@@ -140,6 +140,7 @@ namespace HRIS.Views.Forms.Employee.Documents
         private void buttonAttachedFile_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files (*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tif;*.tiff)|*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tif;*.tiff";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 selectedFilePath = openFileDialog.FileName;

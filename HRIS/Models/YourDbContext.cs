@@ -839,19 +839,13 @@ public partial class YourDbContext : DbContext
             entity.Property(e => e.Createddate)
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
-            entity.Property(e => e.FkEmploymenttype).HasColumnName("FK_employmenttype");
             entity.Property(e => e.FkLeavetype).HasColumnName("FK_leavetype");
             entity.Property(e => e.IsBaseYearofService).HasColumnName("isBaseYearofService");
-            entity.Property(e => e.Isactive).HasColumnName("isactive");
             entity.Property(e => e.Remarks)
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("remarks");
             entity.Property(e => e.Totaldays).HasColumnName("totaldays");
-
-            entity.HasOne(d => d.FkEmploymenttypeNavigation).WithMany(p => p.Leavessettings)
-                .HasForeignKey(d => d.FkEmploymenttype)
-                .HasConstraintName("FK_leavessettings_employmenttype");
 
             entity.HasOne(d => d.FkLeavetypeNavigation).WithMany(p => p.Leavessettings)
                 .HasForeignKey(d => d.FkLeavetype)

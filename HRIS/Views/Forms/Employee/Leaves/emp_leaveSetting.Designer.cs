@@ -32,30 +32,31 @@
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
-            label1 = new Label();
-            panel1 = new Panel();
             ID = new DataGridViewTextBoxColumn();
-            textBox1 = new TextBox();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            iconButton5 = new FontAwesome.Sharp.IconButton();
-            flowLayoutPanel2 = new FlowLayoutPanel();
             dgrid_leavesetting = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
+            EmpStatus = new DataGridViewTextBoxColumn();
+            leavesettingID = new DataGridViewTextBoxColumn();
+            leavetype = new DataGridViewTextBoxColumn();
+            daysperyear = new DataGridViewTextBoxColumn();
+            effectivedate = new DataGridViewTextBoxColumn();
+            Remarks = new DataGridViewTextBoxColumn();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            btn_new = new FontAwesome.Sharp.IconButton();
+            btn_edit = new FontAwesome.Sharp.IconButton();
+            btn_view = new FontAwesome.Sharp.IconButton();
+            btn_delete = new FontAwesome.Sharp.IconButton();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            txt_search = new TextBox();
+            btn_search = new FontAwesome.Sharp.IconButton();
+            btn_refresh = new FontAwesome.Sharp.IconButton();
+            panel1 = new Panel();
+            txt_totalcount = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
-            panel1.SuspendLayout();
-            flowLayoutPanel1.SuspendLayout();
-            flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgrid_leavesetting).BeginInit();
+            flowLayoutPanel2.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
@@ -92,165 +93,10 @@
             label2.Text = "Leave Setting";
             label2.Click += label2_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(5, 6);
-            label1.Name = "label1";
-            label1.Size = new Size(94, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Total record(s): 0";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 423);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(800, 27);
-            panel1.TabIndex = 24;
-            // 
             // ID
             // 
             ID.HeaderText = "ID";
             ID.Name = "ID";
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(3, 3);
-            textBox1.Margin = new Padding(3, 3, 1, 3);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = " Search";
-            textBox1.Size = new Size(338, 29);
-            textBox1.TabIndex = 0;
-            // 
-            // iconButton1
-            // 
-            iconButton1.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.ForeColor = Color.White;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 20;
-            iconButton1.Location = new Point(343, 3);
-            iconButton1.Margin = new Padding(1, 3, 1, 3);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(77, 29);
-            iconButton1.TabIndex = 1;
-            iconButton1.Text = "Search";
-            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // iconButton2
-            // 
-            iconButton2.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.ForeColor = Color.White;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowsRotate;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.IconSize = 20;
-            iconButton2.Location = new Point(422, 3);
-            iconButton2.Margin = new Padding(1, 3, 1, 3);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(77, 29);
-            iconButton2.TabIndex = 2;
-            iconButton2.Text = "Refresh";
-            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.AutoSize = true;
-            flowLayoutPanel1.Controls.Add(textBox1);
-            flowLayoutPanel1.Controls.Add(iconButton1);
-            flowLayoutPanel1.Controls.Add(iconButton2);
-            flowLayoutPanel1.Dock = DockStyle.Top;
-            flowLayoutPanel1.Location = new Point(0, 40);
-            flowLayoutPanel1.Margin = new Padding(0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(800, 35);
-            flowLayoutPanel1.TabIndex = 21;
-            // 
-            // iconButton4
-            // 
-            iconButton4.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton4.FlatAppearance.BorderSize = 0;
-            iconButton4.FlatStyle = FlatStyle.Flat;
-            iconButton4.ForeColor = Color.White;
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
-            iconButton4.IconColor = Color.White;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.IconSize = 20;
-            iconButton4.Location = new Point(3, 3);
-            iconButton4.Margin = new Padding(3, 3, 1, 3);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(73, 30);
-            iconButton4.TabIndex = 4;
-            iconButton4.Text = "New";
-            iconButton4.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton4.UseVisualStyleBackColor = false;
-            iconButton4.Click += iconButton4_Click;
-            // 
-            // iconButton3
-            // 
-            iconButton3.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton3.FlatAppearance.BorderSize = 0;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.IconSize = 20;
-            iconButton3.Location = new Point(78, 3);
-            iconButton3.Margin = new Padding(1, 3, 1, 3);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(73, 30);
-            iconButton3.TabIndex = 5;
-            iconButton3.Text = "Edit";
-            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton3.UseVisualStyleBackColor = false;
-            // 
-            // iconButton5
-            // 
-            iconButton5.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton5.FlatAppearance.BorderSize = 0;
-            iconButton5.FlatStyle = FlatStyle.Flat;
-            iconButton5.ForeColor = Color.White;
-            iconButton5.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            iconButton5.IconColor = Color.White;
-            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton5.IconSize = 20;
-            iconButton5.Location = new Point(153, 3);
-            iconButton5.Margin = new Padding(1, 3, 1, 3);
-            iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(73, 30);
-            iconButton5.TabIndex = 6;
-            iconButton5.Text = "View";
-            iconButton5.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton5.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel2
-            // 
-            flowLayoutPanel2.Controls.Add(iconButton4);
-            flowLayoutPanel2.Controls.Add(iconButton3);
-            flowLayoutPanel2.Controls.Add(iconButton5);
-            flowLayoutPanel2.Dock = DockStyle.Top;
-            flowLayoutPanel2.Location = new Point(0, 75);
-            flowLayoutPanel2.Margin = new Padding(0);
-            flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(800, 36);
-            flowLayoutPanel2.TabIndex = 22;
             // 
             // dgrid_leavesetting
             // 
@@ -264,44 +110,242 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_leavesetting.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_leavesetting.ColumnHeadersHeight = 50;
-            dgrid_leavesetting.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
+            dgrid_leavesetting.Columns.AddRange(new DataGridViewColumn[] { EmpStatus, leavesettingID, leavetype, daysperyear, effectivedate, Remarks });
             dgrid_leavesetting.Dock = DockStyle.Fill;
             dgrid_leavesetting.Location = new Point(0, 111);
             dgrid_leavesetting.Name = "dgrid_leavesetting";
             dgrid_leavesetting.RowTemplate.Height = 25;
-            dgrid_leavesetting.Size = new Size(800, 339);
-            dgrid_leavesetting.TabIndex = 23;
-            dgrid_leavesetting.CellContentClick += dgrid_leavesetting_CellContentClick;
+            dgrid_leavesetting.Size = new Size(800, 312);
+            dgrid_leavesetting.TabIndex = 26;
             // 
-            // Column1
+            // EmpStatus
             // 
-            Column1.HeaderText = "ID";
-            Column1.Name = "Column1";
+            EmpStatus.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            EmpStatus.FillWeight = 0.00507363072F;
+            EmpStatus.HeaderText = "";
+            EmpStatus.Name = "EmpStatus";
+            EmpStatus.Width = 10;
             // 
-            // Column2
+            // leavesettingID
             // 
-            Column2.HeaderText = "Leave Type";
-            Column2.Name = "Column2";
+            leavesettingID.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            leavesettingID.FillWeight = 18.0975418F;
+            leavesettingID.HeaderText = "ID";
+            leavesettingID.Name = "leavesettingID";
+            leavesettingID.Width = 43;
             // 
-            // Column3
+            // leavetype
             // 
-            Column3.HeaderText = "Days per Year";
-            Column3.Name = "Column3";
+            leavetype.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            leavetype.FillWeight = 301.788483F;
+            leavetype.HeaderText = "Leave Type";
+            leavetype.Name = "leavetype";
+            leavetype.Width = 200;
             // 
-            // Column4
+            // daysperyear
             // 
-            Column4.HeaderText = "Remarsk";
-            Column4.Name = "Column4";
+            daysperyear.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            daysperyear.FillWeight = 353.676239F;
+            daysperyear.HeaderText = "Days Per Year";
+            daysperyear.Name = "daysperyear";
+            daysperyear.Width = 150;
             // 
-            // Column5
+            // effectivedate
             // 
-            Column5.HeaderText = "Remaining Days";
-            Column5.Name = "Column5";
+            effectivedate.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            effectivedate.FillWeight = 23.15905F;
+            effectivedate.HeaderText = "Effective Date";
+            effectivedate.Name = "effectivedate";
+            effectivedate.Width = 150;
             // 
-            // Column6
+            // Remarks
             // 
-            Column6.HeaderText = "Effective Date";
-            Column6.Name = "Column6";
+            Remarks.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Remarks.FillWeight = 0.0158128161F;
+            Remarks.HeaderText = "Remarks";
+            Remarks.Name = "Remarks";
+            // 
+            // flowLayoutPanel2
+            // 
+            flowLayoutPanel2.Controls.Add(btn_new);
+            flowLayoutPanel2.Controls.Add(btn_edit);
+            flowLayoutPanel2.Controls.Add(btn_view);
+            flowLayoutPanel2.Controls.Add(btn_delete);
+            flowLayoutPanel2.Dock = DockStyle.Top;
+            flowLayoutPanel2.Location = new Point(0, 75);
+            flowLayoutPanel2.Margin = new Padding(0);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(800, 36);
+            flowLayoutPanel2.TabIndex = 29;
+            // 
+            // btn_new
+            // 
+            btn_new.BackColor = Color.FromArgb(0, 127, 152);
+            btn_new.FlatAppearance.BorderSize = 0;
+            btn_new.FlatStyle = FlatStyle.Flat;
+            btn_new.ForeColor = Color.White;
+            btn_new.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
+            btn_new.IconColor = Color.White;
+            btn_new.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_new.IconSize = 20;
+            btn_new.Location = new Point(3, 3);
+            btn_new.Margin = new Padding(3, 3, 1, 3);
+            btn_new.Name = "btn_new";
+            btn_new.Size = new Size(73, 30);
+            btn_new.TabIndex = 4;
+            btn_new.Text = "New";
+            btn_new.TextAlign = ContentAlignment.MiddleLeft;
+            btn_new.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_new.UseVisualStyleBackColor = false;
+            btn_new.Click += btn_new_Click;
+            // 
+            // btn_edit
+            // 
+            btn_edit.BackColor = Color.FromArgb(0, 127, 152);
+            btn_edit.FlatAppearance.BorderSize = 0;
+            btn_edit.FlatStyle = FlatStyle.Flat;
+            btn_edit.ForeColor = Color.White;
+            btn_edit.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
+            btn_edit.IconColor = Color.White;
+            btn_edit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_edit.IconSize = 20;
+            btn_edit.Location = new Point(78, 3);
+            btn_edit.Margin = new Padding(1, 3, 1, 3);
+            btn_edit.Name = "btn_edit";
+            btn_edit.Size = new Size(73, 30);
+            btn_edit.TabIndex = 5;
+            btn_edit.Text = "Edit";
+            btn_edit.TextAlign = ContentAlignment.MiddleLeft;
+            btn_edit.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_edit.UseVisualStyleBackColor = false;
+            btn_edit.Click += btn_edit_Click;
+            // 
+            // btn_view
+            // 
+            btn_view.BackColor = Color.FromArgb(0, 127, 152);
+            btn_view.FlatAppearance.BorderSize = 0;
+            btn_view.FlatStyle = FlatStyle.Flat;
+            btn_view.ForeColor = Color.White;
+            btn_view.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            btn_view.IconColor = Color.White;
+            btn_view.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_view.IconSize = 20;
+            btn_view.Location = new Point(153, 3);
+            btn_view.Margin = new Padding(1, 3, 1, 3);
+            btn_view.Name = "btn_view";
+            btn_view.Size = new Size(73, 30);
+            btn_view.TabIndex = 6;
+            btn_view.Text = "View";
+            btn_view.TextAlign = ContentAlignment.MiddleLeft;
+            btn_view.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_view.UseVisualStyleBackColor = false;
+            btn_view.Click += btn_view_Click;
+            // 
+            // btn_delete
+            // 
+            btn_delete.BackColor = Color.FromArgb(255, 43, 43);
+            btn_delete.FlatAppearance.BorderSize = 0;
+            btn_delete.FlatStyle = FlatStyle.Flat;
+            btn_delete.ForeColor = Color.White;
+            btn_delete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            btn_delete.IconColor = Color.White;
+            btn_delete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_delete.IconSize = 20;
+            btn_delete.Location = new Point(228, 3);
+            btn_delete.Margin = new Padding(1, 3, 1, 3);
+            btn_delete.Name = "btn_delete";
+            btn_delete.Size = new Size(73, 30);
+            btn_delete.TabIndex = 7;
+            btn_delete.Text = "Delete";
+            btn_delete.TextAlign = ContentAlignment.MiddleLeft;
+            btn_delete.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_delete.UseVisualStyleBackColor = false;
+            btn_delete.Click += btn_delete_Click;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.Controls.Add(txt_search);
+            flowLayoutPanel1.Controls.Add(btn_search);
+            flowLayoutPanel1.Controls.Add(btn_refresh);
+            flowLayoutPanel1.Dock = DockStyle.Top;
+            flowLayoutPanel1.Location = new Point(0, 40);
+            flowLayoutPanel1.Margin = new Padding(0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(800, 35);
+            flowLayoutPanel1.TabIndex = 28;
+            // 
+            // txt_search
+            // 
+            txt_search.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_search.Location = new Point(3, 3);
+            txt_search.Margin = new Padding(3, 3, 1, 3);
+            txt_search.Name = "txt_search";
+            txt_search.PlaceholderText = " Search";
+            txt_search.Size = new Size(338, 29);
+            txt_search.TabIndex = 0;
+            txt_search.TextChanged += txt_search_TextChanged;
+            // 
+            // btn_search
+            // 
+            btn_search.BackColor = Color.FromArgb(0, 127, 152);
+            btn_search.FlatAppearance.BorderSize = 0;
+            btn_search.FlatStyle = FlatStyle.Flat;
+            btn_search.ForeColor = Color.White;
+            btn_search.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            btn_search.IconColor = Color.White;
+            btn_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_search.IconSize = 20;
+            btn_search.Location = new Point(343, 3);
+            btn_search.Margin = new Padding(1, 3, 1, 3);
+            btn_search.Name = "btn_search";
+            btn_search.Size = new Size(77, 29);
+            btn_search.TabIndex = 1;
+            btn_search.Text = "Search";
+            btn_search.TextAlign = ContentAlignment.MiddleLeft;
+            btn_search.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_search.UseVisualStyleBackColor = false;
+            btn_search.Click += btn_search_Click;
+            // 
+            // btn_refresh
+            // 
+            btn_refresh.BackColor = Color.FromArgb(0, 127, 152);
+            btn_refresh.FlatAppearance.BorderSize = 0;
+            btn_refresh.FlatStyle = FlatStyle.Flat;
+            btn_refresh.ForeColor = Color.White;
+            btn_refresh.IconChar = FontAwesome.Sharp.IconChar.ArrowsRotate;
+            btn_refresh.IconColor = Color.White;
+            btn_refresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_refresh.IconSize = 20;
+            btn_refresh.Location = new Point(422, 3);
+            btn_refresh.Margin = new Padding(1, 3, 1, 3);
+            btn_refresh.Name = "btn_refresh";
+            btn_refresh.Size = new Size(77, 29);
+            btn_refresh.TabIndex = 2;
+            btn_refresh.Text = "Refresh";
+            btn_refresh.TextAlign = ContentAlignment.MiddleLeft;
+            btn_refresh.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_refresh.UseVisualStyleBackColor = false;
+            btn_refresh.Click += btn_refresh_Click;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(txt_totalcount);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(0, 423);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(800, 27);
+            panel1.TabIndex = 27;
+            // 
+            // txt_totalcount
+            // 
+            txt_totalcount.AutoSize = true;
+            txt_totalcount.ForeColor = Color.Black;
+            txt_totalcount.Location = new Point(5, 6);
+            txt_totalcount.Name = "txt_totalcount";
+            txt_totalcount.Size = new Size(94, 15);
+            txt_totalcount.TabIndex = 0;
+            txt_totalcount.Text = "Total record(s): 0";
             // 
             // emp_leaveSetting
             // 
@@ -309,22 +353,22 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
-            Controls.Add(panel1);
             Controls.Add(dgrid_leavesetting);
             Controls.Add(flowLayoutPanel2);
             Controls.Add(flowLayoutPanel1);
+            Controls.Add(panel1);
             Controls.Add(panel2);
             Name = "emp_leaveSetting";
             Text = "emp_leaveSetting";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgrid_leavesetting).EndInit();
+            flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
-            flowLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgrid_leavesetting).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -334,23 +378,24 @@
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
-        private Label label1;
-        private Panel panel1;
         private DataGridViewTextBoxColumn ID;
-        private TextBox textBox1;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FlowLayoutPanel flowLayoutPanel2;
         private DataGridView dgrid_leavesetting;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private FontAwesome.Sharp.IconButton btn_new;
+        private FontAwesome.Sharp.IconButton btn_edit;
+        private FontAwesome.Sharp.IconButton btn_view;
+        private FontAwesome.Sharp.IconButton btn_delete;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private TextBox txt_search;
+        private FontAwesome.Sharp.IconButton btn_search;
+        private FontAwesome.Sharp.IconButton btn_refresh;
+        private Panel panel1;
+        private Label txt_totalcount;
+        private DataGridViewTextBoxColumn EmpStatus;
+        private DataGridViewTextBoxColumn leavesettingID;
+        private DataGridViewTextBoxColumn leavetype;
+        private DataGridViewTextBoxColumn daysperyear;
+        private DataGridViewTextBoxColumn effectivedate;
+        private DataGridViewTextBoxColumn Remarks;
     }
 }

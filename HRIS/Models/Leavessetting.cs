@@ -9,23 +9,27 @@ public partial class Leavessetting
 
     public int? FkLeavetype { get; set; }
 
-    public int? FkEmploymenttype { get; set; }
+    public int? FkEmployee { get; set; }
 
     public int? Totaldays { get; set; }
 
-    public int? IsBaseYearofService { get; set; }
+    public DateTime? Effectivitydate { get; set; }
+
+    public bool IsBaseYearofService { get; set; }
 
     public int? YearofService { get; set; }
 
     public string? Remarks { get; set; }
 
-    public bool? Isactive { get; set; }
+    public bool IsDeleted { get; set; }
 
     public DateTime? Createddate { get; set; }
 
-    public int? Createdby { get; set; }
+    public string? Createdby { get; set; }
 
-    public virtual Employmenttype? FkEmploymenttypeNavigation { get; set; }
+    public int? FkSystemUser { get; set; }
+
+    public virtual Employee? FkEmployeeNavigation { get; set; }
 
     public virtual Leavetype? FkLeavetypeNavigation { get; set; }
 }

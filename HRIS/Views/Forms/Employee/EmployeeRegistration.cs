@@ -294,7 +294,7 @@ namespace HRIS.Forms.Employee
         private void iconButton3_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_leaveSetting());
+            openchildform(new emp_leaveSetting(employeeid,isUpdate));
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
@@ -810,13 +810,27 @@ namespace HRIS.Forms.Employee
             {
                 if ( employee_Presenter.LoadCheckEmployment(employeeid) == false)
                 {
-                    MessageBox.Show("Please finish adding information in Employee Employment!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please finish adding information in Employee employment!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     e.Cancel = true; return;
                 }
                 if (employee_Presenter.LoadCheckWorkAssignment(employeeid) == false)
                 {
-                    MessageBox.Show("Please finish adding information in Employee WorkAssignment!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please finish adding information in Employee workAssignment!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     e.Cancel = true; return;
+                }
+
+                if (employee_Presenter.LoadCheck_onlyOne_Employment(employeeid) != employee_Presenter.LoadCheck_onlyOne_Workassignment(employeeid))
+                {
+                    if (employee_Presenter.LoadCheck_onlyOne_Employment(employeeid))//true
+                    {
+                        MessageBox.Show("Employee has no active Work assignment! \nPlease add work assignment or end the employee employment.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        e.Cancel = true; return;
+                    }
+                    if (employee_Presenter.LoadCheck_onlyOne_Workassignment(employeeid))//true
+                    {
+                        MessageBox.Show("Employee has no active employment! \nPlease add employment or end the employee work assignment.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        e.Cancel = true; return;
+                    }
                 }
             }
         }

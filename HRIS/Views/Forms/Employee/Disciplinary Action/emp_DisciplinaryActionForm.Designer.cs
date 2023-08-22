@@ -28,21 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
-            label1 = new Label();
+            txt_totalcount = new Label();
             panel1 = new Panel();
             ID = new DataGridViewTextBoxColumn();
             dgrid_disciplinaryAction = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
             textBox1 = new TextBox();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             iconButton2 = new FontAwesome.Sharp.IconButton();
@@ -92,19 +85,19 @@
             label2.TabIndex = 2;
             label2.Text = "Disciplinary Action";
             // 
-            // label1
+            // txt_totalcount
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(5, 6);
-            label1.Name = "label1";
-            label1.Size = new Size(94, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Total record(s): 0";
+            txt_totalcount.AutoSize = true;
+            txt_totalcount.ForeColor = Color.Black;
+            txt_totalcount.Location = new Point(5, 6);
+            txt_totalcount.Name = "txt_totalcount";
+            txt_totalcount.Size = new Size(94, 15);
+            txt_totalcount.TabIndex = 0;
+            txt_totalcount.Text = "Total record(s): 0";
             // 
             // panel1
             // 
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(txt_totalcount);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 423);
             panel1.Name = "panel1";
@@ -118,58 +111,25 @@
             // 
             // dgrid_disciplinaryAction
             // 
+            dgrid_disciplinaryAction.AllowUserToAddRows = false;
+            dgrid_disciplinaryAction.AllowUserToDeleteRows = false;
             dgrid_disciplinaryAction.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.IndianRed;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgrid_disciplinaryAction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.IndianRed;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgrid_disciplinaryAction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_disciplinaryAction.ColumnHeadersHeight = 50;
-            dgrid_disciplinaryAction.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
             dgrid_disciplinaryAction.Dock = DockStyle.Fill;
             dgrid_disciplinaryAction.Location = new Point(0, 111);
             dgrid_disciplinaryAction.Name = "dgrid_disciplinaryAction";
+            dgrid_disciplinaryAction.ReadOnly = true;
             dgrid_disciplinaryAction.RowTemplate.Height = 25;
             dgrid_disciplinaryAction.Size = new Size(800, 339);
             dgrid_disciplinaryAction.TabIndex = 23;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "ID";
-            Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Description";
-            Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Action";
-            Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Date Acted";
-            Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Offense category";
-            Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Date Start";
-            Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            Column7.HeaderText = "Date End";
-            Column7.Name = "Column7";
             // 
             // textBox1
             // 
@@ -338,7 +298,7 @@
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
-        private Label label1;
+        private Label txt_totalcount;
         private Panel panel1;
         private DataGridViewTextBoxColumn ID;
         private DataGridView dgrid_disciplinaryAction;
@@ -350,12 +310,5 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton5;
         private FlowLayoutPanel flowLayoutPanel2;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
     }
 }

@@ -689,6 +689,7 @@
             checkBox_isactive.TabIndex = 25;
             checkBox_isactive.Text = "isActive";
             checkBox_isactive.UseVisualStyleBackColor = true;
+            checkBox_isactive.Visible = false;
             // 
             // txt_bank
             // 

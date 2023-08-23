@@ -51,8 +51,14 @@
             btn_attachfile = new Button();
             openFileDialog1 = new OpenFileDialog();
             pdfViewerControl1 = new Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl();
+            panelPDF = new Panel();
+            panelIMAGE = new Panel();
+            pictureBox_FILE = new PictureBox();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
+            panelPDF.SuspendLayout();
+            panelIMAGE.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_FILE).BeginInit();
             SuspendLayout();
             // 
             // panel2
@@ -240,13 +246,14 @@
             // pdfViewerControl1
             // 
             pdfViewerControl1.CursorMode = Syncfusion.Windows.Forms.PdfViewer.PdfViewerCursorMode.SelectTool;
+            pdfViewerControl1.Dock = DockStyle.Fill;
             pdfViewerControl1.EnableContextMenu = true;
             pdfViewerControl1.EnableNotificationBar = true;
             pdfViewerControl1.HorizontalScrollOffset = 0;
             pdfViewerControl1.IsBookmarkEnabled = true;
             pdfViewerControl1.IsTextSearchEnabled = true;
             pdfViewerControl1.IsTextSelectionEnabled = true;
-            pdfViewerControl1.Location = new Point(394, 46);
+            pdfViewerControl1.Location = new Point(0, 0);
             messageBoxSettings1.EnableNotification = true;
             pdfViewerControl1.MessageBoxSettings = messageBoxSettings1;
             pdfViewerControl1.MinimumZoomPercentage = 50;
@@ -263,7 +270,7 @@
             pdfViewerControl1.ShowHorizontalScrollBar = true;
             pdfViewerControl1.ShowToolBar = true;
             pdfViewerControl1.ShowVerticalScrollBar = true;
-            pdfViewerControl1.Size = new Size(668, 642);
+            pdfViewerControl1.Size = new Size(654, 603);
             pdfViewerControl1.SpaceBetweenPages = 8;
             pdfViewerControl1.TabIndex = 40;
             pdfViewerControl1.Text = "pdfViewerControl1";
@@ -271,17 +278,45 @@
             textSearchSettings1.HighlightAllInstance = true;
             textSearchSettings1.OtherInstanceColor = Color.FromArgb(127, 254, 255, 0);
             pdfViewerControl1.TextSearchSettings = textSearchSettings1;
+            pdfViewerControl1.ThemeName = "Default";
             pdfViewerControl1.VerticalScrollOffset = 0;
             pdfViewerControl1.VisualStyle = Syncfusion.Windows.Forms.PdfViewer.VisualStyle.Default;
-            pdfViewerControl1.ZoomMode = Syncfusion.Windows.Forms.PdfViewer.ZoomMode.Default;
+            pdfViewerControl1.ZoomMode = Syncfusion.Windows.Forms.PdfViewer.ZoomMode.FitPage;
+            // 
+            // panelPDF
+            // 
+            panelPDF.Controls.Add(pdfViewerControl1);
+            panelPDF.Location = new Point(394, 46);
+            panelPDF.Name = "panelPDF";
+            panelPDF.Size = new Size(654, 603);
+            panelPDF.TabIndex = 41;
+            // 
+            // panelIMAGE
+            // 
+            panelIMAGE.Controls.Add(pictureBox_FILE);
+            panelIMAGE.Location = new Point(394, 46);
+            panelIMAGE.Name = "panelIMAGE";
+            panelIMAGE.Size = new Size(654, 603);
+            panelIMAGE.TabIndex = 42;
+            // 
+            // pictureBox_FILE
+            // 
+            pictureBox_FILE.Dock = DockStyle.Fill;
+            pictureBox_FILE.Location = new Point(0, 0);
+            pictureBox_FILE.Name = "pictureBox_FILE";
+            pictureBox_FILE.Size = new Size(654, 603);
+            pictureBox_FILE.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox_FILE.TabIndex = 0;
+            pictureBox_FILE.TabStop = false;
             // 
             // emp_AddworkAssignment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1084, 726);
-            Controls.Add(pdfViewerControl1);
+            ClientSize = new Size(1084, 670);
+            Controls.Add(panelPDF);
+            Controls.Add(panelIMAGE);
             Controls.Add(btn_attachfile);
             Controls.Add(txt_enddate);
             Controls.Add(txt_startdate);
@@ -297,7 +332,6 @@
             Controls.Add(label3);
             Controls.Add(label4);
             Controls.Add(label19);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "emp_AddworkAssignment";
@@ -306,6 +340,9 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
+            panelPDF.ResumeLayout(false);
+            panelIMAGE.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox_FILE).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -331,5 +368,8 @@
         private Button btn_attachfile;
         private OpenFileDialog openFileDialog1;
         private Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl pdfViewerControl1;
+        private Panel panelPDF;
+        private Panel panelIMAGE;
+        private PictureBox pictureBox_FILE;
     }
 }

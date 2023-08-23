@@ -30,12 +30,6 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             dgrid_employment = new DataGridView();
-            EmpStatus = new DataGridViewTextBoxColumn();
-            EmploymentID = new DataGridViewTextBoxColumn();
-            Employmenttype = new DataGridViewTextBoxColumn();
-            EmploymentStartdate = new DataGridViewTextBoxColumn();
-            EmploymentEndDate = new DataGridViewTextBoxColumn();
-            EmploymentRemarks = new DataGridViewTextBoxColumn();
             panel1 = new Panel();
             txt_totalcount = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -51,6 +45,12 @@
             txt_search = new TextBox();
             btn_search = new FontAwesome.Sharp.IconButton();
             btn_refresh = new FontAwesome.Sharp.IconButton();
+            EmpStatus = new DataGridViewTextBoxColumn();
+            EmploymentID = new DataGridViewTextBoxColumn();
+            Employmenttype = new DataGridViewTextBoxColumn();
+            EmploymentStartdate = new DataGridViewTextBoxColumn();
+            EmploymentEndDate = new DataGridViewTextBoxColumn();
+            EmploymentRemarks = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgrid_employment).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
@@ -61,6 +61,8 @@
             // 
             // dgrid_employment
             // 
+            dgrid_employment.AllowUserToAddRows = false;
+            dgrid_employment.AllowUserToDeleteRows = false;
             dgrid_employment.AllowUserToResizeRows = false;
             dgrid_employment.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -77,6 +79,7 @@
             dgrid_employment.Dock = DockStyle.Fill;
             dgrid_employment.Location = new Point(0, 111);
             dgrid_employment.Name = "dgrid_employment";
+            dgrid_employment.ReadOnly = true;
             dgrid_employment.RowTemplate.Height = 25;
             dgrid_employment.Size = new Size(800, 312);
             dgrid_employment.TabIndex = 18;
@@ -84,36 +87,6 @@
             dgrid_employment.CellFormatting += dgrid_employment_CellFormatting;
             dgrid_employment.CellStateChanged += dgrid_employment_CellStateChanged;
             dgrid_employment.SelectionChanged += dgrid_employment_SelectionChanged;
-            // 
-            // EmpStatus
-            // 
-            EmpStatus.HeaderText = "";
-            EmpStatus.Name = "EmpStatus";
-            // 
-            // EmploymentID
-            // 
-            EmploymentID.HeaderText = "ID";
-            EmploymentID.Name = "EmploymentID";
-            // 
-            // Employmenttype
-            // 
-            Employmenttype.HeaderText = "Employment type";
-            Employmenttype.Name = "Employmenttype";
-            // 
-            // EmploymentStartdate
-            // 
-            EmploymentStartdate.HeaderText = "Start date";
-            EmploymentStartdate.Name = "EmploymentStartdate";
-            // 
-            // EmploymentEndDate
-            // 
-            EmploymentEndDate.HeaderText = "End date";
-            EmploymentEndDate.Name = "EmploymentEndDate";
-            // 
-            // EmploymentRemarks
-            // 
-            EmploymentRemarks.HeaderText = "Remarks";
-            EmploymentRemarks.Name = "EmploymentRemarks";
             // 
             // panel1
             // 
@@ -334,6 +307,50 @@
             btn_refresh.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_refresh.UseVisualStyleBackColor = false;
             btn_refresh.Click += btn_refresh_Click;
+            // 
+            // EmpStatus
+            // 
+            EmpStatus.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            EmpStatus.HeaderText = "";
+            EmpStatus.Name = "EmpStatus";
+            EmpStatus.ReadOnly = true;
+            EmpStatus.Width = 10;
+            // 
+            // EmploymentID
+            // 
+            EmploymentID.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            EmploymentID.HeaderText = "Code";
+            EmploymentID.Name = "EmploymentID";
+            EmploymentID.ReadOnly = true;
+            // 
+            // Employmenttype
+            // 
+            Employmenttype.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Employmenttype.HeaderText = "Employment type";
+            Employmenttype.Name = "Employmenttype";
+            Employmenttype.ReadOnly = true;
+            Employmenttype.Width = 150;
+            // 
+            // EmploymentStartdate
+            // 
+            EmploymentStartdate.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            EmploymentStartdate.HeaderText = "Start date";
+            EmploymentStartdate.Name = "EmploymentStartdate";
+            EmploymentStartdate.ReadOnly = true;
+            // 
+            // EmploymentEndDate
+            // 
+            EmploymentEndDate.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            EmploymentEndDate.HeaderText = "End date";
+            EmploymentEndDate.Name = "EmploymentEndDate";
+            EmploymentEndDate.ReadOnly = true;
+            // 
+            // EmploymentRemarks
+            // 
+            EmploymentRemarks.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            EmploymentRemarks.HeaderText = "Remarks";
+            EmploymentRemarks.Name = "EmploymentRemarks";
+            EmploymentRemarks.ReadOnly = true;
             // 
             // emp_employmentForm
             // 

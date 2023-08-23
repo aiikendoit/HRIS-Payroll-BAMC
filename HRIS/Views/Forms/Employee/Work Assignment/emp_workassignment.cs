@@ -83,7 +83,6 @@ namespace HRIS.Forms.Employee
                 dgrid_workassignment.Columns["WorkEmploymentID"].DataPropertyName = "ID";
                 dgrid_workassignment.Columns["WorkEmploymentDepartment"].DataPropertyName = "Department";
                 dgrid_workassignment.Columns["WorkEmploymentPosition"].DataPropertyName = "Position";
-                dgrid_workassignment.Columns["WorkEmploymentJobDescription"].DataPropertyName = "JobDescription";
                 dgrid_workassignment.Columns["WorkEmploymentisManager"].DataPropertyName = "isManager";
                 dgrid_workassignment.Columns["Startdate"].DataPropertyName = "Startdate";
                 dgrid_workassignment.Columns["EndDate"].DataPropertyName = "Enddate";

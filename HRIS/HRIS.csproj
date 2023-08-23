@@ -27,6 +27,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Spire.PDF" Version="9.8.5" />
+    <PackageReference Include="Syncfusion.PdfViewer.Windows" Version="21.2.10" />
     <PackageReference Include="Syncfusion.SfInput.WinForms" Version="21.2.10" />
   </ItemGroup>
 

@@ -34,7 +34,7 @@ namespace HRIS.Class
             dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(150, 175, 184);
             dgv.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.FromArgb(150, 175, 184);
             dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             
            

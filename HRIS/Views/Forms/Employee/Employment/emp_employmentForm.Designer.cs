@@ -61,6 +61,7 @@
             // 
             // dgrid_employment
             // 
+            dgrid_employment.AllowUserToResizeRows = false;
             dgrid_employment.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.IndianRed;
@@ -71,6 +72,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_employment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_employment.ColumnHeadersHeight = 50;
+            dgrid_employment.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgrid_employment.Columns.AddRange(new DataGridViewColumn[] { EmpStatus, EmploymentID, Employmenttype, EmploymentStartdate, EmploymentEndDate, EmploymentRemarks });
             dgrid_employment.Dock = DockStyle.Fill;
             dgrid_employment.Location = new Point(0, 111);

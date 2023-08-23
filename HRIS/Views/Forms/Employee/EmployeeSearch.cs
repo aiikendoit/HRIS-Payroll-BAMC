@@ -53,7 +53,7 @@ namespace HRIS.Views.Forms.Employee
         private void btn_search_Click(object sender, EventArgs e)
         {
             if (UniversalStatic.IsEmpty(txt_lastname)) return;
-            else if (UniversalStatic.IsEmpty(txt_firstname)) return;
+            if (UniversalStatic.IsEmpty(txt_firstname)) return;
             search();
         }
         private void search()
@@ -95,7 +95,7 @@ namespace HRIS.Views.Forms.Employee
             var emp = new EmployeeRegistration(docname);
             emp.isUpdate = true;
             emp.loadallCombobox();
-            emp.putdata(PKEmployeeID, "", "");
+            emp.putdata(PKEmployeeID,true);
             emp.ShowDialog(this);
 
         }
@@ -103,6 +103,16 @@ namespace HRIS.Views.Forms.Employee
         public void DisplayEmployeeInActive(List<object> employees)
         {
             throw new NotImplementedException();
+        }
+
+        private void EmployeeSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (UniversalStatic.IsEmpty(txt_lastname)) return;
+                if (UniversalStatic.IsEmpty(txt_firstname)) return;
+                search();
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ public partial class Workassignment
 
     public int? FkPosition { get; set; }
 
-    public string? Jobdescription { get; set; }
+    public byte[]? Jobdescription { get; set; }
 
     public string? Responsibilities { get; set; }
 

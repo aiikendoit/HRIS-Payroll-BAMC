@@ -83,7 +83,7 @@
             btn_cancel.BackColor = Color.Transparent;
             btn_cancel.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
             btn_cancel.FlatStyle = FlatStyle.Flat;
-            btn_cancel.Location = new Point(304, 211);
+            btn_cancel.Location = new Point(304, 256);
             btn_cancel.Name = "btn_cancel";
             btn_cancel.Size = new Size(91, 36);
             btn_cancel.TabIndex = 43;
@@ -97,7 +97,7 @@
             btn_save.FlatAppearance.BorderSize = 0;
             btn_save.FlatStyle = FlatStyle.Flat;
             btn_save.ForeColor = Color.White;
-            btn_save.Location = new Point(207, 211);
+            btn_save.Location = new Point(207, 256);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(91, 36);
             btn_save.TabIndex = 42;
@@ -121,7 +121,7 @@
             txt_remarks.Location = new Point(166, 146);
             txt_remarks.Multiline = true;
             txt_remarks.Name = "txt_remarks";
-            txt_remarks.Size = new Size(229, 50);
+            txt_remarks.Size = new Size(229, 104);
             txt_remarks.TabIndex = 39;
             // 
             // label22
@@ -189,7 +189,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(408, 258);
+            ClientSize = new Size(408, 319);
             Controls.Add(txt_enddate);
             Controls.Add(txt_startdate);
             Controls.Add(panel2);

@@ -56,7 +56,7 @@ namespace HRIS.Presenter
             
             bool hasemployment = false;
             var query = _context.Employmentstatuses
-                .Where(e => e.FkEmployee == employeeid && e.Enddate == null || e.Enddate > DateTime.Now ).ToList();
+                .Where(e => e.FkEmployee == employeeid && (e.Enddate == null || e.Enddate > DateTime.Now )).ToList();
             hasemployment = query.Any();
             return hasemployment;
         }
@@ -64,7 +64,7 @@ namespace HRIS.Presenter
         {
             bool hasWorkAssignment = false;
             var query = _context.Workassignments
-                .Where(e => e.FkEmployee == employeeid && e.Enddate == null || e.Enddate > DateTime.Now).ToList();
+                .Where(e => e.FkEmployee == employeeid && (e.Enddate == null || e.Enddate > DateTime.Now)).ToList();
             hasWorkAssignment = query.Any();
             return hasWorkAssignment;
         }
@@ -86,6 +86,37 @@ namespace HRIS.Presenter
                             Birthday = employee.Birthdate
                         };
 
+            employeesData = query.ToList<object>();
+            _view.DisplayEmployeeCustomView(employeesData);
+        }
+        public void loadEmployeeJoin_Active_withWhere( int employeeid)
+        {
+            var query = from empInfo in _context.Employees
+                        join EmpStat in _context.Employmentstatuses on empInfo.PkEmployee equals EmpStat.FkEmployee
+                        join empWorkAss in _context.Workassignments on empInfo.PkEmployee equals empWorkAss.FkEmployee
+                        join empType in _context.Employmenttypes on EmpStat.FkEmploymenttype equals empType.PkEmploymenttype
+                        join dept in _context.Departments on empWorkAss.FkDepartment equals dept.PkDepartment
+                        join post in _context.Positions on empWorkAss.FkPosition equals post.PkPosition
+                        join tempbrgy in _context.Barangays on empInfo.FkBarangay equals tempbrgy.PkBarangay
+                        join temptowncity in _context.Towncities on empInfo.FkTowncity equals temptowncity.PkTowncity
+                        join tempprovince in _context.Provinces on empInfo.FkProvince equals tempprovince.PkProvince
+                        where empInfo.PkEmployee == employeeid && empInfo.Employeetype == "Employee" && EmpStat.IsDeleted != true
+                         && (EmpStat.Enddate == null || EmpStat.Enddate > DateTime.Now)
+                         && empWorkAss.IsDeleted != true && (empWorkAss.Enddate == null || empWorkAss.Enddate > DateTime.Now)
+                        select new
+                        {
+                            ID = empInfo.PkEmployee,
+                            Profilepicture = empInfo.ProfilePicture,
+                            EmployeeID = empInfo.Idno,
+                            Name = empInfo.Lastname + ", " + empInfo.Firstname + " " + empInfo.Middlename,
+                            Gender = empInfo.Gender,
+                            Department = dept.Description,
+                            Position = post.PositionName,
+                            EmploymentStatus = empType.Description,
+                            Address = empInfo.Address1 + " " + empInfo.Address2 + " " + empInfo.Address3
+                            + " " + tempbrgy.Description + " " + temptowncity.Description
+                             + " " + temptowncity.Description + " " + tempprovince.Description,
+                        };
             employeesData = query.ToList<object>();
             _view.DisplayEmployeeCustomView(employeesData);
         }
@@ -117,6 +148,60 @@ namespace HRIS.Presenter
                             + " " + tempbrgy.Description + " " + temptowncity.Description
                              + " " + temptowncity.Description + " " + tempprovince.Description,
                         };
+            employeesData = query.ToList<object>();
+            _view.DisplayEmployeeCustomView(employeesData);
+        }
+        public void loadEmployeeJoin_InActive_withWhere(int employeeid)
+        {
+            var query = (from a in (
+                         from empWorkAss in _context.Workassignments
+                         join empInfo in _context.Employees on empWorkAss.FkEmployee equals empInfo.PkEmployee
+                         join tempbrgy in _context.Barangays on empInfo.FkBarangay equals tempbrgy.PkBarangay
+                         join temptowncity in _context.Towncities on empInfo.FkTowncity equals temptowncity.PkTowncity
+                         join tempprovince in _context.Provinces on empInfo.FkProvince equals tempprovince.PkProvince
+                         where empInfo.PkEmployee == employeeid && empInfo.Employeetype == "Employee" && empWorkAss.IsDeleted != true
+                         group new { empWorkAss, empInfo } by new
+                         {
+
+                             empWorkAss.FkEmployee,
+                             empInfo.Idno,
+                             empInfo.Lastname,
+                             empInfo.Firstname,
+                             empInfo.Middlename,
+                             empInfo.Gender,
+                             Address = empInfo.Address1 + " " + empInfo.Address2 + " " + empInfo.Address3
+                            + " " + tempbrgy.Description + " " + temptowncity.Description
+                             + " " + temptowncity.Description + " " + tempprovince.Description,
+                         } into g
+                         select new
+                         {
+                             ID = g.Key.FkEmployee,
+                             EmployeeID = g.Key.Idno,
+                             Name = g.Key.Lastname + ", " + g.Key.Firstname + " " + g.Key.Middlename,
+                             Gender = g.Key.Gender,
+                             Department = "",
+                             Position = "",
+                             EmploymentStatus = "",
+                             StartDate = g.Max(x => x.empWorkAss.Startdate),
+                             EndDate = g.Max(x => x.empWorkAss.Enddate),
+                             Address = g.Key.Address
+                         }
+                     )
+                         join b in _context.Employees on a.ID equals b.PkEmployee
+                         where a.EndDate > a.StartDate && a.EndDate != null
+
+                         select new
+                         {
+                             a.ID,
+                             ProfilePicture = b.ProfilePicture,
+                             a.EmployeeID,
+                             a.Name,
+                             a.Gender,
+                             a.Department,
+                             a.Position,
+                             a.EmploymentStatus,
+                             a.Address
+                         }).ToList();
             employeesData = query.ToList<object>();
             _view.DisplayEmployeeCustomView(employeesData);
         }

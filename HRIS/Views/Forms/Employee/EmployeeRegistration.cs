@@ -253,7 +253,7 @@ namespace HRIS.Forms.Employee
         private void btn_education_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_EducationalAttainment(employeeid,isUpdate));
+            openchildform(new emp_EducationalAttainment(employeeid, isUpdate));
         }
 
         private void btn_shifting_Click(object sender, EventArgs e)
@@ -265,7 +265,7 @@ namespace HRIS.Forms.Employee
         private void btn_workassignment_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_workassignment(employeeid,isUpdate));
+            openchildform(new emp_workassignment(employeeid, isUpdate));
         }
         private void btn_basicinfo_Click(object sender, EventArgs e)
         {
@@ -282,19 +282,19 @@ namespace HRIS.Forms.Employee
         private void iconButton5_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_licenseInfoForm(employeeid,isUpdate));
+            openchildform(new emp_licenseInfoForm(employeeid, isUpdate));
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_employmentForm(employeeid,isUpdate));
+            openchildform(new emp_employmentForm(employeeid, isUpdate));
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_leaveSetting(employeeid,isUpdate));
+            openchildform(new emp_leaveSetting(employeeid, isUpdate));
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
@@ -480,24 +480,34 @@ namespace HRIS.Forms.Employee
             }
 
         }
-        public void putdata(int employeeid, string position, string department)
+        public void putdata(int employeeid,bool isviewingArchive)
         {
             if (isUpdate)
             {
                 //Edit
                 employee_Presenter.LoadEmployeewithWhere(employeeid);
-                txt_idno.Enabled = false;
-                txt_position.Text = position;
-                txt_department.Text = department;
+                if (isviewingArchive)
+                {
+                    employee_Presenter.loadEmployeeJoin_InActive_withWhere(employeeid);
+                }
+                else
+                {
+                    employee_Presenter.loadEmployeeJoin_Active_withWhere(employeeid);
+                }
             }
             else
-            { 
+            {
                 //view
                 employee_Presenter.LoadEmployeewithWhere(employeeid);
-                txt_idno.Enabled = false;
-                txt_position.Text = position;
-                txt_department.Text = department;
-                //Disable control
+                if (isviewingArchive)
+                {
+                    employee_Presenter.loadEmployeeJoin_InActive_withWhere(employeeid);
+                }
+                else
+                {
+                    employee_Presenter.loadEmployeeJoin_Active_withWhere(employeeid);
+                }
+                
                 btn_save.Visible = false;
                 btn_cancel.Visible = false;
                 foreach (Control control in this.panel_basicinfo.Controls)
@@ -778,7 +788,7 @@ namespace HRIS.Forms.Employee
                         md = mdname[0];
                         mdname = md.ToString() + ". ";
                     }
-                    txt_Headercompletename.Text = employee?.Firstname + " " + mdname + employee?.Lastname;
+                   // txt_Headercompletename.Text = employee?.Firstname + " " + mdname + employee?.Lastname;
                     employeeid = employee?.PkEmployee ?? 0;
                     btn_save.Text = "Update";
                     btn_cancel.Select();
@@ -801,14 +811,25 @@ namespace HRIS.Forms.Employee
 
         public void DisplayEmployeeCustomView(List<object> employees)
         {
-            throw new NotImplementedException();
+            if (employees != null && employees.Count > 0)
+            {
+                foreach (var employee in employees)
+                {
+                    dynamic emp = employee;
+                   txt_employeeid.Text = emp.EmployeeID;
+                    txt_Headercompletename.Text = emp.Name;
+                    txt_status.Text = emp.EmploymentStatus;
+                   txt_department.Text = emp.Department;
+                   txt_position.Text = emp.Position;
+                }
+            }
         }
 
         private void EmployeeRegistration_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (employeeid != 0)
             {
-                if ( employee_Presenter.LoadCheckEmployment(employeeid) == false)
+                if (employee_Presenter.LoadCheckEmployment(employeeid) == false)
                 {
                     MessageBox.Show("Please finish adding information in Employee employment!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     e.Cancel = true; return;

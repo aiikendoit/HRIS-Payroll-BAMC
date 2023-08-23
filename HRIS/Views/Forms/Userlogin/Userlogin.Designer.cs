@@ -106,9 +106,9 @@
             label6.ForeColor = Color.Black;
             label6.Location = new Point(87, 202);
             label6.Name = "label6";
-            label6.Size = new Size(237, 19);
+            label6.Size = new Size(240, 19);
             label6.TabIndex = 4;
-            label6.Text = "• Empoyee Information Management";
+            label6.Text = "• Employee Information Management";
             // 
             // label5
             // 
@@ -174,9 +174,9 @@
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(16, 111);
             label2.Name = "label2";
-            label2.Size = new Size(180, 21);
+            label2.Size = new Size(168, 21);
             label2.TabIndex = 4;
-            label2.Text = "Hellow! Let's get started.";
+            label2.Text = "Hello! Let's get started.";
             // 
             // label1
             // 

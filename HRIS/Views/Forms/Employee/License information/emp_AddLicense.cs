@@ -61,9 +61,22 @@ namespace HRIS.Forms.Employee.License_information
                 //disable control
                 foreach (Control control in this.Controls)
                 {
-                    if (!(control is Label) && !(control is Button))
+                    
+
+                    if (control.Name == "txt_remarks")
                     {
-                        control.Enabled = false;
+                        TextBox txtBox = control as TextBox;
+                        if (txtBox != null)
+                        {
+                            txtBox.ReadOnly = true;
+                        }
+                    }
+                    else
+                    {
+                        if (!(control is Label) && !(control is Button))
+                        {
+                            control.Enabled = false;
+                        }
                     }
                 }
                 btn_save.Visible = false;
@@ -71,7 +84,7 @@ namespace HRIS.Forms.Employee.License_information
         }
         private void save()
         {
-            if (UniversalStatic.IsEmpty(txt_licensenumber)  && UniversalStatic.IsEmpty(txt_expiryreminder)) return;
+            if (UniversalStatic.IsEmpty(txt_licensenumber) && UniversalStatic.IsEmpty(txt_remarks)) return;
             //if (UniversalStatic.IsEmpty(txt_expiryreminder)) return;
             string? createdby = Properties.Settings.Default.completename;
             int id = Properties.Settings.Default.usercode;
@@ -81,7 +94,7 @@ namespace HRIS.Forms.Employee.License_information
                 FkLicensetype = Convert.ToInt32(txt_licensetype.SelectedValue),
                 Licensenumber = txt_licensenumber.Text,
                 Expirydate = txt_expirydate.Value,
-                Remarks = txt_expiryreminder.Text,
+                Remarks = txt_remarks.Text,
                 Createdby = createdby,
                 FkSystemUser = id
             };
@@ -98,7 +111,7 @@ namespace HRIS.Forms.Employee.License_information
                 existinglicense.FkLicensetype = Convert.ToInt32(txt_licensetype.SelectedValue);
                 existinglicense.Licensenumber = txt_licensenumber.Text;
                 existinglicense.Expirydate = txt_expirydate.Value;
-                existinglicense.Remarks = txt_expiryreminder.Text;
+                existinglicense.Remarks = txt_remarks.Text;
                 employeelicenseinformation_Presenter.UpdateEmployeeLicense(existinglicense);
                 this.Close();
             }
@@ -113,7 +126,7 @@ namespace HRIS.Forms.Employee.License_information
                 txt_licensetype.SelectedValue = license.FkLicensetype;
                 txt_licensenumber.Text = license.Licensenumber;
                 txt_expirydate.Value = license.Expirydate;
-                txt_expiryreminder.Text = license.Remarks;
+                txt_remarks.Text = license.Remarks;
             }
             catch (Exception ex)
             {

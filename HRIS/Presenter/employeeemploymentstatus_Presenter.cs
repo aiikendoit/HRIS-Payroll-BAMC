@@ -87,7 +87,7 @@ namespace HRIS.Presenter
 
             }
         }
-        public void UpdateEmploymentStatus(Employmentstatus employmentstatus, bool isENddate,DateTime enddate)
+        public void UpdateEmploymentStatus(Employmentstatus employmentstatus, bool isENddate,DateTime? enddate)
         {
             var ver = new UserConfirmation();
             ver.ShowDialog();
@@ -109,7 +109,7 @@ namespace HRIS.Presenter
                     DateTime? endDate = existingEmployment.Enddate;
                     if (isENddate)
                     {
-                        updateWorkAssignmentEnddate(employmentstatus.FkEmployee, enddate);
+                        updateWorkAssignmentEnddate(employmentstatus.FkEmployee, enddate.Value);
                     }
                 }
             }

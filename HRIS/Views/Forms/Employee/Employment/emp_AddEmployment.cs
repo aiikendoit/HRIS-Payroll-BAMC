@@ -32,21 +32,6 @@ namespace HRIS.Forms.Employee.Employment
             _context = new HrisContext();
             EmpID = PKEmployeeID;
 
-            //set watermark for datepicker
-            customizedatepicker();
-        }
-        private void customizedatepicker()
-        {
-            //txt_startdate.DropDownSize = new Size(220, 200);
-            //txt_startdate.MonthCalendar.ShowFooter = false;
-            //txt_enddate.DropDownSize = new Size(220, 200);
-            //txt_enddate.MonthCalendar.ShowFooter = false;
-            //txt_startdate.AllowNull = true;
-            //txt_enddate.AllowNull = true;
-            //txt_startdate.Value = null;
-            //txt_enddate.Value = null;
-
-
         }
         public void putdata(int PKEmploymentID)
         {
@@ -63,11 +48,23 @@ namespace HRIS.Forms.Employee.Employment
                 //disable control
                 foreach (Control control in this.Controls)
                 {
-                    if (!(control is Label) && !(control is Button))
+                    if (control.Name == "txt_remarks")
                     {
-                        control.Enabled = false;
+                        TextBox txtBox = control as TextBox;
+                        if (txtBox != null)
+                        {
+                            txtBox.ReadOnly = true;
+                        }
+                    }
+                    else
+                    {
+                        if (!(control is Label) && !(control is Button))
+                        {
+                            control.Enabled = false;
+                        }
                     }
                 }
+
                 btn_save.Visible = false;
             }
         }
@@ -104,16 +101,23 @@ namespace HRIS.Forms.Employee.Employment
                 existingEmployment.Remarks = txt_remarks.Text;
                 enddate = txt_enddate.Value;
 
-                DateTime endDateValue = enddate.Value;
+
+                DateTime? endDateValue = null; // Initialize as null
+
+                if (enddate.HasValue)
+                {
+                    endDateValue = enddate.Value; 
+                }
+
                 if (txt_enddate.Value != null && txt_enddate.Value <= DateTime.Now)
                 {
                     isEnddate = true;
-                   if (enddate.HasValue)
+                    if (enddate.HasValue)
                     {
                         endDateValue = enddate.Value;
                     }
                 }
-                
+
                 employeeemploymentstatus_Presenter.UpdateEmploymentStatus(existingEmployment, isEnddate, endDateValue);
                 this.Close();
             }

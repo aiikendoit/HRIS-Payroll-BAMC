@@ -18,6 +18,4 @@ public partial class Offensetype
     public string? Createdby { get; set; }
 
     public int? FkSystemUser { get; set; }
-
-    public virtual ICollection<Employeedisciplinary> Employeedisciplinaries { get; set; } = new List<Employeedisciplinary>();
 }

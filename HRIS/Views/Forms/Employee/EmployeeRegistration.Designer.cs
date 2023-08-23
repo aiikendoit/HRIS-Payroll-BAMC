@@ -116,6 +116,7 @@
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
             panel2 = new Panel();
+            txt_status = new Label();
             txt_employeeid = new Label();
             picture_avatar = new UserControl.JPCircularPictureBox();
             txt_department = new Label();
@@ -656,9 +657,9 @@
             panel_basicinfo.Controls.Add(iconPictureBox1);
             panel_basicinfo.Controls.Add(label2);
             panel_basicinfo.Dock = DockStyle.Fill;
-            panel_basicinfo.Location = new Point(177, 147);
+            panel_basicinfo.Location = new Point(177, 167);
             panel_basicinfo.Name = "panel_basicinfo";
-            panel_basicinfo.Size = new Size(916, 508);
+            panel_basicinfo.Size = new Size(916, 488);
             panel_basicinfo.TabIndex = 0;
             // 
             // txt_rfid
@@ -1053,9 +1054,9 @@
             label9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label9.Location = new Point(11, 156);
             label9.Name = "label9";
-            label9.Size = new Size(59, 15);
+            label9.Size = new Size(64, 15);
             label9.TabIndex = 3;
-            label9.Text = "Firstname";
+            label9.Text = "First Name";
             // 
             // label21
             // 
@@ -1212,9 +1213,9 @@
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label8.Location = new Point(11, 130);
             label8.Name = "label8";
-            label8.Size = new Size(58, 15);
+            label8.Size = new Size(63, 15);
             label8.TabIndex = 2;
-            label8.Text = "Lastname";
+            label8.Text = "Last Name";
             // 
             // label27
             // 
@@ -1252,9 +1253,9 @@
             label10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label10.Location = new Point(11, 182);
             label10.Name = "label10";
-            label10.Size = new Size(74, 15);
+            label10.Size = new Size(79, 15);
             label10.TabIndex = 2;
-            label10.Text = "Middlename";
+            label10.Text = "Middle Name";
             // 
             // label16
             // 
@@ -1311,6 +1312,7 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(txt_status);
             panel2.Controls.Add(txt_employeeid);
             panel2.Controls.Add(picture_avatar);
             panel2.Controls.Add(txt_department);
@@ -1320,14 +1322,24 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(177, 57);
             panel2.Name = "panel2";
-            panel2.Size = new Size(916, 90);
+            panel2.Size = new Size(916, 110);
             panel2.TabIndex = 3;
+            // 
+            // txt_status
+            // 
+            txt_status.AutoSize = true;
+            txt_status.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_status.Location = new Point(85, 47);
+            txt_status.Name = "txt_status";
+            txt_status.Size = new Size(39, 15);
+            txt_status.TabIndex = 7;
+            txt_status.Text = "Status";
             // 
             // txt_employeeid
             // 
             txt_employeeid.AutoSize = true;
             txt_employeeid.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_employeeid.Location = new Point(65, 26);
+            txt_employeeid.Location = new Point(85, 32);
             txt_employeeid.Name = "txt_employeeid";
             txt_employeeid.Size = new Size(73, 15);
             txt_employeeid.TabIndex = 6;
@@ -1344,7 +1356,7 @@
             picture_avatar.Image = (Image)resources.GetObject("picture_avatar.Image");
             picture_avatar.Location = new Point(4, 5);
             picture_avatar.Name = "picture_avatar";
-            picture_avatar.Size = new Size(57, 57);
+            picture_avatar.Size = new Size(75, 75);
             picture_avatar.SizeMode = PictureBoxSizeMode.StretchImage;
             picture_avatar.TabIndex = 5;
             picture_avatar.TabStop = false;
@@ -1353,7 +1365,7 @@
             // 
             txt_department.AutoSize = true;
             txt_department.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_department.Location = new Point(65, 58);
+            txt_department.Location = new Point(85, 77);
             txt_department.Name = "txt_department";
             txt_department.Size = new Size(70, 15);
             txt_department.TabIndex = 3;
@@ -1363,17 +1375,17 @@
             // 
             txt_position.AutoSize = true;
             txt_position.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_position.Location = new Point(65, 42);
+            txt_position.Location = new Point(85, 62);
             txt_position.Name = "txt_position";
-            txt_position.Size = new Size(70, 15);
+            txt_position.Size = new Size(50, 15);
             txt_position.TabIndex = 3;
-            txt_position.Text = "Department";
+            txt_position.Text = "Position";
             // 
             // txt_Headercompletename
             // 
             txt_Headercompletename.AutoSize = true;
             txt_Headercompletename.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            txt_Headercompletename.Location = new Point(65, 2);
+            txt_Headercompletename.Location = new Point(85, 7);
             txt_Headercompletename.Name = "txt_Headercompletename";
             txt_Headercompletename.Size = new Size(64, 25);
             txt_Headercompletename.TabIndex = 1;
@@ -1383,7 +1395,7 @@
             // 
             panel3.BackColor = Color.Silver;
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 76);
+            panel3.Location = new Point(0, 96);
             panel3.Name = "panel3";
             panel3.Size = new Size(916, 14);
             panel3.TabIndex = 0;
@@ -1391,10 +1403,10 @@
             // MainPanel
             // 
             MainPanel.Dock = DockStyle.Fill;
-            MainPanel.Location = new Point(177, 147);
+            MainPanel.Location = new Point(177, 167);
             MainPanel.Name = "MainPanel";
             MainPanel.Padding = new Padding(5);
-            MainPanel.Size = new Size(916, 508);
+            MainPanel.Size = new Size(916, 488);
             MainPanel.TabIndex = 4;
             // 
             // panel4
@@ -1536,5 +1548,6 @@
         private TextBox txt_rfid;
         private Label label1;
         private Label txt_department;
+        private Label txt_status;
     }
 }

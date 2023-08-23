@@ -45,10 +45,10 @@ namespace HRIS.Forms.Employee.Documents
         private void dgv_hideCols()
         {
             //dgrid_documents.Columns[0].Visible = false;
-            dgrid_documents.Columns[1].Visible = false;
-            dgrid_documents.Columns[2].Visible = false;
-            dgrid_documents.Columns[5].Visible = false;
-            dgrid_documents.Columns[8].Visible = false;
+            //dgrid_documents.Columns[1].Visible = false;
+            //dgrid_documents.Columns[2].Visible = false;
+            //dgrid_documents.Columns[5].Visible = false;
+            //dgrid_documents.Columns[8].Visible = false;
         }
 
         private void emp_DocumentsForm_Load(object sender, EventArgs e)
@@ -70,22 +70,36 @@ namespace HRIS.Forms.Employee.Documents
 
         public void DisplayEmployeeDocumentsData(List<object> Employeedocuments)
         {
-            //throw new NotImplementedException();
-            dgrid_documents.DataSource = Employeedocuments;
+
+            if (Employeedocuments != null && Employeedocuments.Count > 0)
+            {
+                dgrid_documents.AutoGenerateColumns = false;
+                dgrid_documents.Columns["Code"].DataPropertyName = "pk_employeedocument";
+                dgrid_documents.Columns["DocType"].DataPropertyName = "fk_doctype";
+                dgrid_documents.Columns["Description"].DataPropertyName = "Description";
+                dgrid_documents.Columns["Remarks"].DataPropertyName = "remarks";
+
+                dgrid_documents.DataSource = Employeedocuments;
+            }
+            else
+            {
+                dgrid_documents.DataSource = null; // Clear the DataGridView if licenseInfo is empty
+            }
+
             //changeDgridSize();
             label_total.Text = "Total count(s): " + dgrid_documents.RowCount.ToString();
         }
 
         private void dgrid_documents_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            dgrid_documents.Columns[0].Width = 50;
-            dgrid_documents.Columns[1].Width = 250;
-            dgrid_documents.Columns[2].Width = 100;
-            dgrid_documents.Columns[0].HeaderText = "Code";
-            dgrid_documents.Columns[4].HeaderText = "Remarks";
-            dgrid_documents.Columns[7].HeaderText = "Created By";
-            dgrid_documents.Columns[6].HeaderText = "Created Date";
-            dgrid_documents.Columns[5].HeaderText = "Description";
+            //dgrid_documents.Columns[0].Width = 50;
+            //dgrid_documents.Columns[1].Width = 250;
+            //dgrid_documents.Columns[2].Width = 100;
+            //dgrid_documents.Columns[0].HeaderText = "Code";
+            //dgrid_documents.Columns[4].HeaderText = "Remarks";
+            //dgrid_documents.Columns[7].HeaderText = "Created By";
+            //dgrid_documents.Columns[6].HeaderText = "Created Date";
+            //dgrid_documents.Columns[5].HeaderText = "Description";
         }
 
         private void btn_Edit_Click(object sender, EventArgs e)
@@ -108,7 +122,7 @@ namespace HRIS.Forms.Employee.Documents
 
         private void btn_viewDocs_Click(object sender, EventArgs e)
         {
-            
+
             int PKEmployeeID = (int)dgrid_documents.SelectedRows[0].Cells[0].Value;
             if (PKEmployeeID != null)
             {

@@ -44,6 +44,11 @@
             iconButton2 = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new Panel();
+            Code = new DataGridViewTextBoxColumn();
+            DocType = new DataGridViewTextBoxColumn();
+            Description = new DataGridViewTextBoxColumn();
+            Remarks = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
             flowLayoutPanel2.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
@@ -189,6 +194,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_documents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_documents.ColumnHeadersHeight = 50;
+            dgrid_documents.Columns.AddRange(new DataGridViewColumn[] { Code, DocType, Description, Remarks, Column1 });
             dgrid_documents.Dock = DockStyle.Fill;
             dgrid_documents.Location = new Point(0, 111);
             dgrid_documents.Name = "dgrid_documents";
@@ -270,6 +276,45 @@
             panel1.Size = new Size(800, 27);
             panel1.TabIndex = 34;
             // 
+            // Code
+            // 
+            Code.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Code.HeaderText = "Code";
+            Code.Name = "Code";
+            Code.ReadOnly = true;
+            Code.Width = 80;
+            // 
+            // DocType
+            // 
+            DocType.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            DocType.HeaderText = "Document Type";
+            DocType.Name = "DocType";
+            DocType.ReadOnly = true;
+            DocType.Width = 150;
+            // 
+            // Description
+            // 
+            Description.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Description.HeaderText = "Description";
+            Description.Name = "Description";
+            Description.ReadOnly = true;
+            Description.Width = 92;
+            // 
+            // Remarks
+            // 
+            Remarks.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Remarks.HeaderText = "Remarks";
+            Remarks.Name = "Remarks";
+            Remarks.ReadOnly = true;
+            Remarks.Width = 77;
+            // 
+            // Column1
+            // 
+            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column1.HeaderText = "";
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            // 
             // emp_DocumentsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -313,5 +358,10 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
+        private DataGridViewTextBoxColumn Code;
+        private DataGridViewTextBoxColumn DocType;
+        private DataGridViewTextBoxColumn Description;
+        private DataGridViewTextBoxColumn Remarks;
+        private DataGridViewTextBoxColumn Column1;
     }
 }

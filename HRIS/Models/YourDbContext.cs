@@ -1195,11 +1195,11 @@ public partial class YourDbContext : DbContext
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("jobdescription");
-            entity.Property(e => e.Jobscope)
+            entity.Property(e => e.FileExtension)
                 .IsUnicode(false)
                 .HasColumnName("jobscope");
            
-            entity.Property(e => e.Responsibilities)
+            entity.Property(e => e.Filename)
                 .IsUnicode(false)
                 .HasColumnName("responsibilities");
             entity.Property(e => e.Startdate)

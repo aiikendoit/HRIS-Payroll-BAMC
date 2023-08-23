@@ -44,7 +44,7 @@
             pictureBoxDocs.Margin = new Padding(1);
             pictureBoxDocs.Name = "pictureBoxDocs";
             pictureBoxDocs.Size = new Size(784, 561);
-            pictureBoxDocs.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBoxDocs.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxDocs.TabIndex = 0;
             pictureBoxDocs.TabStop = false;
             // 
@@ -61,7 +61,7 @@
             pdfViewerControl1.Location = new Point(0, 0);
             messageBoxSettings1.EnableNotification = true;
             pdfViewerControl1.MessageBoxSettings = messageBoxSettings1;
-            pdfViewerControl1.MinimumZoomPercentage = 50;
+            pdfViewerControl1.MinimumZoomPercentage = 20;
             pdfViewerControl1.Name = "pdfViewerControl1";
             pdfViewerControl1.PageBorderThickness = 1;
             pdfViewerPrinterSettings1.Copies = 1;
@@ -83,15 +83,16 @@
             textSearchSettings1.HighlightAllInstance = true;
             textSearchSettings1.OtherInstanceColor = Color.FromArgb(127, 254, 255, 0);
             pdfViewerControl1.TextSearchSettings = textSearchSettings1;
-            pdfViewerControl1.ThemeName = "Default";
+            pdfViewerControl1.ThemeName = "Office2016Colorful";
             pdfViewerControl1.VerticalScrollOffset = 0;
-            pdfViewerControl1.VisualStyle = Syncfusion.Windows.Forms.PdfViewer.VisualStyle.Default;
-            pdfViewerControl1.ZoomMode = Syncfusion.Windows.Forms.PdfViewer.ZoomMode.Default;
+            pdfViewerControl1.VisualStyle = Syncfusion.Windows.Forms.PdfViewer.VisualStyle.Office2016Colorful;
+            pdfViewerControl1.ZoomMode = Syncfusion.Windows.Forms.PdfViewer.ZoomMode.FitPage;
             // 
             // PreviewDocs
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             ClientSize = new Size(784, 561);
             Controls.Add(pdfViewerControl1);
             Controls.Add(pictureBoxDocs);
@@ -103,7 +104,6 @@
             Load += PreviewDocs_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxDocs).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

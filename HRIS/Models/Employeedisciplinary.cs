@@ -28,4 +28,6 @@ public partial class Employeedisciplinary
     public virtual Disciplinarytype? FkDisciplinarytypeNavigation { get; set; }
 
     public virtual Employee? FkEmployeeNavigation { get; set; }
+
+    public virtual Offensetype? FkOffensetypeNavigation { get; set; }
 }

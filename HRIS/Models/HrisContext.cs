@@ -721,6 +721,10 @@ public partial class HrisContext : DbContext
             entity.HasOne(d => d.FkEmployeeNavigation).WithMany(p => p.Employeedisciplinaries)
                 .HasForeignKey(d => d.FkEmployee)
                 .HasConstraintName("FK_employeedisciplinary_employee");
+
+            entity.HasOne(d => d.FkOffensetypeNavigation).WithMany(p => p.Employeedisciplinaries)
+                .HasForeignKey(d => d.FkOffensetype)
+                .HasConstraintName("FK_employeedisciplinary_offensetype");
         });
 
         modelBuilder.Entity<Employeedocument>(entity =>
@@ -1344,6 +1348,13 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.Enddate)
                 .HasColumnType("date")
                 .HasColumnName("enddate");
+            entity.Property(e => e.FileExtension)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("fileExtension");
+            entity.Property(e => e.Filename)
+                .IsUnicode(false)
+                .HasColumnName("filename");
             entity.Property(e => e.FkDepartment).HasColumnName("FK_department");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkPosition).HasColumnName("FK_position");
@@ -1351,12 +1362,6 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.IsDeleted).HasColumnName("isDeleted");
             entity.Property(e => e.IsManager).HasColumnName("isManager");
             entity.Property(e => e.Jobdescription).HasColumnName("jobdescription");
-            entity.Property(e => e.Jobscope)
-                .IsUnicode(false)
-                .HasColumnName("jobscope");
-            entity.Property(e => e.Responsibilities)
-                .IsUnicode(false)
-                .HasColumnName("responsibilities");
             entity.Property(e => e.Startdate)
                 .HasColumnType("date")
                 .HasColumnName("startdate");

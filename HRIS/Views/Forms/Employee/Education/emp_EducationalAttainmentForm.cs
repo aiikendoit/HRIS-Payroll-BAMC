@@ -66,14 +66,14 @@ namespace HRIS.Forms.Employee
 
         private void dgrid_educationalattainment_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            dgrid_educationalattainment.Columns[0].Width = 50;
-            dgrid_educationalattainment.Columns[2].Width = 250;
-            dgrid_educationalattainment.Columns[3].Width = 100;
-            dgrid_educationalattainment.Columns[1].HeaderText = "Educational Attainment";
-            dgrid_educationalattainment.Columns[2].HeaderText = "School Attended";
-            dgrid_educationalattainment.Columns[3].HeaderText = "Year Graduated";
-            dgrid_educationalattainment.Columns[4].HeaderText = "Educational Degree";
-            dgrid_educationalattainment.Columns[5].HeaderText = "Degree type";
+            //dgrid_educationalattainment.Columns[0].Width = 50;
+            //dgrid_educationalattainment.Columns[2].Width = 250;
+            //dgrid_educationalattainment.Columns[3].Width = 100;
+            //dgrid_educationalattainment.Columns[1].HeaderText = "Educational Attainment";
+            //dgrid_educationalattainment.Columns[2].HeaderText = "School Attended";
+            //dgrid_educationalattainment.Columns[3].HeaderText = "Year Graduated";
+            //dgrid_educationalattainment.Columns[4].HeaderText = "Educational Degree";
+            //dgrid_educationalattainment.Columns[5].HeaderText = "Degree type";
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
@@ -123,6 +123,14 @@ namespace HRIS.Forms.Employee
 
         public void DisplayAttainmentCustom(List<object> employee_attainment)
         {
+
+            dgrid_educationalattainment.AutoGenerateColumns = false;
+            dgrid_educationalattainment.Columns["code"].DataPropertyName = "ID";
+            dgrid_educationalattainment.Columns["educationalattainment"].DataPropertyName = "EducationalAttainment";
+            dgrid_educationalattainment.Columns["schoolattended"].DataPropertyName = "SchoolAttended";
+            dgrid_educationalattainment.Columns["yeargraduated"].DataPropertyName = "YearGraduated";
+            dgrid_educationalattainment.Columns["educationaldegree"].DataPropertyName = "EducationalDegree";
+            dgrid_educationalattainment.Columns["degreetype"].DataPropertyName = "Degreetype";
             dgrid_educationalattainment.DataSource = employee_attainment;
         }
         private void delete(int educID)

@@ -15,9 +15,9 @@ public partial class Workassignment
 
     public byte[]? Jobdescription { get; set; }
 
-    public string? Responsibilities { get; set; }
+    public string? FileExtension { get; set; }
 
-    public string? Jobscope { get; set; }
+    public string? Filename { get; set; }
 
     public bool IsManager { get; set; }
 

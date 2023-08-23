@@ -39,33 +39,33 @@ namespace HRIS.Forms.Employee
         private void changeDgridSize()
         {
 
-            dgrid_employee.Columns[0].Visible = false;
-            dgrid_employee.Columns["Gender"].Width = 80;
-            dgrid_employee.Columns["Department"].Width = 250;
-            dgrid_employee.Columns["Position"].Width = 160;
-            dgrid_employee.Columns["EmploymentStatus"].Width = 250;
-            //dgrid_employee.Columns["Address"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dgrid_employee.Columns["EmployeeID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgrid_employee.Columns[1].HeaderText = "";
-            int totalColumnWidth = 0;
+            //dgrid_employee.Columns[0].Visible = false;
+            //dgrid_employee.Columns["Gender"].Width = 80;
+            //dgrid_employee.Columns["Department"].Width = 250;
+            //dgrid_employee.Columns["Position"].Width = 160;
+            //dgrid_employee.Columns["EmploymentStatus"].Width = 250;
+            ////dgrid_employee.Columns["Address"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //dgrid_employee.Columns["EmployeeID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            //dgrid_employee.Columns[1].HeaderText = "";
+            //int totalColumnWidth = 0;
 
-            // Calculate the sum of column widths
-            foreach (DataGridViewColumn column in dgrid_employee.Columns)
-            {
-                totalColumnWidth += column.Width;
-            }
-            //MessageBox.Show(totalColumnWidth.ToString());
-            //MessageBox.Show(dgrid_employee.Width.ToString());
-            if (totalColumnWidth < dgrid_employee.Width)
-            {
-                dgrid_employee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                dgrid_employee.Columns["Address"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            }
-            else
-            {
-                dgrid_employee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-                dgrid_employee.Columns["Address"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            }
+            //// Calculate the sum of column widths
+            //foreach (DataGridViewColumn column in dgrid_employee.Columns)
+            //{
+            //    totalColumnWidth += column.Width;
+            //}
+            ////MessageBox.Show(totalColumnWidth.ToString());
+            ////MessageBox.Show(dgrid_employee.Width.ToString());
+            //if (totalColumnWidth < dgrid_employee.Width)
+            //{
+            //    dgrid_employee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            //    dgrid_employee.Columns["Address"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //}
+            //else
+            //{
+            //    dgrid_employee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            //    dgrid_employee.Columns["Address"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            //}
             //Image Column
             foreach (DataGridViewColumn column in dgrid_employee.Columns)
             {
@@ -77,7 +77,7 @@ namespace HRIS.Forms.Employee
         }
         private void EmployeeForm_Load(object sender, EventArgs e)
         {
-            changeDgridSize();
+            // changeDgridSize();
         }
         private void loadEmployee()
         {
@@ -91,7 +91,7 @@ namespace HRIS.Forms.Employee
                 employee_Presenter.loadEmployeeJoin_Active();
                 btn_new.Visible = true;
             }
-            //changeDgridSize();
+            changeDgridSize();
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
@@ -216,7 +216,7 @@ namespace HRIS.Forms.Employee
 
         private void dgrid_employee_SizeChanged(object sender, EventArgs e)
         {
-            changeDgridSize();
+            // changeDgridSize();
         }
 
 

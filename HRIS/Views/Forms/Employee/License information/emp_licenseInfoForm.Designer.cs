@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             ID = new DataGridViewTextBoxColumn();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             panel2 = new Panel();
@@ -36,11 +36,6 @@
             txt_totalcount = new Label();
             panel1 = new Panel();
             dgrid_license = new DataGridView();
-            LicenseID = new DataGridViewTextBoxColumn();
-            LicenseType = new DataGridViewTextBoxColumn();
-            LicenseNumber = new DataGridViewTextBoxColumn();
-            ExpiryDate = new DataGridViewTextBoxColumn();
-            ExpiryReminder = new DataGridViewTextBoxColumn();
             txt_search = new TextBox();
             btn_search = new FontAwesome.Sharp.IconButton();
             btn_refresh = new FontAwesome.Sharp.IconButton();
@@ -50,6 +45,11 @@
             btn_view = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel2 = new FlowLayoutPanel();
             btn_delete = new FontAwesome.Sharp.IconButton();
+            LicenseID = new DataGridViewTextBoxColumn();
+            LicenseType = new DataGridViewTextBoxColumn();
+            LicenseNumber = new DataGridViewTextBoxColumn();
+            ExpiryDate = new DataGridViewTextBoxColumn();
+            ExpiryReminder = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -119,14 +119,14 @@
             // dgrid_license
             // 
             dgrid_license.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.IndianRed;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgrid_license.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.IndianRed;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgrid_license.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_license.ColumnHeadersHeight = 50;
             dgrid_license.Columns.AddRange(new DataGridViewColumn[] { LicenseID, LicenseType, LicenseNumber, ExpiryDate, ExpiryReminder });
             dgrid_license.Dock = DockStyle.Fill;
@@ -136,31 +136,6 @@
             dgrid_license.Size = new Size(800, 312);
             dgrid_license.TabIndex = 13;
             dgrid_license.CellFormatting += dgrid_license_CellFormatting;
-            // 
-            // LicenseID
-            // 
-            LicenseID.HeaderText = "ID";
-            LicenseID.Name = "LicenseID";
-            // 
-            // LicenseType
-            // 
-            LicenseType.HeaderText = "License Type";
-            LicenseType.Name = "LicenseType";
-            // 
-            // LicenseNumber
-            // 
-            LicenseNumber.HeaderText = "License #";
-            LicenseNumber.Name = "LicenseNumber";
-            // 
-            // ExpiryDate
-            // 
-            ExpiryDate.HeaderText = "Expiry Date";
-            ExpiryDate.Name = "ExpiryDate";
-            // 
-            // ExpiryReminder
-            // 
-            ExpiryReminder.HeaderText = "Reminder";
-            ExpiryReminder.Name = "ExpiryReminder";
             // 
             // txt_search
             // 
@@ -325,6 +300,38 @@
             btn_delete.UseVisualStyleBackColor = false;
             btn_delete.Click += btn_delete_Click;
             // 
+            // LicenseID
+            // 
+            LicenseID.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            LicenseID.HeaderText = "Code";
+            LicenseID.Name = "LicenseID";
+            LicenseID.Width = 80;
+            // 
+            // LicenseType
+            // 
+            LicenseType.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            LicenseType.HeaderText = "License Type";
+            LicenseType.Name = "LicenseType";
+            LicenseType.Width = 150;
+            // 
+            // LicenseNumber
+            // 
+            LicenseNumber.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            LicenseNumber.HeaderText = "License #";
+            LicenseNumber.Name = "LicenseNumber";
+            // 
+            // ExpiryDate
+            // 
+            ExpiryDate.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            ExpiryDate.HeaderText = "Expiry Date";
+            ExpiryDate.Name = "ExpiryDate";
+            // 
+            // ExpiryReminder
+            // 
+            ExpiryReminder.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            ExpiryReminder.HeaderText = "Remarks";
+            ExpiryReminder.Name = "ExpiryReminder";
+            // 
             // emp_licenseInfoForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -369,11 +376,11 @@
         private FontAwesome.Sharp.IconButton btn_edit;
         private FontAwesome.Sharp.IconButton btn_view;
         private FlowLayoutPanel flowLayoutPanel2;
+        private FontAwesome.Sharp.IconButton btn_delete;
         private DataGridViewTextBoxColumn LicenseID;
         private DataGridViewTextBoxColumn LicenseType;
         private DataGridViewTextBoxColumn LicenseNumber;
         private DataGridViewTextBoxColumn ExpiryDate;
         private DataGridViewTextBoxColumn ExpiryReminder;
-        private FontAwesome.Sharp.IconButton btn_delete;
     }
 }

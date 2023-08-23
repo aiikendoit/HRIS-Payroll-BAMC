@@ -480,7 +480,7 @@ namespace HRIS.Forms.Employee
             }
 
         }
-        public void putdata(int employeeid,bool isviewingArchive)
+        public void putdata(int employeeid, bool isviewingArchive)
         {
             if (isUpdate)
             {
@@ -507,7 +507,7 @@ namespace HRIS.Forms.Employee
                 {
                     employee_Presenter.loadEmployeeJoin_Active_withWhere(employeeid);
                 }
-                
+
                 btn_save.Visible = false;
                 btn_cancel.Visible = false;
                 foreach (Control control in this.panel_basicinfo.Controls)
@@ -788,7 +788,7 @@ namespace HRIS.Forms.Employee
                         md = mdname[0];
                         mdname = md.ToString() + ". ";
                     }
-                   // txt_Headercompletename.Text = employee?.Firstname + " " + mdname + employee?.Lastname;
+                    // txt_Headercompletename.Text = employee?.Firstname + " " + mdname + employee?.Lastname;
                     employeeid = employee?.PkEmployee ?? 0;
                     btn_save.Text = "Update";
                     btn_cancel.Select();
@@ -816,11 +816,11 @@ namespace HRIS.Forms.Employee
                 foreach (var employee in employees)
                 {
                     dynamic emp = employee;
-                   txt_employeeid.Text = emp.EmployeeID;
+                    txt_employeeid.Text = emp.EmployeeID;
                     txt_Headercompletename.Text = emp.Name;
                     txt_status.Text = emp.EmploymentStatus;
-                   txt_department.Text = emp.Department;
-                   txt_position.Text = emp.Position;
+                    txt_department.Text = emp.Department;
+                    txt_position.Text = emp.Position;
                 }
             }
         }

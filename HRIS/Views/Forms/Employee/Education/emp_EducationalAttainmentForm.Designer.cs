@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             flowLayoutPanel2 = new FlowLayoutPanel();
             btn_new = new FontAwesome.Sharp.IconButton();
             btn_edit = new FontAwesome.Sharp.IconButton();
@@ -45,6 +45,13 @@
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
             ID = new DataGridViewTextBoxColumn();
+            Code = new DataGridViewTextBoxColumn();
+            educationalattainment = new DataGridViewTextBoxColumn();
+            schoolattended = new DataGridViewTextBoxColumn();
+            yeargraduated = new DataGridViewTextBoxColumn();
+            educationaldegree = new DataGridViewTextBoxColumn();
+            degreetype = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
             flowLayoutPanel2.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgrid_educationalattainment).BeginInit();
@@ -219,15 +226,16 @@
             // dgrid_educationalattainment
             // 
             dgrid_educationalattainment.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.IndianRed;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            dgrid_educationalattainment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.IndianRed;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgrid_educationalattainment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_educationalattainment.ColumnHeadersHeight = 50;
+            dgrid_educationalattainment.Columns.AddRange(new DataGridViewColumn[] { Code, educationalattainment, schoolattended, yeargraduated, educationaldegree, degreetype, Column1 });
             dgrid_educationalattainment.Dock = DockStyle.Fill;
             dgrid_educationalattainment.Location = new Point(0, 111);
             dgrid_educationalattainment.Name = "dgrid_educationalattainment";
@@ -293,6 +301,53 @@
             ID.HeaderText = "ID";
             ID.Name = "ID";
             // 
+            // Code
+            // 
+            Code.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Code.HeaderText = "Code";
+            Code.Name = "Code";
+            Code.Width = 80;
+            // 
+            // educationalattainment
+            // 
+            educationalattainment.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            educationalattainment.HeaderText = "Educational Attainment";
+            educationalattainment.Name = "educationalattainment";
+            educationalattainment.Width = 150;
+            // 
+            // schoolattended
+            // 
+            schoolattended.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            schoolattended.HeaderText = "School Attended";
+            schoolattended.Name = "schoolattended";
+            schoolattended.Width = 200;
+            // 
+            // yeargraduated
+            // 
+            yeargraduated.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            yeargraduated.HeaderText = "Year Graduated";
+            yeargraduated.Name = "yeargraduated";
+            // 
+            // educationaldegree
+            // 
+            educationaldegree.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            educationaldegree.HeaderText = "Educational Degree";
+            educationaldegree.Name = "educationaldegree";
+            educationaldegree.Width = 200;
+            // 
+            // degreetype
+            // 
+            degreetype.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            degreetype.HeaderText = "Degree Type";
+            degreetype.Name = "degreetype";
+            degreetype.Width = 130;
+            // 
+            // Column1
+            // 
+            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column1.HeaderText = "";
+            Column1.Name = "Column1";
+            // 
             // emp_EducationalAttainment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -338,5 +393,12 @@
         private Label label2;
         private DataGridViewTextBoxColumn ID;
         private FontAwesome.Sharp.IconButton btn_delete;
+        private DataGridViewTextBoxColumn Code;
+        private DataGridViewTextBoxColumn educationalattainment;
+        private DataGridViewTextBoxColumn schoolattended;
+        private DataGridViewTextBoxColumn yeargraduated;
+        private DataGridViewTextBoxColumn educationaldegree;
+        private DataGridViewTextBoxColumn degreetype;
+        private DataGridViewTextBoxColumn Column1;
     }
 }

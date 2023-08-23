@@ -42,16 +42,15 @@
             btn_search = new FontAwesome.Sharp.IconButton();
             btn_refresh = new FontAwesome.Sharp.IconButton();
             dgrid_workassignment = new DataGridView();
+            panel1 = new Panel();
+            txt_totalcount = new Label();
             ColorStatus = new DataGridViewTextBoxColumn();
             WorkEmploymentID = new DataGridViewTextBoxColumn();
             WorkEmploymentDepartment = new DataGridViewTextBoxColumn();
             WorkEmploymentPosition = new DataGridViewTextBoxColumn();
-            WorkEmploymentJobDescription = new DataGridViewTextBoxColumn();
             WorkEmploymentisManager = new DataGridViewCheckBoxColumn();
             Startdate = new DataGridViewTextBoxColumn();
             EndDate = new DataGridViewTextBoxColumn();
-            panel1 = new Panel();
-            txt_totalcount = new Label();
             flowLayoutPanel2.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
@@ -265,7 +264,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_workassignment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_workassignment.ColumnHeadersHeight = 50;
-            dgrid_workassignment.Columns.AddRange(new DataGridViewColumn[] { ColorStatus, WorkEmploymentID, WorkEmploymentDepartment, WorkEmploymentPosition, WorkEmploymentJobDescription, WorkEmploymentisManager, Startdate, EndDate });
+            dgrid_workassignment.Columns.AddRange(new DataGridViewColumn[] { ColorStatus, WorkEmploymentID, WorkEmploymentDepartment, WorkEmploymentPosition, WorkEmploymentisManager, Startdate, EndDate });
             dgrid_workassignment.Dock = DockStyle.Fill;
             dgrid_workassignment.Location = new Point(0, 114);
             dgrid_workassignment.Name = "dgrid_workassignment";
@@ -274,48 +273,6 @@
             dgrid_workassignment.TabIndex = 18;
             dgrid_workassignment.CellFormatting += dgrid_workassignment_CellFormatting;
             dgrid_workassignment.SelectionChanged += dgrid_workassignment_SelectionChanged;
-            // 
-            // ColorStatus
-            // 
-            ColorStatus.HeaderText = "";
-            ColorStatus.Name = "ColorStatus";
-            // 
-            // WorkEmploymentID
-            // 
-            WorkEmploymentID.HeaderText = "ID";
-            WorkEmploymentID.Name = "WorkEmploymentID";
-            // 
-            // WorkEmploymentDepartment
-            // 
-            WorkEmploymentDepartment.HeaderText = "Department";
-            WorkEmploymentDepartment.Name = "WorkEmploymentDepartment";
-            // 
-            // WorkEmploymentPosition
-            // 
-            WorkEmploymentPosition.HeaderText = "Position";
-            WorkEmploymentPosition.Name = "WorkEmploymentPosition";
-            // 
-            // WorkEmploymentJobDescription
-            // 
-            WorkEmploymentJobDescription.HeaderText = "Job Description";
-            WorkEmploymentJobDescription.Name = "WorkEmploymentJobDescription";
-            // 
-            // WorkEmploymentisManager
-            // 
-            WorkEmploymentisManager.HeaderText = "isManager";
-            WorkEmploymentisManager.Name = "WorkEmploymentisManager";
-            WorkEmploymentisManager.Resizable = DataGridViewTriState.True;
-            WorkEmploymentisManager.SortMode = DataGridViewColumnSortMode.Automatic;
-            // 
-            // Startdate
-            // 
-            Startdate.HeaderText = "Start Date";
-            Startdate.Name = "Startdate";
-            // 
-            // EndDate
-            // 
-            EndDate.HeaderText = "End Date";
-            EndDate.Name = "EndDate";
             // 
             // panel1
             // 
@@ -335,6 +292,50 @@
             txt_totalcount.Size = new Size(94, 15);
             txt_totalcount.TabIndex = 0;
             txt_totalcount.Text = "Total record(s): 0";
+            // 
+            // ColorStatus
+            // 
+            ColorStatus.HeaderText = "dgfh";
+            ColorStatus.Name = "ColorStatus";
+            ColorStatus.Width = 10;
+            // 
+            // WorkEmploymentID
+            // 
+            WorkEmploymentID.HeaderText = "Code";
+            WorkEmploymentID.Name = "WorkEmploymentID";
+            // 
+            // WorkEmploymentDepartment
+            // 
+            WorkEmploymentDepartment.HeaderText = "Department";
+            WorkEmploymentDepartment.Name = "WorkEmploymentDepartment";
+            // 
+            // WorkEmploymentPosition
+            // 
+            WorkEmploymentPosition.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            WorkEmploymentPosition.HeaderText = "Position";
+            WorkEmploymentPosition.Name = "WorkEmploymentPosition";
+            WorkEmploymentPosition.Width = 120;
+            // 
+            // WorkEmploymentisManager
+            // 
+            WorkEmploymentisManager.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            WorkEmploymentisManager.HeaderText = "isManager";
+            WorkEmploymentisManager.Name = "WorkEmploymentisManager";
+            WorkEmploymentisManager.Resizable = DataGridViewTriState.True;
+            WorkEmploymentisManager.SortMode = DataGridViewColumnSortMode.Automatic;
+            WorkEmploymentisManager.Width = 80;
+            // 
+            // Startdate
+            // 
+            Startdate.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Startdate.HeaderText = "Start Date";
+            Startdate.Name = "Startdate";
+            // 
+            // EndDate
+            // 
+            EndDate.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            EndDate.HeaderText = "End Date";
+            EndDate.Name = "EndDate";
             // 
             // emp_workassignment
             // 
@@ -384,7 +385,6 @@
         private DataGridViewTextBoxColumn WorkEmploymentID;
         private DataGridViewTextBoxColumn WorkEmploymentDepartment;
         private DataGridViewTextBoxColumn WorkEmploymentPosition;
-        private DataGridViewTextBoxColumn WorkEmploymentJobDescription;
         private DataGridViewCheckBoxColumn WorkEmploymentisManager;
         private DataGridViewTextBoxColumn Startdate;
         private DataGridViewTextBoxColumn EndDate;

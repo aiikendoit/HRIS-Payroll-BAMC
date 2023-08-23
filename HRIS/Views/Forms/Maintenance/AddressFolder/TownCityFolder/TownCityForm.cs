@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using HRIS.Class;
 using HRIS.Models;
 using HRIS.Presenter;
+using HRIS.Views.Forms.Maintenance.AddressFolder.ProvincesFolder;
 using HRIS.Views.Forms.Maintenance.SalarySetting;
 
 namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
@@ -88,6 +89,49 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
             var st = new frm_towncity();
             st.ShowDialog();
             //salarysetting_Presenter.LoadSalarysetting();
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            var selectedTownCity = dgrid_towncity.SelectedRows[0].DataBoundItem as Models.Towncity;
+            if (selectedTownCity != null)
+            {
+                var twnCity = new frm_towncity();
+                twnCity.isupdate = true;
+                twnCity.putdata(this, selectedTownCity);
+                twnCity.ShowDialog(this);
+                if (txt_search.Text != string.Empty)
+                {
+                    towncity_Presenter.loadTownCity_All();
+                    search();
+                }
+                else
+                {
+                    towncity_Presenter.loadTownCity_All();
+                }
+
+            }
+        }
+
+        private void btn_view_Click(object sender, EventArgs e)
+        {
+            var selectedTownCity = dgrid_towncity.SelectedRows[0].DataBoundItem as Models.Towncity;
+            if (selectedTownCity != null)
+            {
+                var twnCity = new frm_towncity();
+                twnCity.putdata(this, selectedTownCity);
+                twnCity.ShowDialog(this);
+                if (txt_search.Text != string.Empty)
+                {
+                    towncity_Presenter.loadTownCity_All();
+                    search();
+                }
+                else
+                {
+                    towncity_Presenter.loadTownCity_All();
+                }
+
+            }
         }
     }
 }

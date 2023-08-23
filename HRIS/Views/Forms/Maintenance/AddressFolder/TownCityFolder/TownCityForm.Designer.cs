@@ -143,6 +143,7 @@
             btn_edit.TextAlign = ContentAlignment.MiddleLeft;
             btn_edit.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_edit.UseVisualStyleBackColor = false;
+            btn_edit.Click += btn_edit_Click;
             // 
             // btn_view
             // 
@@ -163,6 +164,7 @@
             btn_view.TextAlign = ContentAlignment.MiddleLeft;
             btn_view.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_view.UseVisualStyleBackColor = false;
+            btn_view.Click += btn_view_Click;
             // 
             // flowLayoutPanel1
             // 

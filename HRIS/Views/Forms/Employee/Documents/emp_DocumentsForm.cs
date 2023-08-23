@@ -47,9 +47,8 @@ namespace HRIS.Forms.Employee.Documents
             //dgrid_documents.Columns[0].Visible = false;
             dgrid_documents.Columns[1].Visible = false;
             dgrid_documents.Columns[2].Visible = false;
-            dgrid_documents.Columns[6].Visible = false;
-            dgrid_documents.Columns[7].Visible = false;
             dgrid_documents.Columns[5].Visible = false;
+            dgrid_documents.Columns[8].Visible = false;
         }
 
         private void emp_DocumentsForm_Load(object sender, EventArgs e)
@@ -79,14 +78,14 @@ namespace HRIS.Forms.Employee.Documents
 
         private void dgrid_documents_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            //dgrid_documents.Columns[0].Width = 50;
-            //dgrid_documents.Columns[2].Width = 250;
-            //dgrid_documents.Columns[3].Width = 100;
-            //dgrid_documents.Columns[1].HeaderText = "Educational Attainment";
-            //dgrid_documents.Columns[2].HeaderText = "School Attended";
-            //dgrid_documents.Columns[3].HeaderText = "Description";
-            //dgrid_documents.Columns[4].HeaderText = "Remarks";
-            //dgrid_documents.Columns[5].HeaderText = "Created Date";
+            dgrid_documents.Columns[0].Width = 50;
+            dgrid_documents.Columns[1].Width = 250;
+            dgrid_documents.Columns[2].Width = 100;
+            dgrid_documents.Columns[0].HeaderText = "Code";
+            dgrid_documents.Columns[4].HeaderText = "Remarks";
+            dgrid_documents.Columns[7].HeaderText = "Created By";
+            dgrid_documents.Columns[6].HeaderText = "Created Date";
+            dgrid_documents.Columns[5].HeaderText = "Description";
         }
 
         private void btn_Edit_Click(object sender, EventArgs e)

@@ -34,7 +34,7 @@
             btn_cancel = new Button();
             btn_save = new Button();
             txt_licensetype = new ComboBox();
-            txt_expiryreminder = new TextBox();
+            txt_remarks = new TextBox();
             txt_licensenumber = new TextBox();
             label22 = new Label();
             label1 = new Label();
@@ -83,7 +83,7 @@
             btn_cancel.BackColor = Color.Transparent;
             btn_cancel.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
             btn_cancel.FlatStyle = FlatStyle.Flat;
-            btn_cancel.Location = new Point(292, 239);
+            btn_cancel.Location = new Point(292, 284);
             btn_cancel.Name = "btn_cancel";
             btn_cancel.Size = new Size(91, 36);
             btn_cancel.TabIndex = 5;
@@ -96,7 +96,7 @@
             btn_save.FlatAppearance.BorderSize = 0;
             btn_save.FlatStyle = FlatStyle.Flat;
             btn_save.ForeColor = Color.White;
-            btn_save.Location = new Point(195, 239);
+            btn_save.Location = new Point(195, 284);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(91, 36);
             btn_save.TabIndex = 4;
@@ -114,14 +114,14 @@
             txt_licensetype.Size = new Size(229, 25);
             txt_licensetype.TabIndex = 0;
             // 
-            // txt_expiryreminder
+            // txt_remarks
             // 
-            txt_expiryreminder.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_expiryreminder.Location = new Point(154, 174);
-            txt_expiryreminder.Multiline = true;
-            txt_expiryreminder.Name = "txt_expiryreminder";
-            txt_expiryreminder.Size = new Size(229, 50);
-            txt_expiryreminder.TabIndex = 3;
+            txt_remarks.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_remarks.Location = new Point(154, 174);
+            txt_remarks.Multiline = true;
+            txt_remarks.Name = "txt_remarks";
+            txt_remarks.Size = new Size(229, 104);
+            txt_remarks.TabIndex = 3;
             // 
             // txt_licensenumber
             // 
@@ -148,9 +148,9 @@
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(51, 177);
             label1.Name = "label1";
-            label1.Size = new Size(100, 17);
+            label1.Size = new Size(58, 17);
             label1.TabIndex = 22;
-            label1.Text = "Expiry reminder";
+            label1.Text = "Remarks";
             // 
             // label19
             // 
@@ -186,13 +186,13 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(399, 293);
+            ClientSize = new Size(399, 355);
             Controls.Add(txt_expirydate);
             Controls.Add(panel2);
             Controls.Add(btn_cancel);
             Controls.Add(btn_save);
             Controls.Add(txt_licensetype);
-            Controls.Add(txt_expiryreminder);
+            Controls.Add(txt_remarks);
             Controls.Add(txt_licensenumber);
             Controls.Add(label22);
             Controls.Add(label1);
@@ -219,7 +219,7 @@
         private Button btn_cancel;
         private Button btn_save;
         private ComboBox txt_licensetype;
-        private TextBox txt_expiryreminder;
+        private TextBox txt_remarks;
         private TextBox txt_licensenumber;
         private Label label22;
         private Label label1;

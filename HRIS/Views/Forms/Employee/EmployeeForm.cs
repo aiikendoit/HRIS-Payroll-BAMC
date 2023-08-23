@@ -109,13 +109,14 @@ namespace HRIS.Forms.Employee
         {
             string docname = "Employee";
             string? position = dgrid_employee.SelectedRows[0].Cells["Position"].Value?.ToString() ?? string.Empty;
+            string? empstatus = dgrid_employee.SelectedRows[0].Cells["EmploymentStatus"].Value?.ToString() ?? string.Empty;
             string? department = dgrid_employee.SelectedRows[0].Cells["Department"].Value?.ToString() ?? string.Empty;
             int PKEmployeeID = (int)dgrid_employee.SelectedRows[0].Cells["PKEmployeeID"].Value;
 
             var emp = new EmployeeRegistration(docname);
             emp.isUpdate = true;
             emp.loadallCombobox();
-            emp.putdata(PKEmployeeID, position, department);
+            emp.putdata(PKEmployeeID, isViewingArchive);
             emp.ShowDialog(this);
             loadEmployee();
 
@@ -159,12 +160,13 @@ namespace HRIS.Forms.Employee
         {
             string docname = "Employee";
             string? position = dgrid_employee.SelectedRows[0].Cells["Position"].Value?.ToString() ?? string.Empty;
+            string? empstatus = dgrid_employee.SelectedRows[0].Cells["EmploymentStatus"].Value?.ToString() ?? string.Empty;
             string? department = dgrid_employee.SelectedRows[0].Cells["Department"].Value?.ToString() ?? string.Empty;
             int PKEmployeeID = (int)dgrid_employee.SelectedRows[0].Cells["PKEmployeeID"].Value;
 
             var emp = new EmployeeRegistration(docname);
             emp.loadallCombobox();
-            emp.putdata(PKEmployeeID, position, department);
+            emp.putdata(PKEmployeeID, isViewingArchive);
             emp.ShowDialog(this);
             loadEmployee();
 

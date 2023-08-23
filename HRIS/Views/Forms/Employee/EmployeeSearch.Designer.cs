@@ -292,6 +292,7 @@
             Name = "EmployeeSearch";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Employee Search";
+            KeyDown += EmployeeSearch_KeyDown;
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgrid_employee).EndInit();
             flowLayoutPanel1.ResumeLayout(false);

@@ -9,7 +9,7 @@ public partial class Towncity
 
     public string? Description { get; set; }
 
-    public bool IsActive { get; set; }
+    public bool? IsActive { get; set; }
 
     public DateTime? Createddate { get; set; }
 

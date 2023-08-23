@@ -134,7 +134,7 @@ namespace HRIS.Forms.Employee.Employment
                     DateTime endDate = (DateTime)endDateCell.Value; // Assuming the value is of type DateTime
                     DateTime currentDate = DateTime.Now;
 
-                    if (endDate > currentDate )
+                    if (endDate > currentDate)
                     {
                         // Set the background color to green if End Date is in the future
                         statusCell.Style.BackColor = Color.Green;

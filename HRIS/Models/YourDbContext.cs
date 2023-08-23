@@ -616,9 +616,9 @@ public partial class YourDbContext : DbContext
                 .HasForeignKey(d => d.FkEmployee)
                 .HasConstraintName("FK_employeedisciplinary_employee");
 
-            entity.HasOne(d => d.FkOffensetypeNavigation).WithMany(p => p.Employeedisciplinaries)
-                .HasForeignKey(d => d.FkOffensetype)
-                .HasConstraintName("FK_employeedisciplinary_offensetype");
+            //entity.HasOne(d => d.FkOffensetypeNavigation).WithMany(p => p.Employeedisciplinaries)
+            //    .HasForeignKey(d => d.FkOffensetype)
+            //    .HasConstraintName("FK_employeedisciplinary_offensetype");
         });
 
         modelBuilder.Entity<Employeedocument>(entity =>

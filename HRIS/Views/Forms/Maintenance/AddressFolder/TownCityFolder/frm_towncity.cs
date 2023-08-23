@@ -110,7 +110,7 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
                 this.townCityForm = townCityForm;
                 this.SelectedTowncities = towncities;
                 txt_towncity.Text = SelectedTowncities.Description;
-                checkBox_isactive.Checked = SelectedTowncities.IsActive;
+                checkBox_isactive.Checked = SelectedTowncities.IsActive ?? false;
                 drpdwn_province.SelectedValue = SelectedTowncities.FkProvince;
             }
             else
@@ -119,7 +119,7 @@ namespace HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder
                 this.townCityForm = townCityForm;
                 this.SelectedTowncities = towncities;
                 txt_towncity.Text = SelectedTowncities.Description;
-                checkBox_isactive.Checked = SelectedTowncities.IsActive;
+                checkBox_isactive.Checked = SelectedTowncities.IsActive ?? false;
                 drpdwn_province.SelectedValue = SelectedTowncities.FkProvince;
                 //disable control
                 drpdwn_province.Enabled = false;

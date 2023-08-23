@@ -28,26 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Syncfusion.Windows.Forms.PdfViewer.MessageBoxSettings messageBoxSettings1 = new Syncfusion.Windows.Forms.PdfViewer.MessageBoxSettings();
+            Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings pdfViewerPrinterSettings1 = new Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(emp_AddworkAssignment));
+            Syncfusion.Windows.Forms.PdfViewer.TextSearchSettings textSearchSettings1 = new Syncfusion.Windows.Forms.PdfViewer.TextSearchSettings();
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label_header = new Label();
             btn_cancel = new Button();
             btn_save = new Button();
             txt_department = new ComboBox();
-            txt_jobscope = new TextBox();
             label22 = new Label();
             label19 = new Label();
-            label18 = new Label();
             label3 = new Label();
             txt_position = new ComboBox();
             label4 = new Label();
             txt_jobdescription = new TextBox();
-            label5 = new Label();
-            txt_reponsibilities = new TextBox();
             label1 = new Label();
             checkBox_ishead = new CheckBox();
             txt_enddate = new Syncfusion.WinForms.Input.SfDateTimeEdit();
             txt_startdate = new Syncfusion.WinForms.Input.SfDateTimeEdit();
+            btn_attachfile = new Button();
+            openFileDialog1 = new OpenFileDialog();
+            pdfViewerControl1 = new Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             SuspendLayout();
@@ -59,7 +62,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(402, 40);
+            panel2.Size = new Size(1084, 40);
             panel2.TabIndex = 34;
             // 
             // iconPictureBox1
@@ -90,7 +93,7 @@
             btn_cancel.BackColor = Color.Transparent;
             btn_cancel.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
             btn_cancel.FlatStyle = FlatStyle.Flat;
-            btn_cancel.Location = new Point(296, 372);
+            btn_cancel.Location = new Point(296, 347);
             btn_cancel.Name = "btn_cancel";
             btn_cancel.Size = new Size(91, 36);
             btn_cancel.TabIndex = 9;
@@ -104,7 +107,7 @@
             btn_save.FlatAppearance.BorderSize = 0;
             btn_save.FlatStyle = FlatStyle.Flat;
             btn_save.ForeColor = Color.White;
-            btn_save.Location = new Point(199, 372);
+            btn_save.Location = new Point(199, 347);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(91, 36);
             btn_save.TabIndex = 8;
@@ -123,20 +126,11 @@
             txt_department.TabIndex = 0;
             txt_department.SelectedIndexChanged += txt_department_SelectedIndexChanged;
             // 
-            // txt_jobscope
-            // 
-            txt_jobscope.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_jobscope.Location = new Point(117, 220);
-            txt_jobscope.Multiline = true;
-            txt_jobscope.Name = "txt_jobscope";
-            txt_jobscope.Size = new Size(270, 50);
-            txt_jobscope.TabIndex = 4;
-            // 
             // label22
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label22.Location = new Point(14, 340);
+            label22.Location = new Point(11, 312);
             label22.Name = "label22";
             label22.Size = new Size(60, 17);
             label22.TabIndex = 38;
@@ -151,16 +145,6 @@
             label19.Size = new Size(77, 17);
             label19.TabIndex = 35;
             label19.Text = "Department";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label18.Location = new Point(14, 223);
-            label18.Name = "label18";
-            label18.Size = new Size(69, 17);
-            label18.TabIndex = 37;
-            label18.Text = "Job Scope";
             // 
             // label3
             // 
@@ -195,36 +179,19 @@
             // txt_jobdescription
             // 
             txt_jobdescription.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_jobdescription.Location = new Point(117, 108);
+            txt_jobdescription.Location = new Point(118, 140);
             txt_jobdescription.Multiline = true;
             txt_jobdescription.Name = "txt_jobdescription";
-            txt_jobdescription.Size = new Size(270, 50);
+            txt_jobdescription.PlaceholderText = "File Path";
+            txt_jobdescription.ReadOnly = true;
+            txt_jobdescription.Size = new Size(270, 94);
             txt_jobdescription.TabIndex = 2;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(14, 167);
-            label5.Name = "label5";
-            label5.Size = new Size(98, 17);
-            label5.TabIndex = 37;
-            label5.Text = "Responsibilities";
-            // 
-            // txt_reponsibilities
-            // 
-            txt_reponsibilities.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_reponsibilities.Location = new Point(117, 164);
-            txt_reponsibilities.Multiline = true;
-            txt_reponsibilities.Name = "txt_reponsibilities";
-            txt_reponsibilities.Size = new Size(270, 50);
-            txt_reponsibilities.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(14, 309);
+            label1.Location = new Point(11, 281);
             label1.Name = "label1";
             label1.Size = new Size(65, 17);
             label1.TabIndex = 38;
@@ -233,17 +200,17 @@
             // checkBox_ishead
             // 
             checkBox_ishead.AutoSize = true;
-            checkBox_ishead.Location = new Point(117, 280);
+            checkBox_ishead.Location = new Point(114, 252);
             checkBox_ishead.Name = "checkBox_ishead";
-            checkBox_ishead.Size = new Size(54, 19);
+            checkBox_ishead.Size = new Size(73, 19);
             checkBox_ishead.TabIndex = 5;
-            checkBox_ishead.Text = "Head";
+            checkBox_ishead.Text = "Manager";
             checkBox_ishead.UseVisualStyleBackColor = true;
             // 
             // txt_enddate
             // 
             txt_enddate.AllowNull = true;
-            txt_enddate.Location = new Point(118, 337);
+            txt_enddate.Location = new Point(115, 309);
             txt_enddate.Name = "txt_enddate";
             txt_enddate.Size = new Size(272, 23);
             txt_enddate.TabIndex = 7;
@@ -253,19 +220,69 @@
             // txt_startdate
             // 
             txt_startdate.AllowNull = true;
-            txt_startdate.Location = new Point(118, 309);
+            txt_startdate.Location = new Point(115, 281);
             txt_startdate.Name = "txt_startdate";
             txt_startdate.Size = new Size(272, 23);
             txt_startdate.TabIndex = 6;
             txt_startdate.Value = null;
             txt_startdate.Watermark = "Select a date";
             // 
+            // btn_attachfile
+            // 
+            btn_attachfile.Location = new Point(117, 111);
+            btn_attachfile.Name = "btn_attachfile";
+            btn_attachfile.Size = new Size(75, 23);
+            btn_attachfile.TabIndex = 39;
+            btn_attachfile.Text = "Attach File";
+            btn_attachfile.UseVisualStyleBackColor = true;
+            btn_attachfile.Click += btn_attachfile_Click;
+            // 
+            // pdfViewerControl1
+            // 
+            pdfViewerControl1.CursorMode = Syncfusion.Windows.Forms.PdfViewer.PdfViewerCursorMode.SelectTool;
+            pdfViewerControl1.EnableContextMenu = true;
+            pdfViewerControl1.EnableNotificationBar = true;
+            pdfViewerControl1.HorizontalScrollOffset = 0;
+            pdfViewerControl1.IsBookmarkEnabled = true;
+            pdfViewerControl1.IsTextSearchEnabled = true;
+            pdfViewerControl1.IsTextSelectionEnabled = true;
+            pdfViewerControl1.Location = new Point(394, 46);
+            messageBoxSettings1.EnableNotification = true;
+            pdfViewerControl1.MessageBoxSettings = messageBoxSettings1;
+            pdfViewerControl1.MinimumZoomPercentage = 50;
+            pdfViewerControl1.Name = "pdfViewerControl1";
+            pdfViewerControl1.PageBorderThickness = 1;
+            pdfViewerPrinterSettings1.Copies = 1;
+            pdfViewerPrinterSettings1.PageOrientation = Syncfusion.Windows.PdfViewer.PdfViewerPrintOrientation.Auto;
+            pdfViewerPrinterSettings1.PageSize = Syncfusion.Windows.PdfViewer.PdfViewerPrintSize.ActualSize;
+            pdfViewerPrinterSettings1.PrintLocation = (PointF)resources.GetObject("pdfViewerPrinterSettings1.PrintLocation");
+            pdfViewerPrinterSettings1.ShowPrintStatusDialog = true;
+            pdfViewerControl1.PrinterSettings = pdfViewerPrinterSettings1;
+            pdfViewerControl1.ReferencePath = null;
+            pdfViewerControl1.ScrollDisplacementValue = 0;
+            pdfViewerControl1.ShowHorizontalScrollBar = true;
+            pdfViewerControl1.ShowToolBar = true;
+            pdfViewerControl1.ShowVerticalScrollBar = true;
+            pdfViewerControl1.Size = new Size(668, 642);
+            pdfViewerControl1.SpaceBetweenPages = 8;
+            pdfViewerControl1.TabIndex = 40;
+            pdfViewerControl1.Text = "pdfViewerControl1";
+            textSearchSettings1.CurrentInstanceColor = Color.FromArgb(127, 255, 171, 64);
+            textSearchSettings1.HighlightAllInstance = true;
+            textSearchSettings1.OtherInstanceColor = Color.FromArgb(127, 254, 255, 0);
+            pdfViewerControl1.TextSearchSettings = textSearchSettings1;
+            pdfViewerControl1.VerticalScrollOffset = 0;
+            pdfViewerControl1.VisualStyle = Syncfusion.Windows.Forms.PdfViewer.VisualStyle.Default;
+            pdfViewerControl1.ZoomMode = Syncfusion.Windows.Forms.PdfViewer.ZoomMode.Default;
+            // 
             // emp_AddworkAssignment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(402, 424);
+            ClientSize = new Size(1084, 726);
+            Controls.Add(pdfViewerControl1);
+            Controls.Add(btn_attachfile);
             Controls.Add(txt_enddate);
             Controls.Add(txt_startdate);
             Controls.Add(checkBox_ishead);
@@ -275,15 +292,11 @@
             Controls.Add(txt_position);
             Controls.Add(txt_department);
             Controls.Add(txt_jobdescription);
-            Controls.Add(txt_reponsibilities);
             Controls.Add(label1);
-            Controls.Add(txt_jobscope);
             Controls.Add(label22);
             Controls.Add(label3);
             Controls.Add(label4);
-            Controls.Add(label5);
             Controls.Add(label19);
-            Controls.Add(label18);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
@@ -305,19 +318,18 @@
         private Button btn_cancel;
         private Button btn_save;
         private ComboBox txt_department;
-        private TextBox txt_jobscope;
         private Label label22;
         private Label label19;
-        private Label label18;
         private Label label3;
         private ComboBox txt_position;
         private Label label4;
         private TextBox txt_jobdescription;
-        private Label label5;
-        private TextBox txt_reponsibilities;
         private Label label1;
         private CheckBox checkBox_ishead;
         private Syncfusion.WinForms.Input.SfDateTimeEdit txt_enddate;
         private Syncfusion.WinForms.Input.SfDateTimeEdit txt_startdate;
+        private Button btn_attachfile;
+        private OpenFileDialog openFileDialog1;
+        private Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl pdfViewerControl1;
     }
 }

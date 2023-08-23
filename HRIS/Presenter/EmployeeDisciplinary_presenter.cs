@@ -43,7 +43,26 @@ namespace HRIS.Presenter
 
         public void loadEmpDiscAccWhere(int? empDA_id) // join query
         {
-
+            //var query = from e2 in _dbcontext.Employeedisciplinaries
+            //            join o in _dbcontext.Offensetypes on e2.OffenseTypeId equals o.Id
+            //            join d in _dbcontext.Disciplinarytypes on e2.DisciplinaryTypeId equals d.Id
+            //            join e in _dbcontext.Employees on e2.EmployeeId equals e.Id
+            //            select new
+            //            {
+            //                e2.Id,
+            //                e.LastName,
+            //                e.FirstName,
+            //                OffenseDescription = o.Description,
+            //                DisciplinaryTypeName = d.DisciplinaryTypeName,
+            //                DisciplinaryDescription = d.DisciplinaryDescription,
+            //                e2.EmployeeId,
+            //                e2.Description,
+            //                e2.DateStart,
+            //                e2.DateEnd,
+            //                e2.File,
+            //                e2.CreatedDate,
+            //                e2.CreatedBy
+            //            };
         }
 
         internal void SearchData(string searchQuery) //search text box

@@ -95,7 +95,7 @@ namespace HRIS.Views.Forms.Employee
             var emp = new EmployeeRegistration(docname);
             emp.isUpdate = true;
             emp.loadallCombobox();
-            emp.putdata(PKEmployeeID,true);
+            emp.putdata(PKEmployeeID, true);
             emp.ShowDialog(this);
 
         }

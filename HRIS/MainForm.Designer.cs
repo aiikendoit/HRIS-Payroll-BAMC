@@ -852,6 +852,7 @@ namespace HRIS
             Controls.Add(panelTop);
             Controls.Add(panelLeft);
             ForeColor = Color.White;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
             Text = "Human Resource Information System";
             WindowState = FormWindowState.Maximized;

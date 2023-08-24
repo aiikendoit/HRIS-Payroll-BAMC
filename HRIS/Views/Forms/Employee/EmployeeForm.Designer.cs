@@ -31,6 +31,8 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             flowLayoutPanel1 = new FlowLayoutPanel();
+            label1 = new Label();
+            txt_department = new ComboBox();
             txt_search = new TextBox();
             btn_search = new FontAwesome.Sharp.IconButton();
             btn_refresh = new FontAwesome.Sharp.IconButton();
@@ -39,14 +41,6 @@
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
             dgrid_employee = new DataGridView();
-            panel1 = new Panel();
-            txt_totalcount = new Label();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            btn_inactiveEmployee = new FontAwesome.Sharp.IconButton();
-            label3 = new Label();
-            btn_userRegistration = new FontAwesome.Sharp.IconButton();
-            label2 = new Label();
             PKEmployeeID = new DataGridViewTextBoxColumn();
             ProfilePicture = new DataGridViewImageColumn();
             EmployeeID = new DataGridViewTextBoxColumn();
@@ -57,6 +51,14 @@
             EmploymentStatus = new DataGridViewTextBoxColumn();
             Address = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
+            panel1 = new Panel();
+            txt_totalcount = new Label();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            btn_inactiveEmployee = new FontAwesome.Sharp.IconButton();
+            label3 = new Label();
+            btn_userRegistration = new FontAwesome.Sharp.IconButton();
+            label2 = new Label();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgrid_employee).BeginInit();
@@ -67,6 +69,8 @@
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.Controls.Add(label1);
+            flowLayoutPanel1.Controls.Add(txt_department);
             flowLayoutPanel1.Controls.Add(txt_search);
             flowLayoutPanel1.Controls.Add(btn_search);
             flowLayoutPanel1.Controls.Add(btn_refresh);
@@ -77,14 +81,37 @@
             flowLayoutPanel1.Size = new Size(1086, 35);
             flowLayoutPanel1.TabIndex = 2;
             // 
+            // label1
+            // 
+            label1.Dock = DockStyle.Left;
+            label1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(3, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(41, 35);
+            label1.TabIndex = 4;
+            label1.Text = "Filter";
+            label1.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // txt_department
+            // 
+            txt_department.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_department.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_department.FormattingEnabled = true;
+            txt_department.Location = new Point(50, 3);
+            txt_department.Name = "txt_department";
+            txt_department.Size = new Size(245, 28);
+            txt_department.TabIndex = 3;
+            txt_department.SelectedIndexChanged += txt_department_SelectedIndexChanged;
+            // 
             // txt_search
             // 
             txt_search.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_search.Location = new Point(3, 3);
+            txt_search.Location = new Point(301, 3);
             txt_search.Margin = new Padding(3, 3, 1, 3);
             txt_search.Name = "txt_search";
             txt_search.PlaceholderText = " Search";
-            txt_search.Size = new Size(338, 29);
+            txt_search.Size = new Size(405, 29);
             txt_search.TabIndex = 0;
             txt_search.TextChanged += txt_search_TextChanged;
             // 
@@ -98,7 +125,7 @@
             btn_search.IconColor = Color.White;
             btn_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_search.IconSize = 20;
-            btn_search.Location = new Point(343, 3);
+            btn_search.Location = new Point(708, 3);
             btn_search.Margin = new Padding(1, 3, 1, 3);
             btn_search.Name = "btn_search";
             btn_search.Size = new Size(81, 29);
@@ -119,7 +146,7 @@
             btn_refresh.IconColor = Color.White;
             btn_refresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_refresh.IconSize = 20;
-            btn_refresh.Location = new Point(426, 3);
+            btn_refresh.Location = new Point(791, 3);
             btn_refresh.Margin = new Padding(1, 3, 1, 3);
             btn_refresh.Name = "btn_refresh";
             btn_refresh.Size = new Size(81, 29);
@@ -227,6 +254,86 @@
             dgrid_employee.CellFormatting += dgrid_employee_CellFormatting;
             dgrid_employee.SizeChanged += dgrid_employee_SizeChanged;
             dgrid_employee.Paint += dgrid_employee_Paint;
+            // 
+            // PKEmployeeID
+            // 
+            PKEmployeeID.HeaderText = "ID";
+            PKEmployeeID.Name = "PKEmployeeID";
+            PKEmployeeID.Visible = false;
+            // 
+            // ProfilePicture
+            // 
+            ProfilePicture.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            ProfilePicture.FillWeight = 324.8731F;
+            ProfilePicture.HeaderText = "";
+            ProfilePicture.Name = "ProfilePicture";
+            ProfilePicture.Resizable = DataGridViewTriState.True;
+            ProfilePicture.SortMode = DataGridViewColumnSortMode.Automatic;
+            ProfilePicture.Width = 80;
+            // 
+            // EmployeeID
+            // 
+            EmployeeID.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            EmployeeID.DefaultCellStyle = dataGridViewCellStyle2;
+            EmployeeID.FillWeight = 67.87527F;
+            EmployeeID.HeaderText = "Employee ID";
+            EmployeeID.Name = "EmployeeID";
+            EmployeeID.Width = 80;
+            // 
+            // Name
+            // 
+            Name.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Name.FillWeight = 67.87527F;
+            Name.HeaderText = "Name";
+            Name.Name = "Name";
+            Name.Width = 200;
+            // 
+            // Gender
+            // 
+            Gender.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Gender.FillWeight = 67.87527F;
+            Gender.HeaderText = "Gender";
+            Gender.Name = "Gender";
+            Gender.Width = 80;
+            // 
+            // Department
+            // 
+            Department.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Department.FillWeight = 67.87527F;
+            Department.HeaderText = "Department";
+            Department.Name = "Department";
+            Department.Width = 200;
+            // 
+            // Position
+            // 
+            Position.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Position.FillWeight = 67.87527F;
+            Position.HeaderText = "Position";
+            Position.Name = "Position";
+            Position.Width = 150;
+            // 
+            // EmploymentStatus
+            // 
+            EmploymentStatus.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            EmploymentStatus.FillWeight = 67.87527F;
+            EmploymentStatus.HeaderText = "Employment Status";
+            EmploymentStatus.Name = "EmploymentStatus";
+            EmploymentStatus.Width = 150;
+            // 
+            // Address
+            // 
+            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Address.FillWeight = 67.87527F;
+            Address.HeaderText = "Address";
+            Address.Name = "Address";
+            Address.Width = 74;
+            // 
+            // Column1
+            // 
+            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column1.HeaderText = "";
+            Column1.Name = "Column1";
             // 
             // panel1
             // 
@@ -346,86 +453,6 @@
             label2.Text = "ACTION";
             label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // PKEmployeeID
-            // 
-            PKEmployeeID.HeaderText = "ID";
-            PKEmployeeID.Name = "PKEmployeeID";
-            PKEmployeeID.Visible = false;
-            // 
-            // ProfilePicture
-            // 
-            ProfilePicture.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            ProfilePicture.FillWeight = 324.8731F;
-            ProfilePicture.HeaderText = "";
-            ProfilePicture.Name = "ProfilePicture";
-            ProfilePicture.Resizable = DataGridViewTriState.True;
-            ProfilePicture.SortMode = DataGridViewColumnSortMode.Automatic;
-            ProfilePicture.Width = 80;
-            // 
-            // EmployeeID
-            // 
-            EmployeeID.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            EmployeeID.DefaultCellStyle = dataGridViewCellStyle2;
-            EmployeeID.FillWeight = 67.87527F;
-            EmployeeID.HeaderText = "Employee ID";
-            EmployeeID.Name = "EmployeeID";
-            EmployeeID.Width = 80;
-            // 
-            // Name
-            // 
-            Name.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Name.FillWeight = 67.87527F;
-            Name.HeaderText = "Name";
-            Name.Name = "Name";
-            Name.Width = 200;
-            // 
-            // Gender
-            // 
-            Gender.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Gender.FillWeight = 67.87527F;
-            Gender.HeaderText = "Gender";
-            Gender.Name = "Gender";
-            Gender.Width = 80;
-            // 
-            // Department
-            // 
-            Department.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Department.FillWeight = 67.87527F;
-            Department.HeaderText = "Department";
-            Department.Name = "Department";
-            Department.Width = 200;
-            // 
-            // Position
-            // 
-            Position.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Position.FillWeight = 67.87527F;
-            Position.HeaderText = "Position";
-            Position.Name = "Position";
-            Position.Width = 150;
-            // 
-            // EmploymentStatus
-            // 
-            EmploymentStatus.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            EmploymentStatus.FillWeight = 67.87527F;
-            EmploymentStatus.HeaderText = "Employment Status";
-            EmploymentStatus.Name = "EmploymentStatus";
-            EmploymentStatus.Width = 150;
-            // 
-            // Address
-            // 
-            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Address.FillWeight = 67.87527F;
-            Address.HeaderText = "Address";
-            Address.Name = "Address";
-            Address.Width = 74;
-            // 
-            // Column1
-            // 
-            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column1.HeaderText = "";
-            Column1.Name = "Column1";
-            // 
             // EmployeeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -481,5 +508,7 @@
         private DataGridViewTextBoxColumn EmploymentStatus;
         private DataGridViewTextBoxColumn Address;
         private DataGridViewTextBoxColumn Column1;
+        private ComboBox txt_department;
+        private Label label1;
     }
 }

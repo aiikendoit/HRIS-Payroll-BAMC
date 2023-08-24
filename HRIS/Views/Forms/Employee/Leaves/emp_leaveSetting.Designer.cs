@@ -34,12 +34,6 @@
             label2 = new Label();
             ID = new DataGridViewTextBoxColumn();
             dgrid_leavesetting = new DataGridView();
-            EmpStatus = new DataGridViewTextBoxColumn();
-            leavesettingID = new DataGridViewTextBoxColumn();
-            leavetype = new DataGridViewTextBoxColumn();
-            daysperyear = new DataGridViewTextBoxColumn();
-            effectivedate = new DataGridViewTextBoxColumn();
-            Remarks = new DataGridViewTextBoxColumn();
             flowLayoutPanel2 = new FlowLayoutPanel();
             btn_new = new FontAwesome.Sharp.IconButton();
             btn_edit = new FontAwesome.Sharp.IconButton();
@@ -51,6 +45,12 @@
             btn_refresh = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
             txt_totalcount = new Label();
+            EmpStatus = new DataGridViewTextBoxColumn();
+            leavesettingID = new DataGridViewTextBoxColumn();
+            leavetype = new DataGridViewTextBoxColumn();
+            daysperyear = new DataGridViewTextBoxColumn();
+            effectivedate = new DataGridViewTextBoxColumn();
+            Remarks = new DataGridViewTextBoxColumn();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgrid_leavesetting).BeginInit();
@@ -117,53 +117,6 @@
             dgrid_leavesetting.RowTemplate.Height = 25;
             dgrid_leavesetting.Size = new Size(800, 312);
             dgrid_leavesetting.TabIndex = 26;
-            // 
-            // EmpStatus
-            // 
-            EmpStatus.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            EmpStatus.FillWeight = 0.00507363072F;
-            EmpStatus.HeaderText = "";
-            EmpStatus.Name = "EmpStatus";
-            EmpStatus.Width = 10;
-            // 
-            // leavesettingID
-            // 
-            leavesettingID.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            leavesettingID.FillWeight = 18.0975418F;
-            leavesettingID.HeaderText = "ID";
-            leavesettingID.Name = "leavesettingID";
-            leavesettingID.Width = 43;
-            // 
-            // leavetype
-            // 
-            leavetype.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            leavetype.FillWeight = 301.788483F;
-            leavetype.HeaderText = "Leave Type";
-            leavetype.Name = "leavetype";
-            leavetype.Width = 200;
-            // 
-            // daysperyear
-            // 
-            daysperyear.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            daysperyear.FillWeight = 353.676239F;
-            daysperyear.HeaderText = "Days Per Year";
-            daysperyear.Name = "daysperyear";
-            daysperyear.Width = 150;
-            // 
-            // effectivedate
-            // 
-            effectivedate.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            effectivedate.FillWeight = 23.15905F;
-            effectivedate.HeaderText = "Effective Date";
-            effectivedate.Name = "effectivedate";
-            effectivedate.Width = 150;
-            // 
-            // Remarks
-            // 
-            Remarks.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Remarks.FillWeight = 0.0158128161F;
-            Remarks.HeaderText = "Remarks";
-            Remarks.Name = "Remarks";
             // 
             // flowLayoutPanel2
             // 
@@ -346,6 +299,53 @@
             txt_totalcount.Size = new Size(94, 15);
             txt_totalcount.TabIndex = 0;
             txt_totalcount.Text = "Total record(s): 0";
+            // 
+            // EmpStatus
+            // 
+            EmpStatus.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            EmpStatus.FillWeight = 0.00507363072F;
+            EmpStatus.HeaderText = "";
+            EmpStatus.Name = "EmpStatus";
+            EmpStatus.Width = 10;
+            // 
+            // leavesettingID
+            // 
+            leavesettingID.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            leavesettingID.FillWeight = 18.0975418F;
+            leavesettingID.HeaderText = "Code";
+            leavesettingID.Name = "leavesettingID";
+            leavesettingID.Width = 60;
+            // 
+            // leavetype
+            // 
+            leavetype.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            leavetype.FillWeight = 301.788483F;
+            leavetype.HeaderText = "Leave Type";
+            leavetype.Name = "leavetype";
+            leavetype.Width = 200;
+            // 
+            // daysperyear
+            // 
+            daysperyear.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            daysperyear.FillWeight = 353.676239F;
+            daysperyear.HeaderText = "Days Per Year";
+            daysperyear.Name = "daysperyear";
+            daysperyear.Width = 150;
+            // 
+            // effectivedate
+            // 
+            effectivedate.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            effectivedate.FillWeight = 23.15905F;
+            effectivedate.HeaderText = "Effective Date";
+            effectivedate.Name = "effectivedate";
+            effectivedate.Width = 150;
+            // 
+            // Remarks
+            // 
+            Remarks.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Remarks.FillWeight = 0.0158128161F;
+            Remarks.HeaderText = "Remarks";
+            Remarks.Name = "Remarks";
             // 
             // emp_leaveSetting
             // 

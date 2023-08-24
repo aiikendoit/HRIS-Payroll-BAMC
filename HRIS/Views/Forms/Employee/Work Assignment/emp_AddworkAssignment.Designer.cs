@@ -293,18 +293,20 @@
             // 
             // panelIMAGE
             // 
+            panelIMAGE.BackColor = Color.Silver;
             panelIMAGE.Controls.Add(pictureBox_FILE);
             panelIMAGE.Location = new Point(394, 46);
             panelIMAGE.Name = "panelIMAGE";
+            panelIMAGE.Padding = new Padding(1);
             panelIMAGE.Size = new Size(654, 603);
             panelIMAGE.TabIndex = 42;
             // 
             // pictureBox_FILE
             // 
             pictureBox_FILE.Dock = DockStyle.Fill;
-            pictureBox_FILE.Location = new Point(0, 0);
+            pictureBox_FILE.Location = new Point(1, 1);
             pictureBox_FILE.Name = "pictureBox_FILE";
-            pictureBox_FILE.Size = new Size(654, 603);
+            pictureBox_FILE.Size = new Size(652, 601);
             pictureBox_FILE.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_FILE.TabIndex = 0;
             pictureBox_FILE.TabStop = false;

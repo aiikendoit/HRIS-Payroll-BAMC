@@ -89,16 +89,15 @@ public partial class HrisContext : DbContext
 
     public virtual DbSet<Zipcode> Zipcodes { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
         if (!optionsBuilder.IsConfigured)
         {
             optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
                           .UseLazyLoadingProxies();
         }
     }
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-  //      => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+    //        => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -1255,6 +1254,7 @@ public partial class HrisContext : DbContext
 
             entity.Property(e => e.PkSystemUser).HasColumnName("PK_systemUser");
             entity.Property(e => e.FkDepartment).HasColumnName("FK_department");
+            entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkPosition).HasColumnName("FK_position");
             entity.Property(e => e.FkSystemUserGroup).HasColumnName("FK_systemUserGroup");
             entity.Property(e => e.Isactive).HasColumnName("isactive");
@@ -1274,6 +1274,10 @@ public partial class HrisContext : DbContext
             entity.HasOne(d => d.FkDepartmentNavigation).WithMany(p => p.SystemUsers)
                 .HasForeignKey(d => d.FkDepartment)
                 .HasConstraintName("FK_department_systemuser");
+
+            entity.HasOne(d => d.FkEmployeeNavigation).WithMany(p => p.SystemUsers)
+                .HasForeignKey(d => d.FkEmployee)
+                .HasConstraintName("FK_systemUser_employee");
 
             entity.HasOne(d => d.FkPositionNavigation).WithMany(p => p.SystemUsers)
                 .HasForeignKey(d => d.FkPosition)

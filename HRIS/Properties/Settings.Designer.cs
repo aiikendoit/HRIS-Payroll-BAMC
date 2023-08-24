@@ -58,5 +58,17 @@ namespace HRIS.Properties {
                 this["employeeidno"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public byte profilepicture {
+            get {
+                return ((byte)(this["profilepicture"]));
+            }
+            set {
+                this["profilepicture"] = value;
+            }
+        }
     }
 }

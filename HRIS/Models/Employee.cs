@@ -131,5 +131,7 @@ public partial class Employee
 
     public virtual ICollection<Leavessetting> Leavessettings { get; set; } = new List<Leavessetting>();
 
+    public virtual ICollection<SystemUser> SystemUsers { get; set; } = new List<SystemUser>();
+
     public virtual ICollection<Workassignment> Workassignments { get; set; } = new List<Workassignment>();
 }

@@ -5,22 +5,40 @@ using HRIS.Forms.Employee;
 using HRIS.Forms.Hiring;
 using HRIS.Forms.Maintenance;
 using HRIS.Forms.Userlogin;
+using HRIS.Models;
+using HRIS.Presenter;
+using HRIS.Views.Forms.Employee.Employee_Request;
+using HRIS.Views.Forms.Userlogin;
 using System.Net.Security;
 using System.Runtime.InteropServices;
 
 namespace HRIS
 {
-    public partial class MainForm : Form
+    public partial class MainForm : Form, ISysemUsers
     {
 
         private IconButton currentbtn;
         private Form currentchildform;
-
+        private readonly userlogin_Presenter userlogin_Presenter;
         public MainForm()
         {
             InitializeComponent();
+            userlogin_Presenter = new userlogin_Presenter(this);
             currentbtn = new IconButton();
             currentchildform = new Form();
+            profile();
+
+        }
+        private void profile()
+        {
+            string? completename = Properties.Settings.Default.completename;
+            string employeeid = Properties.Settings.Default.employeeidno;
+            userlogin_Presenter.loadlogin(employeeid);
+            label_completename.Text = completename;
+            label1_idno.Text = employeeid;
+            
+            
+
         }
         private void activatebutton(Object senderbtn, Color customcolor)
         {
@@ -155,6 +173,38 @@ namespace HRIS
         {
             activatebutton(sender, ColorPalette.color5);
             openchildform(new HiringForm());
+        }
+
+        private void btn_employeerequest_Click(object sender, EventArgs e)
+        {
+            activatebutton(sender, ColorPalette.color5);
+            openchildform(new EmployeeRequestForm());
+        }
+
+        public void DisplaySystemUsers(List<SystemUser> SystemUsers)
+        {
+           // throw new NotImplementedException();
+        }
+
+        public void DisplayUserCustom(List<object> systemuser)
+        {
+            foreach (var obj in systemuser)
+            {
+                var profilePictureProperty = obj.GetType().GetProperty("profilepicture");
+
+                if (profilePictureProperty != null)
+                {
+                    var profilePictureValue = profilePictureProperty.GetValue(obj);
+
+                    if (profilePictureValue is byte[] profilePicture)
+                    {
+                        using (MemoryStream memoryStream = new MemoryStream(profilePicture))
+                        {
+                            picturebox_profilepicture.Image = Image.FromStream(memoryStream);
+                        }
+                    }
+                }
+            }
         }
     }
 }

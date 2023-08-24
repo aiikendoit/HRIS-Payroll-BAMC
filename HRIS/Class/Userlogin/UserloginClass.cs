@@ -40,6 +40,7 @@ namespace HRIS.Class.Userlogin
                                     Properties.Settings.Default.completename = completename;
                                     Properties.Settings.Default.usercode = id;
                                     Properties.Settings.Default.employeeidno = employeeidno;
+                                   
                                     Properties.Settings.Default.Save();
                                     hasdata = true;
                                     Cursor.Current = Cursors.Default;

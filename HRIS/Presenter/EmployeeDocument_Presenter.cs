@@ -14,9 +14,9 @@ namespace HRIS.Presenter
     public class EmployeeDocument_Presenter
     {
         
-        private readonly IEmployeeDocumentView _view;
-        private readonly HrisContext _context;
-        private List<object> employeeDocumentList;
+        private readonly IEmployeeDocumentView _view; //declare InterfaceView
+        private readonly HrisContext _context;          //dbcontext
+        private List<object> employeeDocumentList;      //declare object list for presentation
         private List<Employeedocument> employeeDocumentsListData;
 
 

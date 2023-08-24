@@ -7,6 +7,8 @@ public partial class SystemUser
 {
     public int PkSystemUser { get; set; }
 
+    public int? FkEmployee { get; set; }
+
     public int? FkDepartment { get; set; }
 
     public int? FkPosition { get; set; }
@@ -28,6 +30,8 @@ public partial class SystemUser
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 
     public virtual Department? FkDepartmentNavigation { get; set; }
+
+    public virtual Employee? FkEmployeeNavigation { get; set; }
 
     public virtual Position? FkPositionNavigation { get; set; }
 

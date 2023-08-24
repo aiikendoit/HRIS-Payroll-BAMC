@@ -47,6 +47,25 @@ namespace HRIS.Presenter
             _view.DisplayLeavesettingCustom(query.ToList<object>());
             leavesettingList = query.ToList<object>();
         }
+        public void LoadLeavesetting_forLeaveFiling(int employeeid)
+        {
+            var query = from leavesetting in _context.Leavessettings
+                        join leavetype in _context.Leavetypes on leavesetting.FkLeavetype equals leavetype.PkLeavetype
+                        where leavesetting.FkEmployee == employeeid && leavesetting.IsDeleted == false
+                        orderby leavesetting.Effectivitydate descending
+                        select new
+                        {
+                            ID = leavesetting.PkLeavessettings,
+                            PKLeavetype = leavetype.PkLeavetype,
+                            Leavetype = leavetype.Description,
+                            daysperyear = leavesetting.Totaldays,
+                            Effectivitydate = leavesetting.Effectivitydate,
+                            Remarks = leavesetting.Remarks,
+                        };
+
+            _view.DisplayLeavesettingCustom(query.ToList<object>());
+            leavesettingList = query.ToList<object>();
+        }
         public void AddLeaveSetting(Leavessetting leavessetting)
         {
             var ver = new UserConfirmation();

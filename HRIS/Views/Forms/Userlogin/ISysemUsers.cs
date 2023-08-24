@@ -10,6 +10,6 @@ namespace HRIS.Views.Forms.Userlogin
     public interface ISysemUsers
     {
         void DisplaySystemUsers(List<SystemUser> SystemUsers);
-        void ClearFields();
+        void DisplayUserCustom(List<object> systemuser);
     }
 }

@@ -63,7 +63,7 @@ namespace HRIS.Presenter
             _view.DisplayEmployeeDocumentsData(employeeDocumentList);
         }
 
-        public void loadEmployeeDocs(int pk_employeedocument) 
+        public void loadEmployeeDocs(int pk_employeedocument) //preview docs
         {
             var p = _context.Employeedocuments.Where(c => c.PkEmployeedocument == pk_employeedocument)
                 .ToList();
@@ -72,13 +72,14 @@ namespace HRIS.Presenter
 
         internal void SearchData(string searchQuery)
         {
-            //var searchResults = employeeDocumentList
-            //     .Where(b => b.PkEmployeedocument.ToString().Contains(searchQuery)
-            //     || (b.Description != null && b.Description.Contains(searchQuery,
-            //     StringComparison.OrdinalIgnoreCase)))
-            //     .ToList();
-
-            //_view.DisplayEmployeeDocuments(searchResults);
+            var searchResults = employeeDocumentList
+            .Where(item =>
+            (item.GetType().GetProperty("Code")?.GetValue(item)?.ToString()?.IndexOf(searchQuery, StringComparison.OrdinalIgnoreCase) >= 0) ||
+            (item.GetType().GetProperty("Description")?.GetValue(item)?.ToString()?.IndexOf(searchQuery, StringComparison.OrdinalIgnoreCase) >= 0) ||
+            (item.GetType().GetProperty("Remarks")?.GetValue(item)?.ToString()?.IndexOf(searchQuery, StringComparison.OrdinalIgnoreCase) >= 0)
+            )
+            .ToList();
+            _view.DisplayEmployeeDocumentsData(searchResults.ToList());
         }
 
         public void updateEmployeeDocs(Employeedocument employeedocument)

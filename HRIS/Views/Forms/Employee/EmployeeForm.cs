@@ -3,6 +3,7 @@ using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Employee;
 using HRIS.Views.Forms.Maintenance.CivilStatus;
+using HRIS.Views.Forms.Maintenance.Department;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -17,20 +18,23 @@ using System.Windows.Forms;
 
 namespace HRIS.Forms.Employee
 {
-    public partial class EmployeeForm : Form, IEmployeeView
+    public partial class EmployeeForm : Form, IEmployeeView, IDeparmentView
     {
 
         public bool isViewingArchive = false;
         private readonly employee_Presenter employee_Presenter;
+        private readonly department_Presenter department_Presenter;
         public EmployeeForm()
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_employee);
 
             employee_Presenter = new employee_Presenter(this);
+            department_Presenter = new department_Presenter(this);
+            department_Presenter.LoadDepartment();
             isViewingArchive = false;
             loadEmployee();
-            // changeDgridSize();
+            
         }
 
         public void DisplayEmployee(List<Models.Employee> employees)
@@ -81,14 +85,20 @@ namespace HRIS.Forms.Employee
         }
         private void loadEmployee()
         {
+            Department selectedDepartment = (Department)txt_department.SelectedItem; // Cast to the appropriate type
+            string searchQuery = selectedDepartment.Description ?? string.Empty;
             if (isViewingArchive)
             {
+
+                txt_department.SelectedIndex = 0;
+                txt_department.Enabled = false;
                 employee_Presenter.loadEmployeeJoin_InActive();
                 btn_new.Visible = false;
             }
             else
             {
-                employee_Presenter.loadEmployeeJoin_Active();
+                txt_department.Enabled = true;
+                employee_Presenter.loadEmployeeJoin_Active(searchQuery);
                 btn_new.Visible = true;
             }
             changeDgridSize();
@@ -99,10 +109,6 @@ namespace HRIS.Forms.Employee
             string emptype = "Employee";
             var se = new EmployeeSearch(emptype);
             se.ShowDialog();
-            string docname = "Employee";
-            EmployeeRegistration employeeRegistration = new EmployeeRegistration(docname);
-            employeeRegistration.ShowDialog();
-            loadEmployee();
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
@@ -138,15 +144,20 @@ namespace HRIS.Forms.Employee
         }
         private void searchData()
         {
-            string searchQuery = txt_search.Text.Trim();
-            if (string.IsNullOrEmpty(searchQuery))
-            {
-                loadEmployee();
-            }
-            else
-            {
-                employee_Presenter.SearchData(searchQuery);
-            }
+            Department selectedDepartment = (Department)txt_department.SelectedItem; // Cast to the appropriate type
+            string dept = selectedDepartment.Description ?? string.Empty;
+                string searchQuery = txt_search.Text.Trim();
+                if (string.IsNullOrEmpty(searchQuery))
+                {
+                    loadEmployee();
+                }
+                else
+                {
+                    employee_Presenter.SearchData(searchQuery);
+                }
+           
+
+            
         }
 
         private void txt_search_TextChanged(object sender, EventArgs e)
@@ -223,6 +234,18 @@ namespace HRIS.Forms.Employee
         private void dgrid_employee_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        public void DisplayDepartment(List<Department> departments)
+        {
+            txt_department.DataSource = departments;
+            txt_department.ValueMember = "PkDepartment";
+            txt_department.DisplayMember = "Description";
+        }
+
+        private void txt_department_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            loadEmployee();
         }
     }
 }

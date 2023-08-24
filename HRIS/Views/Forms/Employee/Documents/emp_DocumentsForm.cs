@@ -1,8 +1,10 @@
 ﻿using HRIS.Class;
+using HRIS.Forms.Employee.License_information;
 using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Employee;
 using HRIS.Views.Forms.Employee.Documents;
+using HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder;
 using HRIS.Views.Forms.Maintenance.Degreetype;
 using HRIS.Views.Forms.Maintenance.SalarySetting;
 using System;
@@ -20,10 +22,10 @@ namespace HRIS.Forms.Employee.Documents
 {
     public partial class emp_DocumentsForm : Form, IEmployeeDocumentView
     {
-        public int EmpID = 0;
+        public int EmpID;
         //private int PKEmployeeid;
         private readonly EmployeeDocument_Presenter _presenterEmployeeDocs;
-        public emp_DocumentsForm(int PkEmployeeID)
+        public emp_DocumentsForm(int PkEmployeeID, bool isUpdate)
 
         {
             InitializeComponent();
@@ -34,12 +36,18 @@ namespace HRIS.Forms.Employee.Documents
             loadEmployeeDocumentsData();
 
             btn_viewDocs.Click += btn_viewDocs_Click;
+            if (isUpdate == false)
+            {
+                btn_new.Visible = false;
+                btn_Edit.Visible = false;
+                btn_viewDocs.Visible = false;
+            }
         }
 
         private void loadEmployeeDocumentsData()
         {
             _presenterEmployeeDocs.loadEmployeeDocsDetails(EmpID);
-            dgv_hideCols();
+            //dgv_hideCols();
         }
 
         private void dgv_hideCols()
@@ -104,14 +112,12 @@ namespace HRIS.Forms.Employee.Documents
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            if (dgrid_documents.SelectedCells.Count > 0)
-            {
-                // Get the selected value from the DataGridView
-                int selectedValue = Convert.ToInt32(dgrid_documents.SelectedCells[0].Value);
-                // Pass the selected value to Form2's constructor
-                Add_Docs form2 = new Add_Docs(selectedValue);
-                form2.ShowDialog(); // Show Form2 as a dialog
-            }
+            var PkEmployeedocument = dgrid_documents.SelectedRows[0].Cells[0].Value;
+            Add_Docs empDoc = new Add_Docs(EmpID);
+            empDoc.isUpdate = true;
+            empDoc.putdata(Convert.ToInt32(PkEmployeedocument));
+            empDoc.ShowDialog();
+            loadEmployeeDocumentsData();
 
         }
 
@@ -130,6 +136,18 @@ namespace HRIS.Forms.Employee.Documents
                 //empDocs.putdata(this, selectedEmpDocs);
                 empDocs.ShowDialog(this);
 
+            }
+        }
+        private void search()
+        {
+            string searchQuery = txt_search.Text.Trim();
+            if (string.IsNullOrEmpty(searchQuery))
+            {
+                _presenterEmployeeDocs.loadEmployeeDocs(EmpID);
+            }
+            else
+            {
+                _presenterEmployeeDocs.SearchData(searchQuery);
             }
         }
     }

@@ -9,8 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using HRIS.Class;
+using HRIS.Forms.Employee.Documents;
 using HRIS.Models;
 using HRIS.Presenter;
+using HRIS.Views.Forms.Maintenance.AddressFolder.TownCityFolder;
 using HRIS.Views.Forms.Maintenance.Document;
 using Microsoft.EntityFrameworkCore;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
@@ -19,21 +21,29 @@ namespace HRIS.Views.Forms.Employee.Documents
 {
     public partial class Add_Docs : Form, IEmployeeView, IDocumentTypeView, IEmployeeDocumentView
     {
-        int EmpID = 0;
+        //int EmpID = 0;
+        public int PKEmploye;
+
         private readonly employee_Presenter emp_Presenter;
         private readonly documenttype_Presenter doctype_Presenter;
         private readonly EmployeeDocument_Presenter empDocs_Presenter;
         private readonly HrisContext _context;
-        public bool isUpdate;
+        
+        private emp_DocumentsForm _docsForm;
+        private Models.Employeedocument SelectedEmployeeDocs;
+
+        public bool isUpdate = false;
         private string selectedFilePath;//attached file
-        public Add_Docs(int PkEmployee)
+
+        private int PkEmployeedocument;
+        public Add_Docs(int EmpID)
         {
             InitializeComponent();
             doctype_Presenter = new documenttype_Presenter(this);
             emp_Presenter = new employee_Presenter(this);
             empDocs_Presenter = new EmployeeDocument_Presenter(this);
             _context = new HrisContext();
-            EmpID = PkEmployee;
+            PKEmploye = EmpID;
             doctype_Presenter.LoadDocumenttype();
 
         }
@@ -79,7 +89,19 @@ namespace HRIS.Views.Forms.Employee.Documents
 
         private void update()
         {
-            //throw new NotImplementedException();
+            var updateEmpDocs = _context.Employeedocuments.Find(PkEmployeedocument);
+            if (updateEmpDocs != null)
+            {
+                updateEmpDocs.FkEmployee = PKEmploye;
+                updateEmpDocs.FkDoctype = Convert.ToInt32(comboBox_DocType.SelectedValue);
+                updateEmpDocs.Description = textBox_Description.Text;
+                updateEmpDocs.Remarks = richTextBox_Remarks.Text;
+                //updateEmpDocs.Educationaldegree = txt_educationaldegree.Text;
+                //updateEmpDocs.FkDegreetype = Convert.ToInt32(txt_degreetype.SelectedValue);
+
+                empDocs_Presenter.updateEmployeeDocs(updateEmpDocs);
+                this.Close();
+            }
         }
 
         private void save()
@@ -93,7 +115,7 @@ namespace HRIS.Views.Forms.Employee.Documents
                 
                 var cv = new Models.Employeedocument
                 {
-                    FkEmployee = EmpID,
+                    FkEmployee = PKEmploye,
                     FkDoctype = Convert.ToInt32(comboBox_DocType.SelectedValue),
                     Description = textBox_Description.Text,
                     Remarks = richTextBox_Remarks.Text,
@@ -134,7 +156,7 @@ namespace HRIS.Views.Forms.Employee.Documents
 
         public void DisplayEmployeeDocuments(List<Employeedocument> Employeedocuments)
         {
-            throw new NotImplementedException();
+            
         }
 
         private void buttonAttachedFile_Click(object sender, EventArgs e)
@@ -150,12 +172,35 @@ namespace HRIS.Views.Forms.Employee.Documents
 
         public void DisplayEmployeeDocumentsData(List<object> Employeedocuments)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void DisplayEmployeeInActive(List<object> employees)
         {
-            throw new NotImplementedException();
+            
+        }
+
+        public void putdata(int employeedocument)
+        {
+            if (isUpdate)
+            {
+                //btn_cancel.Select();
+                empDocs_Presenter.loadEmployeeDocsDetails(employeedocument);
+                PkEmployeedocument = employeedocument;
+            }
+            else
+            {
+                //btn_cancel.Select();
+                empDocs_Presenter.loadEmployeeDocsDetails(employeedocument);
+                //checkBox_isactive.Checked = SelectedTowncities.IsActive ?? false;
+                comboBox_DocType.SelectedValue = SelectedEmployeeDocs.FkDoctype;
+                //disable control
+                comboBox_DocType.Enabled = false;
+                textBox_Description.Enabled = false;
+                richTextBox_Remarks.Enabled = false;
+                buttonAttachedFile.Enabled  = false;
+                btn_save.Visible = false;
+            }
         }
     }
 }

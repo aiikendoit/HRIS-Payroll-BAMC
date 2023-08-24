@@ -44,6 +44,13 @@
             iconButton3 = new FontAwesome.Sharp.IconButton();
             iconButton5 = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel2 = new FlowLayoutPanel();
+            Code = new DataGridViewTextBoxColumn();
+            offenseType = new DataGridViewTextBoxColumn();
+            disciplinaryType = new DataGridViewTextBoxColumn();
+            description = new DataGridViewTextBoxColumn();
+            lastname = new DataGridViewTextBoxColumn();
+            Firstname = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -123,6 +130,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_disciplinaryAction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_disciplinaryAction.ColumnHeadersHeight = 50;
+            dgrid_disciplinaryAction.Columns.AddRange(new DataGridViewColumn[] { Code, offenseType, disciplinaryType, description, lastname, Firstname, Column1 });
             dgrid_disciplinaryAction.Dock = DockStyle.Fill;
             dgrid_disciplinaryAction.Location = new Point(0, 111);
             dgrid_disciplinaryAction.Name = "dgrid_disciplinaryAction";
@@ -266,6 +274,57 @@
             flowLayoutPanel2.Size = new Size(800, 36);
             flowLayoutPanel2.TabIndex = 22;
             // 
+            // Code
+            // 
+            Code.HeaderText = "Code";
+            Code.Name = "Code";
+            Code.ReadOnly = true;
+            // 
+            // offenseType
+            // 
+            offenseType.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            offenseType.HeaderText = "Offense Type";
+            offenseType.Name = "offenseType";
+            offenseType.ReadOnly = true;
+            offenseType.Width = 92;
+            // 
+            // disciplinaryType
+            // 
+            disciplinaryType.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            disciplinaryType.HeaderText = "Disciplinary Type";
+            disciplinaryType.Name = "disciplinaryType";
+            disciplinaryType.ReadOnly = true;
+            disciplinaryType.Width = 110;
+            // 
+            // description
+            // 
+            description.HeaderText = "Description";
+            description.Name = "description";
+            description.ReadOnly = true;
+            // 
+            // lastname
+            // 
+            lastname.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            lastname.HeaderText = "Lastname";
+            lastname.Name = "lastname";
+            lastname.ReadOnly = true;
+            lastname.Width = 83;
+            // 
+            // Firstname
+            // 
+            Firstname.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Firstname.HeaderText = "Firstname";
+            Firstname.Name = "Firstname";
+            Firstname.ReadOnly = true;
+            Firstname.Width = 84;
+            // 
+            // Column1
+            // 
+            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column1.HeaderText = "";
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            // 
             // emp_DisciplinaryActionForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -310,5 +369,12 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton5;
         private FlowLayoutPanel flowLayoutPanel2;
+        private DataGridViewTextBoxColumn Code;
+        private DataGridViewTextBoxColumn offenseType;
+        private DataGridViewTextBoxColumn disciplinaryType;
+        private DataGridViewTextBoxColumn description;
+        private DataGridViewTextBoxColumn lastname;
+        private DataGridViewTextBoxColumn Firstname;
+        private DataGridViewTextBoxColumn Column1;
     }
 }

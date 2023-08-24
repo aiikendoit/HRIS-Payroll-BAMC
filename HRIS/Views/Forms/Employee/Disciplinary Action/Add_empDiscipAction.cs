@@ -28,7 +28,7 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
         public Add_empDiscipAction()
         {
             InitializeComponent();
-            this.add_DisciplinaryActionForm = new emp_DisciplinaryActionForm();
+            this.add_DisciplinaryActionForm = new emp_DisciplinaryActionForm(this);//error
             this.empDA_presenter = new EmployeeDisciplinary_presenter(this);
             //this.discType_presenter = new disciplinarytype_Presenter(this);
 
@@ -43,7 +43,12 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
             
         }
 
-        public void DisplayEmployeeDscAct(List<Employeedisciplinary> employeedisciplinaries)
+        public void DisplayEmployeeDscAct_All(List<Employeedisciplinary> employeedisciplinaries)
+        {
+            
+        }
+
+        public void displayEmployeeDscAct_ListObject(List<object> employeedisciplinaries)
         {
             
         }

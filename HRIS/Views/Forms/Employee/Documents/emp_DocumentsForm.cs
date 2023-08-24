@@ -44,7 +44,7 @@ namespace HRIS.Forms.Employee.Documents
             }
         }
 
-        private void loadEmployeeDocumentsData()
+        private void loadEmployeeDocumentsData()//where ID
         {
             _presenterEmployeeDocs.loadEmployeeDocsDetails(EmpID);
             //dgv_hideCols();
@@ -143,12 +143,27 @@ namespace HRIS.Forms.Employee.Documents
             string searchQuery = txt_search.Text.Trim();
             if (string.IsNullOrEmpty(searchQuery))
             {
-                _presenterEmployeeDocs.loadEmployeeDocs(EmpID);
+                loadEmployeeDocumentsData();
             }
             else
             {
                 _presenterEmployeeDocs.SearchData(searchQuery);
             }
+        }
+
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+            search();
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            search();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            loadEmployeeDocumentsData();
         }
     }
 }

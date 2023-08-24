@@ -120,20 +120,22 @@ namespace HRIS.Presenter
             employeesData = query.ToList<object>();
             _view.DisplayEmployeeCustomView(employeesData);
         }
-        public void loadEmployeeJoin_Active()
+        public void loadEmployeeJoin_Active(string deptname)
         {
             var query = from empInfo in _context.Employees
                         join EmpStat in _context.Employmentstatuses on empInfo.PkEmployee equals EmpStat.FkEmployee
-                       join empWorkAss in _context.Workassignments on empInfo.PkEmployee equals empWorkAss.FkEmployee
-                       join empType in _context.Employmenttypes on EmpStat.FkEmploymenttype equals empType.PkEmploymenttype
-                       join dept in _context.Departments on empWorkAss.FkDepartment equals dept.PkDepartment
-                       join post in _context.Positions on empWorkAss.FkPosition equals post.PkPosition
-                       join tempbrgy in _context.Barangays on empInfo.FkBarangay equals tempbrgy.PkBarangay
-                       join temptowncity in _context.Towncities on empInfo.FkTowncity equals temptowncity.PkTowncity
-                       join tempprovince in _context.Provinces on empInfo.FkProvince equals tempprovince.PkProvince
-                       where empInfo.Employeetype == "Employee" && EmpStat.IsDeleted != true 
-                        && (EmpStat.Enddate == null || EmpStat.Enddate > DateTime.Now) 
-                        && empWorkAss.IsDeleted != true && (empWorkAss.Enddate == null || empWorkAss.Enddate > DateTime.Now)
+                        join empWorkAss in _context.Workassignments on empInfo.PkEmployee equals empWorkAss.FkEmployee
+                        join empType in _context.Employmenttypes on EmpStat.FkEmploymenttype equals empType.PkEmploymenttype
+                        join dept in _context.Departments on empWorkAss.FkDepartment equals dept.PkDepartment
+                        join post in _context.Positions on empWorkAss.FkPosition equals post.PkPosition
+                        join tempbrgy in _context.Barangays on empInfo.FkBarangay equals tempbrgy.PkBarangay
+                        join temptowncity in _context.Towncities on empInfo.FkTowncity equals temptowncity.PkTowncity
+                        join tempprovince in _context.Provinces on empInfo.FkProvince equals tempprovince.PkProvince
+                        where empInfo.Employeetype == "Employee" 
+                        && EmpStat.IsDeleted != true
+                         && (EmpStat.Enddate == null || EmpStat.Enddate > DateTime.Now)
+                         && empWorkAss.IsDeleted != true && (empWorkAss.Enddate == null || empWorkAss.Enddate > DateTime.Now)
+                        && ((deptname != "Not Applicable" && dept.Description == deptname) || (deptname == "Not Applicable" && dept.Description != "xxx"))
                         select new
                         {
                             ID = empInfo.PkEmployee,
@@ -150,6 +152,7 @@ namespace HRIS.Presenter
                         };
             employeesData = query.ToList<object>();
             _view.DisplayEmployeeCustomView(employeesData);
+
         }
         public void loadEmployeeJoin_InActive_withWhere(int employeeid)
         {

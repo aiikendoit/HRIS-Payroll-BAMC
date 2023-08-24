@@ -194,7 +194,8 @@
             btn_newEmployee.Margin = new Padding(3, 3, 1, 3);
             btn_newEmployee.Name = "btn_newEmployee";
             btn_newEmployee.Size = new Size(125, 48);
-            btn_newEmployee.TabIndex = 1;
+            btn_newEmployee.TabIndex = 4;
+            btn_newEmployee.TabStop = false;
             btn_newEmployee.Text = "Register as \r\nNew Employee";
             btn_newEmployee.TextAlign = ContentAlignment.MiddleLeft;
             btn_newEmployee.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -215,7 +216,8 @@
             btn_editEmployee.Margin = new Padding(1, 3, 1, 3);
             btn_editEmployee.Name = "btn_editEmployee";
             btn_editEmployee.Size = new Size(114, 48);
-            btn_editEmployee.TabIndex = 0;
+            btn_editEmployee.TabIndex = 3;
+            btn_editEmployee.TabStop = false;
             btn_editEmployee.Text = "Edit Employee";
             btn_editEmployee.TextAlign = ContentAlignment.MiddleLeft;
             btn_editEmployee.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -253,7 +255,7 @@
             txt_firstname.Margin = new Padding(3, 3, 1, 3);
             txt_firstname.Name = "txt_firstname";
             txt_firstname.Size = new Size(538, 29);
-            txt_firstname.TabIndex = 0;
+            txt_firstname.TabIndex = 1;
             // 
             // btn_search
             // 
@@ -269,7 +271,7 @@
             btn_search.Margin = new Padding(1, 3, 1, 3);
             btn_search.Name = "btn_search";
             btn_search.Size = new Size(81, 29);
-            btn_search.TabIndex = 1;
+            btn_search.TabIndex = 2;
             btn_search.Text = "Search";
             btn_search.TextAlign = ContentAlignment.MiddleLeft;
             btn_search.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -287,6 +289,7 @@
             Controls.Add(flowLayoutPanel1);
             Controls.Add(flowLayoutPanel3);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            KeyPreview = true;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "EmployeeSearch";

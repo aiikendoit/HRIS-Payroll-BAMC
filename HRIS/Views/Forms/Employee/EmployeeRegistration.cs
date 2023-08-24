@@ -485,6 +485,7 @@ namespace HRIS.Forms.Employee
             if (isUpdate)
             {
                 //Edit
+               
                 employee_Presenter.LoadEmployeewithWhere(employeeid);
                 if (isviewingArchive)
                 {
@@ -508,6 +509,7 @@ namespace HRIS.Forms.Employee
                     employee_Presenter.loadEmployeeJoin_Active_withWhere(employeeid);
                 }
 
+                btn_addressinfo.Enabled = false;
                 btn_save.Visible = false;
                 btn_cancel.Visible = false;
                 foreach (Control control in this.panel_basicinfo.Controls)

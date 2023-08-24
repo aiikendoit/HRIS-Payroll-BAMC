@@ -49,7 +49,7 @@ namespace HRIS.Presenter
                         {
                            pk_employeedocument =  e.PkEmployeedocument,
                            fk_employee =  e.FkEmployee,
-                            fk_doctype = e.FkDoctype,
+                            fk_doctype = d.Description,
 //                            e2.Lastname,
                             //d.Description,
                            e.Description,

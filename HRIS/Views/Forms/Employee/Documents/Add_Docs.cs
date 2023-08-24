@@ -156,7 +156,20 @@ namespace HRIS.Views.Forms.Employee.Documents
 
         public void DisplayEmployeeDocuments(List<Employeedocument> Employeedocuments)
         {
-            
+            try
+            {
+                Models.Employeedocument empDocs = Employeedocuments[0];
+                comboBox_DocType.SelectedValue = empDocs.FkDoctype;
+                //txt_educationalAttainment.SelectedValue = educ.FkEducationallevel;
+                textBox_Description.Text = empDocs.Description;
+                richTextBox_Remarks.Text = empDocs.Remarks;
+                //txt_educationaldegree.Text = educ.Educationaldegree;
+                //txt_degreetype.SelectedValue = educ.FkDegreetype;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void buttonAttachedFile_Click(object sender, EventArgs e)
@@ -172,7 +185,7 @@ namespace HRIS.Views.Forms.Employee.Documents
 
         public void DisplayEmployeeDocumentsData(List<object> Employeedocuments)
         {
-            
+
         }
 
         public void DisplayEmployeeInActive(List<object> employees)
@@ -185,13 +198,13 @@ namespace HRIS.Views.Forms.Employee.Documents
             if (isUpdate)
             {
                 //btn_cancel.Select();
-                empDocs_Presenter.loadEmployeeDocsDetails(employeedocument);
+                empDocs_Presenter.loadEmployeeDocs(employeedocument);//load from presenter query
                 PkEmployeedocument = employeedocument;
             }
             else
             {
                 //btn_cancel.Select();
-                empDocs_Presenter.loadEmployeeDocsDetails(employeedocument);
+                empDocs_Presenter.loadEmployeeDocs(employeedocument);
                 //checkBox_isactive.Checked = SelectedTowncities.IsActive ?? false;
                 comboBox_DocType.SelectedValue = SelectedEmployeeDocs.FkDoctype;
                 //disable control

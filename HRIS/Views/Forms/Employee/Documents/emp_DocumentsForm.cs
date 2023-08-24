@@ -47,16 +47,6 @@ namespace HRIS.Forms.Employee.Documents
         private void loadEmployeeDocumentsData()//where ID
         {
             _presenterEmployeeDocs.loadEmployeeDocsDetails(EmpID);
-            //dgv_hideCols();
-        }
-
-        private void dgv_hideCols()
-        {
-            //dgrid_documents.Columns[0].Visible = false;
-            //dgrid_documents.Columns[1].Visible = false;
-            //dgrid_documents.Columns[2].Visible = false;
-            //dgrid_documents.Columns[5].Visible = false;
-            //dgrid_documents.Columns[8].Visible = false;
         }
 
         private void emp_DocumentsForm_Load(object sender, EventArgs e)

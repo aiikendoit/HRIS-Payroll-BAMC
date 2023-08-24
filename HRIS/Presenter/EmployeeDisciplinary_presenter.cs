@@ -38,31 +38,27 @@ namespace HRIS.Presenter
                 .OrderBy(e => e.Description)
                 .ToList();
             empDA_ListData = q.ToList();
-            empDA_view.DisplayEmployeeDscAct(q);
+            empDA_view.DisplayEmployeeDscAct_All(q);
         }
 
-        public void loadEmpDiscAccWhere(int? empDA_id) // join query
+        public void loadEmpDiscAcWhere(int PKEmployeeId) // join query
         {
-            //var query = from e2 in _dbcontext.Employeedisciplinaries
-            //            join o in _dbcontext.Offensetypes on e2.OffenseTypeId equals o.Id
-            //            join d in _dbcontext.Disciplinarytypes on e2.DisciplinaryTypeId equals d.Id
-            //            join e in _dbcontext.Employees on e2.EmployeeId equals e.Id
-            //            select new
-            //            {
-            //                e2.Id,
-            //                e.LastName,
-            //                e.FirstName,
-            //                OffenseDescription = o.Description,
-            //                DisciplinaryTypeName = d.DisciplinaryTypeName,
-            //                DisciplinaryDescription = d.DisciplinaryDescription,
-            //                e2.EmployeeId,
-            //                e2.Description,
-            //                e2.DateStart,
-            //                e2.DateEnd,
-            //                e2.File,
-            //                e2.CreatedDate,
-            //                e2.CreatedBy
-            //            };
+            var query = from e2 in _dbcontext.Employeedisciplinaries
+                        join employee in _dbcontext.Employees on e2.FkEmployee equals employee.PkEmployee
+                        join d in _dbcontext.Disciplinarytypes on e2.FkDisciplinarytype equals d.PkDisciplinarytype
+                        join o in _dbcontext.Offensetypes on e2.FkOffensetype equals o.PkOffensetype
+                        select new
+                        {
+                            e2.PkEmployeedisciplinary,
+                            e2.FkEmployee,
+                            e2.FkOffensetype,
+                            e2.FkDisciplinarytype,
+                            employee.Lastname,
+                            employee.Firstname,
+                            o.Description,
+                            d.Disciplinarytypename,
+                            d.Disciplinarydescription
+                        };
         }
 
         internal void SearchData(string searchQuery) //search text box
@@ -73,7 +69,7 @@ namespace HRIS.Presenter
                  StringComparison.OrdinalIgnoreCase)))
                  .ToList();
 
-            empDA_view.DisplayEmployeeDscAct(searchResults);
+            empDA_view.DisplayEmployeeDscAct_All(searchResults);
         }
 
         public void AddEmplDiscAct(Employeedisciplinary employeedisciplinary) //add method

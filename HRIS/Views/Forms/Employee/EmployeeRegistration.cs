@@ -342,7 +342,7 @@ namespace HRIS.Forms.Employee
         private void _documents_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_DocumentsForm(employeeid));
+            openchildform(new emp_DocumentsForm(employeeid, isUpdate));
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             flowLayoutPanel2 = new FlowLayoutPanel();
             btn_new = new FontAwesome.Sharp.IconButton();
             btn_Edit = new FontAwesome.Sharp.IconButton();
@@ -39,16 +39,16 @@
             label_total = new Label();
             ID = new DataGridViewTextBoxColumn();
             dgrid_documents = new DataGridView();
-            textBox1 = new TextBox();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            panel1 = new Panel();
             Code = new DataGridViewTextBoxColumn();
             DocType = new DataGridViewTextBoxColumn();
             Description = new DataGridViewTextBoxColumn();
             Remarks = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
+            txt_search = new TextBox();
+            btn_search = new FontAwesome.Sharp.IconButton();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            panel1 = new Panel();
             flowLayoutPanel2.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
@@ -185,14 +185,14 @@
             dgrid_documents.AllowUserToAddRows = false;
             dgrid_documents.AllowUserToDeleteRows = false;
             dgrid_documents.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.IndianRed;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgrid_documents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.IndianRed;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgrid_documents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgrid_documents.ColumnHeadersHeight = 50;
             dgrid_documents.Columns.AddRange(new DataGridViewColumn[] { Code, DocType, Description, Remarks, Column1 });
             dgrid_documents.Dock = DockStyle.Fill;
@@ -203,78 +203,6 @@
             dgrid_documents.Size = new Size(800, 312);
             dgrid_documents.TabIndex = 33;
             dgrid_documents.CellFormatting += dgrid_documents_CellFormatting;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(3, 3);
-            textBox1.Margin = new Padding(3, 3, 1, 3);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = " Search";
-            textBox1.Size = new Size(338, 29);
-            textBox1.TabIndex = 0;
-            // 
-            // iconButton1
-            // 
-            iconButton1.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.ForeColor = Color.White;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 20;
-            iconButton1.Location = new Point(343, 3);
-            iconButton1.Margin = new Padding(1, 3, 1, 3);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(77, 29);
-            iconButton1.TabIndex = 1;
-            iconButton1.Text = "Search";
-            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // iconButton2
-            // 
-            iconButton2.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.ForeColor = Color.White;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowsRotate;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.IconSize = 20;
-            iconButton2.Location = new Point(422, 3);
-            iconButton2.Margin = new Padding(1, 3, 1, 3);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(77, 29);
-            iconButton2.TabIndex = 2;
-            iconButton2.Text = "Refresh";
-            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.AutoSize = true;
-            flowLayoutPanel1.Controls.Add(textBox1);
-            flowLayoutPanel1.Controls.Add(iconButton1);
-            flowLayoutPanel1.Controls.Add(iconButton2);
-            flowLayoutPanel1.Dock = DockStyle.Top;
-            flowLayoutPanel1.Location = new Point(0, 40);
-            flowLayoutPanel1.Margin = new Padding(0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(800, 35);
-            flowLayoutPanel1.TabIndex = 31;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(label_total);
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 423);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(800, 27);
-            panel1.TabIndex = 34;
             // 
             // Code
             // 
@@ -315,6 +243,78 @@
             Column1.Name = "Column1";
             Column1.ReadOnly = true;
             // 
+            // txt_search
+            // 
+            txt_search.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_search.Location = new Point(3, 3);
+            txt_search.Margin = new Padding(3, 3, 1, 3);
+            txt_search.Name = "txt_search";
+            txt_search.PlaceholderText = " Search";
+            txt_search.Size = new Size(338, 29);
+            txt_search.TabIndex = 0;
+            // 
+            // btn_search
+            // 
+            btn_search.BackColor = Color.FromArgb(0, 127, 152);
+            btn_search.FlatAppearance.BorderSize = 0;
+            btn_search.FlatStyle = FlatStyle.Flat;
+            btn_search.ForeColor = Color.White;
+            btn_search.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            btn_search.IconColor = Color.White;
+            btn_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_search.IconSize = 20;
+            btn_search.Location = new Point(343, 3);
+            btn_search.Margin = new Padding(1, 3, 1, 3);
+            btn_search.Name = "btn_search";
+            btn_search.Size = new Size(77, 29);
+            btn_search.TabIndex = 1;
+            btn_search.Text = "Search";
+            btn_search.TextAlign = ContentAlignment.MiddleLeft;
+            btn_search.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_search.UseVisualStyleBackColor = false;
+            // 
+            // iconButton2
+            // 
+            iconButton2.BackColor = Color.FromArgb(0, 127, 152);
+            iconButton2.FlatAppearance.BorderSize = 0;
+            iconButton2.FlatStyle = FlatStyle.Flat;
+            iconButton2.ForeColor = Color.White;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowsRotate;
+            iconButton2.IconColor = Color.White;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton2.IconSize = 20;
+            iconButton2.Location = new Point(422, 3);
+            iconButton2.Margin = new Padding(1, 3, 1, 3);
+            iconButton2.Name = "iconButton2";
+            iconButton2.Size = new Size(77, 29);
+            iconButton2.TabIndex = 2;
+            iconButton2.Text = "Refresh";
+            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
+            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.Controls.Add(txt_search);
+            flowLayoutPanel1.Controls.Add(btn_search);
+            flowLayoutPanel1.Controls.Add(iconButton2);
+            flowLayoutPanel1.Dock = DockStyle.Top;
+            flowLayoutPanel1.Location = new Point(0, 40);
+            flowLayoutPanel1.Margin = new Padding(0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(800, 35);
+            flowLayoutPanel1.TabIndex = 31;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(label_total);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(0, 423);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(800, 27);
+            panel1.TabIndex = 34;
+            // 
             // emp_DocumentsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -353,8 +353,8 @@
         private Label label_total;
         private DataGridViewTextBoxColumn ID;
         private DataGridView dgrid_documents;
-        private TextBox textBox1;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private TextBox txt_search;
+        private FontAwesome.Sharp.IconButton btn_search;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;

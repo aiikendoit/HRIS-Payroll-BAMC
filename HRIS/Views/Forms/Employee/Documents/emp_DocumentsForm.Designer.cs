@@ -39,16 +39,18 @@
             label_total = new Label();
             ID = new DataGridViewTextBoxColumn();
             dgrid_documents = new DataGridView();
-            Code = new DataGridViewTextBoxColumn();
-            DocType = new DataGridViewTextBoxColumn();
-            Description = new DataGridViewTextBoxColumn();
-            Remarks = new DataGridViewTextBoxColumn();
-            Column1 = new DataGridViewTextBoxColumn();
             txt_search = new TextBox();
             btn_search = new FontAwesome.Sharp.IconButton();
             iconButton2 = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new Panel();
+            Code = new DataGridViewTextBoxColumn();
+            DocType = new DataGridViewTextBoxColumn();
+            Description = new DataGridViewTextBoxColumn();
+            Remarks = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
+            viewButtonColumn = new DataGridViewButtonColumn();
+            editButtonColumn = new DataGridViewButtonColumn();
             flowLayoutPanel2.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
@@ -194,7 +196,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_documents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_documents.ColumnHeadersHeight = 50;
-            dgrid_documents.Columns.AddRange(new DataGridViewColumn[] { Code, DocType, Description, Remarks, Column1 });
+            dgrid_documents.Columns.AddRange(new DataGridViewColumn[] { Code, DocType, Description, Remarks, Column1, viewButtonColumn, editButtonColumn });
             dgrid_documents.Dock = DockStyle.Fill;
             dgrid_documents.Location = new Point(0, 111);
             dgrid_documents.Name = "dgrid_documents";
@@ -202,46 +204,8 @@
             dgrid_documents.RowTemplate.Height = 25;
             dgrid_documents.Size = new Size(800, 312);
             dgrid_documents.TabIndex = 33;
+            dgrid_documents.CellContentClick += dgrid_documents_CellContentClick;
             dgrid_documents.CellFormatting += dgrid_documents_CellFormatting;
-            // 
-            // Code
-            // 
-            Code.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Code.HeaderText = "Code";
-            Code.Name = "Code";
-            Code.ReadOnly = true;
-            Code.Width = 80;
-            // 
-            // DocType
-            // 
-            DocType.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            DocType.HeaderText = "Document Type";
-            DocType.Name = "DocType";
-            DocType.ReadOnly = true;
-            DocType.Width = 150;
-            // 
-            // Description
-            // 
-            Description.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Description.HeaderText = "Description";
-            Description.Name = "Description";
-            Description.ReadOnly = true;
-            Description.Width = 92;
-            // 
-            // Remarks
-            // 
-            Remarks.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Remarks.HeaderText = "Remarks";
-            Remarks.Name = "Remarks";
-            Remarks.ReadOnly = true;
-            Remarks.Width = 77;
-            // 
-            // Column1
-            // 
-            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column1.HeaderText = "";
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
             // 
             // txt_search
             // 
@@ -318,6 +282,61 @@
             panel1.Size = new Size(800, 27);
             panel1.TabIndex = 34;
             // 
+            // Code
+            // 
+            Code.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Code.HeaderText = "Code";
+            Code.Name = "Code";
+            Code.ReadOnly = true;
+            Code.Width = 80;
+            // 
+            // DocType
+            // 
+            DocType.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            DocType.HeaderText = "Document Type";
+            DocType.Name = "DocType";
+            DocType.ReadOnly = true;
+            DocType.Width = 150;
+            // 
+            // Description
+            // 
+            Description.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Description.HeaderText = "Description";
+            Description.Name = "Description";
+            Description.ReadOnly = true;
+            Description.Width = 92;
+            // 
+            // Remarks
+            // 
+            Remarks.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Remarks.HeaderText = "Remarks";
+            Remarks.Name = "Remarks";
+            Remarks.ReadOnly = true;
+            Remarks.Width = 77;
+            // 
+            // Column1
+            // 
+            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column1.HeaderText = "";
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            // 
+            // viewButtonColumn
+            // 
+            viewButtonColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            viewButtonColumn.HeaderText = "";
+            viewButtonColumn.Name = "viewButtonColumn";
+            viewButtonColumn.ReadOnly = true;
+            viewButtonColumn.Width = 60;
+            // 
+            // editButtonColumn
+            // 
+            editButtonColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            editButtonColumn.HeaderText = "";
+            editButtonColumn.Name = "editButtonColumn";
+            editButtonColumn.ReadOnly = true;
+            editButtonColumn.Width = 60;
+            // 
             // emp_DocumentsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -366,5 +385,7 @@
         private DataGridViewTextBoxColumn Description;
         private DataGridViewTextBoxColumn Remarks;
         private DataGridViewTextBoxColumn Column1;
+        private DataGridViewButtonColumn viewButtonColumn;
+        private DataGridViewButtonColumn editButtonColumn;
     }
 }

@@ -43,7 +43,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(22, 53);
+            label2.Location = new Point(23, 47);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(118, 21);
@@ -54,7 +54,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(51, 86);
+            label3.Location = new Point(23, 80);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(89, 21);
@@ -81,7 +81,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(69, 119);
+            label4.Location = new Point(23, 113);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(71, 21);
@@ -99,7 +99,7 @@
             // label_FilePath
             // 
             label_FilePath.AutoSize = true;
-            label_FilePath.Location = new Point(245, 204);
+            label_FilePath.Location = new Point(148, 232);
             label_FilePath.Name = "label_FilePath";
             label_FilePath.Size = new Size(70, 21);
             label_FilePath.TabIndex = 4;
@@ -112,7 +112,7 @@
             buttonAttachedFile.Name = "buttonAttachedFile";
             buttonAttachedFile.Size = new Size(91, 29);
             buttonAttachedFile.TabIndex = 5;
-            buttonAttachedFile.Text = "Attached";
+            buttonAttachedFile.Text = "Attach";
             buttonAttachedFile.UseVisualStyleBackColor = true;
             buttonAttachedFile.Click += buttonAttachedFile_Click;
             // 

@@ -26,11 +26,14 @@ using MaterialSkin.Controls;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using Microsoft.Win32;
+using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.WinForms.Input;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.Intrinsics.X86;
 using System.Security.Policy;
@@ -93,7 +96,16 @@ namespace HRIS.Forms.Employee
             //***********
             // Load data into combobox
             loadallCombobox();
-
+            formnumber();
+        }
+        private void formnumber()
+        {
+            NumberFormatInfo numberFormat = new NumberFormatInfo();
+            numberFormat.NumberGroupSeparator = "";
+            txt_sss.NumberFormatInfo = numberFormat;
+            txt_philhealth.NumberFormatInfo = numberFormat;
+            txt_tinnumber.NumberFormatInfo = numberFormat;
+            txt_pagibig.NumberFormatInfo = numberFormat;
         }
         public void loadallCombobox()
         {
@@ -485,7 +497,7 @@ namespace HRIS.Forms.Employee
             if (isUpdate)
             {
                 //Edit
-               
+
                 employee_Presenter.LoadEmployeewithWhere(employeeid);
                 if (isviewingArchive)
                 {

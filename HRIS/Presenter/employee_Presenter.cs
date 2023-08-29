@@ -136,6 +136,7 @@ namespace HRIS.Presenter
                          && (EmpStat.Enddate == null || EmpStat.Enddate > DateTime.Now)
                          && empWorkAss.IsDeleted != true && (empWorkAss.Enddate == null || empWorkAss.Enddate > DateTime.Now)
                         && ((deptname != "Not Applicable" && dept.Description == deptname) || (deptname == "Not Applicable" && dept.Description != "xxx"))
+                        orderby empInfo.Lastname
                         select new
                         {
                             ID = empInfo.PkEmployee,

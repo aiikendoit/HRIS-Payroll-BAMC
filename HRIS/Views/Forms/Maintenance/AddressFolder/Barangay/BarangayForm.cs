@@ -13,26 +13,84 @@ using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Maintenance.AddressFolder.Barangay;
 using HRIS.Views.Forms.Maintenance.CivilStatus;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace HRIS.Forms.Maintenance.Barangay
 {
     public partial class BarangayForm : Form, IBarangayView
     {
         private readonly barangay_Presenter barangay_Presenter;
+        private readonly HrisContext context = new HrisContext();
         public BarangayForm()
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_barangay);
             barangay_Presenter = new barangay_Presenter(this);
             barangay_Presenter.LoadAllBarangay();
+            //loadbrgy();
         }
 
         public void clearfields()
         {
 
         }
+        private void loadbrgy()
+        {
+            //HrisContext hrisContext = new HrisContext();
+            //try
+            //{
+            //    using (var dbContext = new HrisContext())
+            //    {
+            //        var connectionString = dbContext.Database.GetConnectionString();
+            //        using (var connection = new SqlConnection(connectionString))
+            //        {
+            //            string query = @"SELECT [PK_barangay][Code]
+            //                                ,[description][Barangay Name]
+            //                                ,[isActive]
+            //                            FROM [HRIS].[Template].[barangay]";
+            //            using (var command = new SqlCommand(query, connection))
+            //            {
+            //                connection.Open();
+            //                DataTable dataTable = new DataTable();
+            //                dataTable.Load(command.ExecuteReader());
+            //                dgrid_barangay.DataSource = dataTable;
+            //            }
+            //        }
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Cursor.Current = Cursors.Default;
+            //    MessageBox.Show(ex.Message);
+            //}
+
+        }
+        public DataTable ConvertListToDataTable(List<Models.Barangay> list)
+        {
+            DataTable dt = new DataTable();
+
+            dt.Columns.Add("ID", typeof(int));
+            dt.Columns.Add("BarangayName", typeof(string));
+            dt.Columns.Add("isActive", typeof(bool));
+            dt.Columns.Add("Createddate", typeof(DateTime));
+
+            foreach (var item in list)
+            {
+                dt.Rows.Add(item.PkBarangay, item.Description, item.IsActive, item.Createddate);
+            }
+
+            return dt;
+        }
         public void DisplayBarangay(List<Models.Barangay> Barangays)
         {
+
+            //var p = Barangays.ToList();
+            //var datatable = ConvertListToDataTable(p);
+            //dgrid_barangay.DataSource = datatable;
+
             dgrid_barangay.DataSource = null;
             dgrid_barangay.DataSource = Barangays;
             dgrid_barangay.Columns[0].HeaderText = "ID";
@@ -40,9 +98,10 @@ namespace HRIS.Forms.Maintenance.Barangay
             dgrid_barangay.Columns[3].HeaderText = "Created date";
             dgrid_barangay.Columns[1].HeaderText = "Barangay Name";
             dgrid_barangay.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
             if (dgrid_barangay.ColumnCount == 8)
             {
-                //Remove unnecessary column
+                // Remove unnecessary column
                 dgrid_barangay.Columns[7].Visible = false;
                 dgrid_barangay.Columns[6].Visible = false;
                 dgrid_barangay.Columns[5].Visible = false;

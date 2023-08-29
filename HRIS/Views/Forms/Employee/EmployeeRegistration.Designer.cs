@@ -49,6 +49,7 @@
             btn_employment = new FontAwesome.Sharp.IconButton();
             btn_basicinformation = new FontAwesome.Sharp.IconButton();
             panel_basicinfo = new Panel();
+            txt_sss = new Syncfusion.WinForms.Input.SfNumericTextBox();
             txt_rfid = new TextBox();
             label1 = new Label();
             checkBox_isactive = new CheckBox();
@@ -66,14 +67,11 @@
             radioButton_female = new RadioButton();
             radioButton_male = new RadioButton();
             txt_birthdate = new DateTimePicker();
-            txt_tinnumber = new TextBox();
-            txt_philhealth = new TextBox();
             txt_emergencyContactName = new TextBox();
             txt_emailaddress = new TextBox();
             txt_extensionname = new TextBox();
             txt_firstname = new TextBox();
             txt_completeaddress = new TextBox();
-            txt_pagibig = new TextBox();
             txt_accountnumber = new TextBox();
             txt_cellno = new TextBox();
             txt_suffix = new TextBox();
@@ -81,7 +79,6 @@
             label13 = new Label();
             txt_emergencyContactno = new TextBox();
             txt_biometric = new TextBox();
-            txt_sss = new TextBox();
             txt_telephoneno = new TextBox();
             txt_middlename = new TextBox();
             label22 = new Label();
@@ -126,6 +123,9 @@
             MainPanel = new Panel();
             panel4 = new Panel();
             openFileDialog1 = new OpenFileDialog();
+            txt_pagibig = new Syncfusion.WinForms.Input.SfNumericTextBox();
+            txt_philhealth = new Syncfusion.WinForms.Input.SfNumericTextBox();
+            txt_tinnumber = new Syncfusion.WinForms.Input.SfNumericTextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btn_sidebardrawer).BeginInit();
             panelmenu.SuspendLayout();
@@ -590,6 +590,10 @@
             // 
             panel_basicinfo.AutoScroll = true;
             panel_basicinfo.BackColor = Color.White;
+            panel_basicinfo.Controls.Add(txt_tinnumber);
+            panel_basicinfo.Controls.Add(txt_philhealth);
+            panel_basicinfo.Controls.Add(txt_pagibig);
+            panel_basicinfo.Controls.Add(txt_sss);
             panel_basicinfo.Controls.Add(txt_rfid);
             panel_basicinfo.Controls.Add(label1);
             panel_basicinfo.Controls.Add(checkBox_isactive);
@@ -607,14 +611,11 @@
             panel_basicinfo.Controls.Add(radioButton_female);
             panel_basicinfo.Controls.Add(radioButton_male);
             panel_basicinfo.Controls.Add(txt_birthdate);
-            panel_basicinfo.Controls.Add(txt_tinnumber);
-            panel_basicinfo.Controls.Add(txt_philhealth);
             panel_basicinfo.Controls.Add(txt_emergencyContactName);
             panel_basicinfo.Controls.Add(txt_emailaddress);
             panel_basicinfo.Controls.Add(txt_extensionname);
             panel_basicinfo.Controls.Add(txt_firstname);
             panel_basicinfo.Controls.Add(txt_completeaddress);
-            panel_basicinfo.Controls.Add(txt_pagibig);
             panel_basicinfo.Controls.Add(txt_accountnumber);
             panel_basicinfo.Controls.Add(txt_cellno);
             panel_basicinfo.Controls.Add(txt_suffix);
@@ -622,7 +623,6 @@
             panel_basicinfo.Controls.Add(label13);
             panel_basicinfo.Controls.Add(txt_emergencyContactno);
             panel_basicinfo.Controls.Add(txt_biometric);
-            panel_basicinfo.Controls.Add(txt_sss);
             panel_basicinfo.Controls.Add(txt_telephoneno);
             panel_basicinfo.Controls.Add(txt_middlename);
             panel_basicinfo.Controls.Add(label22);
@@ -661,6 +661,21 @@
             panel_basicinfo.Name = "panel_basicinfo";
             panel_basicinfo.Size = new Size(916, 488);
             panel_basicinfo.TabIndex = 0;
+            // 
+            // txt_sss
+            // 
+            txt_sss.AllowNull = true;
+            txt_sss.BorderStyle = BorderStyle.FixedSingle;
+            txt_sss.ForeColor = SystemColors.WindowText;
+            txt_sss.HideTrailingZeros = true;
+            txt_sss.Location = new Point(698, 251);
+            txt_sss.Name = "txt_sss";
+            txt_sss.Size = new Size(198, 23);
+            txt_sss.Style.FocusBorderColor = Color.FromArgb(0, 120, 215);
+            txt_sss.Style.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_sss.TabIndex = 34;
+            txt_sss.Text = "";
+            txt_sss.Value = null;
             // 
             // txt_rfid
             // 
@@ -845,22 +860,6 @@
             txt_birthdate.TabIndex = 7;
             txt_birthdate.ValueChanged += dateTimePicker1_ValueChanged;
             // 
-            // txt_tinnumber
-            // 
-            txt_tinnumber.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_tinnumber.Location = new Point(698, 327);
-            txt_tinnumber.Name = "txt_tinnumber";
-            txt_tinnumber.Size = new Size(198, 23);
-            txt_tinnumber.TabIndex = 29;
-            // 
-            // txt_philhealth
-            // 
-            txt_philhealth.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_philhealth.Location = new Point(698, 302);
-            txt_philhealth.Name = "txt_philhealth";
-            txt_philhealth.Size = new Size(198, 23);
-            txt_philhealth.TabIndex = 28;
-            // 
             // txt_emergencyContactName
             // 
             txt_emergencyContactName.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -905,14 +904,6 @@
             txt_completeaddress.Size = new Size(219, 99);
             txt_completeaddress.TabIndex = 10;
             txt_completeaddress.TextChanged += textBox9_TextChanged;
-            // 
-            // txt_pagibig
-            // 
-            txt_pagibig.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_pagibig.Location = new Point(698, 277);
-            txt_pagibig.Name = "txt_pagibig";
-            txt_pagibig.Size = new Size(198, 23);
-            txt_pagibig.TabIndex = 27;
             // 
             // txt_accountnumber
             // 
@@ -973,14 +964,6 @@
             txt_biometric.Size = new Size(219, 23);
             txt_biometric.TabIndex = 1;
             txt_biometric.TextChanged += textBox2_TextChanged;
-            // 
-            // txt_sss
-            // 
-            txt_sss.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_sss.Location = new Point(698, 252);
-            txt_sss.Name = "txt_sss";
-            txt_sss.Size = new Size(198, 23);
-            txt_sss.TabIndex = 26;
             // 
             // txt_telephoneno
             // 
@@ -1423,6 +1406,51 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
+            // txt_pagibig
+            // 
+            txt_pagibig.AllowNull = true;
+            txt_pagibig.BorderStyle = BorderStyle.FixedSingle;
+            txt_pagibig.ForeColor = SystemColors.WindowText;
+            txt_pagibig.HideTrailingZeros = true;
+            txt_pagibig.Location = new Point(698, 277);
+            txt_pagibig.Name = "txt_pagibig";
+            txt_pagibig.Size = new Size(198, 23);
+            txt_pagibig.Style.FocusBorderColor = Color.FromArgb(0, 120, 215);
+            txt_pagibig.Style.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_pagibig.TabIndex = 34;
+            txt_pagibig.Text = "";
+            txt_pagibig.Value = null;
+            // 
+            // txt_philhealth
+            // 
+            txt_philhealth.AllowNull = true;
+            txt_philhealth.BorderStyle = BorderStyle.FixedSingle;
+            txt_philhealth.ForeColor = SystemColors.WindowText;
+            txt_philhealth.HideTrailingZeros = true;
+            txt_philhealth.Location = new Point(698, 303);
+            txt_philhealth.Name = "txt_philhealth";
+            txt_philhealth.Size = new Size(198, 23);
+            txt_philhealth.Style.FocusBorderColor = Color.FromArgb(0, 120, 215);
+            txt_philhealth.Style.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_philhealth.TabIndex = 34;
+            txt_philhealth.Text = "";
+            txt_philhealth.Value = null;
+            // 
+            // txt_tinnumber
+            // 
+            txt_tinnumber.AllowNull = true;
+            txt_tinnumber.BorderStyle = BorderStyle.FixedSingle;
+            txt_tinnumber.ForeColor = SystemColors.WindowText;
+            txt_tinnumber.HideTrailingZeros = true;
+            txt_tinnumber.Location = new Point(698, 329);
+            txt_tinnumber.Name = "txt_tinnumber";
+            txt_tinnumber.Size = new Size(198, 23);
+            txt_tinnumber.Style.FocusBorderColor = Color.FromArgb(0, 120, 215);
+            txt_tinnumber.Style.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_tinnumber.TabIndex = 34;
+            txt_tinnumber.Text = "";
+            txt_tinnumber.Value = null;
+            // 
             // EmployeeRegistration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1517,15 +1545,11 @@
         private Label label27;
         private Label label23;
         private PictureBox profilepic;
-        private TextBox txt_philhealth;
-        private TextBox txt_pagibig;
-        private TextBox txt_sss;
         private Label label33;
         private Label label32;
         private Label label34;
         private Label label31;
         private Button btn_save;
-        private TextBox txt_tinnumber;
         private Label label35;
         private Button btn_cancel;
         private Panel MainPanel;
@@ -1550,5 +1574,9 @@
         private Label label1;
         private Label txt_department;
         private Label txt_status;
+        private Syncfusion.WinForms.Input.SfNumericTextBox txt_sss;
+        private Syncfusion.WinForms.Input.SfNumericTextBox txt_pagibig;
+        private Syncfusion.WinForms.Input.SfNumericTextBox txt_philhealth;
+        private Syncfusion.WinForms.Input.SfNumericTextBox txt_tinnumber;
     }
 }

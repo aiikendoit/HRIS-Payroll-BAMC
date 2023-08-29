@@ -118,8 +118,8 @@ namespace HRIS
             // 
             picturebox_profilepicture.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             picturebox_profilepicture.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            picturebox_profilepicture.BorderColor = Color.RoyalBlue;
-            picturebox_profilepicture.BorderColor2 = Color.HotPink;
+            picturebox_profilepicture.BorderColor = Color.LightCyan;
+            picturebox_profilepicture.BorderColor2 = Color.Azure;
             picturebox_profilepicture.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             picturebox_profilepicture.BorderSize = 2;
             picturebox_profilepicture.GradientAngle = 50F;
@@ -135,7 +135,7 @@ namespace HRIS
             // 
             label1_idno.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label1_idno.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1_idno.Location = new Point(555, 71);
+            label1_idno.Location = new Point(555, 73);
             label1_idno.Name = "label1_idno";
             label1_idno.Size = new Size(202, 17);
             label1_idno.TabIndex = 3;
@@ -145,8 +145,8 @@ namespace HRIS
             // label_completename
             // 
             label_completename.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label_completename.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label_completename.Location = new Point(555, 53);
+            label_completename.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label_completename.Location = new Point(555, 51);
             label_completename.Name = "label_completename";
             label_completename.Size = new Size(202, 17);
             label_completename.TabIndex = 3;

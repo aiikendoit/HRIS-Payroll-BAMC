@@ -28,7 +28,7 @@ namespace HRIS.Views.Forms.Employee.Documents
         private readonly documenttype_Presenter doctype_Presenter;
         private readonly EmployeeDocument_Presenter empDocs_Presenter;
         private readonly HrisContext _context;
-        
+
         private emp_DocumentsForm _docsForm;
         private Models.Employeedocument SelectedEmployeeDocs;
 
@@ -112,7 +112,7 @@ namespace HRIS.Views.Forms.Employee.Documents
                 //if (UniversalStatic.IsEmpty(txt_expiryreminder)) return;
                 string? createdby = Properties.Settings.Default.completename;
                 int id = Properties.Settings.Default.usercode;
-                
+
                 var cv = new Models.Employeedocument
                 {
                     FkEmployee = PKEmploye,
@@ -146,7 +146,7 @@ namespace HRIS.Views.Forms.Employee.Documents
                     // If 'No', do something here.
 
                 }
-                
+
             }
             catch (Exception x)
             {
@@ -190,7 +190,7 @@ namespace HRIS.Views.Forms.Employee.Documents
 
         public void DisplayEmployeeInActive(List<object> employees)
         {
-            
+
         }
 
         public void putdata(int employeedocument)
@@ -211,7 +211,7 @@ namespace HRIS.Views.Forms.Employee.Documents
                 comboBox_DocType.Enabled = false;
                 textBox_Description.Enabled = false;
                 richTextBox_Remarks.Enabled = false;
-                buttonAttachedFile.Enabled  = false;
+                buttonAttachedFile.Enabled = false;
                 btn_save.Visible = false;
             }
         }

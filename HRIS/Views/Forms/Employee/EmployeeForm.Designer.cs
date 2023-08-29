@@ -41,6 +41,14 @@
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
             dgrid_employee = new DataGridView();
+            panel1 = new Panel();
+            txt_totalcount = new Label();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            btn_inactiveEmployee = new FontAwesome.Sharp.IconButton();
+            label3 = new Label();
+            btn_userRegistration = new FontAwesome.Sharp.IconButton();
+            label2 = new Label();
             PKEmployeeID = new DataGridViewTextBoxColumn();
             ProfilePicture = new DataGridViewImageColumn();
             EmployeeID = new DataGridViewTextBoxColumn();
@@ -51,14 +59,6 @@
             EmploymentStatus = new DataGridViewTextBoxColumn();
             Address = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
-            panel1 = new Panel();
-            txt_totalcount = new Label();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            btn_inactiveEmployee = new FontAwesome.Sharp.IconButton();
-            label3 = new Label();
-            btn_userRegistration = new FontAwesome.Sharp.IconButton();
-            label2 = new Label();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgrid_employee).BeginInit();
@@ -234,6 +234,10 @@
             // 
             // dgrid_employee
             // 
+            dgrid_employee.AllowUserToAddRows = false;
+            dgrid_employee.AllowUserToDeleteRows = false;
+            dgrid_employee.AllowUserToOrderColumns = true;
+            dgrid_employee.AllowUserToResizeRows = false;
             dgrid_employee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.IndianRed;
@@ -254,86 +258,6 @@
             dgrid_employee.CellFormatting += dgrid_employee_CellFormatting;
             dgrid_employee.SizeChanged += dgrid_employee_SizeChanged;
             dgrid_employee.Paint += dgrid_employee_Paint;
-            // 
-            // PKEmployeeID
-            // 
-            PKEmployeeID.HeaderText = "ID";
-            PKEmployeeID.Name = "PKEmployeeID";
-            PKEmployeeID.Visible = false;
-            // 
-            // ProfilePicture
-            // 
-            ProfilePicture.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            ProfilePicture.FillWeight = 324.8731F;
-            ProfilePicture.HeaderText = "";
-            ProfilePicture.Name = "ProfilePicture";
-            ProfilePicture.Resizable = DataGridViewTriState.True;
-            ProfilePicture.SortMode = DataGridViewColumnSortMode.Automatic;
-            ProfilePicture.Width = 80;
-            // 
-            // EmployeeID
-            // 
-            EmployeeID.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            EmployeeID.DefaultCellStyle = dataGridViewCellStyle2;
-            EmployeeID.FillWeight = 67.87527F;
-            EmployeeID.HeaderText = "Employee ID";
-            EmployeeID.Name = "EmployeeID";
-            EmployeeID.Width = 80;
-            // 
-            // Name
-            // 
-            Name.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Name.FillWeight = 67.87527F;
-            Name.HeaderText = "Name";
-            Name.Name = "Name";
-            Name.Width = 200;
-            // 
-            // Gender
-            // 
-            Gender.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Gender.FillWeight = 67.87527F;
-            Gender.HeaderText = "Gender";
-            Gender.Name = "Gender";
-            Gender.Width = 80;
-            // 
-            // Department
-            // 
-            Department.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Department.FillWeight = 67.87527F;
-            Department.HeaderText = "Department";
-            Department.Name = "Department";
-            Department.Width = 200;
-            // 
-            // Position
-            // 
-            Position.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Position.FillWeight = 67.87527F;
-            Position.HeaderText = "Position";
-            Position.Name = "Position";
-            Position.Width = 150;
-            // 
-            // EmploymentStatus
-            // 
-            EmploymentStatus.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            EmploymentStatus.FillWeight = 67.87527F;
-            EmploymentStatus.HeaderText = "Employment Status";
-            EmploymentStatus.Name = "EmploymentStatus";
-            EmploymentStatus.Width = 150;
-            // 
-            // Address
-            // 
-            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Address.FillWeight = 67.87527F;
-            Address.HeaderText = "Address";
-            Address.Name = "Address";
-            Address.Width = 74;
-            // 
-            // Column1
-            // 
-            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column1.HeaderText = "";
-            Column1.Name = "Column1";
             // 
             // panel1
             // 
@@ -453,6 +377,86 @@
             label2.Text = "ACTION";
             label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // PKEmployeeID
+            // 
+            PKEmployeeID.HeaderText = "ID";
+            PKEmployeeID.Name = "PKEmployeeID";
+            PKEmployeeID.Visible = false;
+            // 
+            // ProfilePicture
+            // 
+            ProfilePicture.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            ProfilePicture.FillWeight = 324.8731F;
+            ProfilePicture.HeaderText = "";
+            ProfilePicture.Name = "ProfilePicture";
+            ProfilePicture.Resizable = DataGridViewTriState.True;
+            ProfilePicture.SortMode = DataGridViewColumnSortMode.Automatic;
+            ProfilePicture.Width = 80;
+            // 
+            // EmployeeID
+            // 
+            EmployeeID.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            EmployeeID.DefaultCellStyle = dataGridViewCellStyle2;
+            EmployeeID.FillWeight = 67.87527F;
+            EmployeeID.HeaderText = "Employee ID";
+            EmployeeID.Name = "EmployeeID";
+            EmployeeID.Width = 80;
+            // 
+            // Name
+            // 
+            Name.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Name.FillWeight = 67.87527F;
+            Name.HeaderText = "Name";
+            Name.Name = "Name";
+            Name.Width = 64;
+            // 
+            // Gender
+            // 
+            Gender.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Gender.FillWeight = 67.87527F;
+            Gender.HeaderText = "Gender";
+            Gender.Name = "Gender";
+            Gender.Width = 80;
+            // 
+            // Department
+            // 
+            Department.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Department.FillWeight = 67.87527F;
+            Department.HeaderText = "Department";
+            Department.Name = "Department";
+            Department.Width = 200;
+            // 
+            // Position
+            // 
+            Position.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Position.FillWeight = 67.87527F;
+            Position.HeaderText = "Position";
+            Position.Name = "Position";
+            Position.Width = 150;
+            // 
+            // EmploymentStatus
+            // 
+            EmploymentStatus.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            EmploymentStatus.FillWeight = 67.87527F;
+            EmploymentStatus.HeaderText = "Employment Status";
+            EmploymentStatus.Name = "EmploymentStatus";
+            EmploymentStatus.Width = 150;
+            // 
+            // Address
+            // 
+            Address.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Address.FillWeight = 67.87527F;
+            Address.HeaderText = "Address";
+            Address.Name = "Address";
+            Address.Width = 74;
+            // 
+            // Column1
+            // 
+            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column1.HeaderText = "";
+            Column1.Name = "Column1";
+            // 
             // EmployeeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -498,6 +502,8 @@
         private FontAwesome.Sharp.IconButton btn_userRegistration;
         private Label label2;
         private Label label3;
+        private ComboBox txt_department;
+        private Label label1;
         private DataGridViewTextBoxColumn PKEmployeeID;
         private DataGridViewImageColumn ProfilePicture;
         private DataGridViewTextBoxColumn EmployeeID;
@@ -508,7 +514,5 @@
         private DataGridViewTextBoxColumn EmploymentStatus;
         private DataGridViewTextBoxColumn Address;
         private DataGridViewTextBoxColumn Column1;
-        private ComboBox txt_department;
-        private Label label1;
     }
 }

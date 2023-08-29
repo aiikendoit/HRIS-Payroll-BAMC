@@ -36,8 +36,8 @@ namespace HRIS
             userlogin_Presenter.loadlogin(employeeid);
             label_completename.Text = completename;
             label1_idno.Text = employeeid;
-            
-            
+
+
 
         }
         private void activatebutton(Object senderbtn, Color customcolor)
@@ -183,7 +183,7 @@ namespace HRIS
 
         public void DisplaySystemUsers(List<SystemUser> SystemUsers)
         {
-           // throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
 
         public void DisplayUserCustom(List<object> systemuser)

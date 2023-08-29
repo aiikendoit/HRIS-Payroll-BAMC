@@ -334,8 +334,6 @@
             Controls.Add(label3);
             Controls.Add(label4);
             Controls.Add(label19);
-            MaximizeBox = false;
-            MinimizeBox = false;
             Name = "emp_AddworkAssignment";
             StartPosition = FormStartPosition.CenterParent;
             Load += emp_AddworkAssignment_Load;

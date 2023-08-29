@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BarangayForm));
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             btn_edit = new FontAwesome.Sharp.IconButton();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
@@ -37,7 +36,6 @@
             txt_totalcount = new Label();
             panel1 = new Panel();
             ID = new DataGridViewTextBoxColumn();
-            dgrid_barangay = new DataGridView();
             txt_search = new TextBox();
             btn_search = new FontAwesome.Sharp.IconButton();
             btn_refresh = new FontAwesome.Sharp.IconButton();
@@ -45,12 +43,13 @@
             btn_new = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel2 = new FlowLayoutPanel();
+            dgrid_barangay = new DataGridView();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgrid_barangay).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgrid_barangay).BeginInit();
             SuspendLayout();
             // 
             // btn_edit
@@ -129,26 +128,6 @@
             // 
             ID.HeaderText = "ID";
             ID.Name = "ID";
-            // 
-            // dgrid_barangay
-            // 
-            dgrid_barangay.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.IndianRed;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgrid_barangay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgrid_barangay.ColumnHeadersHeight = 50;
-            dgrid_barangay.Dock = DockStyle.Fill;
-            dgrid_barangay.Location = new Point(0, 108);
-            dgrid_barangay.Name = "dgrid_barangay";
-            dgrid_barangay.RowTemplate.Height = 25;
-            dgrid_barangay.Size = new Size(705, 277);
-            dgrid_barangay.TabIndex = 23;
-            dgrid_barangay.CellDoubleClick += dgrid_barangay_CellDoubleClick;
             // 
             // txt_search
             // 
@@ -270,6 +249,16 @@
             flowLayoutPanel2.Size = new Size(705, 36);
             flowLayoutPanel2.TabIndex = 22;
             // 
+            // dgrid_barangay
+            // 
+            dgrid_barangay.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgrid_barangay.Dock = DockStyle.Fill;
+            dgrid_barangay.Location = new Point(0, 108);
+            dgrid_barangay.Name = "dgrid_barangay";
+            dgrid_barangay.RowTemplate.Height = 25;
+            dgrid_barangay.Size = new Size(705, 277);
+            dgrid_barangay.TabIndex = 26;
+            // 
             // BarangayForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -289,10 +278,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgrid_barangay).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
             flowLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgrid_barangay).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -305,7 +294,6 @@
         private Label txt_totalcount;
         private Panel panel1;
         private DataGridViewTextBoxColumn ID;
-        private DataGridView dgrid_barangay;
         private TextBox txt_search;
         private FontAwesome.Sharp.IconButton btn_search;
         private FontAwesome.Sharp.IconButton btn_refresh;
@@ -314,5 +302,6 @@
         private FontAwesome.Sharp.IconButton btn_view;
         private FlowLayoutPanel flowLayoutPanel2;
         private PictureBox pictureBox1;
+        private DataGridView dgrid_barangay;
     }
 }

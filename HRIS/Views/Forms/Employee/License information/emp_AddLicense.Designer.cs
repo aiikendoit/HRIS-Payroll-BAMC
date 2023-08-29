@@ -89,6 +89,7 @@
             btn_cancel.TabIndex = 5;
             btn_cancel.Text = "Cancel";
             btn_cancel.UseVisualStyleBackColor = false;
+            btn_cancel.Click += btn_cancel_Click;
             // 
             // btn_save
             // 
@@ -120,6 +121,7 @@
             txt_remarks.Location = new Point(154, 174);
             txt_remarks.Multiline = true;
             txt_remarks.Name = "txt_remarks";
+            txt_remarks.ScrollBars = ScrollBars.Vertical;
             txt_remarks.Size = new Size(229, 104);
             txt_remarks.TabIndex = 3;
             // 

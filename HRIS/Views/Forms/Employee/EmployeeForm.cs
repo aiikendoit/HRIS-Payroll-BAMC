@@ -27,14 +27,14 @@ namespace HRIS.Forms.Employee
         public EmployeeForm()
         {
             InitializeComponent();
-            UniversalStatic.customDatagrid(dgrid_employee);
+           UniversalStatic.customDatagrid(dgrid_employee);
 
             employee_Presenter = new employee_Presenter(this);
             department_Presenter = new department_Presenter(this);
             department_Presenter.LoadDepartment();
             isViewingArchive = false;
             loadEmployee();
-            
+
         }
 
         public void DisplayEmployee(List<Models.Employee> employees)
@@ -43,34 +43,6 @@ namespace HRIS.Forms.Employee
         private void changeDgridSize()
         {
 
-            //dgrid_employee.Columns[0].Visible = false;
-            //dgrid_employee.Columns["Gender"].Width = 80;
-            //dgrid_employee.Columns["Department"].Width = 250;
-            //dgrid_employee.Columns["Position"].Width = 160;
-            //dgrid_employee.Columns["EmploymentStatus"].Width = 250;
-            ////dgrid_employee.Columns["Address"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            //dgrid_employee.Columns["EmployeeID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //dgrid_employee.Columns[1].HeaderText = "";
-            //int totalColumnWidth = 0;
-
-            //// Calculate the sum of column widths
-            //foreach (DataGridViewColumn column in dgrid_employee.Columns)
-            //{
-            //    totalColumnWidth += column.Width;
-            //}
-            ////MessageBox.Show(totalColumnWidth.ToString());
-            ////MessageBox.Show(dgrid_employee.Width.ToString());
-            //if (totalColumnWidth < dgrid_employee.Width)
-            //{
-            //    dgrid_employee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            //    dgrid_employee.Columns["Address"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            //}
-            //else
-            //{
-            //    dgrid_employee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-            //    dgrid_employee.Columns["Address"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            //}
-            //Image Column
             foreach (DataGridViewColumn column in dgrid_employee.Columns)
             {
                 if (column is DataGridViewImageColumn)
@@ -146,18 +118,18 @@ namespace HRIS.Forms.Employee
         {
             Department selectedDepartment = (Department)txt_department.SelectedItem; // Cast to the appropriate type
             string dept = selectedDepartment.Description ?? string.Empty;
-                string searchQuery = txt_search.Text.Trim();
-                if (string.IsNullOrEmpty(searchQuery))
-                {
-                    loadEmployee();
-                }
-                else
-                {
-                    employee_Presenter.SearchData(searchQuery);
-                }
-           
+            string searchQuery = txt_search.Text.Trim();
+            if (string.IsNullOrEmpty(searchQuery))
+            {
+                loadEmployee();
+            }
+            else
+            {
+                employee_Presenter.SearchData(searchQuery);
+            }
 
-            
+
+
         }
 
         private void txt_search_TextChanged(object sender, EventArgs e)

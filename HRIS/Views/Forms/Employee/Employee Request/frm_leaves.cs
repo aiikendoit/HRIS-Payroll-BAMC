@@ -63,7 +63,6 @@ namespace HRIS.Views.Forms.Employee.Employee_Request
             {
                 int leavetypeid = (int)txt_leavetype.SelectedValue;
                 employee_Leavesetting_Presenter.LoadLeavesetting_forLeaveFiling(id, leavetypeid);
-                // Proceed with using leavetypeid
             }
 
 
@@ -88,6 +87,7 @@ namespace HRIS.Views.Forms.Employee.Employee_Request
 
             TimeSpan difference = detfrom - detnow;
             TimeSpan thirtyDays = TimeSpan.FromDays(30);
+
             txt_totaldays.Text = difference.ToString();
             if (difference >= thirtyDays)
             {

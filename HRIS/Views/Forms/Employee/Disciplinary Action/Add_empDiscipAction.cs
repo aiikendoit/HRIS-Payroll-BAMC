@@ -83,6 +83,7 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
 
         private void button_attach_Click(object sender, EventArgs e)
         {
+            //upload files
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image Files (*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tif;*.tiff;*.pdf)|*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tif;*.tiff;*.pdf";
             if (openFileDialog.ShowDialog() == DialogResult.OK)

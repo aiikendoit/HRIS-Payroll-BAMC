@@ -160,7 +160,7 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
 
         private void update()
         {
-
+             
         }
     }
 }

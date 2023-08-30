@@ -42,11 +42,18 @@ namespace HRIS.Forms.Employee.Documents
                 btn_Edit.Visible = false;
                 btn_viewDocs.Visible = true;
             }
+
+            btn_Edit.Visible = false;
+            btn_viewDocs.Visible = false;
         }
 
         private void loadEmployeeDocumentsData()//where ID
         {
             _presenterEmployeeDocs.loadEmployeeDocsDetails(EmpID);
+            editButtonColumn.Text = "Edit"; // Set default text for the button
+            editButtonColumn.UseColumnTextForButtonValue = true; // This will display the text in the button cells
+            viewButtonColumn.Text = "View";
+            viewButtonColumn.UseColumnTextForButtonValue = true;
         }
 
         private void emp_DocumentsForm_Load(object sender, EventArgs e)
@@ -151,6 +158,30 @@ namespace HRIS.Forms.Employee.Documents
         private void iconButton2_Click(object sender, EventArgs e)
         {
             loadEmployeeDocumentsData();
+        }
+
+        private void dgrid_documents_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                var row = dgrid_documents.Rows[e.RowIndex];
+
+                if (e.ColumnIndex == editButtonColumn.Index)
+                {
+                    var PkEmployeedocument = dgrid_documents.SelectedRows[0].Cells[0].Value;
+                    Add_Docs empDoc = new Add_Docs(EmpID);
+                    empDoc.isUpdate = true;
+                    empDoc.putdata(Convert.ToInt32(PkEmployeedocument));
+                    empDoc.ShowDialog();
+                    loadEmployeeDocumentsData();
+                }
+                else if (e.ColumnIndex == viewButtonColumn.Index)
+                {
+                    int PKEmployeeID = (int)row.Cells[0].Value;
+                    var empDocs = new PreviewDocs(PKEmployeeID);
+                    empDocs.ShowDialog(this);
+                }
+            }
         }
     }
 }

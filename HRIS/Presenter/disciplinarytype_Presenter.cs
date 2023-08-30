@@ -1,6 +1,7 @@
 ﻿using HRIS.Models;
 using HRIS.Views.Forms.Maintenance.Degreetype;
 using HRIS.Views.Forms.Maintenance.Disciplinary;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +15,15 @@ namespace HRIS.Presenter
         private readonly IDisciplinaryView _view;
         private readonly HrisContext _context;
         private List<Disciplinarytype> disciplinarytypes;
+
+        private List<object> disciplinaryTypeListObject;
         public disciplinarytype_Presenter(IDisciplinaryView view)
         {
             _view = view;
             _context = new HrisContext();
-            disciplinarytypes = new List<Disciplinarytype>();
+            //disciplinarytypes = new List<Disciplinarytype>();
+
+            disciplinaryTypeListObject = new List<object>();
         }
         public void LoadDisciplinary()
         {

@@ -119,7 +119,7 @@
             // 
             // btn_save
             // 
-            btn_save.Location = new Point(337, 290);
+            btn_save.Location = new Point(337, 219);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(88, 41);
             btn_save.TabIndex = 3;
@@ -162,7 +162,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(450, 356);
+            ClientSize = new Size(450, 282);
             Controls.Add(dateTimePicker_End);
             Controls.Add(dateTimePicker_Start);
             Controls.Add(btn_save);

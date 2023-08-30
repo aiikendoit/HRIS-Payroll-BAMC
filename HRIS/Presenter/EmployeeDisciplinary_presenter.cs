@@ -36,22 +36,6 @@ namespace HRIS.Presenter
 
         public void loadEmpDiscAcWhere(int PKEmployeeId) // join query
         {
-            //var query = from e2 in _dbcontext.Employeedisciplinaries
-            //            join employee in _dbcontext.Employees on e2.FkEmployee equals employee.PkEmployee
-            //            join d in _dbcontext.Disciplinarytypes on e2.FkDisciplinarytype equals d.PkDisciplinarytype
-            //            join o in _dbcontext.Offensetypes on e2.FkOffensetype equals o.PkOffensetype
-            //            select new
-            //            {
-            //                e2.PkEmployeedisciplinary,
-            //                e2.FkEmployee,
-            //                e2.FkOffensetype,
-            //                e2.FkDisciplinarytype,
-            //                employee.Lastname,
-            //                employee.Firstname,
-            //                o.Description,
-            //                d.Disciplinarytypename,
-            //                d.Disciplinarydescription
-            //            };
 
             var query = from e in _dbcontext.Employeedisciplinaries
                          //join e2 in _dbcontext.Employees on e.FkEmployee equals e2.PkEmployee
@@ -91,10 +75,16 @@ namespace HRIS.Presenter
 
         public void AddEmplDiscAct(Employeedisciplinary employeedisciplinary) //add method
         {
-            _dbcontext.Employeedisciplinaries.Add(employeedisciplinary);
-            _dbcontext.SaveChanges();
-            MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            loadEmpDscActAll();
+            try
+            {
+                _dbcontext.Employeedisciplinaries.Add(employeedisciplinary);
+                _dbcontext.SaveChanges();
+                MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.InnerException.ToString());
+            }
         }
 
         public void UpdateEmpDiscAct(Employeedisciplinary employeedisciplinary) //update method
@@ -102,7 +92,7 @@ namespace HRIS.Presenter
             _dbcontext.Employeedisciplinaries.Update(employeedisciplinary);
             _dbcontext.SaveChanges();
             MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            loadEmpDscActAll();
+            //loadEmpDscActAll();
         }
     }
 }

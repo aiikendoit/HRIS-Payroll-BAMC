@@ -588,7 +588,7 @@ public partial class YourDbContext : DbContext
             entity.Property(e => e.PkEmployeedisciplinary)
                 .ValueGeneratedNever()
                 .HasColumnName("PK_employeedisciplinary");
-            entity.Property(e => e.Createby).HasColumnName("createby");
+            entity.Property(e => e.Createdby).HasColumnName("createby");
             entity.Property(e => e.Createddate)
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");

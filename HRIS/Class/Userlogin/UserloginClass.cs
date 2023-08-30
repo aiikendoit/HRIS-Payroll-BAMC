@@ -35,12 +35,13 @@ namespace HRIS.Class.Userlogin
                                 if (reader.Read())
                                 {
                                     string? completename = reader["completename"].ToString();
-
+                                    int id = reader.GetInt32("id");
                                     string employeeidno = reader.GetString("usercode").ToString();
+                                    int pkemployee = reader.GetInt32("PKEmployee");
                                     Properties.Settings.Default.completename = completename;
                                     Properties.Settings.Default.usercode = id;
                                     Properties.Settings.Default.employeeidno = employeeidno;
-                                   
+                                    Properties.Settings.Default.pkemployeeno = pkemployee;
                                     Properties.Settings.Default.Save();
                                     hasdata = true;
                                     Cursor.Current = Cursors.Default;

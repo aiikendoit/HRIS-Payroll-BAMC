@@ -19,8 +19,10 @@ namespace HRIS.Views.Forms.Employee.Employee_Request
 
         private void btn_leaves_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             var l = new frm_leaves();
             l.ShowDialog();
+            
         }
     }
 }

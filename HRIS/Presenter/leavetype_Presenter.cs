@@ -26,6 +26,14 @@ namespace HRIS.Presenter
             leavetypesData = p;
             _view.DisplayLeavetype(p);
         }
+        public void LoadLeavetype_forrequest(int employeeid)
+        {
+            var p = from leavetype in _context.Leavetypes
+                    join levesetting in _context.Leavessettings on leavetype.PkLeavetype equals levesetting.FkLeavetype
+                    where levesetting.FkEmployee == employeeid && levesetting.IsDeleted == false
+                    select leavetype;
+            _view.DisplayLeavetype(p.ToList());
+        }
         public void AddLeavetype(Leavetype leavetype)
         {
             _context.Leavetypes.Add(leavetype);

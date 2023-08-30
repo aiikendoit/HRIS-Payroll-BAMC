@@ -35,7 +35,7 @@
             dateTimePicker1 = new DateTimePicker();
             button4 = new Button();
             button3 = new Button();
-            comboBox3 = new ComboBox();
+            txt_relationshipcombo = new ComboBox();
             label22 = new Label();
             label3 = new Label();
             label19 = new Label();
@@ -44,12 +44,14 @@
             label4 = new Label();
             textBox3 = new TextBox();
             label5 = new Label();
-            comboBox1 = new ComboBox();
+            txt_civilstatuscombo = new ComboBox();
             label6 = new Label();
             textBox4 = new TextBox();
             checkBox1 = new CheckBox();
             label7 = new Label();
             textBox5 = new TextBox();
+            txt_address = new TextBox();
+            label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -109,7 +111,7 @@
             button4.BackColor = Color.Transparent;
             button4.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(338, 325);
+            button4.Location = new Point(338, 426);
             button4.Name = "button4";
             button4.Size = new Size(91, 36);
             button4.TabIndex = 65;
@@ -122,21 +124,22 @@
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.ForeColor = Color.White;
-            button3.Location = new Point(241, 325);
+            button3.Location = new Point(241, 426);
             button3.Name = "button3";
             button3.Size = new Size(91, 36);
             button3.TabIndex = 64;
             button3.Text = "Save";
             button3.UseVisualStyleBackColor = false;
             // 
-            // comboBox3
+            // txt_relationshipcombo
             // 
-            comboBox3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(174, 203);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(255, 25);
-            comboBox3.TabIndex = 63;
+            txt_relationshipcombo.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_relationshipcombo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_relationshipcombo.FormattingEnabled = true;
+            txt_relationshipcombo.Location = new Point(174, 203);
+            txt_relationshipcombo.Name = "txt_relationshipcombo";
+            txt_relationshipcombo.Size = new Size(255, 25);
+            txt_relationshipcombo.TabIndex = 63;
             // 
             // label22
             // 
@@ -214,14 +217,15 @@
             label5.TabIndex = 59;
             label5.Text = "Civil Status";
             // 
-            // comboBox1
+            // txt_civilstatuscombo
             // 
-            comboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(174, 234);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(255, 25);
-            comboBox1.TabIndex = 63;
+            txt_civilstatuscombo.DropDownStyle = ComboBoxStyle.DropDownList;
+            txt_civilstatuscombo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_civilstatuscombo.FormattingEnabled = true;
+            txt_civilstatuscombo.Location = new Point(174, 234);
+            txt_civilstatuscombo.Name = "txt_civilstatuscombo";
+            txt_civilstatuscombo.Size = new Size(255, 25);
+            txt_civilstatuscombo.TabIndex = 63;
             // 
             // label6
             // 
@@ -244,7 +248,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(174, 296);
+            checkBox1.Location = new Point(174, 375);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(135, 19);
             checkBox1.TabIndex = 68;
@@ -269,12 +273,33 @@
             textBox5.Size = new Size(141, 25);
             textBox5.TabIndex = 67;
             // 
+            // txt_address
+            // 
+            txt_address.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_address.Location = new Point(174, 296);
+            txt_address.Multiline = true;
+            txt_address.Name = "txt_address";
+            txt_address.Size = new Size(254, 73);
+            txt_address.TabIndex = 69;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(50, 299);
+            label8.Name = "label8";
+            label8.Size = new Size(56, 17);
+            label8.TabIndex = 70;
+            label8.Text = "Address";
+            // 
             // emp_AddDependent
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(440, 376);
+            ClientSize = new Size(440, 473);
+            Controls.Add(label8);
+            Controls.Add(txt_address);
             Controls.Add(checkBox1);
             Controls.Add(textBox5);
             Controls.Add(textBox3);
@@ -287,8 +312,8 @@
             Controls.Add(label7);
             Controls.Add(button3);
             Controls.Add(label4);
-            Controls.Add(comboBox1);
-            Controls.Add(comboBox3);
+            Controls.Add(txt_civilstatuscombo);
+            Controls.Add(txt_relationshipcombo);
             Controls.Add(label1);
             Controls.Add(label22);
             Controls.Add(label6);
@@ -315,7 +340,7 @@
         private DateTimePicker dateTimePicker1;
         private Button button4;
         private Button button3;
-        private ComboBox comboBox3;
+        private ComboBox txt_relationshipcombo;
         private Label label22;
         private Label label3;
         private Label label19;
@@ -330,5 +355,8 @@
         private CheckBox checkBox1;
         private Label label7;
         private TextBox textBox5;
+        private TextBox txt_address;
+        private Label label8;
+        private ComboBox txt_civilstatuscombo;
     }
 }

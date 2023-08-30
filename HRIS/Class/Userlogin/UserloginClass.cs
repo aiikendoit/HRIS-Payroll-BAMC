@@ -35,7 +35,7 @@ namespace HRIS.Class.Userlogin
                                 if (reader.Read())
                                 {
                                     string? completename = reader["completename"].ToString();
-                                    int id = reader.GetInt32("id");
+
                                     string employeeidno = reader.GetString("usercode").ToString();
                                     Properties.Settings.Default.completename = completename;
                                     Properties.Settings.Default.usercode = id;

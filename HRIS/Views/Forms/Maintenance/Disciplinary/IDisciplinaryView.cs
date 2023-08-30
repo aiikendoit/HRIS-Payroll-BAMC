@@ -9,5 +9,6 @@ namespace HRIS.Views.Forms.Maintenance.Disciplinary
     public interface IDisciplinaryView
     {
         void DisplayDisciplinaryType(List<Models.Disciplinarytype> disciplinaries);
+        void DisplayDisciplinaryType_ListObject(List<object> disciplinaries);
     }
 }

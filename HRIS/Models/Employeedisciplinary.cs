@@ -23,11 +23,15 @@ public partial class Employeedisciplinary
 
     public DateTime? Createddate { get; set; }
 
-    public int? Createby { get; set; }
+    public string? Createdby { get; set; }
+
+    public int? FkSystemUser { get; set; }
 
     public virtual Disciplinarytype? FkDisciplinarytypeNavigation { get; set; }
 
     public virtual Employee? FkEmployeeNavigation { get; set; }
 
     public virtual Offensetype? FkOffensetypeNavigation { get; set; }
+
+    public virtual SystemUser? FkSystemUserNavigation { get; set; }
 }

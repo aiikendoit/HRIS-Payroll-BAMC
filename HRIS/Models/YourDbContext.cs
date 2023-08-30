@@ -585,10 +585,11 @@ public partial class YourDbContext : DbContext
 
             entity.ToTable("employeedisciplinary", "HR");
 
-            entity.Property(e => e.PkEmployeedisciplinary)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_employeedisciplinary");
-            entity.Property(e => e.Createby).HasColumnName("createby");
+            entity.Property(e => e.PkEmployeedisciplinary).HasColumnName("PK_employeedisciplinary");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
@@ -607,18 +608,23 @@ public partial class YourDbContext : DbContext
             entity.Property(e => e.FkDisciplinarytype).HasColumnName("FK_disciplinarytype");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkOffensetype).HasColumnName("FK_offensetype");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
 
-            //entity.HasOne(d => d.FkDisciplinarytypeNavigation).WithMany(p => p.Employeedisciplinaries)
-            //    .HasForeignKey(d => d.FkDisciplinarytype)
-            //    .HasConstraintName("FK_employeedisciplinary_disciplinarytype");
+            entity.HasOne(d => d.FkDisciplinarytypeNavigation).WithMany(p => p.Employeedisciplinaries)
+                .HasForeignKey(d => d.FkDisciplinarytype)
+                .HasConstraintName("FK_employeedisciplinary_disciplinarytype");
 
             entity.HasOne(d => d.FkEmployeeNavigation).WithMany(p => p.Employeedisciplinaries)
                 .HasForeignKey(d => d.FkEmployee)
                 .HasConstraintName("FK_employeedisciplinary_employee");
 
-            //entity.HasOne(d => d.FkOffensetypeNavigation).WithMany(p => p.Employeedisciplinaries)
-            //    .HasForeignKey(d => d.FkOffensetype)
-            //    .HasConstraintName("FK_employeedisciplinary_offensetype");
+            entity.HasOne(d => d.FkOffensetypeNavigation).WithMany(p => p.Employeedisciplinaries)
+                .HasForeignKey(d => d.FkOffensetype)
+                .HasConstraintName("FK_employeedisciplinary_offensetype");
+
+            entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.Employeedisciplinaries)
+                .HasForeignKey(d => d.FkSystemUser)
+                .HasConstraintName("FK_employeedisciplinary_systemUser");
         });
 
         modelBuilder.Entity<Employeedocument>(entity =>

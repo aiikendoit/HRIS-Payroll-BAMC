@@ -2,6 +2,7 @@
 using HRIS.Models;
 using HRIS.Presenter;
 using HRIS.Views.Forms.Employee.Disciplinary_Action;
+using HRIS.Views.Forms.Employee.Documents;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,9 +22,10 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
         public emp_DisciplinaryActionForm(int PkEmployeeID)
         {
             InitializeComponent();
+            UniversalStatic.customDatagrid(dgrid_disciplinaryAction);
             emplDiscAct_presenter = new EmployeeDisciplinary_presenter(this);
             EmpID = PkEmployeeID;
-            UniversalStatic.customDatagrid(dgrid_disciplinaryAction);
+
             emplDiscAct_presenter.loadEmpDscActAll();
             loadAllDiscActWhere();
         }
@@ -40,21 +42,7 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
 
         public void DisplayEmployeeDscAct_All(List<Employeedisciplinary> employeedisciplinaries)
         {
-            //dgrid_disciplinaryAction.DataSource = employeedisciplinaries;
-            //dgrid_disciplinaryAction.Columns[0].HeaderText = "ID";
-            //dgrid_disciplinaryAction.Columns["Description"].HeaderText = "Description";
-            //dgrid_disciplinaryAction.Columns["Createddate"].HeaderText = "Created date";
-            ////dgrid_disciplinaryAction.Columns["Createdby"].HeaderText = "Created by";
-            //dgrid_disciplinaryAction.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            //if (dgrid_disciplinaryAction.ColumnCount == 8)
-            //{
 
-            //    dgrid_disciplinaryAction.Columns.RemoveAt(7);
-            //    dgrid_disciplinaryAction.Columns.RemoveAt(6);
-            //    dgrid_disciplinaryAction.Columns.RemoveAt(5);
-            //}
-            //dgrid_disciplinaryAction.AutoGenerateColumns = false;
-            //txt_totalcount.Text = "Total count(s): " + dgrid_disciplinaryAction.RowCount.ToString();
         }
 
         public void displayEmployeeDscAct_ListObject(List<object> employeedisciplinaries)
@@ -63,11 +51,15 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
             {
                 dgrid_disciplinaryAction.AutoGenerateColumns = false;
                 dgrid_disciplinaryAction.Columns["Code"].DataPropertyName = "PkEmployeedisciplinary";
-                dgrid_disciplinaryAction.Columns["offensetype"].DataPropertyName = "FkOffensetype";
-                dgrid_disciplinaryAction.Columns["disciplinaryType"].DataPropertyName = "FkDisciplinarytype";
-                dgrid_disciplinaryAction.Columns["description"].DataPropertyName = "Description";
-                dgrid_disciplinaryAction.Columns["lastname"].DataPropertyName = "Lastname";
-                dgrid_disciplinaryAction.Columns["firstname"].DataPropertyName = "Firstname";
+                dgrid_disciplinaryAction.Columns["offensetypeDescr"].DataPropertyName = "FK_offensetype";
+                dgrid_disciplinaryAction.Columns["disciplinaryTypeName"].DataPropertyName = "FK_disciplinarytype";
+                dgrid_disciplinaryAction.Columns["empDA_Descr"].DataPropertyName = "Description";
+                dgrid_disciplinaryAction.Columns["datestart"].DataPropertyName = "Datestart";
+                dgrid_disciplinaryAction.Columns["dateEnd"].DataPropertyName = "Dateend";
+                dgrid_disciplinaryAction.Columns["file"].DataPropertyName = "File";
+                dgrid_disciplinaryAction.Columns["createdDate"].DataPropertyName = "Createddate";
+                dgrid_disciplinaryAction.Columns["createdBy"].DataPropertyName = "Createdby";
+                //dgrid_disciplinaryAction.Columns["fkSystemUser"].DataPropertyName = "FK_systemUser";
 
                 dgrid_disciplinaryAction.DataSource = employeedisciplinaries;
             }
@@ -83,6 +75,13 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
         private void emp_DisciplinaryActionForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            var addNew = new Add_empDiscipAction(EmpID);
+            addNew.ShowDialog();
+            //loadEmployeeDocumentsData();
         }
     }
 }

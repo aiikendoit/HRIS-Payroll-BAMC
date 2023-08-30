@@ -100,14 +100,17 @@
             button_attach.TabIndex = 3;
             button_attach.Text = "Attach";
             button_attach.UseVisualStyleBackColor = true;
+            button_attach.Click += button_attach_Click;
             // 
             // label_filePath
             // 
             label_filePath.AutoSize = true;
             label_filePath.Location = new Point(247, 143);
             label_filePath.Margin = new Padding(4, 0, 4, 0);
+            label_filePath.MaximumSize = new Size(173, 21);
+            label_filePath.MinimumSize = new Size(100, 21);
             label_filePath.Name = "label_filePath";
-            label_filePath.Size = new Size(68, 21);
+            label_filePath.Size = new Size(100, 21);
             label_filePath.TabIndex = 0;
             label_filePath.Text = "File Path";
             // 
@@ -135,7 +138,9 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(4, 4, 4, 4);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(4);
+            MaximizeBox = false;
             Name = "Add_empDiscipAction";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Employee Disciplinary Action";

@@ -99,7 +99,8 @@
             // label_FilePath
             // 
             label_FilePath.AutoSize = true;
-            label_FilePath.Location = new Point(148, 232);
+            label_FilePath.Location = new Point(245, 204);
+            label_FilePath.MaximumSize = new Size(173, 21);
             label_FilePath.Name = "label_FilePath";
             label_FilePath.Size = new Size(70, 21);
             label_FilePath.TabIndex = 4;

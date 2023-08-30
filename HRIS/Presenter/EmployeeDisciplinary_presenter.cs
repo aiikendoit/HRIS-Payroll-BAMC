@@ -13,23 +13,16 @@ namespace HRIS.Presenter
     {
         private readonly IEmployeeDisciplinaryActionView empDA_view;
         private readonly HrisContext _dbcontext;
-
+        private List<object> empDAListObject;
         private List<Employeedisciplinary> empDA_ListData;
 
-        //option 1
-        //public EmployeeDisciplinary_presenter(IEmployeeDisciplinaryActionView empDA_view, HrisContext dbcontext, List<Employeedisciplinary> empDA_ListData)
-        //{
-        //    this.empDA_view = empDA_view;
-        //    _dbcontext = dbcontext;
-        //    this.empDA_ListData = empDA_ListData;
-        //}   
-
-        //option 2
         public EmployeeDisciplinary_presenter(IEmployeeDisciplinaryActionView view)
         {
             empDA_view = view;
             _dbcontext = new HrisContext();
-            empDA_ListData = new List<Employeedisciplinary>();
+            empDAListObject = new List<object>();
+
+
         }
 
         public void loadEmpDscActAll() //retrieve all data
@@ -43,22 +36,46 @@ namespace HRIS.Presenter
 
         public void loadEmpDiscAcWhere(int PKEmployeeId) // join query
         {
-            var query = from e2 in _dbcontext.Employeedisciplinaries
-                        join employee in _dbcontext.Employees on e2.FkEmployee equals employee.PkEmployee
-                        join d in _dbcontext.Disciplinarytypes on e2.FkDisciplinarytype equals d.PkDisciplinarytype
-                        join o in _dbcontext.Offensetypes on e2.FkOffensetype equals o.PkOffensetype
-                        select new
-                        {
-                            e2.PkEmployeedisciplinary,
-                            e2.FkEmployee,
-                            e2.FkOffensetype,
-                            e2.FkDisciplinarytype,
-                            employee.Lastname,
-                            employee.Firstname,
-                            o.Description,
-                            d.Disciplinarytypename,
-                            d.Disciplinarydescription
-                        };
+            //var query = from e2 in _dbcontext.Employeedisciplinaries
+            //            join employee in _dbcontext.Employees on e2.FkEmployee equals employee.PkEmployee
+            //            join d in _dbcontext.Disciplinarytypes on e2.FkDisciplinarytype equals d.PkDisciplinarytype
+            //            join o in _dbcontext.Offensetypes on e2.FkOffensetype equals o.PkOffensetype
+            //            select new
+            //            {
+            //                e2.PkEmployeedisciplinary,
+            //                e2.FkEmployee,
+            //                e2.FkOffensetype,
+            //                e2.FkDisciplinarytype,
+            //                employee.Lastname,
+            //                employee.Firstname,
+            //                o.Description,
+            //                d.Disciplinarytypename,
+            //                d.Disciplinarydescription
+            //            };
+
+            var query = from e in _dbcontext.Employeedisciplinaries
+                         //join e2 in _dbcontext.Employees on e.FkEmployee equals e2.PkEmployee
+                         join d in _dbcontext.Disciplinarytypes on e.FkDisciplinarytype equals d.PkDisciplinarytype
+                         join o in _dbcontext.Offensetypes on e.FkOffensetype equals o.PkOffensetype
+                         where e.FkEmployee == PKEmployeeId
+                         select new
+                         {
+                             e.PkEmployeedisciplinary,
+                             fk_employee = e.FkEmployee,
+                             FK_offensetype = o.Description,
+                             FK_disciplinarytype = d.Disciplinarytypename,
+                             //o.Description,
+                             //d.Disciplinarytypename,
+                             e.Description,
+                             e.Datestart,
+                             e.Dateend,
+                             e.File,
+                             e.Createddate,
+                             e.Createdby
+                         };
+
+            empDAListObject = query.ToList<object>();
+            empDA_view.displayEmployeeDscAct_ListObject(empDAListObject);
         }
 
         internal void SearchData(string searchQuery) //search text box

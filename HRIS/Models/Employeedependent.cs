@@ -25,6 +25,8 @@ public partial class Employeedependent
 
     public int? Contactno { get; set; }
 
+    public byte[]? Address { get; set; }
+
     public bool? IsQualifiedDependent { get; set; }
 
     public DateTime? Createddate { get; set; }

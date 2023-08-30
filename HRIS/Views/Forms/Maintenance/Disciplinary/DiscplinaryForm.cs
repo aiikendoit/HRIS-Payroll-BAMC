@@ -86,5 +86,10 @@ namespace HRIS.Forms.Maintenance.Disciplinary
                 disciplinarytype_Presenter.LoadDisciplinary();
             }
         }
+
+        public void DisplayDisciplinaryType_ListObject(List<object> disciplinaries)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

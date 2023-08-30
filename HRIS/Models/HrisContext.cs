@@ -712,9 +712,7 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.Description)
                 .IsUnicode(false)
                 .HasColumnName("description");
-            entity.Property(e => e.File)
-                .HasMaxLength(1)
-                .HasColumnName("file");
+            entity.Property(e => e.File).HasColumnName("file");
             entity.Property(e => e.FkDisciplinarytype).HasColumnName("FK_disciplinarytype");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkOffensetype).HasColumnName("FK_offensetype");

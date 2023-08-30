@@ -92,5 +92,75 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
                 label_filePath.Text = selectedFilePath;
             }
         }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            if (isUpdate)
+            {
+                update();
+            }
+            else
+            {
+                save();
+            }
+        }
+
+        private void save()
+        {
+            try
+            {
+
+                //if (UniversalStatic.IsEmpty(txt_expiryreminder)) return;
+                string? createdby = Properties.Settings.Default.completename;
+                int id = Properties.Settings.Default.usercode;
+
+                var cv = new Models.Employeedisciplinary
+                {
+                    FkEmployee = PKEmployee,
+                    FkOffensetype = Convert.ToInt32(comboBox_offenseType.SelectedValue),
+                    FkDisciplinarytype = Convert.ToInt32(comboBox_discplnryType.SelectedValue),
+                    Description = textBox_Description.Text,
+                    //Remarks = richTextBox_Remarks.Text,
+                    Datestart = dateTimePicker_Start.Value,
+                    Dateend = dateTimePicker_End.Value,
+                    Createddate = DateTime.Now, //get current date
+                    Createdby = createdby,
+                    FkSystemUser = id
+                };
+
+                if (!string.IsNullOrEmpty(selectedFilePath)) // Make sure a file is selected
+                {
+                    byte[] fileData = File.ReadAllBytes(selectedFilePath);
+                    cv.File = fileData; // Set the file data to the EmployeeDocs property
+                }
+
+                empDA_presenter.AddEmplDiscAct(cv);//add method for presenter
+
+                var confirmResult = MessageBox.Show("Are you sure to add this item ??",
+                                     "Confirm Add!!",
+                                     MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    // If 'Yes', do something here.
+                    MessageBox.Show("Added Successfuly", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    // If 'No', do something here.
+
+                }
+
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.Message.ToString());
+            }
+        }
+
+        private void update()
+        {
+            
+        }
     }
 }

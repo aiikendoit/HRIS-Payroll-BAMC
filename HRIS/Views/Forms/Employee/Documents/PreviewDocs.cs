@@ -68,7 +68,7 @@ namespace HRIS.Views.Forms.Employee.Documents
                 }
             }
         }
-        private bool IsPDFStream(Stream stream)
+        private bool IsPDFStream(Stream stream)//retrieve pdf data
         {
             byte[] header = new byte[4];
             int bytesRead = stream.Read(header, 0, 4);
@@ -86,7 +86,7 @@ namespace HRIS.Views.Forms.Employee.Documents
             return false;
         }
 
-        private bool IsImageStream(Stream stream)
+        private bool IsImageStream(Stream stream)//retrieve data in different file extensions
         {
             byte[] header = new byte[8];
             int bytesRead = stream.Read(header, 0, 8);

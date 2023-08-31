@@ -46,11 +46,13 @@
             createdDate = new DataGridViewTextBoxColumn();
             createdBy = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
+            viewButtonColumn = new DataGridViewButtonColumn();
+            editButtonColumn = new DataGridViewButtonColumn();
             textBox1 = new TextBox();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             iconButton2 = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            btn_save = new FontAwesome.Sharp.IconButton();
+            btn_new = new FontAwesome.Sharp.IconButton();
             btn_edit = new FontAwesome.Sharp.IconButton();
             btn_view = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel2 = new FlowLayoutPanel();
@@ -133,7 +135,7 @@
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             dgrid_disciplinaryAction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgrid_disciplinaryAction.ColumnHeadersHeight = 50;
-            dgrid_disciplinaryAction.Columns.AddRange(new DataGridViewColumn[] { Code, offensetypeDescr, disciplinaryTypeName, empDA_Descr, datestart, dateEnd, file, createdDate, createdBy, Column1 });
+            dgrid_disciplinaryAction.Columns.AddRange(new DataGridViewColumn[] { Code, offensetypeDescr, disciplinaryTypeName, empDA_Descr, datestart, dateEnd, file, createdDate, createdBy, Column1, viewButtonColumn, editButtonColumn });
             dgrid_disciplinaryAction.Dock = DockStyle.Fill;
             dgrid_disciplinaryAction.Location = new Point(0, 111);
             dgrid_disciplinaryAction.Name = "dgrid_disciplinaryAction";
@@ -141,6 +143,7 @@
             dgrid_disciplinaryAction.RowTemplate.Height = 25;
             dgrid_disciplinaryAction.Size = new Size(800, 339);
             dgrid_disciplinaryAction.TabIndex = 23;
+            dgrid_disciplinaryAction.CellContentClick += dgrid_disciplinaryAction_CellContentClick;
             // 
             // Code
             // 
@@ -152,11 +155,10 @@
             // 
             // offensetypeDescr
             // 
-            offensetypeDescr.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            offensetypeDescr.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             offensetypeDescr.HeaderText = "Offense Type";
             offensetypeDescr.Name = "offensetypeDescr";
             offensetypeDescr.ReadOnly = true;
-            offensetypeDescr.Width = 92;
             // 
             // disciplinaryTypeName
             // 
@@ -196,7 +198,7 @@
             file.HeaderText = "File";
             file.Name = "file";
             file.ReadOnly = true;
-            file.Width = 50;
+            file.Visible = false;
             // 
             // createdDate
             // 
@@ -204,7 +206,7 @@
             createdDate.HeaderText = "Created Date";
             createdDate.Name = "createdDate";
             createdDate.ReadOnly = true;
-            createdDate.Width = 92;
+            createdDate.Visible = false;
             // 
             // createdBy
             // 
@@ -212,7 +214,7 @@
             createdBy.HeaderText = "Created By";
             createdBy.Name = "createdBy";
             createdBy.ReadOnly = true;
-            createdBy.Width = 82;
+            createdBy.Visible = false;
             // 
             // Column1
             // 
@@ -220,6 +222,26 @@
             Column1.HeaderText = "";
             Column1.Name = "Column1";
             Column1.ReadOnly = true;
+            // 
+            // viewButtonColumn
+            // 
+            viewButtonColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            viewButtonColumn.HeaderText = "";
+            viewButtonColumn.Name = "viewButtonColumn";
+            viewButtonColumn.ReadOnly = true;
+            viewButtonColumn.Resizable = DataGridViewTriState.True;
+            viewButtonColumn.SortMode = DataGridViewColumnSortMode.Automatic;
+            viewButtonColumn.Width = 60;
+            // 
+            // editButtonColumn
+            // 
+            editButtonColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            editButtonColumn.HeaderText = "";
+            editButtonColumn.Name = "editButtonColumn";
+            editButtonColumn.ReadOnly = true;
+            editButtonColumn.Resizable = DataGridViewTriState.True;
+            editButtonColumn.SortMode = DataGridViewColumnSortMode.Automatic;
+            editButtonColumn.Width = 60;
             // 
             // textBox1
             // 
@@ -284,26 +306,26 @@
             flowLayoutPanel1.Size = new Size(800, 35);
             flowLayoutPanel1.TabIndex = 21;
             // 
-            // btn_save
+            // btn_new
             // 
-            btn_save.BackColor = Color.FromArgb(0, 127, 152);
-            btn_save.FlatAppearance.BorderSize = 0;
-            btn_save.FlatStyle = FlatStyle.Flat;
-            btn_save.ForeColor = Color.White;
-            btn_save.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
-            btn_save.IconColor = Color.White;
-            btn_save.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_save.IconSize = 20;
-            btn_save.Location = new Point(3, 3);
-            btn_save.Margin = new Padding(3, 3, 1, 3);
-            btn_save.Name = "btn_save";
-            btn_save.Size = new Size(73, 30);
-            btn_save.TabIndex = 4;
-            btn_save.Text = "New";
-            btn_save.TextAlign = ContentAlignment.MiddleLeft;
-            btn_save.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_save.UseVisualStyleBackColor = false;
-            btn_save.Click += btn_save_Click;
+            btn_new.BackColor = Color.FromArgb(0, 127, 152);
+            btn_new.FlatAppearance.BorderSize = 0;
+            btn_new.FlatStyle = FlatStyle.Flat;
+            btn_new.ForeColor = Color.White;
+            btn_new.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
+            btn_new.IconColor = Color.White;
+            btn_new.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_new.IconSize = 20;
+            btn_new.Location = new Point(3, 3);
+            btn_new.Margin = new Padding(3, 3, 1, 3);
+            btn_new.Name = "btn_new";
+            btn_new.Size = new Size(73, 30);
+            btn_new.TabIndex = 4;
+            btn_new.Text = "New";
+            btn_new.TextAlign = ContentAlignment.MiddleLeft;
+            btn_new.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_new.UseVisualStyleBackColor = false;
+            btn_new.Click += btn_new_Click;
             // 
             // btn_edit
             // 
@@ -347,7 +369,7 @@
             // 
             // flowLayoutPanel2
             // 
-            flowLayoutPanel2.Controls.Add(btn_save);
+            flowLayoutPanel2.Controls.Add(btn_new);
             flowLayoutPanel2.Controls.Add(btn_edit);
             flowLayoutPanel2.Controls.Add(btn_view);
             flowLayoutPanel2.Dock = DockStyle.Top;
@@ -397,7 +419,7 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FlowLayoutPanel flowLayoutPanel1;
-        private FontAwesome.Sharp.IconButton btn_save;
+        private FontAwesome.Sharp.IconButton btn_new;
         private FontAwesome.Sharp.IconButton btn_edit;
         private FontAwesome.Sharp.IconButton btn_view;
         private FlowLayoutPanel flowLayoutPanel2;
@@ -411,5 +433,7 @@
         private DataGridViewTextBoxColumn createdDate;
         private DataGridViewTextBoxColumn createdBy;
         private DataGridViewTextBoxColumn Column1;
+        private DataGridViewButtonColumn viewButtonColumn;
+        private DataGridViewButtonColumn editButtonColumn;
     }
 }

@@ -19,7 +19,7 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
     {
         public int EmpID;
         private readonly EmployeeDisciplinary_presenter emplDiscAct_presenter;
-        public emp_DisciplinaryActionForm(int PkEmployeeID)
+        public emp_DisciplinaryActionForm(int PkEmployeeID, bool isUpdate)
         {
             InitializeComponent();
             UniversalStatic.customDatagrid(dgrid_disciplinaryAction);
@@ -28,11 +28,23 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
 
             emplDiscAct_presenter.loadEmpDscActAll();
             loadAllDiscActWhere();
+
+            // btn_viewDocs.Click += btn_viewDocs_Click;
+            if (isUpdate == false)
+            {
+                btn_new.Visible = false;
+                btn_edit.Visible = false;
+                btn_view.Visible = true;
+            }
         }
 
         private void loadAllDiscActWhere()
         {
             emplDiscAct_presenter.loadEmpDiscAcWhere(EmpID);
+            editButtonColumn.Text = "Edit"; // Set default text for the button
+            editButtonColumn.UseColumnTextForButtonValue = true; // This will display the text in the button cells
+            viewButtonColumn.Text = "View";
+            viewButtonColumn.UseColumnTextForButtonValue = true;
         }
 
         public void ClearFields()
@@ -77,11 +89,35 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
 
         }
 
-        private void btn_save_Click(object sender, EventArgs e)
+        private void btn_new_Click(object sender, EventArgs e)
         {
             var addNew = new Add_empDiscipAction(EmpID);
             addNew.ShowDialog();
-            //loadEmployeeDocumentsData();
+            loadAllDiscActWhere();
+        }
+
+        private void dgrid_disciplinaryAction_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                var row = dgrid_disciplinaryAction.Rows[e.RowIndex];
+
+                if (e.ColumnIndex == editButtonColumn.Index)
+                {
+                    var PkEmployeediscplnryActn = dgrid_disciplinaryAction.SelectedRows[0].Cells[0].Value;
+                    Add_empDiscipAction empDiscplnryActn = new Add_empDiscipAction(EmpID);
+                    empDiscplnryActn.isUpdate = true;
+                    empDiscplnryActn.putdata(Convert.ToInt32(PkEmployeediscplnryActn));
+                    empDiscplnryActn.ShowDialog();
+                    loadAllDiscActWhere();
+                }
+                else if (e.ColumnIndex == viewButtonColumn.Index)
+                {
+                    int PKEmployeeID = (int)row.Cells[0].Value;
+                    var empDocs = new PreviewDocs(PKEmployeeID);
+                    empDocs.ShowDialog(this);
+                }
+            }
         }
     }
 }

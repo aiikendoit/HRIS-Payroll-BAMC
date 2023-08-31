@@ -79,7 +79,7 @@ namespace HRIS.Presenter
             {
                 _dbcontext.Employeedisciplinaries.Add(employeedisciplinary);
                 _dbcontext.SaveChanges();
-                MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Successfully saved!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception x)
             {

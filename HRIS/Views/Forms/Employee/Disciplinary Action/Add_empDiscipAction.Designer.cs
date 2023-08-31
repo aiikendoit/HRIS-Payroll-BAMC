@@ -131,22 +131,22 @@
             // 
             dateTimePicker_Start.Format = DateTimePickerFormat.Short;
             dateTimePicker_Start.Location = new Point(165, 135);
-            dateTimePicker_Start.MaxDate = new DateTime(2023, 8, 30, 0, 0, 0, 0);
+            dateTimePicker_Start.MaxDate = new DateTime(2050, 12, 31, 0, 0, 0, 0);
             dateTimePicker_Start.Name = "dateTimePicker_Start";
             dateTimePicker_Start.Size = new Size(128, 29);
             dateTimePicker_Start.TabIndex = 4;
-            dateTimePicker_Start.Value = new DateTime(2023, 8, 30, 0, 0, 0, 0);
+            dateTimePicker_Start.Value = new DateTime(2023, 1, 1, 0, 0, 0, 0);
             // 
             // dateTimePicker_End
             // 
             dateTimePicker_End.Format = DateTimePickerFormat.Short;
             dateTimePicker_End.Location = new Point(299, 135);
-            dateTimePicker_End.MaxDate = new DateTime(2024, 12, 31, 0, 0, 0, 0);
+            dateTimePicker_End.MaxDate = new DateTime(2050, 12, 31, 0, 0, 0, 0);
             dateTimePicker_End.MinDate = new DateTime(2023, 1, 1, 0, 0, 0, 0);
             dateTimePicker_End.Name = "dateTimePicker_End";
             dateTimePicker_End.Size = new Size(126, 29);
             dateTimePicker_End.TabIndex = 4;
-            dateTimePicker_End.Value = new DateTime(2023, 8, 30, 0, 0, 0, 0);
+            dateTimePicker_End.Value = new DateTime(2023, 8, 1, 0, 0, 0, 0);
             // 
             // label4
             // 

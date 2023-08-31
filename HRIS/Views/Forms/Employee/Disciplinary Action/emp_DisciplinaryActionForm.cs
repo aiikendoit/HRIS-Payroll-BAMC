@@ -114,8 +114,8 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
                 else if (e.ColumnIndex == viewButtonColumn.Index)
                 {
                     int PKEmployeeID = (int)row.Cells[0].Value;
-                    var empDocs = new PreviewDocs(PKEmployeeID);
-                    empDocs.ShowDialog(this);
+                    var empDscplnryActn = new PreviewDocs(PKEmployeeID);//pass value to next winform
+                    empDscplnryActn.ShowDialog(this);
                 }
             }
         }

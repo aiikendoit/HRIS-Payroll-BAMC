@@ -102,5 +102,10 @@ namespace HRIS.Views.Forms.Maintenance.Disciplinary
                 save();
             }
         }
+
+        public void DisplayDisciplinaryType_ListObject(List<object> disciplinaries)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

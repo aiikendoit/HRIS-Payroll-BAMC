@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
@@ -36,21 +36,26 @@
             panel1 = new Panel();
             ID = new DataGridViewTextBoxColumn();
             dgrid_disciplinaryAction = new DataGridView();
+            Code = new DataGridViewTextBoxColumn();
+            offensetypeDescr = new DataGridViewTextBoxColumn();
+            disciplinaryTypeName = new DataGridViewTextBoxColumn();
+            empDA_Descr = new DataGridViewTextBoxColumn();
+            datestart = new DataGridViewTextBoxColumn();
+            dateEnd = new DataGridViewTextBoxColumn();
+            file = new DataGridViewTextBoxColumn();
+            createdDate = new DataGridViewTextBoxColumn();
+            createdBy = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
+            viewButtonColumn = new DataGridViewButtonColumn();
+            editButtonColumn = new DataGridViewButtonColumn();
             textBox1 = new TextBox();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             iconButton2 = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            iconButton5 = new FontAwesome.Sharp.IconButton();
+            btn_new = new FontAwesome.Sharp.IconButton();
+            btn_edit = new FontAwesome.Sharp.IconButton();
+            btn_view = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel2 = new FlowLayoutPanel();
-            Code = new DataGridViewTextBoxColumn();
-            offenseType = new DataGridViewTextBoxColumn();
-            disciplinaryType = new DataGridViewTextBoxColumn();
-            description = new DataGridViewTextBoxColumn();
-            lastname = new DataGridViewTextBoxColumn();
-            Firstname = new DataGridViewTextBoxColumn();
-            Column1 = new DataGridViewTextBoxColumn();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -121,16 +126,16 @@
             dgrid_disciplinaryAction.AllowUserToAddRows = false;
             dgrid_disciplinaryAction.AllowUserToDeleteRows = false;
             dgrid_disciplinaryAction.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.IndianRed;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgrid_disciplinaryAction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.IndianRed;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgrid_disciplinaryAction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgrid_disciplinaryAction.ColumnHeadersHeight = 50;
-            dgrid_disciplinaryAction.Columns.AddRange(new DataGridViewColumn[] { Code, offenseType, disciplinaryType, description, lastname, Firstname, Column1 });
+            dgrid_disciplinaryAction.Columns.AddRange(new DataGridViewColumn[] { Code, offensetypeDescr, disciplinaryTypeName, empDA_Descr, datestart, dateEnd, file, createdDate, createdBy, Column1, viewButtonColumn, editButtonColumn });
             dgrid_disciplinaryAction.Dock = DockStyle.Fill;
             dgrid_disciplinaryAction.Location = new Point(0, 111);
             dgrid_disciplinaryAction.Name = "dgrid_disciplinaryAction";
@@ -138,6 +143,105 @@
             dgrid_disciplinaryAction.RowTemplate.Height = 25;
             dgrid_disciplinaryAction.Size = new Size(800, 339);
             dgrid_disciplinaryAction.TabIndex = 23;
+            dgrid_disciplinaryAction.CellContentClick += dgrid_disciplinaryAction_CellContentClick;
+            // 
+            // Code
+            // 
+            Code.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Code.HeaderText = "Code";
+            Code.Name = "Code";
+            Code.ReadOnly = true;
+            Code.Width = 80;
+            // 
+            // offensetypeDescr
+            // 
+            offensetypeDescr.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            offensetypeDescr.HeaderText = "Offense Type";
+            offensetypeDescr.Name = "offensetypeDescr";
+            offensetypeDescr.ReadOnly = true;
+            // 
+            // disciplinaryTypeName
+            // 
+            disciplinaryTypeName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            disciplinaryTypeName.HeaderText = "Disciplinary Type";
+            disciplinaryTypeName.Name = "disciplinaryTypeName";
+            disciplinaryTypeName.ReadOnly = true;
+            disciplinaryTypeName.Width = 110;
+            // 
+            // empDA_Descr
+            // 
+            empDA_Descr.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            empDA_Descr.HeaderText = "Description";
+            empDA_Descr.Name = "empDA_Descr";
+            empDA_Descr.ReadOnly = true;
+            empDA_Descr.Width = 92;
+            // 
+            // datestart
+            // 
+            datestart.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            datestart.HeaderText = "Date Start";
+            datestart.Name = "datestart";
+            datestart.ReadOnly = true;
+            datestart.Width = 77;
+            // 
+            // dateEnd
+            // 
+            dateEnd.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dateEnd.HeaderText = "Date End";
+            dateEnd.Name = "dateEnd";
+            dateEnd.ReadOnly = true;
+            dateEnd.Width = 73;
+            // 
+            // file
+            // 
+            file.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            file.HeaderText = "File";
+            file.Name = "file";
+            file.ReadOnly = true;
+            file.Visible = false;
+            // 
+            // createdDate
+            // 
+            createdDate.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            createdDate.HeaderText = "Created Date";
+            createdDate.Name = "createdDate";
+            createdDate.ReadOnly = true;
+            createdDate.Visible = false;
+            // 
+            // createdBy
+            // 
+            createdBy.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            createdBy.HeaderText = "Created By";
+            createdBy.Name = "createdBy";
+            createdBy.ReadOnly = true;
+            createdBy.Visible = false;
+            // 
+            // Column1
+            // 
+            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column1.HeaderText = "";
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            // 
+            // viewButtonColumn
+            // 
+            viewButtonColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            viewButtonColumn.HeaderText = "";
+            viewButtonColumn.Name = "viewButtonColumn";
+            viewButtonColumn.ReadOnly = true;
+            viewButtonColumn.Resizable = DataGridViewTriState.True;
+            viewButtonColumn.SortMode = DataGridViewColumnSortMode.Automatic;
+            viewButtonColumn.Width = 60;
+            // 
+            // editButtonColumn
+            // 
+            editButtonColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            editButtonColumn.HeaderText = "";
+            editButtonColumn.Name = "editButtonColumn";
+            editButtonColumn.ReadOnly = true;
+            editButtonColumn.Resizable = DataGridViewTriState.True;
+            editButtonColumn.SortMode = DataGridViewColumnSortMode.Automatic;
+            editButtonColumn.Width = 60;
             // 
             // textBox1
             // 
@@ -202,128 +306,78 @@
             flowLayoutPanel1.Size = new Size(800, 35);
             flowLayoutPanel1.TabIndex = 21;
             // 
-            // iconButton4
+            // btn_new
             // 
-            iconButton4.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton4.FlatAppearance.BorderSize = 0;
-            iconButton4.FlatStyle = FlatStyle.Flat;
-            iconButton4.ForeColor = Color.White;
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
-            iconButton4.IconColor = Color.White;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.IconSize = 20;
-            iconButton4.Location = new Point(3, 3);
-            iconButton4.Margin = new Padding(3, 3, 1, 3);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(73, 30);
-            iconButton4.TabIndex = 4;
-            iconButton4.Text = "New";
-            iconButton4.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton4.UseVisualStyleBackColor = false;
+            btn_new.BackColor = Color.FromArgb(0, 127, 152);
+            btn_new.FlatAppearance.BorderSize = 0;
+            btn_new.FlatStyle = FlatStyle.Flat;
+            btn_new.ForeColor = Color.White;
+            btn_new.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
+            btn_new.IconColor = Color.White;
+            btn_new.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_new.IconSize = 20;
+            btn_new.Location = new Point(3, 3);
+            btn_new.Margin = new Padding(3, 3, 1, 3);
+            btn_new.Name = "btn_new";
+            btn_new.Size = new Size(73, 30);
+            btn_new.TabIndex = 4;
+            btn_new.Text = "New";
+            btn_new.TextAlign = ContentAlignment.MiddleLeft;
+            btn_new.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_new.UseVisualStyleBackColor = false;
+            btn_new.Click += btn_new_Click;
             // 
-            // iconButton3
+            // btn_edit
             // 
-            iconButton3.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton3.FlatAppearance.BorderSize = 0;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.IconSize = 20;
-            iconButton3.Location = new Point(78, 3);
-            iconButton3.Margin = new Padding(1, 3, 1, 3);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(73, 30);
-            iconButton3.TabIndex = 5;
-            iconButton3.Text = "Edit";
-            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton3.UseVisualStyleBackColor = false;
+            btn_edit.BackColor = Color.FromArgb(0, 127, 152);
+            btn_edit.FlatAppearance.BorderSize = 0;
+            btn_edit.FlatStyle = FlatStyle.Flat;
+            btn_edit.ForeColor = Color.White;
+            btn_edit.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
+            btn_edit.IconColor = Color.White;
+            btn_edit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_edit.IconSize = 20;
+            btn_edit.Location = new Point(78, 3);
+            btn_edit.Margin = new Padding(1, 3, 1, 3);
+            btn_edit.Name = "btn_edit";
+            btn_edit.Size = new Size(73, 30);
+            btn_edit.TabIndex = 5;
+            btn_edit.Text = "Edit";
+            btn_edit.TextAlign = ContentAlignment.MiddleLeft;
+            btn_edit.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_edit.UseVisualStyleBackColor = false;
             // 
-            // iconButton5
+            // btn_view
             // 
-            iconButton5.BackColor = Color.FromArgb(0, 127, 152);
-            iconButton5.FlatAppearance.BorderSize = 0;
-            iconButton5.FlatStyle = FlatStyle.Flat;
-            iconButton5.ForeColor = Color.White;
-            iconButton5.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            iconButton5.IconColor = Color.White;
-            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton5.IconSize = 20;
-            iconButton5.Location = new Point(153, 3);
-            iconButton5.Margin = new Padding(1, 3, 1, 3);
-            iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(73, 30);
-            iconButton5.TabIndex = 6;
-            iconButton5.Text = "View";
-            iconButton5.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton5.UseVisualStyleBackColor = false;
+            btn_view.BackColor = Color.FromArgb(0, 127, 152);
+            btn_view.FlatAppearance.BorderSize = 0;
+            btn_view.FlatStyle = FlatStyle.Flat;
+            btn_view.ForeColor = Color.White;
+            btn_view.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            btn_view.IconColor = Color.White;
+            btn_view.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_view.IconSize = 20;
+            btn_view.Location = new Point(153, 3);
+            btn_view.Margin = new Padding(1, 3, 1, 3);
+            btn_view.Name = "btn_view";
+            btn_view.Size = new Size(73, 30);
+            btn_view.TabIndex = 6;
+            btn_view.Text = "View";
+            btn_view.TextAlign = ContentAlignment.MiddleLeft;
+            btn_view.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_view.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel2
             // 
-            flowLayoutPanel2.Controls.Add(iconButton4);
-            flowLayoutPanel2.Controls.Add(iconButton3);
-            flowLayoutPanel2.Controls.Add(iconButton5);
+            flowLayoutPanel2.Controls.Add(btn_new);
+            flowLayoutPanel2.Controls.Add(btn_edit);
+            flowLayoutPanel2.Controls.Add(btn_view);
             flowLayoutPanel2.Dock = DockStyle.Top;
             flowLayoutPanel2.Location = new Point(0, 75);
             flowLayoutPanel2.Margin = new Padding(0);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
             flowLayoutPanel2.Size = new Size(800, 36);
             flowLayoutPanel2.TabIndex = 22;
-            // 
-            // Code
-            // 
-            Code.HeaderText = "Code";
-            Code.Name = "Code";
-            Code.ReadOnly = true;
-            // 
-            // offenseType
-            // 
-            offenseType.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            offenseType.HeaderText = "Offense Type";
-            offenseType.Name = "offenseType";
-            offenseType.ReadOnly = true;
-            offenseType.Width = 92;
-            // 
-            // disciplinaryType
-            // 
-            disciplinaryType.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            disciplinaryType.HeaderText = "Disciplinary Type";
-            disciplinaryType.Name = "disciplinaryType";
-            disciplinaryType.ReadOnly = true;
-            disciplinaryType.Width = 110;
-            // 
-            // description
-            // 
-            description.HeaderText = "Description";
-            description.Name = "description";
-            description.ReadOnly = true;
-            // 
-            // lastname
-            // 
-            lastname.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            lastname.HeaderText = "Lastname";
-            lastname.Name = "lastname";
-            lastname.ReadOnly = true;
-            lastname.Width = 83;
-            // 
-            // Firstname
-            // 
-            Firstname.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Firstname.HeaderText = "Firstname";
-            Firstname.Name = "Firstname";
-            Firstname.ReadOnly = true;
-            Firstname.Width = 84;
-            // 
-            // Column1
-            // 
-            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column1.HeaderText = "";
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
             // 
             // emp_DisciplinaryActionForm
             // 
@@ -365,16 +419,21 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FlowLayoutPanel flowLayoutPanel1;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton btn_new;
+        private FontAwesome.Sharp.IconButton btn_edit;
+        private FontAwesome.Sharp.IconButton btn_view;
         private FlowLayoutPanel flowLayoutPanel2;
         private DataGridViewTextBoxColumn Code;
-        private DataGridViewTextBoxColumn offenseType;
-        private DataGridViewTextBoxColumn disciplinaryType;
-        private DataGridViewTextBoxColumn description;
-        private DataGridViewTextBoxColumn lastname;
-        private DataGridViewTextBoxColumn Firstname;
+        private DataGridViewTextBoxColumn offensetypeDescr;
+        private DataGridViewTextBoxColumn disciplinaryTypeName;
+        private DataGridViewTextBoxColumn empDA_Descr;
+        private DataGridViewTextBoxColumn datestart;
+        private DataGridViewTextBoxColumn dateEnd;
+        private DataGridViewTextBoxColumn file;
+        private DataGridViewTextBoxColumn createdDate;
+        private DataGridViewTextBoxColumn createdBy;
         private DataGridViewTextBoxColumn Column1;
+        private DataGridViewButtonColumn viewButtonColumn;
+        private DataGridViewButtonColumn editButtonColumn;
     }
 }

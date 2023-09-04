@@ -96,9 +96,10 @@ public partial class HrisContext : DbContext
             optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
                           .UseLazyLoadingProxies();
         }
+
     }
-        //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        //=> optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+//        => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -647,9 +648,6 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.PkEmployeedependents)
                 .ValueGeneratedNever()
                 .HasColumnName("PK_employeedependents");
-            entity.Property(e => e.Address)
-                .HasMaxLength(200)
-                .HasColumnName("address");
             entity.Property(e => e.Birthdate)
                 .HasColumnType("date")
                 .HasColumnName("birthdate");
@@ -696,7 +694,10 @@ public partial class HrisContext : DbContext
             entity.ToTable("employeedisciplinary", "HR");
 
             entity.Property(e => e.PkEmployeedisciplinary).HasColumnName("PK_employeedisciplinary");
-            entity.Property(e => e.Createby).HasColumnName("createby");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
@@ -709,12 +710,11 @@ public partial class HrisContext : DbContext
             entity.Property(e => e.Description)
                 .IsUnicode(false)
                 .HasColumnName("description");
-            entity.Property(e => e.File)
-                .HasMaxLength(1)
-                .HasColumnName("file");
+            entity.Property(e => e.File).HasColumnName("file");
             entity.Property(e => e.FkDisciplinarytype).HasColumnName("FK_disciplinarytype");
             entity.Property(e => e.FkEmployee).HasColumnName("FK_employee");
             entity.Property(e => e.FkOffensetype).HasColumnName("FK_offensetype");
+            entity.Property(e => e.FkSystemUser).HasColumnName("FK_systemUser");
 
             entity.HasOne(d => d.FkDisciplinarytypeNavigation).WithMany(p => p.Employeedisciplinaries)
                 .HasForeignKey(d => d.FkDisciplinarytype)
@@ -727,6 +727,10 @@ public partial class HrisContext : DbContext
             entity.HasOne(d => d.FkOffensetypeNavigation).WithMany(p => p.Employeedisciplinaries)
                 .HasForeignKey(d => d.FkOffensetype)
                 .HasConstraintName("FK_employeedisciplinary_offensetype");
+
+            entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.Employeedisciplinaries)
+                .HasForeignKey(d => d.FkSystemUser)
+                .HasConstraintName("FK_employeedisciplinary_systemUser");
         });
 
         modelBuilder.Entity<Employeedocument>(entity =>

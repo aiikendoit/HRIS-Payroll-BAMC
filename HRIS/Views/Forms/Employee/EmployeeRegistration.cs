@@ -342,7 +342,7 @@ namespace HRIS.Forms.Employee
         private void _DisciplinaryAction_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_DisciplinaryActionForm(employeeid));
+            openchildform(new emp_DisciplinaryActionForm(employeeid, isUpdate));
         }
 
         private void _benefits_Click(object sender, EventArgs e)

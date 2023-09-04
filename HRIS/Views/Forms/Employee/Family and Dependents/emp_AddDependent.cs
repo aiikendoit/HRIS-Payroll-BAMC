@@ -47,5 +47,10 @@ namespace HRIS.Forms.Employee.Family_and_Dependents
             txt_civilstatuscombo.ValueMember = "PkCivilstatus";
             txt_civilstatuscombo.DisplayMember = "Description";
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

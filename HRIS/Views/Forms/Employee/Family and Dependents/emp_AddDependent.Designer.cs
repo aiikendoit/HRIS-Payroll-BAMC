@@ -30,26 +30,26 @@
         {
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
-            textBox2 = new TextBox();
+            txt_Lastname = new TextBox();
             panel2 = new Panel();
-            dateTimePicker1 = new DateTimePicker();
-            button4 = new Button();
-            button3 = new Button();
+            txt_BDate = new DateTimePicker();
+            btn_Cancel = new Button();
+            btn_Save = new Button();
             txt_relationshipcombo = new ComboBox();
             label22 = new Label();
             label3 = new Label();
             label19 = new Label();
             label1 = new Label();
-            textBox1 = new TextBox();
+            txt_Firstname = new TextBox();
             label4 = new Label();
-            textBox3 = new TextBox();
+            txt_Middlename = new TextBox();
             label5 = new Label();
             txt_civilstatuscombo = new ComboBox();
             label6 = new Label();
-            textBox4 = new TextBox();
-            checkBox1 = new CheckBox();
+            txt_Contactnumber = new TextBox();
+            combo_QD = new CheckBox();
             label7 = new Label();
-            textBox5 = new TextBox();
+            txt_Suffixname = new TextBox();
             txt_address = new TextBox();
             label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
@@ -79,13 +79,13 @@
             label2.TabIndex = 2;
             label2.Text = "New Dependent";
             // 
-            // textBox2
+            // txt_Lastname
             // 
-            textBox2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(174, 48);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(255, 25);
-            textBox2.TabIndex = 67;
+            txt_Lastname.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Lastname.Location = new Point(174, 48);
+            txt_Lastname.Name = "txt_Lastname";
+            txt_Lastname.Size = new Size(255, 25);
+            txt_Lastname.TabIndex = 67;
             // 
             // panel2
             // 
@@ -97,39 +97,40 @@
             panel2.Size = new Size(440, 40);
             panel2.TabIndex = 57;
             // 
-            // dateTimePicker1
+            // txt_BDate
             // 
-            dateTimePicker1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(174, 172);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(255, 25);
-            dateTimePicker1.TabIndex = 66;
+            txt_BDate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_BDate.Format = DateTimePickerFormat.Short;
+            txt_BDate.Location = new Point(174, 172);
+            txt_BDate.Name = "txt_BDate";
+            txt_BDate.Size = new Size(255, 25);
+            txt_BDate.TabIndex = 66;
             // 
-            // button4
+            // btn_Cancel
             // 
-            button4.BackColor = Color.Transparent;
-            button4.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(338, 426);
-            button4.Name = "button4";
-            button4.Size = new Size(91, 36);
-            button4.TabIndex = 65;
-            button4.Text = "Cancel";
-            button4.UseVisualStyleBackColor = false;
+            btn_Cancel.BackColor = Color.Transparent;
+            btn_Cancel.FlatAppearance.BorderColor = Color.FromArgb(0, 127, 152);
+            btn_Cancel.FlatStyle = FlatStyle.Flat;
+            btn_Cancel.Location = new Point(338, 426);
+            btn_Cancel.Name = "btn_Cancel";
+            btn_Cancel.Size = new Size(91, 36);
+            btn_Cancel.TabIndex = 65;
+            btn_Cancel.Text = "Cancel";
+            btn_Cancel.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_Save
             // 
-            button3.BackColor = Color.FromArgb(0, 127, 152);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(241, 426);
-            button3.Name = "button3";
-            button3.Size = new Size(91, 36);
-            button3.TabIndex = 64;
-            button3.Text = "Save";
-            button3.UseVisualStyleBackColor = false;
+            btn_Save.BackColor = Color.FromArgb(0, 127, 152);
+            btn_Save.FlatAppearance.BorderSize = 0;
+            btn_Save.FlatStyle = FlatStyle.Flat;
+            btn_Save.ForeColor = Color.White;
+            btn_Save.Location = new Point(241, 426);
+            btn_Save.Name = "btn_Save";
+            btn_Save.Size = new Size(91, 36);
+            btn_Save.TabIndex = 64;
+            btn_Save.Text = "Save";
+            btn_Save.UseVisualStyleBackColor = false;
+            btn_Save.Click += button3_Click;
             // 
             // txt_relationshipcombo
             // 
@@ -181,13 +182,13 @@
             label1.TabIndex = 58;
             label1.Text = "First Name";
             // 
-            // textBox1
+            // txt_Firstname
             // 
-            textBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(174, 79);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(255, 25);
-            textBox1.TabIndex = 67;
+            txt_Firstname.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Firstname.Location = new Point(174, 79);
+            txt_Firstname.Name = "txt_Firstname";
+            txt_Firstname.Size = new Size(255, 25);
+            txt_Firstname.TabIndex = 67;
             // 
             // label4
             // 
@@ -199,13 +200,13 @@
             label4.TabIndex = 58;
             label4.Text = "Middle Name";
             // 
-            // textBox3
+            // txt_Middlename
             // 
-            textBox3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(174, 110);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(255, 25);
-            textBox3.TabIndex = 67;
+            txt_Middlename.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Middlename.Location = new Point(174, 110);
+            txt_Middlename.Name = "txt_Middlename";
+            txt_Middlename.Size = new Size(255, 25);
+            txt_Middlename.TabIndex = 67;
             // 
             // label5
             // 
@@ -237,23 +238,23 @@
             label6.TabIndex = 58;
             label6.Text = "Contact Number";
             // 
-            // textBox4
+            // txt_Contactnumber
             // 
-            textBox4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.Location = new Point(174, 265);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(255, 25);
-            textBox4.TabIndex = 67;
+            txt_Contactnumber.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Contactnumber.Location = new Point(174, 265);
+            txt_Contactnumber.Name = "txt_Contactnumber";
+            txt_Contactnumber.Size = new Size(255, 25);
+            txt_Contactnumber.TabIndex = 67;
             // 
-            // checkBox1
+            // combo_QD
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(174, 375);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(135, 19);
-            checkBox1.TabIndex = 68;
-            checkBox1.Text = "Qualified Dependent";
-            checkBox1.UseVisualStyleBackColor = true;
+            combo_QD.AutoSize = true;
+            combo_QD.Location = new Point(174, 375);
+            combo_QD.Name = "combo_QD";
+            combo_QD.Size = new Size(135, 19);
+            combo_QD.TabIndex = 68;
+            combo_QD.Text = "Qualified Dependent";
+            combo_QD.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -265,13 +266,13 @@
             label7.TabIndex = 58;
             label7.Text = "Suffix";
             // 
-            // textBox5
+            // txt_Suffixname
             // 
-            textBox5.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(174, 141);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(141, 25);
-            textBox5.TabIndex = 67;
+            txt_Suffixname.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Suffixname.Location = new Point(174, 141);
+            txt_Suffixname.Name = "txt_Suffixname";
+            txt_Suffixname.Size = new Size(141, 25);
+            txt_Suffixname.TabIndex = 67;
             // 
             // txt_address
             // 
@@ -300,17 +301,17 @@
             ClientSize = new Size(440, 473);
             Controls.Add(label8);
             Controls.Add(txt_address);
-            Controls.Add(checkBox1);
-            Controls.Add(textBox5);
-            Controls.Add(textBox3);
-            Controls.Add(textBox1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox2);
+            Controls.Add(combo_QD);
+            Controls.Add(txt_Suffixname);
+            Controls.Add(txt_Middlename);
+            Controls.Add(txt_Firstname);
+            Controls.Add(txt_Contactnumber);
+            Controls.Add(txt_Lastname);
             Controls.Add(panel2);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(button4);
+            Controls.Add(txt_BDate);
+            Controls.Add(btn_Cancel);
             Controls.Add(label7);
-            Controls.Add(button3);
+            Controls.Add(btn_Save);
             Controls.Add(label4);
             Controls.Add(txt_civilstatuscombo);
             Controls.Add(txt_relationshipcombo);
@@ -335,26 +336,26 @@
         #endregion
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txt_Lastname;
         private Panel panel2;
-        private DateTimePicker dateTimePicker1;
-        private Button button4;
-        private Button button3;
+        private DateTimePicker txt_BDate;
+        private Button btn_Cancel;
+        private Button btn_Save;
         private ComboBox txt_relationshipcombo;
         private Label label22;
         private Label label3;
         private Label label19;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txt_Firstname;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox txt_Middlename;
         private Label label5;
         private ComboBox comboBox1;
         private Label label6;
-        private TextBox textBox4;
-        private CheckBox checkBox1;
+        private TextBox txt_Contactnumber;
+        private CheckBox combo_QD;
         private Label label7;
-        private TextBox textBox5;
+        private TextBox txt_Suffixname;
         private TextBox txt_address;
         private Label label8;
         private ComboBox txt_civilstatuscombo;

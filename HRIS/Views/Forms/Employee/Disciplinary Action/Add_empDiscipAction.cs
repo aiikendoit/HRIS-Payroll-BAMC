@@ -33,7 +33,7 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
         public bool isUpdate = false;//update button control
         private string selectedFilePath;//attached file
 
-        private int PkEmployeedocument;//employee id for button column
+        private int PkEmployeeDscplnryActn;//employee id for button column
         public Add_empDiscipAction(int EmpID)
         {
             InitializeComponent();
@@ -47,6 +47,8 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
             discType_presenter.LoadDisciplinary();//load combobox disciplinary type
             offenseType_presenter.LoadOffensetype();//load combobox offense type
 
+            empDA_presenter.loadEmpDscActAll();
+
         }
 
         public void ClearFields()
@@ -56,7 +58,21 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
 
         public void DisplayEmployeeDscAct_All(List<Employeedisciplinary> employeedisciplinaries)
         {
-
+            try
+            {
+                Models.Employeedisciplinary empDiscplnryActn = employeedisciplinaries[0];
+                comboBox_discplnryType.SelectedValue = empDiscplnryActn.FkDisciplinarytype;
+                comboBox_offenseType.SelectedValue = empDiscplnryActn.FkOffensetype;
+                textBox_Description.Text = empDiscplnryActn.Description;
+                dateTimePicker_Start.Value = (DateTime)empDiscplnryActn.Datestart;
+                dateTimePicker_End.Value = (DateTime)empDiscplnryActn.Dateend;
+                //txt_educationaldegree.Text = educ.Educationaldegree;
+                //txt_degreetype.SelectedValue = educ.FkDegreetype;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void displayEmployeeDscAct_ListObject(List<object> employeedisciplinaries)
@@ -164,13 +180,13 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
 
         private void update()
         {
-            var updateEmpDiscipActn = _context.Employeedisciplinaries.Find(PkEmployeedocument);
+            var updateEmpDiscipActn = _context.Employeedisciplinaries.Find(PkEmployeeDscplnryActn);
             if (updateEmpDiscipActn != null)
             {
                 updateEmpDiscipActn.FkEmployee = PKEmployee;
                 updateEmpDiscipActn.FkOffensetype = Convert.ToInt32(comboBox_offenseType.SelectedValue);
                 updateEmpDiscipActn.FkDisciplinarytype = Convert.ToInt32(comboBox_discplnryType.SelectedValue);
-                updateEmpDiscipActn.Description = textBox_Description.Text;
+                updateEmpDiscipActn.Description = textBox_Description.Text; 
                 updateEmpDiscipActn.Datestart = dateTimePicker_Start.Value;//get shortdate start
                 updateEmpDiscipActn.Dateend = dateTimePicker_End.Value;//get shortdate end
 
@@ -188,7 +204,7 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
             {
                 //btn_cancel.Select();
                 empDA_presenter.loadEmpDiscAcWhere(employeeDisciplnryActn);//load from presenter query
-                PkEmployeedocument = employeeDisciplnryActn;
+                PkEmployeeDscplnryActn = employeeDisciplnryActn;
             }
             else
             {

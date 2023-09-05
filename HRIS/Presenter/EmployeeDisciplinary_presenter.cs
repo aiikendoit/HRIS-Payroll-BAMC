@@ -25,9 +25,9 @@ namespace HRIS.Presenter
 
         }
 
-        public void loadEmpDscActAll() //retrieve all data
+        public void loadEmpDscActAll(int PKEmployeeId) //retrieve all data
         {
-            var q = _dbcontext.Employeedisciplinaries
+            var q = _dbcontext.Employeedisciplinaries.Where(e => e.FkEmployee == PKEmployeeId)
                 .OrderBy(e => e.Description)
                 .ToList();
             empDA_ListData = q.ToList();
@@ -46,8 +46,8 @@ namespace HRIS.Presenter
                          {
                              e.PkEmployeedisciplinary,
                              fk_employee = e.FkEmployee,
-                             FK_offensetype = o.Description,
-                             FK_disciplinarytype = d.Disciplinarytypename,
+                             FK_offensetype = o.PkOffensetype,//error not match id
+                             FK_disciplinarytype = d.PkDisciplinarytype,//error not match id
                              //o.Description,
                              //d.Disciplinarytypename,
                              e.Description,
@@ -92,7 +92,7 @@ namespace HRIS.Presenter
             _dbcontext.Employeedisciplinaries.Update(employeedisciplinary);
             _dbcontext.SaveChanges();
             MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //loadEmpDscActAll();
+            empDA_view.displayEmployeeDscAct_ListObject(empDAListObject);
         }
     }
 }

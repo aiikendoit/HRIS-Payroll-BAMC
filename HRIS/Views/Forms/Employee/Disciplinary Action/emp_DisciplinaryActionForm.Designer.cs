@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             panel2 = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
@@ -126,14 +126,14 @@
             dgrid_disciplinaryAction.AllowUserToAddRows = false;
             dgrid_disciplinaryAction.AllowUserToDeleteRows = false;
             dgrid_disciplinaryAction.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.IndianRed;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgrid_disciplinaryAction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.IndianRed;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgrid_disciplinaryAction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_disciplinaryAction.ColumnHeadersHeight = 50;
             dgrid_disciplinaryAction.Columns.AddRange(new DataGridViewColumn[] { Code, offensetypeDescr, disciplinaryTypeName, empDA_Descr, datestart, dateEnd, file, createdDate, createdBy, Column1, viewButtonColumn, editButtonColumn });
             dgrid_disciplinaryAction.Dock = DockStyle.Fill;
@@ -346,6 +346,7 @@
             btn_edit.TextAlign = ContentAlignment.MiddleLeft;
             btn_edit.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_edit.UseVisualStyleBackColor = false;
+            btn_edit.Click += btn_edit_Click;
             // 
             // btn_view
             // 

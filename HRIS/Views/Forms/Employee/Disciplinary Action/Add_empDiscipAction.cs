@@ -209,7 +209,7 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
             {
                 //btn_cancel.Select();
                 //empDA_presenter.loadEmpDiscAcWhere(employeeDisciplnryActn);//load from presenter query
-                empDA_presenter._loadEmpDscActAllWhereId(employeeDisciplnryActn);
+                empDA_presenter._loadEmpDscActAllWhereId(employeeDisciplnryActn);//where employee dicplnry actn ID
                 PkEmployeeDscplnryActn = employeeDisciplnryActn;
             }
             else

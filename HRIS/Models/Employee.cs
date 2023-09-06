@@ -95,7 +95,7 @@ public partial class Employee
 
     public virtual ICollection<Educationalattainment> Educationalattainments { get; set; } = new List<Educationalattainment>();
 
-    public virtual Employeedependent? Employeedependent { get; set; }
+    public virtual ICollection<Employeedependent> Employeedependents { get; set; } = new List<Employeedependent>();
 
     public virtual ICollection<Employeedisciplinary> Employeedisciplinaries { get; set; } = new List<Employeedisciplinary>();
 

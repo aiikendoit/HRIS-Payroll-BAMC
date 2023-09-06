@@ -573,10 +573,10 @@ public partial class YourDbContext : DbContext
                 .HasForeignKey(d => d.FkCivilstatus)
                 .HasConstraintName("FK_employeedependents_civilstatus");
 
-            entity.HasOne(d => d.PkEmployeedependentsNavigation).WithOne(p => p.Employeedependent)
-                .HasForeignKey<Employeedependent>(d => d.PkEmployeedependents)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_employeedependents_employee");
+            //entity.HasOne(d => d.PkEmployeedependentsNavigation).WithOne(p => p.Employeedependent)
+            //    .HasForeignKey<Employeedependent>(d => d.PkEmployeedependents)
+            //    .OnDelete(DeleteBehavior.ClientSetNull)
+            //    .HasConstraintName("FK_employeedependents_employee");
         });
 
         modelBuilder.Entity<Employeedisciplinary>(entity =>
@@ -622,9 +622,9 @@ public partial class YourDbContext : DbContext
                 .HasForeignKey(d => d.FkOffensetype)
                 .HasConstraintName("FK_employeedisciplinary_offensetype");
 
-            entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.Employeedisciplinaries)
-                .HasForeignKey(d => d.FkSystemUser)
-                .HasConstraintName("FK_employeedisciplinary_systemUser");
+            //entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.Employeedisciplinaries)
+            //    .HasForeignKey(d => d.FkSystemUser)
+            //    .HasConstraintName("FK_employeedisciplinary_systemUser");
         });
 
         modelBuilder.Entity<Employeedocument>(entity =>

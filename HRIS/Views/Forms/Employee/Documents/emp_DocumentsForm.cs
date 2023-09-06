@@ -73,7 +73,7 @@ namespace HRIS.Forms.Employee.Documents
 
         }
 
-        public void DisplayEmployeeDocumentsData(List<object> Employeedocuments)
+        public void DisplayEmployeeDocumentsData(List<object> Employeedocuments)//dgrid retrieve data
         {
 
             if (Employeedocuments != null && Employeedocuments.Count > 0)

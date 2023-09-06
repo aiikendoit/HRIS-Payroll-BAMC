@@ -36,9 +36,11 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
                 btn_edit.Visible = false;
                 btn_view.Visible = true;
             }
+            btn_edit.Visible = false;
+            btn_view.Visible = false;
         }
 
-        private void loadAllDiscActWhere()
+        private void loadAllDiscActWhere()//where ID
         {
             emplDiscAct_presenter.loadEmpDiscAcWhere(EmpID);
             editButtonColumn.Text = "Edit"; // Set default text for the button

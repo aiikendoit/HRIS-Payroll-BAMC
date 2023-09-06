@@ -106,7 +106,7 @@ namespace HRIS.Views.Forms.Employee.Documents
             //    empDocs_Presenter.updateEmployeeDocs(updateEmpDocs);
             //    this.Close();
             //}
-
+//option2
             var updateEmpDocs = _context.Employeedocuments.Find(PkEmployeedocument);
             if (updateEmpDocs != null)
             {

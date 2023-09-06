@@ -47,7 +47,7 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
             discType_presenter.LoadDisciplinary();//load combobox disciplinary type
             offenseType_presenter.LoadOffensetype();//load combobox offense type
 
-            empDA_presenter.loadEmpDscActAll(EmpID);
+            //empDA_presenter.loadEmpDscActAll(EmpID);
 
         }
 
@@ -208,7 +208,8 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
             if (isUpdate)
             {
                 //btn_cancel.Select();
-                empDA_presenter.loadEmpDiscAcWhere(employeeDisciplnryActn);//load from presenter query
+                //empDA_presenter.loadEmpDiscAcWhere(employeeDisciplnryActn);//load from presenter query
+                empDA_presenter._loadEmpDscActAll(employeeDisciplnryActn);
                 PkEmployeeDscplnryActn = employeeDisciplnryActn;
             }
             else

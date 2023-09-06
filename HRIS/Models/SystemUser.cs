@@ -27,8 +27,6 @@ public partial class SystemUser
 
     public virtual ICollection<Educationalattainment> Educationalattainments { get; set; } = new List<Educationalattainment>();
 
-    public virtual ICollection<Employeedisciplinary> Employeedisciplinaries { get; set; } = new List<Employeedisciplinary>();
-
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 
     public virtual Department? FkDepartmentNavigation { get; set; }

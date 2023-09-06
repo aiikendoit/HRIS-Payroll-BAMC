@@ -22,7 +22,7 @@ namespace HRIS.Views.Forms.Employee.Documents
     public partial class Add_Docs : Form, IEmployeeView, IDocumentTypeView, IEmployeeDocumentView
     {
         //int EmpID = 0;
-        public int PKEmploye;
+        public int PKEmployee;
 
         private readonly employee_Presenter emp_Presenter;
         private readonly documenttype_Presenter doctype_Presenter;
@@ -43,12 +43,12 @@ namespace HRIS.Views.Forms.Employee.Documents
             emp_Presenter = new employee_Presenter(this);
             empDocs_Presenter = new EmployeeDocument_Presenter(this);
             _context = new HrisContext();
-            PKEmploye = EmpID;
+            PKEmployee = EmpID;
             doctype_Presenter.LoadDocumenttype();
 
         }
 
-        public void DisplayDocumentype(List<Doctype> documentTypes)
+        public void DisplayDocumentype(List<Doctype> documentTypes)//load combobox
         {
             comboBox_DocType.DataSource = documentTypes;
             comboBox_DocType.ValueMember = "PkDoctype";
@@ -89,15 +89,42 @@ namespace HRIS.Views.Forms.Employee.Documents
 
         private void update()
         {
+            //var updateEmpDocs = _context.Employeedocuments.Find(PkEmployeedocument);
+            //if (updateEmpDocs != null)
+            //{
+            //    updateEmpDocs.FkEmployee = PKEmployee;
+            //    updateEmpDocs.FkDoctype = Convert.ToInt32(comboBox_DocType.SelectedValue);
+            //    updateEmpDocs.Description = textBox_Description.Text;
+            //    updateEmpDocs.Remarks = richTextBox_Remarks.Text;
+            //    if (!string.IsNullOrEmpty(selectedFilePath)) // Check if a new file is selected for update
+            //    {
+            //        byte[] fileData = File.ReadAllBytes(selectedFilePath);
+            //        updateEmpDocs.EmployeeDocs = fileData; // Update the file data
+            //        //no filepath query, no retrieve data
+            //    }
+
+            //    empDocs_Presenter.updateEmployeeDocs(updateEmpDocs);
+            //    this.Close();
+            //}
+//option2
             var updateEmpDocs = _context.Employeedocuments.Find(PkEmployeedocument);
             if (updateEmpDocs != null)
             {
-                updateEmpDocs.FkEmployee = PKEmploye;
+                _context.Entry(updateEmpDocs).State = EntityState.Detached; // Detach the existing entity
+                
+
+                updateEmpDocs.FkEmployee = PKEmployee;
                 updateEmpDocs.FkDoctype = Convert.ToInt32(comboBox_DocType.SelectedValue);
                 updateEmpDocs.Description = textBox_Description.Text;
                 updateEmpDocs.Remarks = richTextBox_Remarks.Text;
-                //updateEmpDocs.Educationaldegree = txt_educationaldegree.Text;
-                //updateEmpDocs.FkDegreetype = Convert.ToInt32(txt_degreetype.SelectedValue);
+                if (!string.IsNullOrEmpty(selectedFilePath)) // Check if a new file is selected for update
+                {
+                    byte[] fileData = File.ReadAllBytes(selectedFilePath);
+                    updateEmpDocs.EmployeeDocs = fileData; // Update the file data
+                                                           //no filepath query, no retrieve data
+                }
+
+                _context.Entry(updateEmpDocs).State = EntityState.Modified; // Attach and mark the new entity as modified
 
                 empDocs_Presenter.updateEmployeeDocs(updateEmpDocs);
                 this.Close();
@@ -115,7 +142,7 @@ namespace HRIS.Views.Forms.Employee.Documents
 
                 var cv = new Models.Employeedocument
                 {
-                    FkEmployee = PKEmploye,
+                    FkEmployee = PKEmployee,
                     FkDoctype = Convert.ToInt32(comboBox_DocType.SelectedValue),
                     Description = textBox_Description.Text,
                     Remarks = richTextBox_Remarks.Text,

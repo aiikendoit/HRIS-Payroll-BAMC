@@ -89,8 +89,7 @@ public partial class HrisContext : DbContext
 
     public virtual DbSet<Zipcode> Zipcodes { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
         if (!optionsBuilder.IsConfigured)
         {
             optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
@@ -723,19 +722,15 @@ public partial class HrisContext : DbContext
 
             entity.HasOne(d => d.FkDisciplinarytypeNavigation).WithMany(p => p.Employeedisciplinaries)
                 .HasForeignKey(d => d.FkDisciplinarytype)
-                .HasConstraintName("FK_employeedisciplinary_disciplinarytype");
+                .HasConstraintName("FK_employeedisciplinary_PKdisciplinarytype");
 
             entity.HasOne(d => d.FkEmployeeNavigation).WithMany(p => p.Employeedisciplinaries)
                 .HasForeignKey(d => d.FkEmployee)
-                .HasConstraintName("FK_employeedisciplinary_employee");
+                .HasConstraintName("FK_employeedisciplinary_PKemployee");
 
             entity.HasOne(d => d.FkOffensetypeNavigation).WithMany(p => p.Employeedisciplinaries)
                 .HasForeignKey(d => d.FkOffensetype)
-                .HasConstraintName("FK_employeedisciplinary_offensetype");
-
-            entity.HasOne(d => d.FkSystemUserNavigation).WithMany(p => p.Employeedisciplinaries)
-                .HasForeignKey(d => d.FkSystemUser)
-                .HasConstraintName("FK_employeedisciplinary_systemUser");
+                .HasConstraintName("FK_employeedisciplinary_PKoffensetype");
         });
 
         modelBuilder.Entity<Employeedocument>(entity =>

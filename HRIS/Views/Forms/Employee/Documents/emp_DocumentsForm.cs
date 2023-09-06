@@ -43,8 +43,8 @@ namespace HRIS.Forms.Employee.Documents
                 btn_viewDocs.Visible = true;
             }
 
-            btn_Edit.Visible = false;
-            btn_viewDocs.Visible = false;
+            //btn_Edit.Visible = false;
+            //btn_viewDocs.Visible = false;
         }
 
         private void loadEmployeeDocumentsData()//where ID
@@ -73,7 +73,7 @@ namespace HRIS.Forms.Employee.Documents
 
         }
 
-        public void DisplayEmployeeDocumentsData(List<object> Employeedocuments)
+        public void DisplayEmployeeDocumentsData(List<object> Employeedocuments)//dgrid retrieve data
         {
 
             if (Employeedocuments != null && Employeedocuments.Count > 0)
@@ -126,11 +126,8 @@ namespace HRIS.Forms.Employee.Documents
         private void btn_viewDocs_Click(object sender, EventArgs e)
         {
             int PKEmployeeID = (int)dgrid_documents.SelectedRows[0].Cells[0].Value;
-            //if (PKEmployeeID != 0)
-            //{
             var empDocs = new PreviewDocs(PKEmployeeID);
             empDocs.ShowDialog();
-            //}
         }
         private void search()
         {

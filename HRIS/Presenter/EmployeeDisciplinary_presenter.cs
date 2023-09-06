@@ -25,9 +25,9 @@ namespace HRIS.Presenter
 
         }
 
-        public void loadEmpDscActAll() //retrieve all data
+        public void loadEmpDscActAll(int PKEmployeeId) //retrieve all data
         {
-            var q = _dbcontext.Employeedisciplinaries
+            var q = _dbcontext.Employeedisciplinaries.Where(e => e.FkEmployee == PKEmployeeId)
                 .OrderBy(e => e.Description)
                 .ToList();
             empDA_ListData = q.ToList();
@@ -46,10 +46,8 @@ namespace HRIS.Presenter
                          {
                              e.PkEmployeedisciplinary,
                              fk_employee = e.FkEmployee,
-                             FK_offensetype = o.Description,
-                             FK_disciplinarytype = d.Disciplinarytypename,
-                             //o.Description,
-                             //d.Disciplinarytypename,
+                             FK_offensetype = o.Description,//error not match id
+                             FK_disciplinarytype = d.Disciplinarytypename,//error not match id
                              e.Description,
                              e.Datestart,
                              e.Dateend,
@@ -89,10 +87,29 @@ namespace HRIS.Presenter
 
         public void UpdateEmpDiscAct(Employeedisciplinary employeedisciplinary) //update method
         {
-            _dbcontext.Employeedisciplinaries.Update(employeedisciplinary);
-            _dbcontext.SaveChanges();
-            MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //loadEmpDscActAll();
+            //_dbcontext.Employeedisciplinaries.Update(employeedisciplinary);
+            //_dbcontext.SaveChanges();
+            //MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //empDA_view.displayEmployeeDscAct_ListObject(empDAListObject);
+
+            var existingEduc = _dbcontext.Employeedisciplinaries.Find(employeedisciplinary.PkEmployeedisciplinary);
+
+            if (existingEduc != null)
+            {
+                _dbcontext.Entry(existingEduc).State = EntityState.Detached;//detached employeeID
+                _dbcontext.Entry(employeedisciplinary).State = EntityState.Modified;
+                _dbcontext.SaveChanges();
+                MessageBox.Show("Successfully updated!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        public void _loadEmpDscActAll(int PK_employeeDisciplinary) //retrieve all data by employee disciplnry action pk
+        {
+            var q = _dbcontext.Employeedisciplinaries.Where(e => e.PkEmployeedisciplinary == PK_employeeDisciplinary)
+                .OrderBy(e => e.Description)
+                .ToList();
+            empDA_ListData = q.ToList();
+            empDA_view.DisplayEmployeeDscAct_All(q);
         }
     }
 }

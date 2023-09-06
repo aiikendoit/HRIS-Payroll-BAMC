@@ -47,7 +47,7 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
             discType_presenter.LoadDisciplinary();//load combobox disciplinary type
             offenseType_presenter.LoadOffensetype();//load combobox offense type
 
-            empDA_presenter.loadEmpDscActAll();
+            //empDA_presenter.loadEmpDscActAll(EmpID);
 
         }
 
@@ -189,7 +189,12 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
                 updateEmpDiscipActn.Description = textBox_Description.Text; 
                 updateEmpDiscipActn.Datestart = dateTimePicker_Start.Value;//get shortdate start
                 updateEmpDiscipActn.Dateend = dateTimePicker_End.Value;//get shortdate end
-
+                if (!string.IsNullOrEmpty(selectedFilePath)) // Check if a new file is selected for update
+                {
+                    byte[] fileData = File.ReadAllBytes(selectedFilePath);
+                    updateEmpDiscipActn.File = fileData; // Update the file data
+                    //no filepath query, no retrieve data
+                }
 
                 //updateEmpDocs.Educationaldegree = txt_educationaldegree.Text;
                 //updateEmpDocs.FkDegreetype = Convert.ToInt32(txt_degreetype.SelectedValue);
@@ -203,13 +208,14 @@ namespace HRIS.Views.Forms.Employee.Disciplinary_Action
             if (isUpdate)
             {
                 //btn_cancel.Select();
-                empDA_presenter.loadEmpDiscAcWhere(employeeDisciplnryActn);//load from presenter query
+                //empDA_presenter.loadEmpDiscAcWhere(employeeDisciplnryActn);//load from presenter query
+                empDA_presenter._loadEmpDscActAll(employeeDisciplnryActn);
                 PkEmployeeDscplnryActn = employeeDisciplnryActn;
             }
             else
             {
                 //btn_cancel.Select();
-                empDA_presenter.loadEmpDiscAcWhere(employeeDisciplnryActn);
+                empDA_presenter.loadEmpDscActAll(employeeDisciplnryActn);
                 //checkBox_isactive.Checked = SelectedTowncities.IsActive ?? false;
                 comboBox_discplnryType.SelectedValue = selectedEmployeeDiscplnryActn.FkDisciplinarytype;//load combobox FK
                 comboBox_offenseType.SelectedValue = selectedEmployeeDiscplnryActn.FkOffensetype;//load combobox FK

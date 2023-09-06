@@ -26,7 +26,7 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
             emplDiscAct_presenter = new EmployeeDisciplinary_presenter(this);
             EmpID = PkEmployeeID;
 
-            emplDiscAct_presenter.loadEmpDscActAll();
+            emplDiscAct_presenter.loadEmpDscActAll(EmpID);
             loadAllDiscActWhere();
 
             // btn_viewDocs.Click += btn_viewDocs_Click;
@@ -36,9 +36,11 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
                 btn_edit.Visible = false;
                 btn_view.Visible = true;
             }
+            btn_edit.Visible = false;
+            btn_view.Visible = false;
         }
 
-        private void loadAllDiscActWhere()
+        private void loadAllDiscActWhere()//where ID
         {
             emplDiscAct_presenter.loadEmpDiscAcWhere(EmpID);
             editButtonColumn.Text = "Edit"; // Set default text for the button
@@ -118,6 +120,16 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
                     empDscplnryActn.ShowDialog(this);
                 }
             }
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            var empDscplnryActn = dgrid_disciplinaryAction.SelectedRows[0].Cells[0].Value;
+            Add_empDiscipAction empDoc = new Add_empDiscipAction(EmpID);
+            empDoc.isUpdate = true;
+            empDoc.putdata(Convert.ToInt32(empDscplnryActn));
+            empDoc.ShowDialog();
+            loadAllDiscActWhere();
         }
     }
 }

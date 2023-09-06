@@ -59,7 +59,7 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
 
         }
 
-        public void displayEmployeeDscAct_ListObject(List<object> employeedisciplinaries)
+        public void displayEmployeeDscAct_ListObject(List<object> employeedisciplinaries)//display list object data
         {
             if (employeedisciplinaries != null && employeedisciplinaries.Count > 0)
             {
@@ -95,7 +95,7 @@ namespace HRIS.Forms.Employee.Disciplinary_Action
         {
             var addNew = new Add_empDiscipAction(EmpID);
             addNew.ShowDialog();
-            loadAllDiscActWhere();
+            loadAllDiscActWhere();//load all data where ID
         }
 
         private void dgrid_disciplinaryAction_CellContentClick(object sender, DataGridViewCellEventArgs e)

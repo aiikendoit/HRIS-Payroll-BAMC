@@ -103,7 +103,7 @@ namespace HRIS.Presenter
             }
         }
 
-        public void _loadEmpDscActAll(int PK_employeeDisciplinary) //retrieve all data by employee disciplnry action pk
+        public void _loadEmpDscActAllWhereId(int PK_employeeDisciplinary) //retrieve all data by employee disciplnry action pk
         {
             var q = _dbcontext.Employeedisciplinaries.Where(e => e.PkEmployeedisciplinary == PK_employeeDisciplinary)
                 .OrderBy(e => e.Description)

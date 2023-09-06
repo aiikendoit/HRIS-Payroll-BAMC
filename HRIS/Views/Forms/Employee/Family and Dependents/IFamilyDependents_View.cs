@@ -10,5 +10,6 @@ namespace HRIS.Views.Forms.Employee.Family_and_Dependents
     public interface IFamilyDependents_View
     {
         void DisplayFamilyDenpendent(List<Employeedependent> employeedependents);
+        void DisplayFamilyDenpendent_customize(List<object> employeedependents);
     }
 }

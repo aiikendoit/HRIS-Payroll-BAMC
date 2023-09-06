@@ -38,19 +38,20 @@
             iconButton2 = new FontAwesome.Sharp.IconButton();
             flowLayoutPanel1 = new FlowLayoutPanel();
             dgrid_family = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             panel2 = new Panel();
             flowLayoutPanel2 = new FlowLayoutPanel();
             iconButton4 = new FontAwesome.Sharp.IconButton();
             iconButton3 = new FontAwesome.Sharp.IconButton();
             iconButton5 = new FontAwesome.Sharp.IconButton();
+            PkEmployeedependents_ID = new DataGridViewTextBoxColumn();
+            Fullname = new DataGridViewTextBoxColumn();
+            Birthdate = new DataGridViewTextBoxColumn();
+            Relationship = new DataGridViewTextBoxColumn();
+            Civilsatatus = new DataGridViewTextBoxColumn();
+            contactno = new DataGridViewTextBoxColumn();
+            qualifiedD = new DataGridViewCheckBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgrid_family).BeginInit();
@@ -168,48 +169,13 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgrid_family.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgrid_family.ColumnHeadersHeight = 50;
-            dgrid_family.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
+            dgrid_family.Columns.AddRange(new DataGridViewColumn[] { PkEmployeedependents_ID, Fullname, Birthdate, Relationship, Civilsatatus, contactno, qualifiedD, Column1 });
             dgrid_family.Dock = DockStyle.Fill;
             dgrid_family.Location = new Point(0, 111);
             dgrid_family.Name = "dgrid_family";
             dgrid_family.RowTemplate.Height = 25;
             dgrid_family.Size = new Size(800, 312);
             dgrid_family.TabIndex = 32;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "ID";
-            Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Fullname";
-            Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Birthdate";
-            Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Relationship";
-            Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Civil Status";
-            Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Contact #";
-            Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            Column7.HeaderText = "Qualified Dependent";
-            Column7.Name = "Column7";
             // 
             // iconPictureBox1
             // 
@@ -307,6 +273,62 @@
             iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton5.UseVisualStyleBackColor = false;
             // 
+            // PkEmployeedependents_ID
+            // 
+            PkEmployeedependents_ID.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            PkEmployeedependents_ID.HeaderText = "ID";
+            PkEmployeedependents_ID.Name = "PkEmployeedependents_ID";
+            PkEmployeedependents_ID.Width = 80;
+            // 
+            // Fullname
+            // 
+            Fullname.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            Fullname.HeaderText = "Fullname";
+            Fullname.Name = "Fullname";
+            Fullname.Width = 81;
+            // 
+            // Birthdate
+            // 
+            Birthdate.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Birthdate.HeaderText = "Birthdate";
+            Birthdate.Name = "Birthdate";
+            Birthdate.Width = 80;
+            // 
+            // Relationship
+            // 
+            Relationship.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            Relationship.HeaderText = "Relationship";
+            Relationship.Name = "Relationship";
+            Relationship.Width = 97;
+            // 
+            // Civilsatatus
+            // 
+            Civilsatatus.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Civilsatatus.HeaderText = "Civil Status";
+            Civilsatatus.Name = "Civilsatatus";
+            Civilsatatus.Width = 120;
+            // 
+            // contactno
+            // 
+            contactno.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            contactno.HeaderText = "Contact #";
+            contactno.Name = "contactno";
+            // 
+            // qualifiedD
+            // 
+            qualifiedD.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            qualifiedD.HeaderText = "Qualified Dependent";
+            qualifiedD.Name = "qualifiedD";
+            qualifiedD.Resizable = DataGridViewTriState.True;
+            qualifiedD.SortMode = DataGridViewColumnSortMode.Automatic;
+            qualifiedD.Width = 150;
+            // 
+            // Column1
+            // 
+            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column1.HeaderText = "";
+            Column1.Name = "Column1";
+            // 
             // emp_FamilyDependentsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -352,12 +374,13 @@
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton5;
+        private DataGridViewTextBoxColumn PkEmployeedependents_ID;
+        private DataGridViewTextBoxColumn Fullname;
+        private DataGridViewTextBoxColumn Birthdate;
+        private DataGridViewTextBoxColumn Relationship;
+        private DataGridViewTextBoxColumn Civilsatatus;
+        private DataGridViewTextBoxColumn contactno;
+        private DataGridViewCheckBoxColumn qualifiedD;
         private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
     }
 }

@@ -573,7 +573,7 @@ public partial class YourDbContext : DbContext
                 .HasForeignKey(d => d.FkCivilstatus)
                 .HasConstraintName("FK_employeedependents_civilstatus");
 
-            //entity.HasOne(d => d.PkEmployeedependentsNavigation).WithOne(p => p.Employeedependent)
+            //entity.HasOne(d => d.PkEmployeedependents).WithOne(p => p.Employeedependent)
             //    .HasForeignKey<Employeedependent>(d => d.PkEmployeedependents)
             //    .OnDelete(DeleteBehavior.ClientSetNull)
             //    .HasConstraintName("FK_employeedependents_employee");

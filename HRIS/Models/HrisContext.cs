@@ -96,7 +96,6 @@ public partial class HrisContext : DbContext
                           .UseLazyLoadingProxies();
         }
     }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<BankName>(entity =>

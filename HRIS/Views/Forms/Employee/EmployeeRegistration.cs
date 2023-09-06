@@ -318,7 +318,7 @@ namespace HRIS.Forms.Employee
         private void iconButton2_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
-            openchildform(new emp_FamilyDependentsForm());
+            openchildform(new emp_FamilyDependentsForm(employeeid, isUpdate));
         }
 
         private void iconButton6_Click(object sender, EventArgs e)

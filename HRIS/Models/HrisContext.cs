@@ -96,11 +96,7 @@ public partial class HrisContext : DbContext
             optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true;")
                           .UseLazyLoadingProxies();
         }
-
     }
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-//        => optionsBuilder.UseSqlServer("Data Source=192.168.0.55; initial catalog=hris; user id=sa; password=web2021; trustServerCertificate=true; ");
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<BankName>(entity =>
@@ -645,18 +641,21 @@ public partial class HrisContext : DbContext
 
             entity.ToTable("employeedependents", "HR");
 
-            entity.Property(e => e.PkEmployeedependents)
-                .ValueGeneratedNever()
-                .HasColumnName("PK_employeedependents");
+            entity.Property(e => e.PkEmployeedependents).HasColumnName("PK_employeedependents");
             entity.Property(e => e.Address)
                 .HasMaxLength(200)
+                .IsUnicode(false)
                 .HasColumnName("address");
             entity.Property(e => e.Birthdate)
                 .HasColumnType("date")
                 .HasColumnName("birthdate");
             entity.Property(e => e.Contactno).HasColumnName("contactno");
-            entity.Property(e => e.Createdby).HasColumnName("createdby");
+            entity.Property(e => e.Createdby)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("createdby");
             entity.Property(e => e.Createddate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("createddate");
             entity.Property(e => e.Firstname)
@@ -684,10 +683,13 @@ public partial class HrisContext : DbContext
                 .HasForeignKey(d => d.FkCivilstatus)
                 .HasConstraintName("FK_employeedependents_civilstatus");
 
-            entity.HasOne(d => d.PkEmployeedependentsNavigation).WithOne(p => p.Employeedependent)
-                .HasForeignKey<Employeedependent>(d => d.PkEmployeedependents)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+            entity.HasOne(d => d.FkEmployeeNavigation).WithMany(p => p.Employeedependents)
+                .HasForeignKey(d => d.FkEmployee)
                 .HasConstraintName("FK_employeedependents_employee");
+
+            entity.HasOne(d => d.FkRelationshipNavigation).WithMany(p => p.Employeedependents)
+                .HasForeignKey(d => d.FkRelationship)
+                .HasConstraintName("FK_employeedependents_relationship");
         });
 
         modelBuilder.Entity<Employeedisciplinary>(entity =>

@@ -17,5 +17,7 @@ public partial class Relationship
 
     public int? FkSystemUser { get; set; }
 
+    public virtual ICollection<Employeedependent> Employeedependents { get; set; } = new List<Employeedependent>();
+
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 }

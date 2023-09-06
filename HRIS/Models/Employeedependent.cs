@@ -25,15 +25,17 @@ public partial class Employeedependent
 
     public int? Contactno { get; set; }
 
-    public byte[]? Address { get; set; }
+    public string? Address { get; set; }
 
-    public bool? IsQualifiedDependent { get; set; }
+    public bool IsQualifiedDependent { get; set; }
 
     public DateTime? Createddate { get; set; }
 
-    public int? Createdby { get; set; }
+    public string? Createdby { get; set; }
 
     public virtual Civilstatus? FkCivilstatusNavigation { get; set; }
 
-    public virtual Employee PkEmployeedependentsNavigation { get; set; } = null!;
+    public virtual Employee? FkEmployeeNavigation { get; set; }
+
+    public virtual Relationship? FkRelationshipNavigation { get; set; }
 }

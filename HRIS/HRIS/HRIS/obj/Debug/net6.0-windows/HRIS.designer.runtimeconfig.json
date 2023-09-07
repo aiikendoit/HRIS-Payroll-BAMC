@@ -14,12 +14,16 @@
     "additionalProbingPaths": [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       "C:\\Users\\KIsrael\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\KIsrael\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/Debug/net6.0-windows/HRIS.designer.runtimeconfig.json
 =======
       "C:\\Users\\ITSSupport\\.dotnet\\store\\|arch|\\|tfm|",
@@ -34,6 +38,8 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/Debug/net6.0-windows/HRIS.designer.runtimeconfig.json
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }

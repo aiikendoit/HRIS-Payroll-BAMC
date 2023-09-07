@@ -8,8 +8,11 @@
     ".NETCoreApp,Version=v6.0": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       "Azure.Core/1.24.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
@@ -56,10 +59,13 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       "FontAwesome.Sharp/6.3.0": {
         "runtime": {
           "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {
@@ -69,8 +75,11 @@
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       },
       "Humanizer.Core/2.14.1": {
         "runtime": {
@@ -861,18 +870,24 @@
           }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       }
     }
   },
   "libraries": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
     "Azure.Core/1.24.0": {
       "type": "package",
       "serviceable": true,
@@ -895,10 +910,13 @@
       "hashPath": "castle.core.5.1.0.nupkg.sha512"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
     "FontAwesome.Sharp/6.3.0": {
       "type": "package",
       "serviceable": true,
@@ -907,8 +925,11 @@
       "hashPath": "fontawesome.sharp.6.3.0.nupkg.sha512"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1393,10 +1414,13 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
     }
   }
 }

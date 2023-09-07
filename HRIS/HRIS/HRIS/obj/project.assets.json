@@ -4,8 +4,11 @@
     "net6.0-windows7.0": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       "Azure.Core/1.24.0": {
         "type": "package",
         "dependencies": {
@@ -3688,6 +3691,7 @@
         "useSharedDesignerContext.txt",
         "version.txt"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       "FontAwesome.Sharp/6.3.0": {
         "type": "package",
@@ -3720,6 +3724,8 @@
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       ]
     }
   },
@@ -3727,8 +3733,11 @@
     "net6.0-windows7.0": [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       "FontAwesome.Sharp >= 6.3.0",
       "MaterialSkin.2.RTL >= 2.3.1.1",
       "Microsoft.EntityFrameworkCore >= 7.0.8",
@@ -3740,6 +3749,7 @@
   },
   "packageFolders": {
     "C:\\Users\\KIsrael\\.nuget\\packages\\": {},
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       "FontAwesome.Sharp >= 6.3.0"
@@ -3754,6 +3764,8 @@
 >>>>>>> update
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -3765,11 +3777,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "projectName": "HRIS",
       "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
+<<<<<<< HEAD
 =======
       "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
 =======
@@ -3812,11 +3828,14 @@
 =======
       "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
 >>>>>>> update file
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3830,6 +3849,9 @@
 =======
         "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> update files
+=======
+        "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3841,6 +3863,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "C:\\Program Files\\dotnet\\library-packs": {},
 >>>>>>> backup files
@@ -3848,6 +3871,8 @@
 >>>>>>> update
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3871,8 +3896,11 @@
             "version": "[6.3.0, )"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
           },
           "MaterialSkin.2.RTL": {
             "target": "Package",
@@ -3902,10 +3930,13 @@
             "target": "Package",
             "version": "[7.0.5, )"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
           }
         },
         "imports": [
@@ -3930,6 +3961,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
@@ -3940,6 +3972,9 @@
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
 >>>>>>> update files
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
       }
     }
   }

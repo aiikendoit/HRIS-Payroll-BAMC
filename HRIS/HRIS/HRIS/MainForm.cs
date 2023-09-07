@@ -1,9 +1,12 @@
 using FontAwesome.Sharp;
 using HRIS.Class;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
 using HRIS.Forms.Doctors;
 using HRIS.Forms.Employee;
 using HRIS.Forms.Hiring;
@@ -11,6 +14,7 @@ using HRIS.Forms.Maintenance;
 using HRIS.Forms.Userlogin;
 using System.Net.Security;
 using System.Runtime.InteropServices;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 =======
 using HRIS.Forms.Employee;
@@ -19,6 +23,8 @@ using System.Net.Security;
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
 
 namespace HRIS
 {
@@ -27,6 +33,7 @@ namespace HRIS
 
         private IconButton currentbtn;
         private Form currentchildform;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
         
@@ -36,6 +43,9 @@ namespace HRIS
 =======
         
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+        
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
         public MainForm()
         {
             InitializeComponent();
@@ -66,6 +76,7 @@ namespace HRIS
         }
         private void openchildform(Form childform)
         {
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
             if (currentchildform != null)
@@ -75,6 +86,9 @@ namespace HRIS
 =======
             if (currentchildform != null)
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+            if (currentchildform != null)
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
             {
                 currentchildform.Close();
             }
@@ -89,6 +103,7 @@ namespace HRIS
             childform.Show();
 
         }
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
 
@@ -98,6 +113,9 @@ namespace HRIS
 =======
 
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
 
         private void Image_Logo_Click(object sender, EventArgs e)
         {
@@ -137,6 +155,7 @@ namespace HRIS
         private void btn_doctors_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
             openchildform(new DoctorForm());
@@ -145,6 +164,9 @@ namespace HRIS
 =======
             openchildform(new DoctorForm());
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+            openchildform(new DoctorForm());
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
         }
 
         private void btn_dutyschedule_Click(object sender, EventArgs e)
@@ -160,6 +182,7 @@ namespace HRIS
         private void btn_maintenance_Click(object sender, EventArgs e)
         {
             activatebutton(sender, ColorPalette.color5);
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
             MaintenanceForm maintenanceForm = new MaintenanceForm();
@@ -170,6 +193,10 @@ namespace HRIS
             MaintenanceForm maintenanceForm = new MaintenanceForm();
             maintenanceForm.ShowDialog();
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+            MaintenanceForm maintenanceForm = new MaintenanceForm();
+            maintenanceForm.ShowDialog();
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
         }
 
         private void btn_reportmanager_Click(object sender, EventArgs e)
@@ -186,10 +213,13 @@ namespace HRIS
         {
 
         }
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 <<<<<<< HEAD
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
 
         private void btn_seminar_Click(object sender, EventArgs e)
         {
@@ -211,10 +241,13 @@ namespace HRIS
             activatebutton(sender, ColorPalette.color5);
             openchildform(new HiringForm());
         }
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.cs
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.cs
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
     }
 }

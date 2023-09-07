@@ -8,19 +8,25 @@ namespace HRIS.Class
 {
     public struct UniversalStatic
     {
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
         public static void formresize(Form form)
         {
             form.Height = form.Height - 100;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
         public static void customDatagrid(DataGridView dgv)
         {
             dgv.BackgroundColor = Color.White; 
@@ -42,6 +48,7 @@ namespace HRIS.Class
             dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
            
@@ -50,6 +57,9 @@ namespace HRIS.Class
 =======
            
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+           
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
             //column header font
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             dgv.ColumnHeadersDefaultCellStyle.Font = new Font(dgv.Font, FontStyle.Bold);
@@ -70,10 +80,13 @@ namespace HRIS.Class
             dgv.RowTemplate.DividerHeight = 0;
             dgv.RowTemplate.Height = 35;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
         public static bool IsEmpty(TextBox textBox)
         {
             bool isEmpty = false;
@@ -90,10 +103,13 @@ namespace HRIS.Class
 
             return isEmpty;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 =======
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
     }
 }

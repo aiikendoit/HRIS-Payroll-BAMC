@@ -12,12 +12,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       "Azure.Core/1.24.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
@@ -66,7 +73,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -75,9 +90,8 @@
 =======
 >>>>>>> update files
 =======
->>>>>>> backup files
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       "FontAwesome.Sharp/6.3.0": {
         "runtime": {
           "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {
@@ -91,12 +105,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       },
       "Humanizer.Core/2.14.1": {
         "runtime": {
@@ -889,7 +910,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -898,9 +927,8 @@
 =======
 >>>>>>> update files
 =======
->>>>>>> backup files
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       }
     }
   },
@@ -911,12 +939,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
     "Azure.Core/1.24.0": {
       "type": "package",
       "serviceable": true,
@@ -941,7 +976,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -950,9 +993,8 @@
 =======
 >>>>>>> update files
 =======
->>>>>>> backup files
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
     "FontAwesome.Sharp/6.3.0": {
       "type": "package",
       "serviceable": true,
@@ -965,12 +1007,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1457,7 +1506,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -1466,9 +1523,8 @@
 =======
 >>>>>>> update files
 =======
->>>>>>> backup files
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
     }
   }
 }

@@ -10,26 +10,43 @@
         "name": "Microsoft.WindowsDesktop.App",
         "version": "6.0.0"
       }
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
 <<<<<<< HEAD
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
 =======
+<<<<<<< HEAD
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true
     }
-<<<<<<< HEAD:HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
 <<<<<<< HEAD:HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
 =======
+<<<<<<< HEAD
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+<<<<<<< HEAD:HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
+=======
+    ]
+>>>>>>> backup files
+=======
+>>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
+=======
+<<<<<<< HEAD
     ]
 >>>>>>> backup files
 =======
@@ -40,9 +57,7 @@
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
 =======
-    ]
->>>>>>> backup files
-=======
->>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/bin/Debug/net6.0-windows/HRIS.runtimeconfig.json
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
   }
 }

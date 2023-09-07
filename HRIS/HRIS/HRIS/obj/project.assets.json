@@ -8,12 +8,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       "Azure.Core/1.24.0": {
         "type": "package",
         "dependencies": {
@@ -3698,11 +3705,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> backup files
 =======
 >>>>>>> backup files
+=======
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       "FontAwesome.Sharp/6.3.0": {
         "type": "package",
         "compile": {
@@ -3733,6 +3744,14 @@
         "lib/netcoreapp3.1/FontAwesome.Sharp.dll"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -3741,9 +3760,8 @@
 =======
 >>>>>>> update files
 =======
->>>>>>> backup files
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       ]
     }
   },
@@ -3755,12 +3773,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       "FontAwesome.Sharp >= 6.3.0",
       "MaterialSkin.2.RTL >= 2.3.1.1",
       "Microsoft.EntityFrameworkCore >= 7.0.8",
@@ -3775,11 +3800,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> backup files
 =======
 >>>>>>> backup files
+=======
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       "FontAwesome.Sharp >= 6.3.0"
     ]
   },
@@ -3789,6 +3818,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+    "C:\\Users\\ITSSupport\\.nuget\\packages\\": {},
+>>>>>>> backup files
+=======
+    "C:\\Users\\KIsrael\\.nuget\\packages\\": {},
+>>>>>>> update
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
     "C:\\Users\\ITSSupport\\.nuget\\packages\\": {},
 >>>>>>> backup files
 =======
@@ -3805,13 +3846,8 @@
 =======
 >>>>>>> update files
 =======
-    "C:\\Users\\ITSSupport\\.nuget\\packages\\": {},
->>>>>>> backup files
-=======
-    "C:\\Users\\KIsrael\\.nuget\\packages\\": {},
->>>>>>> update
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -3831,11 +3867,20 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "projectName": "HRIS",
       "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
       "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 =======
       "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
 =======
@@ -3851,10 +3896,13 @@
       "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
 >>>>>>> update file
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> backup files
 =======
 >>>>>>> backup files
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       "projectUniqueName": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj",
       "projectName": "HRIS",
       "projectPath": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj",
@@ -3862,6 +3910,33 @@
       "outputPath": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\obj\\",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+>>>>>>> backup files
+=======
+      "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "projectName": "HRIS",
+      "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> update
+=======
+      "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+=======
+      "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+>>>>>>> update file
+      "projectName": "HRIS",
+      "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+      "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
+<<<<<<< HEAD
+      "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> update files
+=======
+      "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> update file
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
       "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
@@ -3908,28 +3983,8 @@
       "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
 >>>>>>> update file
 =======
->>>>>>> backup files
-=======
-      "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
-      "projectName": "HRIS",
-      "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
-      "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
->>>>>>> update
-=======
-      "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
-=======
-      "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
->>>>>>> update file
-      "projectName": "HRIS",
-      "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
-      "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
-<<<<<<< HEAD
-      "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\obj\\",
->>>>>>> update files
-=======
-      "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
->>>>>>> update file
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3944,8 +3999,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
         "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
+        "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> backup files
+=======
+        "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> update
+=======
+        "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> update files
+=======
+<<<<<<< HEAD
         "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> backup files
 =======
@@ -3964,14 +4032,9 @@
         "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> update files
 =======
-        "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> backup files
-=======
         "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> update
-=======
-        "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3989,7 +4052,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+        "C:\\Program Files\\dotnet\\library-packs": {},
+>>>>>>> backup files
+=======
+>>>>>>> update
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
         "C:\\Program Files\\dotnet\\library-packs": {},
 >>>>>>> backup files
 =======
@@ -4004,12 +4078,8 @@
 =======
 >>>>>>> update files
 =======
-        "C:\\Program Files\\dotnet\\library-packs": {},
->>>>>>> backup files
-=======
->>>>>>> update
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4037,12 +4107,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
           },
           "MaterialSkin.2.RTL": {
             "target": "Package",
@@ -4074,7 +4151,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -4083,9 +4168,8 @@
 =======
 >>>>>>> update files
 =======
->>>>>>> backup files
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
           }
         },
         "imports": [
@@ -4116,8 +4200,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
 =======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> backup files
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+>>>>>>> update
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+>>>>>>> update files
+=======
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
 >>>>>>> backup files
 =======
@@ -4136,14 +4233,9 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
 >>>>>>> update files
 =======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
->>>>>>> backup files
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
->>>>>>> update
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       }
     }
   }

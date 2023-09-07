@@ -16,12 +16,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
     <PackageReference Include="MaterialSkin.2.RTL" Version="2.3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
@@ -37,7 +44,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -46,9 +61,8 @@
 =======
 >>>>>>> update files
 =======
->>>>>>> backup files
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
   </ItemGroup>
 
   <ItemGroup>
@@ -63,12 +77,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
     <Compile Update="Properties\Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
@@ -77,7 +98,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -86,9 +115,8 @@
 =======
 >>>>>>> update files
 =======
->>>>>>> backup files
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
   </ItemGroup>
 
   <ItemGroup>
@@ -104,12 +132,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
   <ItemGroup>
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -120,7 +155,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -129,7 +172,6 @@
 =======
 >>>>>>> update files
 =======
->>>>>>> backup files
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 </Project>

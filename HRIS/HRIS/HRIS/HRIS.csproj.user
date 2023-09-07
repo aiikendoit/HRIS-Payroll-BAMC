@@ -6,12 +6,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
   <PropertyGroup>
     <_LastSelectedProfileId>D:\James System\2023\HRIS with GIT\09 - HRIS-Payroll - July 6,2023\HRIS\HRIS\HRIS\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
@@ -137,7 +144,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+  <ItemGroup>
+    <Compile Update="Forms\Employee\EmployeeForm.cs">
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
   <ItemGroup>
     <Compile Update="Forms\Employee\EmployeeForm.cs">
 >>>>>>> backup files
@@ -150,11 +167,8 @@
 =======
 >>>>>>> update files
 =======
-  <ItemGroup>
-    <Compile Update="Forms\Employee\EmployeeForm.cs">
->>>>>>> backup files
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UserCustomControl\JPCircularPictureBox.cs">
@@ -166,12 +180,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
     <Compile Update="Views\Forms\Maintenance\MaintenanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,17 +224,29 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> backup files
 =======
 >>>>>>> backup files
+=======
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
     <Compile Update="Forms\Maintenance\MaintenanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Userlogin\Userlogin.cs">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -222,9 +255,8 @@
 =======
 >>>>>>> update files
 =======
->>>>>>> backup files
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainForm.cs">

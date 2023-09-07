@@ -14,6 +14,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
   "dgSpecHash": "tr1ydxXJfA7lat49WJBZWupZf6S2ZVtVFLYsLPl8DRCr/SDsqnYUk4vBwSuniubzBmLwhknKKYbhWGjyz3ZTRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
@@ -38,6 +41,7 @@
   "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
 >>>>>>> update file
 =======
+<<<<<<< HEAD
   "dgSpecHash": "PXM4+d5IlbOFBOqv2z0O98T/WWiQjEO2mTQ83J1R5Q3BNqTAoSEAvKiiHCTBeBXMzDqbx2QIa/OKFnvVCTEITg==",
   "success": true,
   "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
@@ -57,6 +61,12 @@
   "success": true,
   "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
 >>>>>>> update file
+=======
+  "dgSpecHash": "tr1ydxXJfA7lat49WJBZWupZf6S2ZVtVFLYsLPl8DRCr/SDsqnYUk4vBwSuniubzBmLwhknKKYbhWGjyz3ZTRQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
   "expectedPackageFiles": [
     "C:\\Users\\KIsrael\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\KIsrael\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -134,7 +144,27 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+  "dgSpecHash": "mCN637e68aluQYJ2dDEUWhFrnzgK8y3iUkVgAByukTC3bP+xNhUJXdu+aXW6yayk3yXc7khXKinLTeRZjgnUXw==",
+=======
+  "dgSpecHash": "laQ7ktX0SmONJqjqoGl1JLxxjBZj3A5aK6JSP/EhHSAMOCaRnAcXwvU2xH3WMHQZnvh9sK/WXVvkBhyhnZaJ/g==",
+>>>>>>> update
+  "success": true,
+  "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+  "expectedPackageFiles": [
+<<<<<<< HEAD
+    "C:\\Users\\ITSSupport\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+>>>>>>> backup files
+=======
+    "C:\\Users\\KIsrael\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+>>>>>>> update
+=======
+>>>>>>> update files
+=======
+<<<<<<< HEAD
   "dgSpecHash": "mCN637e68aluQYJ2dDEUWhFrnzgK8y3iUkVgAByukTC3bP+xNhUJXdu+aXW6yayk3yXc7khXKinLTeRZjgnUXw==",
 =======
   "dgSpecHash": "laQ7ktX0SmONJqjqoGl1JLxxjBZj3A5aK6JSP/EhHSAMOCaRnAcXwvU2xH3WMHQZnvh9sK/WXVvkBhyhnZaJ/g==",
@@ -167,21 +197,8 @@
 =======
 >>>>>>> update files
 =======
-  "dgSpecHash": "mCN637e68aluQYJ2dDEUWhFrnzgK8y3iUkVgAByukTC3bP+xNhUJXdu+aXW6yayk3yXc7khXKinLTeRZjgnUXw==",
-=======
-  "dgSpecHash": "laQ7ktX0SmONJqjqoGl1JLxxjBZj3A5aK6JSP/EhHSAMOCaRnAcXwvU2xH3WMHQZnvh9sK/WXVvkBhyhnZaJ/g==",
->>>>>>> update
-  "success": true,
-  "projectFilePath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
-  "expectedPackageFiles": [
-<<<<<<< HEAD
-    "C:\\Users\\ITSSupport\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
->>>>>>> backup files
-=======
-    "C:\\Users\\KIsrael\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
->>>>>>> update
-=======
->>>>>>> update files
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
   ],
   "logs": []
 }

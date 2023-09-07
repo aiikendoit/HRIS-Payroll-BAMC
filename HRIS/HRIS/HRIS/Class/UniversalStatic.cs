@@ -8,26 +8,42 @@ namespace HRIS.Class
 {
     public struct UniversalStatic
     {
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 =======
+<<<<<<< HEAD
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
         public static void formresize(Form form)
         {
             form.Height = form.Height - 100;
         }
-<<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 =======
+<<<<<<< HEAD
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+<<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
@@ -36,9 +52,8 @@ namespace HRIS.Class
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 =======
->>>>>>> backup files
-=======
->>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
         public static void customDatagrid(DataGridView dgv)
         {
             dgv.BackgroundColor = Color.White; 
@@ -60,9 +75,12 @@ namespace HRIS.Class
             dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
@@ -73,6 +91,7 @@ namespace HRIS.Class
            
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 =======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
            
@@ -82,6 +101,10 @@ namespace HRIS.Class
 =======
            
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+           
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
             //column header font
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             dgv.ColumnHeadersDefaultCellStyle.Font = new Font(dgv.Font, FontStyle.Bold);
@@ -102,18 +125,25 @@ namespace HRIS.Class
             dgv.RowTemplate.DividerHeight = 0;
             dgv.RowTemplate.Height = 35;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 =======
+<<<<<<< HEAD
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
         public static bool IsEmpty(TextBox textBox)
         {
             bool isEmpty = false;
@@ -130,10 +160,19 @@ namespace HRIS.Class
 
             return isEmpty;
         }
-<<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 <<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 =======
+<<<<<<< HEAD
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+<<<<<<< HEAD:HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
@@ -142,8 +181,7 @@ namespace HRIS.Class
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
 =======
->>>>>>> backup files
-=======
->>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/Class/UniversalStatic.cs
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
     }
 }

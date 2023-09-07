@@ -3,21 +3,34 @@
   "restore": {
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 <<<<<<< HEAD
 <<<<<<< HEAD
     "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
 =======
+    "C:\\Users\\KIsrael\\Documents\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+>>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+=======
+    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+>>>>>>> merge
+=======
+    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+>>>>>>> update file
+=======
+<<<<<<< HEAD
     "C:\\Users\\KIsrael\\Documents\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 =======
@@ -36,14 +49,9 @@
     "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
 >>>>>>> update file
 =======
-    "C:\\Users\\KIsrael\\Documents\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
->>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
-=======
-    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
->>>>>>> merge
-=======
     "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
->>>>>>> update file
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
   },
   "projects": {
     "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
@@ -55,15 +63,50 @@
         "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
         "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
 =======
+    "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj": {}
+=======
+    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
+>>>>>>> update
+  },
+  "projects": {
+    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "projectName": "HRIS",
+<<<<<<< HEAD
+        "projectPath": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj",
+        "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
+        "outputPath": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\obj\\",
+>>>>>>> backup files
+=======
+        "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
+        "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> update
+=======
+        "outputPath": "C:\\Users\\KIsrael\\Documents\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+=======
+        "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> merge
+=======
+        "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
+>>>>>>> update file
+=======
+<<<<<<< HEAD
     "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj": {}
 =======
     "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
@@ -126,36 +169,9 @@
         "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
 >>>>>>> update file
 =======
-    "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj": {}
-=======
-    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {}
->>>>>>> update
-  },
-  "projects": {
-    "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
-        "projectName": "HRIS",
-<<<<<<< HEAD
-        "projectPath": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\HRIS.csproj",
-        "packagesPath": "C:\\Users\\ITSSupport\\.nuget\\packages\\",
-        "outputPath": "D:\\James System\\2023\\HRIS+Payroll\\01 HRIS - April 19,2023\\HRIS\\HRIS\\obj\\",
->>>>>>> backup files
-=======
-        "projectPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS.csproj",
-        "packagesPath": "C:\\Users\\KIsrael\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
->>>>>>> update
-=======
-        "outputPath": "C:\\Users\\KIsrael\\Documents\\HRIS-Payroll\\HRIS\\HRIS\\HRIS\\obj\\",
->>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
-=======
-        "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\HRIS\\HRIS\\obj\\",
->>>>>>> merge
-=======
-        "outputPath": "C:\\Users\\KIsrael\\Desktop\\HRIS-Payroll-BAMC\\HRIS\\HRIS\\HRIS\\obj\\",
->>>>>>> update file
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -167,8 +183,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
           "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
+          "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> backup files
+=======
+          "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> update
+=======
+<<<<<<< HEAD
           "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> backup files
 =======
@@ -181,11 +207,9 @@
           "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> update
 =======
-          "C:\\Users\\ITSSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> backup files
-=======
           "C:\\Users\\KIsrael\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> update
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -200,7 +224,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+=======
+          "C:\\Program Files\\dotnet\\library-packs": {},
+>>>>>>> backup files
+=======
+>>>>>>> update
+=======
+<<<<<<< HEAD
           "C:\\Program Files\\dotnet\\library-packs": {},
 >>>>>>> backup files
 =======
@@ -211,10 +244,8 @@
 =======
 >>>>>>> update
 =======
-          "C:\\Program Files\\dotnet\\library-packs": {},
->>>>>>> backup files
-=======
->>>>>>> update
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -236,18 +267,25 @@
             "FontAwesome.Sharp": {
               "target": "Package",
               "version": "[6.3.0, )"
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 <<<<<<< HEAD
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 =======
+<<<<<<< HEAD
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
             },
             "MaterialSkin.2.RTL": {
               "target": "Package",
@@ -276,10 +314,19 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
-<<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 =======
+<<<<<<< HEAD
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+<<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
@@ -288,9 +335,8 @@
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 =======
->>>>>>> backup files
-=======
->>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
             }
           },
           "imports": [
@@ -313,19 +359,35 @@
             }
           },
 <<<<<<< HEAD
-<<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
-<<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
 <<<<<<< HEAD
 <<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
 =======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> backup files
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+>>>>>>> update
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+>>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+>>>>>>> merge
+=======
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
 >>>>>>> backup files
 =======
@@ -350,17 +412,9 @@
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
 >>>>>>> merge
 =======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
->>>>>>> backup files
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
->>>>>>> update
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
->>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/obj/HRIS.csproj.nuget.dgspec.json
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
->>>>>>> merge
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
         }
       }
     }

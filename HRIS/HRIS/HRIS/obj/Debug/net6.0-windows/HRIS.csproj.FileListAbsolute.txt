@@ -49,12 +49,19 @@ D:\James System\2023\HRIS+Payroll\01 HRIS - April 19,2023\HRIS\HRIS\obj\Debug\ne
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
 =======
 >>>>>>> update files
+=======
+=======
+>>>>>>> update files
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
 D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
 D:\James System\2023\HRIS+Payroll\02 HRIS - April 20,2023\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.runtimeconfig.json
@@ -1741,14 +1748,21 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\HRIS\HRIS\obj\Debug\ne
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 =======
 >>>>>>> update file
 =======
 >>>>>>> update file
 =======
+<<<<<<< HEAD
 >>>>>>> update file
 =======
 >>>>>>> update file
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.exe
 C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.dll.config
 C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\bin\Debug\net6.0-windows\HRIS.deps.json
@@ -1871,11 +1885,21 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\obj\Debug\net6.0-windo
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 =======
 >>>>>>> update files
 =======
 >>>>>>> update file
 =======
+>>>>>>> backup files
+=======
+>>>>>>> update files
+=======
+>>>>>>> update file
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files
@@ -1888,8 +1912,5 @@ C:\Users\KIsrael\Desktop\HRIS-Payroll-BAMC\HRIS\HRIS\HRIS\obj\Debug\net6.0-windo
 =======
 >>>>>>> update file
 =======
->>>>>>> backup files
-=======
->>>>>>> update files
-=======
->>>>>>> update file
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60

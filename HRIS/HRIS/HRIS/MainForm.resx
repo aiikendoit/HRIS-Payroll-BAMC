@@ -61,14 +61,24 @@
   <data name="jpCircularPictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.resx
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.resx
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.resx
 <<<<<<< HEAD
         vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAH8OSURBVHhe7Z0H
 =======
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAH8OSURBVHhe7Z0H
+>>>>>>> backup files
+=======
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAH8OSURBVHhe7Z0H
+>>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.resx
+=======
+<<<<<<< HEAD
         wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAH8OSURBVHhe7Z0H
 >>>>>>> backup files
 =======
@@ -81,11 +91,9 @@
         vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAH8OSURBVHhe7Z0H
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.resx
 =======
-        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAH8OSURBVHhe7Z0H
->>>>>>> backup files
-=======
         vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAH8OSURBVHhe7Z0H
->>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.resx
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
         eBRV18dXQLF3irQQCL0lIKFD6L0kIfRiRREbSi8SinQhpEHohHRS6CBIFRBQiopU6aC+VlBRIdk9372b
         CV9YTpLdZGb23pnzf57fw6uv7M7O3HP+Z2buPddCIpHMo9atBz3X0TeoVdcGPd/q0iAwhJHcuX7grs71
         /Y91etH/+471/X/sUK/H7x3qdv+7vU+3/9ift9vX7ZbezqebtbNvwO2eLfrf6NVykJUBCrcYvyv81rvl
@@ -1371,18 +1379,25 @@
   <metadata name="panel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.resx
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.resx
+=======
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
 <<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.resx
 <<<<<<< HEAD
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.resx
 =======
+<<<<<<< HEAD
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.resx
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.resx
+=======
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
   <metadata name="panel2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1437,10 +1452,19 @@
   <metadata name="label5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-<<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.resx
+<<<<<<< HEAD
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.resx
 <<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.resx
 =======
+<<<<<<< HEAD
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
+<<<<<<< HEAD:HRIS/HRIS/HRIS/MainForm.resx
+=======
+>>>>>>> backup files
+=======
+>>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.resx
+=======
+<<<<<<< HEAD
 >>>>>>> backup files
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.resx
@@ -1449,9 +1473,8 @@
 =======
 >>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.resx
 =======
->>>>>>> backup files
-=======
->>>>>>> update files:HRIS/HRIS/HRIS/HRIS/HRIS/MainForm.resx
+>>>>>>> 07483abc6b46d58c9a5bcab93c34fbae724965f0
+>>>>>>> d26903d7ac5009b91ce31b58de57948fdef89f60
   <metadata name="label13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
